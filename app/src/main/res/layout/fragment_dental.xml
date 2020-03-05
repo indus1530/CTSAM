@@ -10,7 +10,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.uen_scans_bl.ui.fragments.DentalFragment" />
+            type="edu.aku.hassannaqvi.ctsam.ui.fragments.DentalFragment" />
     </data>
 
 

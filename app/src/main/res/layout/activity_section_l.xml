@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.uen_scans_bl.ui.sections.SectionLActivity" />
+            type="edu.aku.hassannaqvi.ctsam.ui.sections.SectionLActivity" />
     </data>
 
     <LinearLayout style="@style/linearlayout_view_wt_bound">
