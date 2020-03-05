@@ -49,7 +49,9 @@ import edu.aku.hassannaqvi.ctsam.core.AndroidDatabaseManager;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivityMainBinding;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionA1Activity;
+import edu.aku.hassannaqvi.ctsam.ui.sections.SectionAActivity;
+import edu.aku.hassannaqvi.ctsam.ui.sections.SectionBActivity;
+import edu.aku.hassannaqvi.ctsam.ui.sections.SectionCActivity;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionInfoActivity;
 import edu.aku.hassannaqvi.ctsam.ui.sync.SyncActivity;
 import edu.aku.hassannaqvi.ctsam.utils.CreateTable;
@@ -165,13 +167,13 @@ public class MainActivity extends AppCompatActivity {
         Intent oF = null;
         switch (id) {
             case R.id.formA:
-                oF = new Intent(this, SectionA1Activity.class);
+                oF = new Intent(this, SectionAActivity.class);
                 break;
             case R.id.formB:
-                oF = new Intent(this, SectionInfoActivity.class).putExtra(CONSTANTS.MAIN_INTENT, CONSTANTS.ANTHRO);
+                oF = new Intent(this, SectionBActivity.class);
                 break;
             case R.id.formC:
-                oF = new Intent(this, SectionInfoActivity.class).putExtra(CONSTANTS.MAIN_INTENT, CONSTANTS.HB);
+                oF = new Intent(this, SectionCActivity.class);
                 break;
             case R.id.formD:
                 oF = new Intent(this, SectionInfoActivity.class).putExtra(CONSTANTS.MAIN_INTENT, CONSTANTS.VISION);
