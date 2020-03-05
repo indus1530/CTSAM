@@ -13,8 +13,9 @@
 
     <ScrollView
         style="@style/i_scrollview"
-        android:layoutDirection="ltr"
-        android:textDirection="ltr"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:scrollbarSize="10dip"
         tools:context=".ui.sections.SectionDActivity">
 
         <LinearLayout
