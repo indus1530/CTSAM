@@ -29,23 +29,16 @@
                 android:id="@+id/fldGrpCVs1q1"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
                         android:text="@string/s1q1" />
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
+                    <EditText
                         android:id="@+id/s1q1"
-                        style="@style/EditTextNum"
-                        android:hint="@string/num"
-                        app:mask="##"
-                        app:maxValue="0"
-                        app:minValue="0"
-                        app:type="range" />
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/name" />
 
                 </LinearLayout>
 
@@ -56,26 +49,20 @@
                 android:id="@+id/fldGrpCVs1q2"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:text="@string/s1q2" />
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
+                    <EditText
                         android:id="@+id/s1q2"
-                        style="@style/EditTextAlphaNumeric"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/s1q2"
-                        android:inputType="number"
-                        app:mask="##"
-                        app:maxValue="0"
-                        app:minValue="0"
-                        app:type="range" />
+                        style="@style/EditTextAlpha"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/name" />
 
                 </LinearLayout>
 
@@ -106,7 +93,9 @@
                         app:maxValue="0"
                         app:minValue="0"
                         app:type="range" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- s1q4  Input   -->
