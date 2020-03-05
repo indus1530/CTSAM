@@ -26,7 +26,7 @@
 
         <provider
             android:name="edu.aku.hassannaqvi.ctsam.otherClasses.FamilyMemContentProvider"
-            android:authorities="com.scans.familymember"
+            android:authorities="com.ctsam.familymember"
             android:enabled="true"
             android:exported="true" />
 
@@ -39,6 +39,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="edu.aku.hassannaqvi.ctsam.ui.other.LoginActivity"
             android:screenOrientation="portrait"
