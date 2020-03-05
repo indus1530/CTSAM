@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--new Strings-->
+    <!--My commits-->
     <string name="app_name">UEN SCANS BL 2020</string>
     <!-- Strings related to login -->
     <string name="btnSync">Click for Sync</string>
@@ -30,7 +31,6 @@
  Centre of Excellence Women &amp; Child Health\n
  Aga Khan University, Karachi, Pakistan</string>
     <string name="title_activity_family_members_list">Family Members List</string>
-
     <string name="yes"> ہاں </string>
     <string name="no"> نہیں </string>
     <string name="dkn"> معلوم نہیں </string>
