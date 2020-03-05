@@ -138,7 +138,7 @@
                         style="@style/cardView">
 
                         <LinearLayout
-                            style="@style/linearlayout_view"
+                            style="@style/vlinearlayout"
                             android:orientation="vertical">
 
                             <TextView

@@ -23,7 +23,8 @@
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme1">
-        <activity android:name=".ui.sections.SectionAActivity"></activity>
+        <activity android:name=".ui.sections.SectionBActivity"></activity>
+        <activity android:name=".ui.sections.SectionAActivity" />
 
         <provider
             android:name=".otherClasses.FamilyMemContentProvider"
