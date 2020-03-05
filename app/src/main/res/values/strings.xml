@@ -66,7 +66,10 @@
    <string name="under5">Child Age 5 \- 10</string>
    <string name="part">Partial</string>
    <string name="complt">Complete</string>
-   <string name="anthro_error">Kindly Re-Do the measurements</string>
+   <string name="reason"> Reason </string>
+   <string name="address"> Address </string>
+   <string name="anthro_error"> Kindly Re-Do the measurements </string>
+
 
    <string name="a101"> Cluster number </string>
    <string name="a101a"> This information will be based on the list of villages generated from the district. Each enumerator will be given a list of clusters that he/she will be visiting, and before starting the interview, this information will be entered from the same list. </string>
@@ -2104,17 +2107,17 @@
 
 
    <!--   CTSAM STRINGS-->
-   <string name="s1q1"> SLQ1: Name of Health Care Facility </string>
-   <string name="s1q2"> SLQ2: Taluka Name </string>
-   <string name="s1q3"> SLQ3: Village Name </string>
-   <string name="s1q4"> SLQ4: Address </string>
-   <string name="s1q5"> SLQ5: Name of Data Collector 01 </string>
-   <string name="s1q6"> SLQ6: Name of Data Collector 02 </string>
-   <string name="s1q7"> SLQ7: Date of recruitment</string>
-   <string name="s1q8"> SLQ8: Has the parents/legal guardian agreed to participate and given the consent?</string>
-   <string name="s1q8a"> Yes </string>
+   <string name="s1q1"> Name  of Health Care Facility </string>
+   <string name="s1q2"> S1q2: Taluka Name </string>
+   <string name="s1q3"> S1q3: Village Name </string>
+   <string name="s1q4"> S1q4: Address </string>
+   <string name="s1q5"> S1q5: Name of Data Collector 01 </string>
+   <string name="s1q6"> S1q6: Name of Data Collector 02 </string>
+   <string name="s1q7"> S1q7: Date of recruitment </string>
+   <string name="s1q8"> S1q8: Has the parents/legal guardian agreed to participate and given the consent ? </string>
+   <string name="s1q8a"> Yes</string>
    <string name="s1q8b"> No.</string>
-   <string name="s1q8reason"> s1q8reason: Reason for not given consent</string>
+   <string name="s1q8r"> S1q8r: Reason for not given consent</string>
    <string name="s2t"> s2t: Screening for SAM Cases</string>
    <string name="muac1"> muac1: MUAC-01</string>
    <string name="muac2"> muac2: MUAC-02</string>
@@ -2270,7 +2273,7 @@
    <string name="s6q105"> Baluchi</string>
    <string name="s6q106"> Siraiki</string>
    <string name="s6q107"> Dhatki</string>
-   <string name="s6q196"> Other (Specify)</string>
+   <string name="s6q196"> Other (Specify) </string>
    <string name="s6q2"> s6q2: What is the main source of drinking water in your house hold?</string>
    <string name="s6q201"> Piped Water</string>
    <string name="s6q202"> Municipal committee piped into dwelling </string>
@@ -2460,7 +2463,7 @@
    <string name="s7q102"> Not observed  </string>
    <string name="s7q103"> Not in dwelling/plot/yard</string>
    <string name="s7q104"> No permission to see </string>
-   <string name="s7q105"> Other reason</string>
+   <string name="s7q105"> Other reason </string>
    <string name="s7q2"> s7q2: Observe presence of water at the specific place for hand washing</string>
    <string name="s7q201"> Water is available </string>
    <string name="s7q202"> Water is not available</string>
@@ -2605,8 +2608,7 @@
    <string name="s10q103"> Green</string>
    <string name="s10q104"> Brown</string>
    <string name="s10q1sac"> Number of Sachet given</string>
-   <string name="s10q2"> s10q2: Reason</string>
-   <string name="s10q3"> s10q3: Next follow-up date?</string>
+   <string name="s10q2"> s10q2: Next follow-up date</string>
 
 
 </resources>
