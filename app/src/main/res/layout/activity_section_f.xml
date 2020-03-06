@@ -1583,7 +1583,7 @@
 
                         <EditText
                             android:id="@+id/s6q1801x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q1801"
@@ -1598,7 +1598,7 @@
 
                         <EditText
                             android:id="@+id/s6q1802x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q1802"
@@ -1675,7 +1675,7 @@
 
                         <EditText
                             android:id="@+id/s6q20ax"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q20a"
@@ -1690,7 +1690,7 @@
 
                         <EditText
                             android:id="@+id/s6q20bx"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q20b"
@@ -1705,7 +1705,7 @@
 
                         <EditText
                             android:id="@+id/s6q20cx"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q20c"
@@ -1720,7 +1720,7 @@
 
                         <EditText
                             android:id="@+id/s6q20dx"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q20d"
@@ -1735,7 +1735,7 @@
 
                         <EditText
                             android:id="@+id/s6q20ex"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q20e"
@@ -1750,7 +1750,7 @@
 
                         <EditText
                             android:id="@+id/s6q20fx"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q20f"
@@ -1765,7 +1765,7 @@
 
                         <EditText
                             android:id="@+id/s6q20gx"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q20g"
