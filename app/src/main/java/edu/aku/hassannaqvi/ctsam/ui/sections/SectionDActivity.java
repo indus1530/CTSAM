@@ -65,7 +65,6 @@ public class SectionDActivity extends AppCompatActivity {
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
-
         json.put("s4q1", bi.s4q1a.isChecked() ? "1"
                 : bi.s4q1b.isChecked() ? "2"
                 : bi.s4q1c.isChecked() ? "3"
@@ -76,10 +75,8 @@ public class SectionDActivity extends AppCompatActivity {
         json.put("s4q3", bi.s4q3.getText().toString());
         json.put("s4q4", bi.s4q4.getText().toString());
         json.put("s4q5", bi.s4q5.getText().toString());
-
-        json.put("s4q6", bi.s4q6a.isChecked() ? "1"
-                : bi.s4q6b.isChecked() ? "2"
-                : "0");
+        json.put("s4q6", bi.s4q6a.isChecked() ? "1" :
+                bi.s4q6b.isChecked() ? "2" : "0");
 
         json.put("s4q7", bi.s4q7a.isChecked() ? "1"
                 : bi.s4q7b.isChecked() ? "2"
@@ -88,11 +85,9 @@ public class SectionDActivity extends AppCompatActivity {
         json.put("s4q7dob", bi.s4q7dob.getText().toString());
         json.put("s4q7days", bi.s4q7days.getText().toString());
         json.put("s4q7mon", bi.s4q7mon.getText().toString());
-
         json.put("s4q8", bi.s4q8a.isChecked() ? "1"
                 : bi.s4q8b.isChecked() ? "2"
                 : "0");
-
         json.put("s4q9", bi.s4q9.getText().toString());
 
         json.put("s4q10", bi.s410q410a.isChecked() ? "1"
@@ -114,7 +109,7 @@ public class SectionDActivity extends AppCompatActivity {
 
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.GrpName);
+        return Validator.emptyCheckingContainer(this, bi.fldGrpSectionD);
     }
 
 
