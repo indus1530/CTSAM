@@ -14,6 +14,7 @@ import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionJBinding;
+import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionJActivity extends AppCompatActivity {
@@ -39,7 +40,7 @@ public class SectionJActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionEActivity.class));
+                startActivity(new Intent(this, EndingActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
