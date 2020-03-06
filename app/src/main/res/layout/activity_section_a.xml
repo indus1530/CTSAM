@@ -38,7 +38,6 @@
                         android:id="@+id/s1q1"
                         style="@style/spinner"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:hint="@string/name" />
 
@@ -64,7 +63,6 @@
                         android:id="@+id/s1q2"
                         style="@style/spinner"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:hint="@string/s1q2" />
 
@@ -113,7 +111,7 @@
                         android:id="@+id/s1q4"
                         style="@style/EditTextAlphaNumeric"
                         android:layout_height="100dp"
-                        android:hint="@string/s1q4"
+                        android:hint="@string/address"
                         android:inputType="textMultiLine"
                         android:maxLines="4" />
 
