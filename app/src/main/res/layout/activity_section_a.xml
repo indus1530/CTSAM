@@ -45,7 +45,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
             <!-- s1q2  Spinner   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs1q2"
@@ -69,7 +68,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!-- s1q3  Spinner   -->
             <androidx.cardview.widget.CardView
@@ -95,7 +93,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
             <!-- s1q4  Input   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs1q4"
@@ -118,7 +115,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!-- s1q5  Input   -->
             <androidx.cardview.widget.CardView
@@ -144,7 +140,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
             <!-- s1q6  Input   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs1q6"
@@ -168,7 +163,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!-- s1q7  Input   -->
             <androidx.cardview.widget.CardView
@@ -194,7 +188,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!-- s1q8  Radio   -->
             <androidx.cardview.widget.CardView
@@ -231,7 +224,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!-- s1q8reason  Input   -->
             <androidx.cardview.widget.CardView
