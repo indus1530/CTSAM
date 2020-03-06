@@ -78,7 +78,7 @@
 
                         <EditText
                             android:id="@+id/s6q196x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q196"
@@ -194,7 +194,7 @@
 
                         <EditText
                             android:id="@+id/s6q296x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q296"
@@ -296,7 +296,7 @@
 
                         <EditText
                             android:id="@+id/s6q496x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q496"
@@ -385,15 +385,18 @@
 
                         <EditText
                             android:id="@+id/s6q596x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q596"
                             android:tag="s6q596"
                             android:text='@{s6q596.checked? s6q596x.getText().toString() : ""}'
                             android:visibility='@{s6q596.checked? View.VISIBLE : View.GONE}' />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- s6q6  Radio   -->
@@ -658,7 +661,7 @@
 
                         <EditText
                             android:id="@+id/s6q996x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q996"
@@ -709,7 +712,7 @@
 
                         <EditText
                             android:id="@+id/s6q1096x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q1096"
@@ -848,7 +851,7 @@
 
                         <EditText
                             android:id="@+id/s6q1296x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q1296"
@@ -957,7 +960,7 @@
 
                         <EditText
                             android:id="@+id/s6q1396x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q1396"
@@ -1048,7 +1051,7 @@
 
                         <EditText
                             android:id="@+id/s6q1496x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q1496"

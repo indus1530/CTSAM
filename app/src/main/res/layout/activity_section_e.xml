@@ -535,7 +535,7 @@
 
                         <EditText
                             android:id="@+id/s5q3096x"
-                            style="@style/radiobutton"
+                            style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s5q3096"
