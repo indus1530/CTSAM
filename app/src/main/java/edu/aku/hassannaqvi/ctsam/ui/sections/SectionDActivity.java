@@ -109,7 +109,7 @@ public class SectionDActivity extends AppCompatActivity {
 
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.fldGrpSectionD);
+        return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
 
 
