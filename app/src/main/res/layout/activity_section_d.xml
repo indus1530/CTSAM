@@ -8,14 +8,15 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.ctsam.ui.sections.SectionDActivity" />
+            type="edu.aku.hassannaqvi.template.ui.Myactivity" />
     </data>
 
     <ScrollView
         style="@style/i_scrollview"
-        android:layoutDirection="ltr"
-        android:textDirection="ltr"
-        tools:context=".ui.sections.SectionDActivity">
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:scrollbarSize="10dip"
+        tools:context=".ui.Myactivity">
 
         <LinearLayout
             android:id="@+id/GrpName"
