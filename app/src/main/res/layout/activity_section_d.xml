@@ -13,13 +13,12 @@
 
     <ScrollView
         style="@style/i_scrollview"
-        android:fadeScrollbars="false"
-        android:fillViewport="true"
-        android:scrollbarSize="10dip"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
         tools:context=".ui.sections.SectionDActivity">
 
         <LinearLayout
-            android:id="@+id/fldGrpSectionD"
+            android:id="@+id/GrpName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
