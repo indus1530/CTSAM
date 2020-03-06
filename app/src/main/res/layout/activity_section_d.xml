@@ -1,6 +1,5 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -8,15 +7,13 @@
 
         <variable
             name="callback"
-            type="edu.aku.hassannaqvi.template.ui.Myactivity" />
+            type="edu.aku.hassannaqvi.ctsam.ui.sections.SectionDActivity" />
     </data>
 
     <ScrollView
         style="@style/i_scrollview"
-        android:fadeScrollbars="false"
-        android:fillViewport="true"
-        android:scrollbarSize="10dip"
-        tools:context=".ui.Myactivity">
+        android:layoutDirection="ltr"
+        android:textDirection="ltr">
 
         <LinearLayout
             android:id="@+id/GrpName"
