@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -37,7 +38,7 @@ public class SectionDActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                //startActivity(new Intent(this, FamilyMembersListActivity.class).putExtra("sno", Integer.valueOf(bl.getSno())));
+                startActivity(new Intent(this, SectionEActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
