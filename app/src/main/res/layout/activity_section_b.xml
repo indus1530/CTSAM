@@ -1,5 +1,4 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
 
@@ -10,17 +9,16 @@
             type="edu.aku.hassannaqvi.ctsam.ui.sections.SectionBActivity" />
     </data>
 
+
     <ScrollView
         style="@style/i_scrollview"
         android:layoutDirection="ltr"
-        android:textDirection="ltr"
-        tools:context=".ui.sections.SectionBActivity">
+        android:textDirection="ltr">
 
         <LinearLayout
             android:id="@+id/GrpName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/vlinearlayout">
+
 
             <!-- s2t  Title   -->
             <androidx.cardview.widget.CardView
@@ -40,28 +38,29 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- muac1  Input   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVmuac1"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:text="@string/muac1" />
 
                     <EditText
                         android:id="@+id/muac1"
-                        style="@style/textInputName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/muac1"
-                        android:textColor="@android:color/black" />
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="##.#" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- muac2  Input   -->
@@ -85,7 +84,9 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/muac2"
                         android:textColor="@android:color/black" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- s2q1  Radio   -->
@@ -664,9 +665,7 @@
                     <TextView
                         style="@style/i_textview"
                         android:text="@string/s2q29_instruction" />
-
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <LinearLayout
@@ -689,11 +688,7 @@
                     android:onClick="@{() -> callback.BtnContinue()}"
                     android:text="Save" />
                 <!--'onClick' for btn_End will NOT change and always call 'endInterview'-->
-
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
-
 </layout>

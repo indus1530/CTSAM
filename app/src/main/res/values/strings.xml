@@ -2125,18 +2125,22 @@
     <string name="s1q8b"> No.</string>
     <string name="s1q8r"> SLQ8r: Reason for not given consent </string>
 
-    <string name="s2t"> S2T: Screening for SAM Cases </string>
+    <string name="s2t"> Screening for SAM Cases </string>
 
-    <string name="muac1"> muac1: MUAC-01 </string>
-    <string name="muac2"> muac2: MUAC-02</string>
+    <string name="muac1"> MUAC-01: </string>
+
+    <string name="muac2"> MUAC-02: </string>
+
     <string name="s2q1"> s2q1: MUAC &lt;11.5 cm</string>
-    <string name="s2q1a"> Yes</string>
-    <string name="s2q1b"> No.</string>
-    <string name="s2q2"> s2q2: Bilateral pitting oedema?</string>
+    <string name="s2q1a"> Yes </string>
+    <string name="s2q1b"> No </string>
+
+    <string name="s2q2"> s2q2: Bilateral pitting oedema ? </string>
     <string name="s2q2a"> None</string>
     <string name="s2q2b"> Bilateral pitting oedema +</string>
     <string name="s2q2c"> Bilateral pitting oedema ++</string>
     <string name="s2q2d"> Bilateral pitting oedema +++</string>
+
     <string name="s2q2_instruction"> s2q2_instruction: Note: Grades of Oedema-Definition : 1) Absent, 2)Grade + Mild: Both feet/ankles, 3) Grade++Moderate: Both feet, plus lower legs, hands or lower arms, 4) Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face</string>
     <string name="s2q3"> s2q3: Presence of appetite for RUTF / RUSF ? </string>
     <string name="s2q3a"> Yes</string>
