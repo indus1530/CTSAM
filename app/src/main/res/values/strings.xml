@@ -2107,18 +2107,27 @@
 
     <!--   CTSAM STRINGS-->
     <string name="s1q1"> SLQ1: Name of Health Care Facility </string>
+
     <string name="s1q2"> SLQ2: Taluka Name </string>
+
     <string name="s1q3"> SLQ3: Village Name </string>
+
     <string name="s1q4"> SLQ4: Address </string>
+
     <string name="s1q5"> SLQ5: Name of Data Collector 01 </string>
+
     <string name="s1q6"> SLQ6: Name of Data Collector 02 </string>
+
     <string name="s1q7"> SLQ7: Date of recruitment </string>
+
     <string name="s1q8"> SLQ8: Has the parents/legal guardian agreed to participate and given the consent ? </string>
     <string name="s1q8a"> Yes </string>
     <string name="s1q8b"> No.</string>
     <string name="s1q8r"> SLQ8r: Reason for not given consent </string>
-    <string name="s2t"> s2t: Screening for SAM Cases</string>
-    <string name="muac1"> muac1: MUAC-01</string>
+
+    <string name="s2t"> S2T: Screening for SAM Cases </string>
+
+    <string name="muac1"> muac1: MUAC-01 </string>
     <string name="muac2"> muac2: MUAC-02</string>
     <string name="s2q1"> s2q1: MUAC &lt;11.5 cm</string>
     <string name="s2q1a"> Yes</string>
@@ -2129,7 +2138,7 @@
     <string name="s2q2c"> Bilateral pitting oedema ++</string>
     <string name="s2q2d"> Bilateral pitting oedema +++</string>
     <string name="s2q2_instruction"> s2q2_instruction: Note: Grades of Oedema-Definition : 1) Absent, 2)Grade + Mild: Both feet/ankles, 3) Grade++Moderate: Both feet, plus lower legs, hands or lower arms, 4) Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face</string>
-    <string name="s2q3"> s2q3: Presence of appetite for RUTF/RUSF?</string>
+    <string name="s2q3"> s2q3: Presence of appetite for RUTF / RUSF ? </string>
     <string name="s2q3a"> Yes</string>
     <string name="s2q3b"> No.</string>
     <string name="s2q4"> s2q4: If Yes then rank : -	Appetite returned (eats at least 75% of RUTF+RUSF)</string>
