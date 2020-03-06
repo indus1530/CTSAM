@@ -23,7 +23,8 @@
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme1">
-        <activity android:name=".ui.sections.SectionHActivity"></activity>
+        <activity android:name=".ui.sections.SectionIActivity"></activity>
+        <activity android:name=".ui.sections.SectionHActivity" />
         <activity android:name=".ui.sections.SectionGActivity" />
         <activity android:name=".ui.sections.SectionFActivity" />
         <activity android:name=".ui.sections.SectionEActivity" />
