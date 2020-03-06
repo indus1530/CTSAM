@@ -1,4 +1,5 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -50,12 +51,16 @@
                         android:layout_weight="1"
                         android:text="@string/muac1" />
 
-                    <EditText
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/muac1"
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="##.#" />
+                        android:hint="##.#"
+                        app:mask="##.#"
+                        app:maxValue="11"
+                        app:minValue="0"
+                        app:type="range" />
 
                 </LinearLayout>
 
@@ -74,12 +79,16 @@
                         android:layout_weight="1"
                         android:text="@string/muac2" />
 
-                    <EditText
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/muac2"
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="##.#" />
+                        android:hint="##.#"
+                        app:mask="##.#"
+                        app:maxValue="11"
+                        app:minValue="0"
+                        app:type="range" />
 
                 </LinearLayout>
 
