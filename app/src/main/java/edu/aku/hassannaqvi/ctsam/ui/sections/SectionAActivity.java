@@ -1,5 +1,6 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -38,7 +39,7 @@ public class SectionAActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                //startActivity(new Intent(this, FamilyMembersListActivity.class).putExtra("sno", Integer.valueOf(bl.getSno())));
+                startActivity(new Intent(this, SectionBActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -66,12 +67,18 @@ public class SectionAActivity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("s1q1", bi.s1q1.getText().toString());
-        json.put("s1q2", bi.s1q2.getText().toString());
-        json.put("s1q3", bi.s1q3.getText().toString());
+        json.put("s1q1", bi.s1q1.getSelectedItem().toString());
+
+        json.put("s1q2", bi.s1q2.getSelectedItem().toString());
+
+        json.put("s1q3", bi.s1q3.getSelectedItem().toString());
+
         json.put("s1q4", bi.s1q4.getText().toString());
+
         json.put("s1q5", bi.s1q5.getText().toString());
+
         json.put("s1q6", bi.s1q6.getText().toString());
+
         json.put("s1q7", bi.s1q7.getText().toString());
 
         json.put("s1q8", bi.s1q8a.isChecked() ? "1"
@@ -79,6 +86,7 @@ public class SectionAActivity extends AppCompatActivity {
                 : "0");
 
         json.put("s1q8reason", bi.s1q8reason.getText().toString());
+
 
     }
 

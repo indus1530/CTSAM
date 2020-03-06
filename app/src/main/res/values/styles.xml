@@ -207,9 +207,10 @@
 
     <style name="spinner" parent="Widget.AppCompat.Spinner">
         <item name="android:background">@drawable/spinner_style</item>
-        <item name="android:paddingRight">15dp</item>
-        <item name="android:paddingStart">15dp</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_margin">10dp</item>
     </style>
 
 
@@ -284,16 +285,45 @@
     <style name="button" parent="android:Widget.Material.Light.Button">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
-        <!--        <item name="android:minHeight">36dp</item>-->
         <item name="android:textSize">20sp</item>
-        <item name="android:layout_margin">10sp</item>
-        <item name="android:typeface">serif</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:typeface">sans</item>
         <item name="android:padding">10dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textColor">@color/white</item>
-        <!--        <item name="android:radius">2dp</item>-->
+        <item name="android:radius">2dp</item>
         <item name="android:elevation">1dp</item>
         <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="buttonNext" parent="android:Widget.Material.Light.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:radius">2dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:background">@color/green</item>
+    </style>
+
+    <style name="buttonEnd" parent="android:Widget.Material.Light.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:radius">2dp</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:background">@color/red</item>
     </style>
 
 

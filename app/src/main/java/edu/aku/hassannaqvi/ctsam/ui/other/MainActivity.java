@@ -40,7 +40,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import edu.aku.hassannaqvi.ctsam.CONSTANTS;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.AreasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
@@ -50,9 +49,6 @@ import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivityMainBinding;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionAActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionBActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionCActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionInfoActivity;
 import edu.aku.hassannaqvi.ctsam.ui.sync.SyncActivity;
 import edu.aku.hassannaqvi.ctsam.utils.CreateTable;
 
@@ -169,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.formA:
                 oF = new Intent(this, SectionAActivity.class);
                 break;
-            case R.id.formB:
+            /*case R.id.formB:
                 oF = new Intent(this, SectionBActivity.class);
                 break;
             case R.id.formC:
@@ -180,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.formE:
                 oF = new Intent(MainActivity.this, SectionInfoActivity.class).putExtra(CONSTANTS.MAIN_INTENT, CONSTANTS.DENTAL);
-                break;
+                break;*/
         }
         startActivity(oF);
     }
@@ -282,9 +278,9 @@ public class MainActivity extends AppCompatActivity {
 
             return new AlertDialog.Builder(getActivity())
                     .setIcon(R.drawable.exclamation)
-                    .setTitle("SCANS APP is available!")
+                    .setTitle("CTSAM APP is available!")
                     .setCancelable(false)
-                    .setMessage("SCANS App " + newVer + " is now available. Your are currently using older version " + preVer + ".\nInstall new version to use this app.")
+                    .setMessage("CTSAM App " + newVer + " is now available. Your are currently using older version " + preVer + ".\nInstall new version to use this app.")
                     .setPositiveButton("INSTALL!!",
                             (dialog, whichButton) -> {
                                 Intent intent = new Intent(Intent.ACTION_VIEW);
