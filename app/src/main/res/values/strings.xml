@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!--new Strings-->
     <string name="app_name"> CTSAM </string>
@@ -676,47 +676,57 @@
     <string name="b104a"> Rarely (once or twice in the past four weeks)</string>
     <string name="b104b"> Sometimes (three to ten times in the past four weeks)</string>
     <string name="b104c"> Often (more than ten times in the past four weeks)</string>
+
     <string name="b105"> B105:\t Was there a time when you or others in your household ate only a few kinds of foods because of lack of money or other resources?</string>
     <string name="b105a"> Yes</string>
     <string name="b105b"> No </string>
     <string name="b105c"> Don’t Know </string>
     <string name="b105d"> Refused</string>
+
     <string name="b106"> B106:\t How often did this happen?                  </string>
     <string name="b106a"> Rarely (once or twice in the past four weeks)</string>
     <string name="b106b"> Sometimes (three to ten times in the past four weeks)</string>
     <string name="b106c"> Often (more than ten times in the past four weeks)</string>
+
     <string name="b107"> B107:\t In the past 12 months, did you or any household member have to eat some foods that you really did not want to eat because of a lack of resources to obtain other types of food?</string>
     <string name="b107a"> Yes</string>
     <string name="b107b"> No </string>
     <string name="b107c"> Don’t Know </string>
     <string name="b107d"> Refused</string>
+
     <string name="b108"> B108:\t How often did this happen?       </string>
     <string name="b108a"> Rarely (once or twice in the past four weeks)</string>
     <string name="b108b"> Sometimes (three to ten times in the past four weeks)</string>
     <string name="b108c"> Often (more than ten times in the past four weeks)</string>
+
     <string name="b109"> B109:\t Was there a time when you or others in your household had to skip a meal because there was not enough money or other resources to get food?</string>
     <string name="b109a"> Yes </string>
     <string name="b109b"> No</string>
     <string name="b109c"> Don’t Know </string>
     <string name="b109d"> Refused</string>
+
     <string name="b110"> B110:\t How often did this happen?     </string>
     <string name="b110a"> Rarely (once or twice in the past four weeks)</string>
     <string name="b110b"> Sometimes (three to ten times in the past four weeks)</string>
     <string name="b110c"> Often (more than ten times in the past four weeks)</string>
+
     <string name="b111"> B111:\t Still thinking about the last 12 months, was there a time when you or others in your household ate less than you thought you should because of a lack of money or other resources?</string>
     <string name="b111a"> Yes</string>
     <string name="b111b"> No</string>
     <string name="b111c"> Don’t Know </string>
     <string name="b111d"> Refused</string>
+
     <string name="b112"> B112:\t How often did this happen?      </string>
     <string name="b112a"> Rarely (once or twice in the past four weeks)</string>
     <string name="b112b"> Sometimes (three to ten times in the past four weeks)</string>
     <string name="b112c"> Often (more than ten times in the past four weeks)</string>
+
     <string name="b113"> B113:\t Was there a time when your household ran out of food because of a lack of money or other resources?</string>
     <string name="b113a"> Yes</string>
     <string name="b113b"> No</string>
     <string name="b113c"> Don’t Know </string>
     <string name="b113d"> Refused</string>
+
     <string name="b114"> B114:\t How often did this happen?     </string>
     <string name="b114a"> Rarely (once or twice in the past four weeks)</string>
     <string name="b114b"> Sometimes (three to ten times in the past four weeks)</string>
@@ -786,6 +796,7 @@
     <string name="b302g"> Gift</string>
     <string name="b302h"> food aid</string>
     <string name="b302x"> Other</string>
+
     <string name="b303"> B303:\t Legumes, Nuts and Seeds (beans, peas, lentils)</string>
     <string name="b303a"> Not Consumed </string>
     <string name="b303b"> own production</string>
@@ -806,6 +817,7 @@
     <string name="b304g"> Gift</string>
     <string name="b304h"> food aid</string>
     <string name="b304x"> Other</string>
+
     <string name="b305"> B305:\t Other vegetables</string>
     <string name="b305a"> Not Consumed </string>
     <string name="b305b"> own production</string>
@@ -816,6 +828,7 @@
     <string name="b305g"> Gift</string>
     <string name="b305h"> food aid</string>
     <string name="b305x"> Other</string>
+
     <string name="b306"> B306:\t Fruits</string>
     <string name="b306a"> Not Consumed </string>
     <string name="b306b"> own production</string>
@@ -826,6 +839,7 @@
     <string name="b306g"> Gift</string>
     <string name="b306h"> food aid</string>
     <string name="b306x"> Other</string>
+
     <string name="b307"> B307:\t Organ meat  </string>
     <string name="b307a"> Not Consumed </string>
     <string name="b307b"> own production</string>
@@ -836,6 +850,7 @@
     <string name="b307g"> Gift</string>
     <string name="b307h"> food aid</string>
     <string name="b307x"> Other</string>
+
     <string name="b308"> B308:\t Meat, poultry                 </string>
     <string name="b308a"> Not Consumed </string>
     <string name="b308b"> own production</string>
@@ -846,6 +861,7 @@
     <string name="b308g"> Gift</string>
     <string name="b308h"> food aid</string>
     <string name="b308x"> Other</string>
+
     <string name="b309"> B309:\t Eggs</string>
     <string name="b309a"> Not Consumed </string>
     <string name="b309b"> own production</string>
@@ -856,6 +872,7 @@
     <string name="b309g"> Gift</string>
     <string name="b309h"> food aid</string>
     <string name="b309x"> Other</string>
+
     <string name="b310"> B310:\t Fish and other seafood  </string>
     <string name="b310a"> Not Consumed </string>
     <string name="b310b"> own production</string>
@@ -866,6 +883,7 @@
     <string name="b310g"> Gift</string>
     <string name="b310h"> food aid</string>
     <string name="b310x"> Other</string>
+
     <string name="b311"> B311:\t Milk and milk products milk, yogurt, cheese, other milk products),    </string>
     <string name="b311a"> Not Consumed </string>
     <string name="b311b"> own production</string>
@@ -876,6 +894,7 @@
     <string name="b311g"> Gift</string>
     <string name="b311h"> food aid</string>
     <string name="b311x"> Other</string>
+
     <string name="b312"> B312:\t Oils and fats </string>
     <string name="b312a"> Not Consumed </string>
     <string name="b312b"> own production</string>
@@ -897,6 +916,7 @@
     <string name="b313g"> Gift</string>
     <string name="b313h"> food aid</string>
     <string name="b313x"> Other</string>
+
     <string name="b314"> B314:\t Spices, Condiments and Beverages  </string>
     <string name="b314a"> Not Consumed </string>
     <string name="b314b"> own production</string>
@@ -1050,6 +1070,7 @@
     <string name="c206c"> Rarely (once) </string>
     <string name="c206d"> Never</string>
     <string name="c206e"> Don’t know  </string>
+
     <string name="c207"> C207:\t How often did your child go to the dentist during the past 12 months? </string>
     <string name="c207a"> Once </string>
     <string name="c207b"> Twice </string>
@@ -1057,6 +1078,7 @@
     <string name="c207d"> More than 3 times </string>
     <string name="c207e"> Never  </string>
     <string name="c207f"> Don’t know </string>
+
     <string name="c208"> C208:\t What was the reason for your child’s last dental visit?</string>
     <string name="c208a"> Pain with teeth, gums or mouth </string>
     <string name="c208b"> Bleeding with teeth, gums or mouth</string>
@@ -1064,6 +1086,7 @@
     <string name="c208d"> Routine check &#8211; up of teeth</string>
     <string name="c208e"> Don’t know </string>
     <string name="c208x"> Other Specify </string>
+
     <string name="c209"> C209:\t What type of health care professional did you take (child name) to see for his/her teeth and gum care? </string>
     <string name="c209a"> Public/private Doctor </string>
     <string name="c209b"> Private Dentist</string>
@@ -1073,10 +1096,12 @@
     <string name="c209f"> Hakeem </string>
     <string name="c209g"> Don’t know </string>
     <string name="c209x"> Other specify </string>
+
     <string name="c210"> C210:\t During past 12 months, was there a time when (child name) needed dental care but could not get it at that time? </string>
     <string name="c210a"> Yes</string>
     <string name="c210b"> No</string>
     <string name="c210c"> Don’t Know</string>
+
     <string name="c211"> C211:\t What were the reasons that you could not get the dental care he/she needed?</string>
     <string name="c211a"> No dentist in the area </string>
     <string name="c211b"> Could not afford cost </string>
@@ -1087,6 +1112,7 @@
     <string name="c211g"> Did not think it was serious/problem would go away</string>
     <string name="c211h"> Don’t know   </string>
     <string name="c211x"> Other specify</string>
+
     <string name="c212"> C212:\t What was the reason for your child’s dental visit?</string>
     <string name="c212a"> Pain with teeth, gums or mouth </string>
     <string name="c212b"> Bleeding with teeth, gums or mouth</string>
@@ -1094,6 +1120,7 @@
     <string name="c212d"> Routine check &#8211; up of teeth</string>
     <string name="c212e"> Don’t know </string>
     <string name="c212x"> Other Specify </string>
+
     <string name="c213"> C213:\t How often (child name) wash his/her hands with soap or detergent or ash/mud/sand? [Multiple responses]</string>
     <string name="c213a"> After using toilet </string>
     <string name="c213b"> Before eating food  </string>
@@ -1544,6 +1571,7 @@
     <string name="d106sube"> &gt; 8 glasses per day </string>
 
     <string name="td2heading">SECTION D2: DAIRY </string>
+
     <string name="d201"> D201:\t What type of white milk do your (child name) usually drink ? </string>
     <string name="d201a"> Cow milk </string>
     <string name="d201b"> Goat milk </string>
@@ -1562,6 +1590,7 @@
     <string name="d202f"> 5–6 glasses per week </string>
     <string name="d202g"> 1–3 glasses per month  </string>
     <string name="d202h"> Never/less than 1 per month </string>
+
     <string name="d203"> D203:\t Other milk/ yogurt-based drink (i.e. lassi)</string>
     <string name="d203a"> 1 glass per day  </string>
     <string name="d203b"> 2 &#8211; 3 glasses per day </string>
@@ -1571,6 +1600,7 @@
     <string name="d203f"> 5–6 glasses per week </string>
     <string name="d203g"> 1–3 glasses per month  </string>
     <string name="d203h"> Never/less than 1 per month </string>
+
     <string name="d204"> D204:\t Flavored milk (i.e. chocolate)</string>
     <string name="d204a"> 1 glass per day  </string>
     <string name="d204b"> 2 &#8211; 3 glasses per day </string>
@@ -1580,6 +1610,7 @@
     <string name="d204f"> 5–6 glasses per week </string>
     <string name="d204g"> 1–3 glasses per month  </string>
     <string name="d204h"> Never/less than 1 per month </string>
+
     <string name="d205"> D205:\t Yogurt </string>
     <string name="d205a"> Plain</string>
     <string name="d205b"> Sweetened</string>
@@ -1591,6 +1622,7 @@
     <string name="d205sube"> 3 &#8211; 6 cups per week </string>
     <string name="d205subf"> 1–3 cups per month </string>
     <string name="d205subg"> Never/less than 1 per month  </string>
+
     <string name="d206"> D206:\t What type of cheese – eaten alone or added to main dish?</string>
     <string name="d206a"> Paneer</string>
     <string name="d206b"> Cottage cheese </string>
@@ -1605,6 +1637,7 @@
     <string name="d206sube"> 2 &#8211; 6 slices/cups per week</string>
     <string name="d206subf"> 1–3 slices/cups per month </string>
     <string name="d206subg"> Never/less than 1 per month </string>
+
     <string name="d207"> D207:\t Butter (1 serving = 1 tablespoon)</string>
     <string name="d207a"> 1 spoon per day  </string>
     <string name="d207b"> 2 &#8211; 4 spoons per day  </string>
@@ -1613,6 +1646,7 @@
     <string name="d207e"> 2 &#8211; 6 spoons per week  </string>
     <string name="d207f"> 1–3 spoons per month  </string>
     <string name="d207g"> Never/less than 1 per month </string>
+
     <string name="d208"> D208:\t Margarine</string>
     <string name="d208a"> 1 spoon per day  </string>
     <string name="d208b"> 2 &#8211; 4 spoons per day  </string>
@@ -1621,6 +1655,7 @@
     <string name="d208e"> 2 &#8211; 6 spoons per week  </string>
     <string name="d208f"> 1–3 spoons per month  </string>
     <string name="d208g"> Never/less than 1 per month </string>
+
     <string name="d209"> D209:\t Ghee </string>
     <string name="d209a"> Banaspati/Dalda  </string>
     <string name="d209b"> Desi</string>
@@ -1632,6 +1667,7 @@
     <string name="d209sube"> 2 &#8211; 6 spoons per week  </string>
     <string name="d209subf"> 1–3 spoons per month  </string>
     <string name="d209subg"> Never/less than 1 per month </string>
+
     <string name="d210"> D210:\t What type of oil does your family use at home (Select all that apply)</string>
     <string name="d210a"> Canola oil  </string>
     <string name="d210b"> Corn oil  </string>
@@ -1642,6 +1678,7 @@
     <string name="d210g"> Don’t know </string>
 
     <string name="td3heading">SECTION D3: FAST FOOD/JUNK FOOD/SNACKS </string>
+
     <string name="d301"> D301:\t Sweets (cake, pastries)</string>
     <string name="d301a"> At home </string>
     <string name="d301b"> Outside of home </string>
@@ -1652,6 +1689,7 @@
     <string name="d301subc"> More than 4 times per week  </string>
     <string name="d301subd"> 1–3 times per month </string>
     <string name="d301sube"> Never/less than 1 per month </string>
+
     <string name="d302"> D302:\t Biscuits </string>
     <string name="d302a"> At home </string>
     <string name="d302b"> Outside of home </string>
@@ -1662,6 +1700,7 @@
     <string name="d302subc"> More than 4 times per week  </string>
     <string name="d302subd"> 1–3 times per month </string>
     <string name="d302sube"> Never/less than 1 per month </string>
+
     <string name="d303"> D303:\t Candy</string>
     <string name="d303a"> At home </string>
     <string name="d303b"> Outside of home </string>
@@ -1672,6 +1711,7 @@
     <string name="d303subc"> More than 4 times per week  </string>
     <string name="d303subd"> 1–3 times per month </string>
     <string name="d303sube"> Never/less than 1 per month </string>
+
     <string name="d304"> D304:\t Chocolate</string>
     <string name="d304a"> At home </string>
     <string name="d304b"> Outside of home </string>
@@ -1682,6 +1722,7 @@
     <string name="d304subc"> More than 4 times per week  </string>
     <string name="d304subd"> 1 &#8211; 3 times per month </string>
     <string name="d304sube"> Never/less than 1 per month </string>
+
     <string name="d305"> D305:\t Packaged potato chips, crisps </string>
     <string name="d305a"> At home </string>
     <string name="d305b"> Outside of home </string>
@@ -1692,6 +1733,7 @@
     <string name="d305subc"> More than 4 times per week  </string>
     <string name="d305subd"> 1 &#8211; 3 times per month </string>
     <string name="d305sube"> Never/less than 1 per month </string>
+
     <string name="d306"> D306:\t French fries             </string>
     <string name="d306a"> At home </string>
     <string name="d306b"> Outside of home </string>
@@ -1702,6 +1744,7 @@
     <string name="d306subc"> More than 4 times per week  </string>
     <string name="d306subd"> 1 &#8211; 3 times per month </string>
     <string name="d306sube"> Never/less than 1 per month </string>
+
     <string name="d307"> D307:\t Kulfi          </string>
     <string name="d307a"> At home </string>
     <string name="d307b"> Outside of home </string>
@@ -1712,6 +1755,7 @@
     <string name="d307subc"> More than 4 times per week  </string>
     <string name="d307subd"> 1 &#8211; 3 times per month </string>
     <string name="d307sube"> Never/less than 1 per month </string>
+
     <string name="d308"> D308:\t Fried food (fried chicken, samosa, Patties, pakora)</string>
     <string name="d308a"> At home </string>
     <string name="d308b"> Outside of home </string>
@@ -1722,6 +1766,7 @@
     <string name="d308subc"> More than 4 times per week  </string>
     <string name="d308subd"> 1 &#8211; 3 times per month </string>
     <string name="d308sube"> Never/less than 1 per month </string>
+
     <string name="d309"> D309:\t Bun kebab/Sandwich /Burger</string>
     <string name="d309a"> At home </string>
     <string name="d309b"> Outside of home </string>
@@ -1732,6 +1777,7 @@
     <string name="d309subc"> More than 4 times per week  </string>
     <string name="d309subd"> 1–3 times per month </string>
     <string name="d309sube"> Never/less than 1 per month </string>
+
     <string name="d310"> D310:\t Pizza (2 slices)</string>
     <string name="d310a"> At home </string>
     <string name="d310b"> Outside of home </string>
@@ -1742,6 +1788,7 @@
     <string name="d310subc"> More than 4 times per week  </string>
     <string name="d310subd"> 1 &#8211; 3 times per month </string>
     <string name="d310sube"> Never/less than 1 per month </string>
+
     <string name="d311"> D311:\t Noodles (Chinese)</string>
     <string name="d311a"> At home </string>
     <string name="d311b"> Outside of home </string>
@@ -1754,30 +1801,35 @@
     <string name="d311sube"> Never/less than 1 per month </string>
 
     <string name="td4heading">SECTION D4: MEATS AND ALTERNATIVES </string>
+
     <string name="d401"> D401:\t Beef or lamb main dish (i.e. kebabs, curry)</string>
     <string name="d401a"> Once per week </string>
     <string name="d401b"> 2 &#8211; 4 times per week  </string>
     <string name="d401c"> More than 4 times per week  </string>
     <string name="d401d"> 1–3 times per month </string>
     <string name="d401e">  Never/less than 1 per month </string>
+
     <string name="d402"> D402:\t Chicken main dish (i.e. kebabs, curry)</string>
     <string name="d402a"> Once per week </string>
     <string name="d402b"> 2 &#8211; 4 times per week  </string>
     <string name="d402c"> More than 4 times per week  </string>
     <string name="d402d"> 1–3 times per month </string>
     <string name="d402e">  Never/less than 1 per month </string>
+
     <string name="d403"> D403:\t Other meat (goat, mutton) as main dish</string>
     <string name="d403a"> Once per week </string>
     <string name="d403b"> 2 &#8211; 4 times per week  </string>
     <string name="d403c"> More than 4 times per week  </string>
     <string name="d403d"> 1–3 times per month </string>
     <string name="d403e">  Never/less than 1 per month </string>
+
     <string name="d404"> D404:\t Eggs</string>
     <string name="d404a"> Once per week </string>
     <string name="d404b"> 2 &#8211; 4 times per week  </string>
     <string name="d404c"> More than 4 times per week  </string>
     <string name="d404d"> 1–3 times per month </string>
     <string name="d404e">  Never/less than 1 per month </string>
+
     <string name="d405"> D405:\t Fish and seafood (as main dish)</string>
     <string name="d405a"> Once per week </string>
     <string name="d405b"> 2 &#8211; 4 times per week  </string>
@@ -1793,6 +1845,7 @@
     <string name="d601d"> 5 &#8211; 7 bowls per week </string>
     <string name="d601e"> 1 &#8211; 3 bowls per month </string>
     <string name="d601f"> Never/less than 1 per month </string>
+
     <string name="d602"> D602:\t Hot cereal (oatmeal or other types of cooked breakfast cereal)      </string>
     <string name="d602a"> More than 1 bowl per day </string>
     <string name="d602b"> One bowl per week </string>
@@ -1800,6 +1853,7 @@
     <string name="d602d"> 5 &#8211; 7 bowls per week </string>
     <string name="d602e"> 1 &#8211; 3 bowls per month </string>
     <string name="d602f"> Never/less than 1 per month </string>
+
     <string name="d603"> D603:\t White bread (i.e. naan)    </string>
     <string name="d603a"> 2 &#8211; 3 slices per day </string>
     <string name="d603b">  More than 3 slices per day </string>
@@ -1807,6 +1861,7 @@
     <string name="d603d"> 2 &#8211; 4 slices per week </string>
     <string name="d603e"> 5 &#8211; 7 slices per week </string>
     <string name="d603f"> Never/less than 1 per month</string>
+
     <string name="d604"> D604:\t Wheat bread (i.e. roti/chapati)    </string>
     <string name="d604a"> 2 &#8211; 3 slices per day </string>
     <string name="d604b"> More than 3 slices per day </string>
@@ -1814,6 +1869,7 @@
     <string name="d604d"> 2 &#8211; 4 slices per week </string>
     <string name="d604e"> 5 &#8211; 7 slices per week </string>
     <string name="d604f"> Never/less than 1 per month</string>
+
     <string name="d605"> D605:\t Gram flour bread (chickpea flour bread)      </string>
     <string name="d605a"> 2 &#8211; 3 slices per day </string>
     <string name="d605b"> More than 3 slices per day</string>
@@ -1821,12 +1877,14 @@
     <string name="d605d"> 2 &#8211; 4 slices per week </string>
     <string name="d605e"> 5 &#8211; 7 slices per week </string>
     <string name="d605f"> Never/less than 1 per month</string>
+
     <string name="d606"> D606:\t White rice (1 serving)        </string>
     <string name="d606a">  Once per week </string>
     <string name="d606b"> 2 &#8211; 4 times per week  </string>
     <string name="d606c"> More than 4 times per week </string>
     <string name="d606d"> 1 &#8211; 3 times per month</string>
     <string name="d606e"> Never/less than 1 per month</string>
+
     <string name="d607"> D607:\t Other grains (maize, barley)   </string>
     <string name="d607a"> Once per week</string>
     <string name="d607b"> 2 &#8211; 4 times per week  </string>
@@ -1835,36 +1893,42 @@
     <string name="d607e"> Never/less than 1 per month </string>
 
     <string name="td7heading">SECTION D7: FRUITS AND VEGETABLES </string>
-    <string name="d701"> D701:\t Banana                          </string>
+
+    <string name="d701"> D701:\t Banana </string>
     <string name="d701a"> Once per week </string>
     <string name="d701b"> 2 &#8211; 4 times per week  </string>
     <string name="d701c"> More than 4 times per week  </string>
     <string name="d701d"> 1 &#8211; 3 times per month </string>
     <string name="d701e"> Never/less than 1 per month </string>
-    <string name="d702"> D702:\t Apple                </string>
+
+    <string name="d702"> D702:\t Apple </string>
     <string name="d702a"> Once per week </string>
     <string name="d702b"> 2 &#8211; 4 times per week  </string>
     <string name="d702c"> More than 4 times per week  </string>
     <string name="d702d"> 1 &#8211; 3 times per month </string>
     <string name="d702e"> Never/less than 1 per month </string>
+
     <string name="d703"> D703:\t Citrus fruits (oranges, grapefruit)</string>
     <string name="d703a"> 1 or more per day  </string>
     <string name="d703b"> Once per week </string>
     <string name="d703c"> 2 &#8211; 6 times per week  </string>
     <string name="d703d"> 1 &#8211; 3 times per month </string>
     <string name="d703e"> Never/less than 1 per month </string>
+
     <string name="d704"> D704:\t Vitamin A rich fruits (mango, papaya)</string>
     <string name="d704a"> 1 or more per day  </string>
     <string name="d704b"> Once per week </string>
     <string name="d704c"> 2 &#8211; 6 times per week  </string>
     <string name="d704d"> 1 &#8211; 3 times per month </string>
     <string name="d704e"> Never/less than 1 per month </string>
+
     <string name="d705"> D705:\t Other fruits (Strawberries, pomegranate, guava, kiwi)</string>
     <string name="d705a"> 1 or more per day  </string>
     <string name="d705b"> Once per week </string>
     <string name="d705c"> 2 &#8211; 6 times per week  </string>
     <string name="d705d"> 1 &#8211; 3 times per month </string>
     <string name="d705e"> Never/less than 1 per month </string>
+
     <string name="d706"> D706:\t Orange juice or other 100% fruit juices (i.e. mango)</string>
     <string name="d706a"> 1 glass per day </string>
     <string name="d706b"> More than 1 glass per day </string>
@@ -1872,30 +1936,35 @@
     <string name="d706d"> 2 &#8211; 6 glasses per week</string>
     <string name="d706e"> 1 &#8211; 3 glass per month </string>
     <string name="d706f"> Never/less than 1 per month </string>
+
     <string name="d707"> D707:\t Dark green leafy vegetables (spinach, lettuce)</string>
     <string name="d707a"> 1 or more per day  </string>
     <string name="d707b"> Once per week </string>
     <string name="d707c"> 2 &#8211; 6 times per week  </string>
     <string name="d707d"> 1 &#8211; 3 times per month </string>
     <string name="d707e"> Never/less than 1 per month </string>
+
     <string name="d708"> D708:\t Pulses/legumes (Beans, peas, lentils)</string>
     <string name="d708a"> 1 or more per day  </string>
     <string name="d708b"> Once per week </string>
     <string name="d708c"> 2 &#8211; 6 times per week  </string>
     <string name="d708d"> 1 &#8211; 3 times per month </string>
     <string name="d708e"> Never/less than 1 per month </string>
+
     <string name="d709"> D709:\t Roots and tubers (potatoes, cassava)                      </string>
     <string name="d709a"> Once per week </string>
     <string name="d709b"> 2 &#8211; 4 times per week  </string>
     <string name="d709c"> More than 4 times per week  </string>
     <string name="d709d"> 1 &#8211; 3 times per month </string>
     <string name="d709e"> Never/less than 1 per month </string>
-    <string name="d710"> D710:\t Vitamin A rich vegetables (Carrots, sweet potato, red pepper, squash)                   </string>
+
+    <string name="d710"> D710:\t Vitamin A rich vegetables (Carrots, sweet potato, red pepper, squash) </string>
     <string name="d710a"> Once per week </string>
     <string name="d710b"> 2 &#8211; 4 times per week  </string>
     <string name="d710c"> More than 4 times per week  </string>
     <string name="d710d"> 1 &#8211; 3 times per month </string>
     <string name="d710e"> Never/less than 1 per month </string>
+
     <string name="d711"> D711:\t Other vegetables (Green beans, cauliflower, okra, zucchini, tomato)                     </string>
     <string name="d711a"> Once per week </string>
     <string name="d711b"> 2 &#8211; 4 times per week  </string>
@@ -2145,10 +2214,12 @@
     <string name="s2q3"> s2q3: Presence of appetite for RUTF / RUSF ? </string>
     <string name="s2q3a"> Yes</string>
     <string name="s2q3b"> No.</string>
+
     <string name="s2q4"> s2q4: If Yes then rank : -	Appetite returned (eats at least 75% of RUTF+RUSF)</string>
     <string name="s2q4a"> Good(Child takes RUTF/RUSF) eagerly</string>
     <string name="s2q4b"> Poor(Child takes RUTF/RUSF with persistent encouragement)</string>
     <string name="s2q4c"> Refused (Child refuses RUTF/RUSF even after persistent encouragement</string>
+
     <string name="s2q5_subtitle"> s2q5_subtitle: Presence of any medical complication?</string>
     <string name="s2q4_instruction"> Appetite returned (eats at least 75% of RUTF+RUSF)</string>
 
@@ -2157,6 +2228,13 @@
     <string name="s2q501b"> No.</string>
 
     <string name="s2q502"> s2q502: Vomits everything</string>
+
+
+    <string name="s2q506"> s2q506: Severe anemia</string>
+
+
+    =======
+    >>>>>>> origin/master
     <string name="s2q502a"> Yes</string>
     <string name="s2q502b"> No.</string>
 
@@ -2172,7 +2250,7 @@
     <string name="s2q505a"> Yes</string>
     <string name="s2q505b"> No.</string>
 
-    <string name="s2q506"> s2q506: Severe anemia</string>
+    <string name="s2q506" tools:ignore="DuplicateDefinition"> s2q506: Severe anemia</string>
     <string name="s2q506a"> Yes</string>
     <string name="s2q506b"> No.</string>
 
@@ -2189,7 +2267,9 @@
     <string name="s2q6b"> No.</string>
 
     <string name="s2q7"> s2q7: Is child developmentally delayed?</string>
+
     <string name="s2q8"> s2q8: Child has a chronic debilitating illness such as cerebral palsy (not including HIV or TB)?</string>
+
     <string name="s2q9"> s2q9: Child had a history of milk or peanut allergy?</string>
     <string name="s2q7a"> Yes</string>
     <string name="s2q8a"> Yes</string>
@@ -2216,19 +2296,24 @@
     <string name="s4q6"> s4q6: Child gender</string>
     <string name="s4q6a"> Male</string>
     <string name="s4q6b"> Female</string>
+
     <string name="s4q7"> s4q7: Child Date of brith or Age at recruitment</string>
     <string name="s4q7a"> Date of Birth</string>
     <string name="s4q7b"> Age at the time of recruitment</string>
     <string name="s4q7dob"> s4q7dob: Date of Birth</string>
     <string name="s4q7days"> s4q7days: Age in Days</string>
     <string name="s4q7mon"> s4q7mon: Age in Months</string>
+
     <string name="s4q8"> s4q8: Was the child born full-term?</string>
     <string name="s4q8a"> Yes</string>
     <string name="s4q8b"> No.</string>
+
     <string name="s4q9"> s4q9: Gestational age at birth in weeks ?</string>
+
     <string name="s4q10"> s4q10: Was (Name) weighed at birth?</string>
     <string name="s410q410a"> Yes</string>
     <string name="s410q410b"> No.</string>
+
     <string name="s4q11"> s4q11: How much did (Name) weigh? kgs</string>
     <string name="s4subtitle"> s4subtitle: Child Anthropometry</string>
     <string name="meas01"> meas01: Name of Data Collector 01</string>
@@ -2239,38 +2324,49 @@
     <string name="s4q14m2hei"> s4q14m2hei: Height/Length: (cm)</string>
     <string name="s4q15m2wei"> s4q15m2wei: Weight (kg):</string>
     <string name="s4q15m2mua"> s4q15m2mua: MUAC (cm)</string>
+
     <string name="s5q1_title"> s5q1_title: Did the child (Name) have any of the following illnesses during last two weeks?</string>
     <string name="s5q101"> High grade fever</string>
     <string name="s5q101a"> Yes</string>
     <string name="s5q101b"> No.</string>
+
     <string name="s5q102"> s5q102: Diarrhea</string>
     <string name="s5q102a"> Yes</string>
     <string name="s5q102b"> No.</string>
+
     <string name="s5q103"> s5q103: Cough/Flu</string>
     <string name="s5q103a"> Yes</string>
     <string name="s5q103b"> No.</string>
+
     <string name="s5q104"> s5q104: Difficult/Fast breathing</string>
     <string name="s5q104a"> Yes</string>
     <string name="s5q104b"> No.</string>
+
     <string name="s5q105"> s5q105: Chest in drawing</string>
     <string name="s5q105a"> Yes</string>
     <string name="s5q105b"> No.</string>
+
     <string name="s5q106"> s5q106: Skin infection</string>
     <string name="s5q106a"> Yes</string>
     <string name="ss5q106b"> No.</string>
+
     <string name="s5q107"> s5q107: Worms in stool</string>
     <string name="s5q107a"> Yes</string>
     <string name="s5q107b"> No.</string>
+
     <string name="s5q108"> s5q108: Rashes</string>
     <string name="s5q108a"> Yes</string>
     <string name="s5q108b"> No.</string>
+
     <string name="s5q196"> s5q196: Other</string>
     <string name="s5q196a"> Yes</string>
     <string name="s5q196b"> No.</string>
     <string name="s5q196x"> s5q196x: Other (Specify)</string>
+
     <string name="s5q2"> s5q2: Did you seek any care for these illnesses during last two weeks?</string>
     <string name="s5q2a"> Yes</string>
     <string name="s5q2b"> No.</string>
+
     <string name="s5q3"> s5q3: Who did you see for the illnesses during last two weeks?  Anyone else?</string>
     <string name="s5q3_subtitlea"> HEALTH PERSONNEL</string>
     <string name="s5q301"> Doctor</string>
@@ -2283,10 +2379,13 @@
     <string name="s5q307"> Hakim</string>
     <string name="s5q308"> Dispenser/Compounder</string>
     <string name="s5q3096"> Other (Specify)</string>
+
     <string name="s5q4"> s5q4: Did the child (Name) have to stay in the hospital during last two weeks for treatment of any of these illnesses?</string>
     <string name="s5q4a"> Yes</string>
     <string name="s5q4b"> No.</string>
+
     <string name="s5q5"> s5q5: How many days did child (Name) stay in the hospital during last two weeks for treatment of any of these illnesses?</string>
+
     <string name="s6q1"> s6q1: What is your mother tongue/native language?</string>
     <string name="s6q101"> Urdu</string>
     <string name="s6q102"> Punjabi</string>
@@ -2296,6 +2395,7 @@
     <string name="s6q106"> Siraiki</string>
     <string name="s6q107"> Dhatki</string>
     <string name="s6q196"> Other (Specify)</string>
+
     <string name="s6q2"> s6q2: What is the main source of drinking water in your house hold?</string>
     <string name="s6q201"> Piped Water</string>
     <string name="s6q202"> Municipal committee piped into dwelling </string>
@@ -2314,9 +2414,11 @@
     <string name="s6q215"> Irrigation channel</string>
     <string name="s6q216"> Bottled water</string>
     <string name="s6q296"> Other (Specify)</string>
+
     <string name="s6q3"> s6q3: Do you take any step to make the water safer to drink?</string>
     <string name="s6q301"> Yes</string>
     <string name="s6q302"> No </string>
+
     <string name="s6q4"> s6q4: If yes, what do you usually do to make the water safe to drink? </string>
     <string name="s6q401"> Boil</string>
     <string name="s6q402"> Add bleach/chlorine</string>
@@ -2325,6 +2427,7 @@
     <string name="s6q405"> Solar disinfection</string>
     <string name="s6q406"> Let it stand and settle</string>
     <string name="s6q496"> Other (Specify)</string>
+
     <string name="s6q5"> s6q5: What type of toilet facilities do you usually use in your house hold?</string>
     <string name="s6q5_subtitlea"> A. Flush or Pour Flush Toilet </string>
     <string name="s6q501"> Flush to piped sewerage system </string>
@@ -2338,12 +2441,15 @@
     <string name="s6q508"> Bucket toilet </string>
     <string name="s6q509"> No facility/bush/field</string>
     <string name="s6q596"> Other (Specify)</string>
+
     <string name="s6q6"> s6q6: Do you share this toilet facility with other households? </string>
     <string name="s6q601"> Yes</string>
     <string name="s6q602"> No</string>
+
     <string name="s6q7"> s6q7: If yes, how many other households use this toilet facility? </string>
     <string name="s6q701"> No. of households</string>
-    <string name="s6q8"> s6q8: Are following facilities available in your house hold?                  </string>
+
+    <string name="s6q8"> s6q8: Are following facilities available in your house hold? </string>
     <string name="s6q8a"> Electricity Connection</string>
     <string name="s6q8b">  Radio</string>
     <string name="s6q8c"> Television </string>
@@ -2363,6 +2469,7 @@
     <string name="s6q8q"> Computer</string>
     <string name="s6q8r"> Internet connection</string>
     <string name="s6q8s"> Sink/Dishwashing Station </string>
+
     <string name="s6q9"> s6q9: What type of fuel do you often use in your household?</string>
     <string name="s6q901"> Electricity</string>
     <string name="s6q902"> LPG</string>
@@ -2375,14 +2482,17 @@
     <string name="s6q909"> Animal Dung </string>
     <string name="s6q910"> No food cooked in household</string>
     <string name="s6q996"> Other (Specify)</string>
+
     <string name="s6q10"> s6q10: Is the cooking usually done in the house, in a separate room/space, or outdoors? </string>
     <string name="s6q1001"> In the house</string>
     <string name="s6q1002"> In a separate area/room </string>
     <string name="s6q1003"> Outdoors</string>
     <string name="s6q1096"> Other (Specify)</string>
+
     <string name="s6q11"> s6q11: Do you have a separate room which is used as a kitchen? </string>
     <string name="s6q1101"> Yes</string>
     <string name="s6q1102"> No</string>
+
     <string name="s6q12"> s6q12: Main material of the FLOOR </string>
     <string name="s6q12_subtitlea"> Natural Floor</string>
     <string name="s6q1201"> Earth/Sand/Mud</string>
@@ -2399,6 +2509,7 @@
     <string name="s6q1210"> Mats</string>
     <string name="s6q1211"> Marble</string>
     <string name="s6q1296"> Other (Specify)</string>
+
     <string name="s6q13"> s6q13: Main material of the ROOF</string>
     <string name="s6q13_subtitlea"> Natural Roofing </string>
     <string name="s6q1301"> No roof</string>
@@ -2417,6 +2528,7 @@
     <string name="s6q1313"> Wood</string>
     <string name="s6q1396"> Other (Specify)</string>
     <string name="s6q1396x"> Other( Specify)</string>
+
     <string name="s6q14"> s6q14: Main material of the WALLS </string>
     <string name="s6q1401"> No walls</string>
     <string name="s6q1402"> Cane/Palm/Trunks </string>
@@ -2430,48 +2542,64 @@
     <string name="s6q1410"> Stone with cement/lime </string>
     <string name="s6q1411"> Carton/plastic </string>
     <string name="s6q1496"> Other (Specify)</string>
+
     <string name="s6q15"> s6q15: How many rooms in this household are used for sleeping? </string>
+
     <string name="s6q16"> s6q16: Does any member of this household own?</string>
+
     <string name="s6q16a"> s6q16a: Watch</string>
     <string name="s6q16a01"> Yes   </string>
     <string name="s6q16a02"> No</string>
+
     <string name="s6q16b"> s6q16b: Mobile telephone  </string>
     <string name="s6q16b01">  Yes     </string>
     <string name="s6q16b02"> No</string>
+
     <string name="s6q16c"> s6q16c: Bicycle</string>
     <string name="s6q16c01"> Yes</string>
     <string name="s6q16c02">   No</string>
+
     <string name="s6q16d"> s6q16d: Motorcycle or scooter  </string>
     <string name="s6q16d01"> Yes</string>
     <string name="s6q16d02">  No</string>
+
     <string name="s6q16e"> s6q16e: Animal-drawn cart </string>
     <string name="s6q16e01"> Yes</string>
     <string name="s6q16e02">  No</string>
+
     <string name="s6q16f"> s6q16f: Car or truck or bus</string>
     <string name="s6q16f01"> Yes</string>
     <string name="s6q16f02"> No</string>
+
     <string name="s6q16g"> s6q16g: Tractor  </string>
     <string name="s6q16g01"> Yes</string>
     <string name="s6q16g02"> No</string>
+
     <string name="s6q16h"> s6q16h: Boat with a motor  </string>
     <string name="s6q16h01"> Yes</string>
     <string name="s6q16h02"> No</string>
+
     <string name="s6q16i"> s6q16i: Boat without motor </string>
     <string name="s6q16i01"> Yes</string>
     <string name="s6q16i02"> No</string>
+
     <string name="s6q16j"> s6q16j: Animal to draw water from dug well</string>
     <string name="s6q16j01">  Yes</string>
     <string name="s6q16j02"> No</string>
+
     <string name="s6q17"> s6q17: Does any member of this household own any agricultural land? </string>
     <string name="s6q1701"> Yes</string>
     <string name="s6q1702"> No</string>
+
     <string name="s6q18"> s6q18: If yes, how many acres or canals of agricultural land do members of this household own? </string>
     <string name="s6q1801"> Acre</string>
     <string name="s6q1802"> Canal</string>
     <string name="s6q1899"> Don’t know</string>
+
     <string name="s6q19"> s6q19: Does your household own livestock, animals or poultry?</string>
     <string name="s6q1901"> Yes</string>
     <string name="s6q1902"> No</string>
+
     <string name="s6q20"> s6q20: If yes, how many livestock, animals or poultry does your household own?   Ask for each listed animal, one by one and insert  00 if none</string>
     <string name="s6q20a"> Cows, bulls </string>
     <string name="s6q20b"> Horses/Donkeys/Mules  </string>
@@ -2480,12 +2608,14 @@
     <string name="s6q20e"> Chickens /Poultry </string>
     <string name="s6q20f"> Buffalo</string>
     <string name="s6q20g"> Camels</string>
+
     <string name="s7q1"> s7q1: Please show us where you and members of your household most often wash their hands.</string>
     <string name="s7q101"> Observed</string>
     <string name="s7q102"> Not observed  </string>
     <string name="s7q103"> Not in dwelling/plot/yard</string>
     <string name="s7q104"> No permission to see </string>
     <string name="s7q105"> Other reason</string>
+
     <string name="s7q2"> s7q2: Observe presence of water at the specific place for hand washing</string>
     <string name="s7q201"> Water is available </string>
     <string name="s7q202"> Water is not available</string>
@@ -2495,15 +2625,18 @@
     <string name="s7q303"> Liquid soap</string>
     <string name="s7q304"> Ash/mud/sand  </string>
     <string name="s7q305"> None</string>
+
     <string name="s7q4"> s7q4: Do you have any soap or detergent in your household for hand washing? </string>
     <string name="s7q401"> Yes</string>
     <string name="s7q402"> No</string>
+
     <string name="s7q5"> s7q5: If yes, can you please show it to me? </string>
     <string name="s7q501"> Bar soap</string>
     <string name="s7q502"> Detergent (powder/liquid/paste) </string>
     <string name="s7q503"> Liquid soap </string>
     <string name="s7q504"> Ash/mud/sand  </string>
     <string name="s7q505"> None</string>
+
     <string name="s7q6"> s7q6: In what situations do you wash your hands with soap?  This is an open-ended question. Do not read the answer choices.  After the respondent stops listing times, ask “Are there any other situations where you wash your hands with soap?” Keep asking this question until the respondent thinks there are no other times. </string>
     <string name="s7q601"> Before preparing food</string>
     <string name="s7q602"> Before cooking food</string>
@@ -2520,48 +2653,93 @@
     <string name="s8q1"> s8q1: In the past four weeks, did you worry that your household would not have enough food?</string>
     <string name="s8q101"> Yes</string>
     <string name="s8q102"> No</string>
+
+    <string name="s8q11"> s8q1.1: How often did this happen?</string>
+    <string name="s8q1101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q1102"> Sometimes (3-10 times in the past four weeks) </string>
+    <string name="s8q1103"> Often (more than ten times in the past four weeks) </string>
+    <string name="s8q2"> s8q2: In the past four weeks, were you or any household member not able to eat the kinds of foods you preferred because of a lack of resources?</string>
+    <string name="s8q201"> Yes</string>
+    <string name="s8q202"> No</string>
+
+    <string name="s8q21"> s8q2.1: How often did this happen?</string>
+    <string name="s8q2101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q2102"> Sometimes (3-10 times in the past four weeks) </string>
+    <string name="s8q2103"> Often (more than ten times in the past four weeks) 3</string>
+
+    <string name="s8q3"> s8q3: In the past four weeks, did you or any household member have to eat a limited variety of foods due to a lack of resources?</string>
+    <string name="s8q301"> Yes</string>
+    <string name="s8q302"> No</string>
+
+    <string name="s8q31"> s8q3.1: How often did this happen?</string>
+    <string name="s8q3101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q3102"> Sometimes (3-10 times in the past four weeks) </string>
+    <string name="s8q3103"> Often (more than ten times in the past four weeks) 3</string>
+
+    <string name="s8q4"> s8q4: In the past four weeks, did you or any household member have to eat some foods that you really did not want to eat because of a lack of resources to obtain other types of food?</string>
+    <string name="s8q401"> Yes</string>
+    <string name="s8q402"> No</string>
+
+    <string name="s8q41"> s8q4.1: How often did this happen?</string>
+    <string name="s8q4101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q4102"> Sometimes (3-10 times in the past four weeks) </string>
+    <string name="s8q4103"> Often (more than ten times in the past four weeks) </string>
+
+    <string name="s8q5"> s8q5: In the past four weeks, did you or any household member have to eat a smaller meal than you felt you needed because there was not enough food?</string>
+    <string name="s8q501"> Yes</string>
+    <string name="s8q502"> No</string>
+
+    <string name="s8q51"> s8q5.1: How often did this happen? </string>
+    <string name="s8q5101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q5102"> Sometimes (3-10 times in the past four weeks) </string>
+    <string name="s8q5103"> Often (more than ten times in the past four weeks) </string>
+
+    <string name="s8q6"> s8q6: In the past four weeks, did you or any other household member have to eat fewer meals in a day because there was not enough food?</string>
+    <string name="s8q601"> Yes</string>
+    <string name="s8q602"> No</string>
+
+    <string name="s861"> s8.6.1: How often did this happen?</string>
+    <string name="s86101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s86102"> Sometimes (3-10 times in the past four weeks) </string>
+    <string name="s86103"> Often (more than ten times in the past four weeks) </string>
+
+    =======
+
+
     <string name="s8q1a1"> s8q1a1: How often did this happen?</string>
     <string name="s8q1a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q1a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q1a103"> Often (more than ten times in the past four weeks) </string>
-    <string name="s8q2"> s8q2: In the past four weeks, were you or any household member not able to eat the kinds of foods you preferred because of a lack of resources?</string>
-    <string name="s8q201"> Yes</string>
-    <string name="s8q202"> No</string>
+
     <string name="s8q2a1"> s8q2a1: How often did this happen?</string>
     <string name="s8q2a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q2a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q2a103"> Often (more than ten times in the past four weeks) 3</string>
-    <string name="s8q3"> s8q3: In the past four weeks, did you or any household member have to eat a limited variety of foods due to a lack of resources?</string>
-    <string name="s8q301"> Yes</string>
-    <string name="s8q302"> No</string>
+
     <string name="s8q3a1"> s8q3a1: How often did this happen?</string>
     <string name="s8q3a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q3a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q3a103"> Often (more than ten times in the past four weeks) 3</string>
-    <string name="s8q4"> s8q4: In the past four weeks, did you or any household member have to eat some foods that you really did not want to eat because of a lack of resources to obtain other types of food?</string>
-    <string name="s8q401"> Yes</string>
-    <string name="s8q402"> No</string>
+
     <string name="s8q4a1"> s8q4a1: How often did this happen?</string>
     <string name="s8q4a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q4a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q4a103"> Often (more than ten times in the past four weeks) </string>
-    <string name="s8q5"> s8q5: In the past four weeks, did you or any household member have to eat a smaller meal than you felt you needed because there was not enough food?</string>
-    <string name="s8q501"> Yes</string>
-    <string name="s8q502"> No</string>
+
     <string name="s8q5a1"> s8q5a1: How often did this happen? </string>
     <string name="s8q5a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q5a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q5a103"> Often (more than ten times in the past four weeks) </string>
-    <string name="s8q6"> s8q6: In the past four weeks, did you or any other household member have to eat fewer meals in a day because there was not enough food?</string>
-    <string name="s8q601"> Yes</string>
-    <string name="s8q602"> No</string>
+
     <string name="s8q6a1"> s8q6a1: How often did this happen?</string>
     <string name="s8q6a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q6a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q6a103"> Often (more than ten times in the past four weeks) </string>
+    >>>>>>> origin/master
     <string name="s8q7"> s8q7: In the past four weeks, was there ever no food to eat of any kind in your household because of lack of resources to get food?</string>
     <string name="s8q701"> Yes</string>
     <string name="s8q702"> No</string>
+
     <string name="s8q7a1"> s8q7a1: How often did this happen?</string>
     <string name="s8q7a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q7a102"> Sometimes (3-10 times in the past four weeks) </string>
@@ -2576,11 +2754,18 @@
     <string name="s8q9"> s8q9: In the past four weeks, did you or any household member go a whole day and night without eating anything because there was not enough food?</string>
     <string name="s8q901"> Yes</string>
     <string name="s8q902"> No</string>
+
+    <string name="s8q91"> s8q9.1: How often did this happen?</string>
+    <string name="s8q9101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q9102"> Sometimes (3-10 times in the past four weeks) </string>
+    <string name="s8q9103"> Often (more than ten times in the past four weeks) </string>
+    =======
     <string name="s8q9a1"> s8q9a1: How often did this happen?</string>
     <string name="s8q9a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q9a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q9a103"> Often (more than ten times in the past four weeks) </string>
 
+    >>>>>>> origin/master
 
     <string name="s9q9"> s9q9: Which are the three main (most important) income sources for your household?</string>
     <string name="s9q1"> s9q1: First income source </string>
