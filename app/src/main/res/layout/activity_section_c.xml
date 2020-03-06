@@ -10,206 +10,211 @@
             type="edu.aku.hassannaqvi.ctsam.ui.sections.SectionCActivity" />
     </data>
 
+
     <ScrollView
         style="@style/i_scrollview"
         android:layoutDirection="ltr"
         android:textDirection="ltr">
 
+
         <LinearLayout
             android:id="@+id/GrpName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/vlinearlayout">
+
 
             <!-- s3qa  Input-Numeric   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs3qa"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:text="@string/s3qa" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s3qa"
-                        style="@style/EditTextAlphaNumeric"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/s3qa"
-                        android:inputType="number"
-                        app:mask="##"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="##"
+                        android:maxLength="2"
                         app:maxValue="4"
                         app:minValue="0"
                         app:type="range" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
+
 
             <!-- s3qb  Input-Numeric   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs3qb"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:text="@string/s3qb" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s3qb"
-                        style="@style/EditTextAlphaNumeric"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/s3qb"
-                        android:inputType="number"
-                        app:mask="##"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="##"
+                        android:maxLength="2"
                         app:maxValue="5"
                         app:minValue="0"
                         app:type="range" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
+
 
             <!-- s3qc  Input-Numeric   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs3qc"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:text="@string/s3qc" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s3qc"
-                        style="@style/EditTextAlphaNumeric"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/s3qc"
-                        android:inputType="number"
-                        app:mask="##"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="#"
+                        android:maxLength="1"
                         app:maxValue="8"
                         app:minValue="0"
                         app:type="range" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
+
 
             <!-- s3qd  Input-Numeric   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs3qd"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:text="@string/s3qd" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s3qd"
-                        style="@style/EditTextAlphaNumeric"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/s3qd"
-                        android:inputType="number"
-                        app:mask="##"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="##"
+                        android:maxLength="2"
                         app:maxValue="15"
                         app:minValue="1"
                         app:type="range" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
+
 
             <!-- s3qe  Input-Numeric   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs3qe"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:text="@string/s3qe" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s3qe"
-                        style="@style/EditTextAlphaNumeric"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/s3qe"
-                        android:inputType="number"
-                        app:mask="##"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="##"
+                        android:maxLength="2"
                         app:maxValue="15"
                         app:minValue="1"
                         app:type="range" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
+
 
             <!-- s3qf  Input-Numeric   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs3qf"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:text="@string/s3qf" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s3qf"
-                        style="@style/EditTextAlphaNumeric"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/s3qf"
-                        android:inputType="number"
-                        app:mask="##"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="##"
+                        android:maxLength="2"
                         app:maxValue="35"
                         app:minValue="1"
                         app:type="range" />
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
+
+            <LinearLayout style="@style/hlinearlayout">
 
                 <Button
                     android:id="@+id/btn_End"
-                    style="@style/button"
-                    android:layout_marginRight="10dp"
+                    style="@style/buttonEnd"
                     android:onClick="@{() -> callback.BtnEnd()}"
                     android:text="Cancel" />
 
                 <Button
                     android:id="@+id/btn_Continue"
-                    style="@style/button"
+                    style="@style/buttonNext"
                     android:onClick="@{() -> callback.BtnContinue()}"
                     android:text="Save" />
-                <!--'onClick' for btn_End will NOT change and always call 'endInterview'-->
+
             </LinearLayout>
+
+
         </LinearLayout>
+
     </ScrollView>
+
 </layout>
