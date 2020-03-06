@@ -48,52 +48,52 @@
 
         <activity
             android:name=".ui.sections.SectionAActivity"
-            android:label="@string/ta1heading"
+            android:label="@string/seca"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".ui.sections.SectionBActivity"
-            android:label="@string/ta1heading"
+            android:label="@string/secb"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".ui.sections.SectionCActivity"
-            android:label="@string/ta1heading"
+            android:label="@string/secc"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".ui.sections.SectionDActivity"
-            android:label="@string/ta1heading"
+            android:label="@string/secd"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".ui.sections.SectionEActivity"
-            android:label="@string/ta1heading"
+            android:label="@string/sece"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".ui.sections.SectionFActivity"
-            android:label="@string/ta1heading"
+            android:label="@string/secf"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".ui.sections.SectionGActivity"
-            android:label="@string/ta1heading"
+            android:label="@string/secg"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".ui.sections.SectionHActivity"
-            android:label="@string/ta1heading"
+            android:label="@string/sech"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".ui.sections.SectionIActivity"
-            android:label="@string/ta1heading"
+            android:label="@string/seci"
             android:screenOrientation="portrait" />
 
         <activity
             android:name=".ui.sections.SectionJActivity"
-            android:label="@string/ta1heading"
+            android:label="@string/secj"
             android:screenOrientation="portrait" />
 
         <activity

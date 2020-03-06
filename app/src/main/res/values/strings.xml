@@ -2105,7 +2105,10 @@
     <string name="delete_title">Confirm</string>
 
 
-    <!--   CTSAM STRINGS-->
+    <!--  CTSAM STRINGS -->
+    <!--  SECTION A -->
+    <string name="seca"> SECTION A: Address &amp; Identification Information </string>
+
     <string name="s1q1"> SLQ1: Name of Health Care Facility </string>
 
     <string name="s1q2"> SLQ2: Taluka Name </string>
@@ -2125,6 +2128,8 @@
     <string name="s1q8b"> No.</string>
     <string name="s1q8r"> SLQ8r: Reason for not given consent </string>
 
+    <!--  SECTION B -->
+    <string name="secb"> SECTION B: Screening for SAM Cases </string>
     <string name="s2t"> Screening for SAM Cases </string>
 
     <string name="muac1"> MUAC-01: </string>
@@ -2198,12 +2203,20 @@
     <string name="s2q8b"> No.</string>
     <string name="s2q9b"> No.</string>
     <string name="s2q29_instruction"> s2q29_instruction: -	Child will be enrolled if Yes in Q 2.1,2.3 and Q 2.4 response is 1 “Good” and No in Q 2.5, 2.6, 2.7, 2.8 &amp; 2.9</string>
+
+
+    <!--  SECTION C -->
+    <string name="secc"> SECTION C: HH Size &amp; Study Participants </string>
     <string name="s3qa"> s3qa: Children &lt; 6 months</string>
     <string name="s3qb"> s3qb: Children 6-23 months</string>
     <string name="s3qc"> s3qc: Children 24-59 months</string>
     <string name="s3qd"> s3qd: Adult Males</string>
     <string name="s3qe"> s3qe: Adult Females</string>
     <string name="s3qf"> s3qf: Total family members</string>
+
+
+    <!--  SECTION D -->
+    <string name="secd"> SECTION D: Child Information &amp; Anthropometry </string>
     <string name="s4q1"> s4q1: Type of study group</string>
     <string name="s4q1a"> Pink</string>
     <string name="s4q1b"> Blue</string>
@@ -2239,6 +2252,10 @@
     <string name="s4q14m2hei"> s4q14m2hei: Height/Length: (cm)</string>
     <string name="s4q15m2wei"> s4q15m2wei: Weight (kg):</string>
     <string name="s4q15m2mua"> s4q15m2mua: MUAC (cm)</string>
+
+
+    <!--  SECTION E -->
+    <string name="sece"> SECTION E: Child Morbidity &amp; Care Seeking </string>
     <string name="s5q1_title"> s5q1_title: Did the child (Name) have any of the following illnesses during last two weeks?</string>
     <string name="s5q101"> High grade fever</string>
     <string name="s5q101a"> Yes</string>
@@ -2287,6 +2304,10 @@
     <string name="s5q4a"> Yes</string>
     <string name="s5q4b"> No.</string>
     <string name="s5q5"> s5q5: How many days did child (Name) stay in the hospital during last two weeks for treatment of any of these illnesses?</string>
+
+
+    <!--  SECTION F -->
+    <string name="secf"> SECTION F: HH Socioeconomic Information </string>
     <string name="s6q1"> s6q1: What is your mother tongue/native language?</string>
     <string name="s6q101"> Urdu</string>
     <string name="s6q102"> Punjabi</string>
@@ -2480,6 +2501,10 @@
     <string name="s6q20e"> Chickens /Poultry </string>
     <string name="s6q20f"> Buffalo</string>
     <string name="s6q20g"> Camels</string>
+
+
+    <!--  SECTION G -->
+    <string name="secg"> SECTION G: Hand Washing </string>
     <string name="s7q1"> s7q1: Please show us where you and members of your household most often wash their hands.</string>
     <string name="s7q101"> Observed</string>
     <string name="s7q102"> Not observed  </string>
@@ -2517,6 +2542,8 @@
     <string name="s7q696"> Other (Specify)</string>
 
 
+    <!--  SECTION H -->
+    <string name="sech"> SECTION H: HFIAS Measurement Tool </string>
     <string name="s8q1"> s8q1: In the past four weeks, did you worry that your household would not have enough food?</string>
     <string name="s8q101"> Yes</string>
     <string name="s8q102"> No</string>
@@ -2582,6 +2609,8 @@
     <string name="s8q9a103"> Often (more than ten times in the past four weeks) </string>
 
 
+    <!--  SECTION I -->
+    <string name="seci"> SECTION I: Income Sources </string>
     <string name="s9q9"> s9q9: Which are the three main (most important) income sources for your household?</string>
     <string name="s9q1"> s9q1: First income source </string>
     <string name="s9q101"> Agriculture</string>
@@ -2628,6 +2657,10 @@
     <string name="s9q312"> Private Job </string>
     <string name="s9q313"> Cash from Benazir Income Support Programme (BISP) </string>
     <string name="s9q396"> Other (Specify)</string>
+
+
+    <!--  SECTION J -->
+    <string name="secj"> SECTION J: Study Group &amp; Supplementation </string>
     <string name="s10q1"> s10q1: How many sachets were given to child at the time of recruitment? </string>
     <string name="s10q101"> Pink</string>
     <string name="s10q102"> Blue</string>
