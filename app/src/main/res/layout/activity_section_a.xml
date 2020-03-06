@@ -182,7 +182,7 @@
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="DD-MM-YYYY"
+                        android:hint="DD/MM/YYYY"
                         app:maxDate="CR_DATE" />
 
                 </LinearLayout>

@@ -40,8 +40,8 @@
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="##"
-                        android:maxLength="2"
+                        android:hint="#"
+                        android:maxLength="1"
                         app:maxValue="4"
                         app:minValue="0"
                         app:type="range" />
