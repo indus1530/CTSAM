@@ -60,10 +60,10 @@
     <style name="i_scrollview">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">5dp</item>
         <item name="android:fadeScrollbars">false</item>
         <item name="android:layoutDirection">rtl</item>
-        <item name="android:paddingBottom">5sp</item>
     </style>
 
     <style name="EditTextComa" parent="@style/textInput">
@@ -185,13 +185,10 @@
         <item name="android:textColor">@android:color/black</item>
         <item name="android:inputType">textPostalAddress</item>
         <item name="android:textSize">20sp</item>
-        <item name="android:layout_marginRight">10dp</item>
-        <item name="android:layout_marginTop">15dp</item>
-        <item name="android:layout_marginBottom">15dp</item>
-        <item name="android:layout_marginLeft">10dp</item>
         <item name="android:padding">10dp</item>
         <item name="android:singleLine">true</item>
         <item name="android:typeface">sans</item>
+        <item name="android:layout_margin">10dp</item>
         <item name="android:radius">2dp</item>
     </style>
 

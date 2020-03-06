@@ -19,23 +19,6 @@
             android:id="@+id/fldGrpSectionB"
             style="@style/vlinearlayout">
 
-            <!-- s2t  Title   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs2t"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        style="@style/HeadingTitle"
-                        android:text="@string/s2t" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
 
             <!-- muac1  Input   -->
             <androidx.cardview.widget.CardView
@@ -76,11 +59,10 @@
 
                     <EditText
                         android:id="@+id/muac2"
-                        style="@style/textInputName"
+                        style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/muac2"
-                        android:textColor="@android:color/black" />
+                        android:hint="##.#" />
 
                 </LinearLayout>
 
@@ -262,10 +244,7 @@
                 android:id="@+id/fldGrpCVs2q5_subtitle"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
@@ -300,18 +279,19 @@
                             style="@style/radiobutton"
                             android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:text="@string/s2q501a" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/s2q501b"
                             style="@style/radiobutton"
                             android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:text="@string/s2q501b" />
+                            android:text="@string/no" />
 
                     </RadioGroup>
 
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- s2q502  Radio   -->
