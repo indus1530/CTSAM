@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
     <!--new Strings-->
     <string name="app_name"> CTSAM </string>
@@ -2131,13 +2131,13 @@
     <string name="tlheading1"> This Section will be filled for index child </string>
     <string name="tlheading2"> Identification </string>
 
-    <string name="l101"> l101:\t Child’\s Name </string>
+    <string name="l101"> L101:\t Child’\s Name </string>
 
-    <string name="l102"> l102:\t Verbal consent and assent granted </string>
+    <string name="l102"> L102:\t Verbal consent and assent granted </string>
     <string name="l102a"> Yes </string>
     <string name="l102b"> No </string>
 
-    <string name="l103"> l103:\t Interview Status </string>
+    <string name="l103"> L103:\t Interview Status </string>
     <string name="l103a"> Completed </string>
     <string name="l103b"> Withdrawn </string>
     <string name="l103c"> Refused</string>
@@ -2200,174 +2200,168 @@
 
     <string name="muac2"> MUAC-02: </string>
 
-    <string name="s2q1"> s2q1: MUAC &lt;11.5 cm</string>
+    <string name="s2q1"> S2Q1: MUAC &lt;11.5 cm</string>
     <string name="s2q1a"> Yes </string>
     <string name="s2q1b"> No </string>
 
-    <string name="s2q2"> s2q2: Bilateral pitting oedema ? </string>
+    <string name="s2q2"> S2Q2: Bilateral pitting oedema ? </string>
     <string name="s2q2a"> None</string>
     <string name="s2q2b"> Bilateral pitting oedema +</string>
     <string name="s2q2c"> Bilateral pitting oedema ++</string>
     <string name="s2q2d"> Bilateral pitting oedema +++</string>
 
-    <string name="s2q2_instruction"> s2q2_instruction: Note: Grades of Oedema-Definition : 1) Absent, 2)Grade + Mild: Both feet/ankles, 3) Grade++Moderate: Both feet, plus lower legs, hands or lower arms, 4) Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face</string>
-    <string name="s2q3"> s2q3: Presence of appetite for RUTF / RUSF ? </string>
+    <string name="s2q2_instruction"> S2Q2_instruction: Note: Grades of Oedema-Definition : 1) Absent, 2)Grade + Mild: Both feet/ankles, 3) Grade++Moderate: Both feet, plus lower legs, hands or lower arms, 4) Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face</string>
+    <string name="s2q3"> S2Q3: Presence of appetite for RUTF / RUSF ? </string>
     <string name="s2q3a"> Yes</string>
     <string name="s2q3b"> No.</string>
 
-    <string name="s2q4"> s2q4: If Yes then rank : -	Appetite returned (eats at least 75% of RUTF+RUSF)</string>
+    <string name="s2q4"> S2Q4: If Yes then rank : -	Appetite returned (eats at least 75% of RUTF+RUSF)</string>
     <string name="s2q4a"> Good(Child takes RUTF/RUSF) eagerly</string>
     <string name="s2q4b"> Poor(Child takes RUTF/RUSF with persistent encouragement)</string>
     <string name="s2q4c"> Refused (Child refuses RUTF/RUSF even after persistent encouragement</string>
 
-    <string name="s2q5_subtitle"> s2q5_subtitle: Presence of any medical complication?</string>
+    <string name="s2q5_subtitle"> S2Q5_subtitle: Presence of any medical complication?</string>
     <string name="s2q4_instruction"> Appetite returned (eats at least 75% of RUTF+RUSF)</string>
 
-    <string name="s2q501"> s2q501: Anorexia, no appetite for RUTF/RUSF</string>
+    <string name="s2q501"> S2Q501: Anorexia, no appetite for RUTF/RUSF</string>
     <string name="s2q501a"> Yes</string>
     <string name="s2q501b"> No.</string>
 
-    <string name="s2q502"> s2q502: Vomits everything</string>
-
-
-    <string name="s2q506"> s2q506: Severe anemia</string>
-
-
-    =======
-    >>>>>>> origin/master
+    <string name="s2q502"> S2Q502: Vomits everything</string>
     <string name="s2q502a"> Yes</string>
     <string name="s2q502b"> No.</string>
 
-    <string name="s2q503"> s2q503: Hypothermia ≤35.5o c</string>
+    <string name="s2q503"> S2Q503: Hypothermia ≤35.5o c</string>
     <string name="s2q503a"> Yes</string>
     <string name="s2q503b"> No.</string>
 
-    <string name="s2q504"> s2q504: Severe pneumonia</string>
+    <string name="s2q504"> S2Q504: Severe pneumonia</string>
     <string name="s2q504a"> Yes</string>
     <string name="s2q504b"> No.</string>
 
-    <string name="s2q505"> s2q505: Severe dehydration</string>
+    <string name="s2q505"> S2Q505: Severe dehydration</string>
     <string name="s2q505a"> Yes</string>
     <string name="s2q505b"> No.</string>
 
-    <string name="s2q506" tools:ignore="DuplicateDefinition"> s2q506: Severe anemia</string>
+    <string name="s2q506"> S2Q506: Severe anemia</string>
     <string name="s2q506a"> Yes</string>
     <string name="s2q506b"> No.</string>
 
-    <string name="s2q507"> s2q507: Not alert(very weak. lethargic, unconscious ,fits or convulsion)</string>
+    <string name="s2q507"> S2Q507: Not alert(very weak. lethargic, unconscious ,fits or convulsion)</string>
     <string name="s2q507a"> Yes</string>
     <string name="s2q507b"> No.</string>
 
-    <string name="s2q508"> s2q508: Conditions requiring IV infusion or NG tube feeding</string>
+    <string name="s2q508"> S2Q508: Conditions requiring IV infusion or NG tube feeding</string>
     <string name="s2q508a"> Yes</string>
     <string name="s2q508b"> No.</string>
 
-    <string name="s2q6"> s2q6: Is child involved in another research trial or supplemental feeding program?</string>
+    <string name="s2q6"> S2Q6: Is child involved in another research trial or supplemental feeding program?</string>
     <string name="s2q6a"> Yes</string>
     <string name="s2q6b"> No.</string>
 
-    <string name="s2q7"> s2q7: Is child developmentally delayed?</string>
-
-    <string name="s2q8"> s2q8: Child has a chronic debilitating illness such as cerebral palsy (not including HIV or TB)?</string>
-
-    <string name="s2q9"> s2q9: Child had a history of milk or peanut allergy?</string>
+    <string name="s2q7"> S2Q7: Is child developmentally delayed?</string>
     <string name="s2q7a"> Yes</string>
-    <string name="s2q8a"> Yes</string>
-    <string name="s2q9a"> Yes</string>
     <string name="s2q7b"> No.</string>
+
+    <string name="s2q8"> S2Q8: Child has a chronic debilitating illness such as cerebral palsy (not including HIV or TB)?</string>
+    <string name="s2q8a"> Yes</string>
     <string name="s2q8b"> No.</string>
+
+    <string name="s2q9"> S2Q9: Child had a history of milk or peanut allergy?</string>
+    <string name="s2q9a"> Yes</string>
     <string name="s2q9b"> No.</string>
-    <string name="s2q29_instruction"> s2q29_instruction: -	Child will be enrolled if Yes in Q 2.1,2.3 and Q 2.4 response is 1 “Good” and No in Q 2.5, 2.6, 2.7, 2.8 &amp; 2.9</string>
-    <string name="s3qa"> s3qa: Children &lt; 6 months</string>
-    <string name="s3qb"> s3qb: Children 6-23 months</string>
-    <string name="s3qc"> s3qc: Children 24-59 months</string>
-    <string name="s3qd"> s3qd: Adult Males</string>
-    <string name="s3qe"> s3qe: Adult Females</string>
-    <string name="s3qf"> s3qf: Total family members</string>
-    <string name="s4q1"> s4q1: Type of study group</string>
+
+    <string name="s2q29_instruction"> S2Q29_instruction: -	Child will be enrolled if Yes in Q 2.1,2.3 and Q 2.4 response is 1 “Good” and No in Q 2.5, 2.6, 2.7, 2.8 &amp; 2.9</string>
+    <string name="s3qa"> S3Qa: Children &lt; 6 months</string>
+    <string name="s3qb"> S3Qb: Children 6-23 months</string>
+    <string name="s3qc"> S3Qc: Children 24-59 months</string>
+    <string name="s3qd"> S3Qd: Adult Males</string>
+    <string name="s3qe"> S3Qe: Adult Females</string>
+    <string name="s3qf"> S3Qf: Total family members</string>
+    <string name="s4q1"> S4Q1: Type of study group</string>
     <string name="s4q1a"> Pink</string>
     <string name="s4q1b"> Blue</string>
     <string name="s4q1c"> Green</string>
     <string name="s4q1d"> Brown</string>
-    <string name="s4q2"> s4q2: Child Study Id</string>
-    <string name="s4q3"> s4q3: Child Name</string>
-    <string name="s4q4"> s4q4: Child Father Name</string>
-    <string name="s4q5"> s4q5: Child Mother Name</string>
-    <string name="s4q6"> s4q6: Child gender</string>
+    <string name="s4q2"> S4Q2: Child Study Id</string>
+    <string name="s4q3"> S4Q3: Child Name</string>
+    <string name="s4q4"> S4Q4: Child Father Name</string>
+    <string name="s4q5"> S4Q5: Child Mother Name</string>
+    <string name="s4q6"> S4Q6: Child gender</string>
     <string name="s4q6a"> Male</string>
     <string name="s4q6b"> Female</string>
 
-    <string name="s4q7"> s4q7: Child Date of brith or Age at recruitment</string>
+    <string name="s4q7"> S4Q7: Child Date of brith or Age at recruitment</string>
     <string name="s4q7a"> Date of Birth</string>
     <string name="s4q7b"> Age at the time of recruitment</string>
-    <string name="s4q7dob"> s4q7dob: Date of Birth</string>
-    <string name="s4q7days"> s4q7days: Age in Days</string>
-    <string name="s4q7mon"> s4q7mon: Age in Months</string>
+    <string name="s4q7dob"> S4Q7dob: Date of Birth</string>
+    <string name="s4q7days"> S4Q7days: Age in Days</string>
+    <string name="s4q7mon"> S4Q7mon: Age in Months</string>
 
-    <string name="s4q8"> s4q8: Was the child born full-term?</string>
+    <string name="s4q8"> S4Q8: Was the child born full-term?</string>
     <string name="s4q8a"> Yes</string>
     <string name="s4q8b"> No.</string>
 
-    <string name="s4q9"> s4q9: Gestational age at birth in weeks ?</string>
+    <string name="s4q9"> S4Q9: Gestational age at birth in weeks ?</string>
 
-    <string name="s4q10"> s4q10: Was (Name) weighed at birth?</string>
+    <string name="s4q10"> S4Q10: Was (Name) weighed at birth?</string>
     <string name="s410q410a"> Yes</string>
     <string name="s410q410b"> No.</string>
 
-    <string name="s4q11"> s4q11: How much did (Name) weigh? kgs</string>
-    <string name="s4subtitle"> s4subtitle: Child Anthropometry</string>
-    <string name="meas01"> meas01: Name of Data Collector 01</string>
-    <string name="s4q14m1hei"> s4q14m1hei: Height/Length: (cm)</string>
-    <string name="s4q15m1wei"> s4q15m1wei: Weight (kg):</string>
-    <string name="s4q15m1mua"> s4q15m1mua: MUAC (cm)</string>
-    <string name="meas02"> meas02: Name of Data Collector 02</string>
-    <string name="s4q14m2hei"> s4q14m2hei: Height/Length: (cm)</string>
-    <string name="s4q15m2wei"> s4q15m2wei: Weight (kg):</string>
-    <string name="s4q15m2mua"> s4q15m2mua: MUAC (cm)</string>
+    <string name="s4q11"> S4Q11: How much did (Name) weigh? kgs</string>
+    <string name="s4subtitle"> S4SUBTITLE: Child Anthropometry</string>
+    <string name="meas01"> MEAS01: Name of Data Collector 01</string>
+    <string name="s4q14m1hei"> S4Q14M1HEI: Height/Length: (cm)</string>
+    <string name="s4q15m1wei"> S4Q15M1WEI: Weight (kg):</string>
+    <string name="s4q15m1mua"> S4Q15M1MUA: MUAC (cm)</string>
+    <string name="meas02"> MEAS02: Name of Data Collector 02</string>
+    <string name="s4q14m2hei"> S4Q14M2HEI: Height/Length: (cm)</string>
+    <string name="s4q15m2wei"> S4Q15M2WEI: Weight (kg):</string>
+    <string name="s4q15m2mua"> S4Q15M2MUA: MUAC (cm)</string>
 
-    <string name="s5q1_title"> s5q1_title: Did the child (Name) have any of the following illnesses during last two weeks?</string>
+    <string name="s5q1_title"> S5Q1_title: Did the child (Name) have any of the following illnesses during last two weeks?</string>
     <string name="s5q101"> High grade fever</string>
     <string name="s5q101a"> Yes</string>
     <string name="s5q101b"> No.</string>
 
-    <string name="s5q102"> s5q102: Diarrhea</string>
+    <string name="s5q102"> S5Q102: Diarrhea</string>
     <string name="s5q102a"> Yes</string>
     <string name="s5q102b"> No.</string>
 
-    <string name="s5q103"> s5q103: Cough/Flu</string>
+    <string name="s5q103"> S5Q103: Cough/Flu</string>
     <string name="s5q103a"> Yes</string>
     <string name="s5q103b"> No.</string>
 
-    <string name="s5q104"> s5q104: Difficult/Fast breathing</string>
+    <string name="s5q104"> S5Q104: Difficult/Fast breathing</string>
     <string name="s5q104a"> Yes</string>
     <string name="s5q104b"> No.</string>
 
-    <string name="s5q105"> s5q105: Chest in drawing</string>
+    <string name="s5q105"> S5Q105: Chest in drawing</string>
     <string name="s5q105a"> Yes</string>
     <string name="s5q105b"> No.</string>
 
-    <string name="s5q106"> s5q106: Skin infection</string>
+    <string name="s5q106"> S5Q106: Skin infection</string>
     <string name="s5q106a"> Yes</string>
     <string name="ss5q106b"> No.</string>
 
-    <string name="s5q107"> s5q107: Worms in stool</string>
+    <string name="s5q107"> S5Q107: Worms in stool</string>
     <string name="s5q107a"> Yes</string>
     <string name="s5q107b"> No.</string>
 
-    <string name="s5q108"> s5q108: Rashes</string>
+    <string name="s5q108"> S5Q108: Rashes</string>
     <string name="s5q108a"> Yes</string>
     <string name="s5q108b"> No.</string>
 
-    <string name="s5q196"> s5q196: Other</string>
+    <string name="s5q196"> S5Q196: Other</string>
     <string name="s5q196a"> Yes</string>
     <string name="s5q196b"> No.</string>
-    <string name="s5q196x"> s5q196x: Other (Specify)</string>
+    <string name="s5q196x"> S5Q196x: Other (Specify)</string>
 
-    <string name="s5q2"> s5q2: Did you seek any care for these illnesses during last two weeks?</string>
+    <string name="s5q2"> S5Q2: Did you seek any care for these illnesses during last two weeks?</string>
     <string name="s5q2a"> Yes</string>
     <string name="s5q2b"> No.</string>
 
-    <string name="s5q3"> s5q3: Who did you see for the illnesses during last two weeks?  Anyone else?</string>
+    <string name="s5q3"> S5Q3: Who did you see for the illnesses during last two weeks?  Anyone else?</string>
     <string name="s5q3_subtitlea"> HEALTH PERSONNEL</string>
     <string name="s5q301"> Doctor</string>
     <string name="s5q302"> Nurse/Midwife/LHV</string>
@@ -2380,13 +2374,13 @@
     <string name="s5q308"> Dispenser/Compounder</string>
     <string name="s5q3096"> Other (Specify)</string>
 
-    <string name="s5q4"> s5q4: Did the child (Name) have to stay in the hospital during last two weeks for treatment of any of these illnesses?</string>
+    <string name="s5q4"> S5Q4: Did the child (Name) have to stay in the hospital during last two weeks for treatment of any of these illnesses?</string>
     <string name="s5q4a"> Yes</string>
     <string name="s5q4b"> No.</string>
 
-    <string name="s5q5"> s5q5: How many days did child (Name) stay in the hospital during last two weeks for treatment of any of these illnesses?</string>
+    <string name="s5q5"> S5Q5: How many days did child (Name) stay in the hospital during last two weeks for treatment of any of these illnesses?</string>
 
-    <string name="s6q1"> s6q1: What is your mother tongue/native language?</string>
+    <string name="s6q1"> S6Q1: What is your mother tongue/native language?</string>
     <string name="s6q101"> Urdu</string>
     <string name="s6q102"> Punjabi</string>
     <string name="s6q103"> Sindhi</string>
@@ -2396,7 +2390,7 @@
     <string name="s6q107"> Dhatki</string>
     <string name="s6q196"> Other (Specify)</string>
 
-    <string name="s6q2"> s6q2: What is the main source of drinking water in your house hold?</string>
+    <string name="s6q2"> S6Q2: What is the main source of drinking water in your house hold?</string>
     <string name="s6q201"> Piped Water</string>
     <string name="s6q202"> Municipal committee piped into dwelling </string>
     <string name="s6q203"> Municipal committee piped to Yard/Plot</string>
@@ -2415,11 +2409,11 @@
     <string name="s6q216"> Bottled water</string>
     <string name="s6q296"> Other (Specify)</string>
 
-    <string name="s6q3"> s6q3: Do you take any step to make the water safer to drink?</string>
+    <string name="s6q3"> S6Q3: Do you take any step to make the water safer to drink?</string>
     <string name="s6q301"> Yes</string>
     <string name="s6q302"> No </string>
 
-    <string name="s6q4"> s6q4: If yes, what do you usually do to make the water safe to drink? </string>
+    <string name="s6q4"> S6Q4: If yes, what do you usually do to make the water safe to drink? </string>
     <string name="s6q401"> Boil</string>
     <string name="s6q402"> Add bleach/chlorine</string>
     <string name="s6q403"> Strain through a cloth</string>
@@ -2428,7 +2422,7 @@
     <string name="s6q406"> Let it stand and settle</string>
     <string name="s6q496"> Other (Specify)</string>
 
-    <string name="s6q5"> s6q5: What type of toilet facilities do you usually use in your house hold?</string>
+    <string name="s6q5"> S6Q5: What type of toilet facilities do you usually use in your house hold?</string>
     <string name="s6q5_subtitlea"> A. Flush or Pour Flush Toilet </string>
     <string name="s6q501"> Flush to piped sewerage system </string>
     <string name="s6q502"> Flush to septic tank</string>
@@ -2442,14 +2436,14 @@
     <string name="s6q509"> No facility/bush/field</string>
     <string name="s6q596"> Other (Specify)</string>
 
-    <string name="s6q6"> s6q6: Do you share this toilet facility with other households? </string>
+    <string name="s6q6"> S6Q6: Do you share this toilet facility with other households? </string>
     <string name="s6q601"> Yes</string>
     <string name="s6q602"> No</string>
 
-    <string name="s6q7"> s6q7: If yes, how many other households use this toilet facility? </string>
+    <string name="s6q7"> S6Q7: If yes, how many other households use this toilet facility? </string>
     <string name="s6q701"> No. of households</string>
 
-    <string name="s6q8"> s6q8: Are following facilities available in your house hold? </string>
+    <string name="s6q8"> S6Q8: Are following facilities available in your house hold? </string>
     <string name="s6q8a"> Electricity Connection</string>
     <string name="s6q8b">  Radio</string>
     <string name="s6q8c"> Television </string>
@@ -2470,7 +2464,7 @@
     <string name="s6q8r"> Internet connection</string>
     <string name="s6q8s"> Sink/Dishwashing Station </string>
 
-    <string name="s6q9"> s6q9: What type of fuel do you often use in your household?</string>
+    <string name="s6q9"> S6Q9: What type of fuel do you often use in your household?</string>
     <string name="s6q901"> Electricity</string>
     <string name="s6q902"> LPG</string>
     <string name="s6q903"> Natural Gas </string>
@@ -2483,17 +2477,17 @@
     <string name="s6q910"> No food cooked in household</string>
     <string name="s6q996"> Other (Specify)</string>
 
-    <string name="s6q10"> s6q10: Is the cooking usually done in the house, in a separate room/space, or outdoors? </string>
+    <string name="s6q10"> S6Q10: Is the cooking usually done in the house, in a separate room/space, or outdoors? </string>
     <string name="s6q1001"> In the house</string>
     <string name="s6q1002"> In a separate area/room </string>
     <string name="s6q1003"> Outdoors</string>
     <string name="s6q1096"> Other (Specify)</string>
 
-    <string name="s6q11"> s6q11: Do you have a separate room which is used as a kitchen? </string>
+    <string name="s6q11"> S6Q11: Do you have a separate room which is used as a kitchen? </string>
     <string name="s6q1101"> Yes</string>
     <string name="s6q1102"> No</string>
 
-    <string name="s6q12"> s6q12: Main material of the FLOOR </string>
+    <string name="s6q12"> S6Q12: Main material of the FLOOR </string>
     <string name="s6q12_subtitlea"> Natural Floor</string>
     <string name="s6q1201"> Earth/Sand/Mud</string>
     <string name="s6q1202"> Dung</string>
@@ -2510,7 +2504,7 @@
     <string name="s6q1211"> Marble</string>
     <string name="s6q1296"> Other (Specify)</string>
 
-    <string name="s6q13"> s6q13: Main material of the ROOF</string>
+    <string name="s6q13"> S6Q13: Main material of the ROOF</string>
     <string name="s6q13_subtitlea"> Natural Roofing </string>
     <string name="s6q1301"> No roof</string>
     <string name="s6q1302"> Thatch/palm leaf </string>
@@ -2529,7 +2523,7 @@
     <string name="s6q1396"> Other (Specify)</string>
     <string name="s6q1396x"> Other( Specify)</string>
 
-    <string name="s6q14"> s6q14: Main material of the WALLS </string>
+    <string name="s6q14"> S6Q14: Main material of the WALLS </string>
     <string name="s6q1401"> No walls</string>
     <string name="s6q1402"> Cane/Palm/Trunks </string>
     <string name="s6q1403"> Mud/Dirt/Clay</string>
@@ -2543,64 +2537,64 @@
     <string name="s6q1411"> Carton/plastic </string>
     <string name="s6q1496"> Other (Specify)</string>
 
-    <string name="s6q15"> s6q15: How many rooms in this household are used for sleeping? </string>
+    <string name="s6q15"> S6Q15: How many rooms in this household are used for sleeping? </string>
 
-    <string name="s6q16"> s6q16: Does any member of this household own?</string>
+    <string name="s6q16"> S6Q16: Does any member of this household own?</string>
 
-    <string name="s6q16a"> s6q16a: Watch</string>
+    <string name="s6q16a"> S6Q16A: Watch</string>
     <string name="s6q16a01"> Yes   </string>
     <string name="s6q16a02"> No</string>
 
-    <string name="s6q16b"> s6q16b: Mobile telephone  </string>
+    <string name="s6q16b"> S6Q16B: Mobile telephone  </string>
     <string name="s6q16b01">  Yes     </string>
     <string name="s6q16b02"> No</string>
 
-    <string name="s6q16c"> s6q16c: Bicycle</string>
+    <string name="s6q16c"> S6Q16C: Bicycle</string>
     <string name="s6q16c01"> Yes</string>
     <string name="s6q16c02">   No</string>
 
-    <string name="s6q16d"> s6q16d: Motorcycle or scooter  </string>
+    <string name="s6q16d"> S6Q16D: Motorcycle or scooter  </string>
     <string name="s6q16d01"> Yes</string>
     <string name="s6q16d02">  No</string>
 
-    <string name="s6q16e"> s6q16e: Animal-drawn cart </string>
+    <string name="s6q16e"> S6Q16E: Animal-drawn cart </string>
     <string name="s6q16e01"> Yes</string>
     <string name="s6q16e02">  No</string>
 
-    <string name="s6q16f"> s6q16f: Car or truck or bus</string>
+    <string name="s6q16f"> S6Q16F: Car or truck or bus</string>
     <string name="s6q16f01"> Yes</string>
     <string name="s6q16f02"> No</string>
 
-    <string name="s6q16g"> s6q16g: Tractor  </string>
+    <string name="s6q16g"> S6Q16G: Tractor  </string>
     <string name="s6q16g01"> Yes</string>
     <string name="s6q16g02"> No</string>
 
-    <string name="s6q16h"> s6q16h: Boat with a motor  </string>
+    <string name="s6q16h"> S6Q16H: Boat with a motor  </string>
     <string name="s6q16h01"> Yes</string>
     <string name="s6q16h02"> No</string>
 
-    <string name="s6q16i"> s6q16i: Boat without motor </string>
+    <string name="s6q16i"> S6Q16I: Boat without motor </string>
     <string name="s6q16i01"> Yes</string>
     <string name="s6q16i02"> No</string>
 
-    <string name="s6q16j"> s6q16j: Animal to draw water from dug well</string>
+    <string name="s6q16j"> S6Q16J: Animal to draw water from dug well</string>
     <string name="s6q16j01">  Yes</string>
     <string name="s6q16j02"> No</string>
 
-    <string name="s6q17"> s6q17: Does any member of this household own any agricultural land? </string>
+    <string name="s6q17"> S6Q17: Does any member of this household own any agricultural land? </string>
     <string name="s6q1701"> Yes</string>
     <string name="s6q1702"> No</string>
 
-    <string name="s6q18"> s6q18: If yes, how many acres or canals of agricultural land do members of this household own? </string>
+    <string name="s6q18"> S6Q18: If yes, how many acres or canals of agricultural land do members of this household own? </string>
     <string name="s6q1801"> Acre</string>
     <string name="s6q1802"> Canal</string>
     <string name="s6q1899"> Don’t know</string>
 
-    <string name="s6q19"> s6q19: Does your household own livestock, animals or poultry?</string>
+    <string name="s6q19"> S6Q19: Does your household own livestock, animals or poultry?</string>
     <string name="s6q1901"> Yes</string>
     <string name="s6q1902"> No</string>
 
-    <string name="s6q20"> s6q20: If yes, how many livestock, animals or poultry does your household own?   Ask for each listed animal, one by one and insert  00 if none</string>
+    <string name="s6q20"> S6Q20: If yes, how many livestock, animals or poultry does your household own?   Ask for each listed animal, one by one and insert  00 if none</string>
     <string name="s6q20a"> Cows, bulls </string>
     <string name="s6q20b"> Horses/Donkeys/Mules  </string>
     <string name="s6q20c"> Goats</string>
@@ -2609,35 +2603,36 @@
     <string name="s6q20f"> Buffalo</string>
     <string name="s6q20g"> Camels</string>
 
-    <string name="s7q1"> s7q1: Please show us where you and members of your household most often wash their hands.</string>
+    <string name="s7q1"> S7Q1: Please show us where you and members of your household most often wash their hands.</string>
     <string name="s7q101"> Observed</string>
     <string name="s7q102"> Not observed  </string>
     <string name="s7q103"> Not in dwelling/plot/yard</string>
     <string name="s7q104"> No permission to see </string>
     <string name="s7q105"> Other reason</string>
 
-    <string name="s7q2"> s7q2: Observe presence of water at the specific place for hand washing</string>
+    <string name="s7q2"> S7Q2: Observe presence of water at the specific place for hand washing</string>
     <string name="s7q201"> Water is available </string>
     <string name="s7q202"> Water is not available</string>
-    <string name="s7q3"> s7q3: Record if soap or detergent is present at the specific place for hand washing۔</string>
+
+    <string name="s7q3"> S7Q3: Record if soap or detergent is present at the specific place for hand washing۔</string>
     <string name="s7q301"> Bar soap  </string>
     <string name="s7q302"> Detergent (powder/liquid/paste) </string>
     <string name="s7q303"> Liquid soap</string>
     <string name="s7q304"> Ash/mud/sand  </string>
     <string name="s7q305"> None</string>
 
-    <string name="s7q4"> s7q4: Do you have any soap or detergent in your household for hand washing? </string>
+    <string name="s7q4"> S7Q4: Do you have any soap or detergent in your household for hand washing? </string>
     <string name="s7q401"> Yes</string>
     <string name="s7q402"> No</string>
 
-    <string name="s7q5"> s7q5: If yes, can you please show it to me? </string>
+    <string name="s7q5"> S7Q5: If yes, can you please show it to me? </string>
     <string name="s7q501"> Bar soap</string>
     <string name="s7q502"> Detergent (powder/liquid/paste) </string>
     <string name="s7q503"> Liquid soap </string>
     <string name="s7q504"> Ash/mud/sand  </string>
     <string name="s7q505"> None</string>
 
-    <string name="s7q6"> s7q6: In what situations do you wash your hands with soap?  This is an open-ended question. Do not read the answer choices.  After the respondent stops listing times, ask “Are there any other situations where you wash your hands with soap?” Keep asking this question until the respondent thinks there are no other times. </string>
+    <string name="s7q6"> S7Q6: In what situations do you wash your hands with soap?  This is an open-ended question. Do not read the answer choices.  After the respondent stops listing times, ask “Are there any other situations where you wash your hands with soap?” Keep asking this question until the respondent thinks there are no other times. </string>
     <string name="s7q601"> Before preparing food</string>
     <string name="s7q602"> Before cooking food</string>
     <string name="s7q603"> Before eating</string>
@@ -2650,55 +2645,56 @@
     <string name="s7q696"> Other (Specify)</string>
 
 
-    <string name="s8q1"> s8q1: In the past four weeks, did you worry that your household would not have enough food?</string>
+    <string name="s8q1"> S8Q1: In the past four weeks, did you worry that your household would not have enough food?</string>
     <string name="s8q101"> Yes</string>
     <string name="s8q102"> No</string>
 
-    <string name="s8q11"> s8q1.1: How often did this happen?</string>
+    <string name="s8q11"> S8Q11: How often did this happen ? </string>
     <string name="s8q1101"> Rarely (once or twice in the past four weeks) </string>
-    <string name="s8q1102"> Sometimes (3-10 times in the past four weeks) </string>
+    <string name="s8q1102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
     <string name="s8q1103"> Often (more than ten times in the past four weeks) </string>
-    <string name="s8q2"> s8q2: In the past four weeks, were you or any household member not able to eat the kinds of foods you preferred because of a lack of resources?</string>
+
+    <string name="s8q2"> S8Q2: In the past four weeks, were you or any household member not able to eat the kinds of foods you preferred because of a lack of resources?</string>
     <string name="s8q201"> Yes</string>
     <string name="s8q202"> No</string>
 
-    <string name="s8q21"> s8q2.1: How often did this happen?</string>
+    <string name="s8q21"> S8Q2.1: How often did this happen?</string>
     <string name="s8q2101"> Rarely (once or twice in the past four weeks) </string>
-    <string name="s8q2102"> Sometimes (3-10 times in the past four weeks) </string>
+    <string name="s8q2102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
     <string name="s8q2103"> Often (more than ten times in the past four weeks) 3</string>
 
-    <string name="s8q3"> s8q3: In the past four weeks, did you or any household member have to eat a limited variety of foods due to a lack of resources?</string>
+    <string name="s8q3"> S8Q3: In the past four weeks, did you or any household member have to eat a limited variety of foods due to a lack of resources?</string>
     <string name="s8q301"> Yes</string>
     <string name="s8q302"> No</string>
 
-    <string name="s8q31"> s8q3.1: How often did this happen?</string>
+    <string name="s8q31"> S8Q3.1: How often did this happen?</string>
     <string name="s8q3101"> Rarely (once or twice in the past four weeks) </string>
-    <string name="s8q3102"> Sometimes (3-10 times in the past four weeks) </string>
+    <string name="s8q3102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
     <string name="s8q3103"> Often (more than ten times in the past four weeks) 3</string>
 
-    <string name="s8q4"> s8q4: In the past four weeks, did you or any household member have to eat some foods that you really did not want to eat because of a lack of resources to obtain other types of food?</string>
+    <string name="s8q4"> S8Q4: In the past four weeks, did you or any household member have to eat some foods that you really did not want to eat because of a lack of resources to obtain other types of food?</string>
     <string name="s8q401"> Yes</string>
     <string name="s8q402"> No</string>
 
-    <string name="s8q41"> s8q4.1: How often did this happen?</string>
+    <string name="s8q41"> S8Q4.1: How often did this happen?</string>
     <string name="s8q4101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q4102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q4103"> Often (more than ten times in the past four weeks) </string>
 
-    <string name="s8q5"> s8q5: In the past four weeks, did you or any household member have to eat a smaller meal than you felt you needed because there was not enough food?</string>
+    <string name="s8q5"> S8Q5: In the past four weeks, did you or any household member have to eat a smaller meal than you felt you needed because there was not enough food?</string>
     <string name="s8q501"> Yes</string>
     <string name="s8q502"> No</string>
 
-    <string name="s8q51"> s8q5.1: How often did this happen? </string>
+    <string name="s8q51"> S8Q5.1: How often did this happen? </string>
     <string name="s8q5101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q5102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q5103"> Often (more than ten times in the past four weeks) </string>
 
-    <string name="s8q6"> s8q6: In the past four weeks, did you or any other household member have to eat fewer meals in a day because there was not enough food?</string>
+    <string name="s8q6"> S8Q6: In the past four weeks, did you or any other household member have to eat fewer meals in a day because there was not enough food?</string>
     <string name="s8q601"> Yes</string>
     <string name="s8q602"> No</string>
 
-    <string name="s861"> s8.6.1: How often did this happen?</string>
+    <string name="s861"> S8.6.1: How often did this happen?</string>
     <string name="s86101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s86102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s86103"> Often (more than ten times in the past four weeks) </string>
@@ -2706,69 +2702,72 @@
     =======
 
 
-    <string name="s8q1a1"> s8q1a1: How often did this happen?</string>
+    <string name="s8q1a1"> S8Q1A1: How often did this happen?</string>
     <string name="s8q1a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q1a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q1a103"> Often (more than ten times in the past four weeks) </string>
 
-    <string name="s8q2a1"> s8q2a1: How often did this happen?</string>
+    <string name="s8q2a1"> S8Q2A1: How often did this happen?</string>
     <string name="s8q2a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q2a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q2a103"> Often (more than ten times in the past four weeks) 3</string>
 
-    <string name="s8q3a1"> s8q3a1: How often did this happen?</string>
+    <string name="s8q3a1"> S8Q3A1: How often did this happen ? </string>
     <string name="s8q3a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q3a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q3a103"> Often (more than ten times in the past four weeks) 3</string>
 
-    <string name="s8q4a1"> s8q4a1: How often did this happen?</string>
+    <string name="s8q4a1"> S8Q4A1: How often did this happen ? </string>
     <string name="s8q4a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q4a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q4a103"> Often (more than ten times in the past four weeks) </string>
 
-    <string name="s8q5a1"> s8q5a1: How often did this happen? </string>
+    <string name="s8q5a1"> S8Q5A1: How often did this happen ? </string>
     <string name="s8q5a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q5a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q5a103"> Often (more than ten times in the past four weeks) </string>
 
-    <string name="s8q6a1"> s8q6a1: How often did this happen?</string>
+    <string name="s8q6a1"> S8Q6a1: How often did this happen?</string>
     <string name="s8q6a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q6a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q6a103"> Often (more than ten times in the past four weeks) </string>
     >>>>>>> origin/master
-    <string name="s8q7"> s8q7: In the past four weeks, was there ever no food to eat of any kind in your household because of lack of resources to get food?</string>
+    <string name="s8q7"> S8Q7: In the past four weeks, was there ever no food to eat of any kind in your household because of lack of resources to get food?</string>
     <string name="s8q701"> Yes</string>
     <string name="s8q702"> No</string>
 
-    <string name="s8q7a1"> s8q7a1: How often did this happen?</string>
+    <string name="s8q7a1"> S8Q7a1: How often did this happen?</string>
     <string name="s8q7a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q7a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q7a103"> Often (more than ten times in the past four weeks) </string>
-    <string name="s8q8"> s8q8: In the past four weeks, did you or any household member go to sleep at night hungry because there was not enough food?</string>
+
+    <string name="s8q8"> S8Q8: In the past four weeks, did you or any household member go to sleep at night hungry because there was not enough food?</string>
     <string name="s8q801"> Yes</string>
     <string name="s8q802"> No</string>
-    <string name="s8q8a1"> s8q8a1: How often did this happen?</string>
+
+    <string name="s8q8a1"> S8Q8A1: How often did this happen?</string>
     <string name="s8q8a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q8a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q8a103"> Often (more than ten times in the past four weeks) </string>
-    <string name="s8q9"> s8q9: In the past four weeks, did you or any household member go a whole day and night without eating anything because there was not enough food?</string>
+
+    <string name="s8q9"> S8Q9: In the past four weeks, did you or any household member go a whole day and night without eating anything because there was not enough food?</string>
     <string name="s8q901"> Yes</string>
     <string name="s8q902"> No</string>
 
-    <string name="s8q91"> s8q9.1: How often did this happen?</string>
+    <string name="s8q91"> S8Q9.1: How often did this happen?</string>
     <string name="s8q9101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q9102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q9103"> Often (more than ten times in the past four weeks) </string>
     =======
-    <string name="s8q9a1"> s8q9a1: How often did this happen?</string>
+    <string name="s8q9a1"> S8Q9A1: How often did this happen?</string>
     <string name="s8q9a101"> Rarely (once or twice in the past four weeks) </string>
     <string name="s8q9a102"> Sometimes (3-10 times in the past four weeks) </string>
     <string name="s8q9a103"> Often (more than ten times in the past four weeks) </string>
 
     >>>>>>> origin/master
 
-    <string name="s9q9"> s9q9: Which are the three main (most important) income sources for your household?</string>
-    <string name="s9q1"> s9q1: First income source </string>
+    <string name="s9q9"> S9Q9: Which are the three main (most important) income sources for your household?</string>
+    <string name="s9q1"> S9Q1: First income source </string>
     <string name="s9q101"> Agriculture</string>
     <string name="s9q102">  Livestock, sale of livestock / animal products</string>
     <string name="s9q103"> Fishing, fish farming</string>
@@ -2783,7 +2782,8 @@
     <string name="s9q112"> Private Job  </string>
     <string name="s9q113"> Cash from Benazir Income Support Programme (BISP) </string>
     <string name="s9q196"> Other (Specify)</string>
-    <string name="s9q2"> s9q2: Second income source </string>
+
+    <string name="s9q2"> S9Q2: Second income source </string>
     <string name="s9q201"> Agriculture </string>
     <string name="s9q202">  Livestock, sale of livestock / animal products</string>
     <string name="s9q203"> Fishing, fish farming</string>
@@ -2798,7 +2798,8 @@
     <string name="s9q212"> Private Job </string>
     <string name="s9q213"> Cash from Benazir Income Support Programme (BISP</string>
     <string name="s9q296"> Other (Specify)</string>
-    <string name="s9q3"> s9q3: Third income source </string>
+
+    <string name="s9q3"> S9Q3: Third income source </string>
     <string name="s9q301"> Agriculture</string>
     <string name="s9q302">  Livestock, sale of livestock / animal products</string>
     <string name="s9q303"> Fishing, fish farming</string>
@@ -2813,14 +2814,15 @@
     <string name="s9q312"> Private Job </string>
     <string name="s9q313"> Cash from Benazir Income Support Programme (BISP) </string>
     <string name="s9q396"> Other (Specify)</string>
-    <string name="s10q1"> s10q1: How many sachets were given to child at the time of recruitment? </string>
+
+    <string name="s10q1"> S10Q1: How many sachets were given to child at the time of recruitment? </string>
     <string name="s10q101"> Pink</string>
     <string name="s10q102"> Blue</string>
     <string name="s10q103"> Green</string>
     <string name="s10q104"> Brown</string>
     <string name="s10q1sac"> Number of Sachet given</string>
-    <string name="s10q2"> s10q2: Reason</string>
-    <string name="s10q3"> s10q3: Next follow-up date?</string>
+    <string name="s10q2"> S10Q2: Reason</string>
+    <string name="s10q3"> S10Q3: Next follow-up date?</string>
 
 
 </resources>
