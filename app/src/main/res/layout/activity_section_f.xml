@@ -74,14 +74,14 @@
                         <RadioButton
                             android:id="@+id/s6q196"
                             style="@style/radiobutton"
-                            android:text="@string/s6q196" />
+                            android:text="@string/other" />
 
                         <EditText
                             android:id="@+id/s6q196x"
                             style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/s6q196"
+                            android:hint="@string/specify"
                             android:tag="s6q196"
                             android:text='@{s6q196.checked? s6q196x.getText().toString() : ""}'
                             android:visibility='@{s6q196.checked? View.VISIBLE : View.GONE}' />
@@ -190,14 +190,14 @@
                         <RadioButton
                             android:id="@+id/s6q296"
                             style="@style/radiobutton"
-                            android:text="@string/s6q296" />
+                            android:text="@string/other" />
 
                         <EditText
                             android:id="@+id/s6q296x"
                             style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/s6q296"
+                            android:hint="@string/specify"
                             android:tag="s6q296"
                             android:text='@{s6q296.checked? s6q296x.getText().toString() : ""}'
                             android:visibility='@{s6q296.checked? View.VISIBLE : View.GONE}' />
@@ -293,14 +293,14 @@
                         <RadioButton
                             android:id="@+id/s6q496"
                             style="@style/radiobutton"
-                            android:text="@string/s6q496" />
+                            android:text="@string/other" />
 
                         <EditText
                             android:id="@+id/s6q496x"
                             style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/s6q496"
+                            android:hint="@string/specify"
                             android:tag="s6q496"
                             android:text='@{s6q496.checked? s6q496x.getText().toString() : ""}'
                             android:visibility='@{s6q496.checked? View.VISIBLE : View.GONE}' />
