@@ -2,11 +2,13 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -25,6 +27,48 @@ public class SectionEActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_e);
         bi.setCallback(this);
+
+
+        //s5q197
+        bi.s5q197.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b) {
+                Clear.clearAllFields(bi.s5q1all);
+                Clear.clearAllFields(bi.fldGrpCVs5q2);
+                Clear.clearAllFields(bi.fldGrpCVs5q3);
+                Clear.clearAllFields(bi.fldGrpCVs5q4);
+                Clear.clearAllFields(bi.fldGrpCVs5q5);
+                bi.s5q1all.setVisibility(View.GONE);
+                bi.fldGrpCVs5q2.setVisibility(View.GONE);
+                bi.fldGrpCVs5q3.setVisibility(View.GONE);
+                bi.fldGrpCVs5q4.setVisibility(View.GONE);
+                bi.fldGrpCVs5q5.setVisibility(View.GONE);
+            } else {
+                Clear.clearAllFields(bi.s5q1all);
+                bi.s5q1all.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs5q2.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs5q3.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs5q4.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs5q5.setVisibility(View.VISIBLE);
+            }
+        });
+
+
+        bi.s5q2.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.s5q2a.getId()) {
+                bi.fldGrpCVs5q3.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs5q4.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs5q5.setVisibility(View.VISIBLE);
+            } else {
+                Clear.clearAllFields(bi.fldGrpCVs5q3);
+                Clear.clearAllFields(bi.fldGrpCVs5q4);
+                Clear.clearAllFields(bi.fldGrpCVs5q5);
+                bi.fldGrpCVs5q3.setVisibility(View.GONE);
+                bi.fldGrpCVs5q4.setVisibility(View.GONE);
+                bi.fldGrpCVs5q5.setVisibility(View.GONE);
+            }
+
+        }));
 
 
     }

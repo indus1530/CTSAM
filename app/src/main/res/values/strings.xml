@@ -2325,55 +2325,64 @@
     <!--  SECTION E -->
     <string name="sece"> SECTION E: Child Morbidity &amp; Care Seeking </string>
 
-    <string name="s5q1_title"> S5Q1_title: Did the child (Name) have any of the following illnesses during last two weeks ? </string>
+    <string name="s5q1"> S5Q1: Did the child (Name) have any of the following illnesses during last two weeks ? </string>
 
-    <string name="s4q11"> S4Q11: How much did (Name) weigh? kgs</string>
+    <string name="s4q11"> S4Q11: How much did (Name) weigh ? kgs </string>
+
     <string name="s4subtitle"> Child Anthropometry </string>
+
     <string name="meas01"> Name of Data Collector 01 </string>
+
     <string name="s4q14m1hei"> Height / Length (cm): </string>
+
     <string name="s4q15m1wei"> Weight (kg): </string>
+
     <string name="s4q15m1mua"> MUAC (cm): </string>
+
     <string name="meas02"> Name of Data Collector 02 </string>
+
     <string name="s4q14m2hei"> Height/Length (cm): </string>
+
     <string name="s4q15m2wei"> Weight (kg): </string>
+
     <string name="s4q15m2mua"> MUAC (cm): </string>
 
     <string name="s5q101"> High grade fever </string>
     <string name="s5q101a"> Yes </string>
     <string name="s5q101b"> No </string>
 
-    <string name="s5q102"> S5Q102: Diarrhea </string>
+    <string name="s5q102"> Diarrhea </string>
     <string name="s5q102a"> Yes</string>
     <string name="s5q102b"> No.</string>
 
-    <string name="s5q103"> S5Q103: Cough/Flu</string>
+    <string name="s5q103"> Cough / Flu </string>
     <string name="s5q103a"> Yes</string>
     <string name="s5q103b"> No.</string>
 
-    <string name="s5q104"> S5Q104: Difficult/Fast breathing</string>
+    <string name="s5q104"> Difficult / Fast breathing </string>
     <string name="s5q104a"> Yes</string>
     <string name="s5q104b"> No.</string>
 
-    <string name="s5q105"> S5Q105: Chest in drawing</string>
+    <string name="s5q105"> Chest in drawing </string>
     <string name="s5q105a"> Yes</string>
     <string name="s5q105b"> No.</string>
 
-    <string name="s5q106"> S5Q106: Skin infection</string>
+    <string name="s5q106"> Skin infection </string>
     <string name="s5q106a"> Yes</string>
     <string name="ss5q106b"> No.</string>
 
-    <string name="s5q107"> S5Q107: Worms in stool</string>
-    <string name="s5q107a"> Yes</string>
-    <string name="s5q107b"> No.</string>
+    <string name="s5q107"> Worms in stool </string>
+    <string name="s5q107a"> Yes </string>
+    <string name="s5q107b"> No </string>
 
-    <string name="s5q108"> S5Q108: Rashes</string>
-    <string name="s5q108a"> Yes</string>
-    <string name="s5q108b"> No.</string>
+    <string name="s5q108"> Rashes </string>
+    <string name="s5q108a"> Yes </string>
+    <string name="s5q108b"> No </string>
 
-    <string name="s5q196"> S5Q196: Other</string>
+    <string name="s5q196"> Other </string>
     <string name="s5q196a"> Yes</string>
     <string name="s5q196b"> No.</string>
-    <string name="s5q196x"> S5Q196x: Other (Specify)</string>
+    <string name="s5q196x"> Specify </string>
 
     <string name="s5q2"> S5Q2: Did you seek any care for these illnesses during last two weeks ? </string>
     <string name="s5q2a"> Yes </string>

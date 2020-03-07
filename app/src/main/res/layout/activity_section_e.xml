@@ -17,24 +17,16 @@
 
         <LinearLayout
             android:id="@+id/fldGrpSectionE"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/vlinearlayout">
 
-            <!-- s5q1_title  Title   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs5q1_title"
-                style="@style/cardView">
+            <TextView
+                style="@style/i_textview"
+                android:gravity="center"
+                android:text="@string/s5q1" />
 
-                <LinearLayout style="@style/vlinearlayout">
-
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s5q1_title" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:id="@+id/s5q1all"
+                style="@style/vlinearlayout">
 
             <!-- s5q101  Radio   -->
             <androidx.cardview.widget.CardView
@@ -425,9 +417,39 @@
                     <EditText
                         android:id="@+id/s5q196x"
                         style="@style/EditTextAlpha"
-                        android:hint="@string/s5q196x"
-                        android:tag="s5q196a"
-                        android:text='@{s5q196a.checked? s5q196x.getText().toString() : ""}' />
+                        android:hint="@string/specify"
+                        android:text='@{s5q196a.checked ? s5q196x.getText().toString() : ""}' />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- s5q197  CheckBox   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVs5q197"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:id="@+id/s5q197check"
+                    style="@style/hlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/none" />
+
+                    <CheckBox
+                        android:id="@+id/s5q197"
+                        style="@style/checkbox"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_weight="1"
+                        android:tag="-1" />
 
                 </LinearLayout>
 
@@ -612,6 +634,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <LinearLayout style="@style/hlinearlayout">
 
                 <Button
@@ -625,8 +648,9 @@
                     style="@style/buttonNext"
                     android:onClick="@{() -> callback.BtnContinue()}"
                     android:text="Save" />
-                <!--'onClick' for btn_End will NOT change and always call 'endInterview'-->
+
             </LinearLayout>
+
 
         </LinearLayout>
 
