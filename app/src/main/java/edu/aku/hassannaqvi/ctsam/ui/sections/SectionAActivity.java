@@ -2,11 +2,13 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -14,6 +16,7 @@ import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionABinding;
+import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionAActivity extends AppCompatActivity {
@@ -25,7 +28,22 @@ public class SectionAActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a);
         bi.setCallback(this);
+        setupSkips();
 
+
+    }
+
+
+    private void setupSkips() {
+
+        bi.s1q8.setOnCheckedChangeListener((group, checkedId) -> {
+            if (checkedId == bi.s1q8b.getId()) {
+                bi.fldGrpCVs1q8r.setVisibility(View.VISIBLE);
+            } else {
+                Clear.clearAllFields(bi.fldGrpCVs1q8r);
+                bi.fldGrpCVs1q8r.setVisibility(View.GONE);
+            }
+        });
 
     }
 
@@ -39,7 +57,11 @@ public class SectionAActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionBActivity.class));
+                if (bi.s1q8b.isChecked()) {
+                    startActivity(new Intent(this, SectionBActivity.class));
+                } else {
+                    startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
+                }
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -85,7 +107,7 @@ public class SectionAActivity extends AppCompatActivity {
                 : bi.s1q8b.isChecked() ? "2"
                 : "0");
 
-        json.put("s1q8reason", bi.s1q8reason.getText().toString());
+        json.put("s1q8r", bi.s1q8r.getText().toString());
 
 
     }

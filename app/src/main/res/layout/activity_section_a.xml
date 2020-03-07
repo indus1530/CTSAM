@@ -210,14 +210,14 @@
                             style="@style/radiobutton"
                             android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:text="@string/s1q8a" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/s1q8b"
                             style="@style/radiobutton"
                             android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:text="@string/s1q8b" />
+                            android:text="@string/no" />
 
                     </RadioGroup>
 
@@ -227,7 +227,7 @@
 
             <!-- s1q8reason  Input   -->
             <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs1q8reason"
+                android:id="@+id/fldGrpCVs1q8r"
                 style="@style/cardView">
 
                 <LinearLayout style="@style/vlinearlayout">
@@ -237,7 +237,7 @@
                         android:text="@string/s1q8r" />
 
                     <EditText
-                        android:id="@+id/s1q8reason"
+                        android:id="@+id/s1q8r"
                         style="@style/EditTextAlphaNumeric"
                         android:hint="@string/reason" />
 
