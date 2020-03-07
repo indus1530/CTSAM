@@ -248,7 +248,7 @@
 
                     <TextView
                         style="@style/i_textview"
-                        android:text="@string/s2q5" />
+                        android:text="@string/s2q5_subtitle" />
 
                     <TextView
                         style="@style/i_textview"

@@ -2236,7 +2236,7 @@
     <string name="s2q502a"> Yes </string>
     <string name="s2q502b"> No </string>
 
-    <string name="s2q503"> Hypothermia ≤ 35.5 °C </string>
+    <string name="s2q503"> Hypothermia ≤ 35.5 &#xb0;C </string>
     <string name="s2q503a"> Yes </string>
     <string name="s2q503b"> No </string>
 

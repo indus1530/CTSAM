@@ -33,7 +33,7 @@ public class FormsContract {
     private String clusterCode = "";
     private String hhno = "";
     private String sInfo = "";
-    public static final String CONTENT_AUTHORITY = "edu.aku.hassannaqvi.uen_midline";
+    public static final String CONTENT_AUTHORITY = "edu.aku.hassannaqvi.ctsam";
     public static final String PATH_FORMS = "forms";
 
     public FormsContract() {
