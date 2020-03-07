@@ -99,9 +99,13 @@ public class SectionEActivity extends AppCompatActivity {
 
 
     private boolean UpdateDB() {
+
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SA3, MainApp.fc.getsA3());
+        long updcount = db.addForm(MainApp.fc);
+        MainApp.fc.set_ID(String.valueOf(updcount));
         if (updcount > 0) {
+            MainApp.fc.set_UID(MainApp.fc.getDeviceID() + MainApp.fc.get_ID());
+            db.updatesFormColumn(FormsContract.FormsTable.COLUMN_UID, MainApp.fc.get_UID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
