@@ -91,7 +91,7 @@ public class EndingActivity extends AppCompatActivity {
     public boolean UpdateDB() {
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
         int updcount = db.updateEnding();
-        if (updcount == 1) {
+        if (updcount > 0) {
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
