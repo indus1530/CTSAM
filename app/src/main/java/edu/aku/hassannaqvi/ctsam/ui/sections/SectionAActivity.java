@@ -57,7 +57,7 @@ public class SectionAActivity extends AppCompatActivity {
             try {
                 SaveDraft();
             } catch (Exception e) {
-                e.printStackTrace();
+                throw new RuntimeException(e.getMessage());
             }
             if (UpdateDB()) {
                 finish();
@@ -74,11 +74,13 @@ public class SectionAActivity extends AppCompatActivity {
 
 
     private boolean UpdateDB() {
+
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
         long updcount = db.addForm(MainApp.fc);
         MainApp.fc.set_ID(String.valueOf(updcount));
         if (updcount > 0) {
-            db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SA3, MainApp.fc.getsA3());
+            MainApp.fc.set_UID(MainApp.fc.getDeviceID() + MainApp.fc.get_ID());
+            db.updatesFormColumn(FormsContract.FormsTable.COLUMN_UID, MainApp.fc.get_UID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
@@ -102,11 +104,11 @@ public class SectionAActivity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("s1q1", bi.s1q1.getSelectedItem().toString());
+        json.put("s1q1", bi.s1q1.getChildCount() == 0 ? "0" : bi.s1q1.getSelectedItem().toString());
 
-        json.put("s1q2", bi.s1q2.getSelectedItem().toString());
+        json.put("s1q2", bi.s1q2.getChildCount() == 0 ? "0" : bi.s1q2.getSelectedItem().toString());
 
-        json.put("s1q3", bi.s1q3.getSelectedItem().toString());
+        json.put("s1q3", bi.s1q3.getChildCount() == 0 ? "0" : bi.s1q3.getSelectedItem().toString());
 
         json.put("s1q4", bi.s1q4.getText().toString());
 
@@ -122,7 +124,7 @@ public class SectionAActivity extends AppCompatActivity {
 
         json.put("s1q8r", bi.s1q8r.getText().toString());
 
-        MainApp.fc.setsA3(String.valueOf(json));
+        MainApp.fc.setsInfo(String.valueOf(json));
 
 
     }
