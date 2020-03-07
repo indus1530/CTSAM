@@ -2,11 +2,13 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -26,6 +28,33 @@ public class SectionGActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_g);
         bi.setCallback(this);
 
+        setlistener();
+
+    }
+
+    private void setlistener() {
+
+        bi.s7q1.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.s7q101.getId()) {
+                bi.fldGrpSectiong01.setVisibility(View.VISIBLE);
+            } else {
+                bi.fldGrpSectiong01.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpSectiong01);
+            }
+
+        }));
+
+        bi.s7q4.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.s7q402.getId()) {
+                bi.fldGrpCVs7q5.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVs7q5);
+            } else {
+                bi.fldGrpCVs7q5.setVisibility(View.VISIBLE);
+            }
+
+        }));
 
     }
 
@@ -74,19 +103,23 @@ public class SectionGActivity extends AppCompatActivity {
                                         bi.s7q104.isChecked() ? "4" :
                                                 bi.s7q105.isChecked() ? "5" :
                                                         "0");
+
         json.put("s7q2",
                 bi.s7q201.isChecked() ? "1" :
                         bi.s7q202.isChecked() ? "2" :
                                 "0");
+
         json.put("s7q301", bi.s7q301.isChecked() ? "1" : "0");
         json.put("s7q302", bi.s7q302.isChecked() ? "2" : "0");
         json.put("s7q303", bi.s7q303.isChecked() ? "3" : "0");
         json.put("s7q304", bi.s7q304.isChecked() ? "4" : "0");
         json.put("s7q305", bi.s7q305.isChecked() ? "99" : "0");
+
         json.put("s7q4",
                 bi.s7q401.isChecked() ? "1" :
                         bi.s7q402.isChecked() ? "2" :
                                 "0");
+
         json.put("s7q501", bi.s7q501.isChecked() ? "1" : "0");
         json.put("s7q502", bi.s7q502.isChecked() ? "2" : "0");
         json.put("s7q503", bi.s7q503.isChecked() ? "3" : "0");

@@ -66,83 +66,94 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- s7q2  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs7q2"
-                style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+            <LinearLayout
+                android:id="@+id/fldGrpSectiong01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility='@{s7q101.checked? View.VISIBLE : View.GONE}'>
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s7q2" />
+                <!-- s7q2  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVs7q2"
+                    style="@style/cardView">
 
-                    <RadioGroup
-                        android:id="@+id/s7q2"
-                        style="@style/radiogroup">
+                    <LinearLayout style="@style/vlinearlayout">
 
-                        <RadioButton
-                            android:id="@+id/s7q201"
-                            style="@style/radiobutton"
-                            android:text="@string/s7q201" />
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/s7q2" />
 
-                        <RadioButton
-                            android:id="@+id/s7q202"
-                            style="@style/radiobutton"
-                            android:text="@string/s7q202" />
+                        <RadioGroup
+                            android:id="@+id/s7q2"
+                            style="@style/radiogroup">
 
-                    </RadioGroup>
+                            <RadioButton
+                                android:id="@+id/s7q201"
+                                style="@style/radiobutton"
+                                android:text="@string/s7q201" />
 
-                </LinearLayout>
+                            <RadioButton
+                                android:id="@+id/s7q202"
+                                style="@style/radiobutton"
+                                android:text="@string/s7q202" />
 
-            </androidx.cardview.widget.CardView>
-
-            <!-- s7q3  CheckBox   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs7q3"
-                style="@style/cardView">
-
-                <LinearLayout style="@style/vlinearlayout">
-
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s7q3" />
-
-                    <LinearLayout
-                        android:id="@+id/s7q3check"
-                        style="@style/vlinearlayout"
-                        android:tag="0">
-
-                        <CheckBox
-                            android:id="@+id/s7q301"
-                            style="@style/checkbox"
-                            android:text="@string/s7q301" />
-
-                        <CheckBox
-                            android:id="@+id/s7q302"
-                            style="@style/checkbox"
-                            android:text="@string/s7q302" />
-
-                        <CheckBox
-                            android:id="@+id/s7q303"
-                            style="@style/checkbox"
-                            android:text="@string/s7q303" />
-
-                        <CheckBox
-                            android:id="@+id/s7q304"
-                            style="@style/checkbox"
-                            android:text="@string/s7q304" />
-
-                        <CheckBox
-                            android:id="@+id/s7q305"
-                            style="@style/checkbox"
-                            android:text="@string/s7q305" />
+                        </RadioGroup>
 
                     </LinearLayout>
 
-                </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
-            </androidx.cardview.widget.CardView>
+                <!-- s7q3  CheckBox   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVs7q3"
+                    style="@style/cardView">
+
+                    <LinearLayout style="@style/vlinearlayout">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/s7q3" />
+
+                        <LinearLayout
+                            android:id="@+id/s7q3check"
+                            style="@style/vlinearlayout"
+                            android:tag="0">
+
+                            <CheckBox
+                                android:id="@+id/s7q301"
+                                style="@style/checkbox"
+                                android:text="@string/s7q301" />
+
+                            <CheckBox
+                                android:id="@+id/s7q302"
+                                style="@style/checkbox"
+                                android:text="@string/s7q302" />
+
+                            <CheckBox
+                                android:id="@+id/s7q303"
+                                style="@style/checkbox"
+                                android:text="@string/s7q303" />
+
+                            <CheckBox
+                                android:id="@+id/s7q304"
+                                style="@style/checkbox"
+                                android:text="@string/s7q304" />
+
+                            <CheckBox
+                                android:id="@+id/s7q305"
+                                style="@style/checkbox"
+                                android:text="@string/s7q305" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
 
             <!-- s7q4  Radio   -->
             <androidx.cardview.widget.CardView
@@ -183,7 +194,8 @@
             <!-- s7q5  CheckBox   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs7q5"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s7q402.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 
