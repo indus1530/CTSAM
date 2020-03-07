@@ -59,7 +59,8 @@
             <!-- s8q1a1  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs8q1a1"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s8q102.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 
@@ -131,7 +132,8 @@
             <!-- s8q2a1  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs8q2a1"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s8q202.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 
@@ -203,7 +205,8 @@
             <!-- s8q3a1  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs8q3a1"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s8q302.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 
@@ -275,7 +278,8 @@
             <!-- s8q4a1  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs8q4a1"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s8q402.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 
@@ -347,7 +351,8 @@
             <!-- s8q5a1  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs8q5a1"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s8q502.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 
@@ -419,7 +424,8 @@
             <!-- s8q6a1  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs8q6a1"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s8q602.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 
@@ -491,7 +497,8 @@
             <!-- s8q7a1  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs8q7a1"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s8q702.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 
@@ -562,7 +569,8 @@
             <!-- s8q8a1  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs8q8a1"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s8q802.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 
@@ -634,7 +642,8 @@
             <!-- s8q9a1  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs8q9a1"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s8q902.checked? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 
