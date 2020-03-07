@@ -2,11 +2,13 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -26,6 +28,44 @@ public class SectionFActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f);
         bi.setCallback(this);
 
+        setlistener();
+
+    }
+
+    private void setlistener() {
+
+        bi.s6q3.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.s6q302.getId()) {
+                bi.fldGrpCVs6q4.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVs6q4);
+            } else {
+                bi.fldGrpCVs6q4.setVisibility(View.VISIBLE);
+            }
+
+        }));
+
+        bi.s6q6.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.s6q602.getId()) {
+                bi.fldGrpCVs6q7.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVs6q7);
+            } else {
+                bi.fldGrpCVs6q7.setVisibility(View.VISIBLE);
+            }
+
+        }));
+
+        bi.s6q9.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.s6q910.getId()) {
+                bi.fldGrpSectionf01.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpSectionf01);
+            } else {
+                bi.fldGrpSectionf01.setVisibility(View.VISIBLE);
+            }
+
+        }));
 
     }
 
@@ -78,6 +118,7 @@ public class SectionFActivity extends AppCompatActivity {
                                                                         bi.s6q196.isChecked() ? "96" :
                                                                                 "0");
         json.put("s6q196x", bi.s6q196x.getText().toString());
+
         json.put("s6q2",
                 bi.s6q201.isChecked() ? "1" :
                         bi.s6q202.isChecked() ? "2" :
@@ -98,10 +139,12 @@ public class SectionFActivity extends AppCompatActivity {
                                                                                                                                                 bi.s6q296.isChecked() ? "96" :
                                                                                                                                                         "0");
         json.put("s6q296x", bi.s6q296x.getText().toString());
+
         json.put("s6q3",
                 bi.s6q301.isChecked() ? "1" :
                         bi.s6q302.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q4",
                 bi.s6q401.isChecked() ? "1" :
                         bi.s6q402.isChecked() ? "2" :
@@ -112,6 +155,7 @@ public class SectionFActivity extends AppCompatActivity {
                                                                 bi.s6q496.isChecked() ? "96" :
                                                                         "0");
         json.put("s6q496x", bi.s6q496x.getText().toString());
+
         json.put("s6q5",
                 bi.s6q501.isChecked() ? "1" :
                         bi.s6q502.isChecked() ? "2" :
@@ -125,10 +169,12 @@ public class SectionFActivity extends AppCompatActivity {
                                                                                         bi.s6q596.isChecked() ? "96" :
                                                                                                 "0");
         json.put("s6q596x", bi.s6q596x.getText().toString());
+
         json.put("s6q6",
                 bi.s6q601.isChecked() ? "1" :
                         bi.s6q602.isChecked() ? "2" :
                                 "0");
+
         //f1.put("s6q7", bi.s6q7.getText().toString());
         json.put("s6q701", bi.s6q701.getText().toString());
         json.put("s6q8a", bi.s6q8a.isChecked() ? "1" : "0");
@@ -150,6 +196,7 @@ public class SectionFActivity extends AppCompatActivity {
         json.put("s6q8q", bi.s6q8q.isChecked() ? "17" : "0");
         json.put("s6q8r", bi.s6q8r.isChecked() ? "18" : "0");
         json.put("s6q8s", bi.s6q8s.isChecked() ? "19" : "0");
+
         json.put("s6q9",
                 bi.s6q901.isChecked() ? "1" :
                         bi.s6q902.isChecked() ? "2" :
@@ -164,6 +211,7 @@ public class SectionFActivity extends AppCompatActivity {
                                                                                                 bi.s6q996.isChecked() ? "96" :
                                                                                                         "0");
         json.put("s6q996x", bi.s6q996x.getText().toString());
+
         json.put("s6q10",
                 bi.s6q1001.isChecked() ? "1" :
                         bi.s6q1002.isChecked() ? "2" :
@@ -171,10 +219,12 @@ public class SectionFActivity extends AppCompatActivity {
                                         bi.s6q1096.isChecked() ? "96" :
                                                 "0");
         json.put("s6q1096x", bi.s6q1096x.getText().toString());
+
         json.put("s6q11",
                 bi.s6q1101.isChecked() ? "1" :
                         bi.s6q1102.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q12",
                 bi.s6q1201.isChecked() ? "1" :
                         bi.s6q1202.isChecked() ? "2" :
@@ -190,6 +240,7 @@ public class SectionFActivity extends AppCompatActivity {
                                                                                                         bi.s6q1296.isChecked() ? "96" :
                                                                                                                 "0");
         json.put("s6q1296x", bi.s6q1296x.getText().toString());
+
         json.put("s6q13",
                 bi.s6q1301.isChecked() ? "1" :
                         bi.s6q1302.isChecked() ? "2" :
@@ -207,6 +258,7 @@ public class SectionFActivity extends AppCompatActivity {
                                                                                                                         bi.s6q1396.isChecked() ? "96" :
                                                                                                                                 "0");
         json.put("s6q1396x", bi.s6q1396x.getText().toString());
+
         json.put("s6q14",
                 bi.s6q1401.isChecked() ? "1" :
                         bi.s6q1402.isChecked() ? "2" :
@@ -222,51 +274,64 @@ public class SectionFActivity extends AppCompatActivity {
                                                                                                         bi.s6q1496.isChecked() ? "96" :
                                                                                                                 "0");
         json.put("s6q1496x", bi.s6q1496x.getText().toString());
+
         json.put("s6q15", bi.s6q15.getText().toString());
+
         json.put("s6q16a",
                 bi.s6q16a01.isChecked() ? "1" :
                         bi.s6q16a02.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q16b",
                 bi.s6q16b01.isChecked() ? "1" :
                         bi.s6q16b02.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q16c",
                 bi.s6q16c01.isChecked() ? "1" :
                         bi.s6q16c02.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q16d",
                 bi.s6q16d01.isChecked() ? "1" :
                         bi.s6q16d02.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q16e",
                 bi.s6q16e01.isChecked() ? "1" :
                         bi.s6q16e02.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q16f",
                 bi.s6q16f01.isChecked() ? "1" :
                         bi.s6q16f02.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q16g",
                 bi.s6q16g01.isChecked() ? "1" :
                         bi.s6q16g02.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q16h",
                 bi.s6q16h01.isChecked() ? "1" :
                         bi.s6q16h02.isChecked() ? "1" :
                                 "0");
+
         json.put("s6q16i",
                 bi.s6q16i01.isChecked() ? "1" :
                         bi.s6q16i02.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q16j",
                 bi.s6q16j01.isChecked() ? "1" :
                         bi.s6q16j02.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q17",
                 bi.s6q1701.isChecked() ? "1" :
                         bi.s6q1702.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q18",
                 bi.s6q1801.isChecked() ? "" :
                         bi.s6q1802.isChecked() ? "" :
@@ -274,10 +339,12 @@ public class SectionFActivity extends AppCompatActivity {
                                         "0");
         json.put("s6q1801x", bi.s6q1801x.getText().toString());
         json.put("s6q1802x", bi.s6q1802x.getText().toString());
+
         json.put("s6q19",
                 bi.s6q1901.isChecked() ? "1" :
                         bi.s6q1902.isChecked() ? "2" :
                                 "0");
+
         json.put("s6q20",
                 bi.s6q20a.isChecked() ? "" :
                         bi.s6q20b.isChecked() ? "" :
@@ -287,6 +354,7 @@ public class SectionFActivity extends AppCompatActivity {
                                                         bi.s6q20f.isChecked() ? "" :
                                                                 bi.s6q20g.isChecked() ? "" :
                                                                         "0");
+
         json.put("s6q20ax", bi.s6q20ax.getText().toString());
         json.put("s6q20bx", bi.s6q20bx.getText().toString());
         json.put("s6q20cx", bi.s6q20cx.getText().toString());
