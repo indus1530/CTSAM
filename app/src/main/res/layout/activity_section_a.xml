@@ -241,7 +241,7 @@
                         android:id="@+id/s1q8r"
                         style="@style/EditTextAlphaNumeric"
                         android:hint="@string/reason"
-                        android:visibility='@{s1q8b.checked? s1q8r.getText().toString : "" }' />
+                        android:text='@{s1q8b.checked? s1q8r.getText().toString : "" }' />
 
                 </LinearLayout>
 
