@@ -169,7 +169,7 @@ public class FormsContract {
     }
 
     public String getProjectName() {
-        String projectName = "uen_scans_bl_2020";
+        String projectName = "ctsam_2020";
         return projectName;
     }
 

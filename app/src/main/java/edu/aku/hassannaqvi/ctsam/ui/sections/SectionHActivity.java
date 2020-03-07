@@ -13,8 +13,14 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import edu.aku.hassannaqvi.ctsam.R;
+import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
+import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionHBinding;
+import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionHActivity extends AppCompatActivity {
@@ -117,7 +123,7 @@ public class SectionHActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionIActivity.class));
+                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -142,6 +148,17 @@ public class SectionHActivity extends AppCompatActivity {
 
 
     private void SaveDraft() throws JSONException {
+
+        MainApp.fc = new FormsContract();
+        MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+        MainApp.fc.setUser(MainApp.userName);
+        MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
+        MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
+        MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
+        //MainApp.fc.setClusterCode(bi.a101.getText().toString());
+        //MainApp.fc.setHhno(bi.a112.getText().toString());
+        // MainApp.fc.setLuid(bl.getLUID());
+        MainApp.setGPS(this); // Set GPS
 
         JSONObject json = new JSONObject();
 
@@ -243,6 +260,8 @@ public class SectionHActivity extends AppCompatActivity {
                         bi.s8q9a102.isChecked() ? "2" :
                                 bi.s8q9a103.isChecked() ? "3" :
                                         "0");
+
+        MainApp.fc.setsA3(String.valueOf(json));
 
 
     }

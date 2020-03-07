@@ -12,8 +12,14 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import edu.aku.hassannaqvi.ctsam.R;
+import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
+import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionIBinding;
+import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionIActivity extends AppCompatActivity {
@@ -39,7 +45,7 @@ public class SectionIActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionJActivity.class));
+                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -64,6 +70,17 @@ public class SectionIActivity extends AppCompatActivity {
 
 
     private void SaveDraft() throws JSONException {
+
+        MainApp.fc = new FormsContract();
+        MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+        MainApp.fc.setUser(MainApp.userName);
+        MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
+        MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
+        MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
+        //MainApp.fc.setClusterCode(bi.a101.getText().toString());
+        //MainApp.fc.setHhno(bi.a112.getText().toString());
+        // MainApp.fc.setLuid(bl.getLUID());
+        MainApp.setGPS(this); // Set GPS
 
         JSONObject json = new JSONObject();
 
@@ -118,6 +135,8 @@ public class SectionIActivity extends AppCompatActivity {
                                                                                                                         bi.s9q396.isChecked() ? "96" :
                                                                                                                                 "0");
         json.put("s9q396x", bi.s9q396x.getText().toString());
+
+        MainApp.fc.setsA3(String.valueOf(json));
 
 
     }
