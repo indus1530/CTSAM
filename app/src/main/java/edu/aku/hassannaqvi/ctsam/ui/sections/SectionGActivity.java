@@ -19,6 +19,7 @@ import java.util.Date;
 
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
+import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionGBinding;
 import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
@@ -83,18 +84,14 @@ public class SectionGActivity extends AppCompatActivity {
 
 
     private boolean UpdateDB() {
-        /*long updcount = db.addForm(MainApp.fc);
-        MainApp.fc.set_ID(String.valueOf(updcount));
+        DatabaseHelper db = MainApp.appInfo.getDbHelper();
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SA3, MainApp.fc.getsA3());
         if (updcount > 0) {
-            MainApp.fc.set_UID(MainApp.fc.getDeviceID() + MainApp.fc.get_ID());
-            db.updatesFormColumn(FormsContract.FormsTable.COLUMN_UID, MainApp.fc.get_UID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
-        }*/
-
-        return true;
+        }
     }
 
 
