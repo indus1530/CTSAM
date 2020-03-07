@@ -2178,24 +2178,25 @@
     <!--  SECTION A -->
     <string name="seca"> SECTION A: Address &amp; Identification Information </string>
 
-    <string name="s1q1"> SLQ1: Name of Health Care Facility </string>
+    <string name="s1q1"> Health Care Facility </string>
 
-    <string name="s1q2"> SLQ2: Taluka Name </string>
+    <string name="s1q2"> Taluka </string>
 
-    <string name="s1q3"> SLQ3: Village Name </string>
+    <string name="s1q3"> Village </string>
 
-    <string name="s1q4"> SLQ4: Address </string>
+    <string name="s1q4"> Address </string>
 
-    <string name="s1q5"> SLQ5: Name of Data Collector 01 </string>
+    <string name="s1q5"> 1st: Data Collector </string>
 
-    <string name="s1q6"> SLQ6: Name of Data Collector 02 </string>
+    <string name="s1q6"> 2nd: Data Collector </string>
 
-    <string name="s1q7"> SLQ7: Date of recruitment </string>
+    <string name="s1q7"> Date of Recruitment </string>
 
-    <string name="s1q8"> SLQ8: Has the parents/legal guardian agreed to participate and given the consent ? </string>
+    <string name="s1q8"> SLQ8: Has the parents / legal guardian agreed to participate and given the consent ? </string>
     <string name="s1q8a"> Yes </string>
-    <string name="s1q8b"> No.</string>
+    <string name="s1q8b"> No </string>
     <string name="s1q8r"> SLQ8r: Reason for not given consent </string>
+
 
     <!--  SECTION B -->
     <string name="secb"> SECTION B: Screening for SAM Cases </string>
