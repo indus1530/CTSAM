@@ -90,7 +90,7 @@
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s4q2"
-                        style="@style/EditTextAlphaNumeric"
+                        style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="#####"

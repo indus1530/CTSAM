@@ -544,7 +544,8 @@
 
                     <RadioGroup
                         android:id="@+id/s8q8"
-                        style="@style/radiogroup">
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s8q801"

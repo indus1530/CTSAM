@@ -210,14 +210,14 @@
                             style="@style/radiobutton"
                             android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:text="@string/s1q8a" />
+                            android:text="@string/yes" />
 
                         <RadioButton
                             android:id="@+id/s1q8b"
                             style="@style/radiobutton"
                             android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:text="@string/s1q8b" />
+                            android:text="@string/no" />
 
                     </RadioGroup>
 

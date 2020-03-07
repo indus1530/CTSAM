@@ -303,14 +303,14 @@
                         <CheckBox
                             android:id="@+id/s7q696"
                             style="@style/checkbox"
-                            android:text="@string/s7q696" />
+                            android:text="@string/other" />
 
                         <EditText
                             android:id="@+id/s7q696x"
                             style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/s7q696"
+                            android:hint="@string/specify"
                             android:tag="s7q696"
                             android:text='@{s7q696.checked? s7q696x.getText().toString() : ""}'
                             android:visibility='@{s7q696.checked? View.VISIBLE : View.GONE}' />

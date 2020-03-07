@@ -382,14 +382,14 @@
                         <RadioButton
                             android:id="@+id/s6q596"
                             style="@style/radiobutton"
-                            android:text="@string/s6q596" />
+                            android:text="@string/other" />
 
                         <EditText
                             android:id="@+id/s6q596x"
                             style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/s6q596"
+                            android:hint="@string/specify"
                             android:tag="s6q596"
                             android:text='@{s6q596.checked? s6q596x.getText().toString() : ""}'
                             android:visibility='@{s6q596.checked? View.VISIBLE : View.GONE}' />
@@ -462,7 +462,6 @@
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:hint="@string/s6q701"
-                            android:digits="2"
                             app:mask="##"
                             app:maxValue="10"
                             app:minValue="1"
@@ -659,14 +658,14 @@
                         <RadioButton
                             android:id="@+id/s6q996"
                             style="@style/radiobutton"
-                            android:text="@string/s6q996" />
+                            android:text="@string/other" />
 
                         <EditText
                             android:id="@+id/s6q996x"
                             style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/s6q996"
+                            android:hint="@string/specify"
                             android:tag="s6q996"
                             android:text='@{s6q996.checked? s6q996x.getText().toString() : ""}'
                             android:visibility='@{s6q996.checked? View.VISIBLE : View.GONE}' />
@@ -718,14 +717,14 @@
                             <RadioButton
                                 android:id="@+id/s6q1096"
                                 style="@style/radiobutton"
-                                android:text="@string/s6q1096" />
+                                android:text="@string/other" />
 
                             <EditText
                                 android:id="@+id/s6q1096x"
                                 style="@style/EditTextAlpha"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="@string/s6q1096"
+                                android:hint="@string/specify"
                                 android:tag="s6q1096"
                                 android:text='@{s6q1096.checked? s6q1096x.getText().toString() : ""}'
                                 android:visibility='@{s6q1096.checked? View.VISIBLE : View.GONE}' />
@@ -860,14 +859,14 @@
                         <RadioButton
                             android:id="@+id/s6q1296"
                             style="@style/radiobutton"
-                            android:text="@string/s6q1296" />
+                            android:text="@string/other" />
 
                         <EditText
                             android:id="@+id/s6q1296x"
                             style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/s6q1296"
+                            android:hint="@string/specify"
                             android:tag="s6q1296"
                             android:text='@{s6q1296.checked? s6q1296x.getText().toString() : ""}'
                             android:visibility='@{s6q1296.checked? View.VISIBLE : View.GONE}' />
@@ -969,14 +968,14 @@
                         <RadioButton
                             android:id="@+id/s6q1396"
                             style="@style/radiobutton"
-                            android:text="@string/s6q1396" />
+                            android:text="@string/other" />
 
                         <EditText
                             android:id="@+id/s6q1396x"
                             style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/s6q1396"
+                            android:hint="@string/specify"
                             android:tag="s6q1396"
                             android:text='@{s6q1396.checked? s6q1396x.getText().toString() : ""}'
                             android:visibility='@{s6q1396.checked? View.VISIBLE : View.GONE}' />
@@ -1060,14 +1059,14 @@
                         <RadioButton
                             android:id="@+id/s6q1496"
                             style="@style/radiobutton"
-                            android:text="@string/s6q1496" />
+                            android:text="@string/other" />
 
                         <EditText
                             android:id="@+id/s6q1496x"
                             style="@style/EditTextAlpha"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/s6q1496"
+                            android:hint="@string/specify"
                             android:tag="s6q1496"
                             android:text='@{s6q1496.checked? s6q1496x.getText().toString() : ""}'
                             android:visibility='@{s6q1496.checked? View.VISIBLE : View.GONE}' />
@@ -1096,7 +1095,6 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/s6q15"
                         android:inputType="number"
-                        android:digits="2"
                         app:mask="##"
                         app:maxValue="15"
                         app:minValue="1"
