@@ -2226,37 +2226,37 @@
     <string name="s2q4b"> Poor  ( Child takes RUTF / RUSF with persistent encouragement ) </string>
     <string name="s2q4c"> Refused  ( Child refuses RUTF / RUSF even after persistent encouragement ) </string>
 
-    <string name="s2q5_subtitle"> S2Q5_subtitle: Presence of any medical complication ? </string>
+    <string name="s2q5"> S2Q5: Presence of any medical complication ? </string>
 
-    <string name="s2q501"> S2Q501: Anorexia, no appetite for RUTF / RUSF </string>
+    <string name="s2q501"> Anorexia, no appetite for RUTF / RUSF </string>
     <string name="s2q501a"> Yes </string>
     <string name="s2q501b"> No </string>
 
-    <string name="s2q502"> S2Q502: Vomits everything </string>
+    <string name="s2q502"> Vomits everything </string>
     <string name="s2q502a"> Yes </string>
     <string name="s2q502b"> No </string>
 
-    <string name="s2q503"> S2Q503: Hypothermia ≤35.5o c </string>
+    <string name="s2q503"> Hypothermia ≤ 35.5 °C </string>
     <string name="s2q503a"> Yes </string>
     <string name="s2q503b"> No </string>
 
-    <string name="s2q504"> S2Q504: Severe pneumonia </string>
+    <string name="s2q504"> Severe pneumonia </string>
     <string name="s2q504a"> Yes </string>
     <string name="s2q504b"> No </string>
 
-    <string name="s2q505"> S2Q505: Severe dehydration</string>
-    <string name="s2q505a"> Yes</string>
-    <string name="s2q505b"> No.</string>
+    <string name="s2q505"> Severe dehydration </string>
+    <string name="s2q505a"> Yes </string>
+    <string name="s2q505b"> No </string>
 
-    <string name="s2q506"> S2Q506: Severe anemia</string>
-    <string name="s2q506a"> Yes</string>
-    <string name="s2q506b"> No.</string>
+    <string name="s2q506"> Severe Anemia </string>
+    <string name="s2q506a"> Yes </string>
+    <string name="s2q506b"> No </string>
 
-    <string name="s2q507"> S2Q507: Not alert  ( very weak, lethargic, unconscious, fits or convulsion ) </string>
+    <string name="s2q507"> Not alert  ( very weak, lethargic, unconscious, fits or convulsion ) </string>
     <string name="s2q507a"> Yes </string>
     <string name="s2q507b"> No </string>
 
-    <string name="s2q508"> S2Q508: Conditions requiring IV infusion or NG tube feeding </string>
+    <string name="s2q508"> Conditions requiring IV infusion or NG tube feeding </string>
     <string name="s2q508a"> Yes </string>
     <string name="s2q508b"> No </string>
 
@@ -2272,11 +2272,10 @@
     <string name="s2q8a"> Yes</string>
     <string name="s2q8b"> No.</string>
 
-    <string name="s2q9"> S2Q9: Child had a history of milk or peanut allergy?</string>
-    <string name="s2q9a"> Yes</string>
-    <string name="s2q9b"> No.</string>
-
-    <string name="s2q29_instruction"> S2Q29_instruction: -	Child will be enrolled if Yes in Q 2.1,2.3 and Q 2.4 response is 1 “Good” and No in Q 2.5, 2.6, 2.7, 2.8 &amp; 2.9</string>
+    <string name="s2q9"> S2Q9: Child had a history of milk or peanut allergy ? </string>
+    <string name="s2q29_instruction"> Instruction: - Child will be enrolled \nif Yes in Q 2.1,2.3 and \nQ 2.4 response is 1 “Good” and No in Q 2.5, 2.6, 2.7, 2.8 &amp; 2.9 </string>
+    <string name="s2q9a"> Yes </string>
+    <string name="s2q9b"> No </string>
 
 
     <!--  SECTION C -->
