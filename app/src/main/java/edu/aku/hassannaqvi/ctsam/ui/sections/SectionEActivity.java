@@ -86,7 +86,7 @@ public class SectionEActivity extends AppCompatActivity {
             try {
                 SaveDraft();
             } catch (Exception e) {
-                e.printStackTrace();
+                throw new RuntimeException(e.getMessage());
             }
             if (UpdateDB()) {
                 finish();
