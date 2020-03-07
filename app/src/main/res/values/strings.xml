@@ -2205,44 +2205,44 @@
 
     <string name="muac2"> MUAC-02: </string>
 
-    <string name="s2q1"> S2Q1: MUAC &lt;11.5 cm</string>
+    <string name="s2q1"> MUAC &lt; 11.5 cm </string>
     <string name="s2q1a"> Yes </string>
     <string name="s2q1b"> No </string>
 
     <string name="s2q2"> S2Q2: Bilateral pitting oedema ? </string>
-    <string name="s2q2a"> None</string>
-    <string name="s2q2b"> Bilateral pitting oedema +</string>
-    <string name="s2q2c"> Bilateral pitting oedema ++</string>
-    <string name="s2q2d"> Bilateral pitting oedema +++</string>
+    <string name="s2q2a"> None </string>
+    <string name="s2q2b"> Bilateral pitting oedema + </string>
+    <string name="s2q2c"> Bilateral pitting oedema ++ </string>
+    <string name="s2q2d"> Bilateral pitting oedema +++ </string>
 
-    <string name="s2q2_instruction"> S2Q2_instruction: Note: Grades of Oedema-Definition : 1) Absent, 2)Grade + Mild: Both feet/ankles, 3) Grade++Moderate: Both feet, plus lower legs, hands or lower arms, 4) Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face</string>
+    <string name="s2q2_instruction"> Note: Grades of Oedema - Definition : \n1 - Absent, \n2 - Grade + Mild: Both feet / ankles, \n3 - Grade++Moderate: Both feet, plus lower legs, hands or lower arms, \n4 - Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face </string>
     <string name="s2q3"> S2Q3: Presence of appetite for RUTF / RUSF ? </string>
     <string name="s2q3a"> Yes</string>
     <string name="s2q3b"> No.</string>
 
-    <string name="s2q4"> S2Q4: If Yes then rank : -	Appetite returned (eats at least 75% of RUTF+RUSF)</string>
-    <string name="s2q4a"> Good (Child takes RUTF/RUSF) eagerly </string>
-    <string name="s2q4b"> Poor (Child takes RUTF/RUSF with persistent encouragement) </string>
-    <string name="s2q4c"> Refused (Child refuses RUTF/RUSF even after persistent encouragement) </string>
+    <string name="s2q4"> S2Q4: If Yes then rank : </string>
+    <string name="s2q4_instruction"> Appetite returned (eats at least 75% of RUTF + RUSF) </string>
+    <string name="s2q4a"> Good  ( Child takes RUTF / RUSF )  eagerly </string>
+    <string name="s2q4b"> Poor  ( Child takes RUTF / RUSF with persistent encouragement ) </string>
+    <string name="s2q4c"> Refused  ( Child refuses RUTF / RUSF even after persistent encouragement ) </string>
 
     <string name="s2q5_subtitle"> S2Q5_subtitle: Presence of any medical complication ? </string>
-    <string name="s2q4_instruction"> Appetite returned (eats at least 75% of RUTF+RUSF) </string>
 
-    <string name="s2q501"> S2Q501: Anorexia, no appetite for RUTF/RUSF</string>
-    <string name="s2q501a"> Yes</string>
-    <string name="s2q501b"> No.</string>
+    <string name="s2q501"> S2Q501: Anorexia, no appetite for RUTF / RUSF </string>
+    <string name="s2q501a"> Yes </string>
+    <string name="s2q501b"> No </string>
 
-    <string name="s2q502"> S2Q502: Vomits everything</string>
-    <string name="s2q502a"> Yes</string>
-    <string name="s2q502b"> No.</string>
+    <string name="s2q502"> S2Q502: Vomits everything </string>
+    <string name="s2q502a"> Yes </string>
+    <string name="s2q502b"> No </string>
 
-    <string name="s2q503"> S2Q503: Hypothermia ≤35.5o c</string>
-    <string name="s2q503a"> Yes</string>
-    <string name="s2q503b"> No.</string>
+    <string name="s2q503"> S2Q503: Hypothermia ≤35.5o c </string>
+    <string name="s2q503a"> Yes </string>
+    <string name="s2q503b"> No </string>
 
-    <string name="s2q504"> S2Q504: Severe pneumonia</string>
-    <string name="s2q504a"> Yes</string>
-    <string name="s2q504b"> No.</string>
+    <string name="s2q504"> S2Q504: Severe pneumonia </string>
+    <string name="s2q504a"> Yes </string>
+    <string name="s2q504b"> No </string>
 
     <string name="s2q505"> S2Q505: Severe dehydration</string>
     <string name="s2q505a"> Yes</string>
@@ -2252,23 +2252,23 @@
     <string name="s2q506a"> Yes</string>
     <string name="s2q506b"> No.</string>
 
-    <string name="s2q507"> S2Q507: Not alert(very weak. lethargic, unconscious ,fits or convulsion)</string>
-    <string name="s2q507a"> Yes</string>
-    <string name="s2q507b"> No.</string>
+    <string name="s2q507"> S2Q507: Not alert  ( very weak, lethargic, unconscious, fits or convulsion ) </string>
+    <string name="s2q507a"> Yes </string>
+    <string name="s2q507b"> No </string>
 
-    <string name="s2q508"> S2Q508: Conditions requiring IV infusion or NG tube feeding</string>
-    <string name="s2q508a"> Yes</string>
-    <string name="s2q508b"> No.</string>
+    <string name="s2q508"> S2Q508: Conditions requiring IV infusion or NG tube feeding </string>
+    <string name="s2q508a"> Yes </string>
+    <string name="s2q508b"> No </string>
 
-    <string name="s2q6"> S2Q6: Is child involved in another research trial or supplemental feeding program?</string>
-    <string name="s2q6a"> Yes</string>
-    <string name="s2q6b"> No.</string>
+    <string name="s2q6"> S2Q6: Is child involved in another research trial or supplemental feeding program ? </string>
+    <string name="s2q6a"> Yes </string>
+    <string name="s2q6b"> No </string>
 
     <string name="s2q7"> S2Q7: Is child developmentally delayed?</string>
     <string name="s2q7a"> Yes</string>
     <string name="s2q7b"> No.</string>
 
-    <string name="s2q8"> S2Q8: Child has a chronic debilitating illness such as cerebral palsy (not including HIV or TB)?</string>
+    <string name="s2q8"> S2Q8: Child has a chronic debilitating illness such as cerebral palsy (not including HIV or TB) ? </string>
     <string name="s2q8a"> Yes</string>
     <string name="s2q8b"> No.</string>
 
