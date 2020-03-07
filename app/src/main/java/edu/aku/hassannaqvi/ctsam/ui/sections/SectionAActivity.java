@@ -2,13 +2,11 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -41,14 +39,14 @@ public class SectionAActivity extends AppCompatActivity {
 
     private void setupSkips() {
 
-        bi.s1q8.setOnCheckedChangeListener((group, checkedId) -> {
+        /*bi.s1q8.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == bi.s1q8b.getId()) {
                 bi.fldGrpCVs1q8r.setVisibility(View.VISIBLE);
             } else {
                 Clear.clearAllFields(bi.fldGrpCVs1q8r);
                 bi.fldGrpCVs1q8r.setVisibility(View.GONE);
             }
-        });
+        });*/
 
     }
 
