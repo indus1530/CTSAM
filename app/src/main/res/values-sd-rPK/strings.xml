@@ -2175,7 +2175,6 @@
     <string name="delete_title">Confirm</string>
 
 
-
     <!--  CTSAM STRINGS -->
     <!--  SECTION A -->
     <string name="seca"> SECTION A: Address &amp; Identification Information </string>
@@ -2763,7 +2762,7 @@
 
     <!--  SECTION J -->
     <string name="secj"> SECTION J: Study Group &amp; Supplementation </string>
-    <string name="s10q1"> s10q1: داخلا جي وقت ٻار کي ڪيترا ساشي ڏنا ويا هئا ؟ </string>
+    <string name="s10q1"> s10q1: داخلا جي وقت ٻار کي ڪيترا ساشي ڏنا ويا هئا؟</string>
     <string name="s10q101"> گلابي</string>
     <string name="s10q102"> نيرو</string>
     <string name="s10q103"> سائو</string>

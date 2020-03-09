@@ -13,8 +13,8 @@
 
     <ScrollView
         style="@style/i_scrollview"
-        android:layoutDirection="ltr"
-        android:textDirection="ltr">
+        android:layoutDirection="rtl"
+        android:textDirection="rtl">
 
 
         <LinearLayout

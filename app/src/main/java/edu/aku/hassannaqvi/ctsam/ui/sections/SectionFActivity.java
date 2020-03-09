@@ -34,12 +34,11 @@ public class SectionFActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f);
         bi.setCallback(this);
-
-        setlistener();
+        setupSkips();
 
     }
 
-    private void setlistener() {
+    private void setupSkips() {
 
         bi.s6q3.setOnCheckedChangeListener(((radioGroup, i) -> {
 

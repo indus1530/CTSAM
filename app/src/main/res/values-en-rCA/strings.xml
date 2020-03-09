@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources>
 
     <!--new Strings-->
-    <string name="app_name"> CTSAM Sindhi </string>
+    <string name="app_name"> CTSAM English </string>
     <!-- Strings related to login -->
     <string name="btnSync">Click for Sync</string>
     <string name="btnUpload">Click for Upload</string>
@@ -34,16 +33,16 @@
     Aga Khan University, Karachi, Pakistan</string>
     <string name="title_activity_family_members_list">Family Members List</string>
 
-    <string name="yes"> ها </string>
-    <string name="no"> نه </string>
-    <string name="dkn"> خبر نه آهي </string>
-    <string name="none"> ڪو به ناهي </string>
-    <string name="never"> ڪڏهن به نه </string>
-    <string name="nap"> لاڳو نٿو ٿئي </string>
-    <string name="nav"> موجود ناهي </string>
-    <string name="ref"> انڪار ڪري ڇڏيو </string>
-    <string name="other"> ٻيو ڪجھ </string>
-    <string name="specify"> وضاحت ڪريو </string>
+    <string name="yes"> Yes </string>
+    <string name="no"> No </string>
+    <string name="dkn"> Don\'t Know </string>
+    <string name="none"> None </string>
+    <string name="never"> Never </string>
+    <string name="nap"> Not Applicable </string>
+    <string name="nav"> Not Available </string>
+    <string name="ref"> Refused </string>
+    <string name="other"> Other </string>
+    <string name="specify"> Specify </string>
     <string name="year"> Years </string>
     <string name="month"> Months </string>
     <string name="weeks"> Weeks </string>
@@ -53,10 +52,10 @@
     <string name="kg"> Kilograms </string>
     <string name="km"> Kilometers </string>
     <string name="cm"> Centimeters </string>
-    <string name="in"> انچ </string>
-    <string name="rupees"> روپيا </string>
-    <string name="num"> نمبر </string>
-    <string name="name"> نالو </string>
+    <string name="in"> Inches </string>
+    <string name="rupees"> Rupees </string>
+    <string name="num"> Number </string>
+    <string name="name"> Name </string>
     <string name="id"> ID </string>
     <string name="time"> HH:mm </string>
     <string name="mid1"> Measurer 1: ID </string>
@@ -67,9 +66,9 @@
     <string name="under5">Child Age 5 \- 10</string>
     <string name="part">Partial</string>
     <string name="complt">Complete</string>
-    <string name="reason"> ان جو سبب </string>
-    <string name="address"> ايڊريس </string>
-    <string name="anthro_error"> Kindly Re-Do the measurements </string>
+    <string name="reason"> Reason </string>
+    <string name="address"> Address </string>
+    <string name="anthro_error">Kindly Re-Do the measurements</string>
 
     <string name="a101"> Cluster number </string>
     <string name="a101a"> This information will be based on the list of villages generated from the district. Each enumerator will be given a list of clusters that he/she will be visiting, and before starting the interview, this information will be entered from the same list. </string>
@@ -2175,601 +2174,696 @@
     <string name="delete_title">Confirm</string>
 
 
-
     <!--  CTSAM STRINGS -->
     <!--  SECTION A -->
     <string name="seca"> SECTION A: Address &amp; Identification Information </string>
-    <string name="s1q1"> s1q1: صحت مرڪز جو نالو</string>
-    <string name="s1q2"> s1q2: تعلقي جو نالو</string>
-    <string name="s1q3"> s1q3: ڳوٺ جو نالو</string>
-    <string name="s1q4"> s1q4: ايڊريس</string>
-    <string name="s1q5"> s1q5: پهريون ڊيٽا ڪيلڪٽر جو نالو</string>
-    <string name="s1q6"> s1q6: ٻيو ڊيٽا ڪيلڪٽر جو نالو</string>
-    <string name="s1q7"> s1q7: داخلا جي تاريخ</string>
-    <string name="s1q8"> s1q8: ڇا والدين حصو وٺڻ لاءِ راضي ٿيا ۽ راضي نامي وارو فارم ڀريو ويو ؟</string>
-    <string name="s1q8a"> ها</string>
-    <string name="s1q8b"> نه</string>
-    <string name="s1q8r"> s1q8r: راضي نامو نه ڀرڻ جو سبب</string>
+
+    <string name="s1q1"> Health Care Facility </string>
+
+    <string name="s1q2"> Taluka </string>
+
+    <string name="s1q3"> Village </string>
+
+    <string name="s1q4"> Address </string>
+
+    <string name="s1q5"> 1st: Data Collector </string>
+
+    <string name="s1q6"> 2nd: Data Collector </string>
+
+    <string name="s1q7"> Date of Recruitment </string>
+
+    <string name="s1q8"> SLQ8: Has the parents / legal guardian agreed to participate and given the consent ? </string>
+    <string name="s1q8a"> Yes </string>
+    <string name="s1q8b"> No </string>
+    <string name="s1q8r"> SLQ8r: Reason for not given consent </string>
 
 
     <!--  SECTION B -->
     <string name="secb"> SECTION B: Screening for SAM Cases </string>
-    <string name="s2t"> s2t: ڪيسن جي جانچ SAM</string>
-    <string name="muac1"> muac1: MUAC-01</string>
-    <string name="muac2"> muac2: MUAC-02</string>
-    <string name="s2q1"> s2q1: کاٻي ٻانهن جي گولائي جي ماپ 11.5 سينٽي ميٽر کان گهٽ</string>
-    <string name="s2q1a"> ها</string>
-    <string name="s2q1b"> نه</string>
-    <string name="s2q2"> s2q2: پيرن تي سوڄ </string>
-    <string name="s2q2a"> ڪو نه آهي</string>
-    <string name="s2q2b"> + پيرن تي سوڄ</string>
-    <string name="s2q2c">  ++ پيرن تي سوڄ</string>
-    <string name="s2q2d"> +++ پيرن تي سوڄ</string>
-    <string name="s2q2_instruction"> s2q2_instruction: پيرن تي سوڄ جي وضاحت :1)ڪو نه آهي ,2) هلڪو، ٻنهي پيرن تي ۽ کڙين تي ,3) وچولو، ٻنهي پيرن، ڄگھن ۽ ٻانهن تي 4) شديد سوڄ پيرن ،ڄگھن، ٻانهن، هٿن ۽ منهن تي</string>
-    <string name="s2q3"> s2q3: لاءِ؟RUTF/RUSF بک جو هجڻ </string>
-    <string name="s2q3a"> ها</string>
-    <string name="s2q3b"> نه</string>
-    <string name="s2q4"> s2q4: جيڪڏهن ها ته ڪهڙي درجي جي آهي</string>
-    <string name="s2q4a"> (شوق سان کا ڌوRUTF/RUSF ٻار) سٺو</string>
-    <string name="s2q4b"> ( کاڌو RUTF/RUSF ٻار بار بار چوڻ کان پوءِ) خراب</string>
-    <string name="s2q4c"> نه کاڌو RUTF/RUSF انڪار ڪيو (ٻار بار بار چوڻ کان پوءِ به </string>
-    <string name="s2q5_subtitle"> s2q5_subtitle: طبي پيچدگين جو موجود هجڻ</string>
-    <string name="s2q4_instruction">  واپرائجي RUTF/RUSF 75% گھٽ ۾ گھٽ </string>
-    <string name="s2q501"> s2q501:  جي لاءِ بک جو نه لڳڻ RUTF/RUSF</string>
-    <string name="s2q501a"> ها</string>
-    <string name="s2q501b"> نه</string>
-    <string name="s2q502"> s2q502: هر شيءِ الٽي ڪري ڪڍي ٿو</string>
-    <string name="s2q503"> s2q503:  ٿي وڃڻc  ≤35.5o c جسم گرمي پد</string>
-    <string name="s2q504"> s2q504: شديد نمونيا</string>
-    <string name="s2q505"> s2q505: جسم ۾ شديد پاڻي کوٽ</string>
-    <string name="s2q506"> s2q506: شديد رت جي کوٽ</string>
-    <string name="s2q507"> s2q507: (سست( تمام گھڻو ڪمزور، بيهوش، دورا پوندا هجن</string>
-    <string name="s2q508"> s2q508: ٽيوب وسيلي خوراڪ وٺڻ</string>
-    <string name="s2q502a"> ها</string>
-    <string name="s2q503a"> ها</string>
-    <string name="s2q504a"> ها</string>
-    <string name="s2q505a"> ها</string>
-    <string name="s2q506a"> ها</string>
-    <string name="s2q507a"> ها</string>
-    <string name="s2q508a"> ها</string>
-    <string name="s2q502b"> نه</string>
-    <string name="s2q503b"> نه</string>
-    <string name="s2q504b"> نه</string>
-    <string name="s2q505b"> نه</string>
-    <string name="s2q506b"> نه</string>
-    <string name="s2q507b"> نه</string>
-    <string name="s2q508b"> نه</string>
-    <string name="s2q6"> s2q6: ڇا ٻار ڪنهن ٻئي تحقيقي ٽرائل يا  اضافي خوراڪ واري پروگرام ۾ شامل آهي؟</string>
-    <string name="s2q6a"> ها</string>
-    <string name="s2q6b"> نه</string>
-    <string name="s2q7"> s2q7: ڇا ٻار جي واڌ ويجھ سستي سان ٿي رهي آهي؟</string>
-    <string name="s2q8"> s2q8: (بيماري آهي جيئن ته شامل نه ڪريو HIV يا TB) cerebral palsy ڇا ٻار کي ڪا پراڻي دماغي</string>
-    <string name="s2q9"> s2q9:  مان الرجي ٿي هئي؟ کاڌي ۾ شامل شين   Peanut ڇا ٻار کي کير يا</string>
-    <string name="s2q7a"> ها</string>
-    <string name="s2q8a"> ها</string>
-    <string name="s2q9a"> ها</string>
-    <string name="s2q7b"> نه</string>
-    <string name="s2q8b"> نه</string>
-    <string name="s2q9b"> نه</string>
-    <string name="s2q29_instruction"> s2q29_instruction: -	ٻار کي تحقيق ۾ شامل ڪيو ويندو جيڪڏهن سوال نمبر 1. 2 ۾ 2.3 ها آهي ۽ سوال 2.4 جو جواب 1 (سٺو)جيڪڏهن سوال نمبر2.8،2.7،2.6،2.5۽2.9 ۾ نه آهي</string>
+    <string name="s2t"> Screening for SAM Cases </string>
+
+    <string name="muac1"> MUAC-01: </string>
+
+    <string name="muac2"> MUAC-02: </string>
+
+    <string name="s2q1"> MUAC &lt; 11.5 cm </string>
+    <string name="s2q1a"> Yes </string>
+    <string name="s2q1b"> No </string>
+
+    <string name="s2q2"> S2Q2: Bilateral pitting oedema ? </string>
+    <string name="s2q2a"> None </string>
+    <string name="s2q2b"> Bilateral pitting oedema + </string>
+    <string name="s2q2c"> Bilateral pitting oedema ++ </string>
+    <string name="s2q2d"> Bilateral pitting oedema +++ </string>
+
+    <string name="s2q2_instruction"> Note: Grades of Oedema - Definition : \n1 - Absent, \n2 - Grade + Mild: Both feet / ankles, \n3 - Grade++Moderate: Both feet, plus lower legs, hands or lower arms, \n4 - Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face </string>
+    <string name="s2q3"> S2Q3: Presence of appetite for RUTF / RUSF ? </string>
+    <string name="s2q3a"> Yes</string>
+    <string name="s2q3b"> No.</string>
+
+    <string name="s2q4"> S2Q4: If Yes then rank : </string>
+    <string name="s2q4_instruction"> Appetite returned (eats at least 75% of RUTF + RUSF) </string>
+    <string name="s2q4a"> Good  ( Child takes RUTF / RUSF )  eagerly </string>
+    <string name="s2q4b"> Poor  ( Child takes RUTF / RUSF with persistent encouragement ) </string>
+    <string name="s2q4c"> Refused  ( Child refuses RUTF / RUSF even after persistent encouragement ) </string>
+
+    <string name="s2q5_subtitle"> S2Q5: Presence of any medical complication ? </string>
+
+    <string name="s2q501"> Anorexia, no appetite for RUTF / RUSF </string>
+    <string name="s2q501a"> Yes </string>
+    <string name="s2q501b"> No </string>
+
+    <string name="s2q502"> Vomits Everything </string>
+    <string name="s2q502a"> Yes </string>
+    <string name="s2q502b"> No </string>
+
+    <string name="s2q503"> Hypothermia ≤ 35.5 &#xb0;C </string>
+    <string name="s2q503a"> Yes </string>
+    <string name="s2q503b"> No </string>
+
+    <string name="s2q504"> Severe Pneumonia </string>
+    <string name="s2q504a"> Yes </string>
+    <string name="s2q504b"> No </string>
+
+    <string name="s2q505"> Severe Dehydration </string>
+    <string name="s2q505a"> Yes </string>
+    <string name="s2q505b"> No </string>
+
+    <string name="s2q506"> Severe Anemia </string>
+    <string name="s2q506a"> Yes </string>
+    <string name="s2q506b"> No </string>
+
+    <string name="s2q507"> Not alert  ( very weak, lethargic, unconscious, fits or convulsion ) </string>
+    <string name="s2q507a"> Yes </string>
+    <string name="s2q507b"> No </string>
+
+    <string name="s2q508"> Conditions requiring IV infusion or NG tube feeding </string>
+    <string name="s2q508a"> Yes </string>
+    <string name="s2q508b"> No </string>
+
+    <string name="s2q6"> S2Q6: Is child involved in another research trial or supplemental feeding program ? </string>
+    <string name="s2q6a"> Yes </string>
+    <string name="s2q6b"> No </string>
+
+    <string name="s2q7"> S2Q7: Is child developmentally delayed ? </string>
+    <string name="s2q7a"> Yes</string>
+    <string name="s2q7b"> No.</string>
+
+    <string name="s2q8"> S2Q8: Child has a chronic debilitating illness such as cerebral palsy (not including HIV or TB) ? </string>
+    <string name="s2q8a"> Yes</string>
+    <string name="s2q8b"> No.</string>
+
+    <string name="s2q9"> S2Q9: Child had a history of milk or peanut allergy ? </string>
+    <string name="s2q29_instruction"> Instruction: - Child will be enrolled \nif Yes in Q 2.1, 2.3 and \nQ 2.4 response is 1 “Good” and No in Q 2.5, 2.6, 2.7, 2.8 &amp; 2.9 </string>
+    <string name="s2q9a"> Yes </string>
+    <string name="s2q9b"> No </string>
 
 
     <!--  SECTION C -->
     <string name="secc"> SECTION C: HH Size &amp; Study Participants </string>
-    <string name="s3qa"> s3qa: 6 مهينن کان گھٽ وارا ٻار</string>
-    <string name="s3qb"> s3qb: 6 کان 23 مهينن وارا ٻار</string>
-    <string name="s3qc"> s3qc: 24 کان 59 مهينن وارا ٻار</string>
-    <string name="s3qd"> s3qd: جوان مرد</string>
-    <string name="s3qe"> s3qe: جوان عورتون</string>
-    <string name="s3qf"> s3qf: ڪُل گھر ڀاتين جو تعداد</string>
+    <string name="s3qa"> S3Qa: Children &lt; 6 months</string>
+    <string name="s3qb"> S3Qb: Children 6 &#8211; 23 months</string>
+    <string name="s3qc"> S3Qc: Children 24 &#8211; 59 months</string>
+    <string name="s3qd"> S3Qd: Adult Males</string>
+    <string name="s3qe"> S3Qe: Adult Females</string>
+    <string name="s3qf"> S3Qf: Total family members</string>
 
 
     <!--  SECTION D -->
     <string name="secd"> SECTION D: Child Information &amp; Anthropometry </string>
-    <string name="s4q1"> s4q1:  تحقيق جي گروپ جو قسم</string>
-    <string name="s4q1a"> گلابي</string>
-    <string name="s4q1b"> نيرو</string>
-    <string name="s4q1c"> سائو</string>
-    <string name="s4q1d"> ناسي  </string>
-    <string name="s4q2"> s4q2: ٻار جو شناخت نمبر</string>
-    <string name="s4q3"> s4q3: ٻار جو نالو</string>
-    <string name="s4q4"> s4q4: ٻار جي پيءُ جو نالو</string>
-    <string name="s4q5"> s4q5: ٻار جي ماءُ جو نالو</string>
-    <string name="s4q6"> s4q6: ٻار جي جنس</string>
-    <string name="s4q6a"> مرد</string>
-    <string name="s4q6b"> عورت</string>
-    <string name="s4q7"> s4q7: ٻار جي ڄمڻ جي تاريخ يا داخلا وقت عمر</string>
-    <string name="s4q7a"> ٻار جي ڄمڻ جي تاريخ</string>
-    <string name="s4q7b"> داخلا وقت عمر</string>
-    <string name="s4q7dob"> s4q7dob: ٻار جي ڄمڻ جي تاريخ</string>
-    <string name="s4q7days"> s4q7days: عمر ڏينهن ۾</string>
-    <string name="s4q7mon"> s4q7mon: عمر مهينا ۾</string>
-    <string name="s4q8"> s4q8: ڇا ٻار پورن مهينن ۾ ڄائو هو؟</string>
-    <string name="s4q8a"> ها</string>
-    <string name="s4q8b"> نه</string>
-    <string name="s4q9"> s4q9: پيدائش وقت جينياتي عمر هفتا۾ </string>
-    <string name="s4q10"> s4q10:   ڇا ٻار جو ڄمڻ وقت وزن ڪيو ويو؟</string>
-    <string name="s410q410a"> ها</string>
-    <string name="s410q410b"> نه</string>
-    <string name="s4q11"> s4q11: ٻار جو ڪيترو وزن ٿيو هو؟ڪلو گران</string>
-    <string name="s4subtitle"> s4subtitle: ٻار جي جسماني ماپ</string>
-    <string name="meas01"> meas01: پهريون ڊيٽا ڪيلڪٽر جو نالو </string>
-    <string name="s4q14m1hei"> s4q14m1hei: قد / ڊيگھ</string>
-    <string name="s4q15m1wei"> s4q15m1wei: وزن (ڪلو گرام )</string>
-    <string name="s4q15m1mua"> s4q15m1mua: کاٻي ٻانهن جي وچين حصي جو ماپ (سينٽي ميٽر)</string>
-    <string name="meas02"> meas02: ٻيو ڊيٽا ڪيلڪٽر جو نالو</string>
-    <string name="s4q14m2hei"> s4q14m2hei: قد / ڊيگھ</string>
-    <string name="s4q15m2wei"> s4q15m2wei: وزن (ڪلو گرام )</string>
-    <string name="s4q15m2mua"> s4q15m2mua: کاٻي ٻانهن جي وچين حصي جو ماپ (سينٽي ميٽر)</string>
+    <string name="s4q1"> S4Q1: Type of study group</string>
+    <string name="s4q1a"> Pink</string>
+    <string name="s4q1b"> Blue</string>
+    <string name="s4q1c"> Green</string>
+    <string name="s4q1d"> Brown</string>
+    <string name="s4q2"> S4Q2: Child Study Id</string>
+    <string name="s4q3"> S4Q3: Child Name</string>
+    <string name="s4q4"> S4Q4: Child Father Name</string>
+    <string name="s4q5"> S4Q5: Child Mother Name</string>
+    <string name="s4q6"> S4Q6: Child gender</string>
+    <string name="s4q6a"> Male</string>
+    <string name="s4q6b"> Female</string>
+
+    <string name="s4q7"> S4Q7: Child Date of brith or Age at recruitment</string>
+    <string name="s4q7a"> Date of Birth</string>
+    <string name="s4q7b"> Age at the time of recruitment</string>
+    <string name="s4q7dob"> S4Q7dob: Date of Birth</string>
+    <string name="s4q7days"> S4Q7days: Age in Days</string>
+    <string name="s4q7mon"> S4Q7mon: Age in Months</string>
+
+    <string name="s4q8"> S4Q8: Was the child born full-term ? </string>
+    <string name="s4q8a"> Yes</string>
+    <string name="s4q8b"> No.</string>
+
+    <string name="s4q9"> S4Q9: Gestational age at birth in weeks ? </string>
+
+    <string name="s4q10"> S4Q10: Was (Name) weighed at birth ? </string>
+    <string name="s410q410a"> Yes </string>
+    <string name="s410q410b"> No </string>
 
 
     <!--  SECTION E -->
     <string name="sece"> SECTION E: Child Morbidity &amp; Care Seeking </string>
-    <string name="s5q1"> s5q1: ڇا گذريل ٻن هفتن جي دوران (ٻار جو نالو) کي ھنن ڄاڻايل بيمارين مان ڪا به ھڪ ٿي ؟ </string>
-    <string name="s5q101"> تيز بخار</string>
-    <string name="s5q101a"> ها</string>
-    <string name="s5q101b"> نه</string>
-    <string name="s5q102"> s5q102: دست</string>
-    <string name="s5q102a"> ها</string>
-    <string name="s5q102b"> نه</string>
-    <string name="s5q103"> s5q103: کنگھ / زڪام</string>
-    <string name="s5q103a"> ها</string>
-    <string name="s5q103b"> نه</string>
-    <string name="s5q104"> s5q104: تڪڙا ساھ/ساھ کڻڻ ۾ ڏکيائي</string>
-    <string name="s5q104a"> ها</string>
-    <string name="s5q104b"> نه</string>
-    <string name="s5q105"> s5q105: ڇاتي ۾ کڏو پئجي وڃڻ/ پاسريٽن جو اندر باهر هلن</string>
-    <string name="s5q105a"> ها</string>
-    <string name="s5q105b"> نه</string>
-    <string name="s5q106"> s5q106: چمڙي جي بيماري 	</string>
-    <string name="s5q106a"> ها</string>
-    <string name="ss5q106b"> نه</string>
-    <string name="s5q107"> s5q107: پائخاني ۾ جيوڙا</string>
-    <string name="s5q107a"> ها</string>
-    <string name="s5q107b"> نه</string>
-    <string name="s5q108"> s5q108: داڻ داڻ</string>
-    <string name="s5q108a"> ها</string>
-    <string name="s5q108b"> نه</string>
-    <string name="s5q196"> s5q196: ٻيو ڪجھ</string>
-    <string name="s5q196a"> ها</string>
-    <string name="s5q196b"> نه</string>
-    <string name="s5q196x"> s5q196x: ٻيو ڪجھ ته وضاحت ڪريو</string>
-    <string name="s5q2"> s5q2: ڇا توهان گذريل ٻن هفتن جي دوران انهن بيمارين لاءِ ٻار جو علاج ڪرايو؟</string>
-    <string name="s5q2a"> ها</string>
-    <string name="s5q2b"> نه</string>
-    <string name="s5q3"> s5q3: گذريل ٻن هفتن جي دوران توهان جي ٻار جي صحت جي چڪاس ڪنهن ڪئي؟ انهن کان علاه ڪو ٻيو؟ وڌيڪ پڇو ۽ لکو</string>
-    <string name="s5q3_subtitlea">  صحت وارو عملو</string>
-    <string name="s5q301"> ڊاڪٽر </string>
-    <string name="s5q302">  نرس/مڊوائف/ايل ايڇ وي</string>
-    <string name="s5q303"> ڪميونٽي مڊوائف</string>
-    <string name="s5q3_subtitleb">  ٻيا فرد  </string>
-    <string name="s5q304"> دائي</string>
-    <string name="s5q305"> ليڊي ھيلٿ ورڪر</string>
-    <string name="s5q306"> هوميو پيٿڪ</string>
-    <string name="s5q307"> حڪيم</string>
-    <string name="s5q308"> ڊسپينسر/ ڪمپائونڊر</string>
-    <string name="s5q3096"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s5q4"> s5q4: ڇا گذريل ٻن هفتن دوران انھن ڄاڻايل بيمارين جي علاج لاءِ توھان جي ٻار کي اسپتال ۾ رھڻو پيو؟</string>
-    <string name="s5q4a"> ها</string>
-    <string name="s5q4b"> نه</string>
-    <string name="s5q5"> s5q5: گذريل ٻن هفتن دوران انھن ڄاڻايل بيمارين جي علاج لاءِ توھان جي ٻارکي ڪيترا ڏينھن اسپتال ۾ رھڻو پيو؟</string>
+
+    <string name="s5q1"> S5Q1: Did the child (Name) have any of the following illnesses during last two weeks ? </string>
+
+    <string name="s4q11"> S4Q11: How much did (Name) weigh ? kgs </string>
+
+    <string name="s4subtitle"> Child Anthropometry </string>
+
+    <string name="meas01"> Name of Data Collector 01 </string>
+
+    <string name="s4q14m1hei"> Height / Length (cm): </string>
+
+    <string name="s4q15m1wei"> Weight (kg): </string>
+
+    <string name="s4q15m1mua"> MUAC (cm): </string>
+
+    <string name="meas02"> Name of Data Collector 02 </string>
+
+    <string name="s4q14m2hei"> Height/Length (cm): </string>
+
+    <string name="s4q15m2wei"> Weight (kg): </string>
+
+    <string name="s4q15m2mua"> MUAC (cm): </string>
+
+    <string name="s5q101"> High grade fever </string>
+    <string name="s5q101a"> Yes </string>
+    <string name="s5q101b"> No </string>
+
+    <string name="s5q102"> Diarrhea </string>
+    <string name="s5q102a"> Yes</string>
+    <string name="s5q102b"> No.</string>
+
+    <string name="s5q103"> Cough / Flu </string>
+    <string name="s5q103a"> Yes</string>
+    <string name="s5q103b"> No.</string>
+
+    <string name="s5q104"> Difficult / Fast breathing </string>
+    <string name="s5q104a"> Yes</string>
+    <string name="s5q104b"> No.</string>
+
+    <string name="s5q105"> Chest in drawing </string>
+    <string name="s5q105a"> Yes</string>
+    <string name="s5q105b"> No.</string>
+
+    <string name="s5q106"> Skin infection </string>
+    <string name="s5q106a"> Yes</string>
+    <string name="ss5q106b"> No.</string>
+
+    <string name="s5q107"> Worms in stool </string>
+    <string name="s5q107a"> Yes </string>
+    <string name="s5q107b"> No </string>
+
+    <string name="s5q108"> Rashes </string>
+    <string name="s5q108a"> Yes </string>
+    <string name="s5q108b"> No </string>
+
+    <string name="s5q196"> Other </string>
+    <string name="s5q196a"> Yes</string>
+    <string name="s5q196b"> No.</string>
+    <string name="s5q196x"> Specify </string>
+
+    <string name="s5q2"> S5Q2: Did you seek any care for these illnesses during last two weeks ? </string>
+    <string name="s5q2a"> Yes </string>
+    <string name="s5q2b"> No </string>
+
+    <string name="s5q3"> S5Q3: Who did you see for the illnesses during last two weeks ?  Anyone else?</string>
+    <string name="s5q3_subtitlea"> HEALTH PERSONNEL</string>
+    <string name="s5q301"> Doctor</string>
+    <string name="s5q302"> Nurse/Midwife/LHV</string>
+    <string name="s5q303"> CMW (Community Midwife)</string>
+    <string name="s5q3_subtitleb"> OTHER PERSON</string>
+    <string name="s5q304"> Dai-TBA</string>
+    <string name="s5q305"> LHW (Lady Health Worker)</string>
+    <string name="s5q306"> Homeopath</string>
+    <string name="s5q307"> Hakim</string>
+    <string name="s5q308"> Dispenser/Compounder</string>
+    <string name="s5q3096"> Other (Specify) </string>
+
+    <string name="s5q4"> S5Q4: Did the child (Name) have to stay in the hospital during last two weeks for treatment of any of these illnesses ? </string>
+    <string name="s5q4a"> Yes </string>
+    <string name="s5q4b"> No </string>
+
+    <string name="s5q5"> S5Q5: How many days did child (Name) stay in the hospital during last two weeks for treatment of any of these illnesses ? </string>
 
 
     <!--  SECTION F -->
     <string name="secf"> SECTION F: HH Socioeconomic Information </string>
-    <string name="s6q1"> s6q1: توهان جي مادري زبان ڪهڙي آهي؟</string>
-    <string name="s6q101"> اردو</string>
-    <string name="s6q102"> پنجابي</string>
-    <string name="s6q103"> سنڌي</string>
-    <string name="s6q104"> پشتو</string>
-    <string name="s6q105"> بلوچي</string>
-    <string name="s6q106"> سرائڪي</string>
-    <string name="s6q107"> دٽڪي</string>
-    <string name="s6q196"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q2"> s6q2: توهان جي گھر ۾ پيئڻ جو پاڻي ڪٿان ايندو/ مکيه ذريعو ڪهڙو آهي؟</string>
-    <string name="s6q201"> واٽر سپلاءِ</string>
-    <string name="s6q202"> گھر جي اندر ميونسپل ڪميٽي جي پاڻي جي لائن اچي ٿي</string>
-    <string name="s6q203"> گھر جي ٻاهر  ميونسپل ڪميٽي جي پاڻي جي لائن اچي ٿي</string>
-    <string name="s6q204"> پاڙي ۾ اندر ميونسپل ڪميٽي جي پاڻي جي لائن اچي ٿي</string>
-    <string name="s6q205"> پاڙي ۾ نلڪو لڳل آهي</string>
-    <string name="s6q206"> بورنگ جو پاڻي</string>
-    <string name="s6q207"> نلڪي جو پاڻي</string>
-    <string name="s6q208"> کوهه جو پاڻي</string>
-    <string name="s6q209"> چشمي جو پاڻي</string>
-    <string name="s6q210"> مينهن جو پاڻي</string>
-    <string name="s6q211"> ٽينڪروارو پاڻي</string>
-    <string name="s6q212"> فلٽر صاف پاڻي</string>
-    <string name="s6q213"> گڏهه گاڏي وارو پاڻي</string>
-    <string name="s6q214"> ندي، دريا جو پاڻي</string>
-    <string name="s6q215"> آبپاشي جي نهر</string>
-    <string name="s6q216"> بوتل وارو پاڻي</string>
-    <string name="s6q296"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q3"> s6q3: ڇا توهان پيئڻ جي پاڻي کي صاف ڪندا آهيو؟</string>
-    <string name="s6q301"> ها</string>
-    <string name="s6q302"> نه</string>
-    <string name="s6q4"> s6q4: جيڪڏهن ها ته اڪثر ڪهڙو طريقو استعمال ڪندا آهيو؟</string>
-    <string name="s6q401"> گرم ڪنداآهيون</string>
-    <string name="s6q402"> ڪلورين / گوريون</string>
-    <string name="s6q403"> ڪپڙي سان ڇاڻيندا آهيون</string>
-    <string name="s6q404"> فلٽر ڪندا آهيون</string>
-    <string name="s6q405"> سج جي روشني</string>
-    <string name="s6q406"> رکندا آهيون ۽ ڇڻي وڃي</string>
-    <string name="s6q496"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q5"> s6q5: گھر ۾ ڪهڙي قسم جو ٽوائلٽ استعمال ڪندا آهيو؟</string>
-    <string name="s6q5_subtitlea"> پاڻي جي ذريعي لڙهي وڃڻ وارو</string>
-    <string name="s6q501"> اهڙو ليٽرين جنهن جو گند ٻاهر نالي يا گهٽر ۾ ويندو هجي </string>
-    <string name="s6q502"> اهڙو ليٽرين جنهن جو گند سيپٽينڪ ٽينڪ ۾ ويندو هجي</string>
-    <string name="s6q503"> کڏي ۾ گند ڪرڻ وارو ليٽرين </string>
-    <string name="s6q504"> اهڙو ليٽرين جنهن جو گند ڪنهن ٻي جڳھ ڏانهن ويندو هجي</string>
-    <string name="s6q5_subtitleb"> عارضي کڏ واري ليٽرين</string>
-    <string name="s6q505"> هوادار بهتر کڏي وارو ليٽرين</string>
-    <string name="s6q506"> کڏي وارو ڍڪيل ليٽرين</string>
-    <string name="s6q507"> کڏي وارو بنا ڍڪيل / کليل ليٽرين</string>
-    <string name="s6q508"> ٽوڪري وارو ليٽرين </string>
-    <string name="s6q509"> ڪا به سهولت نه آهي/ کليل ميدان/ زمين ۾ </string>
-    <string name="s6q596"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q6"> s6q6: ڇا ٻيا گھر به توهان جو ليٽرين استعمال ڪندا آهن؟</string>
-    <string name="s6q601"> ها  </string>
-    <string name="s6q602"> نه</string>
-    <string name="s6q7"> s6q7: جيڪڏهن ها ته ٻيا ڪيترا گھر استعمال ڪندا آهن؟</string>
-    <string name="s6q701"> ڪيترا گهر </string>
-    <string name="s6q8"> s6q8: ڇا اوهان جي گهر ۾ هيٺيون سهولتون موجود آهن؟ </string>
-    <string name="s6q8a"> بجلي جو ڪنيڪشن    </string>
-    <string name="s6q8b"> ريڊيو</string>
-    <string name="s6q8c"> ٽيليويزن</string>
-    <string name="s6q8d"> تار واري فون </string>
-    <string name="s6q8e"> فرج</string>
-    <string name="s6q8f"> الماري ڪٻٽ</string>
-    <string name="s6q8g"> ڪرسي</string>
-    <string name="s6q8h">  روم ڪولر</string>
-    <string name="s6q8i"> ايئر ڪنڊيشنر</string>
-    <string name="s6q8j"> ڪپڙڻ ڌوئڻ واري مشين </string>
-    <string name="s6q8k"> نلڪو </string>
-    <string name="s6q8l"> پلنگ</string>
-    <string name="s6q8m"> گهڙيال </string>
-    <string name="s6q8n">  صوفه </string>
-    <string name="s6q8o"> ڪيميرا</string>
-    <string name="s6q8p">  سلائي مشين</string>
-    <string name="s6q8q">  ڪمپيوٽر </string>
-    <string name="s6q8r"> انٽرنيٽ جو ڪنيڪشن</string>
-    <string name="s6q8s"> سنڪ/ڊش واشنگ اسٽيشن  </string>
-    <string name="s6q9"> s6q9: گھر ۾ رڌ پچاءُ لاءِ ڪهڙي فيول استعمال ڪندا آهيو؟</string>
-    <string name="s6q901"> بجلي</string>
-    <string name="s6q902"> سئلينڊر واري گيس (ايل پي جي)</string>
-    <string name="s6q903"> قدرتي گئس</string>
-    <string name="s6q904">  بايو گيس </string>
-    <string name="s6q905"> گاسليٽ</string>
-    <string name="s6q906"> اڱر يا ڪچو ڪوئلو</string>
-    <string name="s6q907"> ڪاٺ/ ڪاٺيون</string>
-    <string name="s6q908"> گاھ سر پن يا ٻورا</string>
-    <string name="s6q909"> مال/جانور جا ڇيڻا </string>
-    <string name="s6q910"> گھر م رڌ پچاءُ نه ڪندا آهيون</string>
-    <string name="s6q996"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q10"> s6q10: گھر ۾ رڌ پچاءُ ڪٿي ڪندا آهيو، الڳ ڪمرو آهي / خالي جائي تي، يا ٻاهر؟</string>
-    <string name="s6q1001"> گهر جي اندر</string>
-    <string name="s6q1002"> الگ جڳھ / ڪمرو</string>
-    <string name="s6q1003"> گهر کان ٻاهر</string>
-    <string name="s6q1096"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q11"> s6q11: ڇا الڳ ڪمرو آهي ان کي رڌوڻي طور استعمال ڪندا آهيو؟</string>
-    <string name="s6q1101"> ها  </string>
-    <string name="s6q1102"> نه</string>
-    <string name="s6q12"> s6q12: فرش ڪهڙي قسم جو آهي</string>
-    <string name="s6q12_subtitlea">  قدرتي فرش </string>
-    <string name="s6q1201"> مٽي وارو گارو يا ڪچو يا قدرتي فرش</string>
-    <string name="s6q1202"> ڇيڻو</string>
+
+    <string name="s6q1"> S6Q1: What is your mother tongue / native language ? </string>
+    <string name="s6q101"> Urdu </string>
+    <string name="s6q102"> Punjabi </string>
+    <string name="s6q103"> Sindhi </string>
+    <string name="s6q104"> Pushtu </string>
+    <string name="s6q105"> Baluchi </string>
+    <string name="s6q106"> Siraiki </string>
+    <string name="s6q107"> Dhatki </string>
+    <string name="s6q196"> Other (Specify) </string>
+
+    <string name="s6q2"> S6Q2: What is the main source of drinking water in your house hold ? </string>
+    <string name="s6q201"> Piped Water</string>
+    <string name="s6q202"> Municipal committee piped into dwelling </string>
+    <string name="s6q203"> Municipal committee piped to Yard/Plot</string>
+    <string name="s6q204"> Municipal committee piped to neighbor</string>
+    <string name="s6q205"> Public tap/standpipe</string>
+    <string name="s6q206"> Tube well or borehole</string>
+    <string name="s6q207"> Hand pump</string>
+    <string name="s6q208"> Well</string>
+    <string name="s6q209"> Spring</string>
+    <string name="s6q210"> Rainwater</string>
+    <string name="s6q211"> Tanker truck</string>
+    <string name="s6q212"> Filtration plant</string>
+    <string name="s6q213"> Cart with small tank</string>
+    <string name="s6q214"> Surface water (river, dam, lake) </string>
+    <string name="s6q215"> Irrigation channel</string>
+    <string name="s6q216"> Bottled water</string>
+    <string name="s6q296"> Other (Specify) </string>
+
+    <string name="s6q3"> S6Q3: Do you take any step to make the water safer to drink ? </string>
+    <string name="s6q301"> Yes </string>
+    <string name="s6q302"> No </string>
+
+    <string name="s6q4"> S6Q4: If yes, what do you usually do to make the water safe to drink ? </string>
+    <string name="s6q401"> Boil</string>
+    <string name="s6q402"> Add bleach/chlorine</string>
+    <string name="s6q403"> Strain through a cloth</string>
+    <string name="s6q404"> Use water filter</string>
+    <string name="s6q405"> Solar disinfection</string>
+    <string name="s6q406"> Let it stand and settle</string>
+    <string name="s6q496"> Other (Specify)</string>
+
+    <string name="s6q5"> S6Q5: What type of toilet facilities do you usually use in your house hold ?</string>
+    <string name="s6q5_subtitlea"> A. Flush or Pour Flush Toilet </string>
+    <string name="s6q501"> Flush to piped sewerage system </string>
+    <string name="s6q502"> Flush to septic tank</string>
+    <string name="s6q503"> Flush to pit latrine </string>
+    <string name="s6q504"> Flush to somewhere else</string>
+    <string name="s6q5_subtitleb"> B. PIT Latrine</string>
+    <string name="s6q505"> Ventilated improved PIT latrine</string>
+    <string name="s6q506"> PIT latrine with slab </string>
+    <string name="s6q507"> PIT latrine without slab/open pit</string>
+    <string name="s6q508"> Bucket toilet </string>
+    <string name="s6q509"> No facility/bush/field</string>
+    <string name="s6q596"> Other (Specify)</string>
+
+    <string name="s6q6"> S6Q6: Do you share this toilet facility with other households ? </string>
+    <string name="s6q601"> Yes</string>
+    <string name="s6q602"> No</string>
+
+    <string name="s6q7"> S6Q7: If yes, how many other households use this toilet facility ? </string>
+    <string name="s6q701"> No. of households</string>
+
+    <string name="s6q8"> S6Q8: Are following facilities available in your house hold ? </string>
+    <string name="s6q8a"> Electricity Connection</string>
+    <string name="s6q8b">  Radio</string>
+    <string name="s6q8c"> Television </string>
+    <string name="s6q8d"> Landline phone </string>
+    <string name="s6q8e"> Refrigerator </string>
+    <string name="s6q8f"> Almirah/Cabinet </string>
+    <string name="s6q8g"> Chair</string>
+    <string name="s6q8h"> Room Cooler  </string>
+    <string name="s6q8i">  Air conditioner </string>
+    <string name="s6q8j"> Washing machine</string>
+    <string name="s6q8k"> Water Pump </string>
+    <string name="s6q8l"> Bed</string>
+    <string name="s6q8m"> Clock </string>
+    <string name="s6q8n"> Sofa</string>
+    <string name="s6q8o"> Camera</string>
+    <string name="s6q8p"> Sewing machine  </string>
+    <string name="s6q8q"> Computer</string>
+    <string name="s6q8r"> Internet connection</string>
+    <string name="s6q8s"> Sink / Dishwashing Station </string>
+
+    <string name="s6q9"> S6Q9: What type of fuel do you often use in your household ?</string>
+    <string name="s6q901"> Electricity</string>
+    <string name="s6q902"> LPG</string>
+    <string name="s6q903"> Natural Gas </string>
+    <string name="s6q904"> Biogas</string>
+    <string name="s6q905"> Kerosene</string>
+    <string name="s6q906"> Charcoal</string>
+    <string name="s6q907"> Wood  </string>
+    <string name="s6q908"> Straw/Shrubs/Grass </string>
+    <string name="s6q909"> Animal Dung </string>
+    <string name="s6q910"> No food cooked in household</string>
+    <string name="s6q996"> Other (Specify)</string>
+
+    <string name="s6q10"> S6Q10: Is the cooking usually done in the house, in a separate room / space, or outdoors ? </string>
+    <string name="s6q1001"> In the house</string>
+    <string name="s6q1002"> In a separate area/room </string>
+    <string name="s6q1003"> Outdoors</string>
+    <string name="s6q1096"> Other (Specify)</string>
+
+    <string name="s6q11"> S6Q11: Do you have a separate room which is used as a kitchen ? </string>
+    <string name="s6q1101"> Yes</string>
+    <string name="s6q1102"> No</string>
+
+    <string name="s6q12"> S6Q12: Main material of the FLOOR </string>
+    <string name="s6q12_subtitlea"> Natural Floor</string>
+    <string name="s6q1201"> Earth/Sand/Mud</string>
+    <string name="s6q1202"> Dung</string>
     <string name="s6q12_subtitleb"> Rudimentary/Simple Floor</string>
-    <string name="s6q1203">  ڪاٺين/ڪاٺ جو فرش</string>
-    <string name="s6q1204"> باس</string>
+    <string name="s6q1203"> Wooden/Wood planks</string>
+    <string name="s6q1204"> Palm/Bamboo </string>
     <string name="s6q12_subtitlec"> Finished Floor</string>
-    <string name="s6q1205"> ٽائلس </string>
-    <string name="s6q1206"> سيمينٽ</string>
-    <string name="s6q1207"> قالين</string>
-    <string name="s6q1208"> ڪکن جو </string>
-    <string name="s6q1209"> سرون </string>
-    <string name="s6q1210"> چٽائي</string>
-    <string name="s6q1211"> ماربل</string>
-    <string name="s6q1296"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q13"> s6q13: ڇت ڪهري قسم جي آهي</string>
-    <string name="s6q13_subtitlea"> قدرتي ڇت </string>
-    <string name="s6q1301"> ڇت ڪونهي</string>
-    <string name="s6q1302"> ٽوئا کجي جي ڦرن جي</string>
-    <string name="s6q1303">  ڪک / گاھ</string>
+    <string name="s6q1205"> Ceramic tiles </string>
+    <string name="s6q1206"> Cement</string>
+    <string name="s6q1207"> Carpet </string>
+    <string name="s6q1208"> Chips</string>
+    <string name="s6q1209"> Bricks</string>
+    <string name="s6q1210"> Mats</string>
+    <string name="s6q1211"> Marble</string>
+    <string name="s6q1296"> Other (Specify)</string>
+
+    <string name="s6q13"> S6Q13: Main material of the ROOF</string>
+    <string name="s6q13_subtitlea"> Natural Roofing </string>
+    <string name="s6q1301"> No roof</string>
+    <string name="s6q1302"> Thatch/palm leaf </string>
+    <string name="s6q1303"> Sod/grass </string>
     <string name="s6q13_subtitleb"> Rudimentary/Simple Roofing</string>
-    <string name="s6q1304"> بانسن جي لڪڙن جي </string>
-    <string name="s6q1305"> ڪاٺين جون تختيون/ ڪاٺ</string>
-    <string name="s6q1306"> سادي چٽائي</string>
-    <string name="s6q1307">  ڪاغذن جي/ گتن جي</string>
-    <string name="s6q1308"> مڪمل تيار ٿيل ڇت</string>
-    <string name="s6q1309"> لوهه جا پترا</string>
-    <string name="s6q1310"> سيمينٽ جي</string>
-    <string name="s6q1311"> ڌاتو جي پڪي</string>
-    <string name="s6q1312"> سيمينت جا سليب </string>
-    <string name="s6q1313"> ڪاٺ جي</string>
-    <string name="s6q1396"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q1396x"> ٻيو ڪجھ ته وضاحت ڪريو</string>
-    <string name="s6q14"> s6q14: ڀتيون ڪهڙي قسم جون آهن </string>
-    <string name="s6q1401"> ڀتيون نه آهن</string>
-    <string name="s6q1402"> ڪاٺين /کجين جون</string>
-    <string name="s6q1403"> چيڪي مٽي جي</string>
-    <string name="s6q1404"> مٽي سان پٿر لڳل</string>
-    <string name="s6q1405"> مٽي سان بانس لڳل</string>
-    <string name="s6q1406"> پڪيون سرون</string>
-    <string name="s6q1407"> سيمينٽ سان پڪيون سرون</string>
-    <string name="s6q1408"> تنبو</string>
-    <string name="s6q1409"> سيمينٽ/ سيمينٽ جا بلاڪ</string>
-    <string name="s6q1410"> پٿر سيمينٽ سان لڳل</string>
-    <string name="s6q1411"> ڪاغذن جا گتا/ پلاسٽڪ </string>
-    <string name="s6q1496"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q15"> s6q15: گھر ۾ ڪيترا ڪمرا سُمهڻ لاءِ استعمال ٿيندا آهي؟</string>
-    <string name="s6q16"> s6q16: گھر جي ڪنهن به ميمبر وٽ هيٺيون شيون موجود آهن</string>
-    <string name="s6q16a"> s6q16a: گهڙي</string>
-    <string name="s6q16a01">   ها </string>
-    <string name="s6q16a02"> نه</string>
-    <string name="s6q16b"> s6q16b: موبائل فون </string>
-    <string name="s6q16b01"> ها </string>
-    <string name="s6q16b02"> نه</string>
-    <string name="s6q16c"> s6q16c: سائيڪل</string>
-    <string name="s6q16c01"> ها</string>
-    <string name="s6q16c02"> نه</string>
-    <string name="s6q16d"> s6q16d: موٽر سائيڪل</string>
-    <string name="s6q16d01"> ها</string>
-    <string name="s6q16d02"> نه</string>
-    <string name="s6q16e"> s6q16e: جانور سان هلندڙ گاڏي</string>
-    <string name="s6q16e01"> ها</string>
-    <string name="s6q16e02"> نه</string>
-    <string name="s6q16f"> s6q16f: بس يا ٽرڪ يا ڪار</string>
-    <string name="s6q16f01"> ها</string>
-    <string name="s6q16f02"> نه</string>
-    <string name="s6q16g"> s6q16g: ٽريڪٽر</string>
-    <string name="s6q16g01"> ها</string>
-    <string name="s6q16g02"> نه</string>
-    <string name="s6q16h"> s6q16h: موٽر واري ٻيڙي</string>
-    <string name="s6q16h01"> ها</string>
-    <string name="s6q16h02"> نه</string>
-    <string name="s6q16i"> s6q16i: موٽر بنا ٻيڙي</string>
-    <string name="s6q16i01"> ها</string>
-    <string name="s6q16i02"> نه</string>
-    <string name="s6q16j"> s6q16j: جانور ذريعي پاڻي ڪڍڻ</string>
-    <string name="s6q16j01"> ها</string>
-    <string name="s6q16j02"> نه</string>
-    <string name="s6q17"> s6q17: گھر جي ڪنهن به ميمبر وٽ پنهنجي ٻني آهي؟</string>
-    <string name="s6q1701"> ها</string>
-    <string name="s6q1702"> نه</string>
-    <string name="s6q18"> s6q18: جيڪڏهن ها ته، ڪيترا ايڪڙ آهن</string>
-    <string name="s6q1801"> ايڪڙ</string>
-    <string name="s6q1802"> ڪئنال</string>
-    <string name="s6q1899"> خبر نه آهي</string>
-    <string name="s6q19"> s6q19: ڇا توهان جي گهر ۾ پنهنجو چوپايو مال، جانور يا ڪڪڙيون آهن؟</string>
-    <string name="s6q1901"> ها</string>
-    <string name="s6q1902"> نه</string>
-    <string name="s6q20"> s6q20: انٽرويو وٺندڙ لسٽ مطابق هڪ هڪ ڪري جانور جي باري ۾ پڇيندو، جيڪڏهن جواب نه آهي ته 00 لڳايو   جيڪڏهن ها ته، توهان جي گھر ۾ پنهنجو ڪيترو چوپايو مال، جانور يا ڪڪڙيون آهن؟</string>
-    <string name="s6q20a"> ڳئون، ڍڳا</string>
-    <string name="s6q20b"> گهوڙا/ گڏھ/ خچر </string>
-    <string name="s6q20c"> ٻڪريون</string>
-    <string name="s6q20d"> رڍيون</string>
-    <string name="s6q20e"> ڪڪڙيون /مرغيون</string>
-    <string name="s6q20f"> مينهون</string>
-    <string name="s6q20g"> اُٺ </string>
+    <string name="s6q1304"> Palm/Bamboo </string>
+    <string name="s6q1305"> Wooden/Wood planks</string>
+    <string name="s6q1306"> Rustic Mats </string>
+    <string name="s6q1307"> Cardboard </string>
+    <string name="s6q1308"> Finished Roofing </string>
+    <string name="s6q1309"> Iron sheets </string>
+    <string name="s6q1310"> RCC</string>
+    <string name="s6q1311"> Metal </string>
+    <string name="s6q1312"> Cement Slabs</string>
+    <string name="s6q1313"> Wood</string>
+    <string name="s6q1396"> Other (Specify)</string>
+    <string name="s6q1396x"> Other( Specify)</string>
+
+    <string name="s6q14"> S6Q14: Main material of the WALLS </string>
+    <string name="s6q1401"> No walls</string>
+    <string name="s6q1402"> Cane/Palm/Trunks </string>
+    <string name="s6q1403"> Mud/Dirt/Clay</string>
+    <string name="s6q1404"> Stone with mud </string>
+    <string name="s6q1405"> Bamboo with mud</string>
+    <string name="s6q1406"> Baked bricks</string>
+    <string name="s6q1407"> Cemented baked brick</string>
+    <string name="s6q1408"> Tent  </string>
+    <string name="s6q1409"> Cement/cement block</string>
+    <string name="s6q1410"> Stone with cement/lime </string>
+    <string name="s6q1411"> Carton/plastic </string>
+    <string name="s6q1496"> Other (Specify)</string>
+
+    <string name="s6q15"> S6Q15: How many rooms in this household are used for sleeping ? </string>
+
+    <string name="s6q16"> S6Q16: Does any member of this household own ?</string>
+
+    <string name="s6q16a"> S6Q16A: Watch</string>
+    <string name="s6q16a01"> Yes   </string>
+    <string name="s6q16a02"> No</string>
+
+    <string name="s6q16b"> S6Q16B: Mobile telephone  </string>
+    <string name="s6q16b01">  Yes     </string>
+    <string name="s6q16b02"> No</string>
+
+    <string name="s6q16c"> S6Q16C: Bicycle</string>
+    <string name="s6q16c01"> Yes</string>
+    <string name="s6q16c02">   No</string>
+
+    <string name="s6q16d"> S6Q16D: Motorcycle or scooter  </string>
+    <string name="s6q16d01"> Yes</string>
+    <string name="s6q16d02">  No</string>
+
+    <string name="s6q16e"> S6Q16E: Animal-drawn cart </string>
+    <string name="s6q16e01"> Yes</string>
+    <string name="s6q16e02">  No</string>
+
+    <string name="s6q16f"> S6Q16F: Car or truck or bus</string>
+    <string name="s6q16f01"> Yes</string>
+    <string name="s6q16f02"> No</string>
+
+    <string name="s6q16g"> S6Q16G: Tractor  </string>
+    <string name="s6q16g01"> Yes</string>
+    <string name="s6q16g02"> No</string>
+
+    <string name="s6q16h"> S6Q16H: Boat with a motor  </string>
+    <string name="s6q16h01"> Yes</string>
+    <string name="s6q16h02"> No</string>
+
+    <string name="s6q16i"> S6Q16I: Boat without motor </string>
+    <string name="s6q16i01"> Yes</string>
+    <string name="s6q16i02"> No</string>
+
+    <string name="s6q16j"> S6Q16J: Animal to draw water from dug well</string>
+    <string name="s6q16j01">  Yes</string>
+    <string name="s6q16j02"> No</string>
+
+    <string name="s6q17"> S6Q17: Does any member of this household own any agricultural land ? </string>
+    <string name="s6q1701"> Yes</string>
+    <string name="s6q1702"> No</string>
+
+    <string name="s6q18"> S6Q18: If yes, how many acres or canals of agricultural land do members of this household own ? </string>
+    <string name="s6q1801"> Acre</string>
+    <string name="s6q1802"> Canal</string>
+    <string name="s6q1899"> Don’t know</string>
+
+    <string name="s6q19"> S6Q19: Does your household own livestock, animals or poultry ?</string>
+    <string name="s6q1901"> Yes</string>
+    <string name="s6q1902"> No</string>
+
+    <string name="s6q20"> S6Q20: If yes, how many livestock, animals or poultry does your household own ?   Ask for each listed animal, one by one and insert  00 if none</string>
+    <string name="s6q20a"> Cows, bulls </string>
+    <string name="s6q20b"> Horses/Donkeys/Mules  </string>
+    <string name="s6q20c"> Goats</string>
+    <string name="s6q20d"> Sheep</string>
+    <string name="s6q20e"> Chickens /Poultry </string>
+    <string name="s6q20f"> Buffalo</string>
+    <string name="s6q20g"> Camels</string>
 
 
     <!--  SECTION G -->
     <string name="secg"> SECTION G: Hand Washing </string>
-    <string name="s7q1"> s7q1: مهرباني ڪري اسان کي هٿ ڌوئڻ جي جڳهه ڏيکاريو جتي توهان اڪثر هٿ ڌوئيندا آهيو </string>
-    <string name="s7q101"> مشاهدو ڪيو ويو</string>
-    <string name="s7q102"> مشاهدو نه ڪيو ويو</string>
-    <string name="s7q103"> رهائش واري جڳهه تي نه هو</string>
-    <string name="s7q104"> ڏسڻ جي اجازت نه ڏني وئي</string>
-    <string name="s7q105"> ٻي ڪا وجھه</string>
-    <string name="s7q2"> s7q2: پاڻي جي موجودگي جو مشاهدو ڪيو ويو ته ڪهڙي جڳهه تي هٿ دويا ويندا آهن</string>
-    <string name="s7q201"> پاڻي موجود آهي</string>
-    <string name="s7q202"> پاڻي موجود نه آهي</string>
-    <string name="s7q3"> s7q3: لکو جيڪڏهن صابڻ يا ڊٽرجنٽ موجود آهي هٿ ڌوئڻ واري خاص جاءِ تي</string>
-    <string name="s7q301"> صابڻ</string>
-    <string name="s7q302"> صابڻ (پائودر/ملائم چيز/ پيسٽ)</string>
-    <string name="s7q303"> ملائم/پاڻياٺي صابڻ</string>
-    <string name="s7q304">  خاڪ/ مٽي /واري </string>
-    <string name="s7q305"> ڪجھ به نه</string>
-    <string name="s7q4"> s7q4: ڇا توهان وٽ گھر ۾ هٿ دوئڻ لاءِ صابڻ يا ڊٽرجنٽ  موجود آهي؟</string>
-    <string name="s7q401"> ها  </string>
-    <string name="s7q402"> نه</string>
-    <string name="s7q5"> s7q5: جيڪڏهن ها ته، ڇا توهان اهو مونکي ڏيکاريندا؟</string>
-    <string name="s7q501"> صابڻ</string>
-    <string name="s7q502"> صابڻ (پائودر/ملائم چيز/ پيسٽ)</string>
-    <string name="s7q503"> ملائم/پاڻياٺي صابڻ</string>
-    <string name="s7q504"> خاڪ/ مٽي /واري</string>
-    <string name="s7q505"> ڪجھ به نه</string>
-    <string name="s7q6"> s7q6:  جواب ڏيندڙ جواب نه ڏي ته پوءِ پڇو ته ڪهڙي صورت ۾ توهان صابڻ سان هٿ دوئيندا آهيو، اهو سوال توهان ايستائين پڇو جيستائين اها سوچي ڪو به اهڙو وقت نه آهي  هي هڪ کليل سوال آهي. جوابن جي لسٽ نه پڙهندا   ڪهڙي صورت ۾ توهان پنهنجا هٿ صابڻ سان دوئيندا آهيو؟</string>
-    <string name="s7q601">  کاڌي جي تياري ڪرڻ کان اڳ</string>
-    <string name="s7q602"> کاڌي پچائڻ کان اڳ</string>
-    <string name="s7q603"> کائڻ کان اڳ</string>
-    <string name="s7q604">  ٻار کي کارئڻ پيارڻ کان اڳ</string>
-    <string name="s7q605"> ٻار کي ٿڃ پيارڻ کان اڳ</string>
-    <string name="s7q606"> ٻار جي ڪاڪُوس واري جڳهه کي  صاف ڪرڻ کانپوءِ</string>
-    <string name="s7q607">  ٻار جي چڊي بدلائڻ کانپوء</string>
-    <string name="s7q608"> ٻار جو ڪاڪُوس اڇلائڻ کانپوءِ</string>
-    <string name="s7q609">  پاڻ کي صاف ڪرڻ کان پوء</string>
-    <string name="s7q696"> ٻيو ڪجھه ته وضاحت ڪريو</string>
 
-    <string name="s8q1"> s8q1: ڇا گذريل مهيني (  چار هفتن ) دوران توهان کي اها پريشاني رهي ته توهان وٽ پورو پيٽ ڀري کائڻ کائڻ جيترو کاڌو نه آهي؟</string>
-    <string name="s8q101"> ها</string>
-    <string name="s8q102"> نه</string>
+    <string name="s7q1"> S7Q1: Please show us where you and members of your household most often wash their hands.</string>
+    <string name="s7q101"> Observed</string>
+    <string name="s7q102"> Not observed  </string>
+    <string name="s7q103"> Not in dwelling/plot/yard</string>
+    <string name="s7q104"> No permission to see </string>
+    <string name="s7q105"> Other reason</string>
 
-    <string name="s861"> S8.6.1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s86101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s86102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s86103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
+    <string name="s7q2"> S7Q2: Observe presence of water at the specific place for hand washing</string>
+    <string name="s7q201"> Water is available </string>
+    <string name="s7q202"> Water is not available</string>
 
-    <string name="s8q11"> s8q1a1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q1101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q1102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q1103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
+    <string name="s7q3"> S7Q3: Record if soap or detergent is present at the specific place for hand washing۔</string>
+    <string name="s7q301"> Bar soap  </string>
+    <string name="s7q302"> Detergent (powder/liquid/paste) </string>
+    <string name="s7q303"> Liquid soap</string>
+    <string name="s7q304"> Ash/mud/sand  </string>
+    <string name="s7q305"> None</string>
 
-    <string name="s8q1a1"> s8q1a1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q1a101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q1a102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q1a103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
+    <string name="s7q4"> S7Q4: Do you have any soap or detergent in your household for hand washing ? </string>
+    <string name="s7q401"> Yes</string>
+    <string name="s7q402"> No</string>
 
-    <string name="s8q2"> s8q2: ڇا گذريل مهيني (چار هفتن) دوران توهان يا توهان جي گهر جو ڪو ڀاتي ڪو خاص طعام يا کاڌو کائڻ چاهيندو هجي پر پئسي ڏوڪڙ يا وسيلا نه هجڻ ڪري نه کائي سگهيو هجي؟</string>
-    <string name="s8q201"> ها  </string>
-    <string name="s8q202"> نه</string>
+    <string name="s7q5"> S7Q5: If yes, can you please show it to me ? </string>
+    <string name="s7q501"> Bar soap</string>
+    <string name="s7q502"> Detergent (powder/liquid/paste) </string>
+    <string name="s7q503"> Liquid soap </string>
+    <string name="s7q504"> Ash/mud/sand  </string>
+    <string name="s7q505"> None</string>
 
-    <string name="s8q21"> S8Q2.1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q2101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q2102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q2103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
-
-    <string name="s8q2a1"> s8q2a1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q2a101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q2a102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q2a103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
-
-    <string name="s8q3"> s8q3: ڇا گذريل مهيني (چار هفتن) دوران پئسي ڏوڪڙ/وسيلن جي نه هجڻ ڪري توهان ساڳئي قسم جا کاڌا کائيندا هجو؟</string>
-    <string name="s8q301"> ها  </string>
-    <string name="s8q302"> نه</string>
-
-    <string name="s8q31"> S8Q3.1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q3101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q3102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q3103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
-
-    <string name="s8q3a1"> s8q3a1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q3a101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q3a102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q3a103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
-
-    <string name="s8q4"> s8q4: ڇا گذريل مهيني (چار هفتن) دوران توهان يا توهان جي گهر جو ڪو ڀاتي اهڙو کاڌو کائيندو هجي جيڪو حقيقت ۾ توهان کائڻ ئي نه چاهيندا هجو پر پئسي ڏوڪڙ يا وسيلا نه هجڻ ڪري توهان ٻيا کاڌا نه وٺي سگهندا هجو؟</string>
-    <string name="s8q401"> ها  </string>
-    <string name="s8q402"> نه</string>
-
-    <string name="s8q41"> S8Q4.1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q4101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q4102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q4103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
-
-    <string name="s8q4a1"> s8q4a1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q4a101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q4a102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q4a103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
-
-    <string name="s8q5"> s8q5: ڇا گذريل مهيني (چار هفتن) دوران توهان يا توهان جي گهر جو ڪو ڀاتي گهٽ کاڌو کائي سگهيو هجي يا جيتري بک هجي اوترو نه کائي سگهيو هجي ڇا ڪاڻ ته توهان جي گهر ۾ کاڌو پورو نه هيو؟</string>
-    <string name="s8q501"> ها </string>
-    <string name="s8q502"> نه</string>
-
-    <string name="s8q51"> S8Q5.1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q5101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q5102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q5103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
-
-    <string name="s8q5a1"> s8q5a1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q5a101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q5a102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q5a103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
-
-    <string name="s8q6"> s8q6: ڇا گذريل مهيني (چار هفتن) دوران  کاڌو گهٽ هجڻ ڪري توهان يا توهان جي گهر جو ڪو ڀاتي گهٽ ويلا (ٽائيم) ماني کائي سگهيو هجي؟</string>
-    <string name="s8q601"> ها</string>
-    <string name="s8q602">  نه</string>
-    <string name="s8q6a1"> s8q6a1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q6a101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q6a102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q6a103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
-    <string name="s8q7"> s8q7: ڇا گذريل مهيني (چار هفتن) دوران توهان وٽ کائڻ لاءِ ڪجهه به نه هجي ڇاڪاڻ ته توهان وٽ پئسا ڏوڪڙ وسيلا نه هئا جو توهان ڪجهه کائڻ لاءِ کاڌو خريد ڪري سگهو؟</string>
-    <string name="s8q701"> ها</string>
-    <string name="s8q702"> نه</string>
-    <string name="s8q7a1"> s8q7a1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q7a101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q7a102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q7a103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
+    <string name="s7q6"> S7Q6: In what situations do you wash your hands with soap?  This is an open-ended question. Do not read the answer choices.  After the respondent stops listing times, ask “Are there any other situations where you wash your hands with soap?” Keep asking this question until the respondent thinks there are no other times. </string>
+    <string name="s7q601"> Before preparing food</string>
+    <string name="s7q602"> Before cooking food</string>
+    <string name="s7q603"> Before eating</string>
+    <string name="s7q604"> Before feeding a child</string>
+    <string name="s7q605"> Before breastfeeding</string>
+    <string name="s7q606"> After cleaning a child’s anus</string>
+    <string name="s7q607"> After changing a baby’s nappy</string>
+    <string name="s7q608"> After disposing of children’s feces</string>
+    <string name="s7q609"> After you defecate</string>
+    <string name="s7q696"> Other (Specify)</string>
 
 
     <!--  SECTION H -->
     <string name="sech"> SECTION H: HFIAS Measurement Tool </string>
+    <string name="s8q1"> S8Q1: In the past four weeks, did you worry that your household would not have enough food ? </string>
+    <string name="s8q101"> Yes</string>
+    <string name="s8q102"> No</string>
 
-    <string name="s8q8"> s8q8: ڇا گذريل مهيني (چار هفتن) دوران گهربل کاڌو نه هجڻ جي ڪري رات جو توهان يا توهان جي گهر جو ڪو ڀاتي بنا کاڌو کائڻ جي بکيو ستو هجي؟</string>
-    <string name="s8q801"> ها</string>
-    <string name="s8q802"> نه</string>
+    <string name="s8q11"> S8Q11: How often did this happen ? </string>
+    <string name="s8q1101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q1102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q1103"> Often (more than ten times in the past four weeks) </string>
 
-    <string name="s8q8a1"> s8q8a1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
+    <string name="s8q2"> S8Q2: In the past four weeks, were you or any household member not able to eat the kinds of foods you preferred because of a lack of resources ?</string>
+    <string name="s8q201"> Yes</string>
+    <string name="s8q202"> No</string>
 
-    <string name="s8q8a101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
+    <string name="s8q21"> S8Q2.1: How often did this happen ?</string>
+    <string name="s8q2101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q2102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q2103"> Often (more than ten times in the past four weeks) 3</string>
 
-    <string name="s8q8a102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
+    <string name="s8q3"> S8Q3: In the past four weeks, did you or any household member have to eat a limited variety of foods due to a lack of resources?</string>
+    <string name="s8q301"> Yes</string>
+    <string name="s8q302"> No</string>
 
-    <string name="s8q8a103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
+    <string name="s8q31"> S8Q3.1: How often did this happen ?</string>
+    <string name="s8q3101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q3102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q3103"> Often (more than ten times in the past four weeks) 3</string>
 
-    <string name="s8q9"> s8q9: ڇا گذريل مهيني (چار هفتن) دوران کاڌو نه هجڻ ڪري توهان يا توهان جي گهر جو ڪو ڀاتي سڄي ڏينهن ۽ رات ۾ ڪجهه به نه کائي سگهيو هجي؟</string>
-    <string name="s8q901"> ها </string>
-    <string name="s8q902"> نه</string>
+    <string name="s8q4"> S8Q4: In the past four weeks, did you or any household member have to eat some foods that you really did not want to eat because of a lack of resources to obtain other types of food ?</string>
+    <string name="s8q401"> Yes</string>
+    <string name="s8q402"> No</string>
 
-    <string name="s8q91"> s8q9a1: اهو اڪثر ڪري ڪيترا دفعا ٿيو ؟ </string>
-    <string name="s8q9101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q9102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q9103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
+    <string name="s8q41"> S8Q4.1: How often did this happen ?</string>
+    <string name="s8q4101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q4102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q4103"> Often (more than ten times in the past four weeks) </string>
 
-    <string name="s8q9a1"> s8q9a1: اهو اڪثر ڪري ڪيترا دفعا ٿيو؟</string>
-    <string name="s8q9a101"> تمام گهٽ ( گذريل چئن هفتن ۾ هڪ يا ٻه دفعا )</string>
-    <string name="s8q9a102"> ڪڏهن ڪڏهن (گذريل چئن هفتن ۾ 3-10 دفعا)</string>
-    <string name="s8q9a103"> اڪثر ڪري (گذريل چئن هفتن ۾ 10 دفعن کان مٿي)</string>
+    <string name="s8q5"> S8Q5: In the past four weeks, did you or any household member have to eat a smaller meal than you felt you needed because there was not enough food ?</string>
+    <string name="s8q501"> Yes</string>
+    <string name="s8q502"> No</string>
+
+    <string name="s8q51"> S8Q5.1: How often did this happen ? </string>
+    <string name="s8q5101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q5102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q5103"> Often (more than ten times in the past four weeks) </string>
+
+    <string name="s8q6"> S8Q6: In the past four weeks, did you or any other household member have to eat fewer meals in a day because there was not enough food ?</string>
+    <string name="s8q601"> Yes</string>
+    <string name="s8q602"> No</string>
+
+    <string name="s861"> S8.6.1: How often did this happen ?</string>
+    <string name="s86101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s86102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s86103"> Often (more than ten times in the past four weeks) </string>
+
+    =======
+
+
+    <string name="s8q1a1"> S8Q1A1: How often did this happen ?</string>
+    <string name="s8q1a101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q1a102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q1a103"> Often (more than ten times in the past four weeks) </string>
+
+    <string name="s8q2a1"> S8Q2A1: How often did this happen ?</string>
+    <string name="s8q2a101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q2a102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q2a103"> Often (more than ten times in the past four weeks) 3</string>
+
+    <string name="s8q3a1"> S8Q3A1: How often did this happen ? </string>
+    <string name="s8q3a101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q3a102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q3a103"> Often (more than ten times in the past four weeks) 3</string>
+
+    <string name="s8q4a1"> S8Q4A1: How often did this happen ? </string>
+    <string name="s8q4a101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q4a102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q4a103"> Often (more than ten times in the past four weeks) </string>
+
+    <string name="s8q5a1"> S8Q5A1: How often did this happen ? </string>
+    <string name="s8q5a101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q5a102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q5a103"> Often (more than ten times in the past four weeks) </string>
+
+    <string name="s8q6a1"> S8Q6a1: How often did this happen ?</string>
+    <string name="s8q6a101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q6a102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q6a103"> Often (more than ten times in the past four weeks) </string>
+    >>>>>>> origin/master
+    <string name="s8q7"> S8Q7: In the past four weeks, was there ever no food to eat of any kind in your household because of lack of resources to get food ?</string>
+    <string name="s8q701"> Yes</string>
+    <string name="s8q702"> No</string>
+
+    <string name="s8q7a1"> S8Q7a1: How often did this happen ?</string>
+    <string name="s8q7a101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q7a102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q7a103"> Often (more than ten times in the past four weeks) </string>
+
+    <string name="s8q8"> S8Q8: In the past four weeks, did you or any household member go to sleep at night hungry because there was not enough food ?</string>
+    <string name="s8q801"> Yes</string>
+    <string name="s8q802"> No</string>
+
+    <string name="s8q8a1"> S8Q8A1: How often did this happen ?</string>
+    <string name="s8q8a101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q8a102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q8a103"> Often (more than ten times in the past four weeks) </string>
+
+    <string name="s8q9"> S8Q9: In the past four weeks, did you or any household member go a whole day and night without eating anything because there was not enough food ?</string>
+    <string name="s8q901"> Yes</string>
+    <string name="s8q902"> No</string>
+
+    <string name="s8q91"> S8Q9.1: How often did this happen ?</string>
+    <string name="s8q9101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q9102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q9103"> Often (more than ten times in the past four weeks) </string>
+
+    <string name="s8q9a1"> S8Q9A1: How often did this happen ?</string>
+    <string name="s8q9a101"> Rarely (once or twice in the past four weeks) </string>
+    <string name="s8q9a102"> Sometimes (3 &#8211; 10 times in the past four weeks) </string>
+    <string name="s8q9a103"> Often (more than ten times in the past four weeks) </string>
 
 
     <!--  SECTION I -->
     <string name="seci"> SECTION I: Income Sources </string>
-    <string name="s9q9"> s9q9: توهان جي گھرجا ٽي اهم ڪمائي جا ذريعا ڪهڙا آهن ؟</string>
-    <string name="s9q1"> s9q1: پهريون ڪمائي جو ذريعو</string>
-    <string name="s9q101">  زراعت </string>
-    <string name="s9q102"> چوپايو مال، چوپايو مال وڪڻڻ/ جانورن </string>
-    <string name="s9q103">  مڇي جو شڪار، مڇي جو فارم </string>
-    <string name="s9q104"> هٿ جي ٺهيل ڪپرن جو وڪرو </string>
-    <string name="s9q105"> ٻارڻ واريو ڪاٺيون جمع ڪرڻ ۽ وڪڻڻ</string>
-    <string name="s9q106"> اڱر/ ڪوئلو وڪڻڻ</string>
-    <string name="s9q107"> ڏهاڙي تي مزدوري/ هاري زراعت</string>
-    <string name="s9q108"> مزدور </string>
-    <string name="s9q109">  گاڏي وارو </string>
-    <string name="s9q110"> ڪاروبار ، دڪاندار</string>
-    <string name="s9q111"> سرڪاري نوڪري</string>
-    <string name="s9q112"> خانگي نوڪري </string>
-    <string name="s9q113"> بينظير انڪم سپورٽ پروگرام</string>
-    <string name="s9q196"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s9q2"> s9q2: ٻيون ڪمائي جو ذريعو</string>
-    <string name="s9q201"> زراعت</string>
-    <string name="s9q202"> چوپايو مال، چوپايو مال وڪڻڻ/ جانورن</string>
-    <string name="s9q203"> مڇي جو شڪار، مڇي جو فارم</string>
-    <string name="s9q204"> هٿ جي ٺهيل ڪپرن جو وڪرو</string>
-    <string name="s9q205">  ٻارڻ واريو ڪاٺيون جمع ڪرڻ ۽ وڪڻڻ</string>
-    <string name="s9q206"> اڱر/ ڪوئلو وڪڻڻ</string>
-    <string name="s9q207"> ڏهاڙي تي مزدوري/ هاري زراعت</string>
-    <string name="s9q208"> مزدور</string>
-    <string name="s9q209"> گاڏي وارو</string>
-    <string name="s9q210">  ڪاروبار ، دڪاندار </string>
-    <string name="s9q211"> سرڪاري نوڪري </string>
-    <string name="s9q212"> خانگي نوڪري</string>
-    <string name="s9q213"> بينظير انڪم سپورٽ پروگرام</string>
-    <string name="s9q296"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s9q3"> s9q3: ٽيون ڪمائي جو ذريعو </string>
-    <string name="s9q301"> زراعت</string>
-    <string name="s9q302"> چوپايو مال، چوپايو مال وڪڻڻ/ جانورن</string>
-    <string name="s9q303">  مڇي جو شڪار، مڇي جو فارم</string>
-    <string name="s9q304"> هٿ جي ٺهيل ڪپرن جو وڪرو </string>
-    <string name="s9q305"> ٻارڻ واريو ڪاٺيون جمع ڪرڻ ۽ وڪڻڻ</string>
-    <string name="s9q306"> اڱر/ ڪوئلو وڪڻڻ</string>
-    <string name="s9q307"> ڏهاڙي تي مزدوري/ هاري زراعت</string>
-    <string name="s9q308"> مزدور </string>
-    <string name="s9q309"> گاڏي وارو </string>
-    <string name="s9q310"> , ڪاروبار ، دڪاندار</string>
-    <string name="s9q311"> سرڪاري نوڪري</string>
-    <string name="s9q312"> خانگي نوڪري</string>
-    <string name="s9q313"> بينظير انڪم سپورٽ پروگرام</string>
-    <string name="s9q396"> ٻيو ڪجھه ته وضاحت ڪريو</string>
+    <string name="s9q9"> S9Q9: Which are the three main (most important) income sources for your household ?</string>
+    <string name="s9q1"> S9Q1: First income source </string>
+    <string name="s9q101"> Agriculture</string>
+    <string name="s9q102"> Livestock, sale of livestock / animal products</string>
+    <string name="s9q103"> Fishing, fish farming</string>
+    <string name="s9q104"> Sale of handicrafts</string>
+    <string name="s9q105"> Collection and sale of firewood</string>
+    <string name="s9q106"> Sale of charcoal </string>
+    <string name="s9q107"> Casual / wage labor in agriculture </string>
+    <string name="s9q108"> Casual / wage labor in other activity  </string>
+    <string name="s9q109"> Petty trade (street vendor) </string>
+    <string name="s9q110"> Trade, commerce, shop</string>
+    <string name="s9q111"> Government Job </string>
+    <string name="s9q112"> Private Job  </string>
+    <string name="s9q113"> Cash from Benazir Income Support Programme (BISP) </string>
+    <string name="s9q196"> Other (Specify)</string>
+
+    <string name="s9q2"> S9Q2: Second income source </string>
+    <string name="s9q201"> Agriculture </string>
+    <string name="s9q202"> Livestock, sale of livestock / animal products</string>
+    <string name="s9q203"> Fishing, fish farming</string>
+    <string name="s9q204"> Sale of handicrafts</string>
+    <string name="s9q205"> Collection and sale of firewood</string>
+    <string name="s9q206"> Sale of charcoal </string>
+    <string name="s9q207"> Casual / wage labor in agriculture </string>
+    <string name="s9q208"> Casual / wage labor in other activity  </string>
+    <string name="s9q209"> Petty trade (street vendor) </string>
+    <string name="s9q210"> Trade, commerce, shop</string>
+    <string name="s9q211"> Government Job</string>
+    <string name="s9q212"> Private Job </string>
+    <string name="s9q213"> Cash from Benazir Income Support Programme (BISP) </string>
+    <string name="s9q296"> Other (Specify)</string>
+
+    <string name="s9q3"> S9Q3: Third income source </string>
+    <string name="s9q301"> Agriculture</string>
+    <string name="s9q302"> Livestock, sale of livestock / animal products</string>
+    <string name="s9q303"> Fishing, fish farming</string>
+    <string name="s9q304"> Sale of handicrafts</string>
+    <string name="s9q305"> Collection and sale of firewood</string>
+    <string name="s9q306"> Sale of charcoal </string>
+    <string name="s9q307"> Casual / wage labor in agriculture </string>
+    <string name="s9q308"> Casual / wage labor in other activity  </string>
+    <string name="s9q309"> Petty trade (street vendor) </string>
+    <string name="s9q310"> Trade, commerce, shop</string>
+    <string name="s9q311"> Government Job </string>
+    <string name="s9q312"> Private Job </string>
+    <string name="s9q313"> Cash from Benazir Income Support Programme (BISP) </string>
+    <string name="s9q396"> Other (Specify)</string>
 
 
     <!--  SECTION J -->
     <string name="secj"> SECTION J: Study Group &amp; Supplementation </string>
-    <string name="s10q1"> s10q1: داخلا جي وقت ٻار کي ڪيترا ساشي ڏنا ويا هئا ؟ </string>
-    <string name="s10q101"> گلابي</string>
-    <string name="s10q102"> نيرو</string>
-    <string name="s10q103"> سائو</string>
-    <string name="s10q104"> ناسي</string>
-    <string name="s10q1sac"> ڪيترا ساشي ڏنا ويا </string>
-    <string name="s10q2"> S10Q2: وجہ </string>
-    <string name="s10q3"> s10q2: اڳئي فالو آپ جي تاريخ  </string>
+    <string name="s10q1"> S10Q1: How many sachets were given to child at the time of recruitment ? </string>
+    <string name="s10q101"> Pink</string>
+    <string name="s10q102"> Blue</string>
+    <string name="s10q103"> Green</string>
+    <string name="s10q104"> Brown</string>
+    <string name="s10q1sac"> Number of Sachet given</string>
+    <string name="s10q2"> S10Q2: Reason</string>
+    <string name="s10q3"> S10Q3: Next follow-up date?</string>
+
 
 </resources>
