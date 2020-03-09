@@ -95,6 +95,7 @@
                         android:layout_width="0dp"
                         android:layout_marginStart="6dp"
                         android:layout_weight="1"
+                        android:layout_gravity="center"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -297,7 +298,8 @@
                             style="@style/i_textview"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
+                            android:gravity="center"
                             android:text="@string/s2q502" />
 
                         <RadioButton
@@ -337,7 +339,8 @@
                             style="@style/i_textview"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
+                            android:gravity="center"
                             android:text="@string/s2q503" />
 
                         <RadioButton
@@ -377,7 +380,8 @@
                             style="@style/i_textview"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
+                            android:gravity="center"
                             android:text="@string/s2q504" />
 
                         <RadioButton
@@ -417,7 +421,8 @@
                             style="@style/i_textview"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
+                            android:gravity="center"
                             android:text="@string/s2q505" />
 
                         <RadioButton
@@ -457,7 +462,8 @@
                             style="@style/i_textview"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="2"
+                            android:gravity="center"
                             android:text="@string/s2q506" />
 
                         <RadioButton
