@@ -2192,13 +2192,15 @@
 
 
     <!--  SECTION B -->
-    <string name="secb"> SECTION B: Screening for SAM Cases </string>
-    <string name="s2t"> s2t: ڪيسن جي جانچ SAM</string>
-    <string name="muac1"> muac1: MUAC-01</string>
-    <string name="muac2"> muac2: MUAC-02</string>
+    <string name="secb"> SECTION B: ڪيسن جي جانچ SAM </string>
+
+    <string name="muac1"> MUAC-01 </string>
+    <string name="muac2"> MUAC-02 </string>
+
     <string name="s2q1"> s2q1: کاٻي ٻانهن جي گولائي جي ماپ 11.5 سينٽي ميٽر کان گهٽ </string>
     <string name="s2q1a"> ها </string>
     <string name="s2q1b"> نه </string>
+
     <string name="s2q2"> s2q2: پيرن تي سوڄ </string>
     <string name="s2q2a"> ڪو نه آهي</string>
     <string name="s2q2b"> + پيرن تي سوڄ</string>
@@ -2217,13 +2219,13 @@
     <string name="s2q501"> s2q501:  جي لاءِ بک جو نه لڳڻ RUTF/RUSF</string>
     <string name="s2q501a"> ها</string>
     <string name="s2q501b"> نه</string>
-    <string name="s2q502"> s2q502: هر شيءِ الٽي ڪري ڪڍي ٿو</string>
-    <string name="s2q503"> s2q503:  ٿي وڃڻc  ≤35.5o c جسم گرمي پد</string>
-    <string name="s2q504"> s2q504: شديد نمونيا</string>
-    <string name="s2q505"> s2q505: جسم ۾ شديد پاڻي کوٽ</string>
-    <string name="s2q506"> s2q506: شديد رت جي کوٽ</string>
-    <string name="s2q507"> s2q507: (سست( تمام گھڻو ڪمزور، بيهوش، دورا پوندا هجن</string>
-    <string name="s2q508"> s2q508: ٽيوب وسيلي خوراڪ وٺڻ</string>
+    <string name="s2q502"> هر شيءِ الٽي ڪري ڪڍي ٿو </string>
+    <string name="s2q503">  ٿي وڃڻc  ≤35.5o c جسم گرمي پد </string>
+    <string name="s2q504"> شديد نمونيا </string>
+    <string name="s2q505"> جسم ۾ شديد پاڻي کوٽ </string>
+    <string name="s2q506"> شديد رت جي کوٽ </string>
+    <string name="s2q507"> (سست( تمام گھڻو ڪمزور، بيهوش، دورا پوندا هجن </string>
+    <string name="s2q508"> ٽيوب وسيلي خوراڪ وٺڻ </string>
     <string name="s2q502a"> ها</string>
     <string name="s2q503a"> ها</string>
     <string name="s2q504a"> ها</string>
