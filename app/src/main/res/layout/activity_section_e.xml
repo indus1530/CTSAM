@@ -33,21 +33,15 @@
                 android:id="@+id/fldGrpCVs5q101"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_marginEnd="6dp"
-                        android:layout_weight="1"
                         android:text="@string/s5q101" />
 
                     <RadioGroup
                         android:id="@+id/s5q101"
                         style="@style/radiogroup"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="6dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -70,26 +64,21 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- s5q102  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs5q102"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_marginEnd="6dp"
-                        android:layout_weight="1"
                         android:text="@string/s5q102" />
 
                     <RadioGroup
                         android:id="@+id/s5q102"
                         style="@style/radiogroup"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="6dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -112,26 +101,21 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- s5q103  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs5q103"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_marginEnd="6dp"
-                        android:layout_weight="1"
                         android:text="@string/s5q103" />
 
                     <RadioGroup
                         android:id="@+id/s5q103"
                         style="@style/radiogroup"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="6dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -154,26 +138,21 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- s5q104  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs5q104"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_marginEnd="6dp"
-                        android:layout_weight="1"
                         android:text="@string/s5q104" />
 
                     <RadioGroup
                         android:id="@+id/s5q104"
                         style="@style/radiogroup"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="6dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -196,26 +175,21 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- s5q105  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs5q105"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_marginEnd="6dp"
-                        android:layout_weight="1"
                         android:text="@string/s5q105" />
 
                     <RadioGroup
                         android:id="@+id/s5q105"
                         style="@style/radiogroup"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="6dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -238,26 +212,21 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- s5q106  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs5q106"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_marginEnd="6dp"
-                        android:layout_weight="1"
                         android:text="@string/s5q106" />
 
                     <RadioGroup
                         android:id="@+id/s5q106"
                         style="@style/radiogroup"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="6dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -280,26 +249,21 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- s5q107  Radio   -->
+
+                <!-- s5q107  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs5q107"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_marginEnd="6dp"
-                        android:layout_weight="1"
                         android:text="@string/s5q107" />
 
                     <RadioGroup
                         android:id="@+id/s5q107"
                         style="@style/radiogroup"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="6dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -322,26 +286,21 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- s5q108  Radio   -->
+
+                <!-- s5q108  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs5q108"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_marginEnd="6dp"
-                        android:layout_weight="1"
                         android:text="@string/s5q108" />
 
                     <RadioGroup
                         android:id="@+id/s5q108"
                         style="@style/radiogroup"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="6dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -364,26 +323,21 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- s5q196  Radio   -->
+
+                <!-- s5q196  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs5q196"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_marginEnd="6dp"
-                        android:layout_weight="1"
                         android:text="@string/s5q196" />
 
                     <RadioGroup
                         android:id="@+id/s5q196"
                         style="@style/radiogroup"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="6dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -620,11 +574,8 @@
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s5q5"
-                        style="@style/EditTextAlphaNumeric"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/s5q5"
-                        android:inputType="number"
+                        style="@style/EditTextNum"
+                        android:hint="@string/days"
                         app:mask="##"
                         app:maxValue="30"
                         app:minValue="1"

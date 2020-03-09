@@ -44,14 +44,14 @@
     <string name="ref"> انڪار ڪري ڇڏيو </string>
     <string name="other"> ٻيو ڪجھ </string>
     <string name="specify"> وضاحت ڪريو </string>
-    <string name="year"> Years </string>
-    <string name="month"> Months </string>
-    <string name="weeks"> Weeks </string>
-    <string name="days"> Days </string>
-    <string name="hours"> Hours </string>
-    <string name="minutes"> Minutes </string>
-    <string name="kg"> Kilograms </string>
-    <string name="km"> Kilometers </string>
+    <string name="year"> سال </string>
+    <string name="month"> مھينا </string>
+    <string name="weeks"> هفتا </string>
+    <string name="days"> ڏينهن </string>
+    <string name="hours"> ڪلاڪ </string>
+    <string name="minutes"> منٽ </string>
+    <string name="kg"> کلوگرام </string>
+    <string name="km"> ڪلوميٽر </string>
     <string name="cm"> Centimeters </string>
     <string name="in"> انچ </string>
     <string name="rupees"> روپيا </string>
@@ -2175,7 +2175,6 @@
     <string name="delete_title">Confirm</string>
 
 
-
     <!--  CTSAM STRINGS -->
     <!--  SECTION A -->
     <string name="seca"> SECTION A: Address &amp; Identification Information </string>
@@ -2197,9 +2196,9 @@
     <string name="s2t"> s2t: ڪيسن جي جانچ SAM</string>
     <string name="muac1"> muac1: MUAC-01</string>
     <string name="muac2"> muac2: MUAC-02</string>
-    <string name="s2q1"> s2q1: کاٻي ٻانهن جي گولائي جي ماپ 11.5 سينٽي ميٽر کان گهٽ</string>
-    <string name="s2q1a"> ها</string>
-    <string name="s2q1b"> نه</string>
+    <string name="s2q1"> s2q1: کاٻي ٻانهن جي گولائي جي ماپ 11.5 سينٽي ميٽر کان گهٽ </string>
+    <string name="s2q1a"> ها </string>
+    <string name="s2q1b"> نه </string>
     <string name="s2q2"> s2q2: پيرن تي سوڄ </string>
     <string name="s2q2a"> ڪو نه آهي</string>
     <string name="s2q2b"> + پيرن تي سوڄ</string>
@@ -2763,7 +2762,7 @@
 
     <!--  SECTION J -->
     <string name="secj"> SECTION J: Study Group &amp; Supplementation </string>
-    <string name="s10q1"> s10q1: داخلا جي وقت ٻار کي ڪيترا ساشي ڏنا ويا هئا ؟ </string>
+    <string name="s10q1"> s10q1: داخلا جي وقت ٻار کي ڪيترا ساشي ڏنا ويا هئا؟</string>
     <string name="s10q101"> گلابي</string>
     <string name="s10q102"> نيرو</string>
     <string name="s10q103"> سائو</string>
