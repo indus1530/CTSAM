@@ -173,6 +173,8 @@ public class SectionEActivity extends AppCompatActivity {
                         bi.s5q2b.isChecked() ? "2" :
                                 "0");
 
+        json.put("s5q197", bi.s5q197.isChecked() ? "97" : "0");
+
         //json.put("s5q3_subtitlea",bi.s5q3_subtitlea.isChecked() ?"" :"0");
         json.put("s5q301", bi.s5q301.isChecked() ? "1" : "0");
         json.put("s5q302", bi.s5q302.isChecked() ? "2" : "0");
