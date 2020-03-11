@@ -1624,9 +1624,9 @@
                             android:text='@{s6q1899.checked ? "" : s6q1802x.getText().toString()}'
                             android:visibility='@{s6q1802.checked? View.VISIBLE : View.GONE}' />
 
-                        <CheckBox
+                        <RadioButton
                             android:id="@+id/s6q1899"
-                            style="@style/checkbox"
+                            style="@style/radiobutton"
                             android:text="@string/s6q1899" />
 
                     </RadioGroup>
