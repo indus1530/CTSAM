@@ -41,12 +41,13 @@
                             style="@style/radiobutton"
                             android:text="@string/s10q101" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/s10q101x"
-                            style="@style/EditTextAlpha"
+                            style="@style/EditTextNum"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s10q101"
+                            app:mask="##"
                             android:tag="s10q101"
                             android:text='@{s10q101.checked? s10q101x.getText().toString() : ""}'
                             android:visibility='@{s10q101.checked? View.VISIBLE : View.GONE}' />
@@ -56,12 +57,13 @@
                             style="@style/radiobutton"
                             android:text="@string/s10q102" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/s10q102x"
-                            style="@style/EditTextAlpha"
+                            style="@style/EditTextNum"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s10q102"
+                            app:mask="##"
                             android:tag="s10q102"
                             android:text='@{s10q102.checked? s10q102x.getText().toString() : ""}'
                             android:visibility='@{s10q102.checked? View.VISIBLE : View.GONE}' />
@@ -71,12 +73,13 @@
                             style="@style/radiobutton"
                             android:text="@string/s10q103" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/s10q103x"
-                            style="@style/EditTextAlpha"
+                            style="@style/EditTextNum"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s10q103"
+                            app:mask="##"
                             android:tag="s10q103"
                             android:text='@{s10q103.checked? s10q103x.getText().toString() : ""}'
                             android:visibility='@{s10q103.checked? View.VISIBLE : View.GONE}' />
@@ -86,12 +89,13 @@
                             style="@style/radiobutton"
                             android:text="@string/s10q104" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/s10q104x"
-                            style="@style/EditTextAlpha"
+                            style="@style/EditTextNum"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s10q104"
+                            app:mask="##"
                             android:tag="s10q104"
                             android:text='@{s10q104.checked? s10q104x.getText().toString() : ""}'
                             android:visibility='@{s10q104.checked? View.VISIBLE : View.GONE}' />
@@ -101,12 +105,13 @@
                             style="@style/radiobutton"
                             android:text="@string/s10q1sac" />
 
-                        <EditText
+                        <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/s10q1sacx"
-                            style="@style/EditTextAlpha"
+                            style="@style/EditTextNum"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/s10q1sac"
+                            app:mask="##"
                             android:tag="s10q1sac"
                             android:text='@{s10q1sac.checked? s10q1sacx.getText().toString() : ""}'
                             android:visibility='@{s10q1sac.checked? View.VISIBLE : View.GONE}' />
@@ -128,17 +133,12 @@
                         style="@style/i_textview"
                         android:text="@string/s10q2" />
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
+                    <EditText
                         android:id="@+id/s10q2"
                         style="@style/EditTextAlphaNumeric"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/s10q2"
-                        android:inputType="number"
-                        app:mask="##"
-                        app:maxValue="0"
-                        app:minValue="0"
-                        app:type="range" />
+                        android:hint="@string/s10q2" />
 
                 </LinearLayout>
 
