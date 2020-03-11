@@ -10,12 +10,10 @@
             type="edu.aku.hassannaqvi.ctsam.ui.sections.SectionCActivity" />
     </data>
 
-
     <ScrollView
         style="@style/i_scrollview"
         android:layoutDirection="rtl"
         android:textDirection="rtl">
-
 
         <LinearLayout
             android:id="@+id/GrpName"
