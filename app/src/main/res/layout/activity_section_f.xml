@@ -1593,6 +1593,7 @@
                         <RadioButton
                             android:id="@+id/s6q1801"
                             style="@style/radiobutton"
+                            android:enabled="@{s6q1899.checked ? false : true}"
                             android:text="@string/s6q1801" />
 
                         <EditText
@@ -1602,12 +1603,14 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q1801"
                             android:tag="s6q1801"
-                            android:text='@{s6q1801.checked? s6q1801x.getText().toString() : ""}'
+                            android:enabled='@{s6q1899.checked ? false : true}'
+                            android:text='@{s6q1899.checked ? "" : s6q1801x.getText().toString()}'
                             android:visibility='@{s6q1801.checked? View.VISIBLE : View.GONE}' />
 
                         <RadioButton
                             android:id="@+id/s6q1802"
                             style="@style/radiobutton"
+                            android:enabled="@{s6q1899.checked ? false : true}"
                             android:text="@string/s6q1802" />
 
                         <EditText
@@ -1617,7 +1620,8 @@
                             android:layout_height="wrap_content"
                             android:hint="@string/s6q1802"
                             android:tag="s6q1802"
-                            android:text='@{s6q1802.checked? s6q1802x.getText().toString() : ""}'
+                            android:enabled='@{s6q1899.checked ? false : true}'
+                            android:text='@{s6q1899.checked ? "" : s6q1802x.getText().toString()}'
                             android:visibility='@{s6q1802.checked? View.VISIBLE : View.GONE}' />
 
                         <CheckBox
