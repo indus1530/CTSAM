@@ -37,7 +37,7 @@
     </style>
 
     <style name="textInput">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">25px</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_vertical</item>
@@ -237,9 +237,9 @@
         <!--        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>-->
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">25px</item>
         <item name="android:drawable">@drawable/textview_background_grad</item>
-        <item name="android:typeface">sans</item>
+        <item name="android:typeface">normal</item>
         <item name="android:padding">8dp</item>
         <item name="android:elevation">1dp</item>
     </style>
@@ -273,7 +273,7 @@
     </style>
 
     <style name="radiobutton" parent="Widget.AppCompat.CompoundButton.RadioButton">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">25px</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@color/white</item>
@@ -329,7 +329,7 @@
 
 
     <style name="checkbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">25px</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/white</item>
