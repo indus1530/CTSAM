@@ -287,7 +287,8 @@
 
                     <TextView
                         style="@style/i_textview"
-                        android:text="@string/s2q502" />
+                        android:text="@string/s2q502"
+                        android:textAlignment="center" />
 
                     <RadioGroup
                         android:id="@+id/s2q502"
@@ -324,7 +325,8 @@
 
                     <TextView
                         style="@style/i_textview"
-                        android:text="@string/s2q503" />
+                        android:text="@string/s2q503"
+                        android:textAlignment="center" />
 
                     <RadioGroup
                         android:id="@+id/s2q503"
@@ -361,7 +363,8 @@
 
                     <TextView
                         style="@style/i_textview"
-                        android:text="@string/s2q504" />
+                        android:text="@string/s2q504"
+                        android:textAlignment="center" />
 
                     <RadioGroup
                         android:id="@+id/s2q504"
@@ -398,7 +401,8 @@
 
                     <TextView
                         style="@style/i_textview"
-                        android:text="@string/s2q505" />
+                        android:text="@string/s2q505"
+                        android:textAlignment="center" />
 
                     <RadioGroup
                         android:id="@+id/s2q505"
@@ -435,7 +439,8 @@
 
                     <TextView
                         style="@style/i_textview"
-                        android:text="@string/s2q506" />
+                        android:text="@string/s2q506"
+                        android:textAlignment="center" />
 
                     <RadioGroup
                         android:id="@+id/s2q506"
