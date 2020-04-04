@@ -2178,17 +2178,25 @@
     <!--  CTSAM STRINGS -->
     <!--  SECTION A -->
     <string name="seca"> SECTION A: Address &amp; Identification Information </string>
-    <string name="s1q1"> s1q1: صحت مرڪز جو نالو</string>
-    <string name="s1q2"> s1q2: تعلقي جو نالو</string>
-    <string name="s1q3"> s1q3: ڳوٺ جو نالو</string>
-    <string name="s1q4"> s1q4: ايڊريس</string>
-    <string name="s1q5"> s1q5: پهريون ڊيٽا ڪيلڪٽر جو نالو</string>
-    <string name="s1q6"> s1q6: ٻيو ڊيٽا ڪيلڪٽر جو نالو</string>
-    <string name="s1q7"> s1q7: داخلا جي تاريخ</string>
-    <string name="s1q8"> s1q8: ڇا والدين حصو وٺڻ لاءِ راضي ٿيا ۽ راضي نامي وارو فارم ڀريو ويو ؟</string>
-    <string name="s1q8a"> ها</string>
-    <string name="s1q8b"> نه</string>
-    <string name="s1q8r"> s1q8r: راضي نامو نه ڀرڻ جو سبب</string>
+    <string name="s1q1"> S1Q1: صحت مرڪز جو نالو </string>
+
+    <string name="s1q2"> S1Q2: تعلقي جو نالو </string>
+
+    <string name="s1q3"> S1Q3: ڳوٺ جو نالو </string>
+
+    <string name="s1q4"> S1Q4: ايڊريس </string>
+
+    <string name="s1q5"> S1Q5: پهريون ڊيٽا ڪيلڪٽر جو نالو </string>
+
+    <string name="s1q6"> S1Q6: ٻيو ڊيٽا ڪيلڪٽر جو نالو </string>
+
+    <string name="s1q7"> S1Q7: داخلا جي تاريخ </string>
+
+    <string name="s1q8"> S1Q8: ڇا والدين حصو وٺڻ لاءِ راضي ٿيا ۽ راضي نامي وارو فارم ڀريو ويو ؟ </string>
+    <string name="s1q8a"> ها </string>
+    <string name="s1q8b"> نه </string>
+
+    <string name="s1q8r"> S1Q8r: راضي نامو نه ڀرڻ جو سبب </string>
 
 
     <!--  SECTION B -->
@@ -2197,91 +2205,117 @@
     <string name="muac1"> MUAC-01 </string>
     <string name="muac2"> MUAC-02 </string>
 
-    <string name="s2q1"> s2q1: کاٻي ٻانهن جي گولائي جي ماپ 11.5 سينٽي ميٽر کان گهٽ </string>
+    <string name="s2q1"> S2Q1: کاٻي ٻانهن جي گولائي جي ماپ 11.5 سينٽي ميٽر کان گهٽ </string>
     <string name="s2q1a"> ها </string>
     <string name="s2q1b"> نه </string>
 
-    <string name="s2q2"> s2q2: پيرن تي سوڄ </string>
-    <string name="s2q2a"> ڪو نه آهي</string>
-    <string name="s2q2b"> + پيرن تي سوڄ</string>
-    <string name="s2q2c">  ++ پيرن تي سوڄ</string>
-    <string name="s2q2d"> +++ پيرن تي سوڄ</string>
-    <string name="s2q2_instruction"> s2q2_instruction: پيرن تي سوڄ جي وضاحت :1)ڪو نه آهي ,2) هلڪو، ٻنهي پيرن تي ۽ کڙين تي ,3) وچولو، ٻنهي پيرن، ڄگھن ۽ ٻانهن تي 4) شديد سوڄ پيرن ،ڄگھن، ٻانهن، هٿن ۽ منهن تي</string>
-    <string name="s2q3"> s2q3: لاءِ؟RUTF/RUSF بک جو هجڻ </string>
+    <string name="s2q2"> S2Q2: پيرن تي سوڄ </string>
+    <string name="s2q2_instruction">  پيرن تي سوڄ جي وضاحت :1)ڪو نه آهي ,2) هلڪو، ٻنهي پيرن تي ۽ کڙين تي ,3) وچولو، ٻنهي پيرن، ڄگھن ۽ ٻانهن تي 4) شديد سوڄ پيرن ،ڄگھن، ٻانهن، هٿن ۽ منهن تي </string>
+    <string name="s2q2a"> ڪو نه آهي </string>
+    <string name="s2q2b"> + پيرن تي سوڄ </string>
+    <string name="s2q2c">  ++ پيرن تي سوڄ </string>
+    <string name="s2q2d"> +++ پيرن تي سوڄ </string>
+
+    <string name="s2q3"> S2Q3: لاءِ ؟ RUTF / RUSF بک جو هجڻ </string>
     <string name="s2q3a"> ها</string>
     <string name="s2q3b"> نه</string>
-    <string name="s2q4"> s2q4: جيڪڏهن ها ته ڪهڙي درجي جي آهي</string>
+
+    <string name="s2q4"> S2Q4: جيڪڏهن ها ته ڪهڙي درجي جي آهي</string>
+    <string name="s2q4_instruction">  واپرائجي RUTF/RUSF 75% گھٽ ۾ گھٽ </string>
     <string name="s2q4a"> (شوق سان کا ڌوRUTF/RUSF ٻار) سٺو</string>
     <string name="s2q4b"> ( کاڌو RUTF/RUSF ٻار بار بار چوڻ کان پوءِ) خراب</string>
     <string name="s2q4c"> نه کاڌو RUTF/RUSF انڪار ڪيو (ٻار بار بار چوڻ کان پوءِ به </string>
-    <string name="s2q5_subtitle"> s2q5_subtitle: طبي پيچدگين جو موجود هجڻ</string>
-    <string name="s2q4_instruction">  واپرائجي RUTF/RUSF 75% گھٽ ۾ گھٽ </string>
-    <string name="s2q501"> s2q501:  جي لاءِ بک جو نه لڳڻ RUTF/RUSF</string>
-    <string name="s2q501a"> ها</string>
-    <string name="s2q501b"> نه</string>
+
+    <string name="s2q5_subtitle"> S2Q5: طبي پيچدگين جو موجود هجڻ </string>
+    <string name="s2q501">    جي لاءِ بک جو نه لڳڻ  RUTF / RUSF</string>
+    <string name="s2q501a"> ها </string>
+    <string name="s2q501b"> نه </string>
+
     <string name="s2q502"> هر شيءِ الٽي ڪري ڪڍي ٿو </string>
+    <string name="s2q502a"> ها </string>
+    <string name="s2q502b"> نه </string>
+
     <string name="s2q503">  ٿي وڃڻc  ≤35.5o c جسم گرمي پد </string>
+    <string name="s2q503a"> ها </string>
+    <string name="s2q503b"> نه </string>
+
     <string name="s2q504"> شديد نمونيا </string>
+    <string name="s2q504a"> ها </string>
+    <string name="s2q504b"> نه </string>
+
     <string name="s2q505"> جسم ۾ شديد پاڻي کوٽ </string>
+    <string name="s2q505a"> ها </string>
+    <string name="s2q505b"> نه </string>
+
     <string name="s2q506"> شديد رت جي کوٽ </string>
+    <string name="s2q506a"> ها </string>
+    <string name="s2q506b"> نه </string>
+
     <string name="s2q507"> (سست( تمام گھڻو ڪمزور، بيهوش، دورا پوندا هجن </string>
+    <string name="s2q507a"> ها </string>
+    <string name="s2q507b"> نه </string>
+
     <string name="s2q508"> ٽيوب وسيلي خوراڪ وٺڻ </string>
-    <string name="s2q502a"> ها</string>
-    <string name="s2q503a"> ها</string>
-    <string name="s2q504a"> ها</string>
-    <string name="s2q505a"> ها</string>
-    <string name="s2q506a"> ها</string>
-    <string name="s2q507a"> ها</string>
-    <string name="s2q508a"> ها</string>
-    <string name="s2q502b"> نه</string>
-    <string name="s2q503b"> نه</string>
-    <string name="s2q504b"> نه</string>
-    <string name="s2q505b"> نه</string>
-    <string name="s2q506b"> نه</string>
-    <string name="s2q507b"> نه</string>
-    <string name="s2q508b"> نه</string>
-    <string name="s2q6"> s2q6: ڇا ٻار ڪنهن ٻئي تحقيقي ٽرائل يا  اضافي خوراڪ واري پروگرام ۾ شامل آهي؟</string>
-    <string name="s2q6a"> ها</string>
-    <string name="s2q6b"> نه</string>
-    <string name="s2q7"> s2q7: ڇا ٻار جي واڌ ويجھ سستي سان ٿي رهي آهي؟</string>
-    <string name="s2q8"> s2q8: (بيماري آهي جيئن ته شامل نه ڪريو HIV يا TB) cerebral palsy ڇا ٻار کي ڪا پراڻي دماغي</string>
-    <string name="s2q9"> s2q9:  مان الرجي ٿي هئي؟ کاڌي ۾ شامل شين   Peanut ڇا ٻار کي کير يا</string>
-    <string name="s2q7a"> ها</string>
-    <string name="s2q8a"> ها</string>
-    <string name="s2q9a"> ها</string>
-    <string name="s2q7b"> نه</string>
-    <string name="s2q8b"> نه</string>
-    <string name="s2q9b"> نه</string>
-    <string name="s2q29_instruction"> s2q29_instruction: -	ٻار کي تحقيق ۾ شامل ڪيو ويندو جيڪڏهن سوال نمبر 1. 2 ۾ 2.3 ها آهي ۽ سوال 2.4 جو جواب 1 (سٺو)جيڪڏهن سوال نمبر2.8،2.7،2.6،2.5۽2.9 ۾ نه آهي</string>
+    <string name="s2q508a"> ها </string>
+    <string name="s2q508b"> نه </string>
+
+    <string name="s2q6"> S2Q6: ڇا ٻار ڪنهن ٻئي تحقيقي ٽرائل يا  اضافي خوراڪ واري پروگرام ۾ شامل آهي ؟ </string>
+    <string name="s2q6a"> ها </string>
+    <string name="s2q6b"> نه </string>
+
+    <string name="s2q7"> S2Q7: ڇا ٻار جي واڌ ويجھ سستي سان ٿي رهي آهي ؟ </string>
+    <string name="s2q7a"> ها </string>
+    <string name="s2q7b"> نه </string>
+
+    <string name="s2q8"> S2Q8: (بيماري آهي جيئن ته شامل نه ڪريو HIV يا TB) cerebral palsy ڇا ٻار کي ڪا پراڻي دماغي</string>
+    <string name="s2q8a"> ها </string>
+    <string name="s2q8b"> نه </string>
+
+    <string name="s2q9"> S2Q9:  مان الرجي ٿي هئي ؟ کاڌي ۾ شامل شين Peanut ڇا ٻار کي کير يا </string>
+    <string name="s2q9a"> ها </string>
+    <string name="s2q9b"> نه </string>
+    <string name="s2q29_instruction"> -	ٻار کي تحقيق ۾ شامل ڪيو ويندو جيڪڏهن سوال نمبر 1. 2 ۾ 2.3 ها آهي ۽ سوال 2.4 جو جواب 1 (سٺو) جيڪڏهن سوال نمبر 2.8 ،2.7 ،2.6 ،2.5 ۽ 2.9 ۾ نه آهي</string>
 
 
     <!--  SECTION C -->
     <string name="secc"> SECTION C: HH Size &amp; Study Participants </string>
-    <string name="s3qa"> s3qa: 6 مهينن کان گھٽ وارا ٻار</string>
-    <string name="s3qb"> s3qb: 6 کان 23 مهينن وارا ٻار</string>
-    <string name="s3qc"> s3qc: 24 کان 59 مهينن وارا ٻار</string>
-    <string name="s3qd"> s3qd: جوان مرد</string>
-    <string name="s3qe"> s3qe: جوان عورتون</string>
-    <string name="s3qf"> s3qf: ڪُل گھر ڀاتين جو تعداد</string>
+    <string name="s3qa"> S3Qa: 6 مهينن کان گھٽ وارا ٻار </string>
+
+    <string name="s3qb"> S3Qb: 6 کان 23 مهينن وارا ٻار </string>
+
+    <string name="s3qc"> S3Qc: 24 کان 59 مهينن وارا ٻار </string>
+
+    <string name="s3qd"> S3Qd: جوان مرد </string>
+
+    <string name="s3qe"> S3Qe: جوان عورتون </string>
+
+    <string name="s3qf"> S3Qf: ڪُل گھر ڀاتين جو تعداد </string>
 
 
     <!--  SECTION D -->
     <string name="secd"> SECTION D: Child Information &amp; Anthropometry </string>
-    <string name="s4q1"> s4q1:  تحقيق جي گروپ جو قسم</string>
-    <string name="s4q1a"> گلابي</string>
-    <string name="s4q1b"> نيرو</string>
-    <string name="s4q1c"> سائو</string>
-    <string name="s4q1d"> ناسي  </string>
-    <string name="s4q2"> s4q2: ٻار جو شناخت نمبر</string>
-    <string name="s4q3"> s4q3: ٻار جو نالو</string>
-    <string name="s4q4"> s4q4: ٻار جي پيءُ جو نالو</string>
-    <string name="s4q5"> s4q5: ٻار جي ماءُ جو نالو</string>
-    <string name="s4q6"> s4q6: ٻار جي جنس</string>
-    <string name="s4q6a"> مرد</string>
-    <string name="s4q6b"> عورت</string>
-    <string name="s4q7"> s4q7: ٻار جي ڄمڻ جي تاريخ يا داخلا وقت عمر</string>
-    <string name="s4q7a"> ٻار جي ڄمڻ جي تاريخ</string>
-    <string name="s4q7b"> داخلا وقت عمر</string>
+    <string name="s4q1"> S4Q1:  تحقيق جي گروپ جو قسم </string>
+    <string name="s4q1a"> گلابي </string>
+    <string name="s4q1b"> نيرو </string>
+    <string name="s4q1c"> سائو </string>
+    <string name="s4q1d"> ناسي </string>
+
+    <string name="s4q2"> S4Q2: ٻار جو شناخت نمبر </string>
+
+    <string name="s4q3"> S4Q3: ٻار جو نالو </string>
+
+    <string name="s4q4"> S4Q4: ٻار جي پيءُ جو نالو </string>
+
+    <string name="s4q5"> S4Q5: ٻار جي ماءُ جو نالو </string>
+
+    <string name="s4q6"> S4Q6: ٻار جي جنس </string>
+    <string name="s4q6a"> مرد </string>
+    <string name="s4q6b"> عورت </string>
+
+    <string name="s4q7"> S4Q7: ٻار جي ڄمڻ جي تاريخ يا داخلا وقت عمر </string>
+    <string name="s4q7a"> ٻار جي ڄمڻ جي تاريخ </string>
+    <string name="s4q7b"> داخلا وقت عمر </string>
+
     <string name="s4q7dob"> s4q7dob: ٻار جي ڄمڻ جي تاريخ</string>
     <string name="s4q7days"> s4q7days: عمر ڏينهن ۾</string>
     <string name="s4q7mon"> s4q7mon: عمر مهينا ۾</string>
