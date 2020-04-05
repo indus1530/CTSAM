@@ -231,15 +231,19 @@
                 style="@style/cardView"
                 android:visibility='@{s1q8b.checked? View.VISIBLE : View.GONE}'>
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:text="@string/s1q8r" />
 
                     <EditText
                         android:id="@+id/s1q8r"
                         style="@style/EditTextAlphaNumeric"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:hint="@string/reason"
                         android:text='@{s1q8b.checked? s1q8r.getText().toString : "" }' />
 
