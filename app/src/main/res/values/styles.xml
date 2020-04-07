@@ -115,9 +115,8 @@
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
         <!--        <item name="android:textStyle">bold</item>-->
         <!--        <item name="android:paddingEnd">8dp</item>-->
-
-
     </style>
+
 
     <style name="HeadingTitle" parent="@android:style/TextAppearance.Widget.TextView">
         <item name="android:layout_width">match_parent</item>
