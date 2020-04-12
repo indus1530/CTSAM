@@ -2,11 +2,13 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -32,7 +34,41 @@ public class SectionBActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_b);
         bi.setCallback(this);
+        setupSkip();
 
+
+    }
+
+
+
+
+    private void setupSkip() {
+
+        //s2q3
+        bi.s2q3.setOnCheckedChangeListener((group, checkedId) -> {
+
+            if (checkedId == bi.s2q3a.getId()) {
+                bi.fldGrpCVs2q4.setVisibility(View.VISIBLE);
+            } else {
+                Clear.clearAllFields(bi.fldGrpCVs2q4);
+                bi.fldGrpCVs2q4.setVisibility(View.GONE);
+            }
+        });
+
+
+        //a40397
+        /*bi.a40397.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b) {
+                Clear.clearAllFields(bi.a403check, false);
+                bi.a403check.setTag("-1");
+                bi.fldGrpCVa02.setVisibility(View.VISIBLE);
+            } else {
+                Clear.clearAllFields(bi.a403check, true);
+                bi.a403check.setTag("0");
+                Clear.clearAllFields(bi.fldGrpCVa02);
+                bi.fldGrpCVa02.setVisibility(View.GONE);
+            }
+        });*/
 
     }
 
