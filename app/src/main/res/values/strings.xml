@@ -2267,11 +2267,11 @@
     <string name="s2q7a"> ها </string>
     <string name="s2q7b"> نه </string>
 
-    <string name="s2q8"> S2Q8: (بيماري آهي جيئن ته شامل نه ڪريو HIV يا TB) cerebral palsy ڇا ٻار کي ڪا پراڻي دماغي </string>
+    <string name="s2q8"> S2Q8: ڇا ٻار کي ڪا پراڻي دماغي (HIV يا TB cerebral palsy) بيماري آهي جيئن ته شامل نه ڪريو </string>
     <string name="s2q8a"> ها </string>
     <string name="s2q8b"> نه </string>
 
-    <string name="s2q9"> S2Q9:  مان الرجي ٿي هئي ؟ کاڌي ۾ شامل شين Peanut ڇا ٻار کي کير يا </string>
+    <string name="s2q9"> S2Q9: ڇا ٻار کي کير يا Peanut مان الرجي ٿي هئي ؟ کاڌي ۾ شامل شين  </string>
     <string name="s2q9a"> ها </string>
     <string name="s2q9b"> نه </string>
     <string name="s2q29_instruction"> -	ٻار کي تحقيق ۾ شامل ڪيو ويندو جيڪڏهن سوال نمبر 1. 2 ۾ 2.3 ها آهي ۽ سوال 2.4 جو جواب 1 (سٺو) جيڪڏهن سوال نمبر 2.8 ،2.7 ،2.6 ،2.5 ۽ 2.9 ۾ نه آهي</string>
@@ -2279,17 +2279,17 @@
 
     <!--  SECTION C -->
     <string name="secc"> SECTION C: HH Size &amp; Study Participants </string>
-    <string name="s3qa"> S3Qa: 6 مهينن کان گھٽ وارا ٻار </string>
+    <string name="s3qa"> S3QA: 6 کان گھٽ وارا ٻار مهينن </string>
 
-    <string name="s3qb"> S3Qb: 6 کان 23 مهينن وارا ٻار </string>
+    <string name="s3qb"> S3QB: کان 23 مهينن وارا ٻار 6 </string>
 
-    <string name="s3qc"> S3Qc: 24 کان 59 مهينن وارا ٻار </string>
+    <string name="s3qc"> S3QC: کان 59 مهينن وارا ٻار  24 </string>
 
-    <string name="s3qd"> S3Qd: جوان مرد </string>
+    <string name="s3qd"> S3QD: جوان مرد </string>
 
-    <string name="s3qe"> S3Qe: جوان عورتون </string>
+    <string name="s3qe"> S3QE: جوان عورتون </string>
 
-    <string name="s3qf"> S3Qf: ڪُل گھر ڀاتين جو تعداد </string>
+    <string name="s3qf"> S3QF: ڪُل گھر ڀاتين جو تعداد </string>
 
 
     <!--  SECTION D -->

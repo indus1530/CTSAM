@@ -2,10 +2,9 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 
 import com.validatorcrawler.aliazaz.Validator;
 
@@ -14,7 +13,10 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Objects;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -32,6 +34,35 @@ public class SectionCActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_c);
         bi.setCallback(this);
+
+
+        bi.s3qf.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                if (Objects.requireNonNull(bi.s3qf.getText()).hashCode() == s.hashCode()) {
+                    bi.s3qf.setMaxvalue(Float.parseFloat(Objects.requireNonNull(bi.s3qa.getText()).toString())
+                            + Float.parseFloat(Objects.requireNonNull(bi.s3qb.getText()).toString())
+                            + Float.parseFloat(Objects.requireNonNull(bi.s3qc.getText()).toString())
+                            + Float.parseFloat(Objects.requireNonNull(bi.s3qd.getText()).toString())
+                            + Float.parseFloat(Objects.requireNonNull(bi.s3qe.getText()).toString()));
+                    bi.s3qf.setMinvalue(Float.parseFloat(Objects.requireNonNull(bi.s3qa.getText()).toString())
+                            + Float.parseFloat(Objects.requireNonNull(bi.s3qb.getText()).toString())
+                            + Float.parseFloat(Objects.requireNonNull(bi.s3qc.getText()).toString())
+                            + Float.parseFloat(Objects.requireNonNull(bi.s3qd.getText()).toString())
+                            + Float.parseFloat(Objects.requireNonNull(bi.s3qe.getText()).toString()));
+                }
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
+
 
 
     }
