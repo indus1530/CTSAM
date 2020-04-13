@@ -4,9 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -15,6 +12,8 @@ import org.json.JSONObject;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -111,11 +110,11 @@ public class SectionAActivity extends AppCompatActivity {
 
         json.put("s1q4", bi.s1q4.getText().toString());
 
-        json.put("s1q5", bi.s1q5.getText().toString());
+        /*json.put("s1q5", bi.s1q5.getText().toString());
 
         json.put("s1q6", bi.s1q6.getText().toString());
 
-        json.put("s1q7", bi.s1q7.getText().toString());
+        json.put("s1q7", bi.s1q7.getText().toString());*/
 
         json.put("s1q8", bi.s1q8a.isChecked() ? "1"
                 : bi.s1q8b.isChecked() ? "2"
