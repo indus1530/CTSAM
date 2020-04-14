@@ -2643,7 +2643,7 @@
     <string name="s7q102"> Not observed  </string>
     <string name="s7q103"> Not in dwelling/plot/yard</string>
     <string name="s7q104"> No permission to see </string>
-    <string name="s7q105"> Other reason</string>
+    <string name="s7q105"> Other reason </string>
 
     <string name="s7q2"> S7Q2: Observe presence of water at the specific place for hand washing</string>
     <string name="s7q201"> Water is available </string>
@@ -2857,10 +2857,10 @@
     <!--  SECTION J -->
     <string name="secj"> SECTION J: Study Group &amp; Supplementation </string>
     <string name="s10q1"> S10Q1: How many sachets were given to child at the time of recruitment ? </string>
-    <string name="s10q101"> Pink</string>
-    <string name="s10q102"> Blue</string>
-    <string name="s10q103"> Green</string>
-    <string name="s10q104"> Brown</string>
+    <string name="s10q1a"> Pink</string>
+    <string name="s10q1b"> Blue</string>
+    <string name="s10q1c"> Green</string>
+    <string name="s10q1d"> Brown</string>
     <string name="s10q1sac"> Number of Sachet given</string>
     <string name="s10q2"> S10Q2: Reason</string>
     <string name="s10q3"> S10Q3: Next follow-up date?</string>

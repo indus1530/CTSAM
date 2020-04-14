@@ -13,7 +13,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
+import java.util.Random;
 
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
@@ -33,6 +36,29 @@ public class SectionJActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j);
         bi.setCallback(this);
 
+        List<Integer> givenList = Arrays.asList(1, 2, 3, 4);
+        Random rand = new Random();
+        int randomElement = givenList.get(rand.nextInt(givenList.size()));
+
+        switch (randomElement) {
+            case 1:
+                bi.s10q1a.setChecked(true);
+                break;
+            case 2:
+                bi.s10q1b.setChecked(true);
+                break;
+            case 3:
+                bi.s10q1c.setChecked(true);
+                break;
+            case 4:
+                bi.s10q1d.setChecked(true);
+                break;
+        }
+
+        bi.s10q1a.setEnabled(false);
+        bi.s10q1b.setEnabled(false);
+        bi.s10q1c.setEnabled(false);
+        bi.s10q1d.setEnabled(false);
 
     }
 
@@ -85,18 +111,17 @@ public class SectionJActivity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("s10q1",
-                bi.s10q101.isChecked() ? "1" :
-                        bi.s10q102.isChecked() ? "2" :
-                                bi.s10q103.isChecked() ? "3" :
-                                        bi.s10q104.isChecked() ? "4" :
-                                                bi.s10q1sac.isChecked() ? "" :
-                                                        "0");
-        json.put("s10q101x", bi.s10q101x.getText().toString());
-        json.put("s10q102x", bi.s10q102x.getText().toString());
-        json.put("s10q103x", bi.s10q103x.getText().toString());
-        json.put("s10q104x", bi.s10q104x.getText().toString());
-        json.put("s10q1sacx", bi.s10q1sacx.getText().toString());
+        json.put("s10q1", bi.s10q1a.isChecked() ? "1"
+                : bi.s10q1b.isChecked() ? "2"
+                : bi.s10q1c.isChecked() ? "3"
+                : bi.s10q1d.isChecked() ? "4"
+                : "0");
+
+        json.put("s10q1ax", bi.s10q1ax.getText().toString());
+        json.put("s10q1bx", bi.s10q1bx.getText().toString());
+        json.put("s10q1cx", bi.s10q1cx.getText().toString());
+        json.put("s10q1dx", bi.s10q1dx.getText().toString());
+
         json.put("s10q2", bi.s10q2.getText().toString());
 
         MainApp.fc.setsA3(String.valueOf(json));
