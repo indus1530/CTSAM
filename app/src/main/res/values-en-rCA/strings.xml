@@ -2412,32 +2412,32 @@
     <string name="secf"> SECTION F: HH Socioeconomic Information </string>
 
     <string name="s6q1"> S6Q1: What is your mother tongue / native language ? </string>
-    <string name="s6q101"> Urdu </string>
-    <string name="s6q102"> Punjabi </string>
-    <string name="s6q103"> Sindhi </string>
-    <string name="s6q104"> Pushtu </string>
-    <string name="s6q105"> Baluchi </string>
-    <string name="s6q106"> Siraiki </string>
-    <string name="s6q107"> Dhatki </string>
+    <string name="s6q1a"> Urdu </string>
+    <string name="s6q1b"> Punjabi </string>
+    <string name="s6q1c"> Sindhi </string>
+    <string name="s6q1d"> Pushtu </string>
+    <string name="s6q1e"> Baluchi </string>
+    <string name="s6q1f"> Siraiki </string>
+    <string name="s6q1g"> Dhatki </string>
     <string name="s6q196"> Other (Specify) </string>
 
     <string name="s6q2"> S6Q2: What is the main source of drinking water in your house hold ? </string>
-    <string name="s6q201"> Piped Water</string>
-    <string name="s6q202"> Municipal committee piped into dwelling </string>
-    <string name="s6q203"> Municipal committee piped to Yard/Plot</string>
-    <string name="s6q204"> Municipal committee piped to neighbor</string>
-    <string name="s6q205"> Public tap/standpipe</string>
-    <string name="s6q206"> Tube well or borehole</string>
-    <string name="s6q207"> Hand pump</string>
-    <string name="s6q208"> Well</string>
-    <string name="s6q209"> Spring</string>
-    <string name="s6q210"> Rainwater</string>
-    <string name="s6q211"> Tanker truck</string>
-    <string name="s6q212"> Filtration plant</string>
-    <string name="s6q213"> Cart with small tank</string>
-    <string name="s6q214"> Surface water (river, dam, lake) </string>
-    <string name="s6q215"> Irrigation channel</string>
-    <string name="s6q216"> Bottled water</string>
+    <string name="s6q2a"> Piped Water</string>
+    <string name="s6q2b"> Municipal committee piped into dwelling </string>
+    <string name="s6q2c"> Municipal committee piped to Yard/Plot</string>
+    <string name="s6q2d"> Municipal committee piped to neighbor</string>
+    <string name="s6q2e"> Public tap/standpipe</string>
+    <string name="s6q2f"> Tube well or borehole</string>
+    <string name="s6q2g"> Hand pump</string>
+    <string name="s6q2h"> Well</string>
+    <string name="s6q2i"> Spring</string>
+    <string name="s6q2j"> Rainwater</string>
+    <string name="s6q2k"> Tanker truck</string>
+    <string name="s6q2l"> Filtration plant</string>
+    <string name="s6q2m"> Cart with small tank</string>
+    <string name="s6q2n"> Surface water (river, dam, lake) </string>
+    <string name="s6q2o"> Irrigation channel</string>
+    <string name="s6q2p"> Bottled water</string>
     <string name="s6q296"> Other (Specify) </string>
 
     <string name="s6q3"> S6Q3: Do you take any step to make the water safer to drink ? </string>
@@ -2472,7 +2472,7 @@
     <string name="s6q602"> No</string>
 
     <string name="s6q7"> S6Q7: If yes, how many other households use this toilet facility ? </string>
-    <string name="s6q701"> No. of households</string>
+    <string name="s6q7a"> No. of households </string>
 
     <string name="s6q8"> S6Q8: Are following facilities available in your house hold ? </string>
     <string name="s6q8a"> Electricity Connection</string>
@@ -2613,17 +2613,17 @@
     <string name="s6q16j02"> No</string>
 
     <string name="s6q17"> S6Q17: Does any member of this household own any agricultural land ? </string>
-    <string name="s6q1701"> Yes</string>
-    <string name="s6q1702"> No</string>
+    <string name="s6q17a"> Yes</string>
+    <string name="s6q17b"> No</string>
 
     <string name="s6q18"> S6Q18: If yes, how many acres or canals of agricultural land do members of this household own ? </string>
-    <string name="s6q1801"> Acre</string>
-    <string name="s6q1802"> Canal</string>
-    <string name="s6q1899"> Don’t know</string>
+    <string name="s6q18a"> Acre</string>
+    <string name="s6q18b"> Canal</string>
+    <string name="s6q1898"> Don’t know</string>
 
     <string name="s6q19"> S6Q19: Does your household own livestock, animals or poultry ?</string>
-    <string name="s6q1901"> Yes</string>
-    <string name="s6q1902"> No</string>
+    <string name="s6q19a"> Yes</string>
+    <string name="s6q19b"> No</string>
 
     <string name="s6q20"> S6Q20: If yes, how many livestock, animals or poultry does your household own ?   Ask for each listed animal, one by one and insert  00 if none</string>
     <string name="s6q20a"> Cows, bulls </string>

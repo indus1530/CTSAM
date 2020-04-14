@@ -2421,63 +2421,69 @@
     <!--  SECTION F -->
     <string name="secf"> SECTION F: HH Socioeconomic Information </string>
     <string name="s6q1"> S6Q1: توهان جي مادري زبان ڪهڙي آهي ؟ </string>
-    <string name="s6q101"> اردو</string>
-    <string name="s6q102"> پنجابي</string>
-    <string name="s6q103"> سنڌي</string>
-    <string name="s6q104"> پشتو</string>
-    <string name="s6q105"> بلوچي</string>
-    <string name="s6q106"> سرائڪي</string>
-    <string name="s6q107"> دٽڪي</string>
+    <string name="s6q1a"> اردو</string>
+    <string name="s6q1b"> پنجابي</string>
+    <string name="s6q1c"> سنڌي</string>
+    <string name="s6q1d"> پشتو</string>
+    <string name="s6q1e"> بلوچي</string>
+    <string name="s6q1f"> سرائڪي</string>
+    <string name="s6q1g"> دٽڪي</string>
     <string name="s6q196"> ٻيو ڪجھه ته وضاحت ڪريو</string>
 
-    <string name="s6q2"> s6q2: توهان جي گھر ۾ پيئڻ جو پاڻي ڪٿان ايندو/ مکيه ذريعو ڪهڙو آهي؟</string>
-    <string name="s6q201"> واٽر سپلاءِ</string>
-    <string name="s6q202"> گھر جي اندر ميونسپل ڪميٽي جي پاڻي جي لائن اچي ٿي</string>
-    <string name="s6q203"> گھر جي ٻاهر  ميونسپل ڪميٽي جي پاڻي جي لائن اچي ٿي</string>
-    <string name="s6q204"> پاڙي ۾ اندر ميونسپل ڪميٽي جي پاڻي جي لائن اچي ٿي</string>
-    <string name="s6q205"> پاڙي ۾ نلڪو لڳل آهي</string>
-    <string name="s6q206"> بورنگ جو پاڻي</string>
-    <string name="s6q207"> نلڪي جو پاڻي</string>
-    <string name="s6q208"> کوهه جو پاڻي</string>
-    <string name="s6q209"> چشمي جو پاڻي</string>
-    <string name="s6q210"> مينهن جو پاڻي</string>
-    <string name="s6q211"> ٽينڪروارو پاڻي</string>
-    <string name="s6q212"> فلٽر صاف پاڻي</string>
-    <string name="s6q213"> گڏهه گاڏي وارو پاڻي</string>
-    <string name="s6q214"> ندي، دريا جو پاڻي</string>
-    <string name="s6q215"> آبپاشي جي نهر</string>
-    <string name="s6q216"> بوتل وارو پاڻي</string>
-    <string name="s6q296"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q3"> s6q3: ڇا توهان پيئڻ جي پاڻي کي صاف ڪندا آهيو؟</string>
-    <string name="s6q301"> ها</string>
-    <string name="s6q302"> نه</string>
-    <string name="s6q4"> s6q4: جيڪڏهن ها ته اڪثر ڪهڙو طريقو استعمال ڪندا آهيو؟</string>
-    <string name="s6q401"> گرم ڪنداآهيون</string>
-    <string name="s6q402"> ڪلورين / گوريون</string>
-    <string name="s6q403"> ڪپڙي سان ڇاڻيندا آهيون</string>
-    <string name="s6q404"> فلٽر ڪندا آهيون</string>
-    <string name="s6q405"> سج جي روشني</string>
-    <string name="s6q406"> رکندا آهيون ۽ ڇڻي وڃي</string>
-    <string name="s6q496"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q5"> s6q5: گھر ۾ ڪهڙي قسم جو ٽوائلٽ استعمال ڪندا آهيو؟</string>
-    <string name="s6q5_subtitlea"> پاڻي جي ذريعي لڙهي وڃڻ وارو</string>
+    <string name="s6q2"> S6Q2: توهان جي گھر ۾ پيئڻ جو پاڻي ڪٿان ايندو / مکيه ذريعو ڪهڙو آهي ؟ </string>
+    <string name="s6q2a"> واٽر سپلاءِ </string>
+    <string name="s6q2b"> گھر جي اندر ميونسپل ڪميٽي جي پاڻي جي لائن اچي ٿي </string>
+    <string name="s6q2c"> گھر جي ٻاهر  ميونسپل ڪميٽي جي پاڻي جي لائن اچي ٿي </string>
+    <string name="s6q2d"> پاڙي ۾ اندر ميونسپل ڪميٽي جي پاڻي جي لائن اچي ٿي </string>
+    <string name="s6q2e"> پاڙي ۾ نلڪو لڳل آهي </string>
+    <string name="s6q2f"> بورنگ جو پاڻي </string>
+    <string name="s6q2g"> نلڪي جو پاڻي </string>
+    <string name="s6q2h"> کوهه جو پاڻي </string>
+    <string name="s6q2i"> چشمي جو پاڻي </string>
+    <string name="s6q2j"> مينهن جو پاڻي </string>
+    <string name="s6q2k"> ٽينڪروارو پاڻي </string>
+    <string name="s6q2l"> فلٽر صاف پاڻي </string>
+    <string name="s6q2m"> گڏهه گاڏي وارو پاڻي </string>
+    <string name="s6q2n"> ندي، دريا جو پاڻي </string>
+    <string name="s6q2o"> آبپاشي جي نهر </string>
+    <string name="s6q2p"> بوتل وارو پاڻي </string>
+    <string name="s6q296"> ٻيو ڪجھه ته وضاحت ڪريو </string>
+
+    <string name="s6q3"> S6Q3: ڇا توهان پيئڻ جي پاڻي کي صاف ڪندا آهيو ؟ </string>
+    <string name="s6q301"> ها </string>
+    <string name="s6q302"> نه </string>
+
+    <string name="s6q4"> S6Q4: جيڪڏهن ها ته اڪثر ڪهڙو طريقو استعمال ڪندا آهيو ؟ </string>
+    <string name="s6q401"> گرم ڪندا آهيون </string>
+    <string name="s6q402"> ڪلورين / گوريون </string>
+    <string name="s6q403"> ڪپڙي سان ڇاڻيندا آهيون </string>
+    <string name="s6q404"> فلٽر ڪندا آهيون </string>
+    <string name="s6q405"> سج جي روشني </string>
+    <string name="s6q406"> رکندا آهيون ۽ ڇڻي وڃي </string>
+    <string name="s6q496"> ٻيو ڪجھه ته وضاحت ڪريو </string>
+
+    <string name="s6q5"> S6Q5: گھر ۾ ڪهڙي قسم جو ٽوائلٽ استعمال ڪندا آهيو ؟ </string>
+    <string name="s6q5_subtitlea"> پاڻي جي ذريعي لڙهي وڃڻ وارو </string>
     <string name="s6q501"> اهڙو ليٽرين جنهن جو گند ٻاهر نالي يا گهٽر ۾ ويندو هجي </string>
-    <string name="s6q502"> اهڙو ليٽرين جنهن جو گند سيپٽينڪ ٽينڪ ۾ ويندو هجي</string>
+    <string name="s6q502"> اهڙو ليٽرين جنهن جو گند سيپٽينڪ ٽينڪ ۾ ويندو هجي </string>
     <string name="s6q503"> کڏي ۾ گند ڪرڻ وارو ليٽرين </string>
-    <string name="s6q504"> اهڙو ليٽرين جنهن جو گند ڪنهن ٻي جڳھ ڏانهن ويندو هجي</string>
-    <string name="s6q5_subtitleb"> عارضي کڏ واري ليٽرين</string>
-    <string name="s6q505"> هوادار بهتر کڏي وارو ليٽرين</string>
-    <string name="s6q506"> کڏي وارو ڍڪيل ليٽرين</string>
-    <string name="s6q507"> کڏي وارو بنا ڍڪيل / کليل ليٽرين</string>
+    <string name="s6q504"> اهڙو ليٽرين جنهن جو گند ڪنهن ٻي جڳھ ڏانهن ويندو هجي </string>
+    <string name="s6q5_subtitleb"> عارضي کڏ واري ليٽرين </string>
+    <string name="s6q505"> هوادار بهتر کڏي وارو ليٽرين </string>
+    <string name="s6q506"> کڏي وارو ڍڪيل ليٽرين </string>
+    <string name="s6q507"> کڏي وارو بنا ڍڪيل / کليل ليٽرين </string>
     <string name="s6q508"> ٽوڪري وارو ليٽرين </string>
-    <string name="s6q509"> ڪا به سهولت نه آهي/ کليل ميدان/ زمين ۾ </string>
-    <string name="s6q596"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q6"> s6q6: ڇا ٻيا گھر به توهان جو ليٽرين استعمال ڪندا آهن؟</string>
-    <string name="s6q601"> ها  </string>
-    <string name="s6q602"> نه</string>
-    <string name="s6q7"> s6q7: جيڪڏهن ها ته ٻيا ڪيترا گھر استعمال ڪندا آهن؟</string>
-    <string name="s6q701"> ڪيترا گهر </string>
-    <string name="s6q8"> s6q8: ڇا اوهان جي گهر ۾ هيٺيون سهولتون موجود آهن؟ </string>
+    <string name="s6q509"> ڪا به سهولت نه آهي / کليل ميدان / زمين ۾ </string>
+    <string name="s6q596"> ٻيو ڪجھه ته وضاحت ڪريو </string>
+
+    <string name="s6q6"> s6q6: ڇا ٻيا گھر به توهان جو ليٽرين استعمال ڪندا آهن ؟ </string>
+    <string name="s6q601"> ها </string>
+    <string name="s6q602"> نه </string>
+
+    <string name="s6q7"> S6Q7: جيڪڏهن ها ته ٻيا ڪيترا گھر استعمال ڪندا آهن ؟ </string>
+    <string name="s6q7a"> ڪيترا گهر </string>
+
+    <string name="s6q8"> S6Q8: ڇا اوهان جي گهر ۾ هيٺيون سهولتون موجود آهن؟ </string>
     <string name="s6q8a"> بجلي جو ڪنيڪشن    </string>
     <string name="s6q8b"> ريڊيو</string>
     <string name="s6q8c"> ٽيليويزن</string>
@@ -2497,7 +2503,8 @@
     <string name="s6q8q">  ڪمپيوٽر </string>
     <string name="s6q8r"> انٽرنيٽ جو ڪنيڪشن</string>
     <string name="s6q8s"> سنڪ/ڊش واشنگ اسٽيشن  </string>
-    <string name="s6q9"> s6q9: گھر ۾ رڌ پچاءُ لاءِ ڪهڙي فيول استعمال ڪندا آهيو؟</string>
+
+    <string name="s6q9"> S6Q9: گھر ۾ رڌ پچاءُ لاءِ ڪهڙي فيول استعمال ڪندا آهيو؟</string>
     <string name="s6q901"> بجلي</string>
     <string name="s6q902"> سئلينڊر واري گيس (ايل پي جي)</string>
     <string name="s6q903"> قدرتي گئس</string>
@@ -2509,15 +2516,18 @@
     <string name="s6q909"> مال/جانور جا ڇيڻا </string>
     <string name="s6q910"> گھر م رڌ پچاءُ نه ڪندا آهيون</string>
     <string name="s6q996"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q10"> s6q10: گھر ۾ رڌ پچاءُ ڪٿي ڪندا آهيو، الڳ ڪمرو آهي / خالي جائي تي، يا ٻاهر؟</string>
+
+    <string name="s6q10"> S6Q10: گھر ۾ رڌ پچاءُ ڪٿي ڪندا آهيو، الڳ ڪمرو آهي / خالي جائي تي، يا ٻاهر؟</string>
     <string name="s6q1001"> گهر جي اندر</string>
     <string name="s6q1002"> الگ جڳھ / ڪمرو</string>
     <string name="s6q1003"> گهر کان ٻاهر</string>
     <string name="s6q1096"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q11"> s6q11: ڇا الڳ ڪمرو آهي ان کي رڌوڻي طور استعمال ڪندا آهيو؟</string>
+
+    <string name="s6q11"> S6Q11: ڇا الڳ ڪمرو آهي ان کي رڌوڻي طور استعمال ڪندا آهيو؟</string>
     <string name="s6q1101"> ها  </string>
     <string name="s6q1102"> نه</string>
-    <string name="s6q12"> s6q12: فرش ڪهڙي قسم جو آهي</string>
+
+    <string name="s6q12"> S6Q12: فرش ڪهڙي قسم جو آهي</string>
     <string name="s6q12_subtitlea">  قدرتي فرش </string>
     <string name="s6q1201"> مٽي وارو گارو يا ڪچو يا قدرتي فرش</string>
     <string name="s6q1202"> ڇيڻو</string>
@@ -2533,7 +2543,8 @@
     <string name="s6q1210"> چٽائي</string>
     <string name="s6q1211"> ماربل</string>
     <string name="s6q1296"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q13"> s6q13: ڇت ڪهري قسم جي آهي</string>
+
+    <string name="s6q13"> S6Q13: ڇت ڪهري قسم جي آهي</string>
     <string name="s6q13_subtitlea"> قدرتي ڇت </string>
     <string name="s6q1301"> ڇت ڪونهي</string>
     <string name="s6q1302"> ٽوئا کجي جي ڦرن جي</string>
@@ -2551,7 +2562,8 @@
     <string name="s6q1313"> ڪاٺ جي</string>
     <string name="s6q1396"> ٻيو ڪجھه ته وضاحت ڪريو</string>
     <string name="s6q1396x"> ٻيو ڪجھ ته وضاحت ڪريو</string>
-    <string name="s6q14"> s6q14: ڀتيون ڪهڙي قسم جون آهن </string>
+
+    <string name="s6q14"> S6Q14: ڀتيون ڪهڙي قسم جون آهن </string>
     <string name="s6q1401"> ڀتيون نه آهن</string>
     <string name="s6q1402"> ڪاٺين /کجين جون</string>
     <string name="s6q1403"> چيڪي مٽي جي</string>
@@ -2564,69 +2576,87 @@
     <string name="s6q1410"> پٿر سيمينٽ سان لڳل</string>
     <string name="s6q1411"> ڪاغذن جا گتا/ پلاسٽڪ </string>
     <string name="s6q1496"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s6q15"> s6q15: گھر ۾ ڪيترا ڪمرا سُمهڻ لاءِ استعمال ٿيندا آهي؟</string>
-    <string name="s6q16"> s6q16: گھر جي ڪنهن به ميمبر وٽ هيٺيون شيون موجود آهن</string>
-    <string name="s6q16a"> s6q16a: گهڙي</string>
+
+    <string name="s6q15"> S6Q15: گھر ۾ ڪيترا ڪمرا سُمهڻ لاءِ استعمال ٿيندا آهي ؟ </string>
+    <string name="s6q15a"> ڪيترا ڪمرا </string>
+
+    <string name="s6q16"> S6Q16: گھر جي ڪنهن به ميمبر وٽ هيٺيون شيون موجود آهن </string>
+    <string name="s6q16a"> گهڙي </string>
     <string name="s6q16a01">   ها </string>
-    <string name="s6q16a02"> نه</string>
-    <string name="s6q16b"> s6q16b: موبائل فون </string>
+    <string name="s6q16a02"> نه </string>
+
+    <string name="s6q16b"> موبائل فون </string>
     <string name="s6q16b01"> ها </string>
-    <string name="s6q16b02"> نه</string>
-    <string name="s6q16c"> s6q16c: سائيڪل</string>
-    <string name="s6q16c01"> ها</string>
-    <string name="s6q16c02"> نه</string>
-    <string name="s6q16d"> s6q16d: موٽر سائيڪل</string>
-    <string name="s6q16d01"> ها</string>
-    <string name="s6q16d02"> نه</string>
-    <string name="s6q16e"> s6q16e: جانور سان هلندڙ گاڏي</string>
-    <string name="s6q16e01"> ها</string>
-    <string name="s6q16e02"> نه</string>
-    <string name="s6q16f"> s6q16f: بس يا ٽرڪ يا ڪار</string>
-    <string name="s6q16f01"> ها</string>
-    <string name="s6q16f02"> نه</string>
-    <string name="s6q16g"> s6q16g: ٽريڪٽر</string>
-    <string name="s6q16g01"> ها</string>
-    <string name="s6q16g02"> نه</string>
-    <string name="s6q16h"> s6q16h: موٽر واري ٻيڙي</string>
-    <string name="s6q16h01"> ها</string>
-    <string name="s6q16h02"> نه</string>
-    <string name="s6q16i"> s6q16i: موٽر بنا ٻيڙي</string>
-    <string name="s6q16i01"> ها</string>
-    <string name="s6q16i02"> نه</string>
-    <string name="s6q16j"> s6q16j: جانور ذريعي پاڻي ڪڍڻ</string>
-    <string name="s6q16j01"> ها</string>
-    <string name="s6q16j02"> نه</string>
-    <string name="s6q17"> s6q17: گھر جي ڪنهن به ميمبر وٽ پنهنجي ٻني آهي؟</string>
-    <string name="s6q1701"> ها</string>
-    <string name="s6q1702"> نه</string>
-    <string name="s6q18"> s6q18: جيڪڏهن ها ته، ڪيترا ايڪڙ آهن</string>
-    <string name="s6q1801"> ايڪڙ</string>
-    <string name="s6q1802"> ڪئنال</string>
-    <string name="s6q1899"> خبر نه آهي</string>
-    <string name="s6q19"> s6q19: ڇا توهان جي گهر ۾ پنهنجو چوپايو مال، جانور يا ڪڪڙيون آهن؟</string>
-    <string name="s6q1901"> ها</string>
-    <string name="s6q1902"> نه</string>
-    <string name="s6q20"> s6q20: انٽرويو وٺندڙ لسٽ مطابق هڪ هڪ ڪري جانور جي باري ۾ پڇيندو، جيڪڏهن جواب نه آهي ته 00 لڳايو   جيڪڏهن ها ته، توهان جي گھر ۾ پنهنجو ڪيترو چوپايو مال، جانور يا ڪڪڙيون آهن؟</string>
-    <string name="s6q20a"> ڳئون، ڍڳا</string>
-    <string name="s6q20b"> گهوڙا/ گڏھ/ خچر </string>
-    <string name="s6q20c"> ٻڪريون</string>
-    <string name="s6q20d"> رڍيون</string>
-    <string name="s6q20e"> ڪڪڙيون /مرغيون</string>
-    <string name="s6q20f"> مينهون</string>
+    <string name="s6q16b02"> نه </string>
+
+    <string name="s6q16c"> سائيڪل </string>
+    <string name="s6q16c01"> ها </string>
+    <string name="s6q16c02"> نه </string>
+
+    <string name="s6q16d"> موٽر سائيڪل </string>
+    <string name="s6q16d01"> ها </string>
+    <string name="s6q16d02"> نه </string>
+
+    <string name="s6q16e"> جانور سان هلندڙ گاڏي </string>
+    <string name="s6q16e01"> ها </string>
+    <string name="s6q16e02"> نه </string>
+
+    <string name="s6q16f"> بس يا ٽرڪ يا ڪار </string>
+    <string name="s6q16f01"> ها </string>
+    <string name="s6q16f02"> نه </string>
+
+    <string name="s6q16g"> ٽريڪٽر </string>
+    <string name="s6q16g01"> ها </string>
+    <string name="s6q16g02"> نه </string>
+
+    <string name="s6q16h"> موٽر واري ٻيڙي </string>
+    <string name="s6q16h01"> ها </string>
+    <string name="s6q16h02"> نه </string>
+
+    <string name="s6q16i"> موٽر بنا ٻيڙي </string>
+    <string name="s6q16i01"> ها </string>
+    <string name="s6q16i02"> نه </string>
+
+    <string name="s6q16j"> جانور ذريعي پاڻي ڪڍڻ </string>
+    <string name="s6q16j01"> ها </string>
+    <string name="s6q16j02"> نه </string>
+
+    <string name="s6q17"> S6Q17: گھر جي ڪنهن به ميمبر وٽ پنهنجي ٻني آهي ؟ </string>
+    <string name="s6q17a"> ها </string>
+    <string name="s6q17b"> نه </string>
+
+    <string name="s6q18"> S6Q18: جيڪڏهن ها ته، ڪيترا ايڪڙ آهن </string>
+    <string name="s6q18a"> ايڪڙ </string>
+    <string name="s6q18b"> ڪئنال </string>
+    <string name="s6q1898"> خبر نه آهي </string>
+
+    <string name="s6q19"> S6Q19: ڇا توهان جي گهر ۾ پنهنجو چوپايو مال، جانور يا ڪڪڙيون آهن ؟ </string>
+    <string name="s6q19a"> ها </string>
+    <string name="s6q19b"> نه </string>
+
+    <string name="s6q20"> S6Q20: انٽرويو وٺندڙ لسٽ مطابق هڪ هڪ ڪري جانور جي باري ۾ پڇيندو، جيڪڏهن جواب نه آهي ته 00 لڳايو   جيڪڏهن ها ته، توهان جي گھر ۾ پنهنجو ڪيترو چوپايو مال، جانور يا ڪڪڙيون آهن ؟ </string>
+    <string name="s6q20a"> ڳئون، ڍڳا </string>
+    <string name="s6q20b"> گهوڙا / گڏھ / خچر </string>
+    <string name="s6q20c"> ٻڪريون </string>
+    <string name="s6q20d"> رڍيون </string>
+    <string name="s6q20e"> ڪڪڙيون / مرغيون </string>
+    <string name="s6q20f"> مينهون </string>
     <string name="s6q20g"> اُٺ </string>
 
 
     <!--  SECTION G -->
     <string name="secg"> SECTION G: Hand Washing </string>
-    <string name="s7q1"> s7q1: مهرباني ڪري اسان کي هٿ ڌوئڻ جي جڳهه ڏيکاريو جتي توهان اڪثر هٿ ڌوئيندا آهيو </string>
+    <string name="s7q1"> S7Q1: مهرباني ڪري اسان کي هٿ ڌوئڻ جي جڳهه ڏيکاريو جتي توهان اڪثر هٿ ڌوئيندا آهيو </string>
     <string name="s7q101"> مشاهدو ڪيو ويو</string>
     <string name="s7q102"> مشاهدو نه ڪيو ويو</string>
     <string name="s7q103"> رهائش واري جڳهه تي نه هو</string>
     <string name="s7q104"> ڏسڻ جي اجازت نه ڏني وئي</string>
     <string name="s7q105"> ٻي ڪا وجھه</string>
-    <string name="s7q2"> s7q2: پاڻي جي موجودگي جو مشاهدو ڪيو ويو ته ڪهڙي جڳهه تي هٿ دويا ويندا آهن</string>
+
+    <string name="s7q2"> S7Q2: پاڻي جي موجودگي جو مشاهدو ڪيو ويو ته ڪهڙي جڳهه تي هٿ دويا ويندا آهن</string>
     <string name="s7q201"> پاڻي موجود آهي</string>
     <string name="s7q202"> پاڻي موجود نه آهي</string>
+
     <string name="s7q3"> s7q3: لکو جيڪڏهن صابڻ يا ڊٽرجنٽ موجود آهي هٿ ڌوئڻ واري خاص جاءِ تي</string>
     <string name="s7q301"> صابڻ</string>
     <string name="s7q302"> صابڻ (پائودر/ملائم چيز/ پيسٽ)</string>
