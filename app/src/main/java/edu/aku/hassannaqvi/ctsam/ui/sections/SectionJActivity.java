@@ -65,7 +65,7 @@ public class SectionJActivity extends AppCompatActivity {
                 break;
             case 4:
                 bi.s10q1d.setChecked(true);
-                bi.s10q1d.setBackgroundColor(Color.parseColor("#ffdbac"));
+                bi.s10q1d.setBackgroundColor(Color.parseColor("#FFDBAC"));
                 bi.s10q1a.setEnabled(false);
                 bi.s10q1b.setEnabled(false);
                 bi.s10q1c.setEnabled(false);
