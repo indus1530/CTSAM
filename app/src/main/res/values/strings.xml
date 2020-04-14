@@ -2316,26 +2316,39 @@
     <string name="s4q7a"> ٻار جي ڄمڻ جي تاريخ </string>
     <string name="s4q7b"> داخلا وقت عمر </string>
 
-    <string name="s4q7dob"> s4q7dob: ٻار جي ڄمڻ جي تاريخ</string>
-    <string name="s4q7days"> s4q7days: عمر ڏينهن ۾</string>
-    <string name="s4q7mon"> s4q7mon: عمر مهينا ۾</string>
-    <string name="s4q8"> s4q8: ڇا ٻار پورن مهينن ۾ ڄائو هو؟</string>
-    <string name="s4q8a"> ها</string>
-    <string name="s4q8b"> نه</string>
-    <string name="s4q9"> s4q9: پيدائش وقت جينياتي عمر هفتا۾ </string>
-    <string name="s4q10"> s4q10:   ڇا ٻار جو ڄمڻ وقت وزن ڪيو ويو؟</string>
-    <string name="s410q410a"> ها</string>
-    <string name="s410q410b"> نه</string>
-    <string name="s4q11"> s4q11: ٻار جو ڪيترو وزن ٿيو هو؟ڪلو گران</string>
-    <string name="s4subtitle"> s4subtitle: ٻار جي جسماني ماپ</string>
-    <string name="meas01"> meas01: پهريون ڊيٽا ڪيلڪٽر جو نالو </string>
-    <string name="s4q14m1hei"> s4q14m1hei: قد / ڊيگھ</string>
-    <string name="s4q15m1wei"> s4q15m1wei: وزن (ڪلو گرام )</string>
-    <string name="s4q15m1mua"> s4q15m1mua: کاٻي ٻانهن جي وچين حصي جو ماپ (سينٽي ميٽر)</string>
-    <string name="meas02"> meas02: ٻيو ڊيٽا ڪيلڪٽر جو نالو</string>
-    <string name="s4q14m2hei"> s4q14m2hei: قد / ڊيگھ</string>
-    <string name="s4q15m2wei"> s4q15m2wei: وزن (ڪلو گرام )</string>
-    <string name="s4q15m2mua"> s4q15m2mua: کاٻي ٻانهن جي وچين حصي جو ماپ (سينٽي ميٽر)</string>
+    <string name="s4q7dob"> ٻار جي ڄمڻ جي تاريخ </string>
+    <string name="s4q7days"> عمر ڏينهن ۾ </string>
+    <string name="s4q7mon"> عمر مهينا ۾ </string>
+
+    <string name="s4q8"> S4Q8: ڇا ٻار پورن مهينن ۾ ڄائو هو ؟ </string>
+    <string name="s4q8a"> ها </string>
+    <string name="s4q8b"> نه </string>
+
+    <string name="s4q9"> S4Q9: پيدائش وقت جينياتي عمر هفتا ۾ </string>
+
+    <string name="s4q10"> S4Q10: ڇا ٻار جو ڄمڻ وقت وزن ڪيو ويو ؟ </string>
+    <string name="s410q410a"> ها </string>
+    <string name="s410q410b"> نه </string>
+
+    <string name="s4q11"> S4Q11: ٻار جو ڪيترو وزن ٿيو هو ؟ </string>
+
+    <string name="s4subtitle"> ٻار جي جسماني ماپ </string>
+
+    <string name="meas01"> پهريون ڊيٽا ڪيلڪٽر جو نالو </string>
+
+    <string name="s4q14m1hei"> قد / ڊيگھ - سينٽی میٽر </string>
+
+    <string name="s4q15m1wei"> وزن ڪلوگرام </string>
+
+    <string name="s4q15m1mua"> کاٻي ٻانهن جي وچين حصي جو ماپ </string>
+
+    <string name="meas02"> ٻيو ڊيٽا ڪيلڪٽر جو نالو </string>
+
+    <string name="s4q14m2hei"> قد / ڊيگھ - سينٽی میٽر </string>
+
+    <string name="s4q15m2wei"> وزن ڪلوگرام </string>
+
+    <string name="s4q15m2mua"> کاٻي ٻانهن جي وچين حصي جو ماپ </string>
 
 
     <!--  SECTION E -->

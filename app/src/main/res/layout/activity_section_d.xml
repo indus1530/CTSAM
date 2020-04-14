@@ -199,8 +199,8 @@
                         android:id="@+id/s4q6"
                         style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_marginStart="6dp"
+                        android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -264,7 +264,8 @@
             <!-- s4q7dob  Input   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs4q7dob"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s4q7a.checked ? View.VISIBLE : View.GONE}'>
 
                 <LinearLayout style="@style/hlinearlayout">
 
@@ -272,6 +273,7 @@
                         style="@style/i_textview"
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s4q7dob" />
 
                     <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
@@ -280,6 +282,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="DD/MM/YYYY"
+                        android:text='@{s4q7a.checked ? s4q7dob.getText().toString() : "" }'
                         app:maxDate="CR_DATE" />
 
                 </LinearLayout>
@@ -287,62 +290,70 @@
             </androidx.cardview.widget.CardView>
 
 
-            <!-- s4q7days  Input   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs4q7days"
-                style="@style/cardView">
+            <LinearLayout
+                android:id="@+id/s4q7bcv"
+                style="@style/hlinearlayout"
+                android:visibility='@{s4q7b.checked ? View.VISIBLE : View.GONE}'>
 
-                <LinearLayout style="@style/hlinearlayout">
+                <!-- s4q7days  Input   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVs4q7days"
+                    style="@style/cardView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:text="@string/s4q7days" />
+                    <LinearLayout style="@style/vlinearlayout">
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/s4q7days"
-                        style="@style/EditTextNum"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:hint="##"
-                        android:maxLength="2"
-                        app:maxValue="30"
-                        app:minValue="1"
-                        app:type="range" />
+                        <TextView
+                            style="@style/i_textview"
+                            android:gravity="center"
+                            android:text="@string/s4q7days" />
 
-                </LinearLayout>
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/s4q7days"
+                            style="@style/EditTextNum"
+                            android:gravity="center"
+                            android:hint="##"
+                            android:maxLength="2"
+                            android:text='@{s4q7b.checked ? s4q7days.getText().toString() : "" }'
+                            app:maxValue="29"
+                            app:minValue="0"
+                            app:type="range" />
 
-            </androidx.cardview.widget.CardView>
+                    </LinearLayout>
 
+                </androidx.cardview.widget.CardView>
 
-            <!-- s4q7mon  Input   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs4q7mon"
-                style="@style/cardView">
+                <!-- s4q7mon  Input   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVs4q7mon"
+                    style="@style/cardView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
 
-                <LinearLayout style="@style/hlinearlayout">
+                    <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:text="@string/s4q7mon" />
+                        <TextView
+                            style="@style/i_textview"
+                            android:gravity="center"
+                            android:text="@string/s4q7mon" />
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/s4q7mon"
-                        style="@style/EditTextNum"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:hint="##"
-                        android:maxLength="2"
-                        app:maxValue="12"
-                        app:minValue="1"
-                        app:type="range" />
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/s4q7mon"
+                            style="@style/EditTextNum"
+                            android:gravity="center"
+                            android:hint="##"
+                            android:maxLength="2"
+                            android:text='@{s4q7b.checked ? s4q7mon.getText().toString() : "" }'
+                            app:maxValue="59"
+                            app:minValue="5"
+                            app:type="range" />
 
-                </LinearLayout>
+                    </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
 
 
             <!-- s4q8  Radio   -->
@@ -447,7 +458,8 @@
             <!-- s4q11  Input-Numeric   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs4q11"
-                style="@style/cardView">
+                style="@style/cardView"
+                android:visibility='@{s410q410b.checked ? View.GONE : View.VISIBLE}'>
 
                 <LinearLayout style="@style/vlinearlayout">
 
@@ -455,14 +467,30 @@
                         style="@style/i_textview"
                         android:text="@string/s4q11" />
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/s4q11"
-                        style="@style/EditTextNum"
-                        android:hint="@string/kg"
-                        android:maxLength="2"
-                        app:maxValue="40"
-                        app:minValue="10"
-                        app:type="range" />
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/kg" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/s4q11"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:hint="##.#"
+                            android:text='@{s410q410b.checked ? "" : s4q11.getText().toString() }'
+                            android:textDirection="ltr"
+                            app:mask="##.#"
+                            app:maxValue="40"
+                            app:minValue="10"
+                            app:type="range" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -496,6 +524,7 @@
                         style="@style/i_textview"
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/meas01" />
 
                     <EditText
@@ -522,6 +551,7 @@
                         style="@style/i_textview"
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s4q14m1hei" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -529,8 +559,10 @@
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/cm"
-                        android:maxLength="3"
+                        android:gravity="center"
+                        android:hint="###.#"
+                        android:textDirection="ltr"
+                        app:mask="###.#"
                         app:maxValue="110"
                         app:minValue="50"
                         app:type="range" />
@@ -551,6 +583,7 @@
                         style="@style/i_textview"
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s4q15m1wei" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -558,8 +591,10 @@
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/kg"
-                        android:maxLength="2"
+                        android:gravity="center"
+                        android:hint="##.##"
+                        android:textDirection="ltr"
+                        app:mask="##.##"
                         app:maxValue="25"
                         app:minValue="5"
                         app:type="range" />
@@ -574,24 +609,35 @@
                 android:id="@+id/fldGrpCVs4q15m1mua"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:text="@string/s4q15m1mua" />
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/s4q15m1mua"
-                        style="@style/EditTextNum"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:hint="@string/cm"
-                        android:maxLength="2"
-                        app:maxValue="20"
-                        app:minValue="11"
-                        app:type="range" />
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/cm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/s4q15m1mua"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:hint="##.#"
+                            android:textDirection="ltr"
+                            app:mask="##.#"
+                            app:maxValue="20"
+                            app:minValue="11"
+                            app:type="range" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -609,6 +655,7 @@
                         style="@style/i_textview"
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/meas02" />
 
                     <EditText
@@ -635,6 +682,7 @@
                         style="@style/i_textview"
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s4q14m2hei" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -642,10 +690,12 @@
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/cm"
-                        android:maxLength="2"
-                        app:maxValue="20"
-                        app:minValue="11"
+                        android:gravity="center"
+                        android:hint="###.#"
+                        android:textDirection="ltr"
+                        app:mask="###.#"
+                        app:maxValue="110"
+                        app:minValue="50"
                         app:type="range" />
 
                 </LinearLayout>
@@ -664,6 +714,7 @@
                         style="@style/i_textview"
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s4q15m2wei" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -671,8 +722,10 @@
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/kg"
-                        android:maxLength="2"
+                        android:gravity="center"
+                        android:hint="##.##"
+                        android:textDirection="ltr"
+                        app:mask="##.##"
                         app:maxValue="25"
                         app:minValue="5"
                         app:type="range" />
@@ -687,24 +740,35 @@
                 android:id="@+id/fldGrpCVs4q15m2mua"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:text="@string/s4q15m2mua" />
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
-                        android:id="@+id/s4q15m2mua"
-                        style="@style/EditTextNum"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:hint="@string/cm"
-                        android:maxLength="2"
-                        app:maxValue="20"
-                        app:minValue="11"
-                        app:type="range" />
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/cm" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/s4q15m2mua"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:hint="##.#"
+                            android:textDirection="ltr"
+                            app:mask="##.#"
+                            app:maxValue="20"
+                            app:minValue="11"
+                            app:type="range" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
