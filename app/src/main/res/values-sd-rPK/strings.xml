@@ -2857,13 +2857,15 @@
 
     <!--  SECTION J -->
     <string name="secj"> SECTION J: Study Group &amp; Supplementation </string>
-    <string name="s10q1"> s10q1: داخلا جي وقت ٻار کي ڪيترا ساشي ڏنا ويا هئا؟</string>
-    <string name="s10q1a"> گلابي</string>
-    <string name="s10q1b"> نيرو</string>
-    <string name="s10q1c"> سائو</string>
-    <string name="s10q1d"> ناسي</string>
+    <string name="s10q1"> S10Q1: داخلا جي وقت ٻار کي ڪيترا ساشي ڏنا ويا هئا ؟ </string>
+    <string name="s10q1a"> گلابي </string>
+    <string name="s10q1b">  نيرو </string>
+    <string name="s10q1c"> سائو </string>
+    <string name="s10q1d"> ناسي </string>
     <string name="s10q1sac"> ڪيترا ساشي ڏنا ويا </string>
+
     <string name="s10q2"> S10Q2: وجہ </string>
+
     <string name="s10q3"> s10q2: اڳئي فالو آپ جي تاريخ  </string>
 
 </resources>
