@@ -33,16 +33,20 @@
                 android:id="@+id/fldGrpCVs5q101"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s5q101" />
 
                     <RadioGroup
                         android:id="@+id/s5q101"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
 
                         <RadioButton
                             android:id="@+id/s5q101a"
@@ -70,16 +74,20 @@
                 android:id="@+id/fldGrpCVs5q102"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s5q102" />
 
                     <RadioGroup
                         android:id="@+id/s5q102"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
 
                         <RadioButton
                             android:id="@+id/s5q102a"
@@ -107,16 +115,20 @@
                 android:id="@+id/fldGrpCVs5q103"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s5q103" />
 
                     <RadioGroup
                         android:id="@+id/s5q103"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
 
                         <RadioButton
                             android:id="@+id/s5q103a"
@@ -144,16 +156,20 @@
                 android:id="@+id/fldGrpCVs5q104"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s5q104" />
 
                     <RadioGroup
                         android:id="@+id/s5q104"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
 
                         <RadioButton
                             android:id="@+id/s5q104a"
@@ -181,16 +197,20 @@
                 android:id="@+id/fldGrpCVs5q105"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s5q105" />
 
                     <RadioGroup
                         android:id="@+id/s5q105"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
 
                         <RadioButton
                             android:id="@+id/s5q105a"
@@ -218,16 +238,20 @@
                 android:id="@+id/fldGrpCVs5q106"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s5q106" />
 
                     <RadioGroup
                         android:id="@+id/s5q106"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
 
                         <RadioButton
                             android:id="@+id/s5q106a"
@@ -255,16 +279,20 @@
                 android:id="@+id/fldGrpCVs5q107"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s5q107" />
 
                     <RadioGroup
                         android:id="@+id/s5q107"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
 
                         <RadioButton
                             android:id="@+id/s5q107a"
@@ -292,16 +320,20 @@
                 android:id="@+id/fldGrpCVs5q108"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s5q108" />
 
                     <RadioGroup
                         android:id="@+id/s5q108"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
 
                         <RadioButton
                             android:id="@+id/s5q108a"
@@ -329,16 +361,20 @@
                 android:id="@+id/fldGrpCVs5q196"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s5q196" />
 
                     <RadioGroup
                         android:id="@+id/s5q196"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1">
 
                         <RadioButton
                             android:id="@+id/s5q196a"
@@ -360,13 +396,15 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- s5q196x  Input   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs5q196x"
-                style="@style/cardView"
-                android:visibility='@{s5q196a.checked? View.VISIBLE : View.GONE}'>
+                style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout
+                    style="@style/vlinearlayout"
+                    android:visibility='@{s5q196a.checked? View.VISIBLE : View.GONE}'>
 
                     <EditText
                         android:id="@+id/s5q196x"
@@ -579,8 +617,8 @@
                         android:id="@+id/s5q5"
                         style="@style/EditTextNum"
                         android:hint="@string/days"
-                        app:mask="##"
-                        app:maxValue="30"
+                        android:maxLength="2"
+                        app:maxValue="15"
                         app:minValue="1"
                         app:type="range" />
 

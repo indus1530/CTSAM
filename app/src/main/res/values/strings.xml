@@ -2353,45 +2353,57 @@
 
     <!--  SECTION E -->
     <string name="sece"> SECTION E: Child Morbidity &amp; Care Seeking </string>
-    <string name="s5q1"> s5q1: ڇا گذريل ٻن هفتن جي دوران (ٻار جو نالو) کي ھنن ڄاڻايل بيمارين مان ڪا به ھڪ ٿي ؟ </string>
-    <string name="s5q101"> تيز بخار</string>
-    <string name="s5q101a"> ها</string>
-    <string name="s5q101b"> نه</string>
-    <string name="s5q102"> s5q102: دست</string>
-    <string name="s5q102a"> ها</string>
-    <string name="s5q102b"> نه</string>
-    <string name="s5q103"> s5q103: کنگھ / زڪام</string>
-    <string name="s5q103a"> ها</string>
-    <string name="s5q103b"> نه</string>
-    <string name="s5q104"> s5q104: تڪڙا ساھ/ساھ کڻڻ ۾ ڏکيائي</string>
-    <string name="s5q104a"> ها</string>
-    <string name="s5q104b"> نه</string>
-    <string name="s5q105"> s5q105: ڇاتي ۾ کڏو پئجي وڃڻ/ پاسريٽن جو اندر باهر هلن</string>
-    <string name="s5q105a"> ها</string>
-    <string name="s5q105b"> نه</string>
-    <string name="s5q106"> s5q106: چمڙي جي بيماري 	</string>
-    <string name="s5q106a"> ها</string>
-    <string name="ss5q106b"> نه</string>
-    <string name="s5q107"> s5q107: پائخاني ۾ جيوڙا</string>
-    <string name="s5q107a"> ها</string>
-    <string name="s5q107b"> نه</string>
-    <string name="s5q108"> s5q108: داڻ داڻ</string>
+
+    <string name="s5q1"> S5Q1: ڇا گذريل ٻن هفتن جي دوران (ٻار جو نالو) کي ھنن ڄاڻايل بيمارين مان ڪا به ھڪ ٿي ؟ </string>
+
+    <string name="s5q101"> تيز بخار </string>
+    <string name="s5q101a"> ها </string>
+    <string name="s5q101b"> نه </string>
+
+    <string name="s5q102"> دست </string>
+    <string name="s5q102a"> ها </string>
+    <string name="s5q102b"> نه </string>
+
+    <string name="s5q103"> کنگھ / زڪام </string>
+    <string name="s5q103a"> ها </string>
+    <string name="s5q103b"> نه </string>
+
+    <string name="s5q104"> تڪڙا ساھ / ساھ کڻڻ ۾ ڏکيائي </string>
+    <string name="s5q104a"> ها </string>
+    <string name="s5q104b"> نه </string>
+
+    <string name="s5q105"> ڇاتي ۾ کڏو پئجي وڃڻ / پاسريٽن جو اندر باهر هلن </string>
+    <string name="s5q105a"> ها </string>
+    <string name="s5q105b"> نه </string>
+
+    <string name="s5q106"> چمڙي جي بيماري </string>
+    <string name="s5q106a"> ها </string>
+    <string name="s5q106b"> نه </string>
+
+    <string name="s5q107"> پائخاني ۾ جيوڙا </string>
+    <string name="s5q107a"> ها </string>
+    <string name="s5q107b"> نه </string>
+
+    <string name="s5q108"> داڻ داڻ </string>
     <string name="s5q108a"> ها</string>
     <string name="s5q108b"> نه</string>
-    <string name="s5q196"> s5q196: ٻيو ڪجھ</string>
-    <string name="s5q196a"> ها</string>
-    <string name="s5q196b"> نه</string>
-    <string name="s5q196x"> s5q196x: ٻيو ڪجھ ته وضاحت ڪريو</string>
-    <string name="s5q2"> s5q2: ڇا توهان گذريل ٻن هفتن جي دوران انهن بيمارين لاءِ ٻار جو علاج ڪرايو؟</string>
-    <string name="s5q2a"> ها</string>
-    <string name="s5q2b"> نه</string>
 
-    <string name="s5q3"> s5q3: گذريل ٻن هفتن جي دوران توهان جي ٻار جي صحت جي چڪاس ڪنهن ڪئي؟ انهن کان علاه ڪو ٻيو؟ وڌيڪ پڇو ۽ لکو</string>
+    <string name="s5q196"> ٻيو ڪجھ </string>
+    <string name="s5q196a"> ها </string>
+    <string name="s5q196b"> نه </string>
+
+    <string name="s5q196x"> s5q196x: ٻيو ڪجھ ته وضاحت ڪريو</string>
+
+    <string name="s5q2"> S5Q2: ڇا توهان گذريل ٻن هفتن جي دوران انهن بيمارين لاءِ ٻار جو علاج ڪرايو ؟ </string>
+    <string name="s5q2a"> ها </string>
+    <string name="s5q2b"> نه </string>
+
+    <string name="s5q3"> S5Q3: گذريل ٻن هفتن جي دوران توهان جي ٻار جي صحت جي چڪاس ڪنهن ڪئي؟ انهن کان علاه ڪو ٻيو؟ وڌيڪ پڇو ۽ لکو</string>
     <string name="s5q3_subtitlea"> صحت وارو عملو </string>
     <string name="s5q301"> ڊاڪٽر </string>
-    <string name="s5q302">  نرس / مڊوائف / ايل ايڇ وي </string>
+    <string name="s5q302"> نرس / مڊوائف / ايل ايڇ وي </string>
     <string name="s5q303"> ڪميونٽي مڊوائف </string>
-    <string name="s5q3_subtitleb">  ٻيا فرد  </string>
+    <string name="s5q3_subtitleb"> ٻيا فرد </string>
     <string name="s5q304"> دائي </string>
     <string name="s5q305"> ليڊي ھيلٿ ورڪر </string>
     <string name="s5q306"> هوميو پيٿڪ </string>
@@ -2399,15 +2411,16 @@
     <string name="s5q308"> ڊسپينسر / ڪمپائونڊر </string>
     <string name="s5q3096"> ٻيو ڪجھه ته وضاحت ڪريو </string>
 
-    <string name="s5q4"> s5q4: ڇا گذريل ٻن هفتن دوران انھن ڄاڻايل بيمارين جي علاج لاءِ توھان جي ٻار کي اسپتال ۾ رھڻو پيو؟</string>
-    <string name="s5q4a"> ها</string>
-    <string name="s5q4b"> نه</string>
-    <string name="s5q5"> s5q5: گذريل ٻن هفتن دوران انھن ڄاڻايل بيمارين جي علاج لاءِ توھان جي ٻارکي ڪيترا ڏينھن اسپتال ۾ رھڻو پيو؟</string>
+    <string name="s5q4"> S5Q4: ڇا گذريل ٻن هفتن دوران انھن ڄاڻايل بيمارين جي علاج لاءِ توھان جي ٻار کي اسپتال ۾ رھڻو پيو ؟</string>
+    <string name="s5q4a"> ها </string>
+    <string name="s5q4b"> نه </string>
+
+    <string name="s5q5"> S5Q5: گذريل ٻن هفتن دوران انھن ڄاڻايل بيمارين جي علاج لاءِ توھان جي ٻارکي ڪيترا ڏينھن اسپتال ۾ رھڻو پيو ؟ </string>
 
 
     <!--  SECTION F -->
     <string name="secf"> SECTION F: HH Socioeconomic Information </string>
-    <string name="s6q1"> s6q1: توهان جي مادري زبان ڪهڙي آهي؟</string>
+    <string name="s6q1"> S6Q1: توهان جي مادري زبان ڪهڙي آهي ؟ </string>
     <string name="s6q101"> اردو</string>
     <string name="s6q102"> پنجابي</string>
     <string name="s6q103"> سنڌي</string>
@@ -2416,6 +2429,7 @@
     <string name="s6q106"> سرائڪي</string>
     <string name="s6q107"> دٽڪي</string>
     <string name="s6q196"> ٻيو ڪجھه ته وضاحت ڪريو</string>
+
     <string name="s6q2"> s6q2: توهان جي گھر ۾ پيئڻ جو پاڻي ڪٿان ايندو/ مکيه ذريعو ڪهڙو آهي؟</string>
     <string name="s6q201"> واٽر سپلاءِ</string>
     <string name="s6q202"> گھر جي اندر ميونسپل ڪميٽي جي پاڻي جي لائن اچي ٿي</string>
