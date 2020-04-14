@@ -78,6 +78,18 @@ public class SectionEActivity extends AppCompatActivity {
         }));
 
 
+        bi.s5q4.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.s5q4a.getId()) {
+                bi.fldGrpCVs5q5.setVisibility(View.VISIBLE);
+            } else {
+                Clear.clearAllFields(bi.fldGrpCVs5q5);
+                bi.fldGrpCVs5q5.setVisibility(View.GONE);
+            }
+
+        }));
+
+
     }
 
 
@@ -168,19 +180,17 @@ public class SectionEActivity extends AppCompatActivity {
 
         json.put("s5q196x", bi.s5q196x.getText().toString());
 
+        json.put("s5q197", bi.s5q197.isChecked() ? "97" : "0");
+
         json.put("s5q2",
                 bi.s5q2a.isChecked() ? "1" :
                         bi.s5q2b.isChecked() ? "2" :
                                 "0");
 
-        json.put("s5q197", bi.s5q197.isChecked() ? "97" : "0");
-
-        //json.put("s5q3_subtitlea",bi.s5q3_subtitlea.isChecked() ?"" :"0");
         json.put("s5q301", bi.s5q301.isChecked() ? "1" : "0");
         json.put("s5q302", bi.s5q302.isChecked() ? "2" : "0");
         json.put("s5q303", bi.s5q303.isChecked() ? "3" : "0");
-        //json.put("s5q3_subtitleb",bi.s5q3_subtitleb.isChecked() ?"" :"0");
-        //json.put("s5q304",bi.s5q304.isChecked() ?"4" :"0");
+        json.put("s5q304", bi.s5q304.isChecked() ? "4" : "0");
         json.put("s5q305", bi.s5q305.isChecked() ? "5" : "0");
         json.put("s5q306", bi.s5q306.isChecked() ? "6" : "0");
         json.put("s5q307", bi.s5q307.isChecked() ? "7" : "0");

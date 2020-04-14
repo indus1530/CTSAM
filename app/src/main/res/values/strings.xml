@@ -2385,18 +2385,20 @@
     <string name="s5q2"> s5q2: ڇا توهان گذريل ٻن هفتن جي دوران انهن بيمارين لاءِ ٻار جو علاج ڪرايو؟</string>
     <string name="s5q2a"> ها</string>
     <string name="s5q2b"> نه</string>
+
     <string name="s5q3"> s5q3: گذريل ٻن هفتن جي دوران توهان جي ٻار جي صحت جي چڪاس ڪنهن ڪئي؟ انهن کان علاه ڪو ٻيو؟ وڌيڪ پڇو ۽ لکو</string>
-    <string name="s5q3_subtitlea">  صحت وارو عملو</string>
+    <string name="s5q3_subtitlea"> صحت وارو عملو </string>
     <string name="s5q301"> ڊاڪٽر </string>
-    <string name="s5q302">  نرس/مڊوائف/ايل ايڇ وي</string>
-    <string name="s5q303"> ڪميونٽي مڊوائف</string>
+    <string name="s5q302">  نرس / مڊوائف / ايل ايڇ وي </string>
+    <string name="s5q303"> ڪميونٽي مڊوائف </string>
     <string name="s5q3_subtitleb">  ٻيا فرد  </string>
-    <string name="s5q304"> دائي</string>
-    <string name="s5q305"> ليڊي ھيلٿ ورڪر</string>
-    <string name="s5q306"> هوميو پيٿڪ</string>
-    <string name="s5q307"> حڪيم</string>
-    <string name="s5q308"> ڊسپينسر/ ڪمپائونڊر</string>
-    <string name="s5q3096"> ٻيو ڪجھه ته وضاحت ڪريو</string>
+    <string name="s5q304"> دائي </string>
+    <string name="s5q305"> ليڊي ھيلٿ ورڪر </string>
+    <string name="s5q306"> هوميو پيٿڪ </string>
+    <string name="s5q307"> حڪيم </string>
+    <string name="s5q308"> ڊسپينسر / ڪمپائونڊر </string>
+    <string name="s5q3096"> ٻيو ڪجھه ته وضاحت ڪريو </string>
+
     <string name="s5q4"> s5q4: ڇا گذريل ٻن هفتن دوران انھن ڄاڻايل بيمارين جي علاج لاءِ توھان جي ٻار کي اسپتال ۾ رھڻو پيو؟</string>
     <string name="s5q4a"> ها</string>
     <string name="s5q4b"> نه</string>

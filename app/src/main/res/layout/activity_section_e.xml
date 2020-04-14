@@ -462,7 +462,7 @@
                         android:tag="0">
 
                         <TextView
-                            style="@style/textView3Head"
+                            style="@style/textviewh"
                             android:text="@string/s5q3_subtitlea" />
 
                         <CheckBox
@@ -481,8 +481,13 @@
                             android:text="@string/s5q303" />
 
                         <TextView
-                            style="@style/textView3Head"
+                            style="@style/textviewh"
                             android:text="@string/s5q3_subtitleb" />
+
+                        <CheckBox
+                            android:id="@+id/s5q304"
+                            style="@style/checkbox"
+                            android:text="@string/s5q304" />
 
                         <CheckBox
                             android:id="@+id/s5q305"
@@ -512,8 +517,6 @@
                         <EditText
                             android:id="@+id/s5q3096x"
                             style="@style/EditTextAlpha"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:hint="@string/specify"
                             android:tag="s5q3096"
                             android:text='@{s5q3096.checked? s5q3096x.getText().toString() : ""}'
