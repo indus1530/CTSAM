@@ -14,11 +14,11 @@
         android:layoutDirection="rtl"
         android:textDirection="rtl">
 
+
         <LinearLayout
             android:id="@+id/fldGrpSectionG"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/vlinearlayout">
+
 
             <!-- s7q1  Radio   -->
             <androidx.cardview.widget.CardView
@@ -69,10 +69,9 @@
 
             <LinearLayout
                 android:id="@+id/fldGrpSectiong01"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                style="@style/vlinearlayout"
                 android:visibility='@{s7q101.checked? View.VISIBLE : View.GONE}'>
+
 
                 <!-- s7q2  Radio   -->
                 <androidx.cardview.widget.CardView
@@ -87,16 +86,20 @@
 
                         <RadioGroup
                             android:id="@+id/s7q2"
-                            style="@style/radiogroup">
+                            style="@style/hradiogroup">
 
                             <RadioButton
                                 android:id="@+id/s7q201"
                                 style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
                                 android:text="@string/s7q201" />
 
                             <RadioButton
                                 android:id="@+id/s7q202"
                                 style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
                                 android:text="@string/s7q202" />
 
                         </RadioGroup>
@@ -104,6 +107,7 @@
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
+
 
                 <!-- s7q3  CheckBox   -->
                 <androidx.cardview.widget.CardView
@@ -141,12 +145,13 @@
                                 style="@style/checkbox"
                                 android:text="@string/s7q304" />
 
-                            <CheckBox
-                                android:id="@+id/s7q305"
-                                style="@style/checkbox"
-                                android:text="@string/s7q305" />
-
                         </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/s7q305"
+                            style="@style/checkbox"
+                            android:tag="-1"
+                            android:text="@string/s7q305" />
 
                     </LinearLayout>
 
@@ -168,8 +173,7 @@
 
                     <RadioGroup
                         android:id="@+id/s7q4"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup">
 
                         <RadioButton
                             android:id="@+id/s7q401"
@@ -190,6 +194,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- s7q5  CheckBox   -->
             <androidx.cardview.widget.CardView
@@ -228,16 +233,18 @@
                             style="@style/checkbox"
                             android:text="@string/s7q504" />
 
-                        <CheckBox
-                            android:id="@+id/s7q505"
-                            style="@style/checkbox"
-                            android:text="@string/s7q505" />
-
                     </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/s7q505"
+                        style="@style/checkbox"
+                        android:tag="-1"
+                        android:text="@string/s7q505" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- s7q6  CheckBox   -->
             <androidx.cardview.widget.CardView
@@ -308,8 +315,6 @@
                         <EditText
                             android:id="@+id/s7q696x"
                             style="@style/EditTextAlpha"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:hint="@string/specify"
                             android:tag="s7q696"
                             android:text='@{s7q696.checked? s7q696x.getText().toString() : ""}'
@@ -321,6 +326,8 @@
 
             </androidx.cardview.widget.CardView>
 
+
+            <!--  EndButton LinearLayout  -->
             <LinearLayout style="@style/hlinearlayout">
 
                 <Button
@@ -334,8 +341,9 @@
                     style="@style/buttonNext"
                     android:onClick="@{() -> callback.BtnContinue()}"
                     android:text="Save" />
-                <!--'onClick' for btn_End will NOT change and always call 'endInterview'-->
+                <!--  EndButton LinearLayout  -->
             </LinearLayout>
+
 
         </LinearLayout>
 

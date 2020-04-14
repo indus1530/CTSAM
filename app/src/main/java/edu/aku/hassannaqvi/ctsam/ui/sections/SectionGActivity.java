@@ -52,6 +52,17 @@ public class SectionGActivity extends AppCompatActivity {
 
         }));
 
+        //s7q305
+        bi.s7q305.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b) {
+                Clear.clearAllFields(bi.s7q3check, false);
+                bi.s7q3check.setTag("-1");
+            } else {
+                Clear.clearAllFields(bi.s7q3check, true);
+                bi.s7q3check.setTag("0");
+            }
+        });
+
         bi.s7q4.setOnCheckedChangeListener(((radioGroup, i) -> {
 
             if (i == bi.s7q402.getId()) {
@@ -62,6 +73,17 @@ public class SectionGActivity extends AppCompatActivity {
             }
 
         }));
+
+        //s7q505
+        bi.s7q505.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b) {
+                Clear.clearAllFields(bi.s7q5check, false);
+                bi.s7q5check.setTag("-1");
+            } else {
+                Clear.clearAllFields(bi.s7q5check, true);
+                bi.s7q5check.setTag("0");
+            }
+        });
 
     }
 
@@ -133,16 +155,16 @@ public class SectionGActivity extends AppCompatActivity {
         json.put("s7q304", bi.s7q304.isChecked() ? "4" : "0");
         json.put("s7q305", bi.s7q305.isChecked() ? "99" : "0");
 
-        json.put("s7q4",
-                bi.s7q401.isChecked() ? "1" :
-                        bi.s7q402.isChecked() ? "2" :
-                                "0");
+        json.put("s7q4", bi.s7q401.isChecked() ? "1"
+                : bi.s7q402.isChecked() ? "2"
+                : "0");
 
         json.put("s7q501", bi.s7q501.isChecked() ? "1" : "0");
         json.put("s7q502", bi.s7q502.isChecked() ? "2" : "0");
         json.put("s7q503", bi.s7q503.isChecked() ? "3" : "0");
         json.put("s7q504", bi.s7q504.isChecked() ? "4" : "0");
         json.put("s7q505", bi.s7q505.isChecked() ? "99" : "0");
+
         json.put("s7q601", bi.s7q601.isChecked() ? "1" : "0");
         json.put("s7q602", bi.s7q602.isChecked() ? "2" : "0");
         json.put("s7q603", bi.s7q603.isChecked() ? "3" : "0");
@@ -153,6 +175,7 @@ public class SectionGActivity extends AppCompatActivity {
         json.put("s7q608", bi.s7q608.isChecked() ? "8" : "0");
         json.put("s7q609", bi.s7q609.isChecked() ? "9" : "0");
         json.put("s7q696", bi.s7q696.isChecked() ? "96" : "0");
+
         json.put("s7q696x", bi.s7q696x.getText().toString());
 
         MainApp.fc.setsA3(String.valueOf(json));
