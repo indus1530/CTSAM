@@ -1,6 +1,7 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -43,22 +44,33 @@ public class SectionJActivity extends AppCompatActivity {
         switch (randomElement) {
             case 1:
                 bi.s10q1a.setChecked(true);
+                bi.s10q1a.setBackgroundColor(Color.parseColor("#FFD6D6"));
+                bi.s10q1b.setEnabled(false);
+                bi.s10q1c.setEnabled(false);
+                bi.s10q1d.setEnabled(false);
                 break;
             case 2:
                 bi.s10q1b.setChecked(true);
+                bi.s10q1b.setBackgroundColor(Color.parseColor("#D6D6FF"));
+                bi.s10q1a.setEnabled(false);
+                bi.s10q1c.setEnabled(false);
+                bi.s10q1d.setEnabled(false);
                 break;
             case 3:
                 bi.s10q1c.setChecked(true);
+                bi.s10q1c.setBackgroundColor(Color.parseColor("#D6FFD6"));
+                bi.s10q1a.setEnabled(false);
+                bi.s10q1b.setEnabled(false);
+                bi.s10q1d.setEnabled(false);
                 break;
             case 4:
                 bi.s10q1d.setChecked(true);
+                bi.s10q1d.setBackgroundColor(Color.parseColor("#ffdbac"));
+                bi.s10q1a.setEnabled(false);
+                bi.s10q1b.setEnabled(false);
+                bi.s10q1c.setEnabled(false);
                 break;
         }
-
-        bi.s10q1a.setEnabled(false);
-        bi.s10q1b.setEnabled(false);
-        bi.s10q1c.setEnabled(false);
-        bi.s10q1d.setEnabled(false);
 
     }
 

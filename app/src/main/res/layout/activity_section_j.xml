@@ -35,102 +35,63 @@
                         android:id="@+id/s10q1"
                         style="@style/radiogroup">
 
-                        <LinearLayout style="@style/hlinearlayout">
+                        <RadioButton
+                            android:id="@+id/s10q1a"
+                            style="@style/radiobutton"
+                            android:padding="20dp"
+                            android:text="@string/s10q1a" />
 
-                            <RadioButton
-                                android:id="@+id/s10q1a"
-                                style="@style/radiobutton"
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:background="#FFD6D6"
-                                android:text="@string/s10q1a" />
+                        <RadioButton
+                            android:id="@+id/s10q1b"
+                            style="@style/radiobutton"
+                            android:padding="20dp"
+                            android:text="@string/s10q1b" />
 
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/s10q1ax"
-                                style="@style/EditTextNum"
-                                android:layout_width="0dp"
-                                android:layout_height="50dp"
-                                android:layout_weight="1"
-                                android:hint="##"
-                                android:maxLength="2"
-                                android:text='@{s10q1a.checked? s10q1ax.getText().toString() : ""}'
-                                android:visibility='@{s10q1a.checked? View.VISIBLE : View.GONE}' />
+                        <RadioButton
+                            android:id="@+id/s10q1c"
+                            style="@style/radiobutton"
+                            android:padding="20dp"
+                            android:text="@string/s10q1c" />
 
-                        </LinearLayout>
-
-
-                        <LinearLayout style="@style/hlinearlayout">
-
-                            <RadioButton
-                                android:id="@+id/s10q1b"
-                                style="@style/radiobutton"
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:background="#D6D6FF"
-                                android:text="@string/s10q1b" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/s10q1bx"
-                                style="@style/EditTextNum"
-                                android:layout_width="0dp"
-                                android:layout_height="50dp"
-                                android:layout_weight="1"
-                                android:hint="##"
-                                android:maxLength="2"
-                                android:text='@{s10q1b.checked? s10q1bx.getText().toString() : ""}'
-                                android:visibility='@{s10q1b.checked? View.VISIBLE : View.GONE}' />
-
-                        </LinearLayout>
-
-
-                        <LinearLayout style="@style/hlinearlayout">
-
-                            <RadioButton
-                                android:id="@+id/s10q1c"
-                                style="@style/radiobutton"
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:background="#D6FFD6"
-                                android:text="@string/s10q1c" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/s10q1cx"
-                                style="@style/EditTextNum"
-                                android:layout_width="0dp"
-                                android:layout_height="50dp"
-                                android:layout_weight="1"
-                                android:hint="##"
-                                android:maxLength="2"
-                                android:text='@{s10q1c.checked? s10q1cx.getText().toString() : ""}'
-                                android:visibility='@{s10q1c.checked? View.VISIBLE : View.GONE}' />
-
-                        </LinearLayout>
-
-
-                        <LinearLayout style="@style/hlinearlayout">
-
-                            <RadioButton
-                                android:id="@+id/s10q1d"
-                                style="@style/radiobutton"
-                                android:layout_width="0dp"
-                                android:layout_weight="1"
-                                android:background="#ffdbac"
-                                android:text="@string/s10q1d" />
-
-                            <com.edittextpicker.aliazaz.EditTextPicker
-                                android:id="@+id/s10q1dx"
-                                style="@style/EditTextNum"
-                                android:layout_width="0dp"
-                                android:layout_height="50dp"
-                                android:layout_weight="1"
-                                android:hint="##"
-                                android:maxLength="2"
-                                android:text='@{s10q1d.checked? s10q1dx.getText().toString() : ""}'
-                                android:visibility='@{s10q1d.checked? View.VISIBLE : View.GONE}' />
-
-                        </LinearLayout>
+                        <RadioButton
+                            android:id="@+id/s10q1d"
+                            style="@style/radiobutton"
+                            android:padding="20dp"
+                            android:text="@string/s10q1d" />
 
                     </RadioGroup>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/s10q1ax"
+                        style="@style/EditTextNum"
+                        android:hint="##"
+                        android:maxLength="2"
+                        android:text='@{s10q1a.checked? s10q1ax.getText().toString() : ""}'
+                        android:visibility='@{s10q1a.checked? View.VISIBLE : View.GONE}' />
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/s10q1bx"
+                        style="@style/EditTextNum"
+                        android:hint="##"
+                        android:maxLength="2"
+                        android:text='@{s10q1b.checked? s10q1bx.getText().toString() : ""}'
+                        android:visibility='@{s10q1b.checked? View.VISIBLE : View.GONE}' />
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/s10q1cx"
+                        style="@style/EditTextNum"
+                        android:hint="##"
+                        android:maxLength="2"
+                        android:text='@{s10q1c.checked? s10q1cx.getText().toString() : ""}'
+                        android:visibility='@{s10q1c.checked? View.VISIBLE : View.GONE}' />
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/s10q1dx"
+                        style="@style/EditTextNum"
+                        android:hint="##"
+                        android:maxLength="2"
+                        android:text='@{s10q1d.checked? s10q1dx.getText().toString() : ""}'
+                        android:visibility='@{s10q1d.checked? View.VISIBLE : View.GONE}' />
 
                 </LinearLayout>
 
