@@ -2200,7 +2200,7 @@
 
     <!--  SECTION B -->
     <string name="secb"> SECTION B: Screening for SAM Cases </string>
-    <string name="s2t"> Screening for SAM Cases </string>
+    <!--<string name="s2t"> Screening for SAM Cases </string>-->
 
     <string name="muac1"> MUAC-01: </string>
 
@@ -2368,8 +2368,8 @@
     <string name="s5q105b"> No.</string>
 
     <string name="s5q106"> Skin infection </string>
-    <string name="s5q106a"> Yes</string>
-    <string name="ss5q106b"> No.</string>
+    <string name="s5q106a"> Yes </string>
+    <string name="s5q106b"> No </string>
 
     <string name="s5q107"> Worms in stool </string>
     <string name="s5q107a"> Yes </string>

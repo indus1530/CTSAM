@@ -163,7 +163,7 @@ public class SectionEActivity extends AppCompatActivity {
                                 "0");
         json.put("s5q106",
                 bi.s5q106a.isChecked() ? "1" :
-                        bi.ss5q106b.isChecked() ? "2" :
+                        bi.s5q106b.isChecked() ? "2" :
                                 "0");
         json.put("s5q107",
                 bi.s5q107a.isChecked() ? "1" :

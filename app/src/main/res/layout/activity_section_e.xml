@@ -261,7 +261,7 @@
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/ss5q106b"
+                            android:id="@+id/s5q106b"
                             style="@style/radiobutton"
                             android:layout_width="0dp"
                             android:layout_weight="1"

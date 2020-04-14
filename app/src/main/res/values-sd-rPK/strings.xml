@@ -2210,24 +2210,24 @@
     <string name="s2q1b"> نه </string>
 
     <string name="s2q2"> S2Q2: پيرن تي سوڄ </string>
-    <string name="s2q2_instruction">  پيرن تي سوڄ جي وضاحت :1)ڪو نه آهي ,2) هلڪو، ٻنهي پيرن تي ۽ کڙين تي ,3) وچولو، ٻنهي پيرن، ڄگھن ۽ ٻانهن تي 4) شديد سوڄ پيرن ،ڄگھن، ٻانهن، هٿن ۽ منهن تي </string>
+    <string name="s2q2_instruction">  پيرن تي سوڄ جي وضاحت:\n - ڪو نه آهي\n - هلڪو، ٻنهي پيرن تي ۽ کڙين تي,\n  - وچولو، ٻنهي پيرن، ڄگھن ۽ ٻانهن تي\n  - شديد سوڄ پيرن ،ڄگھن، ٻانهن، هٿن ۽ منهن تي </string>
     <string name="s2q2a"> ڪو نه آهي </string>
     <string name="s2q2b"> + پيرن تي سوڄ </string>
     <string name="s2q2c">  ++ پيرن تي سوڄ </string>
     <string name="s2q2d"> +++ پيرن تي سوڄ </string>
 
-    <string name="s2q3"> S2Q3: لاءِ ؟ RUTF / RUSF بک جو هجڻ </string>
-    <string name="s2q3a"> ها</string>
-    <string name="s2q3b"> نه</string>
+    <string name="s2q3"> S2Q3: بک جو هجڻ RUTF / RUSF لاءِ ؟ </string>
+    <string name="s2q3a"> ها </string>
+    <string name="s2q3b"> نه </string>
 
-    <string name="s2q4"> S2Q4: جيڪڏهن ها ته ڪهڙي درجي جي آهي</string>
-    <string name="s2q4_instruction">  واپرائجي RUTF/RUSF 75% گھٽ ۾ گھٽ </string>
-    <string name="s2q4a"> (شوق سان کا ڌوRUTF/RUSF ٻار) سٺو</string>
-    <string name="s2q4b"> ( کاڌو RUTF/RUSF ٻار بار بار چوڻ کان پوءِ) خراب</string>
-    <string name="s2q4c"> نه کاڌو RUTF/RUSF انڪار ڪيو (ٻار بار بار چوڻ کان پوءِ به </string>
+    <string name="s2q4"> S2Q4: جيڪڏهن ها ته ڪهڙي درجي جي آهي </string>
+    <string name="s2q4_instruction"> گھٽ ۾ گھٽ RUTF / RUSF 75% واپرائجي </string>
+    <string name="s2q4a"> سٺو ( ٻار RUTF / RUSF شوق سان کاڌو )   </string>
+    <string name="s2q4b"> خراب ( ٻار بار بار چوڻ کان پوءِ RUTF / RUSF کاڌو ) </string>
+    <string name="s2q4c"> انڪار ڪيو ( ٻار بار بار چوڻ کان پوءِ به RUTF / RUSF نه کاڌو ) </string>
 
     <string name="s2q5_subtitle"> S2Q5: طبي پيچدگين جو موجود هجڻ </string>
-    <string name="s2q501">    جي لاءِ بک جو نه لڳڻ  RUTF / RUSF</string>
+    <string name="s2q501"> RUTF / RUSF جي لاءِ بک جو نه لڳڻ </string>
     <string name="s2q501a"> ها </string>
     <string name="s2q501b"> نه </string>
 
@@ -2235,7 +2235,7 @@
     <string name="s2q502a"> ها </string>
     <string name="s2q502b"> نه </string>
 
-    <string name="s2q503">  ٿي وڃڻc  ≤35.5o c جسم گرمي پد </string>
+    <string name="s2q503"> جسم گرمي پد &#8451;35.5 ≥ ٿي وڃڻ </string>
     <string name="s2q503a"> ها </string>
     <string name="s2q503b"> نه </string>
 
@@ -2251,7 +2251,7 @@
     <string name="s2q506a"> ها </string>
     <string name="s2q506b"> نه </string>
 
-    <string name="s2q507"> (سست( تمام گھڻو ڪمزور، بيهوش، دورا پوندا هجن </string>
+    <string name="s2q507"> سست ( تمام گھڻو ڪمزور، بيهوش، دورا پوندا هجن )  </string>
     <string name="s2q507a"> ها </string>
     <string name="s2q507b"> نه </string>
 
@@ -2259,7 +2259,7 @@
     <string name="s2q508a"> ها </string>
     <string name="s2q508b"> نه </string>
 
-    <string name="s2q6"> S2Q6: ڇا ٻار ڪنهن ٻئي تحقيقي ٽرائل يا  اضافي خوراڪ واري پروگرام ۾ شامل آهي ؟ </string>
+    <string name="s2q6"> S2Q6: ڇا ٻار ڪنهن ٻئي تحقيقي ٽرائل يا اضافي خوراڪ واري پروگرام ۾ شامل آهي ؟ </string>
     <string name="s2q6a"> ها </string>
     <string name="s2q6b"> نه </string>
 
@@ -2267,11 +2267,11 @@
     <string name="s2q7a"> ها </string>
     <string name="s2q7b"> نه </string>
 
-    <string name="s2q8"> S2Q8: (بيماري آهي جيئن ته شامل نه ڪريو HIV يا TB) cerebral palsy ڇا ٻار کي ڪا پراڻي دماغي</string>
+    <string name="s2q8"> S2Q8: ڇا ٻار کي ڪا پراڻي دماغي (HIV يا TB cerebral palsy) بيماري آهي جيئن ته شامل نه ڪريو </string>
     <string name="s2q8a"> ها </string>
     <string name="s2q8b"> نه </string>
 
-    <string name="s2q9"> S2Q9:  مان الرجي ٿي هئي ؟ کاڌي ۾ شامل شين Peanut ڇا ٻار کي کير يا </string>
+    <string name="s2q9"> S2Q9: ڇا ٻار کي کير يا Peanut مان الرجي ٿي هئي ؟ کاڌي ۾ شامل شين  </string>
     <string name="s2q9a"> ها </string>
     <string name="s2q9b"> نه </string>
     <string name="s2q29_instruction"> -	ٻار کي تحقيق ۾ شامل ڪيو ويندو جيڪڏهن سوال نمبر 1. 2 ۾ 2.3 ها آهي ۽ سوال 2.4 جو جواب 1 (سٺو) جيڪڏهن سوال نمبر 2.8 ،2.7 ،2.6 ،2.5 ۽ 2.9 ۾ نه آهي</string>
@@ -2279,17 +2279,17 @@
 
     <!--  SECTION C -->
     <string name="secc"> SECTION C: HH Size &amp; Study Participants </string>
-    <string name="s3qa"> S3Qa: 6 مهينن کان گھٽ وارا ٻار </string>
+    <string name="s3qa"> S3QA: 6 کان گھٽ وارا ٻار مهينن </string>
 
-    <string name="s3qb"> S3Qb: 6 کان 23 مهينن وارا ٻار </string>
+    <string name="s3qb"> S3QB: کان 23 مهينن وارا ٻار 6 </string>
 
-    <string name="s3qc"> S3Qc: 24 کان 59 مهينن وارا ٻار </string>
+    <string name="s3qc"> S3QC: کان 59 مهينن وارا ٻار  24 </string>
 
-    <string name="s3qd"> S3Qd: جوان مرد </string>
+    <string name="s3qd"> S3QD: جوان مرد </string>
 
-    <string name="s3qe"> S3Qe: جوان عورتون </string>
+    <string name="s3qe"> S3QE: جوان عورتون </string>
 
-    <string name="s3qf"> S3Qf: ڪُل گھر ڀاتين جو تعداد </string>
+    <string name="s3qf"> S3QF: ڪُل گھر ڀاتين جو تعداد </string>
 
 
     <!--  SECTION D -->
@@ -2316,83 +2316,111 @@
     <string name="s4q7a"> ٻار جي ڄمڻ جي تاريخ </string>
     <string name="s4q7b"> داخلا وقت عمر </string>
 
-    <string name="s4q7dob"> s4q7dob: ٻار جي ڄمڻ جي تاريخ</string>
-    <string name="s4q7days"> s4q7days: عمر ڏينهن ۾</string>
-    <string name="s4q7mon"> s4q7mon: عمر مهينا ۾</string>
-    <string name="s4q8"> s4q8: ڇا ٻار پورن مهينن ۾ ڄائو هو؟</string>
-    <string name="s4q8a"> ها</string>
-    <string name="s4q8b"> نه</string>
-    <string name="s4q9"> s4q9: پيدائش وقت جينياتي عمر هفتا۾ </string>
-    <string name="s4q10"> s4q10:   ڇا ٻار جو ڄمڻ وقت وزن ڪيو ويو؟</string>
-    <string name="s410q410a"> ها</string>
-    <string name="s410q410b"> نه</string>
-    <string name="s4q11"> s4q11: ٻار جو ڪيترو وزن ٿيو هو؟ڪلو گران</string>
-    <string name="s4subtitle"> s4subtitle: ٻار جي جسماني ماپ</string>
-    <string name="meas01"> meas01: پهريون ڊيٽا ڪيلڪٽر جو نالو </string>
-    <string name="s4q14m1hei"> s4q14m1hei: قد / ڊيگھ</string>
-    <string name="s4q15m1wei"> s4q15m1wei: وزن (ڪلو گرام )</string>
-    <string name="s4q15m1mua"> s4q15m1mua: کاٻي ٻانهن جي وچين حصي جو ماپ (سينٽي ميٽر)</string>
-    <string name="meas02"> meas02: ٻيو ڊيٽا ڪيلڪٽر جو نالو</string>
-    <string name="s4q14m2hei"> s4q14m2hei: قد / ڊيگھ</string>
-    <string name="s4q15m2wei"> s4q15m2wei: وزن (ڪلو گرام )</string>
-    <string name="s4q15m2mua"> s4q15m2mua: کاٻي ٻانهن جي وچين حصي جو ماپ (سينٽي ميٽر)</string>
+    <string name="s4q7dob"> ٻار جي ڄمڻ جي تاريخ </string>
+    <string name="s4q7days"> عمر ڏينهن ۾ </string>
+    <string name="s4q7mon"> عمر مهينا ۾ </string>
+
+    <string name="s4q8"> S4Q8: ڇا ٻار پورن مهينن ۾ ڄائو هو ؟ </string>
+    <string name="s4q8a"> ها </string>
+    <string name="s4q8b"> نه </string>
+
+    <string name="s4q9"> S4Q9: پيدائش وقت جينياتي عمر هفتا ۾ </string>
+
+    <string name="s4q10"> S4Q10: ڇا ٻار جو ڄمڻ وقت وزن ڪيو ويو ؟ </string>
+    <string name="s410q410a"> ها </string>
+    <string name="s410q410b"> نه </string>
+
+    <string name="s4q11"> S4Q11: ٻار جو ڪيترو وزن ٿيو هو ؟ </string>
+
+    <string name="s4subtitle"> ٻار جي جسماني ماپ </string>
+
+    <string name="meas01"> پهريون ڊيٽا ڪيلڪٽر جو نالو </string>
+
+    <string name="s4q14m1hei"> قد / ڊيگھ - سينٽی میٽر </string>
+
+    <string name="s4q15m1wei"> وزن ڪلوگرام </string>
+
+    <string name="s4q15m1mua"> کاٻي ٻانهن جي وچين حصي جو ماپ </string>
+
+    <string name="meas02"> ٻيو ڊيٽا ڪيلڪٽر جو نالو </string>
+
+    <string name="s4q14m2hei"> قد / ڊيگھ - سينٽی میٽر </string>
+
+    <string name="s4q15m2wei"> وزن ڪلوگرام </string>
+
+    <string name="s4q15m2mua"> کاٻي ٻانهن جي وچين حصي جو ماپ </string>
 
 
     <!--  SECTION E -->
     <string name="sece"> SECTION E: Child Morbidity &amp; Care Seeking </string>
-    <string name="s5q1"> s5q1: ڇا گذريل ٻن هفتن جي دوران (ٻار جو نالو) کي ھنن ڄاڻايل بيمارين مان ڪا به ھڪ ٿي ؟ </string>
-    <string name="s5q101"> تيز بخار</string>
-    <string name="s5q101a"> ها</string>
-    <string name="s5q101b"> نه</string>
-    <string name="s5q102"> s5q102: دست</string>
-    <string name="s5q102a"> ها</string>
-    <string name="s5q102b"> نه</string>
-    <string name="s5q103"> s5q103: کنگھ / زڪام</string>
-    <string name="s5q103a"> ها</string>
-    <string name="s5q103b"> نه</string>
-    <string name="s5q104"> s5q104: تڪڙا ساھ/ساھ کڻڻ ۾ ڏکيائي</string>
-    <string name="s5q104a"> ها</string>
-    <string name="s5q104b"> نه</string>
-    <string name="s5q105"> s5q105: ڇاتي ۾ کڏو پئجي وڃڻ/ پاسريٽن جو اندر باهر هلن</string>
-    <string name="s5q105a"> ها</string>
-    <string name="s5q105b"> نه</string>
-    <string name="s5q106"> s5q106: چمڙي جي بيماري 	</string>
-    <string name="s5q106a"> ها</string>
-    <string name="ss5q106b"> نه</string>
-    <string name="s5q107"> s5q107: پائخاني ۾ جيوڙا</string>
-    <string name="s5q107a"> ها</string>
-    <string name="s5q107b"> نه</string>
-    <string name="s5q108"> s5q108: داڻ داڻ</string>
+
+    <string name="s5q1"> S5Q1: ڇا گذريل ٻن هفتن جي دوران (ٻار جو نالو) کي ھنن ڄاڻايل بيمارين مان ڪا به ھڪ ٿي ؟ </string>
+
+    <string name="s5q101"> تيز بخار </string>
+    <string name="s5q101a"> ها </string>
+    <string name="s5q101b"> نه </string>
+
+    <string name="s5q102"> دست </string>
+    <string name="s5q102a"> ها </string>
+    <string name="s5q102b"> نه </string>
+
+    <string name="s5q103"> کنگھ / زڪام </string>
+    <string name="s5q103a"> ها </string>
+    <string name="s5q103b"> نه </string>
+
+    <string name="s5q104"> تڪڙا ساھ / ساھ کڻڻ ۾ ڏکيائي </string>
+    <string name="s5q104a"> ها </string>
+    <string name="s5q104b"> نه </string>
+
+    <string name="s5q105"> ڇاتي ۾ کڏو پئجي وڃڻ / پاسريٽن جو اندر باهر هلن </string>
+    <string name="s5q105a"> ها </string>
+    <string name="s5q105b"> نه </string>
+
+    <string name="s5q106"> چمڙي جي بيماري </string>
+    <string name="s5q106a"> ها </string>
+    <string name="s5q106b"> نه </string>
+
+    <string name="s5q107"> پائخاني ۾ جيوڙا </string>
+    <string name="s5q107a"> ها </string>
+    <string name="s5q107b"> نه </string>
+
+    <string name="s5q108"> داڻ داڻ </string>
     <string name="s5q108a"> ها</string>
     <string name="s5q108b"> نه</string>
-    <string name="s5q196"> s5q196: ٻيو ڪجھ</string>
-    <string name="s5q196a"> ها</string>
-    <string name="s5q196b"> نه</string>
+
+    <string name="s5q196"> ٻيو ڪجھ </string>
+    <string name="s5q196a"> ها </string>
+    <string name="s5q196b"> نه </string>
+
     <string name="s5q196x"> s5q196x: ٻيو ڪجھ ته وضاحت ڪريو</string>
-    <string name="s5q2"> s5q2: ڇا توهان گذريل ٻن هفتن جي دوران انهن بيمارين لاءِ ٻار جو علاج ڪرايو؟</string>
-    <string name="s5q2a"> ها</string>
-    <string name="s5q2b"> نه</string>
-    <string name="s5q3"> s5q3: گذريل ٻن هفتن جي دوران توهان جي ٻار جي صحت جي چڪاس ڪنهن ڪئي؟ انهن کان علاه ڪو ٻيو؟ وڌيڪ پڇو ۽ لکو</string>
-    <string name="s5q3_subtitlea">  صحت وارو عملو</string>
+
+    <string name="s5q2"> S5Q2: ڇا توهان گذريل ٻن هفتن جي دوران انهن بيمارين لاءِ ٻار جو علاج ڪرايو ؟ </string>
+    <string name="s5q2a"> ها </string>
+    <string name="s5q2b"> نه </string>
+
+    <string name="s5q3"> S5Q3: گذريل ٻن هفتن جي دوران توهان جي ٻار جي صحت جي چڪاس ڪنهن ڪئي؟ انهن کان علاه ڪو ٻيو؟ وڌيڪ پڇو ۽ لکو</string>
+    <string name="s5q3_subtitlea"> صحت وارو عملو </string>
     <string name="s5q301"> ڊاڪٽر </string>
-    <string name="s5q302">  نرس/مڊوائف/ايل ايڇ وي</string>
-    <string name="s5q303"> ڪميونٽي مڊوائف</string>
-    <string name="s5q3_subtitleb">  ٻيا فرد  </string>
-    <string name="s5q304"> دائي</string>
-    <string name="s5q305"> ليڊي ھيلٿ ورڪر</string>
-    <string name="s5q306"> هوميو پيٿڪ</string>
-    <string name="s5q307"> حڪيم</string>
-    <string name="s5q308"> ڊسپينسر/ ڪمپائونڊر</string>
-    <string name="s5q3096"> ٻيو ڪجھه ته وضاحت ڪريو</string>
-    <string name="s5q4"> s5q4: ڇا گذريل ٻن هفتن دوران انھن ڄاڻايل بيمارين جي علاج لاءِ توھان جي ٻار کي اسپتال ۾ رھڻو پيو؟</string>
-    <string name="s5q4a"> ها</string>
-    <string name="s5q4b"> نه</string>
-    <string name="s5q5"> s5q5: گذريل ٻن هفتن دوران انھن ڄاڻايل بيمارين جي علاج لاءِ توھان جي ٻارکي ڪيترا ڏينھن اسپتال ۾ رھڻو پيو؟</string>
+    <string name="s5q302"> نرس / مڊوائف / ايل ايڇ وي </string>
+    <string name="s5q303"> ڪميونٽي مڊوائف </string>
+    <string name="s5q3_subtitleb"> ٻيا فرد </string>
+    <string name="s5q304"> دائي </string>
+    <string name="s5q305"> ليڊي ھيلٿ ورڪر </string>
+    <string name="s5q306"> هوميو پيٿڪ </string>
+    <string name="s5q307"> حڪيم </string>
+    <string name="s5q308"> ڊسپينسر / ڪمپائونڊر </string>
+    <string name="s5q3096"> ٻيو ڪجھه ته وضاحت ڪريو </string>
+
+    <string name="s5q4"> S5Q4: ڇا گذريل ٻن هفتن دوران انھن ڄاڻايل بيمارين جي علاج لاءِ توھان جي ٻار کي اسپتال ۾ رھڻو پيو ؟</string>
+    <string name="s5q4a"> ها </string>
+    <string name="s5q4b"> نه </string>
+
+    <string name="s5q5"> S5Q5: گذريل ٻن هفتن دوران انھن ڄاڻايل بيمارين جي علاج لاءِ توھان جي ٻارکي ڪيترا ڏينھن اسپتال ۾ رھڻو پيو ؟ </string>
 
 
     <!--  SECTION F -->
     <string name="secf"> SECTION F: HH Socioeconomic Information </string>
-    <string name="s6q1"> s6q1: توهان جي مادري زبان ڪهڙي آهي؟</string>
+    <string name="s6q1"> S6Q1: توهان جي مادري زبان ڪهڙي آهي ؟ </string>
     <string name="s6q101"> اردو</string>
     <string name="s6q102"> پنجابي</string>
     <string name="s6q103"> سنڌي</string>
@@ -2401,6 +2429,7 @@
     <string name="s6q106"> سرائڪي</string>
     <string name="s6q107"> دٽڪي</string>
     <string name="s6q196"> ٻيو ڪجھه ته وضاحت ڪريو</string>
+
     <string name="s6q2"> s6q2: توهان جي گھر ۾ پيئڻ جو پاڻي ڪٿان ايندو/ مکيه ذريعو ڪهڙو آهي؟</string>
     <string name="s6q201"> واٽر سپلاءِ</string>
     <string name="s6q202"> گھر جي اندر ميونسپل ڪميٽي جي پاڻي جي لائن اچي ٿي</string>
