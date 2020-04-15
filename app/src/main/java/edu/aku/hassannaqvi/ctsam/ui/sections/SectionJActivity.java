@@ -5,9 +5,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -19,6 +16,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -45,6 +44,8 @@ public class SectionJActivity extends AppCompatActivity {
             case 1:
                 bi.s10q1a.setChecked(true);
                 bi.s10q1a.setBackgroundColor(Color.parseColor("#FFD6D6"));
+                bi.s10q1ax.setFocusable(true);
+                bi.s10q1ax.requestFocus();
                 bi.s10q1b.setEnabled(false);
                 bi.s10q1c.setEnabled(false);
                 bi.s10q1d.setEnabled(false);
@@ -52,6 +53,8 @@ public class SectionJActivity extends AppCompatActivity {
             case 2:
                 bi.s10q1b.setChecked(true);
                 bi.s10q1b.setBackgroundColor(Color.parseColor("#D6D6FF"));
+                bi.s10q1bx.setFocusable(true);
+                bi.s10q1bx.requestFocus();
                 bi.s10q1a.setEnabled(false);
                 bi.s10q1c.setEnabled(false);
                 bi.s10q1d.setEnabled(false);
@@ -59,6 +62,8 @@ public class SectionJActivity extends AppCompatActivity {
             case 3:
                 bi.s10q1c.setChecked(true);
                 bi.s10q1c.setBackgroundColor(Color.parseColor("#D6FFD6"));
+                bi.s10q1cx.setFocusable(true);
+                bi.s10q1cx.requestFocus();
                 bi.s10q1a.setEnabled(false);
                 bi.s10q1b.setEnabled(false);
                 bi.s10q1d.setEnabled(false);
@@ -66,6 +71,8 @@ public class SectionJActivity extends AppCompatActivity {
             case 4:
                 bi.s10q1d.setChecked(true);
                 bi.s10q1d.setBackgroundColor(Color.parseColor("#FFDBAC"));
+                bi.s10q1dx.setFocusable(true);
+                bi.s10q1dx.requestFocus();
                 bi.s10q1a.setEnabled(false);
                 bi.s10q1b.setEnabled(false);
                 bi.s10q1c.setEnabled(false);
