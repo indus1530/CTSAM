@@ -29,9 +29,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -40,6 +37,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.AreasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
@@ -136,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
                         editorDownload.putBoolean("flag", true);
                         editorDownload.commit();
 
-                        Toast.makeText(context, "New App downloaded!!", Toast.LENGTH_SHORT).show();
-                        bi.lblAppVersion.setText(new StringBuilder("SCANS App New Version ").append(newVer).append("  Downloaded"));
+                        Toast.makeText(context, "New " + R.string.app_name + " App downloaded!!", Toast.LENGTH_SHORT).show();
+                        bi.lblAppVersion.setText(new StringBuilder(R.string.app_name + " App New Version ").append(newVer).append("  Downloaded"));
 
                         ActivityManager am = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
                         List<ActivityManager.RunningTaskInfo> taskInfo = am.getRunningTasks(1);
@@ -280,44 +279,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    public static class MyDialogFragment extends DialogFragment {
-
-        String newVer, preVer;
-
-        static MyDialogFragment newInstance(String newVer, String preVer) {
-            MyDialogFragment f = new MyDialogFragment();
-
-            Bundle args = new Bundle();
-            args.putString("newVer", newVer);
-            args.putString("preVer", preVer);
-            f.setArguments(args);
-
-            return f;
-        }
-
-        @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-            newVer = getArguments().getString("newVer");
-            preVer = getArguments().getString("preVer");
-
-            return new AlertDialog.Builder(getActivity())
-                    .setIcon(R.drawable.exclamation)
-                    .setTitle("CTSAM APP is available!")
-                    .setCancelable(false)
-                    .setMessage("CTSAM App " + newVer + " is now available. Your are currently using older version " + preVer + ".\nInstall new version to use this app.")
-                    .setPositiveButton("INSTALL!!",
-                            (dialog, whichButton) -> {
-                                Intent intent = new Intent(Intent.ACTION_VIEW);
-                                intent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");
-                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                startActivity(intent);
-                            }
-                    )
-                    .create();
-        }
-
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -409,18 +370,18 @@ public class MainActivity extends AppCompatActivity {
                 file = new File(Environment.getExternalStorageDirectory() + File.separator + fileName, versionAppContract.getPathname());
 
                 if (file.exists()) {
-                    bi.lblAppVersion.setText(new StringBuilder("SCANS App New Version ").append(newVer).append("  Downloaded"));
+                    bi.lblAppVersion.setText(new StringBuilder(R.string.app_name + " App New Version ").append(newVer).append("  Downloaded"));
                     showDialog(newVer, preVer);
                 } else {
                     NetworkInfo networkInfo = ((ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
                     if (networkInfo != null && networkInfo.isConnected()) {
-                        bi.lblAppVersion.setText(new StringBuilder("SCANS App New Version ").append(newVer).append("  Downloading.."));
+                        bi.lblAppVersion.setText(new StringBuilder(R.string.app_name + " App New Version ").append(newVer).append("  Downloading.."));
                         downloadManager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
                         Uri uri = Uri.parse(MainApp._UPDATE_URL + versionAppContract.getPathname());
                         DownloadManager.Request request = new DownloadManager.Request(uri);
                         request.setDestinationInExternalPublicDir(fileName, versionAppContract.getPathname())
                                 .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
-                                .setTitle("Downloading SCANS App new App ver." + newVer);
+                                .setTitle("Downloading " + R.string.app_name + " App new App ver." + newVer);
                         refID = downloadManager.enqueue(request);
 
                         editorDownload.putLong("refID", refID);
@@ -428,7 +389,7 @@ public class MainActivity extends AppCompatActivity {
                         editorDownload.apply();
 
                     } else {
-                        bi.lblAppVersion.setText(new StringBuilder("SCANS App New Version ").append(newVer).append("  Available..\n(Can't download.. Internet connectivity issue!!)"));
+                        bi.lblAppVersion.setText(new StringBuilder(R.string.app_name + " App New Version ").append(newVer).append("  Available..\n(Can't download.. Internet connectivity issue!!)"));
                     }
                 }
 
@@ -444,6 +405,44 @@ public class MainActivity extends AppCompatActivity {
             bi.testing.setVisibility(View.GONE);
         } else {
             bi.testing.setVisibility(View.VISIBLE);
+        }
+
+    }
+
+    public static class MyDialogFragment extends DialogFragment {
+
+        String newVer, preVer;
+
+        static MyDialogFragment newInstance(String newVer, String preVer) {
+            MyDialogFragment f = new MyDialogFragment();
+
+            Bundle args = new Bundle();
+            args.putString("newVer", newVer);
+            args.putString("preVer", preVer);
+            f.setArguments(args);
+
+            return f;
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            newVer = getArguments().getString("newVer");
+            preVer = getArguments().getString("preVer");
+
+            return new AlertDialog.Builder(getActivity())
+                    .setIcon(R.drawable.exclamation)
+                    .setTitle(R.string.app_name + " APP is available!")
+                    .setCancelable(false)
+                    .setMessage(R.string.app_name + " App " + newVer + " is now available. Your are currently using older version " + preVer + ".\nInstall new version to use this app.")
+                    .setPositiveButton("INSTALL!!",
+                            (dialog, whichButton) -> {
+                                Intent intent = new Intent(Intent.ACTION_VIEW);
+                                intent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
+                            }
+                    )
+                    .create();
         }
 
     }
