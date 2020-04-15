@@ -1,11 +1,9 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 
 import com.validatorcrawler.aliazaz.Validator;
 
@@ -13,8 +11,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
+import java.util.Random;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -32,6 +35,41 @@ public class SectionDActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d);
         bi.setCallback(this);
+
+        List<Integer> givenList = Arrays.asList(1, 2, 3, 4);
+        Random rand = new Random();
+        int randomElement = givenList.get(rand.nextInt(givenList.size()));
+
+        switch (randomElement) {
+            case 1:
+                bi.s4q1a.setChecked(true);
+                bi.s4q1a.setBackgroundColor(Color.parseColor("#FFD6D6"));
+                bi.s4q1b.setEnabled(false);
+                bi.s4q1c.setEnabled(false);
+                bi.s4q1d.setEnabled(false);
+                break;
+            case 2:
+                bi.s4q1b.setChecked(true);
+                bi.s4q1b.setBackgroundColor(Color.parseColor("#D6D6FF"));
+                bi.s4q1a.setEnabled(false);
+                bi.s4q1c.setEnabled(false);
+                bi.s4q1d.setEnabled(false);
+                break;
+            case 3:
+                bi.s4q1c.setChecked(true);
+                bi.s4q1c.setBackgroundColor(Color.parseColor("#D6FFD6"));
+                bi.s4q1a.setEnabled(false);
+                bi.s4q1b.setEnabled(false);
+                bi.s4q1d.setEnabled(false);
+                break;
+            case 4:
+                bi.s4q1d.setChecked(true);
+                bi.s4q1d.setBackgroundColor(Color.parseColor("#FFDBAC"));
+                bi.s4q1a.setEnabled(false);
+                bi.s4q1b.setEnabled(false);
+                bi.s4q1c.setEnabled(false);
+                break;
+        }
 
     }
 
