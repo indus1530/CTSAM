@@ -83,7 +83,9 @@
                     <TextView
                         style="@style/i_textview"
                         android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s4q2" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -112,7 +114,9 @@
                     <TextView
                         style="@style/i_textview"
                         android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s4q3" />
 
                     <EditText
@@ -138,7 +142,9 @@
                     <TextView
                         style="@style/i_textview"
                         android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s4q4" />
 
                     <EditText
@@ -164,7 +170,9 @@
                     <TextView
                         style="@style/i_textview"
                         android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s4q5" />
 
                     <EditText
@@ -190,18 +198,15 @@
                     <TextView
                         style="@style/i_textview"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginEnd="6dp"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:text="@string/s4q6" />
 
                     <RadioGroup
                         android:id="@+id/s4q6"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:layout_width="0dp"
-                        android:layout_marginStart="6dp"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:layout_weight="1">
 
                         <RadioButton
                             android:id="@+id/s4q6a"
@@ -237,14 +242,13 @@
 
                     <RadioGroup
                         android:id="@+id/s4q7"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup">
 
                         <RadioButton
                             android:id="@+id/s4q7a"
                             style="@style/radiobutton"
                             android:layout_width="0dp"
-                            android:layout_weight="0.8"
+                            android:layout_weight="1"
                             android:text="@string/s4q7a" />
 
                         <RadioButton
@@ -272,6 +276,7 @@
                     <TextView
                         style="@style/i_textview"
                         android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="@string/s4q7dob" />
@@ -369,8 +374,7 @@
 
                     <RadioGroup
                         android:id="@+id/s4q8"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup">
 
                         <RadioButton
                             android:id="@+id/s4q8a"
@@ -431,8 +435,7 @@
 
                     <RadioGroup
                         android:id="@+id/s4q10"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup">
 
                         <RadioButton
                             android:id="@+id/s410q410a"
