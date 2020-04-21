@@ -2281,17 +2281,29 @@
 
     <!--  SECTION C -->
     <string name="secc"> SECTION C: HH Size &amp; Study Participants </string>
-    <string name="s3qa"> S3Qa: Children &lt; 6 months</string>
-    <string name="s3qb"> S3Qb: Children 6 &#8211; 23 months</string>
-    <string name="s3qc"> S3Qc: Children 24 &#8211; 59 months</string>
-    <string name="s3qd"> S3Qd: Adult Males</string>
-    <string name="s3qe"> S3Qe: Adult Females</string>
-    <string name="s3qf"> S3Qf: Total family members</string>
+
+    <string name="s3qaq"> S3QA: </string>
+    <string name="s3qa"> Children &lt; 6 months </string>
+
+    <string name="s3qbq"> S3QB: </string>
+    <string name="s3qb"> Children 6 &#8211; 23 months </string>
+
+    <string name="s3qcq"> S3QC: </string>
+    <string name="s3qc"> Children 24 &#8211; 59 months </string>
+
+    <string name="s3qdq"> S3QD: </string>
+    <string name="s3qd"> Adult Males </string>
+
+    <string name="s3qeq"> S3QE: </string>
+    <string name="s3qe"> Adult Females </string>
+
+    <string name="s3qfq"> S3QF: </string>
+    <string name="s3qf"> Total family members </string>
 
 
     <!--  SECTION D -->
     <string name="secd"> SECTION D: Child Information &amp; Anthropometry </string>
-    <string name="s4q1"> S4Q1: Type of study group</string>
+    <string name="s4q1"> S4Q1: Type of study group </string>
     <string name="s4q1a"> Pink</string>
     <string name="s4q1b"> Blue</string>
     <string name="s4q1c"> Green</string>
@@ -2569,6 +2581,7 @@
     <string name="s6q1496"> Other (Specify)</string>
 
     <string name="s6q15"> S6Q15: How many rooms in this household are used for sleeping ? </string>
+    <string name="s6q15a"> How many rooms </string>
 
     <string name="s6q16"> S6Q16: Does any member of this household own ?</string>
 

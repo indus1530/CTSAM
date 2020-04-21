@@ -2279,17 +2279,23 @@
 
     <!--  SECTION C -->
     <string name="secc"> SECTION C: HH Size &amp; Study Participants </string>
-    <string name="s3qa"> S3QA: 6 کان گھٽ وارا ٻار مهينن </string>
+    <string name="s3qaq"> :S3QA </string>
+    <string name="s3qa"> 6 مهينن کان گھٽ وارا ٻار </string>
 
-    <string name="s3qb"> S3QB: کان 23 مهينن وارا ٻار 6 </string>
+    <string name="s3qbq"> :S3QB </string>
+    <string name="s3qb"> 6 کان 23 مهينن وارا ٻار </string>
 
-    <string name="s3qc"> S3QC: کان 59 مهينن وارا ٻار  24 </string>
+    <string name="s3qcq"> :S3QC </string>
+    <string name="s3qc"> 24 کان 59 مهينن وارا ٻار </string>
 
-    <string name="s3qd"> S3QD: جوان مرد </string>
+    <string name="s3qdq"> :S3QD </string>
+    <string name="s3qd"> جوان مرد </string>
 
-    <string name="s3qe"> S3QE: جوان عورتون </string>
+    <string name="s3qeq"> :S3QE </string>
+    <string name="s3qe"> جوان عورتون </string>
 
-    <string name="s3qf"> S3QF: ڪُل گھر ڀاتين جو تعداد </string>
+    <string name="s3qfq"> S3QF: </string>
+    <string name="s3qf"> ڪُل گھر ڀاتين جو تعداد </string>
 
 
     <!--  SECTION D -->
