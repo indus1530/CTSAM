@@ -139,9 +139,35 @@ public class SectionCActivity extends AppCompatActivity {
 
     }
 
-
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.GrpName);
+
+        if (!Validator.emptyCheckingContainer(this, bi.GrpName)) {
+            return false;
+        }
+
+        int a3, b3, c3, d3, e3, f3, children, total;
+
+        a3 = Integer.parseInt(bi.s3qa.getText().toString().trim());
+        b3 = Integer.parseInt(bi.s3qb.getText().toString().trim());
+        c3 = Integer.parseInt(bi.s3qc.getText().toString().trim());
+        d3 = Integer.parseInt(bi.s3qd.getText().toString().trim());
+        e3 = Integer.parseInt(bi.s3qe.getText().toString().trim());
+        f3 = Integer.parseInt(bi.s3qf.getText().toString().trim());
+
+        children = a3 + b3 + c3;
+        total = a3 + b3 + c3 + d3 + e3;
+
+        if (children == 0) {
+            Toast.makeText(this, "No child 06-59-month age entered, please re-check", Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        if (total > f3 || total < f3) {
+            Toast.makeText(this, "Values conflict, please re-check", Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        return true;
     }
 
 

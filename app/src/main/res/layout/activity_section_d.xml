@@ -93,11 +93,9 @@
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="#####"
+                        android:hint="##-###"
                         android:maxLength="5"
-                        app:maxValue="59999"
-                        app:minValue="10001"
-                        app:type="range" />
+                        app:mask="##-###" />
 
                 </LinearLayout>
 

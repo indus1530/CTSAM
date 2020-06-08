@@ -40,7 +40,6 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:gravity="center"
                         android:text="@string/s3qa" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -71,7 +70,6 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.3"
-                        android:gravity="center"
                         android:text="@string/s3qbq" />
 
                     <TextView
@@ -79,7 +77,6 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:gravity="center"
                         android:text="@string/s3qb" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -118,7 +115,6 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:gravity="center"
                         android:text="@string/s3qc" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -157,7 +153,6 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:gravity="center"
                         android:text="@string/s3qd" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -196,7 +191,6 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:gravity="center"
                         android:text="@string/s3qe" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -227,7 +221,6 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.3"
-                        android:gravity="center"
                         android:text="@string/s3qfq" />
 
                     <TextView
@@ -235,7 +228,6 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:gravity="center"
                         android:text="@string/s3qf" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker

@@ -2177,7 +2177,7 @@
 
     <!--  CTSAM STRINGS -->
     <!--  SECTION A -->
-    <string name="seca"> SECTION A: Address &amp; Identification Information </string>
+    <string name="seca"> SECTION A: ايڊريس ۽ نشاندهي جي معلومات  </string>
     <string name="s1q1"> S1Q1: صحت مرڪز جو نالو </string>
 
     <string name="s1q2"> S1Q2: تعلقي جو نالو </string>
@@ -2192,7 +2192,7 @@
 
     <string name="s1q7"> S1Q7: داخلا جي تاريخ </string>
 
-    <string name="s1q8"> S1Q8: ڇا والدين حصو وٺڻ لاءِ راضي ٿيا ۽ راضي نامي وارو فارم ڀريو ويو ؟ </string>
+    <string name="s1q8"> S1Q8: ڇا والدين / قانوني وارثن حصو وٺڻ لاءِ راضي ٿيا ۽ راضي نامي وارو فارم ڀريو ويو؟ </string>
     <string name="s1q8a"> ها </string>
     <string name="s1q8b"> نه </string>
 
@@ -2212,9 +2212,9 @@
     <string name="s2q2"> S2Q2: پيرن تي سوڄ </string>
     <string name="s2q2_instruction">  پيرن تي سوڄ جي وضاحت:\n - ڪو نه آهي\n - هلڪو، ٻنهي پيرن تي ۽ کڙين تي,\n  - وچولو، ٻنهي پيرن، ڄگھن ۽ ٻانهن تي\n  - شديد سوڄ پيرن ،ڄگھن، ٻانهن، هٿن ۽ منهن تي </string>
     <string name="s2q2a"> ڪو نه آهي </string>
-    <string name="s2q2b"> + پيرن تي سوڄ </string>
-    <string name="s2q2c">  ++ پيرن تي سوڄ </string>
-    <string name="s2q2d"> +++ پيرن تي سوڄ </string>
+    <string name="s2q2b">  پيرن تي سوڄ + </string>
+    <string name="s2q2c">   پيرن تي سوڄ ++ </string>
+    <string name="s2q2d">  پيرن تي سوڄ +++ </string>
 
     <string name="s2q3"> S2Q3: بک جو هجڻ RUTF / RUSF لاءِ ؟ </string>
     <string name="s2q3a"> ها </string>
@@ -2267,18 +2267,19 @@
     <string name="s2q7a"> ها </string>
     <string name="s2q7b"> نه </string>
 
-    <string name="s2q8"> S2Q8: ڇا ٻار کي ڪا پراڻي دماغي (HIV يا TB cerebral palsy) بيماري آهي جيئن ته شامل نه ڪريو </string>
+    <string name="s2q8"> S2Q8:  (شامل نه ڪريو TB يا HIV) آهي cerebral palsy ڇا ٻار کي ڪا پراڻي دماغي بيماري جيئن ته </string>
     <string name="s2q8a"> ها </string>
     <string name="s2q8b"> نه </string>
 
     <string name="s2q9"> S2Q9: ڇا ٻار کي کير يا Peanut مان الرجي ٿي هئي ؟ کاڌي ۾ شامل شين  </string>
     <string name="s2q9a"> ها </string>
     <string name="s2q9b"> نه </string>
-    <string name="s2q29_instruction"> -	ٻار کي تحقيق ۾ شامل ڪيو ويندو جيڪڏهن سوال نمبر 1. 2 ۾ 2.3 ها آهي ۽ سوال 2.4 جو جواب 1 (سٺو) جيڪڏهن سوال نمبر 2.8 ،2.7 ،2.6 ،2.5 ۽ 2.9 ۾ نه آهي</string>
+    <string name="s2q29_instruction"> -	ٻار کي تحقيق ۾ شامل ڪيو ويندو جيڪڏهن سوال نمبر 2.1 ۾ 2.3 ها آهي ۽ سوال 2.4 جو جواب 1 (سٺو) جيڪڏهن سوال نمبر 2.8 ،2.7 ،2.6 ،2.5 ۽ 2.9 ۾ نه آهي</string>
+    <string name="s2q29_instruction2"> انهن ٻارن کي داخل نه ڪيو ويندو جيڪي ڪنهن ٻئي تحقيقي ٽرائل يا اضافي خوراڪ واري پروگرام ۾ داخل هوندا ۽ انهن صحيح نه ڪئي cerebral palsy جي واڌ ويجھ ۾ (ايڇ آئي وي يا ٽي بي اهي شامل نه ڪيا ويندا) يا مورثي رت جي بيماري يا کاڄا کاڌي ۾ شامل شين مان الرجي آهي، مثال طور پراڻي بيماري. </string>
 
 
     <!--  SECTION C -->
-    <string name="secc"> SECTION C: HH Size &amp; Study Participants </string>
+    <string name="secc"> SECTION C: گھر ۽ تحقيق ۾ شامل افراد جي معلومات </string>
     <string name="s3qaq"> S3QA: </string>
     <string name="s3qa"> 6 مهينن کان گھٽ وارا ٻار </string>
 
@@ -2299,7 +2300,7 @@
 
 
     <!--  SECTION D -->
-    <string name="secd"> SECTION D: Child Information &amp; Anthropometry </string>
+    <string name="secd"> SECTION D: ٻار جي معلومات ۽ جسم جي ماپ </string>
     <string name="s4q1"> S4Q1:  تحقيق جي گروپ جو قسم </string>
     <string name="s4q1a"> گلابي </string>
     <string name="s4q1b"> نيرو </string>
@@ -2358,7 +2359,7 @@
 
 
     <!--  SECTION E -->
-    <string name="sece"> SECTION E: Child Morbidity &amp; Care Seeking </string>
+    <string name="sece"> SECTION E: ٻار جو بيماريون ۽ ان جو علاج </string>
 
     <string name="s5q1"> S5Q1: ڇا گذريل ٻن هفتن جي دوران (ٻار جو نالو) کي ھنن ڄاڻايل بيمارين مان ڪا به ھڪ ٿي ؟ </string>
 
@@ -2425,7 +2426,7 @@
 
 
     <!--  SECTION F -->
-    <string name="secf"> SECTION F: HH Socioeconomic Information </string>
+    <string name="secf"> SECTION F: گھر جي معاشي ۽ سماجي صورتحال جي معلومات </string>
     <string name="s6q1"> S6Q1: توهان جي مادري زبان ڪهڙي آهي ؟ </string>
     <string name="s6q1a"> اردو</string>
     <string name="s6q1b"> پنجابي</string>
@@ -2651,7 +2652,7 @@
 
 
     <!--  SECTION G -->
-    <string name="secg"> SECTION G: Hand Washing </string>
+    <string name="secg"> SECTION G: هٿ ڌوئڻ </string>
     <string name="s7q1"> S7Q1: مهرباني ڪري اسان کي هٿ ڌوئڻ جي جڳهه ڏيکاريو جتي توهان اڪثر هٿ ڌوئيندا آهيو </string>
     <string name="s7q101"> مشاهدو ڪيو ويو</string>
     <string name="s7q102"> مشاهدو نه ڪيو ويو</string>
@@ -2677,8 +2678,8 @@
     <string name="s7q502"> صابڻ (پائودر/ملائم چيز/ پيسٽ)</string>
     <string name="s7q503"> ملائم/پاڻياٺي صابڻ</string>
     <string name="s7q504"> خاڪ/ مٽي /واري</string>
-    <string name="s7q505"> ڪجھ به نه</string>
-    <string name="s7q6"> s7q6:  جواب ڏيندڙ جواب نه ڏي ته پوءِ پڇو ته ڪهڙي صورت ۾ توهان صابڻ سان هٿ دوئيندا آهيو، اهو سوال توهان ايستائين پڇو جيستائين اها سوچي ڪو به اهڙو وقت نه آهي  هي هڪ کليل سوال آهي. جوابن جي لسٽ نه پڙهندا   ڪهڙي صورت ۾ توهان پنهنجا هٿ صابڻ سان دوئيندا آهيو؟</string>
+    <string name="s7q505"> خبر نه آهي </string>
+    <string name="s7q6"> s7q6:      ڪهڙي صورت ۾ توهان پنهنجا هٿ صابڻ سان دوئيندا آهيو؟ هي هڪ کليل سوال آهي. جوابن جي لسٽ نه پڙهندا جواب ڏيندڙ جواب نه ڏي ته پوءِ پڇو ته ڪهڙي صورت ۾ توهان صابڻ سان هٿ دوئيندا آهيو، اهو سوال توهان ايستائين پڇو جيستائين اها سوچي ڪو به اهڙو وقت نه آهي</string>
     <string name="s7q601">  کاڌي جي تياري ڪرڻ کان اڳ</string>
     <string name="s7q602"> کاڌي پچائڻ کان اڳ</string>
     <string name="s7q603"> کائڻ کان اڳ</string>
@@ -2782,7 +2783,7 @@
 
 
     <!--  SECTION H -->
-    <string name="sech"> SECTION H: HFIAS Measurement Tool </string>
+    <string name="sech"> SECTION H: گھر ۾ کاڌي خوراڪ هجڻ جي معلومات وٺڻ </string>
 
     <string name="s8q8"> s8q8: ڇا گذريل مهيني (چار هفتن) دوران گهربل کاڌو نه هجڻ جي ڪري رات جو توهان يا توهان جي گهر جو ڪو ڀاتي بنا کاڌو کائڻ جي بکيو ستو هجي؟</string>
     <string name="s8q801"> ها</string>
@@ -2812,7 +2813,7 @@
 
 
     <!--  SECTION I -->
-    <string name="seci"> SECTION I: Income Sources </string>
+    <string name="seci"> SECTION I: آمدني جا ذريعا </string>
     <string name="s9q9"> s9q9: توهان جي گھرجا ٽي اهم ڪمائي جا ذريعا ڪهڙا آهن ؟</string>
     <string name="s9q1"> s9q1: پهريون ڪمائي جو ذريعو</string>
     <string name="s9q101">  زراعت </string>

@@ -41,8 +41,9 @@
                         android:layout_weight="1"
                         android:hint="##.#"
                         app:mask="##.#"
-                        app:maxValue="11.5"
-                        app:minValue="1"
+                        app:maxValue="21"
+                        app:minValue="11"
+                        app:pattern="^(\\d{2,2}\\.\\d{1,1})$"
                         app:type="range" />
 
                 </LinearLayout>
@@ -71,8 +72,9 @@
                         android:layout_weight="1"
                         android:hint="##.#"
                         app:mask="##.#"
-                        app:maxValue="11.5"
-                        app:minValue="1"
+                        app:maxValue="21"
+                        app:minValue="11"
+                        app:pattern="^(\\d{2,2}\\.\\d{1,1})$"
                         app:type="range" />
 
                 </LinearLayout>
@@ -705,6 +707,10 @@
                     <TextView
                         style="@style/i_textviewhint"
                         android:text="@string/s2q29_instruction" />
+
+                    <TextView
+                        style="@style/i_textviewhint"
+                        android:text="@string/s2q29_instruction2" />
 
                 </LinearLayout>
 

@@ -1,9 +1,13 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import com.validatorcrawler.aliazaz.Validator;
 
@@ -16,8 +20,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -178,7 +180,23 @@ public class SectionDActivity extends AppCompatActivity {
 
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.GrpName);
+
+        if (!Validator.emptyCheckingContainer(this, bi.GrpName)) {
+            return false;
+        }
+
+        String study_id;
+        study_id = bi.s4q2.getText().toString().trim();
+
+        DatabaseHelper db = MainApp.appInfo.getDbHelper();
+        Cursor res = db.getWhereCustom("forms", study_id);
+
+        if (res.getCount() > 0) {
+            Toast.makeText(this, "This Study ID already exists", Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        return true;
     }
 
 

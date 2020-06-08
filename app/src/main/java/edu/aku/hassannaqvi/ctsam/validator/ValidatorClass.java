@@ -223,7 +223,7 @@ public abstract class ValidatorClass {
         }
     }
 
-    public static boolean EmptyRadioButton(Context context, RadioGroup rdGrp, RadioButton rdBtn, EditText txt, String msg) {
+    /*public static boolean EmptyRadioButton(Context context, RadioButton rdGrp, String msg) {
         if (rdGrp.getCheckedRadioButtonId() == -1) {
             FancyToast.makeText(context, "ERROR(empty): " + msg, FancyToast.LENGTH_SHORT, FancyToast.ERROR, false).show();
             rdBtn.setError("This data is Required!");    // Set Error on last radio button
@@ -243,7 +243,7 @@ public abstract class ValidatorClass {
                 return true;
             }
         }
-    }
+    }*/
 
     public static boolean EmptyCheckBox(Context context, LinearLayout container, CheckBox cbx, String msg) {
 

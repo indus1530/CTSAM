@@ -24,6 +24,7 @@ import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionBBinding;
 import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
+import edu.aku.hassannaqvi.ctsam.validator.ValidatorClass;
 
 public class SectionBActivity extends AppCompatActivity {
 
@@ -38,8 +39,6 @@ public class SectionBActivity extends AppCompatActivity {
 
 
     }
-
-
 
 
     private void setupSkip() {
@@ -209,8 +208,23 @@ public class SectionBActivity extends AppCompatActivity {
 
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.fldGrpSectionB);
+
+        if (!Validator.emptyCheckingContainer(this, bi.fldGrpSectionB)) {
+            return false;
+        }
+
+        if (Float.parseFloat(bi.muac1.getText().toString().trim()) < 11.5 && Float.parseFloat(bi.muac2.getText().toString().trim()) < 11.5 && !bi.s2q1a.isChecked()) {
+            return ValidatorClass.EmptyCustomRadio(this, bi.s2q1b, "Response is not matching with MUAC, please re-check");
+        } else if (Float.parseFloat(bi.muac1.getText().toString().trim()) >= 11.5 && Float.parseFloat(bi.muac2.getText().toString().trim()) >= 11.5 && !bi.s2q1b.isChecked()) {
+            return ValidatorClass.EmptyCustomRadio(this, bi.s2q1a, "Response is not matching with MUAC, please re-check");
+        } else if ((Float.parseFloat(bi.muac1.getText().toString().trim()) < 11.5 && Float.parseFloat(bi.muac2.getText().toString().trim()) >= 11.5) || (Float.parseFloat(bi.muac1.getText().toString().trim()) >= 11.5 && Float.parseFloat(bi.muac2.getText().toString().trim()) < 11.5)) {
+            return ValidatorClass.EmptyCustomRadio(this, bi.s2q1a, "MUAC reading error, please re-check");
+        }
+
+        return true;
     }
+
+
 
 
     public void BtnEnd() {

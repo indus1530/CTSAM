@@ -2275,6 +2275,7 @@
 
     <string name="s2q9"> S2Q9: Child had a history of milk or peanut allergy ? </string>
     <string name="s2q29_instruction"> Instruction: - Child will be enrolled \nif Yes in Q 2.1, 2.3 and \nQ 2.4 response is 1 “Good” and No in Q 2.5, 2.6, 2.7, 2.8 &amp; 2.9 </string>
+    <string name="s2q29_instruction2">Children will not be enrolled in the trial who involved in another research trial or supplemental feeding program, are developmentally delayed, have a chronic debilitating illness such as cerebral palsy (not including HIV or TB), hereditary blood disease or had a history of milk or peanut allergy.</string>
     <string name="s2q9a"> Yes </string>
     <string name="s2q9b"> No </string>
 
