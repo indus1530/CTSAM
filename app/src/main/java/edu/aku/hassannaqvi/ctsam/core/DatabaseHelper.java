@@ -2026,13 +2026,4 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
-
-    public Cursor getWhereCustom(String tableName, String study_id) {
-
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        Cursor res = db.rawQuery("select * from " + tableName + " where study_id = " + "'" + study_id + "'", null);
-        return res;
-    }
-
 }

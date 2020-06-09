@@ -37,7 +37,7 @@ public class SectionEActivity extends AppCompatActivity {
 
 
         //s5q197
-        bi.s5q197.setOnCheckedChangeListener((compoundButton, b) -> {
+        /*bi.s5q197.setOnCheckedChangeListener((compoundButton, b) -> {
             if (b) {
                 Clear.clearAllFields(bi.s5q1all);
                 Clear.clearAllFields(bi.fldGrpCVs5q2);
@@ -57,7 +57,7 @@ public class SectionEActivity extends AppCompatActivity {
                 bi.fldGrpCVs5q4.setVisibility(View.VISIBLE);
                 bi.fldGrpCVs5q5.setVisibility(View.VISIBLE);
             }
-        });
+        });*/
 
 
         bi.s5q2.setOnCheckedChangeListener(((radioGroup, i) -> {
@@ -180,7 +180,7 @@ public class SectionEActivity extends AppCompatActivity {
 
         json.put("s5q196x", bi.s5q196x.getText().toString());
 
-        json.put("s5q197", bi.s5q197.isChecked() ? "97" : "0");
+        //json.put("s5q197", bi.s5q197.isChecked() ? "97" : "0");
 
         json.put("s5q2",
                 bi.s5q2a.isChecked() ? "1" :

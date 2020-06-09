@@ -56,7 +56,12 @@
     <string name="in"> انچ </string>
     <string name="rupees"> روپيا </string>
     <string name="num"> نمبر </string>
+
     <string name="name"> نالو </string>
+    <string name="c_name"> ٻار جو نالو </string>
+    <string name="f_name"> پيءُ جو نالو </string>
+    <string name="m_name"> ماءُ جو نالو </string>
+
     <string name="id"> ID </string>
     <string name="time"> HH:mm </string>
     <string name="mid1"> Measurer 1: ID </string>

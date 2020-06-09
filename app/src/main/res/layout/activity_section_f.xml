@@ -1587,7 +1587,9 @@
                         android:id="@+id/s6q18ax"
                         style="@style/EditTextNum"
                         android:hint="@string/s6q18a"
-                        android:maxLength="2"
+                        android:maxLength="3"
+                        app:maxValue="500"
+                        app:minValue="0"
                         android:text='@{s6q18a.checked ? s6q18ax.getText().toString() : "" }'
                         android:visibility='@{s6q18a.checked? View.VISIBLE : View.GONE}' />
 
@@ -1595,7 +1597,9 @@
                         android:id="@+id/s6q18bx"
                         style="@style/EditTextNum"
                         android:hint="@string/s6q18b"
-                        android:maxLength="2"
+                        android:maxLength="1"
+                        app:maxValue="7"
+                        app:minValue="0"
                         android:text='@{s6q18b.checked ? s6q18bx.getText().toString() : "" }'
                         android:visibility='@{s6q18b.checked ? View.VISIBLE : View.GONE}' />
 

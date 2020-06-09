@@ -418,35 +418,6 @@
 
             </LinearLayout>
 
-            <!-- s5q197  CheckBox   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs5q197"
-                style="@style/cardView">
-
-                <LinearLayout
-                    android:id="@+id/s5q197check"
-                    style="@style/hlinearlayout">
-
-                    <TextView
-                        style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_marginEnd="6dp"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/none" />
-
-                    <CheckBox
-                        android:id="@+id/s5q197"
-                        style="@style/checkbox"
-                        android:layout_width="0dp"
-                        android:layout_marginStart="6dp"
-                        android:layout_weight="1"
-                        android:tag="-1" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
             <!-- s5q2  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs5q2"

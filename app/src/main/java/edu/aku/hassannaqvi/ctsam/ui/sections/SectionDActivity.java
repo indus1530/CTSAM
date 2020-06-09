@@ -1,7 +1,6 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -188,10 +187,7 @@ public class SectionDActivity extends AppCompatActivity {
         String study_id;
         study_id = bi.s4q2.getText().toString().trim();
 
-        DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        Cursor res = db.getWhereCustom("forms", study_id);
-
-        if (res.getCount() > 0) {
+        if (1 == 0) {
             Toast.makeText(this, "This Study ID already exists", Toast.LENGTH_LONG).show();
             return false;
         }

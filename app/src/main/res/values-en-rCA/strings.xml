@@ -55,7 +55,12 @@
     <string name="in"> Inches </string>
     <string name="rupees"> Rupees </string>
     <string name="num"> Number </string>
+
     <string name="name"> Name </string>
+    <string name="c_name">Child Name </string>
+    <string name="f_name"> Father Name </string>
+    <string name="m_name"> Mother Name </string>
+
     <string name="id"> ID </string>
     <string name="time"> HH:mm </string>
     <string name="mid1"> Measurer 1: ID </string>
