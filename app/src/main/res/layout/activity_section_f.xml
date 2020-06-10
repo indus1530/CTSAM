@@ -75,9 +75,11 @@
                             style="@style/radiobutton"
                             android:text="@string/other" />
 
+
                         <EditText
                             android:id="@+id/s6q196x"
                             style="@style/EditTextAlpha"
+                            android:tag="s6q196"
                             android:hint="@string/specify"
                             android:text='@{s6q196.checked? s6q196x.getText().toString() : ""}'
                             android:visibility='@{s6q196.checked? View.VISIBLE : View.GONE}' />
@@ -192,6 +194,7 @@
                         <EditText
                             android:id="@+id/s6q296x"
                             style="@style/EditTextAlpha"
+                            android:tag="s6q296"
                             android:hint="@string/specify"
                             android:text='@{s6q296.checked? s6q296x.getText().toString() : ""}'
                             android:visibility='@{s6q296.checked? View.VISIBLE : View.GONE}' />
@@ -293,6 +296,7 @@
                         <EditText
                             android:id="@+id/s6q496x"
                             style="@style/EditTextAlpha"
+                            android:tag="s6q496"
                             android:hint="@string/specify"
                             android:text='@{s6q496.checked? s6q496x.getText().toString() : ""}'
                             android:visibility='@{s6q496.checked? View.VISIBLE : View.GONE}' />
@@ -380,6 +384,7 @@
                         <EditText
                             android:id="@+id/s6q596x"
                             style="@style/EditTextAlpha"
+                            android:tag="s6q596"
                             android:hint="@string/specify"
                             android:text='@{s6q596.checked? s6q596x.getText().toString() : ""}'
                             android:visibility='@{s6q596.checked? View.VISIBLE : View.GONE}' />
@@ -657,6 +662,7 @@
                         <EditText
                             android:id="@+id/s6q996x"
                             style="@style/EditTextAlpha"
+                            android:tag="s6q996"
                             android:hint="@string/specify"
                             android:text='@{s6q996.checked? s6q996x.getText().toString() : ""}'
                             android:visibility='@{s6q996.checked? View.VISIBLE : View.GONE}' />
@@ -711,6 +717,7 @@
                             <EditText
                                 android:id="@+id/s6q1096x"
                                 style="@style/EditTextAlpha"
+                                android:tag="s6q1096"
                                 android:hint="@string/specify"
                                 android:text='@{s6q1096.checked? s6q1096x.getText().toString() : ""}'
                                 android:visibility='@{s6q1096.checked? View.VISIBLE : View.GONE}' />
@@ -850,6 +857,7 @@
                         <EditText
                             android:id="@+id/s6q1296x"
                             style="@style/EditTextAlpha"
+                            android:tag="s6q1296"
                             android:hint="@string/specify"
                             android:text='@{s6q1296.checked? s6q1296x.getText().toString() : ""}'
                             android:visibility='@{s6q1296.checked? View.VISIBLE : View.GONE}' />
@@ -956,6 +964,7 @@
                         <EditText
                             android:id="@+id/s6q1396x"
                             style="@style/EditTextAlpha"
+                            android:tag="s6q1396"
                             android:hint="@string/specify"
                             android:text='@{s6q1396.checked? s6q1396x.getText().toString() : ""}'
                             android:visibility='@{s6q1396.checked? View.VISIBLE : View.GONE}' />
@@ -1044,6 +1053,7 @@
                         <EditText
                             android:id="@+id/s6q1496x"
                             style="@style/EditTextAlpha"
+                            android:tag="s6q1496"
                             android:hint="@string/specify"
                             android:text='@{s6q1496.checked? s6q1496x.getText().toString() : ""}'
                             android:visibility='@{s6q1496.checked? View.VISIBLE : View.GONE}' />
@@ -1124,9 +1134,10 @@
 
                     <RadioGroup
                         android:id="@+id/s6q16a"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s6q16a01"
@@ -1164,9 +1175,10 @@
 
                     <RadioGroup
                         android:id="@+id/s6q16b"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s6q16b01"
@@ -1204,9 +1216,10 @@
 
                     <RadioGroup
                         android:id="@+id/s6q16c"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s6q16c01"
@@ -1244,9 +1257,10 @@
 
                     <RadioGroup
                         android:id="@+id/s6q16d"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s6q16d01"
@@ -1284,9 +1298,10 @@
 
                     <RadioGroup
                         android:id="@+id/s6q16e"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s6q16e01"
@@ -1324,9 +1339,10 @@
 
                     <RadioGroup
                         android:id="@+id/s6q16f"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s6q16f01"
@@ -1364,9 +1380,10 @@
 
                     <RadioGroup
                         android:id="@+id/s6q16g"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s6q16g01"
@@ -1404,9 +1421,10 @@
 
                     <RadioGroup
                         android:id="@+id/s6q16h"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s6q16h01"
@@ -1444,9 +1462,10 @@
 
                     <RadioGroup
                         android:id="@+id/s6q16i"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s6q16i01"
@@ -1484,9 +1503,10 @@
 
                     <RadioGroup
                         android:id="@+id/s6q16j"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s6q16j01"
@@ -1556,32 +1576,10 @@
                         style="@style/i_textview"
                         android:text="@string/s6q18" />
 
-                    <RadioGroup
-                        android:id="@+id/s6q18"
-                        style="@style/hradiogroup">
-
-                        <RadioButton
-                            android:id="@+id/s6q18a"
-                            style="@style/radiobutton"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:text="@string/s6q18a" />
-
-                        <RadioButton
-                            android:id="@+id/s6q18b"
-                            style="@style/radiobutton"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:text="@string/s6q18b" />
-
-                        <RadioButton
-                            android:id="@+id/s6q1898"
-                            style="@style/radiobutton"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:text="@string/s6q1898" />
-
-                    </RadioGroup>
+                    <CheckBox
+                        android:id="@+id/s6q1898"
+                        style="@style/checkbox"
+                        android:text="@string/s6q1898" />
 
                     <EditText
                         android:id="@+id/s6q18ax"
@@ -1589,9 +1587,7 @@
                         android:hint="@string/s6q18a"
                         android:maxLength="3"
                         app:maxValue="500"
-                        app:minValue="0"
-                        android:text='@{s6q18a.checked ? s6q18ax.getText().toString() : "" }'
-                        android:visibility='@{s6q18a.checked? View.VISIBLE : View.GONE}' />
+                        app:minValue="0" />
 
                     <EditText
                         android:id="@+id/s6q18bx"
@@ -1599,9 +1595,7 @@
                         android:hint="@string/s6q18b"
                         android:maxLength="1"
                         app:maxValue="7"
-                        app:minValue="0"
-                        android:text='@{s6q18b.checked ? s6q18bx.getText().toString() : "" }'
-                        android:visibility='@{s6q18b.checked ? View.VISIBLE : View.GONE}' />
+                        app:minValue="0" />
 
                 </LinearLayout>
 

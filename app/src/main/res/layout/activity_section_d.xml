@@ -621,13 +621,6 @@
 
                     <LinearLayout style="@style/hlinearlayout">
 
-                        <TextView
-                            style="@style/i_textview"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="@string/cm" />
-
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/s4q15m1mua"
                             style="@style/EditTextNum"
@@ -754,13 +747,6 @@
                         android:text="@string/s4q15m2mua" />
 
                     <LinearLayout style="@style/hlinearlayout">
-
-                        <TextView
-                            style="@style/i_textview"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="@string/cm" />
 
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/s4q15m2mua"

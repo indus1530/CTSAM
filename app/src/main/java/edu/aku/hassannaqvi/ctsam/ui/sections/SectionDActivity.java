@@ -122,6 +122,7 @@ public class SectionDActivity extends AppCompatActivity {
 
         MainApp.fc = new FormsContract();
         MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+
         MainApp.fc.setUser(MainApp.userName);
         MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
         MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
@@ -187,7 +188,7 @@ public class SectionDActivity extends AppCompatActivity {
         String study_id;
         study_id = bi.s4q2.getText().toString().trim();
 
-        if (1 == 0) {
+        if (1 == 1) {
             Toast.makeText(this, "This Study ID already exists", Toast.LENGTH_LONG).show();
             return false;
         }

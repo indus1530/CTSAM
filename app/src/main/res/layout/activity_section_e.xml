@@ -44,9 +44,10 @@
 
                     <RadioGroup
                         android:id="@+id/s5q101"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s5q101a"
@@ -85,9 +86,10 @@
 
                     <RadioGroup
                         android:id="@+id/s5q102"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s5q102a"
@@ -126,9 +128,10 @@
 
                     <RadioGroup
                         android:id="@+id/s5q103"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s5q103a"
@@ -167,9 +170,10 @@
 
                     <RadioGroup
                         android:id="@+id/s5q104"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s5q104a"
@@ -208,9 +212,10 @@
 
                     <RadioGroup
                         android:id="@+id/s5q105"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s5q105a"
@@ -249,9 +254,10 @@
 
                     <RadioGroup
                         android:id="@+id/s5q106"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s5q106a"
@@ -290,9 +296,10 @@
 
                     <RadioGroup
                         android:id="@+id/s5q107"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s5q107a"
@@ -331,9 +338,10 @@
 
                     <RadioGroup
                         android:id="@+id/s5q108"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s5q108a"
@@ -372,9 +380,10 @@
 
                     <RadioGroup
                         android:id="@+id/s5q196"
-                        style="@style/hradiogroup"
+                        style="@style/radiogroup"
                         android:layout_width="0dp"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/s5q196a"

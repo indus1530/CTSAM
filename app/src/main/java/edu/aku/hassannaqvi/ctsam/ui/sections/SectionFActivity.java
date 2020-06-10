@@ -73,6 +73,35 @@ public class SectionFActivity extends AppCompatActivity {
 
         }));
 
+
+        bi.s6q17.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.s6q17b.getId()) {
+                bi.fldGrpCVs6q18.setVisibility(View.GONE);
+                Clear.clearAllFields(bi.fldGrpCVs6q18);
+            } else {
+                bi.fldGrpCVs6q18.setVisibility(View.VISIBLE);
+            }
+
+        }));
+
+
+        bi.s6q1898.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (bi.s6q1898.isChecked()) {
+                    bi.s6q18ax.setVisibility(View.GONE);
+                    Clear.clearAllFields(bi.s6q18ax);
+                    bi.s6q18bx.setVisibility(View.GONE);
+                    Clear.clearAllFields(bi.s6q18bx);
+                } else {
+                    bi.s6q18ax.setVisibility(View.VISIBLE);
+                    bi.s6q18bx.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
     }
 
 
@@ -342,10 +371,8 @@ public class SectionFActivity extends AppCompatActivity {
                                 "0");
 
 
-        json.put("s6q18", bi.s6q18a.isChecked() ? "1"
-                : bi.s6q18b.isChecked() ? "2"
-                : bi.s6q1898.isChecked() ? "98"
-                : "0");
+        json.put("s6q1898", bi.s6q1898.isChecked() ? "1" : "0");
+
         json.put("s6q18ax", bi.s6q18ax.getText().toString());
         json.put("s6q18bx", bi.s6q18bx.getText().toString());
 
@@ -369,6 +396,7 @@ public class SectionFActivity extends AppCompatActivity {
 
 
     private boolean formValidation() {
+
         return Validator.emptyCheckingContainer(this, bi.fldGrpSectionF);
     }
 

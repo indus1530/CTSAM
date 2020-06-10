@@ -59,7 +59,6 @@ public class SectionEActivity extends AppCompatActivity {
             }
         });*/
 
-
         bi.s5q2.setOnCheckedChangeListener(((radioGroup, i) -> {
 
             if (i == bi.s5q2a.getId()) {
@@ -77,7 +76,6 @@ public class SectionEActivity extends AppCompatActivity {
 
         }));
 
-
         bi.s5q4.setOnCheckedChangeListener(((radioGroup, i) -> {
 
             if (i == bi.s5q4a.getId()) {
@@ -85,6 +83,32 @@ public class SectionEActivity extends AppCompatActivity {
             } else {
                 Clear.clearAllFields(bi.fldGrpCVs5q5);
                 bi.fldGrpCVs5q5.setVisibility(View.GONE);
+            }
+
+        }));
+
+
+        bi.s5q196.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.s5q196b.getId() && bi.s5q101b.isChecked() && bi.s5q102b.isChecked() && bi.s5q103b.isChecked() && bi.s5q104b.isChecked()
+                    && bi.s5q105b.isChecked() && bi.s5q106b.isChecked() && bi.s5q107b.isChecked() && bi.s5q108b.isChecked()) {
+
+                Clear.clearAllFields(bi.fldGrpCVs5q2);
+                Clear.clearAllFields(bi.fldGrpCVs5q3);
+                Clear.clearAllFields(bi.fldGrpCVs5q4);
+                Clear.clearAllFields(bi.fldGrpCVs5q5);
+
+                bi.fldGrpCVs5q2.setVisibility(View.GONE);
+                bi.fldGrpCVs5q3.setVisibility(View.GONE);
+                bi.fldGrpCVs5q4.setVisibility(View.GONE);
+                bi.fldGrpCVs5q5.setVisibility(View.GONE);
+
+            } else {
+
+                bi.fldGrpCVs5q2.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs5q3.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs5q4.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs5q5.setVisibility(View.VISIBLE);
             }
 
         }));
@@ -212,6 +236,7 @@ public class SectionEActivity extends AppCompatActivity {
 
 
     private boolean formValidation() {
+
         return Validator.emptyCheckingContainer(this, bi.fldGrpSectionE);
     }
 
