@@ -25,6 +25,7 @@ import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionDBinding;
 import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
+import edu.aku.hassannaqvi.ctsam.utils.DateUtils;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionDActivity extends AppCompatActivity {
@@ -36,6 +37,8 @@ public class SectionDActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d);
         bi.setCallback(this);
+
+        bi.s4q7dob.setMinDate(DateUtils.getMonthsBack("dd/MM/yyyy", -36));
 
         List<Integer> givenList = Arrays.asList(1, 2, 3, 4);
         Random rand = new Random();
