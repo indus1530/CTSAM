@@ -135,7 +135,7 @@ public class SectionJActivity extends AppCompatActivity {
                 : bi.s10q1b.isChecked() ? "2"
                 : bi.s10q1c.isChecked() ? "3"
                 : bi.s10q1d.isChecked() ? "4"
-                : "1");
+                : "0");
 
         json.put("s10q1ax", bi.s10q1ax.getText().toString());
         json.put("s10q1bx", bi.s10q1bx.getText().toString());
