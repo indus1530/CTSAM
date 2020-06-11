@@ -35,7 +35,6 @@ public class SectionFActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_f);
         bi.setCallback(this);
         setupSkips();
-
     }
 
     private void setupSkips() {
@@ -85,7 +84,7 @@ public class SectionFActivity extends AppCompatActivity {
 
         }));
 
-
+        //////////// Checkbox
         bi.s6q1898.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,6 +100,42 @@ public class SectionFActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        bi.s6q19.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.s6q1902.getId()) {
+
+                bi.fldGrpCVs6q20.setVisibility(View.GONE);
+                bi.fldGrpCVs6q20a.setVisibility(View.GONE);
+                bi.fldGrpCVs6q20b.setVisibility(View.GONE);
+                bi.fldGrpCVs6q20c.setVisibility(View.GONE);
+                bi.fldGrpCVs6q20d.setVisibility(View.GONE);
+                bi.fldGrpCVs6q20e.setVisibility(View.GONE);
+                bi.fldGrpCVs6q20f.setVisibility(View.GONE);
+                bi.fldGrpCVs6q20g.setVisibility(View.GONE);
+
+                Clear.clearAllFields(bi.fldGrpCVs6q20a);
+                Clear.clearAllFields(bi.fldGrpCVs6q20b);
+                Clear.clearAllFields(bi.fldGrpCVs6q20c);
+                Clear.clearAllFields(bi.fldGrpCVs6q20d);
+                Clear.clearAllFields(bi.fldGrpCVs6q20e);
+                Clear.clearAllFields(bi.fldGrpCVs6q20f);
+                Clear.clearAllFields(bi.fldGrpCVs6q20g);
+
+            } else {
+
+                bi.fldGrpCVs6q20.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs6q20a.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs6q20b.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs6q20c.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs6q20d.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs6q20e.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs6q20f.setVisibility(View.VISIBLE);
+                bi.fldGrpCVs6q20g.setVisibility(View.VISIBLE);
+            }
+
+        }));
 
     }
 
@@ -397,7 +432,25 @@ public class SectionFActivity extends AppCompatActivity {
 
     private boolean formValidation() {
 
-        return Validator.emptyCheckingContainer(this, bi.fldGrpSectionF);
+        if (!Validator.emptyCheckingContainer(this, bi.fldGrpSectionF)) {
+            return false;
+        }
+
+        if (!bi.s6q1898.isChecked() && Integer.parseInt(bi.s6q18ax.getText().toString()) == 0 && Integer.parseInt(bi.s6q18bx.getText().toString()) == 0) {
+
+            Toast.makeText(this, "S6Q18: At least one value must be greater than zero", Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        if (bi.s6q1901.isChecked() && Integer.parseInt(bi.s6q20a.getText().toString()) == 0 && Integer.parseInt(bi.s6q20b.getText().toString()) == 0
+                && Integer.parseInt(bi.s6q20c.getText().toString()) == 0 && Integer.parseInt(bi.s6q20d.getText().toString()) == 0
+                && Integer.parseInt(bi.s6q20e.getText().toString()) == 0 && Integer.parseInt(bi.s6q20f.getText().toString()) == 0) {
+
+            Toast.makeText(this, "S6Q20: At least one value must be greater than zero", Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        return true;
     }
 
 

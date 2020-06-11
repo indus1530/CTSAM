@@ -2658,43 +2658,29 @@
 
     <!--  SECTION G -->
     <string name="secg"> SECTION G: Hand Washing </string>
-    <string name="s7q1"> S7Q1: مهرباني ڪري اسان کي هٿ ڌوئڻ جي جڳهه ڏيکاريو جتي توهان اڪثر هٿ ڌوئيندا آهيو </string>
-    <string name="s7q101"> مشاهدو ڪيو ويو</string>
-    <string name="s7q102"> مشاهدو نه ڪيو ويو</string>
-    <string name="s7q103"> رهائش واري جڳهه تي نه هو</string>
-    <string name="s7q104"> ڏسڻ جي اجازت نه ڏني وئي</string>
-    <string name="s7q105"> ٻي ڪا وجھه</string>
 
-    <string name="s7q2"> S7Q2: پاڻي جي موجودگي جو مشاهدو ڪيو ويو ته ڪهڙي جڳهه تي هٿ دويا ويندا آهن</string>
-    <string name="s7q201"> پاڻي موجود آهي</string>
-    <string name="s7q202"> پاڻي موجود نه آهي</string>
+    <string name="s7q1"> s7q1: ڇا توهان وٽ گھر ۾ هٿ دوئڻ لاءِ صابڻ يا ڊٽرجنٽ  موجود آهي؟</string>
+    <string name="s7q101"> ها  </string>
+    <string name="s7q102"> نه</string>
 
-    <string name="s7q3"> s7q3: لکو جيڪڏهن صابڻ يا ڊٽرجنٽ موجود آهي هٿ ڌوئڻ واري خاص جاءِ تي</string>
-    <string name="s7q301"> صابڻ</string>
-    <string name="s7q302"> صابڻ (پائودر/ملائم چيز/ پيسٽ)</string>
-    <string name="s7q303"> ملائم/پاڻياٺي صابڻ</string>
-    <string name="s7q304">  خاڪ/ مٽي /واري </string>
-    <string name="s7q305"> ڪجھ به نه</string>
-    <string name="s7q4"> s7q4: ڇا توهان وٽ گھر ۾ هٿ دوئڻ لاءِ صابڻ يا ڊٽرجنٽ  موجود آهي؟</string>
-    <string name="s7q401"> ها  </string>
-    <string name="s7q402"> نه</string>
-    <string name="s7q5"> s7q5: جيڪڏهن ها ته، ڇا توهان اهو مونکي ڏيکاريندا؟</string>
-    <string name="s7q501"> صابڻ</string>
-    <string name="s7q502"> صابڻ (پائودر/ملائم چيز/ پيسٽ)</string>
-    <string name="s7q503"> ملائم/پاڻياٺي صابڻ</string>
-    <string name="s7q504"> خاڪ/ مٽي /واري</string>
-    <string name="s7q505"> ڪجھ به نه</string>
-    <string name="s7q6"> s7q6:  جواب ڏيندڙ جواب نه ڏي ته پوءِ پڇو ته ڪهڙي صورت ۾ توهان صابڻ سان هٿ دوئيندا آهيو، اهو سوال توهان ايستائين پڇو جيستائين اها سوچي ڪو به اهڙو وقت نه آهي  هي هڪ کليل سوال آهي. جوابن جي لسٽ نه پڙهندا   ڪهڙي صورت ۾ توهان پنهنجا هٿ صابڻ سان دوئيندا آهيو؟</string>
-    <string name="s7q601">  کاڌي جي تياري ڪرڻ کان اڳ</string>
-    <string name="s7q602"> کاڌي پچائڻ کان اڳ</string>
-    <string name="s7q603"> کائڻ کان اڳ</string>
-    <string name="s7q604">  ٻار کي کارئڻ پيارڻ کان اڳ</string>
-    <string name="s7q605"> ٻار کي ٿڃ پيارڻ کان اڳ</string>
-    <string name="s7q606"> ٻار جي ڪاڪُوس واري جڳهه کي  صاف ڪرڻ کانپوءِ</string>
-    <string name="s7q607">  ٻار جي چڊي بدلائڻ کانپوء</string>
-    <string name="s7q608"> ٻار جو ڪاڪُوس اڇلائڻ کانپوءِ</string>
-    <string name="s7q609">  پاڻ کي صاف ڪرڻ کان پوء</string>
-    <string name="s7q696"> ٻيو ڪجھه ته وضاحت ڪريو</string>
+    <string name="s7q2"> s7q2: جيڪڏهن ها ته، ڇا توهان اهو مونکي ڏيکاريندا؟</string>
+    <string name="s7q201"> صابڻ</string>
+    <string name="s7q202"> صابڻ (پائودر/ملائم چيز/ پيسٽ)</string>
+    <string name="s7q203"> ملائم/پاڻياٺي صابڻ</string>
+    <string name="s7q204"> خاڪ/ مٽي /واري</string>
+    <string name="s7q205"> ڪجھ به نه</string>
+
+    <string name="s7q3"> s7q3:  جواب ڏيندڙ جواب نه ڏي ته پوءِ پڇو ته ڪهڙي صورت ۾ توهان صابڻ سان هٿ دوئيندا آهيو، اهو سوال توهان ايستائين پڇو جيستائين اها سوچي ڪو به اهڙو وقت نه آهي  هي هڪ کليل سوال آهي. جوابن جي لسٽ نه پڙهندا   ڪهڙي صورت ۾ توهان پنهنجا هٿ صابڻ سان دوئيندا آهيو؟</string>
+    <string name="s7q301">  کاڌي جي تياري ڪرڻ کان اڳ</string>
+    <string name="s7q302"> کاڌي پچائڻ کان اڳ</string>
+    <string name="s7q303"> کائڻ کان اڳ</string>
+    <string name="s7q304">  ٻار کي کارئڻ پيارڻ کان اڳ</string>
+    <string name="s7q305"> ٻار کي ٿڃ پيارڻ کان اڳ</string>
+    <string name="s7q306"> ٻار جي ڪاڪُوس واري جڳهه کي  صاف ڪرڻ کانپوءِ</string>
+    <string name="s7q307">  ٻار جي چڊي بدلائڻ کانپوء</string>
+    <string name="s7q308"> ٻار جو ڪاڪُوس اڇلائڻ کانپوءِ</string>
+    <string name="s7q309">  پاڻ کي صاف ڪرڻ کان پوء</string>
+    <string name="s7q396"> ٻيو ڪجھه ته وضاحت ڪريو</string>
 
     <string name="s8q1"> s8q1: ڇا گذريل مهيني (  چار هفتن ) دوران توهان کي اها پريشاني رهي ته توهان وٽ پورو پيٽ ڀري کائڻ کائڻ جيترو کاڌو نه آهي؟</string>
     <string name="s8q101"> ها</string>

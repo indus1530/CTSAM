@@ -1,4 +1,5 @@
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -68,7 +69,10 @@
                         android:maxLength="2"
                         android:padding="15dp"
                         android:text='@{s10q1a.checked? s10q1ax.getText().toString() : ""}'
-                        android:visibility='@{s10q1a.checked? View.VISIBLE : View.GONE}' />
+                        android:visibility='@{s10q1a.checked? View.VISIBLE : View.GONE}'
+                        app:maxValue="70"
+                        app:minValue="11"
+                        app:type="range" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s10q1bx"
@@ -77,7 +81,10 @@
                         android:maxLength="2"
                         android:padding="15dp"
                         android:text='@{s10q1b.checked? s10q1bx.getText().toString() : ""}'
-                        android:visibility='@{s10q1b.checked? View.VISIBLE : View.GONE}' />
+                        android:visibility='@{s10q1b.checked? View.VISIBLE : View.GONE}'
+                        app:maxValue="70"
+                        app:minValue="11"
+                        app:type="range" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s10q1cx"
@@ -86,7 +93,10 @@
                         android:maxLength="2"
                         android:padding="15dp"
                         android:text='@{s10q1c.checked? s10q1cx.getText().toString() : ""}'
-                        android:visibility='@{s10q1c.checked? View.VISIBLE : View.GONE}' />
+                        android:visibility='@{s10q1c.checked? View.VISIBLE : View.GONE}'
+                        app:maxValue="70"
+                        app:minValue="11"
+                        app:type="range" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s10q1dx"
@@ -95,7 +105,10 @@
                         android:maxLength="2"
                         android:padding="15dp"
                         android:text='@{s10q1d.checked? s10q1dx.getText().toString() : ""}'
-                        android:visibility='@{s10q1d.checked? View.VISIBLE : View.GONE}' />
+                        android:visibility='@{s10q1d.checked? View.VISIBLE : View.GONE}'
+                        app:maxValue="70"
+                        app:minValue="11"
+                        app:type="range" />
 
                 </LinearLayout>
 
@@ -117,12 +130,14 @@
                         android:gravity="center"
                         android:text="@string/s10q2" />
 
-                    <EditText
+
+                    <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                         android:id="@+id/s10q2"
-                        style="@style/EditTextAlphaNumeric"
+                        style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/s10q2" />
+                        android:hint="@string/s10q2"
+                        app:maxDate="CR_DATE" />
 
                 </LinearLayout>
 

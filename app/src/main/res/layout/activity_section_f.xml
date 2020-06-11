@@ -1579,23 +1579,27 @@
                     <CheckBox
                         android:id="@+id/s6q1898"
                         style="@style/checkbox"
+                        android:tag="-1"
                         android:text="@string/s6q1898" />
 
-                    <EditText
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s6q18ax"
                         style="@style/EditTextNum"
                         android:hint="@string/s6q18a"
                         android:maxLength="3"
                         app:maxValue="500"
-                        app:minValue="0" />
+                        app:minValue="0"
+                        app:type="range" />
 
-                    <EditText
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s6q18bx"
                         style="@style/EditTextNum"
                         android:hint="@string/s6q18b"
                         android:maxLength="1"
                         app:maxValue="7"
-                        app:minValue="0" />
+                        app:minValue="0"
+                        app:type="range" />
 
                 </LinearLayout>
 

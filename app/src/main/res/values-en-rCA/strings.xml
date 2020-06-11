@@ -2657,46 +2657,28 @@
     <!--  SECTION G -->
     <string name="secg"> SECTION G: Hand Washing </string>
 
-    <string name="s7q1"> S7Q1: Please show us where you and members of your household most often wash their hands.</string>
-    <string name="s7q101"> Observed</string>
-    <string name="s7q102"> Not observed  </string>
-    <string name="s7q103"> Not in dwelling/plot/yard</string>
-    <string name="s7q104"> No permission to see </string>
-    <string name="s7q105"> Other reason </string>
+    <string name="s7q1"> S7Q1: Do you have any soap or detergent in your household for hand washing ? </string>
+    <string name="s7q101"> Yes</string>
+    <string name="s7q102"> No</string>
 
-    <string name="s7q2"> S7Q2: Observe presence of water at the specific place for hand washing</string>
-    <string name="s7q201"> Water is available </string>
-    <string name="s7q202"> Water is not available</string>
+    <string name="s7q2"> S7Q2: If yes, can you please show it to me ? </string>
+    <string name="s7q201"> Bar soap</string>
+    <string name="s7q202"> Detergent (powder/liquid/paste) </string>
+    <string name="s7q203"> Liquid soap </string>
+    <string name="s7q204"> Ash/mud/sand  </string>
+    <string name="s7q205"> None</string>
 
-    <string name="s7q3"> S7Q3: Record if soap or detergent is present at the specific place for hand washing۔</string>
-    <string name="s7q301"> Bar soap  </string>
-    <string name="s7q302"> Detergent (powder/liquid/paste) </string>
-    <string name="s7q303"> Liquid soap</string>
-    <string name="s7q304"> Ash/mud/sand  </string>
-    <string name="s7q305"> None</string>
-
-    <string name="s7q4"> S7Q4: Do you have any soap or detergent in your household for hand washing ? </string>
-    <string name="s7q401"> Yes</string>
-    <string name="s7q402"> No</string>
-
-    <string name="s7q5"> S7Q5: If yes, can you please show it to me ? </string>
-    <string name="s7q501"> Bar soap</string>
-    <string name="s7q502"> Detergent (powder/liquid/paste) </string>
-    <string name="s7q503"> Liquid soap </string>
-    <string name="s7q504"> Ash/mud/sand  </string>
-    <string name="s7q505"> None</string>
-
-    <string name="s7q6"> S7Q6: In what situations do you wash your hands with soap?  This is an open-ended question. Do not read the answer choices.  After the respondent stops listing times, ask “Are there any other situations where you wash your hands with soap?” Keep asking this question until the respondent thinks there are no other times. </string>
-    <string name="s7q601"> Before preparing food</string>
-    <string name="s7q602"> Before cooking food</string>
-    <string name="s7q603"> Before eating</string>
-    <string name="s7q604"> Before feeding a child</string>
-    <string name="s7q605"> Before breastfeeding</string>
-    <string name="s7q606"> After cleaning a child’s anus</string>
-    <string name="s7q607"> After changing a baby’s nappy</string>
-    <string name="s7q608"> After disposing of children’s feces</string>
-    <string name="s7q609"> After you defecate</string>
-    <string name="s7q696"> Other (Specify)</string>
+    <string name="s7q3"> S7Q3: In what situations do you wash your hands with soap?  This is an open-ended question. Do not read the answer choices.  After the respondent stops listing times, ask “Are there any other situations where you wash your hands with soap?” Keep asking this question until the respondent thinks there are no other times. </string>
+    <string name="s7q301"> Before preparing food</string>
+    <string name="s7q302"> Before cooking food</string>
+    <string name="s7q303"> Before eating</string>
+    <string name="s7q304"> Before feeding a child</string>
+    <string name="s7q305"> Before breastfeeding</string>
+    <string name="s7q306"> After cleaning a child’s anus</string>
+    <string name="s7q307"> After changing a baby’s nappy</string>
+    <string name="s7q308"> After disposing of children’s feces</string>
+    <string name="s7q309"> After you defecate</string>
+    <string name="s7q396"> Other (Specify)</string>
 
 
     <!--  SECTION H -->
