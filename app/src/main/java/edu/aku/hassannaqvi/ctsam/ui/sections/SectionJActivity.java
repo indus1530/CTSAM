@@ -5,6 +5,9 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -16,8 +19,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -134,7 +135,7 @@ public class SectionJActivity extends AppCompatActivity {
                 : bi.s10q1b.isChecked() ? "2"
                 : bi.s10q1c.isChecked() ? "3"
                 : bi.s10q1d.isChecked() ? "4"
-                : "0");
+                : "1");
 
         json.put("s10q1ax", bi.s10q1ax.getText().toString());
         json.put("s10q1bx", bi.s10q1bx.getText().toString());
