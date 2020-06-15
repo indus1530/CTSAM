@@ -97,6 +97,10 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
     EditText mEmailView;
     @BindView(R.id.password)
     EditText mPasswordView;
+    @BindView(R.id.email2)
+    EditText mEmail2View;
+    @BindView(R.id.password2)
+    EditText mPassword2View;
     @BindView(R.id.txtinstalldate)
     TextView txtinstalldate;
     @BindView(R.id.email_sign_in_button)
@@ -269,6 +273,13 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
 
+        mEmail2View.setError(null);
+        mPassword2View.setError(null);
+
+        // Store values at the time of the login attempt.
+        String email2 = mEmail2View.getText().toString();
+        String password2 = mPassword2View.getText().toString();
+
         boolean cancel = false;
         View focusView = null;
 
@@ -386,6 +397,18 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         } else {
             mPasswordView.setTransformationMethod(null);
             mPasswordView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_lock_open_black_24dp, 0, 0, 0);
+        }
+    }
+
+    @OnClick(R.id.showPassword2)
+    void onShowPassword2Click() {
+        //TODO implement
+        if (mPassword2View.getTransformationMethod() == null) {
+            mPassword2View.setTransformationMethod(new PasswordTransformationMethod());
+            mPassword2View.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_lock_black_24dp, 0, 0, 0);
+        } else {
+            mPassword2View.setTransformationMethod(null);
+            mPassword2View.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_lock_open_black_24dp, 0, 0, 0);
         }
     }
 
@@ -679,14 +702,35 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             if (Objects.requireNonNull(mLocManager).isProviderEnabled(LocationManager.GPS_PROVIDER)) {
 
                 DatabaseHelper db = new DatabaseHelper(LoginActivity.this);
+
+                String email = mEmailView.getText().toString();
+                String email2 = mEmail2View.getText().toString();
+
+                if (email.equals(email2)) {
+                    Toast.makeText(LoginActivity.this, "Both Users Should Not Be Same", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 if ((mEmail.equals("dmu@aku") && mPassword.equals("aku?dmu")) ||
                         (mEmail.equals("guest@aku") && mPassword.equals("aku1234")) || db.Login(mEmail, mPassword)
                         || (mEmail.equals("test1234") && mPassword.equals("test1234"))) {
                     MainApp.userName = mEmail;
                     MainApp.admin = mEmail.contains("@");
 
-                    Intent iLogin = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(iLogin);
+                    if ((mEmail.equals("dmu@aku") && mPassword.equals("aku?dmu")) ||
+                            (mEmail.equals("guest@aku") && mPassword.equals("aku1234")) || db.Login(mEmail, mPassword)
+                            || (mEmail.equals("test1234") && mPassword.equals("test1234"))) {
+                        MainApp.userName = mEmail;
+                        MainApp.admin = mEmail.contains("@");
+
+                        Intent iLogin = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(iLogin);
+
+                    } else {
+                        mPassword2View.setError(getString(R.string.error_incorrect_password));
+                        mPassword2View.requestFocus();
+                        Toast.makeText(LoginActivity.this, mEmail + " " + mPassword, Toast.LENGTH_SHORT).show();
+                    }
 
                 } else {
                     mPasswordView.setError(getString(R.string.error_incorrect_password));
