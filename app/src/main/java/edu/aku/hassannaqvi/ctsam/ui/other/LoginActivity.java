@@ -309,7 +309,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
             showProgress(true);
-            mAuthTask = new UserLoginTask(email, password);
+            mAuthTask = new UserLoginTask(email, email2, password, password2);
             mAuthTask.execute((Void) null);
 
 
@@ -661,12 +661,14 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
      */
     public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
 
-        private final String mEmail;
-        private final String mPassword;
+        private final String mEmail, mEmail2;
+        private final String mPassword, mPassword2;
 
-        UserLoginTask(String email, String password) {
+        UserLoginTask(String email, String email2, String password, String password2) {
             mEmail = email;
             mPassword = password;
+            mEmail2 = email2;
+            mPassword2 = password2;
         }
 
 
@@ -714,14 +716,14 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
                 if ((mEmail.equals("dmu@aku") && mPassword.equals("aku?dmu")) ||
                         (mEmail.equals("guest@aku") && mPassword.equals("aku1234")) || db.Login(mEmail, mPassword)
                         || (mEmail.equals("test1234") && mPassword.equals("test1234"))) {
-                    MainApp.userName = mEmail;
+                    MainApp.users[1] = mEmail;
                     MainApp.admin = mEmail.contains("@");
 
-                    if ((mEmail.equals("dmu@aku") && mPassword.equals("aku?dmu")) ||
-                            (mEmail.equals("guest@aku") && mPassword.equals("aku1234")) || db.Login(mEmail, mPassword)
-                            || (mEmail.equals("test1234") && mPassword.equals("test1234"))) {
-                        MainApp.userName = mEmail;
-                        MainApp.admin = mEmail.contains("@");
+                    if ((mEmail2.equals("dmu@aku") && mPassword2.equals("aku?dmu")) ||
+                            (mEmail2.equals("guest@aku") && mPassword2.equals("aku1234")) || db.Login(mEmail2, mPassword2)
+                            || (mEmail2.equals("test1234") && mPassword2.equals("test1234"))) {
+                        MainApp.users[2] = mEmail2;
+                        MainApp.admin = mEmail2.contains("@");
 
                         Intent iLogin = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(iLogin);
@@ -729,7 +731,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
                     } else {
                         mPassword2View.setError(getString(R.string.error_incorrect_password));
                         mPassword2View.requestFocus();
-                        Toast.makeText(LoginActivity.this, mEmail + " " + mPassword, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, mEmail2 + " " + mPassword2, Toast.LENGTH_SHORT).show();
                     }
 
                 } else {

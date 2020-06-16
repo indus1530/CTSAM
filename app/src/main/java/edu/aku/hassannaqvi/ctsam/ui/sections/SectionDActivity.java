@@ -3,6 +3,9 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +17,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -28,6 +32,8 @@ import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.DateUtils;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
+import static edu.aku.hassannaqvi.ctsam.core.MainApp.users;
+
 public class SectionDActivity extends AppCompatActivity {
 
     ActivitySectionDBinding bi;
@@ -38,7 +44,10 @@ public class SectionDActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_d);
         bi.setCallback(this);
 
-        bi.s4q7dob.setMinDate(DateUtils.getMonthsBack("dd/MM/yyyy", -36));
+        bi.s4q7dob.setMinDate(DateUtils.getMonthsBack("dd/MM/yyyy", -59));
+        bi.s4q7dob.setMaxDate(DateUtils.getMonthsBack("dd/MM/yyyy", -6));
+
+        bi.user1.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, users));
 
         List<Integer> givenList = Arrays.asList(1, 2, 3, 4);
         Random rand = new Random();
@@ -74,6 +83,28 @@ public class SectionDActivity extends AppCompatActivity {
                 bi.s4q1c.setEnabled(false);
                 break;
         }
+
+        bi.user1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0) {
+                    bi.user2.setEnabled(false);
+                    bi.user2.setSelection(0);
+                    return;
+                }
+                bi.user2.setEnabled(true);
+                List<String> user2 = new ArrayList<>();
+                for (String item : users) {
+                    if (!item.equals(bi.user1.getSelectedItem().toString())) user2.add(item);
+                }
+                bi.user2.setAdapter(new ArrayAdapter<>(SectionDActivity.this, android.R.layout.simple_spinner_dropdown_item, user2));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
     }
 

@@ -94,9 +94,7 @@ public class MainApp extends Application {
 
     //userName = new ArrayList<String>("mEmail", "mEmail2");
 
-    public static String[] userName2 = {
-            "email", "email2"
-    };
+    public static String[] users = new String[]{"....", "", ""};
 
     public static String[] relationHHLst = {"Head of HH", "Wife/Husband", "Son/Daughters", "Son in law/Daughter in law", "Grand child", "Parents", "Parents in law",
             "Brother/Sister", "Brother in law/Sister in law", "Niece/Nephew", "Grand Parents", "Aunts/Uncle", "Adopted/Step child", "Domestic Servant", "Don’t Know"};

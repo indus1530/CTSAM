@@ -25,6 +25,7 @@ import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionJBinding;
 import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
+import edu.aku.hassannaqvi.ctsam.utils.DateUtils;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionJActivity extends AppCompatActivity {
@@ -36,6 +37,9 @@ public class SectionJActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_j);
         bi.setCallback(this);
+
+        bi.s10q2.setMinDate(DateUtils.getDaysBack("dd/MM/yyyy", 7));
+        bi.s10q2.setMaxDate(DateUtils.getDaysBack("dd/MM/yyyy", 14));
 
         List<Integer> givenList = Arrays.asList(1, 2, 3, 4);
         Random rand = new Random();
@@ -151,6 +155,7 @@ public class SectionJActivity extends AppCompatActivity {
 
 
     private boolean formValidation() {
+
         return Validator.emptyCheckingContainer(this, bi.fldGrpSectionJ);
     }
 
