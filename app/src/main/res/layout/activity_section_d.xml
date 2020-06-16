@@ -515,6 +515,34 @@
             </androidx.cardview.widget.CardView>
 
 
+            <!-- user1  Spinner   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVuser01"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/user1" />
+
+                    <Spinner
+                        android:id="@+id/user1"
+                        style="@style/spinner"
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
             <!-- meas01  Input   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVmeas01"
@@ -641,6 +669,32 @@
 
             </androidx.cardview.widget.CardView>
 
+            <!-- user2  Spinner   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVuser02"
+                style="@style/cardView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/user1" />
+
+                    <Spinner
+                        android:id="@+id/user2"
+                        style="@style/spinner"
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <!-- meas02  Input   -->
             <androidx.cardview.widget.CardView
