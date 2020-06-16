@@ -32,14 +32,9 @@ import edu.aku.hassannaqvi.ctsam.CONSTANTS;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.adapter.SyncListAdapter;
 import edu.aku.hassannaqvi.ctsam.adapter.UploadListAdapter;
-import edu.aku.hassannaqvi.ctsam.contracts.AnthroContract;
 import edu.aku.hassannaqvi.ctsam.contracts.ChildContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FamilyMembersContract;
-import edu.aku.hassannaqvi.ctsam.contracts.FoodFreqContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
-import edu.aku.hassannaqvi.ctsam.contracts.HbContract;
-import edu.aku.hassannaqvi.ctsam.contracts.IndexMWRAContract;
-import edu.aku.hassannaqvi.ctsam.contracts.VisionContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySyncBinding;
@@ -185,104 +180,12 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
             }
             new SyncAllData(
                     this,
-                    "Food Frequency",
-                    "updateSyncedFoodFreqForms",
-                    FoodFreqContract.class,
-                    MainApp._HOST_URL + MainApp._SERVER_URL,
-                    FoodFreqContract.SingleFoodFreq.TABLE_NAME,
-                    db.getUnsyncedFoodFrequency(), 2, uploadListAdapter, uploadlist
-            ).execute();
-
-            if (uploadlistActivityCreated) {
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
-            }
-            new SyncAllData(
-                    this,
-                    "Index MWRA",
-                    "updateSyncedMWRAForms",
-                    IndexMWRAContract.class,
-                    MainApp._HOST_URL + MainApp._SERVER_URL,
-                    IndexMWRAContract.MWRATable.TABLE_NAME,
-                    db.getUnsyncedMWRA(), 3, uploadListAdapter, uploadlist
-            ).execute();
-
-            if (uploadlistActivityCreated) {
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
-            }
-            new SyncAllData(
-                    this,
-                    "Section K1",
-                    "updateSyncedAnthroForms",
-                    AnthroContract.class,
-                    MainApp._HOST_URL + MainApp._SERVER_URL,
-                    AnthroContract.SingleAnthro.TABLE_NAMEK1,
-                    db.getUnsyncedAnthros(CONSTANTS.ANTHRO_K1), 4, uploadListAdapter, uploadlist
-            ).execute();
-
-
-            if (uploadlistActivityCreated) {
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
-            }
-            new SyncAllData(
-                    this,
-                    "Anthro",
-                    "updateSyncedAnthroForms",
-                    AnthroContract.class,
-                    MainApp._HOST_URL + MainApp._SERVER_URL,
-                    AnthroContract.SingleAnthro.TABLE_NAME,
-                    db.getUnsyncedAnthros(CONSTANTS.ANTHRO_K2), 5, uploadListAdapter, uploadlist
-            ).execute();
-
-
-            if (uploadlistActivityCreated) {
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
-            }
-            new SyncAllData(
-                    this,
                     "Family Members",
                     "updateSyncedFamilyMemForms",
                     FamilyMembersContract.class,
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     FamilyMembersContract.SingleMember.TABLE_NAME,
                     db.getAllFamilyMembersForms(), 6, uploadListAdapter, uploadlist
-            ).execute();
-
-            if (uploadlistActivityCreated) {
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
-            }
-            new SyncAllData(
-                    this,
-                    "HB",
-                    "updateSyncedHBForms",
-                    HbContract.class,
-                    MainApp._HOST_URL + MainApp._SERVER_URL,
-                    HbContract.hbTable.TABLE_NAME,
-                    db.getUnsyncedHB(), 7, uploadListAdapter, uploadlist
-            ).execute();
-
-            if (uploadlistActivityCreated) {
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
-            }
-            new SyncAllData(
-                    this,
-                    "Vision",
-                    "updateSyncedVCForms",
-                    VisionContract.class,
-                    MainApp._HOST_URL + MainApp._SERVER_URL,
-                    VisionContract.visionTable.TABLE_NAME,
-                    db.getUnsyncedVC(), 8, uploadListAdapter, uploadlist
             ).execute();
 
             bi.noDataItem.setVisibility(View.GONE);

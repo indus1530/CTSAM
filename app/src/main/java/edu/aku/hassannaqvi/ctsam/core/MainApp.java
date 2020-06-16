@@ -26,12 +26,9 @@ import androidx.databinding.DataBindingUtil;
 import java.util.List;
 
 import edu.aku.hassannaqvi.ctsam.R;
-import edu.aku.hassannaqvi.ctsam.contracts.AnthroContract;
 import edu.aku.hassannaqvi.ctsam.contracts.ChildContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FamilyMembersContract;
-import edu.aku.hassannaqvi.ctsam.contracts.FoodFreqContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
-import edu.aku.hassannaqvi.ctsam.contracts.IndexMWRAContract;
 import edu.aku.hassannaqvi.ctsam.databinding.CountAlertDialogLayoutBinding;
 import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import kotlin.Pair;
@@ -74,10 +71,7 @@ public class MainApp extends Application {
     public static AppInfo appInfo;
     public static Boolean admin = false;
     public static FormsContract fc;
-    public static FoodFreqContract foodFreq;
-    public static IndexMWRAContract indexMwra;
     public static ChildContract child;
-    public static AnthroContract anthro;
     public static FamilyMembersContract indexKishMWRA;
     public static FamilyMembersContract indexKishMWRAChild;
     public static Pair<List<Integer>, List<String>> mwraChildren;

@@ -1,15 +1,11 @@
 package edu.aku.hassannaqvi.ctsam.utils;
 
-import edu.aku.hassannaqvi.ctsam.contracts.AnthroContract.SingleAnthro;
 import edu.aku.hassannaqvi.ctsam.contracts.BLRandomContract.SingleRandomHH;
 import edu.aku.hassannaqvi.ctsam.contracts.ChildContract.SingleChild;
-import edu.aku.hassannaqvi.ctsam.contracts.DentalContract;
 import edu.aku.hassannaqvi.ctsam.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FamilyMembersContract;
-import edu.aku.hassannaqvi.ctsam.contracts.FoodFreqContract.SingleFoodFreq;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
-import edu.aku.hassannaqvi.ctsam.contracts.HbContract.hbTable;
-import edu.aku.hassannaqvi.ctsam.contracts.IndexMWRAContract.MWRATable;
+import edu.aku.hassannaqvi.ctsam.contracts.TalukasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.UsersContract;
 import edu.aku.hassannaqvi.ctsam.contracts.VersionAppContract;
 import edu.aku.hassannaqvi.ctsam.contracts.VisionContract;
@@ -62,14 +58,13 @@ public final class CreateTable {
             VersionAppContract.VersionAppTable.COLUMN_VERSION_NAME + " TEXT, " +
             VersionAppContract.VersionAppTable.COLUMN_PATH_NAME + " TEXT " +
             ");";
-/*
-    public static final String SQL_CREATE_TALUKAS = "CREATE TABLE " + TalukasContract.singleTalukas.TABLE_NAME + "("
-            + TalukasContract.singleTalukas._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + TalukasContract.singleTalukas.COLUMN_TALUKA_CODE + " TEXT,"
-            + TalukasContract.singleTalukas.COLUMN_TALUKA + " TEXT );";
+    public static final String SQL_CREATE_TALUKAS = "CREATE TABLE " + TalukasContract.SingleTalukas.TABLE_NAME + "("
+            + TalukasContract.SingleTalukas._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + TalukasContract.SingleTalukas.COLUMN_TALUKA_CODE + " TEXT,"
+            + TalukasContract.SingleTalukas.COLUMN_TALUKA + " TEXT );";
 
 
-    public static final String SQL_CREATE_UCS = "CREATE TABLE " + UCsContract.singleUCs.TABLE_NAME + "("
+  /*   public static final String SQL_CREATE_UCS = "CREATE TABLE " + UCsContract.singleUCs.TABLE_NAME + "("
             + UCsContract.singleUCs._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
             + UCsContract.singleUCs.COLUMN_UCCODE + " TEXT,"
             + UCsContract.singleUCs.COLUMN_TALUKA_CODE + " TEXT,"
@@ -102,52 +97,6 @@ public final class CreateTable {
             EnumBlockContract.EnumBlockTable.COLUMN_CLUSTER_AREA + " TEXT " +
             ");";
 
-    public static final String SQL_CREATE_KISH_TABLE = "CREATE TABLE " + SingleFoodFreq.TABLE_NAME + "("
-            + SingleFoodFreq._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + SingleFoodFreq.COLUMN_UID + " TEXT,"
-            + SingleFoodFreq.COLUMN__UUID + " TEXT,"
-            + SingleFoodFreq.COLUMN_DEVICEID + " TEXT,"
-            + SingleFoodFreq.COLUMN_FORMDATE + " TEXT,"
-            + SingleFoodFreq.COLUMN_USER + " TEXT,"
-            + SingleFoodFreq.COLUMN_SD1 + " TEXT,"
-            + SingleFoodFreq.COLUMN_SD2 + " TEXT,"
-            + SingleFoodFreq.COLUMN_SD3 + " TEXT,"
-            + SingleFoodFreq.COLUMN_SD4 + " TEXT,"
-            + SingleFoodFreq.COLUMN_SD5 + " TEXT,"
-            + SingleFoodFreq.COLUMN_SD6 + " TEXT,"
-            + SingleFoodFreq.COLUMN_SD7 + " TEXT,"
-            + SingleFoodFreq.COLUMN_SD8 + " TEXT,"
-            + SingleFoodFreq.COLUMN_SD9 + " TEXT,"
-            + SingleFoodFreq.COLUMN_DEVICETAGID + " TEXT,"
-            + SingleFoodFreq.COLUMN_SYNCED + " TEXT,"
-            + SingleFoodFreq.COLUMN_SYNCED_DATE + " TEXT );";
-
-    public static final String SQL_CREATE_MWRA_TABLE = "CREATE TABLE " + MWRATable.TABLE_NAME + "("
-            + MWRATable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + MWRATable.COLUMN_UID + " TEXT,"
-            + MWRATable.COLUMN_UUID + " TEXT,"
-            + MWRATable.COLUMN_FORMDATE + " TEXT,"
-            + MWRATable.COLUMN_DEVICEID + " TEXT,"
-            + MWRATable.COLUMN_USER + " TEXT,"
-            + MWRATable.COLUMN_SB1 + " TEXT,"
-            + MWRATable.COLUMN_SB2 + " TEXT,"
-            + MWRATable.COLUMN_SB3 + " TEXT,"
-            + MWRATable.COLUMN_DEVICETAGID + " TEXT,"
-            + MWRATable.COLUMN_SYNCED + " TEXT,"
-            + MWRATable.COLUMN_SYNCED_DATE + " TEXT );";
-
-    public static final String SQL_CREATE_HB = "CREATE TABLE " + hbTable.TABLE_NAME + "("
-            + hbTable._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + hbTable.COLUMN_UID + " TEXT,"
-            + hbTable.COLUMN__UUID + " TEXT,"
-            + hbTable.COLUMN_FORMDATE + " TEXT,"
-            + hbTable.COLUMN_DEVICEID + " TEXT,"
-            + hbTable.COLUMN_USER + " TEXT,"
-            + hbTable.COLUMN_SE2 + " TEXT,"
-            + hbTable.COLUMN_DEVICETAGID + " TEXT,"
-            + hbTable.COLUMN_SYNCED + " TEXT,"
-            + hbTable.COLUMN_SYNCED_DATE + " TEXT );";
-
     public static final String SQL_CREATE_CHILD_TABLE = "CREATE TABLE " + SingleChild.TABLE_NAME + "("
             + SingleChild._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
             + SingleChild.COLUMN_UID + " TEXT,"
@@ -167,22 +116,6 @@ public final class CreateTable {
             + SingleChild.COLUMN_DEVICETAGID + " TEXT,"
             + SingleChild.COLUMN_SYNCED + " TEXT,"
             + SingleChild.COLUMN_SYNCED_DATE + " TEXT );";
-
-
-    public static final String SQL_CREATE_ANTHRO = "CREATE TABLE " + SingleAnthro.TABLE_NAME + "("
-            + SingleAnthro._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + SingleAnthro.COLUMN_UID + " TEXT,"
-            + SingleAnthro.COLUMN__UUID + " TEXT,"
-            + SingleAnthro.COLUMN_DEVICEID + " TEXT,"
-            + SingleAnthro.COLUMN_FORMDATE + " TEXT,"
-            + SingleAnthro.COLUMN_USER + " TEXT,"
-            + SingleAnthro.COLUMN_SK1 + " TEXT,"
-            + SingleAnthro.COLUMN_FORMTYPE + " TEXT,"
-            + SingleAnthro.COLUMN_DEVICETAGID + " TEXT,"
-            + SingleAnthro.COLUMN_ISTATUS + " TEXT,"
-            + SingleAnthro.COLUMN_SYNCED + " TEXT,"
-            + SingleAnthro.COLUMN_SYNCED_DATE + " TEXT );";
-
 
     public static final String SQL_CREATE_FAMILY_MEMBERS = "CREATE TABLE " + FamilyMembersContract.SingleMember.TABLE_NAME + "("
             + FamilyMembersContract.SingleMember.COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
@@ -217,18 +150,5 @@ public final class CreateTable {
             + VisionContract.visionTable.COLUMN_DEVICETAGID + " TEXT,"
             + VisionContract.visionTable.COLUMN_SYNCED + " TEXT,"
             + VisionContract.visionTable.COLUMN_SYNCED_DATE + " TEXT );";
-
-
-    public static final String SQL_CREATE_DENTAL = "CREATE TABLE " + DentalContract.dentalTable.TABLE_NAME + "("
-            + DentalContract.dentalTable.COLUMN__ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + DentalContract.dentalTable.COLUMN_UID + " TEXT,"
-            + DentalContract.dentalTable.COLUMN__UUID + " TEXT,"
-            + DentalContract.dentalTable.COLUMN_DEVICEID + " TEXT,"
-            + DentalContract.dentalTable.COLUMN_FORMDATE + " TEXT,"
-            + DentalContract.dentalTable.COLUMN_USER + " TEXT,"
-            + DentalContract.dentalTable.COLUMN_SE2 + " TEXT,"
-            + DentalContract.dentalTable.COLUMN_DEVICETAGID + " TEXT,"
-            + DentalContract.dentalTable.COLUMN_SYNCED + " TEXT,"
-            + DentalContract.dentalTable.COLUMN_SYNCED_DATE + " TEXT );";
 
 }

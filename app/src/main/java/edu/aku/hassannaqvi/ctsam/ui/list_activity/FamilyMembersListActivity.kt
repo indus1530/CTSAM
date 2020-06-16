@@ -19,8 +19,6 @@ import edu.aku.hassannaqvi.ctsam.core.MainApp.*
 import edu.aku.hassannaqvi.ctsam.databinding.ActivityFamilyMembersListBinding
 import edu.aku.hassannaqvi.ctsam.otherClasses.KishGrid
 import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionA2Activity
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionA31Activity
 import edu.aku.hassannaqvi.ctsam.utils.Util
 import edu.aku.hassannaqvi.ctsam.viewmodel.MainVModel
 import kotlinx.android.synthetic.main.activity_family_members_list.*
@@ -82,7 +80,7 @@ class FamilyMembersListActivity : AppCompatActivity() {
                         run {
                             when (item.id) {
                                 0 -> {
-                                    startActivityForResult(Intent(this, SectionA2Activity::class.java).putExtra(SERIAL_EXTRA, serial), CONSTANTS.MEMBER_ITEM)
+//                                    startActivityForResult(Intent(this, SectionA2Activity::class.java).putExtra(SERIAL_EXTRA, serial), CONSTANTS.MEMBER_ITEM)
                                 }
                                 1 -> {
                                     if (memSelectedCounter == 0) return@run
@@ -105,7 +103,7 @@ class FamilyMembersListActivity : AppCompatActivity() {
                                             val indexChildUpdate = async { updateKishMember(indexKishMWRAChild, 2) }
                                             if (indexMwraUpdate.await().let { true } and indexChildUpdate.await().let { true }) {
                                                 finish()
-                                                startActivity(Intent(this@FamilyMembersListActivity, SectionA31Activity::class.java))
+//                                                startActivity(Intent(this@FamilyMembersListActivity, SectionA31Activity::class.java))
                                             }
                                         }
                                     } else {
@@ -148,8 +146,8 @@ class FamilyMembersListActivity : AppCompatActivity() {
 
                 currentFM = item
 
-                startActivityForResult(Intent(this, SectionA2Activity::class.java)
-                        .putExtra(SERIAL_EXTRA, item.serialno.toInt()), CONSTANTS.MEMBER_ITEM)
+                /*startActivityForResult(Intent(this, SectionA2Activity::class.java)
+                        .putExtra(SERIAL_EXTRA, item.serialno.toInt()), CONSTANTS.MEMBER_ITEM)*/
 
             }
 

@@ -94,8 +94,8 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="##-###"
-                        android:maxLength="5"
-                        app:mask="##-###" />
+                        app:mask="##-###"
+                        app:pattern="^(\\d{2,2}\\-\\d{3,3})$" />
 
                 </LinearLayout>
 

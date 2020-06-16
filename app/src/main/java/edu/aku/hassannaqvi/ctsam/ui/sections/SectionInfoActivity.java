@@ -1,6 +1,5 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -24,10 +23,6 @@ import edu.aku.hassannaqvi.ctsam.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionInfoBinding;
-import edu.aku.hassannaqvi.ctsam.viewmodel.MainRepository;
-
-import static edu.aku.hassannaqvi.ctsam.utils.UtilsExtensionsKt.checkSDCardAvailability;
-import static edu.aku.hassannaqvi.ctsam.utils.UtilsExtensionsKt.getImageSaveDirectory;
 
 public class SectionInfoActivity extends AppCompatActivity {
 
@@ -96,26 +91,6 @@ public class SectionInfoActivity extends AppCompatActivity {
 
 
     public void BtnContinue() {
-        if (selectedBTN == 1) new MainRepository(this, famList);
-        else if (selectedBTN == 2) startActivity(new Intent(this, SectionLActivity.class));
-        else if (selectedBTN == 3) startActivity(new Intent(this, SectionMActivity.class));
-        else storageSelection();
-    }
-
-    private void storageSelection() {
-        //CheckSDCard and assigning directory name
-        boolean value = checkSDCardAvailability();
-        if (!value) {
-            Toast.makeText(this, "Attach SD-Card", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        outputDirectory = getImageSaveDirectory(this, MainApp.indexKishMWRA.getClusterno(), MainApp.indexKishMWRA.getHhno());
-        if (!outputDirectory.exists()) {
-            Toast.makeText(this, "Can't able to create folder. Kindly contact IT Services.", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        startActivity(new Intent(this, SectionDentalActivity.class));
     }
 
     public void BtnCheckCluster() {

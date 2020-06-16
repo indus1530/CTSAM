@@ -16,7 +16,6 @@ import java.util.List;
 import java.util.Objects;
 
 import edu.aku.hassannaqvi.ctsam.R;
-import edu.aku.hassannaqvi.ctsam.ui.other.AnthroEndingActivity;
 import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 
 public class Util {
@@ -74,28 +73,6 @@ public class Util {
 
     }
 
-
-    public static void openAnthroEndActivity(Activity activity) {
-        Dialog dialog = new Dialog(activity);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.item_dialog_2);
-        dialog.setCancelable(false);
-        WindowManager.LayoutParams params = new WindowManager.LayoutParams();
-        params.copyFrom(dialog.getWindow().getAttributes());
-        params.width = WindowManager.LayoutParams.WRAP_CONTENT;
-        params.height = WindowManager.LayoutParams.WRAP_CONTENT;
-        dialog.show();
-        dialog.getWindow().setAttributes(params);
-
-        dialog.findViewById(R.id.btnOk).setOnClickListener(view -> {
-            activity.finish();
-            activity.startActivity(new Intent(activity, AnthroEndingActivity.class).putExtra("complete", false));
-        });
-        dialog.findViewById(R.id.btnNo).setOnClickListener(view -> dialog.dismiss());
-
-    }
-
-
     public static void openAnthroAlert(Activity activity) {
         Dialog dialog = new Dialog(activity);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -116,7 +93,7 @@ public class Util {
 
 
     public static Integer getMemberIcon(int gender, String age) {
-        int memAge = Integer.valueOf(age);
+        int memAge = Integer.parseInt(age);
         if (memAge == -1) return R.drawable.boy;
         else if (memAge > 10) return gender == 1 ? R.drawable.ctr_male : R.drawable.ctr_female;
         else return gender == 1 ? R.drawable.ctr_childboy : R.drawable.ctr_childgirl;

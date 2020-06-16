@@ -3,6 +3,8 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,6 +33,7 @@ import edu.aku.hassannaqvi.ctsam.utils.Util;
 public class SectionDActivity extends AppCompatActivity {
 
     ActivitySectionDBinding bi;
+    boolean studyIDFlag = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +77,31 @@ public class SectionDActivity extends AppCompatActivity {
                 bi.s4q1c.setEnabled(false);
                 break;
         }
+
+        bi.s4q2.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                bi.s4q2.setError(null);
+                if (!bi.s4q2.isTextEqualToPattern()) return;
+                String[] splitStudy = bi.s4q2.getText().toString().split("-");
+                int first_part = Integer.parseInt(splitStudy[0]);
+                if (first_part < 1 || first_part > 10) {
+                    bi.s4q2.setError("Pattern not match: XX-XXX");
+                    studyIDFlag = true;
+                }
+                studyIDFlag = false;
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
 
     }
 
@@ -184,18 +212,11 @@ public class SectionDActivity extends AppCompatActivity {
 
     private boolean formValidation() {
 
-        if (!Validator.emptyCheckingContainer(this, bi.GrpName)) {
+        if (!Validator.emptyCheckingContainer(this, bi.GrpName)) return false;
+        if (studyIDFlag) {
+            Toast.makeText(this, "StudyID is not validating!", Toast.LENGTH_SHORT).show();
             return false;
         }
-
-        String study_id;
-        study_id = bi.s4q2.getText().toString().trim();
-
-        if (1 == 1) {
-            Toast.makeText(this, "This Study ID already exists", Toast.LENGTH_LONG).show();
-            return false;
-        }
-
         return true;
     }
 

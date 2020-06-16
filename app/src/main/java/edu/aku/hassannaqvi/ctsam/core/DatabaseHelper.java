@@ -18,27 +18,18 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-import edu.aku.hassannaqvi.ctsam.contracts.AnthroContract;
-import edu.aku.hassannaqvi.ctsam.contracts.AnthroContract.SingleAnthro;
 import edu.aku.hassannaqvi.ctsam.contracts.AreasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.AreasContract.singleAreas;
 import edu.aku.hassannaqvi.ctsam.contracts.BLRandomContract;
 import edu.aku.hassannaqvi.ctsam.contracts.BLRandomContract.SingleRandomHH;
 import edu.aku.hassannaqvi.ctsam.contracts.ChildContract;
 import edu.aku.hassannaqvi.ctsam.contracts.ChildContract.SingleChild;
-import edu.aku.hassannaqvi.ctsam.contracts.DentalContract;
 import edu.aku.hassannaqvi.ctsam.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.ctsam.contracts.EnumBlockContract.EnumBlockTable;
 import edu.aku.hassannaqvi.ctsam.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FamilyMembersContract.SingleMember;
-import edu.aku.hassannaqvi.ctsam.contracts.FoodFreqContract;
-import edu.aku.hassannaqvi.ctsam.contracts.FoodFreqContract.SingleFoodFreq;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract.FormsTable;
-import edu.aku.hassannaqvi.ctsam.contracts.HbContract;
-import edu.aku.hassannaqvi.ctsam.contracts.HbContract.hbTable;
-import edu.aku.hassannaqvi.ctsam.contracts.IndexMWRAContract;
-import edu.aku.hassannaqvi.ctsam.contracts.IndexMWRAContract.MWRATable;
 import edu.aku.hassannaqvi.ctsam.contracts.TalukasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.UCsContract;
 import edu.aku.hassannaqvi.ctsam.contracts.UsersContract;
@@ -50,15 +41,12 @@ import edu.aku.hassannaqvi.ctsam.contracts.VisionContract;
 
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.DATABASE_NAME;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.DATABASE_VERSION;
-import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_ANTHRO;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_BL_RANDOM;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_CHILD_TABLE;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_FAMILY_MEMBERS;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_FORMS;
-import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_HB;
-import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_KISH_TABLE;
-import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_MWRA_TABLE;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_PSU_TABLE;
+import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_TALUKAS;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_USERS;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_VERSIONAPP;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_VISION;
@@ -71,7 +59,7 @@ import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_VISION;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String SQL_DELETE_VILLAGES = "DROP TABLE IF EXISTS " + SingleVillage.TABLE_NAME;
-    private static final String SQL_DELETE_TALUKAS = "DROP TABLE IF EXISTS " + TalukasContract.singleTalukas.TABLE_NAME;
+    private static final String SQL_DELETE_TALUKAS = "DROP TABLE IF EXISTS " + TalukasContract.SingleTalukas.TABLE_NAME;
     private static final String SQL_DELETE_UCS = "DROP TABLE IF EXISTS " + UCsContract.singleUCs.TABLE_NAME;
     private static final String SQL_DELETE_AREAS = "DROP TABLE IF EXISTS " + singleAreas.TABLE_NAME;
 
@@ -91,13 +79,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_PSU_TABLE);
         db.execSQL(SQL_CREATE_BL_RANDOM);
         db.execSQL(SQL_CREATE_VERSIONAPP);
+        db.execSQL(SQL_CREATE_TALUKAS);
         db.execSQL(SQL_CREATE_FAMILY_MEMBERS);
-        db.execSQL(SQL_CREATE_KISH_TABLE);
-        db.execSQL(SQL_CREATE_MWRA_TABLE);
         db.execSQL(SQL_CREATE_CHILD_TABLE);
-        db.execSQL(SQL_CREATE_ANTHRO);
         db.execSQL(SQL_CREATE_VISION);
-        db.execSQL(SQL_CREATE_HB);
     }
 
     @Override
@@ -188,21 +173,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public void syncTalukas(JSONArray Talukaslist) {
         SQLiteDatabase db = this.getWritableDatabase();
-        db.delete(TalukasContract.singleTalukas.TABLE_NAME, null, null);
+        db.delete(TalukasContract.SingleTalukas.TABLE_NAME, null, null);
         try {
             JSONArray jsonArray = Talukaslist;
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObjectCC = jsonArray.getJSONObject(i);
 
                 TalukasContract Vc = new TalukasContract();
-                Vc.Sync(jsonObjectCC);
+                Vc.sync(jsonObjectCC);
 
                 ContentValues values = new ContentValues();
 
-                values.put(TalukasContract.singleTalukas.COLUMN_TALUKA_CODE, Vc.getTalukacode());
-                values.put(TalukasContract.singleTalukas.COLUMN_TALUKA, Vc.getTaluka());
+                values.put(TalukasContract.SingleTalukas.COLUMN_TALUKA_CODE, Vc.getTalukacode());
+                values.put(TalukasContract.SingleTalukas.COLUMN_TALUKA, Vc.getTaluka());
 
-                db.insert(TalukasContract.singleTalukas.TABLE_NAME, null, values);
+                db.insert(TalukasContract.SingleTalukas.TABLE_NAME, null, values);
             }
         } catch (Exception e) {
         } finally {
@@ -348,8 +333,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                TalukasContract.singleTalukas.COLUMN_TALUKA_CODE,
-                TalukasContract.singleTalukas.COLUMN_TALUKA
+                TalukasContract.SingleTalukas.COLUMN_TALUKA_CODE,
+                TalukasContract.SingleTalukas.COLUMN_TALUKA
         };
 
         String whereClause = null;
@@ -358,12 +343,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String having = null;
 
         String orderBy =
-                TalukasContract.singleTalukas.COLUMN_TALUKA + " ASC";
+                TalukasContract.SingleTalukas.COLUMN_TALUKA + " ASC";
 
         Collection<TalukasContract> allDC = new ArrayList<>();
         try {
             c = db.query(
-                    TalukasContract.singleTalukas.TABLE_NAME,  // The table to query
+                    TalukasContract.SingleTalukas.TABLE_NAME,  // The table to query
                     columns,                   // The columns to return
                     whereClause,               // The columns for the WHERE clause
                     whereArgs,                 // The values for the WHERE clause
@@ -373,7 +358,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             );
             while (c.moveToNext()) {
                 TalukasContract dc = new TalukasContract();
-                allDC.add(dc.HydrateTalukas(c));
+                allDC.add(dc.hydrateTalukas(c));
             }
         } finally {
             if (c != null) {
@@ -692,165 +677,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return newRowId;
     }
 
-    public Long addAnthro(AnthroContract morc) {
-
-        // Gets the data repository in write mode
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        // Create a new map of values, where column names are the keys
-        ContentValues values = new ContentValues();
-        values.put(SingleAnthro.COLUMN__UUID, morc.get_UUID());
-        values.put(SingleAnthro.COLUMN_DEVICEID, morc.getDeviceId());
-        values.put(SingleAnthro.COLUMN_DEVICETAGID, morc.getDevicetagID());
-        values.put(SingleAnthro.COLUMN_ISTATUS, morc.getIstatus());
-        values.put(SingleAnthro.COLUMN_FORMDATE, morc.getFormDate());
-        values.put(SingleAnthro.COLUMN_USER, morc.getUser());
-        values.put(SingleAnthro.COLUMN_SK1, morc.getsK1());
-        values.put(SingleAnthro.COLUMN_FORMTYPE, morc.getFormType());
-        values.put(SingleAnthro.COLUMN_ISTATUS, morc.getsK1());
-        // Insert the new row, returning the primary key value of the new row
-        long newRowId;
-        newRowId = db.insert(
-                SingleAnthro.TABLE_NAME,
-                SingleAnthro.COLUMN_NAME_NULLABLE,
-                values);
-        return newRowId;
-    }
-
-    public Long addFoodFreq(FoodFreqContract foodFreq) {
-
-        // Gets the data repository in write mode
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        // Create a new map of values, where column names are the keys
-        ContentValues values = new ContentValues();
-
-        values.put(SingleFoodFreq.COLUMN_UID, foodFreq.getUID());
-        values.put(SingleFoodFreq.COLUMN__UUID, foodFreq.get_UUID());
-        values.put(SingleFoodFreq.COLUMN_DEVICEID, foodFreq.getDeviceId());
-        values.put(SingleFoodFreq.COLUMN_FORMDATE, foodFreq.getFormDate());
-        values.put(SingleFoodFreq.COLUMN_USER, foodFreq.getUser());
-        values.put(SingleFoodFreq.COLUMN_SD1, foodFreq.getsD1());
-        values.put(SingleFoodFreq.COLUMN_SD2, foodFreq.getsD2());
-        values.put(SingleFoodFreq.COLUMN_SD3, foodFreq.getsD3());
-        values.put(SingleFoodFreq.COLUMN_SD4, foodFreq.getsD4());
-        values.put(SingleFoodFreq.COLUMN_SD5, foodFreq.getsD5());
-        values.put(SingleFoodFreq.COLUMN_SD6, foodFreq.getsD6());
-        values.put(SingleFoodFreq.COLUMN_SD7, foodFreq.getsD7());
-        values.put(SingleFoodFreq.COLUMN_SD8, foodFreq.getsD8());
-        values.put(SingleFoodFreq.COLUMN_SD9, foodFreq.getsD9());
-        values.put(SingleFoodFreq.COLUMN_DEVICETAGID, foodFreq.getDevicetagID());
-
-        // Insert the new row, returning the primary key value of the new row
-        long newRowId;
-        newRowId = db.insert(
-                SingleFoodFreq.TABLE_NAME,
-                SingleFoodFreq.COLUMN_NAME_NULLABLE,
-                values);
-        return newRowId;
-    }
-
-    public Long addMWRA(IndexMWRAContract mwra) {
-
-        // Gets the data repository in write mode
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        // Create a new map of values, where column names are the keys
-        ContentValues values = new ContentValues();
-        //values.put(MWRATable._ID, indexMwra.get_ID());
-        values.put(MWRATable.COLUMN_UUID, mwra.get_UUID());
-        values.put(MWRATable.COLUMN_DEVICEID, mwra.getDeviceId());
-        values.put(MWRATable.COLUMN_FORMDATE, mwra.getFormDate());
-        values.put(MWRATable.COLUMN_USER, mwra.getUser());
-        values.put(MWRATable.COLUMN_DEVICETAGID, mwra.getDevicetagID());
-        values.put(MWRATable.COLUMN_SB1, mwra.getsB1());
-        values.put(MWRATable.COLUMN_SB2, mwra.getsB2());
-        values.put(MWRATable.COLUMN_SB3, mwra.getsB3());
-
-        // Insert the new row, returning the primary key value of the new row
-        long newRowId;
-        newRowId = db.insert(
-                MWRATable.TABLE_NAME,
-                null,
-                values);
-        return newRowId;
-    }
-
-    public Long addChild(ChildContract childContract) {
-
-        // Gets the data repository in write mode
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        // Create a new map of values, where column names are the keys
-        ContentValues values = new ContentValues();
-        values.put(SingleChild.COLUMN__UUID, childContract.get_UUID());
-        values.put(SingleChild.COLUMN_DEVICEID, childContract.getDeviceId());
-        values.put(SingleChild.COLUMN_FORMDATE, childContract.getFormDate());
-        values.put(SingleChild.COLUMN_USER, childContract.getUser());
-        values.put(SingleChild.COLUMN_SC1, childContract.getsC1());
-        values.put(SingleChild.COLUMN_SC2, childContract.getsC2());
-        values.put(SingleChild.COLUMN_SC3, childContract.getsC3());
-        values.put(SingleChild.COLUMN_SC4, childContract.getsC4());
-        values.put(SingleChild.COLUMN_SC5, childContract.getsC5());
-        values.put(SingleChild.COLUMN_SC6, childContract.getsC6());
-
-        values.put(SingleChild.COLUMN_DEVICETAGID, childContract.getDevicetagID());
-
-
-        // Insert the new row, returning the primary key value of the new row
-        long newRowId;
-        newRowId = db.insert(
-                SingleChild.TABLE_NAME,
-                null,
-                values);
-        return newRowId;
-    }
-
-    public Long addDental(DentalContract dc) {
-
-        // Gets the data repository in write mode
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues values = new ContentValues();
-        values.put(DentalContract.dentalTable.COLUMN__UUID, dc.get_UUID());
-        values.put(DentalContract.dentalTable.COLUMN_DEVICEID, dc.getDeviceId());
-        values.put(DentalContract.dentalTable.COLUMN_FORMDATE, dc.getFormDate());
-        values.put(DentalContract.dentalTable.COLUMN_USER, dc.getUser());
-        values.put(DentalContract.dentalTable.COLUMN_DEVICETAGID, dc.getDevicetagID());
-        values.put(DentalContract.dentalTable.COLUMN_SE2, dc.getsE2());
-
-        // Insert the new row, returning the primary key value of the new row
-        long newRowId;
-        newRowId = db.insert(
-                DentalContract.dentalTable.TABLE_NAME,
-                null,
-                values);
-        return newRowId;
-    }
-
-    public Long addHB(HbContract hb) {
-
-        // Gets the data repository in write mode
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        // Create a new map of values, where column names are the keys
-        ContentValues values = new ContentValues();
-        values.put(hbTable.COLUMN__UUID, hb.get_UUID());
-        values.put(hbTable.COLUMN_DEVICEID, hb.getDeviceId());
-        values.put(hbTable.COLUMN_FORMDATE, hb.getFormDate());
-        values.put(hbTable.COLUMN_USER, hb.getUser());
-        values.put(hbTable.COLUMN_DEVICETAGID, hb.getDevicetagID());
-        values.put(hbTable.COLUMN_SE2, hb.getsE2());
-
-        // Insert the new row, returning the primary key value of the new row
-        long newRowId;
-        newRowId = db.insert(
-                hbTable.TABLE_NAME,
-                null,
-                values);
-        return newRowId;
-    }
-
     public Long addVision(VisionContract vc) {
 
         // Gets the data repository in write mode
@@ -918,7 +744,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
-
     public int updateEnding() {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -931,23 +756,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] selectionArgs = {String.valueOf(MainApp.fc.get_ID())};
 
         int count = db.update(FormsTable.TABLE_NAME,
-                values,
-                selection,
-                selectionArgs);
-        return count;
-    }
-
-
-    public int updateAnthroEnding() {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        ContentValues values = new ContentValues();
-        values.put(SingleAnthro.COLUMN_ISTATUS, MainApp.anthro.getIstatus());
-
-        String selection = SingleAnthro.COLUMN__ID + " =? ";
-        String[] selectionArgs = {String.valueOf(MainApp.anthro.get_ID())};
-
-        int count = db.update(SingleAnthro.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -1215,38 +1023,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 selectionArgs);
     }
 
-    //Generic update DentalColumn
-    public int updatesDentalColumn(String column, String value, DentalContract dc) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        ContentValues values = new ContentValues();
-        values.put(column, value);
-
-        String selection = DentalContract.dentalTable._ID + " =? ";
-        String[] selectionArgs = {String.valueOf(dc.get_ID())};
-
-        return db.update(DentalContract.dentalTable.TABLE_NAME,
-                values,
-                selection,
-                selectionArgs);
-    }
-
-    //Generic update HBColumn
-    public int updatesHBColumn(String column, String value, HbContract hb) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        ContentValues values = new ContentValues();
-        values.put(column, value);
-
-        String selection = hbTable._ID + " =? ";
-        String[] selectionArgs = {String.valueOf(hb.get_ID())};
-
-        return db.update(hbTable.TABLE_NAME,
-                values,
-                selection,
-                selectionArgs);
-    }
-
     //Generic update VisionColumn
     public int updatesVisionColumn(String column, String value, VisionContract vc) {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -1258,54 +1034,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String[] selectionArgs = {String.valueOf(vc.get_ID())};
 
         return db.update(VisionContract.visionTable.TABLE_NAME,
-                values,
-                selection,
-                selectionArgs);
-    }
-
-    //Generic update MortalityColumn
-    public int updatesAnthroColumn(String column, String value) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        ContentValues values = new ContentValues();
-        values.put(column, value);
-
-        String selection = SingleAnthro._ID + " =? ";
-        String[] selectionArgs = {String.valueOf(MainApp.anthro.get_ID())};
-
-        return db.update(SingleAnthro.TABLE_NAME,
-                values,
-                selection,
-                selectionArgs);
-    }
-
-    //Generic update FoodFreqColumn
-    public int updatesFoodFreqColumn(String column, String value) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        ContentValues values = new ContentValues();
-        values.put(column, value);
-
-        String selection = SingleFoodFreq._ID + " =? ";
-        String[] selectionArgs = {String.valueOf(MainApp.foodFreq.get_ID())};
-
-        return db.update(SingleFoodFreq.TABLE_NAME,
-                values,
-                selection,
-                selectionArgs);
-    }
-
-    //Generic update MWRAColumn
-    public int updatesIndexMWRAColumn(String column, String value) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        ContentValues values = new ContentValues();
-        values.put(column, value);
-
-        String selection = MWRATable._ID + " =? ";
-        String[] selectionArgs = {String.valueOf(MainApp.indexMwra.get_ID())};
-
-        return db.update(MWRATable.TABLE_NAME,
                 values,
                 selection,
                 selectionArgs);
@@ -1382,303 +1110,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             }
         }
         return allFC;
-    }
-
-    public Collection<IndexMWRAContract> getUnsyncedMWRA() {
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor c = null;
-        String[] columns = {
-                IndexMWRAContract.MWRATable.COLUMN_ID,
-                IndexMWRAContract.MWRATable.COLUMN_UID,
-                IndexMWRAContract.MWRATable.COLUMN_UUID,
-                IndexMWRAContract.MWRATable.COLUMN_FORMDATE,
-                IndexMWRAContract.MWRATable.COLUMN_USER,
-                IndexMWRAContract.MWRATable.COLUMN_SB1,
-                IndexMWRAContract.MWRATable.COLUMN_SB2,
-                IndexMWRAContract.MWRATable.COLUMN_SB3,
-                IndexMWRAContract.MWRATable.COLUMN_DEVICEID,
-                IndexMWRAContract.MWRATable.COLUMN_DEVICETAGID
-        };
-        String whereClause = IndexMWRAContract.MWRATable.COLUMN_SYNCED + " is null";
-        String[] whereArgs = null;
-        String groupBy = null;
-        String having = null;
-
-        String orderBy =
-                IndexMWRAContract.MWRATable.COLUMN_ID + " ASC";
-
-        Collection<IndexMWRAContract> allMC = new ArrayList<IndexMWRAContract>();
-        try {
-            c = db.query(
-                    IndexMWRAContract.MWRATable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                IndexMWRAContract mc = new IndexMWRAContract();
-                allMC.add(mc.Hydrate(c));
-            }
-        } finally {
-            if (c != null) {
-                c.close();
-            }
-            if (db != null) {
-                db.close();
-            }
-        }
-        return allMC;
-    }
-
-    public Collection<DentalContract> getUnsyncedDC() {
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor c = null;
-        String[] columns = {
-                DentalContract.dentalTable._ID,
-                DentalContract.dentalTable.COLUMN_UID,
-                DentalContract.dentalTable.COLUMN__UUID,
-                DentalContract.dentalTable.COLUMN_DEVICEID,
-                DentalContract.dentalTable.COLUMN_FORMDATE,
-                DentalContract.dentalTable.COLUMN_USER,
-                DentalContract.dentalTable.COLUMN_SE2,
-                DentalContract.dentalTable.COLUMN_DEVICETAGID,
-
-        };
-        String whereClause = DentalContract.dentalTable.COLUMN_SYNCED + " is null";
-        String[] whereArgs = null;
-        String groupBy = null;
-        String having = null;
-
-        String orderBy =
-                DentalContract.dentalTable._ID + " ASC";
-
-        Collection<DentalContract> allDC = new ArrayList<DentalContract>();
-        try {
-            c = db.query(
-                    DentalContract.dentalTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                DentalContract dc = new DentalContract();
-                allDC.add(dc.hydrate(c));
-            }
-        } finally {
-            if (c != null) {
-                c.close();
-            }
-            if (db != null) {
-                db.close();
-            }
-        }
-        return allDC;
-    }
-
-    public Collection<HbContract> getUnsyncedHB() {
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor c = null;
-        String[] columns = {
-                hbTable._ID,
-                hbTable.COLUMN_UID,
-                hbTable.COLUMN__UUID,
-                hbTable.COLUMN_DEVICEID,
-                hbTable.COLUMN_FORMDATE,
-                hbTable.COLUMN_USER,
-                hbTable.COLUMN_SE2,
-                hbTable.COLUMN_DEVICETAGID,
-
-        };
-        String whereClause = hbTable.COLUMN_SYNCED + " is null";
-        String[] whereArgs = null;
-        String groupBy = null;
-        String having = null;
-
-        String orderBy =
-                hbTable._ID + " ASC";
-
-        Collection<HbContract> allMC = new ArrayList<HbContract>();
-        try {
-            c = db.query(
-                    hbTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                HbContract mc = new HbContract();
-                allMC.add(mc.hydrate(c));
-            }
-        } finally {
-            if (c != null) {
-                c.close();
-            }
-            if (db != null) {
-                db.close();
-            }
-        }
-        return allMC;
-    }
-
-    public Collection<VisionContract> getUnsyncedVC() {
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor c = null;
-        String[] columns = {
-                VisionContract.visionTable._ID,
-                VisionContract.visionTable.COLUMN_UID,
-                VisionContract.visionTable.COLUMN__UUID,
-                VisionContract.visionTable.COLUMN_DEVICEID,
-                VisionContract.visionTable.COLUMN_FORMDATE,
-                VisionContract.visionTable.COLUMN_USER,
-                VisionContract.visionTable.COLUMN_SE2,
-                VisionContract.visionTable.COLUMN_DEVICETAGID,
-
-        };
-        String whereClause = VisionContract.visionTable.COLUMN_SYNCED + " is null";
-        String[] whereArgs = null;
-        String groupBy = null;
-        String having = null;
-
-        String orderBy =
-                VisionContract.visionTable._ID + " ASC";
-
-        Collection<VisionContract> allVC = new ArrayList<VisionContract>();
-        try {
-            c = db.query(
-                    VisionContract.visionTable.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                VisionContract vc = new VisionContract();
-                allVC.add(vc.hydrate(c));
-            }
-        } finally {
-            if (c != null) {
-                c.close();
-            }
-            if (db != null) {
-                db.close();
-            }
-        }
-        return allVC;
-    }
-
-    public Collection<AnthroContract> getUnsyncedAnthros(String formType) {
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor c = null;
-        String[] columns = {
-                SingleAnthro._ID,
-                SingleAnthro.COLUMN_UID,
-                SingleAnthro.COLUMN__UUID,
-                SingleAnthro.COLUMN_DEVICEID,
-                SingleAnthro.COLUMN_DEVICETAGID,
-                SingleAnthro.COLUMN_ISTATUS,
-                SingleAnthro.COLUMN_FORMDATE,
-                SingleAnthro.COLUMN_USER,
-                SingleAnthro.COLUMN_SK1,
-                SingleAnthro.COLUMN_FORMTYPE,
-        };
-        String whereClause = hbTable.COLUMN_SYNCED + " is null AND " + SingleAnthro.COLUMN_FORMTYPE + "=?";
-        String[] whereArgs = {formType};
-        String groupBy = null;
-        String having = null;
-
-        String orderBy =
-                hbTable._ID + " ASC";
-
-        Collection<AnthroContract> allMC = new ArrayList<>();
-        try {
-            c = db.query(
-                    SingleAnthro.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                AnthroContract mc = new AnthroContract();
-                allMC.add(mc.hydrate(c));
-            }
-        } finally {
-            if (c != null) {
-                c.close();
-            }
-            if (db != null) {
-                db.close();
-            }
-        }
-        return allMC;
-    }
-
-    public Collection<FoodFreqContract> getUnsyncedFoodFrequency() {
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor c = null;
-        String[] columns = {
-                SingleFoodFreq._ID,
-                SingleFoodFreq.COLUMN_UID,
-                SingleFoodFreq.COLUMN__UUID,
-                SingleFoodFreq.COLUMN_DEVICEID,
-                SingleFoodFreq.COLUMN_FORMDATE,
-                SingleFoodFreq.COLUMN_USER,
-                SingleFoodFreq.COLUMN_SD1,
-                SingleFoodFreq.COLUMN_SD2,
-                SingleFoodFreq.COLUMN_SD3,
-                SingleFoodFreq.COLUMN_SD4,
-                SingleFoodFreq.COLUMN_SD5,
-                SingleFoodFreq.COLUMN_SD6,
-                SingleFoodFreq.COLUMN_SD7,
-                SingleFoodFreq.COLUMN_SD8,
-                SingleFoodFreq.COLUMN_SD9,
-                SingleFoodFreq.COLUMN_DEVICETAGID,
-        };
-        String whereClause = SingleFoodFreq.COLUMN_SYNCED + " is null";
-        String[] whereArgs = null;
-        String groupBy = null;
-        String having = null;
-
-        String orderBy =
-                SingleFoodFreq._ID + " ASC";
-
-        Collection<FoodFreqContract> allMC = new ArrayList<FoodFreqContract>();
-        try {
-            c = db.query(
-                    SingleFoodFreq.TABLE_NAME,  // The table to query
-                    columns,                   // The columns to return
-                    whereClause,               // The columns for the WHERE clause
-                    whereArgs,                 // The values for the WHERE clause
-                    groupBy,                   // don't group the rows
-                    having,                    // don't filter by row groups
-                    orderBy                    // The sort order
-            );
-            while (c.moveToNext()) {
-                FoodFreqContract mc = new FoodFreqContract();
-                allMC.add(mc.hydrate(c));
-            }
-        } finally {
-            if (c != null) {
-                c.close();
-            }
-            if (db != null) {
-                db.close();
-            }
-        }
-        return allMC;
     }
 
     public Collection<FormsContract> getUnsyncedForms() {
@@ -1893,82 +1324,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
-    public void updateSyncedFoodFreqForms(String id) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-// New value for one column
-        ContentValues values = new ContentValues();
-        values.put(SingleFoodFreq.COLUMN_SYNCED, true);
-        values.put(SingleFoodFreq.COLUMN_SYNCED_DATE, new Date().toString());
-
-// Which row to update, based on the title
-        String where = SingleFoodFreq._ID + " = ?";
-        String[] whereArgs = {id};
-
-        int count = db.update(
-                SingleFoodFreq.TABLE_NAME,
-                values,
-                where,
-                whereArgs);
-    }
-
-    public void updateSyncedAnthroForms(String id) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-// New value for one column
-        ContentValues values = new ContentValues();
-        values.put(SingleAnthro.COLUMN_SYNCED, true);
-        values.put(SingleAnthro.COLUMN_SYNCED_DATE, new Date().toString());
-
-// Which row to update, based on the title
-        String where = SingleAnthro._ID + " = ?";
-        String[] whereArgs = {id};
-
-        int count = db.update(
-                SingleAnthro.TABLE_NAME,
-                values,
-                where,
-                whereArgs);
-    }
-
-    public void updateSyncedDCForms(String id) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-// New value for one column
-        ContentValues values = new ContentValues();
-        values.put(DentalContract.dentalTable.COLUMN_SYNCED, true);
-        values.put(DentalContract.dentalTable.COLUMN_SYNCED_DATE, new Date().toString());
-
-// Which row to update, based on the title
-        String where = DentalContract.dentalTable._ID + " = ?";
-        String[] whereArgs = {id};
-
-        int count = db.update(
-                DentalContract.dentalTable.TABLE_NAME,
-                values,
-                where,
-                whereArgs);
-    }
-
-    public void updateSyncedHBForms(String id) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-// New value for one column
-        ContentValues values = new ContentValues();
-        values.put(hbTable.COLUMN_SYNCED, true);
-        values.put(hbTable.COLUMN_SYNCED_DATE, new Date().toString());
-
-// Which row to update, based on the title
-        String where = hbTable._ID + " = ?";
-        String[] whereArgs = {id};
-
-        int count = db.update(
-                hbTable.TABLE_NAME,
-                values,
-                where,
-                whereArgs);
-    }
-
     public void updateSyncedVCForms(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -2002,25 +1357,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         int count = db.update(
                 SingleMember.TABLE_NAME,
-                values,
-                where,
-                whereArgs);
-    }
-
-    public void updateSyncedMWRAForms(String id) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-// New value for one column
-        ContentValues values = new ContentValues();
-        values.put(MWRATable.COLUMN_SYNCED, true);
-        values.put(MWRATable.COLUMN_SYNCED_DATE, new Date().toString());
-
-// Which row to update, based on the title
-        String where = MWRATable._ID + " = ?";
-        String[] whereArgs = {id};
-
-        int count = db.update(
-                MWRATable.TABLE_NAME,
                 values,
                 where,
                 whereArgs);

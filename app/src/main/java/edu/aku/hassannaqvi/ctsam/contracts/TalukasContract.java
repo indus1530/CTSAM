@@ -17,15 +17,15 @@ public class TalukasContract {
         // Default Constructor
     }
 
-    public TalukasContract Sync(JSONObject jsonObject) throws JSONException {
-        this.talukacode = jsonObject.getString(singleTalukas.COLUMN_TALUKA_CODE);
-        this.taluka = jsonObject.getString(singleTalukas.COLUMN_TALUKA);
+    public TalukasContract sync(JSONObject jsonObject) throws JSONException {
+        this.talukacode = jsonObject.getString(SingleTalukas.COLUMN_TALUKA_CODE);
+        this.taluka = jsonObject.getString(SingleTalukas.COLUMN_TALUKA);
         return this;
     }
 
-    public TalukasContract HydrateTalukas(Cursor cursor) {
-        this.talukacode = cursor.getString(cursor.getColumnIndex(singleTalukas.COLUMN_TALUKA_CODE));
-        this.taluka = cursor.getString(cursor.getColumnIndex(singleTalukas.COLUMN_TALUKA));
+    public TalukasContract hydrateTalukas(Cursor cursor) {
+        this.talukacode = cursor.getString(cursor.getColumnIndex(SingleTalukas.COLUMN_TALUKA_CODE));
+        this.taluka = cursor.getString(cursor.getColumnIndex(SingleTalukas.COLUMN_TALUKA));
         return this;
     }
 
@@ -48,13 +48,13 @@ public class TalukasContract {
     public JSONObject toJSONObject() throws JSONException {
 
         JSONObject json = new JSONObject();
-        json.put(singleTalukas.COLUMN_TALUKA_CODE, this.talukacode == null ? JSONObject.NULL : this.talukacode);
-        json.put(singleTalukas.COLUMN_TALUKA, this.taluka == null ? JSONObject.NULL : this.taluka);
+        json.put(SingleTalukas.COLUMN_TALUKA_CODE, this.talukacode == null ? JSONObject.NULL : this.talukacode);
+        json.put(SingleTalukas.COLUMN_TALUKA, this.taluka == null ? JSONObject.NULL : this.taluka);
         return json;
     }
 
 
-    public static abstract class singleTalukas implements BaseColumns {
+    public static abstract class SingleTalukas implements BaseColumns {
 
         public static final String TABLE_NAME = "talukas";
         public static final String COLUMN_TALUKA_CODE = "taluka_code";
