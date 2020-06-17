@@ -306,7 +306,15 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                         model.setstatusID(0);
                         list.add(model);
                     }
-                    new GetAllData(mContext, "Taluka", syncListAdapter, list).execute(distID);
+                    new GetAllData(mContext, "Taluka", syncListAdapter, list).execute();
+                    bi.noItem.setVisibility(View.GONE);
+
+                    if (listActivityCreated) {
+                        model = new SyncModel();
+                        model.setstatusID(0);
+                        list.add(model);
+                    }
+                    new GetAllData(mContext, "HealthFacilities", syncListAdapter, list).execute();
                     bi.noItem.setVisibility(View.GONE);
 
                 } else {

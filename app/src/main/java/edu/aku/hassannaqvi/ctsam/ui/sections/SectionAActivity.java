@@ -3,7 +3,8 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
@@ -23,6 +24,8 @@ import java.util.List;
 
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
+import edu.aku.hassannaqvi.ctsam.contracts.HealthFacilitiesContract;
+import edu.aku.hassannaqvi.ctsam.contracts.TalukasContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionABinding;
@@ -34,8 +37,8 @@ public class SectionAActivity extends AppCompatActivity {
     private static final String TAG = "";
     public static FormsContract fc;
     ActivitySectionABinding bi;
-    public List<String> talukaName, ucName, villageName, usersName, teamLeadName;
-    public List<String> talukaCode, ucCode, villageCode, usersCode, teamLeadCode;
+    public List<String> talukaName, ucName, villageName, usersName, teamLeadName, healthFacilityCode;
+    public List<String> talukaCode, ucCode, villageCode, usersCode, teamLeadCode, healthFacilityName;
     private DatabaseHelper db;
 
     @Override
@@ -44,12 +47,12 @@ public class SectionAActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_a);
         bi.setCallback(this);
         setupSkips();
-
     }
 
 
     private void setupSkips() {
-
+        db = new DatabaseHelper(this);
+        populateSpinner(this);
         /*bi.s1q8.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == bi.s1q8b.getId()) {
                 bi.fldGrpCVs1q8r.setVisibility(View.VISIBLE);
@@ -159,9 +162,8 @@ public class SectionAActivity extends AppCompatActivity {
         talukaName.add("....");
         talukaCode.add("....");
 
-        Collection<edu.aku.hassannaqvi.ctsam.contracts.TalukasContract> dc = db.getTalukas();
-        Log.d(TAG, "onCreate: " + dc.size());
-        for (edu.aku.hassannaqvi.ctsam.contracts.TalukasContract d : dc) {
+        Collection<TalukasContract> dc = db.getTalukas();
+        for (TalukasContract d : dc) {
             talukaName.add(d.getTaluka());
             talukaCode.add(d.getTalukacode());
         }
@@ -174,5 +176,33 @@ public class SectionAActivity extends AppCompatActivity {
 
         // attaching data adapter to spinner
         bi.s1q2.setAdapter(dataAdapter);
+
+        bi.s1q2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                healthFacilityCode = new ArrayList<>();
+                healthFacilityName = new ArrayList<>();
+
+
+                healthFacilityCode.add("....");
+                healthFacilityName.add("....");
+
+                Collection<HealthFacilitiesContract> pc = db.getHealthFacilities(talukaCode.get(position));
+                for (HealthFacilitiesContract p : pc) {
+                    healthFacilityCode.add(p.getFacilityCode());
+                    healthFacilityName.add(p.getFacilityName());
+                }
+                ArrayAdapter<String> psuAdapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_dropdown_item, healthFacilityName);
+
+                psuAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                bi.s1q1.setAdapter(psuAdapter);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 }

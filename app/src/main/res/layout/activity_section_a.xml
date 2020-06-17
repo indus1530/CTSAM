@@ -20,32 +20,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- s1q1  Spinner   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs1q1"
-                style="@style/cardView">
-
-                <LinearLayout style="@style/hlinearlayout">
-
-                    <TextView
-                        style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/s1q1" />
-
-                    <Spinner
-                        android:id="@+id/s1q1"
-                        style="@style/spinner"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:hint="@string/name" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
             <!-- s1q2  Spinner   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs1q2"
@@ -67,6 +41,33 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/s1q2" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- s1q1  Spinner   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVs1q1"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/hlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/s1q1" />
+
+                    <Spinner
+                        android:id="@+id/s1q1"
+                        style="@style/spinner"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/name" />
 
                 </LinearLayout>
 

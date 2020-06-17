@@ -30,6 +30,7 @@ import edu.aku.hassannaqvi.ctsam.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FamilyMembersContract.SingleMember;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract.FormsTable;
+import edu.aku.hassannaqvi.ctsam.contracts.HealthFacilitiesContract;
 import edu.aku.hassannaqvi.ctsam.contracts.TalukasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.UCsContract;
 import edu.aku.hassannaqvi.ctsam.contracts.UsersContract;
@@ -45,6 +46,7 @@ import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_BL_RANDOM;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_CHILD_TABLE;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_FAMILY_MEMBERS;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_FORMS;
+import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_HEALTH_FACILITIES;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_PSU_TABLE;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_TALUKAS;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_USERS;
@@ -80,6 +82,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_BL_RANDOM);
         db.execSQL(SQL_CREATE_VERSIONAPP);
         db.execSQL(SQL_CREATE_TALUKAS);
+        db.execSQL(SQL_CREATE_HEALTH_FACILITIES);
         db.execSQL(SQL_CREATE_FAMILY_MEMBERS);
         db.execSQL(SQL_CREATE_CHILD_TABLE);
         db.execSQL(SQL_CREATE_VISION);
@@ -188,6 +191,32 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 values.put(TalukasContract.SingleTalukas.COLUMN_TALUKA, Vc.getTaluka());
 
                 db.insert(TalukasContract.SingleTalukas.TABLE_NAME, null, values);
+            }
+        } catch (Exception e) {
+        } finally {
+            db.close();
+        }
+    }
+
+
+    public void syncHealthFacilities(JSONArray HealthFacilitylist) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(HealthFacilitiesContract.SingleHealthFacilities.TABLE_NAME, null, null);
+        try {
+            JSONArray jsonArray = HealthFacilitylist;
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObjectCC = jsonArray.getJSONObject(i);
+
+                HealthFacilitiesContract Vc = new HealthFacilitiesContract();
+                Vc.sync(jsonObjectCC);
+
+                ContentValues values = new ContentValues();
+
+                values.put(HealthFacilitiesContract.SingleHealthFacilities.COLUMN_FACILITY_CODE, Vc.getFacilityCode());
+                values.put(HealthFacilitiesContract.SingleHealthFacilities.COLUMN_FACILITY_NAME, Vc.getFacilityName());
+                values.put(HealthFacilitiesContract.SingleHealthFacilities.COLUMN_TALUKA_CODE, Vc.getTalukaCode());
+
+                db.insert(HealthFacilitiesContract.SingleHealthFacilities.TABLE_NAME, null, values);
             }
         } catch (Exception e) {
         } finally {
@@ -1364,7 +1393,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     //Get All Talukas
-    public List<edu.aku.hassannaqvi.ctsam.contracts.TalukasContract> getTalukas() {
+    public List<TalukasContract> getTalukas() {
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
@@ -1404,4 +1433,47 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return allEB;
     }
 
+
+    //Get All Health Facilities
+    public List<HealthFacilitiesContract> getHealthFacilities(String talukaCode) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+                HealthFacilitiesContract.SingleHealthFacilities._ID,
+                HealthFacilitiesContract.SingleHealthFacilities.COLUMN_FACILITY_CODE,
+                HealthFacilitiesContract.SingleHealthFacilities.COLUMN_FACILITY_NAME,
+                HealthFacilitiesContract.SingleHealthFacilities.COLUMN_TALUKA_CODE,
+        };
+
+        String whereClause = HealthFacilitiesContract.SingleHealthFacilities.COLUMN_TALUKA_CODE + " =?";
+        String[] whereArgs = {talukaCode};
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = null;
+        List<HealthFacilitiesContract> allEB = new ArrayList<>();
+        try {
+            c = db.query(
+                    HealthFacilitiesContract.SingleHealthFacilities.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                allEB.add(new HealthFacilitiesContract().hydrateHealthFacilities(c));
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allEB;
+    }
 }
