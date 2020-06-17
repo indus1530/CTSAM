@@ -24,13 +24,6 @@
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme1">
 
-
-        <provider
-            android:name=".otherClasses.FamilyMemContentProvider"
-            android:authorities="com.ctsam.familymember"
-            android:enabled="true"
-            android:exported="true" />
-
         <activity
             android:name=".ui.other.SplashscreenActivity"
             android:screenOrientation="portrait">

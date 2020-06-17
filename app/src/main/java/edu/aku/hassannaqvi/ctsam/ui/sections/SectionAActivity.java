@@ -1,8 +1,14 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 
 import com.validatorcrawler.aliazaz.Validator;
 
@@ -10,10 +16,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -24,7 +31,12 @@ import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionAActivity extends AppCompatActivity {
 
+    private static final String TAG = "";
+    public static FormsContract fc;
     ActivitySectionABinding bi;
+    public List<String> talukaName, ucName, villageName, usersName, teamLeadName;
+    public List<String> talukaCode, ucCode, villageCode, usersCode, teamLeadCode;
+    private DatabaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -139,5 +151,28 @@ public class SectionAActivity extends AppCompatActivity {
         }
     }
 
+    public void populateSpinner(final Context context) {
+        // Spinner Drop down elements
+        talukaName = new ArrayList<>();
+        talukaCode = new ArrayList<>();
 
+        talukaName.add("....");
+        talukaCode.add("....");
+
+        Collection<edu.aku.hassannaqvi.ctsam.contracts.TalukasContract> dc = db.getTalukas();
+        Log.d(TAG, "onCreate: " + dc.size());
+        for (edu.aku.hassannaqvi.ctsam.contracts.TalukasContract d : dc) {
+            talukaName.add(d.getTaluka());
+            talukaCode.add(d.getTalukacode());
+        }
+
+        // Creating adapter for spinner
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_dropdown_item, talukaName);
+
+        // Drop down layout style - list view with radio button
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // attaching data adapter to spinner
+        bi.s1q2.setAdapter(dataAdapter);
+    }
 }

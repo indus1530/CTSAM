@@ -1362,4 +1362,46 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 whereArgs);
     }
 
+
+    //Get All Talukas
+    public List<edu.aku.hassannaqvi.ctsam.contracts.TalukasContract> getTalukas() {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = null;
+        String[] columns = {
+                TalukasContract.SingleTalukas.COLUMN_TALUKA_CODE,
+                TalukasContract.SingleTalukas.COLUMN_TALUKA
+        };
+
+        String whereClause = null;
+        String[] whereArgs = null;
+        String groupBy = null;
+        String having = null;
+
+        String orderBy = TalukasContract.SingleTalukas.COLUMN_TALUKA_CODE + " ASC";
+        List<TalukasContract> allEB = new ArrayList<>();
+        try {
+            c = db.query(
+                    TalukasContract.SingleTalukas.TABLE_NAME,  // The table to query
+                    columns,                   // The columns to return
+                    whereClause,               // The columns for the WHERE clause
+                    whereArgs,                 // The values for the WHERE clause
+                    groupBy,                   // don't group the rows
+                    having,                    // don't filter by row groups
+                    orderBy                    // The sort order
+            );
+            while (c.moveToNext()) {
+                allEB.add(new TalukasContract().hydrateTalukas(c));
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return allEB;
+    }
+
 }
