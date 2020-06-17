@@ -20,8 +20,7 @@ import java.net.URL;
 import java.util.List;
 
 import edu.aku.hassannaqvi.ctsam.adapter.SyncListAdapter;
-import edu.aku.hassannaqvi.ctsam.contracts.BLRandomContract;
-import edu.aku.hassannaqvi.ctsam.contracts.EnumBlockContract;
+import edu.aku.hassannaqvi.ctsam.contracts.TalukasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.UsersContract;
 import edu.aku.hassannaqvi.ctsam.contracts.VersionAppContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -34,15 +33,13 @@ import edu.aku.hassannaqvi.ctsam.otherClasses.SyncModel;
 
 public class GetAllData extends AsyncTask<String, String, String> {
 
-    HttpURLConnection urlConnection;
-    SyncListAdapter adapter;
-    List<SyncModel> list;
-    int position;
-    private String TAG = "";
+    private HttpURLConnection urlConnection;
+    private SyncListAdapter adapter;
+    private List<SyncModel> list;
+    private int position;
+    private String TAG = "", syncClass;
     private Context mContext;
     private ProgressDialog pd;
-    private String syncClass;
-
 
     public GetAllData(Context context, String syncClass) {
         mContext = context;
@@ -63,11 +60,8 @@ public class GetAllData extends AsyncTask<String, String, String> {
             case "VersionApp":
                 position = 1;
                 break;
-            case "EnumBlock":
-                position = 0;
-                break;
-            case "BLRandom":
-                position = 1;
+            case "Taluka":
+                position = 2;
                 break;
         }
         list.get(position).settableName(syncClass);
@@ -97,11 +91,8 @@ public class GetAllData extends AsyncTask<String, String, String> {
             case "VersionApp":
                 position = 1;
                 break;
-            case "EnumBlock":
-                position = 0;
-                break;
-            case "BLRandom":
-                position = 1;
+            case "Taluka":
+                position = 2;
                 break;
         }
         list.get(position).setstatus("Syncing");
@@ -114,25 +105,24 @@ public class GetAllData extends AsyncTask<String, String, String> {
     protected String doInBackground(String... args) {
 
         StringBuilder result = new StringBuilder();
+        String tableName = "";
 
         URL url = null;
         try {
             switch (syncClass) {
                 case "User":
-                    url = new URL(MainApp._HOST_URL + UsersContract.SingleUser._URI);
+                    url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
+                    tableName = UsersContract.SingleUser.TABLE_NAME;
                     position = 0;
                     break;
                 case "VersionApp":
                     url = new URL(MainApp._UPDATE_URL + VersionAppContract.VersionAppTable._URI);
                     position = 1;
                     break;
-                case "EnumBlock":
-                    url = new URL(MainApp._HOST_URL + EnumBlockContract.EnumBlockTable._URI);
-                    position = 0;
-                    break;
-                case "BLRandom":
-                    url = new URL(MainApp._HOST_URL + BLRandomContract.SingleRandomHH._URI);
-                    position = 1;
+                case "Taluka":
+                    url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
+                    tableName = TalukasContract.SingleTalukas.TABLE_NAME;
+                    position = 2;
                     break;
             }
 
@@ -141,36 +131,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
             urlConnection.setConnectTimeout(150000 /* milliseconds */);
 
             switch (syncClass) {
-                case "EnumBlock":
-                case "BLRandom":
-
-                    if (args[0] != null && !args[0].equals("")) {
-                        if (Integer.valueOf(args[0]) > 0) {
-                            urlConnection.setRequestMethod("POST");
-                            urlConnection.setDoOutput(true);
-                            urlConnection.setDoInput(true);
-                            urlConnection.setRequestProperty("Content-Type", "application/json");
-                            urlConnection.setRequestProperty("charset", "utf-8");
-                            urlConnection.setUseCaches(false);
-
-                            // Starts the query
-                            urlConnection.connect();
-                            DataOutputStream wr = new DataOutputStream(urlConnection.getOutputStream());
-                            JSONObject json = new JSONObject();
-                            try {
-                                json.put("dist_id", args[0]);
-                                json.put("user", "test1234");
-                            } catch (JSONException e1) {
-                                e1.printStackTrace();
-                            }
-                            Log.d(TAG, "downloadUrl: " + json.toString());
-                            wr.writeBytes(json.toString());
-                            wr.flush();
-                            wr.close();
-                        }
-                    }
-                    break;
-
+                case "Taluka":
                 case "User":
                     urlConnection.setRequestMethod("POST");
                     urlConnection.setDoOutput(true);
@@ -184,7 +145,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
                     DataOutputStream wr = new DataOutputStream(urlConnection.getOutputStream());
                     JSONObject json = new JSONObject();
                     try {
-                        json.put("user", "test1234");
+                        json.put("table", tableName);
                     } catch (JSONException e1) {
                         e1.printStackTrace();
                     }
@@ -239,13 +200,9 @@ public class GetAllData extends AsyncTask<String, String, String> {
                             db.syncVersionApp(jsonArray);
                             position = 1;
                             break;
-                        case "EnumBlock":
-                            db.syncEnumBlocks(jsonArray);
-                            position = 0;
-                            break;
-                        case "BLRandom":
-                            db.syncBLRandom(jsonArray);
-                            position = 1;
+                        case "Taluka":
+                            db.syncTalukas(jsonArray);
+                            position = 2;
                             break;
 
                     }
