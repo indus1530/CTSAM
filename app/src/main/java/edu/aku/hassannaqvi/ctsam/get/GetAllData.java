@@ -220,7 +220,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
 
                         case "HealthFacilities":
                             db.syncHealthFacilities(jsonArray);
-                            position = 2;
+                            position = 3;
                             break;
                     }
 
