@@ -12,18 +12,17 @@ import org.json.JSONObject;
 
 public class VillagesContract {
 
-
-    private String areaCode;
     private String villagecode;
     private String villagename;
+    private String hf_code;
 
 
     public VillagesContract() {
     }
 
 
-    public String getAreaCode() {
-        return areaCode;
+    public String getHFCode() {
+        return hf_code;
     }
 
     public String getVillagecode() {
@@ -35,7 +34,7 @@ public class VillagesContract {
     }
 
     public VillagesContract sync(JSONObject jsonObject) throws JSONException {
-        this.areaCode = jsonObject.getString(SingleVillage.COLUMN_AREA_CODE);
+        this.hf_code = jsonObject.getString(SingleVillage.COLUMN_HF_CODE);
         this.villagecode = jsonObject.getString(SingleVillage.COLUMN_VILLAGE_CODE);
         this.villagename = jsonObject.getString(SingleVillage.COLUMN_VILLAGE_NAME);
 
@@ -43,7 +42,7 @@ public class VillagesContract {
     }
 
     public VillagesContract hydrate(Cursor cursor) {
-        this.areaCode = cursor.getString(cursor.getColumnIndex(SingleVillage.COLUMN_AREA_CODE));
+        this.hf_code = cursor.getString(cursor.getColumnIndex(SingleVillage.COLUMN_HF_CODE));
         this.villagecode = cursor.getString(cursor.getColumnIndex(SingleVillage.COLUMN_VILLAGE_CODE));
         this.villagename = cursor.getString(cursor.getColumnIndex(SingleVillage.COLUMN_VILLAGE_NAME));
 
@@ -55,9 +54,9 @@ public class VillagesContract {
 
         public static final String TABLE_NAME = "villages";
         public static final String _ID = "_id";
-        public static final String COLUMN_AREA_CODE = "area_code";
         public static final String COLUMN_VILLAGE_CODE = "village_code";
         public static final String COLUMN_VILLAGE_NAME = "village_name";
+        public static final String COLUMN_HF_CODE = "hf_code";
 
         public static final String _URI = "villages.php";
     }

@@ -9,6 +9,7 @@ import edu.aku.hassannaqvi.ctsam.contracts.HealthFacilitiesContract;
 import edu.aku.hassannaqvi.ctsam.contracts.TalukasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.UsersContract;
 import edu.aku.hassannaqvi.ctsam.contracts.VersionAppContract;
+import edu.aku.hassannaqvi.ctsam.contracts.VillagesContract;
 import edu.aku.hassannaqvi.ctsam.contracts.VisionContract;
 
 public final class CreateTable {
@@ -70,6 +71,12 @@ public final class CreateTable {
             + HealthFacilitiesContract.SingleHealthFacilities.COLUMN_FACILITY_CODE + " TEXT,"
             + HealthFacilitiesContract.SingleHealthFacilities.COLUMN_FACILITY_NAME + " TEXT,"
             + HealthFacilitiesContract.SingleHealthFacilities.COLUMN_TALUKA_CODE + " TEXT );";
+
+    public static final String SQL_CREATE_VILLAGES = "CREATE TABLE " + VillagesContract.SingleVillage.TABLE_NAME + "("
+            + VillagesContract.SingleVillage._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + VillagesContract.SingleVillage.COLUMN_VILLAGE_CODE + " TEXT,"
+            + VillagesContract.SingleVillage.COLUMN_VILLAGE_NAME + " TEXT,"
+            + VillagesContract.SingleVillage.COLUMN_HF_CODE + " TEXT );";
 
 
   /*   public static final String SQL_CREATE_UCS = "CREATE TABLE " + UCsContract.singleUCs.TABLE_NAME + "("

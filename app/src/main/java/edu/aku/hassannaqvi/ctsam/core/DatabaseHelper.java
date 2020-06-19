@@ -51,6 +51,7 @@ import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_PSU_TABLE;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_TALUKAS;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_USERS;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_VERSIONAPP;
+import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_VILLAGES;
 import static edu.aku.hassannaqvi.ctsam.utils.CreateTable.SQL_CREATE_VISION;
 
 
@@ -83,6 +84,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_VERSIONAPP);
         db.execSQL(SQL_CREATE_TALUKAS);
         db.execSQL(SQL_CREATE_HEALTH_FACILITIES);
+        db.execSQL(SQL_CREATE_VILLAGES);
         db.execSQL(SQL_CREATE_FAMILY_MEMBERS);
         db.execSQL(SQL_CREATE_CHILD_TABLE);
         db.execSQL(SQL_CREATE_VISION);
@@ -307,6 +309,32 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+
+    public void syncVillages(JSONArray Villageslist) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(VillagesContract.SingleVillage.TABLE_NAME, null, null);
+        try {
+            JSONArray jsonArray = Villageslist;
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObjectCC = jsonArray.getJSONObject(i);
+
+                VillagesContract Vc = new VillagesContract();
+                Vc.sync(jsonObjectCC);
+
+                ContentValues values = new ContentValues();
+
+                values.put(VillagesContract.SingleVillage.COLUMN_VILLAGE_CODE, Vc.getVillagecode());
+                values.put(VillagesContract.SingleVillage.COLUMN_VILLAGE_NAME, Vc.getVillagename());
+                values.put(SingleVillage.COLUMN_HF_CODE, Vc.getHFCode());
+
+                db.insert(VillagesContract.SingleVillage.TABLE_NAME, null, values);
+            }
+        } catch (Exception e) {
+        } finally {
+            db.close();
+        }
+    }
+
     //Get BLRandom data
     public BLRandomContract getHHFromBLRandom(String subAreaCode, String hh) {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -486,18 +514,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return allAC;
     }
 
-    public Collection<VillagesContract> getVillages(String areaCode) {
+    public Collection<VillagesContract> getVillages(String hf_code) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = null;
         String[] columns = {
-                SingleVillage.COLUMN_AREA_CODE,
+                SingleVillage.COLUMN_HF_CODE,
                 SingleVillage.COLUMN_VILLAGE_CODE,
                 SingleVillage.COLUMN_VILLAGE_NAME,
-
         };
 
-        String whereClause = SingleVillage.COLUMN_AREA_CODE + "=?";
-        String[] whereArgs = new String[]{String.valueOf(areaCode)};
+        String whereClause = SingleVillage.COLUMN_HF_CODE + "=?";
+        String[] whereArgs = new String[]{String.valueOf(hf_code)};
         String groupBy = null;
         String having = null;
 

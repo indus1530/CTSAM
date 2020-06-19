@@ -26,6 +26,7 @@ import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.contracts.HealthFacilitiesContract;
 import edu.aku.hassannaqvi.ctsam.contracts.TalukasContract;
+import edu.aku.hassannaqvi.ctsam.contracts.VillagesContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionABinding;
@@ -197,6 +198,35 @@ public class SectionAActivity extends AppCompatActivity {
 
                 psuAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 bi.s1q1.setAdapter(psuAdapter);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+
+        bi.s1q2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                villageCode = new ArrayList<>();
+                villageName = new ArrayList<>();
+
+
+                villageCode.add("....");
+                villageName.add("....");
+
+                Collection<VillagesContract> pc = db.getVillages(healthFacilityCode.get(position));
+                for (VillagesContract p : pc) {
+                    villageCode.add(p.getVillagecode());
+                    villageName.add(p.getVillagename());
+                }
+                ArrayAdapter<String> vilAdapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_dropdown_item, villageName);
+
+                vilAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                bi.s1q3.setAdapter(vilAdapter);
             }
 
             @Override
