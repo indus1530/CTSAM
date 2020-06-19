@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +17,6 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Objects;
 
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
@@ -35,40 +35,79 @@ public class SectionCActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_c);
         bi.setCallback(this);
-
-
-        bi.s3qf.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if (Objects.requireNonNull(bi.s3qf.getText()).hashCode() == s.hashCode()) {
-                    bi.s3qf.setMaxvalue(Float.parseFloat(Objects.requireNonNull(bi.s3qa.getText()).toString())
-                            + Float.parseFloat(Objects.requireNonNull(bi.s3qb.getText()).toString())
-                            + Float.parseFloat(Objects.requireNonNull(bi.s3qc.getText()).toString())
-                            + Float.parseFloat(Objects.requireNonNull(bi.s3qd.getText()).toString())
-                            + Float.parseFloat(Objects.requireNonNull(bi.s3qe.getText()).toString()));
-                    bi.s3qf.setMinvalue(Float.parseFloat(Objects.requireNonNull(bi.s3qa.getText()).toString())
-                            + Float.parseFloat(Objects.requireNonNull(bi.s3qb.getText()).toString())
-                            + Float.parseFloat(Objects.requireNonNull(bi.s3qc.getText()).toString())
-                            + Float.parseFloat(Objects.requireNonNull(bi.s3qd.getText()).toString())
-                            + Float.parseFloat(Objects.requireNonNull(bi.s3qe.getText()).toString()));
-                }
-            }
-        });
-
-
-
+        totalTextWatcher();
     }
 
+    public void totalTextWatcher() {
+
+        EditText[] txtListener = new EditText[]{bi.s3qa, bi.s3qb, bi.s3qc, bi.s3qd, bi.s3qe};
+        for (EditText txtItem : txtListener) {
+            txtItem.addTextChangedListener(new TextWatcher() {
+                @Override
+                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                    if (bi.s3qa.getText().toString().equals("") || bi.s3qb.getText().toString().equals("") || bi.s3qc.getText().toString().equals("")
+                            || bi.s3qd.getText().toString().equals("") || bi.s3qe.getText().toString().equals("")) {
+                        return;
+                    }
+
+                    int a3, b3, c3, d3, e3, total;
+                    a3 = Integer.parseInt(bi.s3qa.getText().toString().trim());
+                    b3 = Integer.parseInt(bi.s3qb.getText().toString().trim());
+                    c3 = Integer.parseInt(bi.s3qc.getText().toString().trim());
+                    d3 = Integer.parseInt(bi.s3qd.getText().toString().trim());
+                    e3 = Integer.parseInt(bi.s3qe.getText().toString().trim());
+                    total = a3 + b3 + c3 + d3 + e3;
+                    bi.s3qf.setText(String.valueOf(total));
+                }
+
+                @Override
+                public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                    if (bi.s3qa.getText().toString().equals("") || bi.s3qb.getText().toString().equals("") || bi.s3qc.getText().toString().equals("")
+                            || bi.s3qd.getText().toString().equals("") || bi.s3qe.getText().toString().equals("")) {
+                        return;
+                    }
+
+                    //bi.s3qa.setText(null);
+                    //bi.s3qb.setText(null);
+                    //bi.s3qc.setText(null);
+                    //bi.s3qd.setText(null);
+                    //bi.s3qe.setText(null);
+
+                    int a3, b3, c3, d3, e3, total;
+                    a3 = Integer.parseInt(bi.s3qa.getText().toString().trim());
+                    b3 = Integer.parseInt(bi.s3qb.getText().toString().trim());
+                    c3 = Integer.parseInt(bi.s3qc.getText().toString().trim());
+                    d3 = Integer.parseInt(bi.s3qd.getText().toString().trim());
+                    e3 = Integer.parseInt(bi.s3qe.getText().toString().trim());
+                    total = a3 + b3 + c3 + d3 + e3;
+                    bi.s3qf.setText(String.valueOf(total));
+                }
+
+                @Override
+                public void afterTextChanged(Editable s) {
+
+                    if (bi.s3qa.getText().toString().equals("") || bi.s3qb.getText().toString().equals("") || bi.s3qc.getText().toString().equals("")
+                            || bi.s3qd.getText().toString().equals("") || bi.s3qe.getText().toString().equals("")) {
+                        return;
+                    }
+
+                    int a3, b3, c3, d3, e3, total;
+                    a3 = Integer.parseInt(bi.s3qa.getText().toString().trim());
+                    b3 = Integer.parseInt(bi.s3qb.getText().toString().trim());
+                    c3 = Integer.parseInt(bi.s3qc.getText().toString().trim());
+                    d3 = Integer.parseInt(bi.s3qd.getText().toString().trim());
+                    e3 = Integer.parseInt(bi.s3qe.getText().toString().trim());
+                    total = a3 + b3 + c3 + d3 + e3;
+                    bi.s3qf.setText(String.valueOf(total));
+                }
+            });
+        }
+    }
 
     public void BtnContinue() {
+
         if (formValidation()) {
             try {
                 SaveDraft();
@@ -98,16 +137,6 @@ public class SectionCActivity extends AppCompatActivity {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
         }
-
-
-        /*DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SA3, MainApp.fc.getsA3());
-        if (updcount > 0) {
-            return true;
-        } else {
-            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
-            return false;
-        }*/
     }
 
 
@@ -119,12 +148,7 @@ public class SectionCActivity extends AppCompatActivity {
         MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
         MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
         MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
-        //MainApp.fc.setClusterCode(bi.a101.getText().toString());
-        //MainApp.fc.setHhno(bi.a112.getText().toString());
-        // MainApp.fc.setLuid(bl.getLUID());
         MainApp.setGPS(this); // Set GPS
-
-
 
         JSONObject json = new JSONObject();
 
@@ -145,25 +169,13 @@ public class SectionCActivity extends AppCompatActivity {
             return false;
         }
 
-        int a3, b3, c3, d3, e3, f3, children, total;
-
+        int a3, b3, c3, children;
         a3 = Integer.parseInt(bi.s3qa.getText().toString().trim());
         b3 = Integer.parseInt(bi.s3qb.getText().toString().trim());
         c3 = Integer.parseInt(bi.s3qc.getText().toString().trim());
-        d3 = Integer.parseInt(bi.s3qd.getText().toString().trim());
-        e3 = Integer.parseInt(bi.s3qe.getText().toString().trim());
-        f3 = Integer.parseInt(bi.s3qf.getText().toString().trim());
-
         children = a3 + b3 + c3;
-        total = a3 + b3 + c3 + d3 + e3;
-
         if (children == 0) {
             Toast.makeText(this, "No child 06-59-month age entered, please re-check", Toast.LENGTH_LONG).show();
-            return false;
-        }
-
-        if (total > f3 || total < f3) {
-            Toast.makeText(this, "Values conflict, please re-check", Toast.LENGTH_LONG).show();
             return false;
         }
 
