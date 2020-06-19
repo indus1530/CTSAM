@@ -20,6 +20,7 @@ import java.net.URL;
 import java.util.List;
 
 import edu.aku.hassannaqvi.ctsam.adapter.SyncListAdapter;
+import edu.aku.hassannaqvi.ctsam.contracts.HealthFacilitiesContract;
 import edu.aku.hassannaqvi.ctsam.contracts.TalukasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.UsersContract;
 import edu.aku.hassannaqvi.ctsam.contracts.VersionAppContract;
@@ -63,6 +64,9 @@ public class GetAllData extends AsyncTask<String, String, String> {
             case "Taluka":
                 position = 2;
                 break;
+            case "HealthFacilities":
+                position = 3;
+                break;
         }
         list.get(position).settableName(syncClass);
     }
@@ -94,6 +98,9 @@ public class GetAllData extends AsyncTask<String, String, String> {
             case "Taluka":
                 position = 2;
                 break;
+            case "HealthFacilities":
+                position = 3;
+                break;
         }
         list.get(position).setstatus("Syncing");
         list.get(position).setstatusID(2);
@@ -124,6 +131,11 @@ public class GetAllData extends AsyncTask<String, String, String> {
                     tableName = TalukasContract.SingleTalukas.TABLE_NAME;
                     position = 2;
                     break;
+                case "HealthFacilities":
+                    url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
+                    tableName = HealthFacilitiesContract.SingleHealthFacilities.TABLE_NAME;
+                    position = 3;
+                    break;
             }
 
             urlConnection = (HttpURLConnection) url.openConnection();
@@ -133,6 +145,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
             switch (syncClass) {
                 case "Taluka":
                 case "User":
+                case "HealthFacilities":
                     urlConnection.setRequestMethod("POST");
                     urlConnection.setDoOutput(true);
                     urlConnection.setDoInput(true);
@@ -205,6 +218,10 @@ public class GetAllData extends AsyncTask<String, String, String> {
                             position = 2;
                             break;
 
+                        case "HealthFacilities":
+                            db.syncHealthFacilities(jsonArray);
+                            position = 3;
+                            break;
                     }
 
                     pd.setMessage("Received: " + jsonArray.length());

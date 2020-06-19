@@ -5,6 +5,7 @@ import edu.aku.hassannaqvi.ctsam.contracts.ChildContract.SingleChild;
 import edu.aku.hassannaqvi.ctsam.contracts.EnumBlockContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
+import edu.aku.hassannaqvi.ctsam.contracts.HealthFacilitiesContract;
 import edu.aku.hassannaqvi.ctsam.contracts.TalukasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.UsersContract;
 import edu.aku.hassannaqvi.ctsam.contracts.VersionAppContract;
@@ -62,6 +63,13 @@ public final class CreateTable {
             + TalukasContract.SingleTalukas._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
             + TalukasContract.SingleTalukas.COLUMN_TALUKA_CODE + " TEXT,"
             + TalukasContract.SingleTalukas.COLUMN_TALUKA + " TEXT );";
+
+
+    public static final String SQL_CREATE_HEALTH_FACILITIES = "CREATE TABLE " + HealthFacilitiesContract.SingleHealthFacilities.TABLE_NAME + "("
+            + HealthFacilitiesContract.SingleHealthFacilities._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + HealthFacilitiesContract.SingleHealthFacilities.COLUMN_FACILITY_CODE + " TEXT,"
+            + HealthFacilitiesContract.SingleHealthFacilities.COLUMN_FACILITY_NAME + " TEXT,"
+            + HealthFacilitiesContract.SingleHealthFacilities.COLUMN_TALUKA_CODE + " TEXT );";
 
 
   /*   public static final String SQL_CREATE_UCS = "CREATE TABLE " + UCsContract.singleUCs.TABLE_NAME + "("
