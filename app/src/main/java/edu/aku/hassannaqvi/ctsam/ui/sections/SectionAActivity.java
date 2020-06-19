@@ -207,7 +207,7 @@ public class SectionAActivity extends AppCompatActivity {
         });
 
 
-        bi.s1q2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        bi.s1q1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
