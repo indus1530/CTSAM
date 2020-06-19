@@ -24,6 +24,7 @@ import edu.aku.hassannaqvi.ctsam.contracts.HealthFacilitiesContract;
 import edu.aku.hassannaqvi.ctsam.contracts.TalukasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.UsersContract;
 import edu.aku.hassannaqvi.ctsam.contracts.VersionAppContract;
+import edu.aku.hassannaqvi.ctsam.contracts.VillagesContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.otherClasses.SyncModel;
@@ -67,6 +68,9 @@ public class GetAllData extends AsyncTask<String, String, String> {
             case "HealthFacilities":
                 position = 3;
                 break;
+            case "Villages":
+                position = 4;
+                break;
         }
         list.get(position).settableName(syncClass);
     }
@@ -100,6 +104,9 @@ public class GetAllData extends AsyncTask<String, String, String> {
                 break;
             case "HealthFacilities":
                 position = 3;
+                break;
+            case "Villages":
+                position = 4;
                 break;
         }
         list.get(position).setstatus("Syncing");
@@ -136,6 +143,11 @@ public class GetAllData extends AsyncTask<String, String, String> {
                     tableName = HealthFacilitiesContract.SingleHealthFacilities.TABLE_NAME;
                     position = 3;
                     break;
+                case "Villages":
+                    url = new URL(MainApp._HOST_URL + MainApp._SERVER_GET_URL);
+                    tableName = VillagesContract.SingleVillage.TABLE_NAME;
+                    position = 4;
+                    break;
             }
 
             urlConnection = (HttpURLConnection) url.openConnection();
@@ -146,6 +158,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
                 case "Taluka":
                 case "User":
                 case "HealthFacilities":
+                case "Villages":
                     urlConnection.setRequestMethod("POST");
                     urlConnection.setDoOutput(true);
                     urlConnection.setDoInput(true);
@@ -217,10 +230,13 @@ public class GetAllData extends AsyncTask<String, String, String> {
                             db.syncTalukas(jsonArray);
                             position = 2;
                             break;
-
                         case "HealthFacilities":
                             db.syncHealthFacilities(jsonArray);
                             position = 3;
+                            break;
+                        case "Villages":
+                            db.syncVillages(jsonArray);
+                            position = 4;
                             break;
                     }
 
