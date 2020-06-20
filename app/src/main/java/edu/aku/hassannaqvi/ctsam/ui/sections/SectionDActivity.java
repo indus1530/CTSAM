@@ -1,7 +1,6 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -31,7 +30,6 @@ import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionDBinding;
-import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.DateUtils;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
@@ -41,6 +39,7 @@ public class SectionDActivity extends AppCompatActivity {
 
     ActivitySectionDBinding bi;
     boolean studyIDFlag = false;
+    String hf_code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -135,6 +134,9 @@ public class SectionDActivity extends AppCompatActivity {
             }
         });
 
+        Intent SectoionA = getIntent();
+        hf_code = SectoionA.getExtras().getString("hf_code");
+        Toast.makeText(this, hf_code + "", Toast.LENGTH_SHORT).show();
     }
 
 
@@ -147,7 +149,7 @@ public class SectionDActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
+                startActivity(new Intent(this, SectionEActivity.class).putExtra("complete", true));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -239,19 +241,12 @@ public class SectionDActivity extends AppCompatActivity {
 
         study_id = bi.s4q2.getText().toString().trim();
 
-        if (if_study_id_exsist(study_id)) {
+        /*if (if_study_id_exsist(study_id)) {
             Toast.makeText(this, "Study ID is not validating!", Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
 
         return true;
-    }
-
-    boolean if_study_id_exsist(String study_id) {
-
-        DatabaseHelper db = new DatabaseHelper(this);
-        Cursor res = db.getData("Q1101_Q1610", study_id);
-        return res.getCount() <= 0;
     }
 
     public void BtnEnd() {

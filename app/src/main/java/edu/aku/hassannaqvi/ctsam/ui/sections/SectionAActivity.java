@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,6 +17,8 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -30,7 +33,6 @@ import edu.aku.hassannaqvi.ctsam.contracts.VillagesContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionABinding;
-import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionAActivity extends AppCompatActivity {
@@ -76,7 +78,11 @@ public class SectionAActivity extends AppCompatActivity {
 
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
+                NumberFormat f = new DecimalFormat("00");
+                String hf_name = bi.s1q1.getSelectedItem().toString();
+                long hf_code = getHfCode(hf_name);
+                //Toast.makeText(this, f.format(hf_code)+"", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, SectionBActivity.class).putExtra("complete", false).putExtra("hf_code", f.format(hf_code)));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -142,6 +148,7 @@ public class SectionAActivity extends AppCompatActivity {
 
 
     private boolean formValidation() {
+
         return Validator.emptyCheckingContainer(this, bi.GrpName);
     }
 
@@ -231,5 +238,13 @@ public class SectionAActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+
+    long getHfCode(String hf_name) {
+        DatabaseHelper db = new DatabaseHelper(this);
+        Cursor res = db.getHfCode("healthFacilities", hf_name);
+        res.moveToFirst();
+        return Long.parseLong(res.getString(res.getColumnIndex(HealthFacilitiesContract.SingleHealthFacilities.COLUMN_FACILITY_CODE)));
     }
 }

@@ -22,7 +22,6 @@ import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionEBinding;
-import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionEActivity extends AppCompatActivity {
@@ -126,7 +125,7 @@ public class SectionEActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
+                startActivity(new Intent(this, SectionFActivity.class).putExtra("complete", true));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }

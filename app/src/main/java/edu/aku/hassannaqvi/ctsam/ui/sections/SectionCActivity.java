@@ -23,12 +23,12 @@ import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionCBinding;
-import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionCActivity extends AppCompatActivity {
 
     ActivitySectionCBinding bi;
+    String hf_code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,10 @@ public class SectionCActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_c);
         bi.setCallback(this);
         totalTextWatcher();
+
+        Intent SectoionA = getIntent();
+        hf_code = SectoionA.getExtras().getString("hf_code");
+        Toast.makeText(this, hf_code + "", Toast.LENGTH_SHORT).show();
     }
 
     public void totalTextWatcher() {
@@ -116,7 +120,7 @@ public class SectionCActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
+                startActivity(new Intent(this, SectionDActivity.class).putExtra("complete", false).putExtra("hf_code", hf_code));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }

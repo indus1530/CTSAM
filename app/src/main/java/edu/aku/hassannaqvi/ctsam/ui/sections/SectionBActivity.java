@@ -22,13 +22,13 @@ import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionBBinding;
-import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 import edu.aku.hassannaqvi.ctsam.validator.ValidatorClass;
 
 public class SectionBActivity extends AppCompatActivity {
 
     ActivitySectionBBinding bi;
+    String hf_code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,9 @@ public class SectionBActivity extends AppCompatActivity {
         bi.setCallback(this);
         setupSkip();
 
-
+        Intent SectoionA = getIntent();
+        hf_code = SectoionA.getExtras().getString("hf_code");
+        Toast.makeText(this, hf_code + "", Toast.LENGTH_SHORT).show();
     }
 
 
@@ -81,7 +83,7 @@ public class SectionBActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
+                startActivity(new Intent(this, SectionCActivity.class).putExtra("complete", false).putExtra("hf_code", hf_code));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
