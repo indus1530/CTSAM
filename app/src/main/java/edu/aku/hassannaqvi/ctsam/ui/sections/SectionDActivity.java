@@ -1,13 +1,14 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -167,16 +168,6 @@ public class SectionDActivity extends AppCompatActivity {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
         }
-
-
-       /* DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SA3, MainApp.fc.getsA3());
-        if (updcount > 0) {
-            return true;
-        } else {
-            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
-            return false;
-        }*/
     }
 
 
@@ -189,9 +180,6 @@ public class SectionDActivity extends AppCompatActivity {
         MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
         MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
         MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
-        //MainApp.fc.setClusterCode(bi.a101.getText().toString());
-        //MainApp.fc.setHhno(bi.a112.getText().toString());
-        // MainApp.fc.setLuid(bl.getLUID());
         MainApp.setGPS(this); // Set GPS
 
         JSONObject json = new JSONObject();
@@ -243,14 +231,28 @@ public class SectionDActivity extends AppCompatActivity {
 
     private boolean formValidation() {
 
-        if (!Validator.emptyCheckingContainer(this, bi.GrpName)) return false;
-        if (studyIDFlag) {
-            Toast.makeText(this, "StudyID is not validating!", Toast.LENGTH_SHORT).show();
+        if (!Validator.emptyCheckingContainer(this, bi.GrpName)) {
             return false;
         }
+
+        String study_id;
+
+        study_id = bi.s4q2.getText().toString().trim();
+
+        if (if_study_id_exsist(study_id)) {
+            Toast.makeText(this, "Study ID is not validating!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+
         return true;
     }
 
+    boolean if_study_id_exsist(String study_id) {
+
+        DatabaseHelper db = new DatabaseHelper(this);
+        Cursor res = db.getData("Q1101_Q1610", study_id);
+        return res.getCount() <= 0;
+    }
 
     public void BtnEnd() {
         if (formValidation()) {
