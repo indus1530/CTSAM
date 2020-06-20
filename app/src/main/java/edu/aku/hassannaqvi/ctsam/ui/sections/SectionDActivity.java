@@ -134,9 +134,12 @@ public class SectionDActivity extends AppCompatActivity {
             }
         });
 
-        Intent SectoionA = getIntent();
-        hf_code = SectoionA.getExtras().getString("hf_code");
+        Intent SectoionC = getIntent();
+        hf_code = SectoionC.getExtras().getString("hf_code");
         Toast.makeText(this, hf_code + "", Toast.LENGTH_SHORT).show();
+
+        String _uid = MainApp.fc.getDeviceID() + MainApp.fc.get_ID();
+        Toast.makeText(this, _uid + "", Toast.LENGTH_SHORT).show();
     }
 
 

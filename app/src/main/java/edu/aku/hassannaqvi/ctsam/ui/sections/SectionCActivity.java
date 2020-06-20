@@ -37,8 +37,8 @@ public class SectionCActivity extends AppCompatActivity {
         bi.setCallback(this);
         totalTextWatcher();
 
-        Intent SectoionA = getIntent();
-        hf_code = SectoionA.getExtras().getString("hf_code");
+        Intent SectoionB = getIntent();
+        hf_code = SectoionB.getExtras().getString("hf_code");
         Toast.makeText(this, hf_code + "", Toast.LENGTH_SHORT).show();
     }
 
