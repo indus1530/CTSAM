@@ -14,9 +14,6 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -69,12 +66,12 @@ public class SectionGActivity extends AppCompatActivity {
         if (formValidation()) {
             try {
                 SaveDraft();
-            } catch (Exception e) {
-                throw new RuntimeException(e.getMessage());
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionHActivity.class).putExtra("complete", true));
+                startActivity(new Intent(this, SectionHActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -85,11 +82,8 @@ public class SectionGActivity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        long updcount = db.addForm(MainApp.fc);
-        MainApp.fc.set_ID(String.valueOf(updcount));
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SG, MainApp.fc.getsG());
         if (updcount > 0) {
-            MainApp.fc.set_UID(MainApp.fc.getDeviceID() + MainApp.fc.get_ID());
-            db.updatesFormColumn(FormsContract.FormsTable.COLUMN_UID, MainApp.fc.get_UID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
@@ -99,17 +93,6 @@ public class SectionGActivity extends AppCompatActivity {
 
 
     private void SaveDraft() throws JSONException {
-
-        MainApp.fc = new FormsContract();
-        MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
-        MainApp.fc.setUser(MainApp.userName);
-        MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
-        MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
-        MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
-        //MainApp.fc.setClusterCode(bi.a101.getText().toString());
-        //MainApp.fc.setHhno(bi.a112.getText().toString());
-        // MainApp.fc.setLuid(bl.getLUID());
-        MainApp.setGPS(this); // Set GPS
 
         JSONObject json = new JSONObject();
 
@@ -136,11 +119,12 @@ public class SectionGActivity extends AppCompatActivity {
 
         json.put("s7q396x", bi.s7q396x.getText().toString());
 
-        MainApp.fc.setsA3(String.valueOf(json));
+        MainApp.fc.setsG(String.valueOf(json));
     }
 
 
     private boolean formValidation() {
+
         return Validator.emptyCheckingContainer(this, bi.fldGrpSectionG);
     }
 
@@ -151,5 +135,8 @@ public class SectionGActivity extends AppCompatActivity {
         }
     }
 
-
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(getApplicationContext(), "You Can't go back", Toast.LENGTH_LONG).show();
+    }
 }

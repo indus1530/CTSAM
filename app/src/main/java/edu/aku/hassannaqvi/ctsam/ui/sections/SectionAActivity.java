@@ -75,14 +75,9 @@ public class SectionAActivity extends AppCompatActivity {
             } catch (Exception e) {
                 throw new RuntimeException(e.getMessage());
             }
-
             if (UpdateDB()) {
                 finish();
-                NumberFormat f = new DecimalFormat("00");
-                String hf_name = bi.s1q1.getSelectedItem().toString();
-                long hf_code = getHfCode(hf_name);
-                //Toast.makeText(this, f.format(hf_code)+"", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, SectionBActivity.class).putExtra("complete", false).putExtra("hf_code", f.format(hf_code)));
+                startActivity(new Intent(this, SectionBActivity.class).putExtra("complete", false));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -114,10 +109,12 @@ public class SectionAActivity extends AppCompatActivity {
         MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
         MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
         MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
-        //MainApp.fc.setClusterCode(bi.a101.getText().toString());
-        //MainApp.fc.setHhno(bi.a112.getText().toString());
-        // MainApp.fc.setLuid(bl.getLUID());
         MainApp.setGPS(this); // Set GPS
+
+        NumberFormat f = new DecimalFormat("00");
+        String hf_name = bi.s1q1.getSelectedItem().toString();
+        long hf_code = getHfCode(hf_name);
+        MainApp.fc.setHfCode(f.format(hf_code));
 
         JSONObject json = new JSONObject();
 
@@ -129,27 +126,19 @@ public class SectionAActivity extends AppCompatActivity {
 
         json.put("s1q4", bi.s1q4.getText().toString());
 
-        /*json.put("s1q5", bi.s1q5.getText().toString());
-
-        json.put("s1q6", bi.s1q6.getText().toString());
-
-        json.put("s1q7", bi.s1q7.getText().toString());*/
-
         json.put("s1q8", bi.s1q8a.isChecked() ? "1"
                 : bi.s1q8b.isChecked() ? "2"
                 : "0");
 
         json.put("s1q8r", bi.s1q8r.getText().toString());
 
-        MainApp.fc.setsInfo(String.valueOf(json));
-
-
+        MainApp.fc.setsA(String.valueOf(json));
     }
 
 
     private boolean formValidation() {
 
-        return Validator.emptyCheckingContainer(this, bi.GrpName);
+        return Validator.emptyCheckingContainer(this, bi.fldGrpSectionA);
     }
 
 

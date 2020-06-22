@@ -14,9 +14,6 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -28,7 +25,6 @@ import edu.aku.hassannaqvi.ctsam.validator.ValidatorClass;
 public class SectionBActivity extends AppCompatActivity {
 
     ActivitySectionBBinding bi;
-    String hf_code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,10 +32,6 @@ public class SectionBActivity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_b);
         bi.setCallback(this);
         setupSkip();
-
-        Intent SectoionA = getIntent();
-        hf_code = SectoionA.getExtras().getString("hf_code");
-        Toast.makeText(this, hf_code + "", Toast.LENGTH_SHORT).show();
     }
 
 
@@ -83,7 +75,7 @@ public class SectionBActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionCActivity.class).putExtra("complete", false).putExtra("hf_code", hf_code));
+                startActivity(new Intent(this, SectionCActivity.class).putExtra("complete", false));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -94,41 +86,17 @@ public class SectionBActivity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        long updcount = db.addForm(MainApp.fc);
-        MainApp.fc.set_ID(String.valueOf(updcount));
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SB, MainApp.fc.getsB());
         if (updcount > 0) {
-            MainApp.fc.set_UID(MainApp.fc.getDeviceID() + MainApp.fc.get_ID());
-            db.updatesFormColumn(FormsContract.FormsTable.COLUMN_UID, MainApp.fc.get_UID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
             return false;
         }
-
-        /*
-        DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SA3, MainApp.fc.getsA3());
-        if (updcount > 0) {
-            return true;
-        } else {
-            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
-            return false;
-        }*/
     }
 
 
     private void SaveDraft() throws JSONException {
-
-        MainApp.fc = new FormsContract();
-        MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
-        MainApp.fc.setUser(MainApp.userName);
-        MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
-        MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
-        MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
-        //MainApp.fc.setClusterCode(bi.a101.getText().toString());
-        //MainApp.fc.setHhno(bi.a112.getText().toString());
-        // MainApp.fc.setLuid(bl.getLUID());
-        MainApp.setGPS(this); // Set GPS
 
         JSONObject json = new JSONObject();
 
@@ -203,9 +171,7 @@ public class SectionBActivity extends AppCompatActivity {
                 : bi.s2q9b.isChecked() ? "2"
                 : "0");
 
-        MainApp.fc.setsA3(String.valueOf(json));
-
-
+        MainApp.fc.setsB(String.valueOf(json));
     }
 
 
@@ -235,5 +201,8 @@ public class SectionBActivity extends AppCompatActivity {
         }
     }
 
-
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(getApplicationContext(), "You Can't go back", Toast.LENGTH_LONG).show();
+    }
 }

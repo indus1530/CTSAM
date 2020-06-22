@@ -677,9 +677,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_ISTATUS, fc.getIstatus());
         values.put(FormsTable.COLUMN_ISTATUS88x, fc.getIstatus88x());
         values.put(FormsTable.COLUMN_ENDINGDATETIME, fc.getEndingdatetime());
-        values.put(FormsTable.COLUMN_SINFO, fc.getsInfo());
-        values.put(FormsTable.COLUMN_SA3, fc.getsA3());
-        values.put(FormsTable.COLUMN_SA4, fc.getsA4());
+        values.put(FormsTable.COLUMN_SA, fc.getsA());
+        values.put(FormsTable.COLUMN_SB, fc.getsB());
+        values.put(FormsTable.COLUMN_SC, fc.getsC());
+        values.put(FormsTable.COLUMN_SD, fc.getsD());
+        values.put(FormsTable.COLUMN_SE, fc.getsE());
+        values.put(FormsTable.COLUMN_SF, fc.getsF());
+        values.put(FormsTable.COLUMN_SG, fc.getsG());
+        values.put(FormsTable.COLUMN_SH, fc.getsH());
+        values.put(FormsTable.COLUMN_SI, fc.getsI());
+        values.put(FormsTable.COLUMN_SJ, fc.getsJ());
         values.put(FormsTable.COLUMN_GPSLAT, fc.getGpsLat());
         values.put(FormsTable.COLUMN_GPSLNG, fc.getGpsLng());
         values.put(FormsTable.COLUMN_GPSDATE, fc.getGpsDT());
@@ -689,6 +696,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_APPVERSION, fc.getAppversion());
         values.put(FormsTable.COLUMN_CLUSTERCODE, fc.getClusterCode());
         values.put(FormsTable.COLUMN_HHNO, fc.getHhno());
+        values.put(FormsTable.COLUMN_STUDYID, fc.getStudyId());
+        values.put(FormsTable.COLUMN_HF_CODE, fc.getHfCode());
         values.put(FormsTable.COLUMN_FORMTYPE, fc.getFormType());
 
         // Insert the new row, returning the primary key value of the new row
@@ -1180,9 +1189,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_ISTATUS88x,
                 FormsTable.COLUMN_LUID,
                 FormsTable.COLUMN_ENDINGDATETIME,
-                FormsTable.COLUMN_SINFO,
-                FormsTable.COLUMN_SA3,
-                FormsTable.COLUMN_SA4,
+                FormsTable.COLUMN_SA,
+                FormsTable.COLUMN_SB,
+                FormsTable.COLUMN_SC,
+                FormsTable.COLUMN_SD,
+                FormsTable.COLUMN_SE,
+                FormsTable.COLUMN_SF,
+                FormsTable.COLUMN_SG,
+                FormsTable.COLUMN_SH,
+                FormsTable.COLUMN_SI,
+                FormsTable.COLUMN_SJ,
                 FormsTable.COLUMN_GPSLAT,
                 FormsTable.COLUMN_GPSLNG,
                 FormsTable.COLUMN_GPSDATE,
@@ -1192,6 +1208,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_APPVERSION,
                 FormsTable.COLUMN_CLUSTERCODE,
                 FormsTable.COLUMN_HHNO,
+                FormsTable.COLUMN_STUDYID,
+                FormsTable.COLUMN_HF_CODE,
                 FormsTable.COLUMN_FORMTYPE
         };
 

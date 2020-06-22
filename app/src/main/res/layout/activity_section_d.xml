@@ -18,7 +18,7 @@
         tools:context=".ui.sections.SectionDActivity">
 
         <LinearLayout
-            android:id="@+id/GrpName"
+            android:id="@+id/fldGrpSectionD"
             style="@style/vlinearlayout">
 
 
@@ -93,9 +93,13 @@
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="##-###"
-                        app:mask="##-###"
-                        app:pattern="^(\\d{2,2}\\-\\d{3,3})$" />
+                        android:hint="###"
+                        android:maxLength="3"
+                        app:mask="###"
+                        app:maxValue="100"
+                        app:minValue="1"
+                        app:pattern="^(\\d{3,3})$"
+                        app:type="range" />
 
                 </LinearLayout>
 

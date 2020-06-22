@@ -16,7 +16,7 @@
         android:textDirection="rtl">
 
         <LinearLayout
-            android:id="@+id/GrpName"
+            android:id="@+id/fldGrpSectionC"
             style="@style/vlinearlayout">
 
 
