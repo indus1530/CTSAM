@@ -158,7 +158,7 @@ public class SectionDActivity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SD, MainApp.fc.getsD());
+        int updcount = db.updatesFormColumn2(FormsContract.FormsTable.COLUMN_SD, MainApp.fc.getsD(), FormsContract.FormsTable.COLUMN_STUDYID, MainApp.fc.getStudyId());
         if (updcount > 0) {
             return true;
         } else {
@@ -170,6 +170,8 @@ public class SectionDActivity extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
+        MainApp.fc.setStudyId(MainApp.fc.getHfCode() + "-" + bi.s4q2.getText().toString());
+
         JSONObject json = new JSONObject();
 
         json.put("s4q1", bi.s4q1a.isChecked() ? "1"
@@ -179,6 +181,7 @@ public class SectionDActivity extends AppCompatActivity {
                 : "0");
 
         json.put("s4q2", MainApp.fc.getHfCode() + "-" + bi.s4q2.getText().toString());
+
         json.put("s4q3", bi.s4q3.getText().toString());
         json.put("s4q4", bi.s4q4.getText().toString());
         json.put("s4q5", bi.s4q5.getText().toString());

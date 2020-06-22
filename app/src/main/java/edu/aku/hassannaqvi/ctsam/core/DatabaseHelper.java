@@ -1053,6 +1053,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 selectionArgs);
     }
 
+    //Generic update FormColumn
+    public int updatesFormColumn2(String column, String value, String column2, String value2) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(column, value);
+        values.put(column2, value2);
+
+        String selection = FormsTable._ID + " =? ";
+        String[] selectionArgs = {String.valueOf(MainApp.fc.get_ID())};
+
+        return db.update(FormsTable.TABLE_NAME,
+                values,
+                selection,
+                selectionArgs);
+    }
+
     //Generic update FamilyMemberColumn
     public int updatesFamilyMemberColumn(String column, String value, String valueID) {
         SQLiteDatabase db = this.getReadableDatabase();
