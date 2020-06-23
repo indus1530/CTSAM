@@ -231,6 +231,7 @@ public class SectionAActivity extends AppCompatActivity {
 
 
     long getHfCode(String hf_name) {
+
         DatabaseHelper db = new DatabaseHelper(this);
         Cursor res = db.getHfCode("healthFacilities", hf_name);
         res.moveToFirst();

@@ -416,7 +416,10 @@ public class SectionFActivity extends AppCompatActivity {
             return false;
         }
 
-        if (!bi.s6q1898.isChecked() && Integer.parseInt(bi.s6q18ax.getText().toString()) == 0 && Integer.parseInt(bi.s6q18bx.getText().toString()) == 0) {
+        if (bi.fldGrpCVs6q18.getVisibility() == View.VISIBLE
+                && !bi.s6q1898.isChecked()
+                && Integer.parseInt(bi.s6q18ax.getText().toString()) == 0
+                && Integer.parseInt(bi.s6q18bx.getText().toString()) == 0) {
 
             Toast.makeText(this, "S6Q18: At least one value must be greater than zero", Toast.LENGTH_LONG).show();
             return false;

@@ -1546,4 +1546,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor res = db.rawQuery("select * from " + tableName + " where hf_name = '" + hf_name + "'", null);
         return res;
     }
+
+    public Cursor getStudyID(String tableName, String study_id) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from " + tableName + " where studyId = '" + study_id + "'", null);
+        return res;
+    }
 }

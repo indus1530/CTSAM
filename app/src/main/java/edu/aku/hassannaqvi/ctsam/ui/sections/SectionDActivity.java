@@ -1,6 +1,7 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -226,14 +227,14 @@ public class SectionDActivity extends AppCompatActivity {
             return false;
         }
 
-        String study_id;
+        String CurStudy_id = MainApp.fc.getHfCode() + "-" + bi.s4q2.getText().toString();
+        long checkDuplicate = getStudyID(CurStudy_id);
 
-        study_id = bi.s4q2.getText().toString().trim();
-
-        /*if (if_study_id_exsist(study_id)) {
-            Toast.makeText(this, "Study ID is not validating!", Toast.LENGTH_SHORT).show();
+        if (checkDuplicate > 0) {
+            Toast.makeText(this, "This Study ID already exists", Toast.LENGTH_SHORT).show();
+            bi.s4q2.requestFocus();
             return false;
-        }*/
+        }
 
         return true;
     }
@@ -247,5 +248,13 @@ public class SectionDActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Toast.makeText(getApplicationContext(), "You Can't go back", Toast.LENGTH_LONG).show();
+    }
+
+
+    long getStudyID(String study_id) {
+
+        DatabaseHelper db = new DatabaseHelper(this);
+        Cursor res = db.getStudyID("forms", study_id);
+        return res.getCount();
     }
 }
