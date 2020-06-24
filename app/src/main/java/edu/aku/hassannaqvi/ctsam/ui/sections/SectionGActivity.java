@@ -98,26 +98,26 @@ public class SectionGActivity extends AppCompatActivity {
 
         json.put("s7q1", bi.s7q101.isChecked() ? "1"
                 : bi.s7q102.isChecked() ? "2"
-                : "0");
+                : "-1");
 
-        json.put("s7q201", bi.s7q201.isChecked() ? "1" : "0");
-        json.put("s7q202", bi.s7q202.isChecked() ? "2" : "0");
-        json.put("s7q203", bi.s7q203.isChecked() ? "3" : "0");
-        json.put("s7q204", bi.s7q204.isChecked() ? "4" : "0");
-        json.put("s7q205", bi.s7q205.isChecked() ? "99" : "0");
+        json.put("s7q201", bi.s7q201.isChecked() ? "1" : "-1");
+        json.put("s7q202", bi.s7q202.isChecked() ? "2" : "-1");
+        json.put("s7q203", bi.s7q203.isChecked() ? "3" : "-1");
+        json.put("s7q204", bi.s7q204.isChecked() ? "4" : "-1");
+        json.put("s7q205", bi.s7q205.isChecked() ? "99" : "-1");
 
-        json.put("s7q301", bi.s7q301.isChecked() ? "1" : "0");
-        json.put("s7q302", bi.s7q302.isChecked() ? "2" : "0");
-        json.put("s7q303", bi.s7q303.isChecked() ? "3" : "0");
-        json.put("s7q304", bi.s7q304.isChecked() ? "4" : "0");
-        json.put("s7q305", bi.s7q305.isChecked() ? "5" : "0");
-        json.put("s7q306", bi.s7q306.isChecked() ? "6" : "0");
-        json.put("s7q307", bi.s7q307.isChecked() ? "7" : "0");
-        json.put("s7q308", bi.s7q308.isChecked() ? "8" : "0");
-        json.put("s7q309", bi.s7q309.isChecked() ? "9" : "0");
-        json.put("s7q396", bi.s7q396.isChecked() ? "96" : "0");
+        json.put("s7q301", bi.s7q301.isChecked() ? "1" : "-1");
+        json.put("s7q302", bi.s7q302.isChecked() ? "2" : "-1");
+        json.put("s7q303", bi.s7q303.isChecked() ? "3" : "-1");
+        json.put("s7q304", bi.s7q304.isChecked() ? "4" : "-1");
+        json.put("s7q305", bi.s7q305.isChecked() ? "5" : "-1");
+        json.put("s7q306", bi.s7q306.isChecked() ? "6" : "-1");
+        json.put("s7q307", bi.s7q307.isChecked() ? "7" : "-1");
+        json.put("s7q308", bi.s7q308.isChecked() ? "8" : "-1");
+        json.put("s7q309", bi.s7q309.isChecked() ? "9" : "-1");
+        json.put("s7q396", bi.s7q396.isChecked() ? "96" : "-1");
 
-        json.put("s7q396x", bi.s7q396x.getText().toString());
+        json.put("s7q396x", bi.s7q396x.getText().toString().trim().isEmpty() ? "-1" : bi.s7q396x.getText().toString());
 
         MainApp.fc.setsG(String.valueOf(json));
     }

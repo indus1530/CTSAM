@@ -132,12 +132,12 @@ public class SectionCActivity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("s3qa", bi.s3qa.getText().toString());
-        json.put("s3qb", bi.s3qb.getText().toString());
-        json.put("s3qc", bi.s3qc.getText().toString());
-        json.put("s3qd", bi.s3qd.getText().toString());
-        json.put("s3qe", bi.s3qe.getText().toString());
-        json.put("s3qf", bi.s3qf.getText().toString());
+        json.put("s3qa", bi.s3qa.getText().toString().trim().isEmpty() ? "-1" : bi.s3qa.getText().toString());
+        json.put("s3qb", bi.s3qb.getText().toString().trim().isEmpty() ? "-1" : bi.s3qb.getText().toString());
+        json.put("s3qc", bi.s3qc.getText().toString().trim().isEmpty() ? "-1" : bi.s3qc.getText().toString());
+        json.put("s3qd", bi.s3qd.getText().toString().trim().isEmpty() ? "-1" : bi.s3qd.getText().toString());
+        json.put("s3qe", bi.s3qe.getText().toString().trim().isEmpty() ? "-1" : bi.s3qe.getText().toString());
+        json.put("s3qf", bi.s3qf.getText().toString().trim().isEmpty() ? "-1" : bi.s3qf.getText().toString());
 
         MainApp.fc.setsC(String.valueOf(json));
     }

@@ -717,12 +717,14 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
                         (mEmail.equals("guest@aku") && mPassword.equals("aku1234")) || db.Login(mEmail, mPassword)
                         || (mEmail.equals("test1234") && mPassword.equals("test1234"))) {
                     MainApp.users[1] = mEmail;
+                    MainApp.userName = mEmail;
                     MainApp.admin = mEmail.contains("@");
 
                     if ((mEmail2.equals("dmu@aku") && mPassword2.equals("aku?dmu")) ||
                             (mEmail2.equals("guest@aku") && mPassword2.equals("aku1234")) || db.Login(mEmail2, mPassword2)
                             || (mEmail2.equals("test1234") && mPassword2.equals("test1234"))) {
                         MainApp.users[2] = mEmail2;
+                        MainApp.userName2 = mEmail2;
                         MainApp.admin = mEmail2.contains("@");
 
                         Intent iLogin = new Intent(LoginActivity.this, MainActivity.class);

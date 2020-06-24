@@ -79,6 +79,7 @@ public class MainApp extends Application {
     public static Triple<List<Integer>, List<String>, List<FamilyMembersContract>> mwraChildrenAnthro;
     protected static LocationManager locationManager;
     public static String userName = "0000";
+    public static String userName2 = "0000";
     public static String DeviceURL = "devices.php";
     public static String IMEI;
     public static String C401 = "";

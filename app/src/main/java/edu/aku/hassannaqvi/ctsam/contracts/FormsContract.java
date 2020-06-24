@@ -14,9 +14,9 @@ public class FormsContract {
 
     private String _ID = "";
     private String _UID = "";
-    private String formType = "";
     private String formDate = ""; // Date
     private String user = ""; // Interviewer
+    private String user2 = ""; // Interviewer
     private String istatus = ""; // Interview Status
     private String istatus88x = ""; // Interview Status
     private String luid = "";
@@ -30,8 +30,6 @@ public class FormsContract {
     private String synced = "";
     private String synced_date = "";
     private String appversion = "";
-    private String clusterCode = "";
-    private String hhno = "";
     private String studyId = "";
     private String hfCode = "";
     private String sA = "";
@@ -81,6 +79,7 @@ public class FormsContract {
         this._UID = jsonObject.getString(FormsTable.COLUMN_UID);
         this.formDate = jsonObject.getString(FormsTable.COLUMN_FORMDATE);
         this.user = jsonObject.getString(FormsTable.COLUMN_USER);
+        this.user2 = jsonObject.getString(FormsTable.COLUMN_USER2);
         this.istatus = jsonObject.getString(FormsTable.COLUMN_ISTATUS);
         this.istatus88x = jsonObject.getString(FormsTable.COLUMN_ISTATUS88x);
         this.luid = jsonObject.getString(FormsTable.COLUMN_LUID);
@@ -94,9 +93,6 @@ public class FormsContract {
         this.synced = jsonObject.getString(FormsTable.COLUMN_SYNCED);
         this.synced_date = jsonObject.getString(FormsTable.COLUMN_SYNCED_DATE);
         this.appversion = jsonObject.getString(FormsTable.COLUMN_SYNCED_DATE);
-        this.formType = jsonObject.getString(FormsTable.COLUMN_FORMTYPE);
-        this.clusterCode = jsonObject.getString(FormsTable.COLUMN_CLUSTERCODE);
-        this.hhno = jsonObject.getString(FormsTable.COLUMN_HHNO);
         this.studyId = jsonObject.getString(FormsTable.COLUMN_STUDYID);
         this.hfCode = jsonObject.getString(FormsTable.COLUMN_HF_CODE);
         this.sA = jsonObject.getString(FormsTable.COLUMN_SA);
@@ -111,7 +107,6 @@ public class FormsContract {
         this.sJ = jsonObject.getString(FormsTable.COLUMN_SJ);
 
         return this;
-
     }
 
     public FormsContract Hydrate(Cursor cursor) {
@@ -119,6 +114,7 @@ public class FormsContract {
         this._UID = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_UID));
         this.formDate = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_FORMDATE));
         this.user = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_USER));
+        this.user2 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_USER2));
         this.istatus = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_ISTATUS));
         this.istatus88x = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_ISTATUS88x));
         this.luid = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_LUID));
@@ -130,11 +126,8 @@ public class FormsContract {
         this.deviceID = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_DEVICEID));
         this.devicetagID = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_DEVICETAGID));
         this.appversion = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_APPVERSION));
-        this.formType = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_FORMTYPE));
-        this.clusterCode = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_CLUSTERCODE));
         this.studyId = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_STUDYID));
         this.hfCode = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_HF_CODE));
-        this.hhno = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_HHNO));
         this.sA = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SA));
         this.sB = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SB));
         this.sC = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SC));
@@ -157,6 +150,7 @@ public class FormsContract {
         json.put(FormsTable.COLUMN_UID, this._UID == null ? JSONObject.NULL : this._UID);
         json.put(FormsTable.COLUMN_FORMDATE, this.formDate == null ? JSONObject.NULL : this.formDate);
         json.put(FormsTable.COLUMN_USER, this.user == null ? JSONObject.NULL : this.user);
+        json.put(FormsTable.COLUMN_USER2, this.user2 == null ? JSONObject.NULL : this.user2);
         json.put(FormsTable.COLUMN_ISTATUS, this.istatus == null ? JSONObject.NULL : this.istatus);
         json.put(FormsTable.COLUMN_ISTATUS88x, this.istatus88x == null ? JSONObject.NULL : this.istatus88x);
         json.put(FormsTable.COLUMN_LUID, this.luid == null ? JSONObject.NULL : this.luid);
@@ -211,9 +205,6 @@ public class FormsContract {
         json.put(FormsTable.COLUMN_DEVICEID, this.deviceID == null ? JSONObject.NULL : this.deviceID);
         json.put(FormsTable.COLUMN_DEVICETAGID, this.devicetagID == null ? JSONObject.NULL : this.devicetagID);
         json.put(FormsTable.COLUMN_APPVERSION, this.appversion == null ? JSONObject.NULL : this.appversion);
-        json.put(FormsTable.COLUMN_FORMTYPE, this.formType == null ? JSONObject.NULL : this.formType);
-        json.put(FormsTable.COLUMN_CLUSTERCODE, this.clusterCode == null ? JSONObject.NULL : this.clusterCode);
-        json.put(FormsTable.COLUMN_HHNO, this.hhno == null ? JSONObject.NULL : this.hhno);
 
         return json;
     }
@@ -330,14 +321,6 @@ public class FormsContract {
         this._UID = _UID;
     }
 
-    public String getFormType() {
-        return formType;
-    }
-
-    public void setFormType(String formType) {
-        this.formType = formType;
-    }
-
     public String getFormDate() {
         return formDate;
     }
@@ -352,6 +335,14 @@ public class FormsContract {
 
     public void setUser(String user) {
         this.user = user;
+    }
+
+    public String getUser2() {
+        return user2;
+    }
+
+    public void setUser2(String user2) {
+        this.user2 = user2;
     }
 
     public String getIstatus() {
@@ -451,22 +442,6 @@ public class FormsContract {
 
     }
 
-    public String getClusterCode() {
-        return clusterCode;
-    }
-
-    public void setClusterCode(String clusterCode) {
-        this.clusterCode = clusterCode;
-    }
-
-    public String getHhno() {
-        return hhno;
-    }
-
-    public void setHhno(String hhno) {
-        this.hhno = hhno;
-    }
-
     public interface FormsTable extends BaseColumns {
 
         String TABLE_NAME = "forms";
@@ -475,8 +450,8 @@ public class FormsContract {
         String COLUMN_ID = "_id";
         String COLUMN_UID = "_uid";
         String COLUMN_FORMDATE = "formdate";
-        String COLUMN_FORMTYPE = "formtype";
         String COLUMN_USER = "username";
+        String COLUMN_USER2 = "username2";
         String COLUMN_ISTATUS = "istatus";
         String COLUMN_ISTATUS88x = "istatus88x";
         String COLUMN_LUID = "_luid";
@@ -490,8 +465,6 @@ public class FormsContract {
         String COLUMN_SYNCED = "synced";
         String COLUMN_SYNCED_DATE = "synced_date";
         String COLUMN_APPVERSION = "appversion";
-        String COLUMN_CLUSTERCODE = "cluster_code";
-        String COLUMN_HHNO = "hhno";
         String COLUMN_STUDYID = "studyId";
         String COLUMN_HF_CODE = "hfCode";
         String COLUMN_SA = "sA";

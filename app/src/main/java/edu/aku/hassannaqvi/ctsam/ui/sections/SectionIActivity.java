@@ -82,8 +82,9 @@ public class SectionIActivity extends AppCompatActivity {
                                                                                                         bi.s9q112.isChecked() ? "12" :
                                                                                                                 bi.s9q113.isChecked() ? "13" :
                                                                                                                         bi.s9q196.isChecked() ? "96" :
-                                                                                                                                "0");
-        json.put("s9q196x", bi.s9q196x.getText().toString());
+                                                                                                                                "-1");
+
+        json.put("s9q196x", bi.s9q196x.getText().toString().trim().isEmpty() ? "-1" : bi.s9q196x.getText().toString());
 
         json.put("s9q2",
                 bi.s9q201.isChecked() ? "1" :
@@ -100,8 +101,10 @@ public class SectionIActivity extends AppCompatActivity {
                                                                                                         bi.s9q212.isChecked() ? "12" :
                                                                                                                 bi.s9q213.isChecked() ? "13" :
                                                                                                                         bi.s9q296.isChecked() ? "96" :
-                                                                                                                                "0");
-        json.put("s9q296x", bi.s9q296x.getText().toString());
+                                                                                                                                "-1");
+
+        json.put("s9q296x", bi.s9q296x.getText().toString().trim().isEmpty() ? "-1" : bi.s9q296x.getText().toString());
+
         json.put("s9q3",
                 bi.s9q301.isChecked() ? "1" :
                         bi.s9q302.isChecked() ? "2" :
@@ -117,12 +120,11 @@ public class SectionIActivity extends AppCompatActivity {
                                                                                                         bi.s9q312.isChecked() ? "12" :
                                                                                                                 bi.s9q313.isChecked() ? "13" :
                                                                                                                         bi.s9q396.isChecked() ? "96" :
-                                                                                                                                "0");
-        json.put("s9q396x", bi.s9q396x.getText().toString());
+                                                                                                                                "-1");
+
+        json.put("s9q396x", bi.s9q396x.getText().toString().trim().isEmpty() ? "-1" : bi.s9q396x.getText().toString());
 
         MainApp.fc.setsI(String.valueOf(json));
-
-
     }
 
 

@@ -106,6 +106,7 @@ public class SectionAActivity extends AppCompatActivity {
         MainApp.fc = new FormsContract();
         MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
         MainApp.fc.setUser(MainApp.userName);
+        MainApp.fc.setUser2(MainApp.userName2);
         MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
         MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
         MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
@@ -118,19 +119,17 @@ public class SectionAActivity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("s1q1", bi.s1q1.getChildCount() == 0 ? "0" : bi.s1q1.getSelectedItem().toString());
+        json.put("s1q1", bi.s1q1.getChildCount() == 0 ? "-1" : bi.s1q1.getSelectedItem().toString());
 
-        json.put("s1q2", bi.s1q2.getChildCount() == 0 ? "0" : bi.s1q2.getSelectedItem().toString());
+        json.put("s1q2", bi.s1q2.getChildCount() == 0 ? "-1" : bi.s1q2.getSelectedItem().toString());
 
-        json.put("s1q3", bi.s1q3.getChildCount() == 0 ? "0" : bi.s1q3.getSelectedItem().toString());
+        json.put("s1q3", bi.s1q3.getChildCount() == 0 ? "-1" : bi.s1q3.getSelectedItem().toString());
 
-        json.put("s1q4", bi.s1q4.getText().toString());
+        json.put("s1q4", bi.s1q4.getText().toString().trim().isEmpty() ? "-1" : bi.s1q4.getText().toString());
 
-        json.put("s1q8", bi.s1q8a.isChecked() ? "1"
-                : bi.s1q8b.isChecked() ? "2"
-                : "0");
+        json.put("s1q8", bi.s1q8a.isChecked() ? "1" : bi.s1q8b.isChecked() ? "2" : "-1");
 
-        json.put("s1q8r", bi.s1q8r.getText().toString());
+        json.put("s1q8r", bi.s1q8r.getText().toString().trim().isEmpty() ? "-1" : bi.s1q8r.getText().toString());
 
         MainApp.fc.setsA(String.valueOf(json));
     }
