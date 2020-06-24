@@ -161,14 +161,8 @@ public class FormsContract {
         json.put(FormsTable.COLUMN_ISTATUS88x, this.istatus88x == null ? JSONObject.NULL : this.istatus88x);
         json.put(FormsTable.COLUMN_LUID, this.luid == null ? JSONObject.NULL : this.luid);
         json.put(FormsTable.COLUMN_ENDINGDATETIME, this.endingdatetime == null ? JSONObject.NULL : this.endingdatetime);
-
-        if (!this.studyId.equals("")) {
-            json.put(FormsTable.COLUMN_STUDYID, new JSONObject(this.studyId));
-        }
-
-        if (!this.hfCode.equals("")) {
-            json.put(FormsTable.COLUMN_HF_CODE, new JSONObject(this.hfCode));
-        }
+        json.put(FormsTable.COLUMN_STUDYID, this.studyId == null ? JSONObject.NULL : this.studyId);
+        json.put(FormsTable.COLUMN_HF_CODE, this.hfCode == null ? JSONObject.NULL : this.hfCode);
 
         if (!this.sA.equals("")) {
             json.put(FormsTable.COLUMN_SA, new JSONObject(this.sA));
