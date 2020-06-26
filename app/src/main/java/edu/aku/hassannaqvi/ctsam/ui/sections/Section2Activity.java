@@ -34,22 +34,15 @@ public class Section2Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("fumeas01", bi.fumeas01.getText().toString());
+        json.put("fumeas01", bi.fumeas01.getText().toString().trim().isEmpty() ? "-1" : bi.fumeas01.getText().toString());
+        json.put("fus2q1m1hei", bi.fus2q1m1hei.getText().toString().trim().isEmpty() ? "-1" : bi.fus2q1m1hei.getText().toString());
+        json.put("fus2q2m1wei", bi.fus2q2m1wei.getText().toString().trim().isEmpty() ? "-1" : bi.fus2q2m1wei.getText().toString());
+        json.put("fus2q3m1mua", bi.fus2q3m1mua.getText().toString().trim().isEmpty() ? "-1" : bi.fus2q3m1mua.getText().toString());
 
-        json.put("fus2q1m1hei", bi.fus2q1m1hei.getText().toString());
-
-        json.put("fus2q2m1wei", bi.fus2q2m1wei.getText().toString());
-
-        json.put("fus2q3m1mua", bi.fus2q3m1mua.getText().toString());
-
-        json.put("fumeas02", bi.fumeas02.getText().toString());
-
-        json.put("fus2q1m2hei", bi.fus2q1m2hei.getText().toString());
-
-        json.put("fus2q2m2wei", bi.fus2q2m2wei.getText().toString());
-
-        json.put("fus2q3m2mua", bi.fus2q3m2mua.getText().toString());
-
+        json.put("fumeas02", bi.fumeas01.getText().toString().trim().isEmpty() ? "-1" : bi.fumeas01.getText().toString());
+        json.put("fus2q1m2hei", bi.fus2q1m2hei.getText().toString().trim().isEmpty() ? "-1" : bi.fus2q1m2hei.getText().toString());
+        json.put("fus2q2m2wei", bi.fus2q2m2wei.getText().toString().trim().isEmpty() ? "-1" : bi.fus2q2m2wei.getText().toString());
+        json.put("fus2q3m2mua", bi.fus2q3m2mua.getText().toString().trim().isEmpty() ? "-1" : bi.fus2q3m2mua.getText().toString());
 
         MainApp.fc.setsA(String.valueOf(json));
     }

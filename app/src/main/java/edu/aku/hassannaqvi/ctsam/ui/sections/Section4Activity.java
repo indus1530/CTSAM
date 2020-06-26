@@ -34,9 +34,8 @@ public class Section4Activity extends AppCompatActivity {
 
         JSONObject json = new JSONObject();
 
-        json.put("fus4q1a", bi.fus4q1a.getText().toString());
-
-        json.put("fus4q1b", bi.fus4q1b.getText().toString());
+        json.put("fus4q1a", bi.fus4q1a.getText().toString().trim().isEmpty() ? "-1" : bi.fus4q1a.getText().toString());
+        json.put("fus4q1b", bi.fus4q1b.getText().toString().trim().isEmpty() ? "-1" : bi.fus4q1b.getText().toString());
 
         json.put("fus4q1", bi.fus4q101.isChecked() ? "1"
                 : bi.fus4q102.isChecked() ? "2"
@@ -58,9 +57,8 @@ public class Section4Activity extends AppCompatActivity {
                 : bi.fus4q4c.isChecked() ? "3"
                 : "-1");
 
-        json.put("fus4q5a", bi.fus4q5a.getText().toString());
-
-        json.put("fus4q5b", bi.fus4q5b.getText().toString());
+        json.put("fus4q5a", bi.fus4q5a.getText().toString().trim().isEmpty() ? "-1" : bi.fus4q5a.getText().toString());
+        json.put("fus4q5b", bi.fus4q5b.getText().toString().trim().isEmpty() ? "-1" : bi.fus4q5b.getText().toString());
 
         json.put("fus4q6", bi.fus4q6a.isChecked() ? "1"
                 : bi.fus4q6b.isChecked() ? "2"
@@ -107,13 +105,10 @@ public class Section4Activity extends AppCompatActivity {
                 : bi.fus4q8c.isChecked() ? "3"
                 : "-1");
 
-        json.put("fus4q8cx", bi.fus4q8cx.getText().toString());
-        json.put("fus4q9", bi.fus4q9.getText().toString());
-
-        json.put("fus4q10", bi.fus4q10.getText().toString());
-
-        json.put("fus4q11", bi.fus4q11.getText().toString());
-
+        json.put("fus4q8cx", bi.fus4q8cx.getText().toString().trim().isEmpty() ? "-1" : bi.fus4q8cx.getText().toString());
+        json.put("fus4q9", bi.fus4q9.getText().toString().trim().isEmpty() ? "-1" : bi.fus4q9.getText().toString());
+        json.put("fus4q10", bi.fus4q10.getText().toString().trim().isEmpty() ? "-1" : bi.fus4q10.getText().toString());
+        json.put("fus4q11", bi.fus4q11.getText().toString().trim().isEmpty() ? "-1" : bi.fus4q11.getText().toString());
 
         MainApp.fc.setsA(String.valueOf(json));
     }

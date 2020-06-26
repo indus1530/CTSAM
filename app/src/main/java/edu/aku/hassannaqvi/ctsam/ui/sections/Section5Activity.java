@@ -55,18 +55,21 @@ public class Section5Activity extends AppCompatActivity {
                 : bi.fus5q2g.isChecked() ? "96"
                 : "-1");
 
-        json.put("fus5q2ax", bi.fus5q2ax.getText().toString());
-        json.put("fus5q2bx", bi.fus5q2bx.getText().toString());
-        json.put("fus5q2cx", bi.fus5q2cx.getText().toString());
-        json.put("fus5q2dx", bi.fus5q2dx.getText().toString());
-        json.put("fus5q2ex", bi.fus5q2ex.getText().toString());
-        json.put("fus5q2fx", bi.fus5q2fx.getText().toString());
-        json.put("fus5q2gx", bi.fus5q2gx.getText().toString());
+        json.put("fus5q2ax", bi.fus5q2ax.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q2ax.getText().toString());
+        json.put("fus5q2bx", bi.fus5q2bx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q2bx.getText().toString());
+        json.put("fus5q2cx", bi.fus5q2cx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q2cx.getText().toString());
+        json.put("fus5q2dx", bi.fus5q2dx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q2dx.getText().toString());
+        json.put("fus5q2ex", bi.fus5q2ex.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q2ex.getText().toString());
+        json.put("fus5q2fx", bi.fus5q2fx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q2fx.getText().toString());
+        json.put("fus5q2gx", bi.fus5q2gx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q2gx.getText().toString());
+
         json.put("fus5q3", bi.fus5q3a.isChecked() ? "0"
                 : bi.fus5q3b.isChecked() ? "88"
                 : "-1");
 
         json.put("fus5q3ax", bi.fus5q3ax.getText().toString());
+
+
         json.put("fus5q4", bi.fus5q4a.isChecked() ? "1"
                 : bi.fus5q4b.isChecked() ? "2"
                 : bi.fus5q4c.isChecked() ? "3"
