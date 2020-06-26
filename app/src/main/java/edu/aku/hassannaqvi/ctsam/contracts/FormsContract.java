@@ -15,9 +15,7 @@ public class FormsContract {
     private String _ID = "";
     private String _UID = "";
     private String formDate = ""; // Date
-
     private String formType = ""; // Date
-
     private String user = ""; // Interviewer
     private String user2 = ""; // Interviewer
     private String istatus = ""; // Interview Status
