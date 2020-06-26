@@ -364,87 +364,95 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- fus5q7  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVfus5q7"
-                style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+            <LinearLayout
+                android:id="@+id/fldGrpSection501"
+                style="@style/vlinearlayout"
+                android:visibility='@{fus5q6b.checked? View.GONE : View.VISIBLE}'>
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus5q7" />
+                <!-- fus5q7  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVfus5q7"
+                    style="@style/cardView">
 
-                    <RadioGroup
-                        android:id="@+id/fus5q7"
-                        style="@style/radiogroup">
+                    <LinearLayout style="@style/vlinearlayout">
 
-                        <RadioButton
-                            android:id="@+id/fus5q7a"
-                            style="@style/radiobutton"
-                            android:text="@string/fus5q7a" />
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/fus5q7" />
 
-                        <RadioButton
-                            android:id="@+id/fus5q7b"
-                            style="@style/radiobutton"
-                            android:text="@string/fus5q7b" />
+                        <RadioGroup
+                            android:id="@+id/fus5q7"
+                            style="@style/radiogroup">
 
-                        <RadioButton
-                            android:id="@+id/fus5q7c"
-                            style="@style/radiobutton"
-                            android:text="@string/fus5q7c" />
+                            <RadioButton
+                                android:id="@+id/fus5q7a"
+                                style="@style/radiobutton"
+                                android:text="@string/fus5q7a" />
 
-                        <RadioButton
-                            android:id="@+id/fus5q7d"
-                            style="@style/radiobutton"
-                            android:text="@string/fus5q7d" />
+                            <RadioButton
+                                android:id="@+id/fus5q7b"
+                                style="@style/radiobutton"
+                                android:text="@string/fus5q7b" />
 
-                        <RadioButton
-                            android:id="@+id/fus5q7e"
-                            style="@style/radiobutton"
-                            android:text="@string/fus5q7e" />
+                            <RadioButton
+                                android:id="@+id/fus5q7c"
+                                style="@style/radiobutton"
+                                android:text="@string/fus5q7c" />
 
-                    </RadioGroup>
+                            <RadioButton
+                                android:id="@+id/fus5q7d"
+                                style="@style/radiobutton"
+                                android:text="@string/fus5q7d" />
 
-                </LinearLayout>
+                            <RadioButton
+                                android:id="@+id/fus5q7e"
+                                style="@style/radiobutton"
+                                android:text="@string/fus5q7e" />
 
-            </androidx.cardview.widget.CardView>
+                        </RadioGroup>
 
-            <!-- fus5q8  Radio   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVfus5q8"
-                style="@style/cardView">
+                    </LinearLayout>
 
-                <LinearLayout style="@style/vlinearlayout">
+                </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus5q8" />
+                <!-- fus5q8  Radio   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVfus5q8"
+                    style="@style/cardView">
 
-                    <RadioGroup
-                        android:id="@+id/fus5q8"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                    <LinearLayout style="@style/vlinearlayout">
 
-                        <RadioButton
-                            android:id="@+id/fus5q8a"
-                            style="@style/radiobutton"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:text="@string/fus5q8a" />
+                        <TextView
+                            style="@style/i_textview"
+                            android:text="@string/fus5q8" />
 
-                        <RadioButton
-                            android:id="@+id/fus5q8b"
-                            style="@style/radiobutton"
-                            android:layout_width="0dp"
-                            android:layout_weight="1"
-                            android:text="@string/fus5q8b" />
+                        <RadioGroup
+                            android:id="@+id/fus5q8"
+                            style="@style/radiogroup"
+                            android:orientation="horizontal">
 
-                    </RadioGroup>
+                            <RadioButton
+                                android:id="@+id/fus5q8a"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/fus5q8a" />
 
-                </LinearLayout>
+                            <RadioButton
+                                android:id="@+id/fus5q8b"
+                                style="@style/radiobutton"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/fus5q8b" />
 
-            </androidx.cardview.widget.CardView>
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
 
             <!-- fus5q9  Radio   -->
             <androidx.cardview.widget.CardView

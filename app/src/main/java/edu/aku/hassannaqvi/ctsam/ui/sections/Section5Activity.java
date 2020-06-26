@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -33,6 +34,13 @@ public class Section5Activity extends AppCompatActivity {
     }
 
     private void setupSkips() {
+
+        bi.fus5q6.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.fus5q6b.getId()) {
+                Clear.clearAllFields(bi.fldGrpSection501);
+            }
+        }));
+
     }
 
     private void SaveDraft() throws JSONException {
@@ -128,7 +136,7 @@ public class Section5Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, Section6Activity.class));
+                startActivity(new Intent(this, bi.fus5q1b.isChecked() || bi.fus5q1c.isChecked() ? Section7Activity.class : Section6Activity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
