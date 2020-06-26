@@ -44,15 +44,20 @@
                 android:id="@+id/fldGrpCVfus2q1m1hei"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:text="@string/fus2q1m1hei" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus2q1m1hei"
                         style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:hint="@string/fus2q1m1hei"
                         app:mask="##"
                         app:maxValue="110"
@@ -68,15 +73,20 @@
                 android:id="@+id/fldGrpCVfus2q2m1wei"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:text="@string/fus2q2m1wei" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus2q2m1wei"
                         style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:hint="@string/fus2q2m1wei"
                         app:mask="##"
                         app:maxValue="25.0"
@@ -136,15 +146,20 @@
                 android:id="@+id/fldGrpCVfus2q1m2hei"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:text="@string/fus2q1m2hei" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus2q1m2hei"
                         style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:hint="@string/fus2q1m2hei"
                         app:mask="##"
                         app:maxValue="110.0"
@@ -160,15 +175,20 @@
                 android:id="@+id/fldGrpCVfus2q2m2wei"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/vlinearlayout">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <TextView
                         style="@style/i_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:text="@string/fus2q2m2wei" />
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus2q2m2wei"
                         style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:hint="@string/fus2q2m2wei"
                         app:mask="##"
                         app:maxValue="25.0"
