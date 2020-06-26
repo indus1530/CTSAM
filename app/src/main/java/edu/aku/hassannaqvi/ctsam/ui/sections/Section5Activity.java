@@ -80,13 +80,9 @@ public class Section5Activity extends AppCompatActivity {
 
         json.put("fus5q4fx", bi.fus5q4fx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q4fx.getText().toString());
 
-        json.put("fus5q5", bi.fus5q5a.isChecked() ? ""
-                : bi.fus5q5b.isChecked() ? ""
-                : "-1");
+        json.put("fus5q5ax", bi.fus5q5ax.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q5ax.getText().toString());
+        json.put("fus5q5bx", bi.fus5q5bx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q5bx.getText().toString());
 
-        json.put("fus5q5ax", bi.fus5q5ax.getText().toString());
-
-        json.put("fus5q5bx", bi.fus5q5bx.getText().toString());
         json.put("fus5q6", bi.fus5q6a.isChecked() ? "1"
                 : bi.fus5q6b.isChecked() ? "2"
                 : "-1");
