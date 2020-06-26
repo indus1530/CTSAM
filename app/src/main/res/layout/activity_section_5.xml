@@ -89,9 +89,7 @@
 
                         <EditText
                             android:id="@+id/fus5q2ax"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlphaNumeric"
                             android:hint="@string/fus5q2a"
                             android:tag="fus5q2a"
                             android:text='@{fus5q2a.checked? fus5q2ax.getText().toString() : ""}'
@@ -104,9 +102,7 @@
 
                         <EditText
                             android:id="@+id/fus5q2bx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlphaNumeric"
                             android:hint="@string/fus5q2b"
                             android:tag="fus5q2b"
                             android:text='@{fus5q2b.checked? fus5q2bx.getText().toString() : ""}'
@@ -119,9 +115,7 @@
 
                         <EditText
                             android:id="@+id/fus5q2cx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlphaNumeric"
                             android:hint="@string/fus5q2c"
                             android:tag="fus5q2c"
                             android:text='@{fus5q2c.checked? fus5q2cx.getText().toString() : ""}'
@@ -134,9 +128,7 @@
 
                         <EditText
                             android:id="@+id/fus5q2dx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlphaNumeric"
                             android:hint="@string/fus5q2d"
                             android:tag="fus5q2d"
                             android:text='@{fus5q2d.checked? fus5q2dx.getText().toString() : ""}'
@@ -149,9 +141,7 @@
 
                         <EditText
                             android:id="@+id/fus5q2ex"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlphaNumeric"
                             android:hint="@string/fus5q2e"
                             android:tag="fus5q2e"
                             android:text='@{fus5q2e.checked? fus5q2ex.getText().toString() : ""}'
@@ -164,9 +154,7 @@
 
                         <EditText
                             android:id="@+id/fus5q2fx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlphaNumeric"
                             android:hint="@string/fus5q2f"
                             android:tag="fus5q2f"
                             android:text='@{fus5q2f.checked? fus5q2fx.getText().toString() : ""}'
@@ -179,9 +167,7 @@
 
                         <EditText
                             android:id="@+id/fus5q2gx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlphaNumeric"
                             android:hint="@string/fus5q2g"
                             android:tag="fus5q2g"
                             android:text='@{fus5q2g.checked? fus5q2gx.getText().toString() : ""}'
@@ -206,32 +192,30 @@
 
                     <RadioGroup
                         android:id="@+id/fus5q3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/fus5q3a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q3a" />
 
                         <RadioButton
                             android:id="@+id/fus5q3b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q3b" />
 
                         <EditText
                             android:id="@+id/fus5q3ax"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlphaNumeric"
                             android:hint="@string/fus5q3a"
                             android:tag="fus5q3a"
                             android:text='@{fus5q3a.checked? fus5q3ax.getText().toString() : ""}'
                             android:visibility='@{fus5q3a.checked? View.VISIBLE : View.GONE}' />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- fus5q4  Radio   -->
@@ -247,56 +231,50 @@
 
                     <RadioGroup
                         android:id="@+id/fus5q4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/fus5q4a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q4a" />
 
                         <RadioButton
                             android:id="@+id/fus5q4b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q4b" />
 
                         <RadioButton
                             android:id="@+id/fus5q4c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q4c" />
 
                         <RadioButton
                             android:id="@+id/fus5q4d"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q4d" />
 
                         <RadioButton
                             android:id="@+id/fus5q4e"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q4e" />
 
                         <RadioButton
                             android:id="@+id/fus5q4f"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q4f" />
 
                         <EditText
                             android:id="@+id/fus5q4fx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlpha"
                             android:hint="@string/fus5q4f"
                             android:tag="fus5q4f"
                             android:text='@{fus5q4f.checked? fus5q4fx.getText().toString() : ""}'
                             android:visibility='@{fus5q4f.checked? View.VISIBLE : View.GONE}' />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- fus5q5  Radio   -->
@@ -312,20 +290,16 @@
 
                     <RadioGroup
                         android:id="@+id/fus5q5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/fus5q5a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q5a" />
 
                         <EditText
                             android:id="@+id/fus5q5ax"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextNum"
                             android:hint="@string/fus5q5a"
                             android:tag="fus5q5a"
                             android:text='@{fus5q5a.checked? fus5q5ax.getText().toString() : ""}'
@@ -333,21 +307,21 @@
 
                         <RadioButton
                             android:id="@+id/fus5q5b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q5b" />
 
                         <EditText
                             android:id="@+id/fus5q5bx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextNum"
                             android:hint="@string/fus5q5b"
                             android:tag="fus5q5b"
                             android:text='@{fus5q5b.checked? fus5q5bx.getText().toString() : ""}'
                             android:visibility='@{fus5q5b.checked? View.VISIBLE : View.GONE}' />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- fus5q6  Radio   -->
@@ -363,22 +337,27 @@
 
                     <RadioGroup
                         android:id="@+id/fus5q6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/fus5q6a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/fus5q6a" />
 
                         <RadioButton
                             android:id="@+id/fus5q6b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/fus5q6b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- fus5q7  Radio   -->
@@ -394,41 +373,37 @@
 
                     <RadioGroup
                         android:id="@+id/fus5q7"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/fus5q7a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q7a" />
 
                         <RadioButton
                             android:id="@+id/fus5q7b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q7b" />
 
                         <RadioButton
                             android:id="@+id/fus5q7c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q7c" />
 
                         <RadioButton
                             android:id="@+id/fus5q7d"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q7d" />
 
                         <RadioButton
                             android:id="@+id/fus5q7e"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q7e" />
 
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- fus5q8  Radio   -->
@@ -444,22 +419,27 @@
 
                     <RadioGroup
                         android:id="@+id/fus5q8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/fus5q8a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/fus5q8a" />
 
                         <RadioButton
                             android:id="@+id/fus5q8b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:text="@string/fus5q8b" />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- fus5q9  Radio   -->
@@ -475,20 +455,16 @@
 
                     <RadioGroup
                         android:id="@+id/fus5q9"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/fus5q9a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q9a" />
 
                         <EditText
                             android:id="@+id/fus5q9ax"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlphaNumeric"
                             android:hint="@string/fus5q9a"
                             android:tag="fus5q9a"
                             android:text='@{fus5q9a.checked? fus5q9ax.getText().toString() : ""}'
@@ -496,15 +472,12 @@
 
                         <RadioButton
                             android:id="@+id/fus5q9b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q9b" />
 
                         <EditText
                             android:id="@+id/fus5q9bx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlphaNumeric"
                             android:hint="@string/fus5q9b"
                             android:tag="fus5q9b"
                             android:text='@{fus5q9b.checked? fus5q9bx.getText().toString() : ""}'
@@ -512,21 +485,21 @@
 
                         <RadioButton
                             android:id="@+id/fus5q9c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q9c" />
 
                         <EditText
                             android:id="@+id/fus5q9cx"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlphaNumeric"
                             android:hint="@string/fus5q9c"
                             android:tag="fus5q9c"
                             android:text='@{fus5q9c.checked? fus5q9cx.getText().toString() : ""}'
                             android:visibility='@{fus5q9c.checked? View.VISIBLE : View.GONE}' />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <!-- fus5q10  Radio   -->
@@ -542,50 +515,45 @@
 
                     <RadioGroup
                         android:id="@+id/fus5q10"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        style="@style/radiogroup">
 
                         <RadioButton
                             android:id="@+id/fus5q10a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q10a" />
 
                         <RadioButton
                             android:id="@+id/fus5q10b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q10b" />
 
                         <RadioButton
                             android:id="@+id/fus5q10c"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q10c" />
 
                         <RadioButton
                             android:id="@+id/fus5q10d"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q10d" />
 
                         <RadioButton
                             android:id="@+id/fus5q10e"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            style="@style/radiobutton"
                             android:text="@string/fus5q10e" />
 
                         <EditText
                             android:id="@+id/fus5q10ex"
-                            android:layout_width="match_parent"
-                            android:layout_height="56dp"
-                            android:layout_marginBottom="12dp"
+                            style="@style/EditTextAlpha"
                             android:hint="@string/fus5q10e"
                             android:tag="fus5q10e"
                             android:text='@{fus5q10e.checked? fus5q10ex.getText().toString() : ""}'
                             android:visibility='@{fus5q10e.checked? View.VISIBLE : View.GONE}' />
+
                     </RadioGroup>
+
                 </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
             <LinearLayout style="@style/hlinearlayout">
