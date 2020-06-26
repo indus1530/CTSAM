@@ -63,7 +63,7 @@ public class Section5Activity extends AppCompatActivity {
         json.put("fus5q2fx", bi.fus5q2fx.getText().toString());
         json.put("fus5q2gx", bi.fus5q2gx.getText().toString());
         json.put("fus5q3", bi.fus5q3a.isChecked() ? "0"
-//                : bi.fus5q3b.isChecked() ? "88"
+                : bi.fus5q3b.isChecked() ? "88"
                 : "-1");
 
         json.put("fus5q3ax", bi.fus5q3ax.getText().toString());
@@ -90,7 +90,7 @@ public class Section5Activity extends AppCompatActivity {
                 : bi.fus5q7b.isChecked() ? "2"
                 : bi.fus5q7c.isChecked() ? "3"
                 : bi.fus5q7d.isChecked() ? "4"
-//                : bi.fus5q7e.isChecked() ? "96"
+                : bi.fus5q7e.isChecked() ? "96"
                 : "-1");
 
         json.put("fus5q8", bi.fus5q8a.isChecked() ? "1"
