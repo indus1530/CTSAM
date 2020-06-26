@@ -1,8 +1,13 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
+import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -10,6 +15,10 @@ import org.json.JSONObject;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySection4Binding;
+import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
+import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
+import edu.aku.hassannaqvi.ctsam.core.MainApp;
+import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class Section4Activity extends AppCompatActivity {
 
@@ -18,7 +27,8 @@ public class Section4Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_section_4);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section_4);
+        bi.setCallback(this);
     }
 
     private void SaveDraft() throws JSONException {
@@ -109,4 +119,49 @@ public class Section4Activity extends AppCompatActivity {
         MainApp.fc.setsA(String.valueOf(json));
     }
 
+}
+
+    public void BtnContinue() {
+        if (formValidation()) {
+            try {
+                SaveDraft();
+            } catch (Exception e) {
+                throw new RuntimeException(e.getMessage());
+            }
+            if (UpdateDB()) {
+                finish();
+                startActivity(new Intent(this, Section5Activity.class));
+            } else {
+                Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    private boolean UpdateDB() {
+
+        DatabaseHelper db = MainApp.appInfo.getDbHelper();
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SB, MainApp.fc.getsB());
+        if (updcount > 0) {
+            return true;
+        } else {
+            Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+    }
+
+    private boolean formValidation() {
+
+        return Validator.emptyCheckingContainer(this, bi.fldGrpSection4);
+    }
+
+    public void BtnEnd() {
+        if (formValidation()) {
+            Util.contextEndActivity(this);
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(getApplicationContext(), "You Can't go back", Toast.LENGTH_LONG).show();
+    }
 }

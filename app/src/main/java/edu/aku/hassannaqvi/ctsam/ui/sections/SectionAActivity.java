@@ -77,7 +77,7 @@ public class SectionAActivity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, SectionBActivity.class).putExtra("complete", false));
+                startActivity(new Intent(this, SectionBActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
