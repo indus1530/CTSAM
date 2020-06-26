@@ -1,8 +1,333 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.sections.Section1Activity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.ctsam.ui.sections.Section1Activity" />
+    </data>
+
+    <ScrollView
+        style="@style/i_scrollview"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl">
+
+        <LinearLayout
+            android:id="@+id/fldGrpSection1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- fus1q1  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q1"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/fus1q1" />
+
+                    <RadioGroup
+                        android:id="@+id/fus1q1"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/fus1q1a"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q1a" />
+
+                        <RadioButton
+                            android:id="@+id/fus1q1b"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q1b" />
+
+                        <RadioButton
+                            android:id="@+id/fus1q1c"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q1c" />
+
+                        <RadioButton
+                            android:id="@+id/fus1q1d"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q1d" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus1q2  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q2"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/fus1q2" />
+
+                    <RadioGroup
+                        android:id="@+id/fus1q2"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/fus1q2a"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q2a" />
+
+                        <RadioButton
+                            android:id="@+id/fus1q2b"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q2b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus1q3  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q3"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/fus1q3" />
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus1q3"
+                        style="@style/EditTextNum"
+                        android:hint="@string/fus1q3"
+                        android:inputType="number"
+                        app:mask="##"
+                        app:maxValue="59999"
+                        app:minValue="10001"
+                        app:type="range" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus1q4  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q4"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/fus1q4" />
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus1q4"
+                        style="@style/EditTextNum"
+                        android:hint="@string/fus1q4"
+                        android:inputType="number"
+                        app:mask="##"
+                        app:maxValue="10"
+                        app:minValue="1"
+                        app:type="range" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus1q5  Input   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q5"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/fus1q5" />
+
+                    <EditText
+                        android:id="@+id/fus1q5"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/fus1q5" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus1q6  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q6"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/fus1q6" />
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus1q6"
+                        style="@style/EditTextNum"
+                        android:hint="@string/fus1q6"
+                        android:inputType="number"
+                        app:mask="##"
+                        app:maxValue="10"
+                        app:minValue="1"
+                        app:type="range" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus1q7  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q7"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/fus1q7" />
+
+                    <RadioGroup
+                        android:id="@+id/fus1q7"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/fus1q7a"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q7a" />
+
+                        <RadioButton
+                            android:id="@+id/fus1q7b"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q7b" />
+
+                        <RadioButton
+                            android:id="@+id/fus1q7c"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q7c" />
+
+                        <RadioButton
+                            android:id="@+id/fus1q7d"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q7d" />
+
+                        <RadioButton
+                            android:id="@+id/fus1q7e"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q7e" />
+
+                        <RadioButton
+                            android:id="@+id/fus1q7f"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q7f" />
+
+                        <RadioButton
+                            android:id="@+id/fus1q7g"
+                            style="@style/radiobutton"
+                            android:text="@string/fus1q7g" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus1q8  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q8"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/fus1q8" />
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus1q8"
+                        style="@style/EditTextNum"
+                        android:hint="@string/fus1q8"
+                        android:inputType="number"
+                        app:mask="##"
+                        app:maxValue="0"
+                        app:minValue="0"
+                        app:type="range" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus1q9  Input   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q9"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/fus1q9" />
+
+                    <EditText
+                        android:id="@+id/fus1q9"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/fus1q9" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus1q10  Input   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q10"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/fus1q10" />
+
+                    <EditText
+                        android:id="@+id/fus1q10"
+                        style="@style/EditTextAlpha"
+                        android:hint="@string/fus1q10" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout style="@style/hlinearlayout">
+
+                <Button
+                    android:id="@+id/btn_End"
+                    style="@style/buttonEnd"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    style="@style/buttonNext"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save" />
+                <!--'onClick' for btn_End will NOT change and always call 'endInterview'-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
