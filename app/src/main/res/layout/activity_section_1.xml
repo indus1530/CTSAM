@@ -17,9 +17,7 @@
 
         <LinearLayout
             android:id="@+id/fldGrpSection1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            style="@style/vlinearlayout">
 
             <!-- fus1q1  Radio   -->
             <androidx.cardview.widget.CardView
