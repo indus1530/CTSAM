@@ -288,37 +288,41 @@
                         style="@style/i_textview"
                         android:text="@string/fus5q5" />
 
-                    <RadioGroup
-                        android:id="@+id/fus5q5"
-                        style="@style/radiogroup">
+                    <LinearLayout style="@style/hlinearlayout">
 
-                        <RadioButton
-                            android:id="@+id/fus5q5a"
-                            style="@style/radiobutton"
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:text="@string/fus5q5a" />
 
                         <EditText
                             android:id="@+id/fus5q5ax"
                             style="@style/EditTextNum"
-                            android:hint="@string/fus5q5a"
-                            android:tag="fus5q5a"
-                            android:text='@{fus5q5a.checked? fus5q5ax.getText().toString() : ""}'
-                            android:visibility='@{fus5q5a.checked? View.VISIBLE : View.GONE}' />
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:hint="@string/fus5q5a" />
 
-                        <RadioButton
-                            android:id="@+id/fus5q5b"
-                            style="@style/radiobutton"
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:text="@string/fus5q5b" />
 
                         <EditText
                             android:id="@+id/fus5q5bx"
                             style="@style/EditTextNum"
-                            android:hint="@string/fus5q5b"
-                            android:tag="fus5q5b"
-                            android:text='@{fus5q5b.checked? fus5q5bx.getText().toString() : ""}'
-                            android:visibility='@{fus5q5b.checked? View.VISIBLE : View.GONE}' />
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:hint="@string/fus5q5b" />
 
-                    </RadioGroup>
+                    </LinearLayout>
 
                 </LinearLayout>
 
