@@ -23,7 +23,14 @@
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme1">
-
+        <activity android:name=".ui.sections.Section8Activity"></activity>
+        <activity android:name=".ui.sections.Section7Activity" />
+        <activity android:name=".ui.sections.Section6Activity" />
+        <activity android:name=".ui.sections.Section5Activity" />
+        <activity android:name=".ui.sections.Section4Activity" />
+        <activity android:name=".ui.sections.Section3Activity" />
+        <activity android:name=".ui.sections.Section2Activity" />
+        <activity android:name=".ui.sections.Section1Activity" />
         <activity
             android:name=".ui.other.SplashscreenActivity"
             android:screenOrientation="portrait">
@@ -33,80 +40,64 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ui.other.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
-
         <activity
             android:name=".ui.sections.SectionAActivity"
             android:label="@string/seca"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.sections.SectionBActivity"
             android:label="@string/secb"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.sections.SectionCActivity"
             android:label="@string/secc"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.sections.SectionDActivity"
             android:label="@string/secd"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.sections.SectionEActivity"
             android:label="@string/sece"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.sections.SectionFActivity"
             android:label="@string/secf"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.sections.SectionGActivity"
             android:label="@string/secg"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.sections.SectionHActivity"
             android:label="@string/sech"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.sections.SectionIActivity"
             android:label="@string/seci"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.sections.SectionJActivity"
             android:label="@string/secj"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.other.EndingActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.other.MainActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".core.AndroidDatabaseManager"
             android:parentActivityName=".ui.other.MainActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.sync.SyncActivity"
             android:parentActivityName=".ui.other.MainActivity"
             android:screenOrientation="portrait" />
-
     </application>
 
 </manifest>
