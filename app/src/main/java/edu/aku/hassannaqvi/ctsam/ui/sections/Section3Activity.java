@@ -32,6 +32,9 @@ public class Section3Activity extends AppCompatActivity {
         setupSkips();
     }
 
+    private void setupSkips() {
+    }
+
     private void SaveDraft() throws JSONException {
 
         JSONObject json = new JSONObject();
@@ -105,10 +108,6 @@ public class Section3Activity extends AppCompatActivity {
 
 
         MainApp.fc.setsA(String.valueOf(json));
-    }
-
-
-    private void setupSkips() {
     }
 
     public void BtnContinue() {

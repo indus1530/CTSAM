@@ -15,6 +15,9 @@ public class FormsContract {
     private String _ID = "";
     private String _UID = "";
     private String formDate = ""; // Date
+
+    private String formType = ""; // Date
+
     private String user = ""; // Interviewer
     private String user2 = ""; // Interviewer
     private String istatus = ""; // Interview Status
@@ -78,6 +81,7 @@ public class FormsContract {
         this._ID = jsonObject.getString(FormsTable.COLUMN_ID);
         this._UID = jsonObject.getString(FormsTable.COLUMN_UID);
         this.formDate = jsonObject.getString(FormsTable.COLUMN_FORMDATE);
+        this.formType = jsonObject.getString(FormsTable.COLUMN_FORMTYPE);
         this.user = jsonObject.getString(FormsTable.COLUMN_USER);
         this.user2 = jsonObject.getString(FormsTable.COLUMN_USER2);
         this.istatus = jsonObject.getString(FormsTable.COLUMN_ISTATUS);
@@ -113,6 +117,7 @@ public class FormsContract {
         this._ID = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_ID));
         this._UID = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_UID));
         this.formDate = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_FORMDATE));
+        this.formType = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_FORMTYPE));
         this.user = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_USER));
         this.user2 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_USER2));
         this.istatus = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_ISTATUS));
@@ -149,6 +154,7 @@ public class FormsContract {
         json.put(FormsTable.COLUMN_ID, this._ID == null ? JSONObject.NULL : this._ID);
         json.put(FormsTable.COLUMN_UID, this._UID == null ? JSONObject.NULL : this._UID);
         json.put(FormsTable.COLUMN_FORMDATE, this.formDate == null ? JSONObject.NULL : this.formDate);
+        json.put(FormsTable.COLUMN_FORMTYPE, this.formType == null ? JSONObject.NULL : this.formType);
         json.put(FormsTable.COLUMN_USER, this.user == null ? JSONObject.NULL : this.user);
         json.put(FormsTable.COLUMN_USER2, this.user2 == null ? JSONObject.NULL : this.user2);
         json.put(FormsTable.COLUMN_ISTATUS, this.istatus == null ? JSONObject.NULL : this.istatus);
@@ -329,6 +335,14 @@ public class FormsContract {
         this.formDate = formDate;
     }
 
+    public String getFormType() {
+        return formType;
+    }
+
+    public void setFormType(String formType) {
+        this.formType = formType;
+    }
+
     public String getUser() {
         return user;
     }
@@ -450,6 +464,7 @@ public class FormsContract {
         String COLUMN_ID = "_id";
         String COLUMN_UID = "_uid";
         String COLUMN_FORMDATE = "formdate";
+        String COLUMN_FORMTYPE = "formtype";
         String COLUMN_USER = "username";
         String COLUMN_USER2 = "username2";
         String COLUMN_ISTATUS = "istatus";
