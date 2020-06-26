@@ -12,6 +12,10 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import edu.aku.hassannaqvi.ctsam.CONSTANTS;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -67,6 +71,16 @@ public class Section1Activity extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
+        MainApp.fc = new FormsContract();
+        MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+        MainApp.fc.setFormType(CONSTANTS.CHILDFOLLOWUP);
+        MainApp.fc.setUser(MainApp.userName);
+        MainApp.fc.setUser2(MainApp.userName2);
+        MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
+        MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
+        MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
+        MainApp.setGPS(this); // Set GPS
+
         JSONObject json = new JSONObject();
 
         json.put("fus1q1", bi.fus1q1a.isChecked() ? "1"
@@ -79,13 +93,14 @@ public class Section1Activity extends AppCompatActivity {
                 : bi.fus1q2b.isChecked() ? "2"
                 : "-1");
 
-        json.put("fus1q3", bi.fus1q3.getText().toString());
 
-        json.put("fus1q4", bi.fus1q4.getText().toString());
+        json.put("fus1q3", bi.fus1q3.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q3.getText().toString());
+        json.put("fus1q4", bi.fus1q4.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q4.getText().toString());
+        json.put("fus1q5", bi.fus1q5.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q5.getText().toString());
+        json.put("fus1q6", bi.fus1q6.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q6.getText().toString());
 
-        json.put("fus1q5", bi.fus1q5.getText().toString());
 
-        json.put("fus1q6", bi.fus1q6.getText().toString());
+
 
         json.put("fus1q7", bi.fus1q7a.isChecked() ? "1"
                 : bi.fus1q7b.isChecked() ? "2"

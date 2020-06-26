@@ -25,6 +25,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
+import edu.aku.hassannaqvi.ctsam.CONSTANTS;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.contracts.HealthFacilitiesContract;
@@ -105,6 +106,7 @@ public class SectionAActivity extends AppCompatActivity {
 
         MainApp.fc = new FormsContract();
         MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+        MainApp.fc.setFormType(CONSTANTS.CHILDRECRUITMENT);
         MainApp.fc.setUser(MainApp.userName);
         MainApp.fc.setUser2(MainApp.userName2);
         MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
