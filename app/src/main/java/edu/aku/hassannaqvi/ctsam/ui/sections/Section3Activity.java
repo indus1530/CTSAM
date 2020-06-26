@@ -24,6 +24,11 @@ public class Section3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_3);
         bi.setCallback(this);
+
+        setupSkips();
+    }
+
+    private void setupSkips() {
     }
 
     public void BtnContinue() {

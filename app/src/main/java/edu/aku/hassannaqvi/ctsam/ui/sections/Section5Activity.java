@@ -24,6 +24,11 @@ public class Section5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_5);
         bi.setCallback(this);
+
+        setupSkips();
+    }
+
+    private void setupSkips() {
     }
 
     public void BtnContinue() {
