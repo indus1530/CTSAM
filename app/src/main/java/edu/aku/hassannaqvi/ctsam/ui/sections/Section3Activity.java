@@ -13,11 +13,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import edu.aku.hassannaqvi.ctsam.R;
-import edu.aku.hassannaqvi.ctsam.core.MainApp;
-import edu.aku.hassannaqvi.ctsam.databinding.ActivitySection3Binding;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
+import edu.aku.hassannaqvi.ctsam.databinding.ActivitySection3Binding;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class Section3Activity extends AppCompatActivity {
@@ -108,7 +107,6 @@ public class Section3Activity extends AppCompatActivity {
         MainApp.fc.setsA(String.valueOf(json));
     }
 
-}
 
     private void setupSkips() {
     }
