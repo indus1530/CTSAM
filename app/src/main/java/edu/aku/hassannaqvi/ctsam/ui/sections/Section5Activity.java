@@ -45,7 +45,8 @@ public class Section5Activity extends AppCompatActivity {
                 : bi.fus5q1d.isChecked() ? "4"
                 : "-1");
 
-        json.put("fus5q1dx", bi.fus5q1dx.getText().toString());
+        json.put("fus5q1dx", bi.fus5q1dx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q1dx.getText().toString());
+
         json.put("fus5q2", bi.fus5q2a.isChecked() ? ""
                 : bi.fus5q2b.isChecked() ? ""
                 : bi.fus5q2c.isChecked() ? ""
@@ -67,8 +68,7 @@ public class Section5Activity extends AppCompatActivity {
                 : bi.fus5q3b.isChecked() ? "88"
                 : "-1");
 
-        json.put("fus5q3ax", bi.fus5q3ax.getText().toString());
-
+        json.put("fus5q3ax", bi.fus5q3ax.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q3ax.getText().toString());
 
         json.put("fus5q4", bi.fus5q4a.isChecked() ? "1"
                 : bi.fus5q4b.isChecked() ? "2"
@@ -78,12 +78,14 @@ public class Section5Activity extends AppCompatActivity {
                 : bi.fus5q4f.isChecked() ? "96"
                 : "-1");
 
-        json.put("fus5q4fx", bi.fus5q4fx.getText().toString());
+        json.put("fus5q4fx", bi.fus5q4fx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q4fx.getText().toString());
+
         json.put("fus5q5", bi.fus5q5a.isChecked() ? ""
                 : bi.fus5q5b.isChecked() ? ""
                 : "-1");
 
         json.put("fus5q5ax", bi.fus5q5ax.getText().toString());
+
         json.put("fus5q5bx", bi.fus5q5bx.getText().toString());
         json.put("fus5q6", bi.fus5q6a.isChecked() ? "1"
                 : bi.fus5q6b.isChecked() ? "2"
