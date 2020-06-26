@@ -93,7 +93,7 @@ public class Section5Activity extends AppCompatActivity {
                 : bi.fus5q7b.isChecked() ? "2"
                 : bi.fus5q7c.isChecked() ? "3"
                 : bi.fus5q7d.isChecked() ? "4"
-//                : bi.fus5q7e.isChecked() ? "96"
+                : bi.fus5q7e.isChecked() ? "96"
                 : "-1");
 
         json.put("fus5q8", bi.fus5q8a.isChecked() ? "1"
