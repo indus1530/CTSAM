@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -33,6 +34,25 @@ public class Section3Activity extends AppCompatActivity {
     }
 
     private void setupSkips() {
+
+        bi.fus3q1m.setOnCheckedChangeListener((compoundButton, b) -> {
+            if (b) {
+                Clear.clearAllFields(bi.fldGrpSec101);
+            }
+        });
+
+        bi.fus3q2.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.fus3q2b.getId()) {
+                Clear.clearAllFields(bi.fldGrpSec102);
+            }
+        }));
+
+        bi.fus3q5.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.fus3q5b.getId()) {
+                Clear.clearAllFields(bi.fldGrpCVfus3q6);
+            }
+        }));
+
     }
 
     private void SaveDraft() throws JSONException {
@@ -52,6 +72,7 @@ public class Section3Activity extends AppCompatActivity {
         json.put("fus3q1k", bi.fus3q1k.isChecked() ? "11" : "-1");
         json.put("fus3q1l", bi.fus3q1l.isChecked() ? "96" : "-1");
         json.put("fus3q1m", bi.fus3q1m.isChecked() ? "888" : "-1");
+        json.put("fus3q1x", bi.fus3q1x.getText().toString().trim().isEmpty() ? "-1" : bi.fus3q1x.getText().toString());
 
         json.put("fus3q2", bi.fus3q2a.isChecked() ? "1"
                 : bi.fus3q2b.isChecked() ? "2"

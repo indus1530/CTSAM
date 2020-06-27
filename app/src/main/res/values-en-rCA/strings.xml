@@ -33,6 +33,15 @@
     Aga Khan University, Karachi, Pakistan</string>
     <string name="title_activity_family_members_list">Family Members List</string>
 
+    <string name="ts1heading">SECTION 1: Identification Information </string>
+    <string name="ts2heading">SECTION 2: Child Anthropometry </string>
+    <string name="ts3heading">SECTION 3: Child Morbidity </string>
+    <string name="ts4heading">SECTION 4: Child Recovery Assessment </string>
+    <string name="ts5heading">SECTION 5: Compliance Assessment </string>
+    <string name="ts6heading">SECTION 6: Treatment Outcome And Supplementation  </string>
+    <string name="ts7heading">SECTION 7: Exit criteria from study for SAM </string>
+    <string name="ts8heading">SECTION 8: Exit criteria from study for MAM </string>
+
     <string name="yes"> Yes </string>
     <string name="no"> No </string>
     <string name="dkn"> Don\'t Know </string>

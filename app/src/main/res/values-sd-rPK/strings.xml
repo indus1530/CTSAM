@@ -34,6 +34,15 @@
     Aga Khan University, Karachi, Pakistan</string>
     <string name="title_activity_family_members_list">Family Members List</string>
 
+    <string name="ts1heading">SECTION 1: نشاندهي جي معلومات </string>
+    <string name="ts2heading">SECTION 2: ٻار جي جسم جي ماپ </string>
+    <string name="ts3heading">SECTION 3: ٻار جي بيماري </string>
+    <string name="ts4heading">SECTION 4: ٻار جي صحت جي سڌاري جي چڪاس </string>
+    <string name="ts5heading">SECTION 5: اضافي غذا ملڻ جي چڪاس </string>
+    <string name="ts6heading">SECTION 6: علاج ۽ اضافي غذا جي استعمال جو نتيجو </string>
+    <string name="ts7heading">SECTION 7: تحقيق مان خارج ڪرڻ جي لاءِ </string>
+    <string name="ts8heading">SECTION 8: تحقيق مان خارج ڪرڻ جي لاءِ</string>
+
     <string name="yes"> ها </string>
     <string name="no"> نه </string>
     <string name="dkn"> خبر نه آهي </string>

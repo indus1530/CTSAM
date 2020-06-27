@@ -23,14 +23,7 @@
         android:label="@string/app_name"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme1">
-        <activity android:name=".ui.sections.Section8Activity"></activity>
-        <activity android:name=".ui.sections.Section7Activity" />
-        <activity android:name=".ui.sections.Section6Activity" />
-        <activity android:name=".ui.sections.Section5Activity" />
-        <activity android:name=".ui.sections.Section4Activity" />
-        <activity android:name=".ui.sections.Section3Activity" />
-        <activity android:name=".ui.sections.Section2Activity" />
-        <activity android:name=".ui.sections.Section1Activity" />
+
         <activity
             android:name=".ui.other.SplashscreenActivity"
             android:screenOrientation="portrait">
@@ -44,6 +37,38 @@
             android:name=".ui.other.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.sections.Section1Activity"
+            android:label="@string/ts1heading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.Section2Activity"
+            android:label="@string/ts2heading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.Section3Activity"
+            android:label="@string/ts3heading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.Section4Activity"
+            android:label="@string/ts4heading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.Section5Activity"
+            android:label="@string/ts5heading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.Section6Activity"
+            android:label="@string/ts6heading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.Section7Activity"
+            android:label="@string/ts7heading"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.Section8Activity"
+            android:label="@string/ts8heading"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sections.SectionAActivity"
             android:label="@string/seca"

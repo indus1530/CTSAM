@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -33,6 +34,13 @@ public class Section5Activity extends AppCompatActivity {
     }
 
     private void setupSkips() {
+
+        bi.fus5q6.setOnCheckedChangeListener(((radioGroup, i) -> {
+            if (i == bi.fus5q6b.getId()) {
+                Clear.clearAllFields(bi.fldGrpSection501);
+            }
+        }));
+
     }
 
     private void SaveDraft() throws JSONException {
@@ -81,7 +89,6 @@ public class Section5Activity extends AppCompatActivity {
         json.put("fus5q4fx", bi.fus5q4fx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q4fx.getText().toString());
 
         json.put("fus5q5ax", bi.fus5q5ax.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q5ax.getText().toString());
-
         json.put("fus5q5bx", bi.fus5q5bx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q5bx.getText().toString());
 
         json.put("fus5q6", bi.fus5q6a.isChecked() ? "1"
@@ -104,12 +111,9 @@ public class Section5Activity extends AppCompatActivity {
                 : bi.fus5q9c.isChecked() ? "96"
                 : "-1");
 
-        json.put("fus5q9ax", bi.fus5q9ax.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q9ax.getText().toString());
-
-        json.put("fus5q9bx", bi.fus5q9bx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q9bx.getText().toString());
-
-        json.put("fus5q9cx", bi.fus5q9cx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q9cx.getText().toString());
-
+        json.put("fus5q9ax", bi.fus5q9ax.getText().toString());
+        json.put("fus5q9bx", bi.fus5q9bx.getText().toString());
+        json.put("fus5q9cx", bi.fus5q9cx.getText().toString());
         json.put("fus5q10", bi.fus5q10a.isChecked() ? "1"
                 : bi.fus5q10b.isChecked() ? "2"
                 : bi.fus5q10c.isChecked() ? "3"
@@ -117,7 +121,8 @@ public class Section5Activity extends AppCompatActivity {
                 : bi.fus5q10e.isChecked() ? "96"
                 : "-1");
 
-        json.put("fus5q10ex", bi.fus5q10ex.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q10ex.getText().toString());
+        json.put("fus5q10ex", bi.fus5q10ex.getText().toString());
+
 
         MainApp.fc.setsA(String.valueOf(json));
     }
@@ -131,7 +136,7 @@ public class Section5Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, Section6Activity.class));
+                startActivity(new Intent(this, bi.fus5q1b.isChecked() || bi.fus5q1c.isChecked() ? Section7Activity.class : Section6Activity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
