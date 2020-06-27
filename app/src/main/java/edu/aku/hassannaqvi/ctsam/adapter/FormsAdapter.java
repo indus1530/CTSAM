@@ -1,4 +1,4 @@
-package edu.aku.hassannaqvi.ctsam;
+package edu.aku.hassannaqvi.ctsam.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.Collections;
 import java.util.List;
 
+import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 
 /**

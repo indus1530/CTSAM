@@ -187,7 +187,6 @@
                                 android:paddingTop="8dp"
                                 android:radius="2dp"
                                 android:text="Measurer"
-
                                 android:textColor="@color/white"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
