@@ -110,7 +110,7 @@ public class Section4Activity extends AppCompatActivity {
         json.put("fus4q10", bi.fus4q10.getText().toString().trim().isEmpty() ? "-1" : bi.fus4q10.getText().toString());
         json.put("fus4q11", bi.fus4q11.getText().toString().trim().isEmpty() ? "-1" : bi.fus4q11.getText().toString());
 
-        MainApp.fc.setsA(String.valueOf(json));
+        MainApp.fc.setsD(String.valueOf(json));
     }
 
 
@@ -133,7 +133,7 @@ public class Section4Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SB, MainApp.fc.getsB());
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SD, MainApp.fc.getsD());
         if (updcount > 0) {
             return true;
         } else {

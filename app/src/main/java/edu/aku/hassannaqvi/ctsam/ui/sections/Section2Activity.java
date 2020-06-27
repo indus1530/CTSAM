@@ -44,7 +44,7 @@ public class Section2Activity extends AppCompatActivity {
         json.put("fus2q2m2wei", bi.fus2q2m2wei.getText().toString().trim().isEmpty() ? "-1" : bi.fus2q2m2wei.getText().toString());
         json.put("fus2q3m2mua", bi.fus2q3m2mua.getText().toString().trim().isEmpty() ? "-1" : bi.fus2q3m2mua.getText().toString());
 
-        MainApp.fc.setsA(String.valueOf(json));
+        MainApp.fc.setsB(String.valueOf(json));
     }
 
     public void BtnContinue() {

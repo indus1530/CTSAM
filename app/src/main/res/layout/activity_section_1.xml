@@ -111,7 +111,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/fus1q3"
-                        app:mask="##"
+                        app:mask="#####"
                         app:maxValue="59999"
                         app:minValue="10001"
                         app:type="range" />
@@ -252,6 +252,15 @@
                             android:id="@+id/fus1q7g"
                             style="@style/radiobutton"
                             android:text="@string/fus1q7g" />
+
+
+                        <EditText
+                            android:id="@+id/fus1q7gx"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/specify"
+                            android:tag="fus1q7gx"
+                            android:text='@{fus1q7g.checked? fus1q7gx.getText().toString() : ""}'
+                            android:visibility='@{fus1q7g.checked ? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
 

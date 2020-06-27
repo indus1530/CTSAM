@@ -407,6 +407,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_PROJECT_NAME, fc.getProjectName());
         values.put(FormsTable.COLUMN_UID, fc.get_UID());
         values.put(FormsTable.COLUMN_FORMDATE, fc.getFormDate());
+        values.put(FormsTable.COLUMN_FORMTYPE, fc.getFormType());
         values.put(FormsTable.COLUMN_LUID, fc.getLuid());
         values.put(FormsTable.COLUMN_USER, fc.getUser());
         values.put(FormsTable.COLUMN_USER2, fc.getUser2());
@@ -591,6 +592,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable._ID,
                 FormsTable.COLUMN_UID,
                 FormsTable.COLUMN_FORMDATE,
+                FormsTable.COLUMN_FORMTYPE,
                 FormsTable.COLUMN_USER,
                 FormsTable.COLUMN_USER2,
                 FormsTable.COLUMN_ISTATUS,
