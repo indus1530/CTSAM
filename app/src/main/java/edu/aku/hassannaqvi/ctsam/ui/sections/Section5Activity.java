@@ -121,8 +121,7 @@ public class Section5Activity extends AppCompatActivity {
                 : bi.fus5q10e.isChecked() ? "96"
                 : "-1");
 
-        json.put("fus5q10ex", bi.fus5q10ex.getText().toString());
-
+        json.put("fus5q10ex", bi.fus5q10ex.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q10ex.getText().toString());
 
         MainApp.fc.setsA(String.valueOf(json));
     }
