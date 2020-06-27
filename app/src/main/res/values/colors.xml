@@ -10,9 +10,10 @@
     <color name="dullWhile">#CFD8DC</color>-->
 
 
-    <color name="colorAccent">#708685</color>
-    <color name="colorPrimary">#4f6a6a</color>
-    <color name="colorPrimaryDark">#2f4f4f</color>
+    <color name="colorAccent">#c51162</color>
+    <color name="colorPrimary">#880e4f</color>
+    <color name="colorPrimaryDark">#560027</color>
+    <color name="colorPrimaryLight">#bc477b</color>
 
     <color name="ticker_red">#92a3a2</color>
     <color name="dullWhile">#b5c1c0</color>
@@ -49,8 +50,7 @@
 
     <color name="colorSecondary">#00617d</color>
     <color name="redforborder">#EF9A9A</color>
-    <color name="colorPrimaryLight">#448aff</color>
-    <color name="colorPrimaryAlpha">#607d8b</color>
+    <color name="colorPrimaryAlpha">#7f560027</color>
     <color name="pink_100">#9BD8FF</color>
     <color name="colorHeading">#99FFCC</color>
     <color name="colorRedsub">#d6ff8a80</color>

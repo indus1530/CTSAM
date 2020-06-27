@@ -242,7 +242,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
 
                     pd.setMessage("Received: " + jsonArray.length());
                     list.get(position).setmessage("Received: " + jsonArray.length());
-                    list.get(position).setstatus("Successfull");
+                    list.get(position).setstatus("Successful");
                     list.get(position).setstatusID(3);
                     adapter.updatesyncList(list);
 //                    pd.show();
@@ -252,7 +252,7 @@ public class GetAllData extends AsyncTask<String, String, String> {
             } else {
                 pd.setMessage("Received: " + result.length() + "");
                 list.get(position).setmessage("Received: " + result.length() + "");
-                list.get(position).setstatus("Successfull");
+                list.get(position).setstatus("Successful");
                 list.get(position).setstatusID(3);
                 adapter.updatesyncList(list);
 //                pd.show();
