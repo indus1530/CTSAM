@@ -1,56 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-
-    <!--<color name="colorAccent">#90A4AE</color>
-    <color name="colorPrimary">#78909C</color>
-    <color name="colorPrimaryDark">#607D8B</color>
-
-    <color name="ticker_red">#B0BEC5</color>
-    <color name="dullWhile">#CFD8DC</color>-->
-
-
-    <color name="colorAccent">#c51162</color>
     <color name="colorPrimary">#880e4f</color>
     <color name="colorPrimaryDark">#560027</color>
-    <color name="colorPrimaryLight">#bc477b</color>
+    <color name="colorAccent">#c51162</color>
 
-    <color name="ticker_red">#92a3a2</color>
-    <color name="dullWhile">#b5c1c0</color>
+    <color name="ticker_red">#80ff0000</color>
 
-
-    <!--<color name="colorAccent">#1E88E5</color>
-    <color name="colorPrimary">#1565C0</color>
-    <color name="colorPrimaryDark">#1565C0</color>
-
-    <color name="ticker_red">#42A5F5</color>
-    <color name="dullWhile">#90CAF9</color>-->
-
-
-    <!--<color name="colorAccent">#69f0ae</color>
-    <color name="colorPrimary">#43a047</color>
-    <color name="colorPrimaryDark">#2e7d32</color>
-
-    <color name="ticker_red">#64dd17</color>
-    <color name="dullWhile">#f2f2f2</color>-->
 
     <color name="dullWhiteOverlay">#99E7E6E6</color>
-    <color name="dullWhileOverlay">#99d6d6d6</color>
     <color name="gray">#757575</color>
     <color name="white">#FFFFFF</color>
     <color name="blackOverlay">#66000000</color>
     <color name="yellow">#FFA726</color>
     <color name="lightBlue">#0277BD</color>
     <color name="black">#000000</color>
-    <color name="red700">#D32F2F</color>
-    <color name="orange600">#F4511E</color>
+    <color name="greenInfo">#7CB342</color>
 
     <color name="colorPrimaryDark1">#303F9F</color>
-    <color name="dullWhite">#d6d6d6</color>
+    <color name="dullWhite">#f7f7f7</color>
 
     <color name="colorSecondary">#00617d</color>
     <color name="redforborder">#EF9A9A</color>
-    <color name="colorPrimaryAlpha">#7f560027</color>
+    <color name="colorPrimaryLight">#bc477b</color>
+    <color name="colorPrimaryAlpha">#d6880e4f</color>
     <color name="pink_100">#9BD8FF</color>
     <color name="colorHeading">#99FFCC</color>
     <color name="colorRedsub">#d6ff8a80</color>
@@ -63,9 +35,7 @@
     <color name="colorText">#050505</color>
 
     <color name="black_overlay">#66000000</color>
-    <color name="white54">#F5F5F5</color>
     <color name="zxing_transparent">#00000000</color>
-    <color name="greenInfo">#7CB342</color>
 
     <color name="year">#999999</color>
     <color name="title">#222222</color>
