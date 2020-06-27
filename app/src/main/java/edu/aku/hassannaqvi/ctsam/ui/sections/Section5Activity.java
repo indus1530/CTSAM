@@ -80,13 +80,10 @@ public class Section5Activity extends AppCompatActivity {
 
         json.put("fus5q4fx", bi.fus5q4fx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q4fx.getText().toString());
 
-        json.put("fus5q5", bi.fus5q5a.isChecked() ? ""
-                : bi.fus5q5b.isChecked() ? ""
-                : "-1");
+        json.put("fus5q5ax", bi.fus5q5ax.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q5ax.getText().toString());
 
-        json.put("fus5q5ax", bi.fus5q5ax.getText().toString());
+        json.put("fus5q5bx", bi.fus5q5bx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q5bx.getText().toString());
 
-        json.put("fus5q5bx", bi.fus5q5bx.getText().toString());
         json.put("fus5q6", bi.fus5q6a.isChecked() ? "1"
                 : bi.fus5q6b.isChecked() ? "2"
                 : "-1");
@@ -107,9 +104,12 @@ public class Section5Activity extends AppCompatActivity {
                 : bi.fus5q9c.isChecked() ? "96"
                 : "-1");
 
-        json.put("fus5q9ax", bi.fus5q9ax.getText().toString());
-        json.put("fus5q9bx", bi.fus5q9bx.getText().toString());
-        json.put("fus5q9cx", bi.fus5q9cx.getText().toString());
+        json.put("fus5q9ax", bi.fus5q9ax.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q9ax.getText().toString());
+
+        json.put("fus5q9bx", bi.fus5q9bx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q9bx.getText().toString());
+
+        json.put("fus5q9cx", bi.fus5q9cx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q9cx.getText().toString());
+
         json.put("fus5q10", bi.fus5q10a.isChecked() ? "1"
                 : bi.fus5q10b.isChecked() ? "2"
                 : bi.fus5q10c.isChecked() ? "3"
@@ -117,8 +117,7 @@ public class Section5Activity extends AppCompatActivity {
                 : bi.fus5q10e.isChecked() ? "96"
                 : "-1");
 
-        json.put("fus5q10ex", bi.fus5q10ex.getText().toString());
-
+        json.put("fus5q10ex", bi.fus5q10ex.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q10ex.getText().toString());
 
         MainApp.fc.setsA(String.valueOf(json));
     }
