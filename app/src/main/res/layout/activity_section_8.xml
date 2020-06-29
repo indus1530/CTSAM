@@ -18,6 +18,7 @@
             android:id="@+id/fldGrpSection8"
             style="@style/vlinearlayout">
 
+
             <!-- fus8q1  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVfus8q1"
@@ -25,32 +26,14 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bottom">
-
                         <TextView
-                            android:id="@+id/qtxt_fus8q1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_fus8q1"
+                            style="@style/sub"
                             android:text="@string/fus8q1" />
-
-                        <TextView
-                            android:id="@+id/q_fus8q1"
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignTop="@id/qtxt_fus8q1"
-                            android:layout_alignBottom="@id/qtxt_fus8q1"
-                            android:text="@string/Q_fus8q1" />
-
-                    </RelativeLayout>
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- fus8q101  Radio   -->
             <androidx.cardview.widget.CardView
@@ -162,6 +145,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- fus8q2  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVfus8q2"
@@ -169,33 +153,14 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bottom">
-
                         <TextView
-                            android:id="@+id/qtxt_fus8q2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_fus8q2"
+                            style="@style/sub"
                             android:text="@string/fus8q2" />
-
-                        <TextView
-                            android:id="@+id/q_fus8q2"
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignTop="@id/qtxt_fus8q2"
-                            android:layout_alignBottom="@id/qtxt_fus8q2"
-                            android:text="@string/Q_fus8q2" />
-
-                    </RelativeLayout>
-
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- fus8q201  Radio   -->
             <androidx.cardview.widget.CardView
@@ -254,6 +219,7 @@
 
             </androidx.cardview.widget.CardView>
 
+
             <!-- fus8q3  Title   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVfus8q3"
@@ -261,32 +227,14 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/bottom">
-
-                        <TextView
-                            android:id="@+id/qtxt_fus8q3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_fus8q3"
-                            android:text="@string/fus8q2" />
-
-                        <TextView
-                            android:id="@+id/q_fus8q3"
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignTop="@id/qtxt_fus8q3"
-                            android:layout_alignBottom="@id/qtxt_fus8q3"
-                            android:text="@string/Q_fus8q3" />
-
-                    </RelativeLayout>
+                    <TextView
+                        style="@style/sub"
+                        android:text="@string/fus8q3" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- fus8q301  Radio   -->
             <androidx.cardview.widget.CardView
@@ -359,6 +307,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
 
             <!-- fus8q401  Radio   -->
             <androidx.cardview.widget.CardView
