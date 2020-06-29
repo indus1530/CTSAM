@@ -32,8 +32,8 @@ import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -106,7 +106,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
     @BindView(R.id.email_sign_in_button)
     AppCompatButton mEmailSignInButton;
     @BindView(R.id.syncData)
-    ImageButton syncData;
+    Button syncData;
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
     String DirectoryName;
