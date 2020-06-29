@@ -65,7 +65,6 @@ public class SectionAActivity extends AppCompatActivity {
                 bi.fldGrpCVs1q8r.setVisibility(View.GONE);
             }
         });*/
-
     }
 
 

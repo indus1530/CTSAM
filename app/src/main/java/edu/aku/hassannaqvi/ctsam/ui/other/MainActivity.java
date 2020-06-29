@@ -29,6 +29,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -37,8 +40,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.AreasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
@@ -47,7 +48,7 @@ import edu.aku.hassannaqvi.ctsam.core.AndroidDatabaseManager;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivityMainBinding;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionAActivity;
+import edu.aku.hassannaqvi.ctsam.ui.sections.Section1Activity;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionBActivity;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionCActivity;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionDActivity;
@@ -171,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
         Intent oF = null;
         switch (id) {
             case R.id.formA:
-                oF = new Intent(this, SectionAActivity.class);
+                oF = new Intent(this, Section1Activity.class);
                 break;
             case R.id.formB:
                 oF = new Intent(this, SectionBActivity.class);

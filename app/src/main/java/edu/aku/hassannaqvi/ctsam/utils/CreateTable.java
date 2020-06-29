@@ -20,6 +20,7 @@ public final class CreateTable {
             + FormsContract.FormsTable.COLUMN_PROJECT_NAME + " TEXT,"
             + FormsContract.FormsTable.COLUMN_UID + " TEXT,"
             + FormsContract.FormsTable.COLUMN_FORMDATE + " TEXT,"
+            + FormsContract.FormsTable.COLUMN_FORMTYPE + " TEXT,"
             + FormsContract.FormsTable.COLUMN_APPVERSION + " TEXT,"
             + FormsContract.FormsTable.COLUMN_STUDYID + " TEXT,"
             + FormsContract.FormsTable.COLUMN_HF_CODE + " TEXT,"

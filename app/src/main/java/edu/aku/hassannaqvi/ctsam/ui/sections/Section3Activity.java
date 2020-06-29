@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,22 +36,86 @@ public class Section3Activity extends AppCompatActivity {
 
     private void setupSkips() {
 
+        /*bi.s1q8.setOnCheckedChangeListener((group, checkedId) -> {
+
+            if (checkedId == bi.s1q8b.getId()) {
+                bi.fldGrpCVs1q8r.setVisibility(View.VISIBLE);
+            } else {
+                Clear.clearAllFields(bi.fldGrpCVs1q8r);
+                bi.fldGrpCVs1q8r.setVisibility(View.GONE);
+            }
+
+        });*/
+
+
         bi.fus3q1m.setOnCheckedChangeListener((compoundButton, b) -> {
             if (b) {
+
                 Clear.clearAllFields(bi.fldGrpSec101);
+
+                Clear.clearAllFields(bi.fldGrpCVfus3q2);
+                bi.fldGrpCVfus3q2.setVisibility(View.GONE);
+
+                Clear.clearAllFields(bi.fldGrpCVfus3q3);
+                bi.fldGrpCVfus3q3.setVisibility(View.GONE);
+
+                Clear.clearAllFields(bi.fldGrpCVfus3q4);
+                bi.fldGrpCVfus3q4.setVisibility(View.GONE);
+
+                Clear.clearAllFields(bi.fldGrpCVfus3q5);
+                bi.fldGrpCVfus3q5.setVisibility(View.GONE);
+
+                Clear.clearAllFields(bi.fldGrpCVfus3q6);
+                bi.fldGrpCVfus3q6.setVisibility(View.GONE);
+
+            } else {
+
+                bi.fldGrpCVfus3q2.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus3q3.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus3q4.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus3q5.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus3q6.setVisibility(View.VISIBLE);
             }
         });
 
         bi.fus3q2.setOnCheckedChangeListener(((radioGroup, i) -> {
+
             if (i == bi.fus3q2b.getId()) {
-                Clear.clearAllFields(bi.fldGrpSec102);
+
+                Clear.clearAllFields(bi.fldGrpCVfus3q3);
+                bi.fldGrpCVfus3q3.setVisibility(View.GONE);
+
+                Clear.clearAllFields(bi.fldGrpCVfus3q4);
+                bi.fldGrpCVfus3q4.setVisibility(View.GONE);
+
+                Clear.clearAllFields(bi.fldGrpCVfus3q5);
+                bi.fldGrpCVfus3q5.setVisibility(View.GONE);
+
+                Clear.clearAllFields(bi.fldGrpCVfus3q6);
+                bi.fldGrpCVfus3q6.setVisibility(View.GONE);
+
+            } else {
+
+                bi.fldGrpCVfus3q3.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus3q4.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus3q5.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus3q6.setVisibility(View.VISIBLE);
             }
+
         }));
 
         bi.fus3q5.setOnCheckedChangeListener(((radioGroup, i) -> {
+
             if (i == bi.fus3q5b.getId()) {
+
                 Clear.clearAllFields(bi.fldGrpCVfus3q6);
+                bi.fldGrpCVfus3q6.setVisibility(View.GONE);
+
+            } else {
+
+                bi.fldGrpCVfus3q6.setVisibility(View.VISIBLE);
             }
+
         }));
 
     }
@@ -72,6 +137,7 @@ public class Section3Activity extends AppCompatActivity {
         json.put("fus3q1k", bi.fus3q1k.isChecked() ? "11" : "-1");
         json.put("fus3q1l", bi.fus3q1l.isChecked() ? "96" : "-1");
         json.put("fus3q1m", bi.fus3q1m.isChecked() ? "888" : "-1");
+
         json.put("fus3q1x", bi.fus3q1x.getText().toString().trim().isEmpty() ? "-1" : bi.fus3q1x.getText().toString());
 
         json.put("fus3q2", bi.fus3q2a.isChecked() ? "1"
@@ -103,7 +169,7 @@ public class Section3Activity extends AppCompatActivity {
 
         json.put("fus3q6", bi.fus3q6.getText().toString().trim().isEmpty() ? "-1" : bi.fus3q6.getText().toString());
 
-        MainApp.fc.setsA(String.valueOf(json));
+        MainApp.fc.setsC(String.valueOf(json));
     }
 
     public void BtnContinue() {
@@ -125,7 +191,7 @@ public class Section3Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SB, MainApp.fc.getsB());
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SC, MainApp.fc.getsC());
         if (updcount > 0) {
             return true;
         } else {

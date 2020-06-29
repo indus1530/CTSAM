@@ -303,7 +303,6 @@ public class FormsContract {
         this.sJ = sJ;
     }
 
-
     public String getProjectName() {
         String projectName = "ctsam_2020";
         return projectName;

@@ -56,8 +56,7 @@ public class Section8Activity extends AppCompatActivity {
                 : bi.fus8q401b.isChecked() ? "2"
                 : "-1");
 
-
-        MainApp.fc.setsA(String.valueOf(json));
+        MainApp.fc.setsH(String.valueOf(json));
     }
 
 
@@ -70,7 +69,7 @@ public class Section8Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, EndingActivity.class));
+                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -80,7 +79,7 @@ public class Section8Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SB, MainApp.fc.getsB());
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SH, MainApp.fc.getsH());
         if (updcount > 0) {
             return true;
         } else {
