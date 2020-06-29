@@ -27,7 +27,7 @@
                 <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
-                        style="@style/i_textview"
+                        style="@style/sub"
                         android:text="@string/fus4title" />
 
                 </LinearLayout>
@@ -41,12 +41,29 @@
 
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
+                    <RelativeLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/fus4q1a" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q1a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q1a"
+                            android:text="@string/fus4q1a" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q1a"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q1a"
+                            android:layout_alignBottom="@id/qtxt_fus4q1a"
+                            android:text="@string/Q_fus4q1a" />
+
+                    </RelativeLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus4q1a"
@@ -54,10 +71,10 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/fus4q1a"
-                        app:mask="##"
-                        app:maxValue="20.0"
-                        app:minValue="11.0"
-                        app:type="range" />
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
 
                 </LinearLayout>
 
@@ -67,15 +84,31 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVfus4q1b"
                 style="@style/cardView">
-
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
+                    <RelativeLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/fus4q1b" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q1b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q1b"
+                            android:text="@string/fus4q1b" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q1b"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q1b"
+                            android:layout_alignBottom="@id/qtxt_fus4q1b"
+                            android:text="@string/Q_fus4q1b" />
+
+                    </RelativeLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus4q1b"
@@ -83,10 +116,10 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/fus4q1b"
-                        app:mask="##"
-                        app:maxValue="20.0"
-                        app:minValue="11.0"
-                        app:type="range" />
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
 
                 </LinearLayout>
 
@@ -99,9 +132,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q1"
+                            android:text="@string/fus4q1" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q1"
+                            android:layout_alignBottom="@id/qtxt_fus4q1"
+                            android:text="@string/Q_fus4q1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/fus4q1"
@@ -135,9 +187,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q2" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q2"
+                            android:text="@string/fus4q2" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q2"
+                            android:layout_alignBottom="@id/qtxt_fus4q2"
+                            android:text="@string/Q_fus4q2" />
+
+                    </RelativeLayout>
+
 
                     <RadioGroup
                         android:id="@+id/fus4q2"
@@ -176,9 +248,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q3" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q3"
+                            android:text="@string/fus4q3" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q3"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q3"
+                            android:layout_alignBottom="@id/qtxt_fus4q3"
+                            android:text="@string/Q_fus4q3" />
+
+                    </RelativeLayout>
+                    
 
                     <RadioGroup
                         android:id="@+id/fus4q3"
@@ -212,9 +304,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q4" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q4"
+                            android:text="@string/fus4q4" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q4"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q4"
+                            android:layout_alignBottom="@id/qtxt_fus4q4"
+                            android:text="@string/Q_fus4q4" />
+
+                    </RelativeLayout>
+
 
                     <RadioGroup
                         android:id="@+id/fus4q4"
@@ -249,8 +361,13 @@
                 <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
-                        style="@style/i_textview"
+                        style="@style/sub"
                         android:text="@string/fus4q5" />
+
+
+
+
+
 
                     <LinearLayout style="@style/hlinearlayout">
 
@@ -307,9 +424,30 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q6" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q6"
+                            android:text="@string/fus4q6" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q6"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q6"
+                            android:layout_alignBottom="@id/qtxt_fus4q6"
+                            android:text="@string/Q_fus4q6" />
+
+                    </RelativeLayout>
+
 
                     <RadioGroup
                         android:id="@+id/fus4q6"
@@ -344,7 +482,7 @@
                 <LinearLayout style="@style/vlinearlayout">
 
                     <TextView
-                        style="@style/i_textview"
+                        style="@style/sub"
                         android:text="@string/fus4q7" />
 
                 </LinearLayout>
@@ -358,9 +496,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q701" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q701"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q701"
+                            android:text="@string/fus4q701" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q701"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q701"
+                            android:layout_alignBottom="@id/qtxt_fus4q701"
+                            android:text="@string/Q_fus4q701" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/fus4q701"
@@ -394,9 +552,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q702" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q702"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q702"
+                            android:text="@string/fus4q702" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q702"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q702"
+                            android:layout_alignBottom="@id/qtxt_fus4q702"
+                            android:text="@string/Q_fus4q702" />
+
+                    </RelativeLayout>
+
 
                     <RadioGroup
                         android:id="@+id/fus4q702"
@@ -430,9 +608,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q703" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q703"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q703"
+                            android:text="@string/fus4q703" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q703"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q703"
+                            android:layout_alignBottom="@id/qtxt_fus4q703"
+                            android:text="@string/Q_fus4q703" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/fus4q703"
@@ -466,9 +663,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q704" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q704"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q704"
+                            android:text="@string/fus4q704" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q704"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q704"
+                            android:layout_alignBottom="@id/qtxt_fus4q704"
+                            android:text="@string/Q_fus4q704" />
+
+                    </RelativeLayout>
+
 
                     <RadioGroup
                         android:id="@+id/fus4q704"
@@ -502,9 +719,31 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q705" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q705"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q705"
+                            android:text="@string/fus4q705" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q705"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q705"
+                            android:layout_alignBottom="@id/qtxt_fus4q705"
+                            android:text="@string/Q_fus4q705" />
+
+                    </RelativeLayout>
+
 
                     <RadioGroup
                         android:id="@+id/fus4q705"
@@ -538,9 +777,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q706" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q706"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q706"
+                            android:text="@string/fus4q706" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q706"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q706"
+                            android:layout_alignBottom="@id/qtxt_fus4q706"
+                            android:text="@string/Q_fus4q706" />
+
+                    </RelativeLayout>
+
 
                     <RadioGroup
                         android:id="@+id/fus4q706"
@@ -574,9 +833,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q707" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q707"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q707"
+                            android:text="@string/fus4q707" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q707"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q707"
+                            android:layout_alignBottom="@id/qtxt_fus4q707"
+                            android:text="@string/Q_fus4q707" />
+
+                    </RelativeLayout>
+
 
                     <RadioGroup
                         android:id="@+id/fus4q707"
@@ -610,9 +889,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q708" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q708"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q708"
+                            android:text="@string/fus4q708" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q708"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q708"
+                            android:layout_alignBottom="@id/qtxt_fus4q708"
+                            android:text="@string/Q_fus4q708" />
+
+                    </RelativeLayout>
+
 
                     <RadioGroup
                         android:id="@+id/fus4q708"
@@ -646,9 +945,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q709" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q709"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q709"
+                            android:text="@string/fus4q709" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q709"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q709"
+                            android:layout_alignBottom="@id/qtxt_fus4q709"
+                            android:text="@string/Q_fus4q709" />
+
+                    </RelativeLayout>
+
 
                     <RadioGroup
                         android:id="@+id/fus4q709"
@@ -682,10 +1001,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus4q8" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
 
+                        <TextView
+                            android:id="@+id/qtxt_fus4q8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q8"
+                            android:text="@string/fus4q8" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q8"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q8"
+                            android:layout_alignBottom="@id/qtxt_fus4q8"
+                            android:text="@string/Q_fus4q8" />
+
+                    </RelativeLayout>
                     <RadioGroup
                         android:id="@+id/fus4q8"
                         style="@style/radiogroup">
@@ -717,6 +1054,8 @@
 
                 </LinearLayout>
 
+
+
             </androidx.cardview.widget.CardView>
 
             <!-- fus4q9  Input-Numeric   -->
@@ -726,12 +1065,29 @@
 
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
+                    <RelativeLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/fus4q9" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q9"
+                            android:text="@string/fus4q9" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q9"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q9"
+                            android:layout_alignBottom="@id/qtxt_fus4q9"
+                            android:text="@string/Q_fus4q9" />
+
+                    </RelativeLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus4q9"
@@ -739,10 +1095,10 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/fus4q9"
-                        app:mask="##"
-                        app:maxValue="12"
-                        app:minValue="2"
-                        app:type="range" />
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
 
                 </LinearLayout>
 
@@ -755,25 +1111,43 @@
 
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
+                    <RelativeLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/fus4q10" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q10"
+                            android:text="@string/fus4q10" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q10"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q10"
+                            android:layout_alignBottom="@id/qtxt_fus4q10"
+                            android:text="@string/Q_fus4q10" />
+
+                    </RelativeLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus4q10"
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/fus4q10"
-                        app:mask="##"
-                        app:maxValue="10.0"
-                        app:minValue="0.0"
-                        app:type="range" />
+                        android:hint="@string/num"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
 
                 </LinearLayout>
+
 
             </androidx.cardview.widget.CardView>
 
@@ -784,25 +1158,43 @@
 
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
+                    <RelativeLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/fus4q11" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q11"
+                            android:text="@string/fus4q11" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q11"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q11"
+                            android:layout_alignBottom="@id/qtxt_fus4q11"
+                            android:text="@string/Q_fus4q11" />
+
+                    </RelativeLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus4q11"
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/fus4q11"
-                        app:mask="##"
-                        app:maxValue="10.0"
-                        app:minValue="0.0"
-                        app:type="range" />
+                        android:hint="@string/num"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
 
                 </LinearLayout>
+
 
             </androidx.cardview.widget.CardView>
 
