@@ -77,14 +77,12 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@drawable/bottom">
-
                         <TextView
                             android:id="@+id/qtxt_muac2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_muac2"
                             android:text="@string/muac2" />
-
                         <TextView
                             android:id="@+id/q_muac2"
                             style="@style/quesNum"
@@ -122,14 +120,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
-
                         <TextView
                             android:id="@+id/qtxt_s2q1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s2q1"
                             android:text="@string/s2q1" />
-
                         <TextView
                             android:id="@+id/q_s2q1"
                             style="@style/quesNum"
@@ -176,14 +172,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
-
                         <TextView
                             android:id="@+id/qtxt_s2q2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s2q2"
                             android:text="@string/s2q2" />
-
                         <TextView
                             android:id="@+id/q_s2q2"
                             style="@style/quesNum"
@@ -192,14 +186,14 @@
                             android:layout_alignTop="@id/qtxt_s2q2"
                             android:layout_alignBottom="@id/qtxt_s2q2"
                             android:text="@string/Q_s2q2" />
-
-                        <TextView
-                            android:id="@+id/qtxt_s2q2_instruction"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_s2q2"
-                            android:text="@string/s2q2_instruction" />
                     </RelativeLayout>
+
+                    <!--<TextView
+                        android:id="@+id/qtxt_s2q2_instruction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/q_s2q2"
+                        android:text="@string/s2q2_instruction" />-->
 
                     <RadioGroup
                         android:id="@+id/s2q2"
@@ -242,14 +236,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
-
                         <TextView
                             android:id="@+id/qtxt_s2q3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_s2q3"
                             android:text="@string/s2q3" />
-
                         <TextView
                             android:id="@+id/q_s2q3"
                             style="@style/quesNum"
@@ -312,14 +304,14 @@
                             android:layout_alignTop="@id/qtxt_s2q4"
                             android:layout_alignBottom="@id/qtxt_s2q4"
                             android:text="@string/Q_s2q4" />
-
-                        <TextView
-                            android:id="@+id/qtxt_s2q4_instruction"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/qtxt_s2q4_instruction"
-                            android:text="@string/s2q4_instruction" />
                     </RelativeLayout>
+
+                    <!--<TextView
+                        android:id="@+id/qtxt_s2q4_instruction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/qtxt_s2q4_instruction"
+                        android:text="@string/s2q4_instruction" />-->
 
                     <RadioGroup
                         android:id="@+id/s2q4"
@@ -374,13 +366,14 @@
                             android:layout_alignBottom="@id/qtxt_s2q501"
                             android:text="@string/Q_s2q501" />
 
-                        <TextView
-                            android:id="@+id/qtxt_s2q5_subtitle"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/qtxt_s2q5_subtitle"
-                            android:text="@string/s2q5_subtitle" />
                     </RelativeLayout>
+
+                    <!--<TextView
+                        android:id="@+id/qtxt_s2q5_subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/qtxt_s2q5_subtitle"
+                        android:text="@string/s2q5_subtitle" />-->
 
                     <RadioGroup
                         android:id="@+id/s2q501"
@@ -1013,7 +1006,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
-                        <TextView
+                        <!--<TextView
                             android:id="@+id/qtxt_s2q29_instruction"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1025,7 +1018,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/qtxt_s2q29_instruction2"
-                            android:text="@string/s2q29_instruction2" />
+                            android:text="@string/s2q29_instruction2" />-->
+
                     </RelativeLayout>
 
                 </LinearLayout>
