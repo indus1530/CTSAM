@@ -2237,7 +2237,7 @@
     <string name="s2q3b"> No.</string>
 
     <string name="s2q4"> S2Q4: If Yes then rank : </string>
-    <string name="s2q4_instruction"> Appetite returned (eats at least 75% of RUTF + RUSF) </string>
+    <string name="s2q4_info"> Appetite returned (eats at least 75% of RUTF + RUSF) </string>
     <string name="s2q4a"> Good  ( Child takes RUTF / RUSF )  eagerly </string>
     <string name="s2q4b"> Poor  ( Child takes RUTF / RUSF with persistent encouragement ) </string>
     <string name="s2q4c"> Refused  ( Child refuses RUTF / RUSF even after persistent encouragement ) </string>

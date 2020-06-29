@@ -2236,7 +2236,7 @@
     <string name="s2q3b"> نه </string>
 
     <string name="s2q4"> S2Q4: جيڪڏهن ها ته ڪهڙي درجي جي آهي </string>
-    <string name="s2q4_instruction"> گھٽ ۾ گھٽ RUTF / RUSF 75% واپرائجي </string>
+    <string name="s2q4_info"> گھٽ ۾ گھٽ RUTF / RUSF 75% واپرائجي </string>
     <string name="s2q4a"> سٺو ( ٻار RUTF / RUSF شوق سان کاڌو )   </string>
     <string name="s2q4b"> خراب ( ٻار بار بار چوڻ کان پوءِ RUTF / RUSF کاڌو ) </string>
     <string name="s2q4c"> انڪار ڪيو ( ٻار بار بار چوڻ کان پوءِ به RUTF / RUSF نه کاڌو ) </string>
