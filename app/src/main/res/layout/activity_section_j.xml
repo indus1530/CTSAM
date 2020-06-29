@@ -28,9 +28,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s10q1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s10q1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s10q1"
+                            android:text="@string/s10q1" />
+
+                        <TextView
+                            android:id="@+id/q_s10q1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s10q1"
+                            android:layout_alignBottom="@id/qtxt_s10q1"
+                            android:text="@string/Q_s10q1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s10q1"
@@ -122,14 +142,28 @@
 
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/s10q2" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
 
+                        <TextView
+                            android:id="@+id/qtxt_s10q2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s10q2"
+                            android:text="@string/s10q2" />
+
+                        <TextView
+                            android:id="@+id/q_s10q2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s10q2"
+                            android:layout_alignBottom="@id/qtxt_s10q2"
+                            android:text="@string/Q_s10q2" />
+
+                    </RelativeLayout>
 
                     <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                         android:id="@+id/s10q2"
