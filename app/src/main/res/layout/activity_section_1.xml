@@ -1,8 +1,8 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <data>
 
+    <data>
         <import type="android.view.View" />
 
         <variable
@@ -10,14 +10,17 @@
             type="edu.aku.hassannaqvi.ctsam.ui.sections.Section1Activity" />
     </data>
 
+
     <ScrollView
         style="@style/i_scrollview"
         android:layoutDirection="rtl"
         android:textDirection="rtl">
 
+
         <LinearLayout
             android:id="@+id/fldGrpSection1"
             style="@style/vlinearlayout">
+
 
             <!-- fus1q1  Radio   -->
             <androidx.cardview.widget.CardView

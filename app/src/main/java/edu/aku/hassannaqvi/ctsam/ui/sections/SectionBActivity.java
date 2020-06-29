@@ -1,19 +1,20 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
+import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -191,8 +192,6 @@ public class SectionBActivity extends AppCompatActivity {
     }
 
 
-
-
     public void BtnEnd() {
         if (formValidation()) {
             Util.contextEndActivity(this);
@@ -202,5 +201,31 @@ public class SectionBActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Toast.makeText(getApplicationContext(), "You Can't go back", Toast.LENGTH_LONG).show();
+    }
+
+    public void showTooltip(@NotNull View view) {
+        if (view.getId() != View.NO_ID) {
+            String package_name = getApplicationContext().getPackageName();
+            // Question Number Textview ID must be prefixed with q_ e.g.: 'q_aa12a'
+            String infoid = view.getResources().getResourceName(view.getId()).replace(package_name + ":id/q_", "");
+            // Question info text must be suffixed with _info e.g.: aa12a_info
+            int stringRes = this.getResources().getIdentifier(infoid + "_info", "string", getApplicationContext().getPackageName());
+            // Fetch info text from strings.xml
+            //String infoText = (String) getResources().getText(stringRes);
+            // Check if string resource exists to avoid crash on missing info string
+            if (stringRes != 0) {
+                // Fetch info text from strings.xml
+                String infoText = (String) getResources().getText(stringRes);
+                new AlertDialog.Builder(this)
+                        .setTitle("Info: " + infoid.toUpperCase())
+                        .setMessage(infoText)
+                        .setIcon(android.R.drawable.ic_dialog_info)
+                        .show();
+            } else {
+                Toast.makeText(this, "No information available on this question.", Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            Toast.makeText(this, "No ID Associated with this question.", Toast.LENGTH_SHORT).show();
+        }
     }
 }

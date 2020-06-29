@@ -2225,7 +2225,7 @@
     <string name="s2q1b"> نه </string>
 
     <string name="s2q2"> پيرن تي سوڄ </string>
-    <string name="s2q2_instruction">  پيرن تي سوڄ جي وضاحت:\n - ڪو نه آهي\n - هلڪو، ٻنهي پيرن تي ۽ کڙين تي,\n  - وچولو، ٻنهي پيرن، ڄگھن ۽ ٻانهن تي\n  - شديد سوڄ پيرن ،ڄگھن، ٻانهن، هٿن ۽ منهن تي </string>
+    <string name="s2q2_info">  پيرن تي سوڄ جي وضاحت:\n - ڪو نه آهي\n - هلڪو، ٻنهي پيرن تي ۽ کڙين تي,\n  - وچولو، ٻنهي پيرن، ڄگھن ۽ ٻانهن تي\n  - شديد سوڄ پيرن ،ڄگھن، ٻانهن، هٿن ۽ منهن تي </string>
     <string name="s2q2a"> ڪو نه آهي </string>
     <string name="s2q2b">  پيرن تي سوڄ + </string>
     <string name="s2q2c">   پيرن تي سوڄ ++ </string>
@@ -2236,7 +2236,7 @@
     <string name="s2q3b"> نه </string>
 
     <string name="s2q4">  جيڪڏهن ها ته ڪهڙي درجي جي آهي </string>
-    <string name="s2q4_instruction"> گھٽ ۾ گھٽ RUTF / RUSF 75% واپرائجي </string>
+    <string name="s2q4_info"> گھٽ ۾ گھٽ RUTF / RUSF 75% واپرائجي </string>
     <string name="s2q4a"> سٺو ( ٻار RUTF / RUSF شوق سان کاڌو )   </string>
     <string name="s2q4b"> خراب ( ٻار بار بار چوڻ کان پوءِ RUTF / RUSF کاڌو ) </string>
     <string name="s2q4c"> انڪار ڪيو ( ٻار بار بار چوڻ کان پوءِ به RUTF / RUSF نه کاڌو ) </string>
@@ -2922,7 +2922,8 @@
     <string name="fus3q2">مٿئين ڏنل بيماري/بيمارين لاءِ ڇا توهان ٻار جو علاج ڪرايو؟</string>
     <string name="fus3q2a">ها</string>
     <string name="fus3q2b">نه</string>
-    <string name="fus3q3">ان وقت توهان جي ٻار جي صحت جي چڪاس ڪنهن ڪئي    (ھڪ کان وڌيڪ جواب ٿي سگھن ٿا)</string>
+    <string name="fus3q3"> ان وقت توهان جي ٻار جي صحت جي چڪاس ڪنهن ڪئي </string>
+    <string name="fus3q3_info"> ھڪ کان وڌيڪ جواب ٿي سگھن ٿا </string>
     <string name="fus3q3_title1">صحت ڪارڪن</string>
     <string name="fus3q3a">ڊاڪٽر</string>
     <string name="fus3q3b">نرس/مڊوائف/ايل ايڇ وي</string>

@@ -2,13 +2,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
         <import type="android.view.View" />
 
         <variable
             name="callback"
             type="edu.aku.hassannaqvi.ctsam.ui.sections.SectionF2Activity" />
     </data>
+
 
     <ScrollView
         style="@style/i_scrollview"
