@@ -32,7 +32,7 @@
                 android:text="@string/a119" />
 
             <TextView
-                style="@style/i_textviewhint"
+                style="@style/textviewh"
                 android:text="@string/a119hint" />
 
             <RadioGroup

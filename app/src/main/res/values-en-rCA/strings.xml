@@ -2231,7 +2231,7 @@
     <string name="s2q2c"> Bilateral pitting oedema ++ </string>
     <string name="s2q2d"> Bilateral pitting oedema +++ </string>
 
-    <string name="s2q2_instruction"> Note: Grades of Oedema - Definition : \n1 - Absent, \n2 - Grade + Mild: Both feet / ankles, \n3 - Grade++Moderate: Both feet, plus lower legs, hands or lower arms, \n4 - Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face </string>
+    <string name="s2q2_info"> Note: Grades of Oedema - Definition : \n1 - Absent, \n2 - Grade + Mild: Both feet / ankles, \n3 - Grade++Moderate: Both feet, plus lower legs, hands or lower arms, \n4 - Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face </string>
     <string name="s2q3"> S2Q3: Presence of appetite for RUTF / RUSF ? </string>
     <string name="s2q3a"> Yes</string>
     <string name="s2q3b"> No.</string>
@@ -2925,7 +2925,8 @@
     <string name="fus3q2">Did you seek care for your child for the above problems/complications? </string>
     <string name="fus3q2a">Yes</string>
     <string name="fus3q2b">No</string>
-    <string name="fus3q3">Who checked your child’s health at that time?  (Multiple Responses)</string>
+    <string name="fus3q3"> Who checked your child’s health at that time ? </string>
+    <string name="fus3q3_info"> Multiple Responses </string>
     <string name="fus3q3_title1">HEALTH PERSONNEL</string>
     <string name="fus3q3a">Doctor</string>
     <string name="fus3q3b">Nurse/Midwife/LHV </string>
