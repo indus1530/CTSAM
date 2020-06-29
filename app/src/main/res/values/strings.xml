@@ -2193,25 +2193,25 @@
     <!--  CTSAM STRINGS -->
     <!--  SECTION A -->
     <string name="seca"> SECTION A: ايڊريس ۽ نشاندهي جي معلومات  </string>
-    <string name="s1q1"> S1Q1: صحت مرڪز جو نالو </string>
+    <string name="s1q1"> صحت مرڪز جو نالو </string>
 
-    <string name="s1q2"> S1Q2: تعلقي جو نالو </string>
+    <string name="s1q2">  تعلقي جو نالو </string>
 
-    <string name="s1q3"> S1Q3: ڳوٺ جو نالو </string>
+    <string name="s1q3">  ڳوٺ جو نالو </string>
 
-    <string name="s1q4"> S1Q4: ايڊريس </string>
+    <string name="s1q4">  ايڊريس </string>
 
-    <string name="s1q5"> S1Q5: پهريون ڊيٽا ڪيلڪٽر جو نالو </string>
+    <string name="s1q5">  پهريون ڊيٽا ڪيلڪٽر جو نالو </string>
 
-    <string name="s1q6"> S1Q6: ٻيو ڊيٽا ڪيلڪٽر جو نالو </string>
+    <string name="s1q6">  ٻيو ڊيٽا ڪيلڪٽر جو نالو </string>
 
-    <string name="s1q7"> S1Q7: داخلا جي تاريخ </string>
+    <string name="s1q7">  داخلا جي تاريخ </string>
 
-    <string name="s1q8"> S1Q8: ڇا والدين / قانوني وارثن حصو وٺڻ لاءِ راضي ٿيا ۽ راضي نامي وارو فارم ڀريو ويو؟ </string>
+    <string name="s1q8">  ڇا والدين / قانوني وارثن حصو وٺڻ لاءِ راضي ٿيا ۽ راضي نامي وارو فارم ڀريو ويو؟ </string>
     <string name="s1q8a"> ها </string>
     <string name="s1q8b"> نه </string>
 
-    <string name="s1q8r"> S1Q8r: راضي نامو نه ڀرڻ جو سبب </string>
+    <string name="s1q8r">  راضي نامو نه ڀرڻ جو سبب </string>
 
 
     <!--  SECTION B -->
