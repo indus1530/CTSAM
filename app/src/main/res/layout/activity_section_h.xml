@@ -27,9 +27,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q1"
+                            android:text="@string/s8q1" />
+
+                        <TextView
+                            android:id="@+id/q_s8q1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q1"
+                            android:layout_alignBottom="@id/qtxt_s8q1"
+                            android:text="@string/Q_s8q1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q1"
@@ -64,9 +83,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q1a1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q1a1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q1a1"
+                            android:text="@string/s8q1a1" />
+
+                        <TextView
+                            android:id="@+id/q_s8q1a1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q1a1"
+                            android:layout_alignBottom="@id/qtxt_s8q1a1"
+                            android:text="@string/Q_s8q1a1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q1a1"
@@ -100,9 +138,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q2" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q2"
+                            android:text="@string/s8q2" />
+
+                        <TextView
+                            android:id="@+id/q_s8q2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q2"
+                            android:layout_alignBottom="@id/qtxt_s8q2"
+                            android:text="@string/Q_s8q2" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q2"
@@ -137,9 +194,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q2a1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q2a1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q2a1"
+                            android:text="@string/s8q2a1" />
+
+                        <TextView
+                            android:id="@+id/q_s8q2a1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q2a1"
+                            android:layout_alignBottom="@id/qtxt_s8q2a1"
+                            android:text="@string/Q_s8q2a1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q2a1"
@@ -173,9 +249,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q3" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q3"
+                            android:text="@string/s8q3" />
+
+                        <TextView
+                            android:id="@+id/q_s8q3"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q3"
+                            android:layout_alignBottom="@id/qtxt_s8q3"
+                            android:text="@string/Q_s8q3" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q3"
@@ -210,9 +305,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q3a1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q3a1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q3a1"
+                            android:text="@string/s8q3a1" />
+
+                        <TextView
+                            android:id="@+id/q_s8q3a1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q3a1"
+                            android:layout_alignBottom="@id/qtxt_s8q3a1"
+                            android:text="@string/Q_s8q3a1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q3a1"
@@ -246,9 +360,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q4" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q4"
+                            android:text="@string/s8q4" />
+
+                        <TextView
+                            android:id="@+id/q_s8q4"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q4"
+                            android:layout_alignBottom="@id/qtxt_s8q4"
+                            android:text="@string/Q_s8q4" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q4"
@@ -283,9 +416,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q4a1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q4a1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q4a1"
+                            android:text="@string/s8q4a1" />
+
+                        <TextView
+                            android:id="@+id/q_s8q4a1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q4a1"
+                            android:layout_alignBottom="@id/qtxt_s8q4a1"
+                            android:text="@string/Q_s8q4a1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q4a1"
@@ -319,9 +471,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q5" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q5"
+                            android:text="@string/s8q5" />
+
+                        <TextView
+                            android:id="@+id/q_s8q5"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q5"
+                            android:layout_alignBottom="@id/qtxt_s8q5"
+                            android:text="@string/Q_s8q5" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q5"
@@ -356,9 +527,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q5a1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q5a1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q5a1"
+                            android:text="@string/s8q5a1" />
+
+                        <TextView
+                            android:id="@+id/q_s8q5a1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q5a1"
+                            android:layout_alignBottom="@id/qtxt_s8q5a1"
+                            android:text="@string/Q_s8q5a1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q5a1"
@@ -392,9 +582,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q6" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q6"
+                            android:text="@string/s8q6" />
+
+                        <TextView
+                            android:id="@+id/q_s8q6"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q6"
+                            android:layout_alignBottom="@id/qtxt_s8q6"
+                            android:text="@string/Q_s8q6" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q6"
@@ -429,9 +638,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q6a1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q6a1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q6a1"
+                            android:text="@string/s8q6a1" />
+
+                        <TextView
+                            android:id="@+id/q_s8q6a1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q6a1"
+                            android:layout_alignBottom="@id/qtxt_s8q6a1"
+                            android:text="@string/Q_s8q6a1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q6a1"
@@ -465,9 +693,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q7" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q7"
+                            android:text="@string/s8q7" />
+
+                        <TextView
+                            android:id="@+id/q_s8q7"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q7"
+                            android:layout_alignBottom="@id/qtxt_s8q7"
+                            android:text="@string/Q_s8q7" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q7"
@@ -502,9 +749,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q7a1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q7a1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q7a1"
+                            android:text="@string/s8q7a1" />
+
+                        <TextView
+                            android:id="@+id/q_s8q7a1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q7a1"
+                            android:layout_alignBottom="@id/qtxt_s8q7a1"
+                            android:text="@string/Q_s8q7a1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q7a1"
@@ -538,9 +804,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q8" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q8"
+                            android:text="@string/s8q8" />
+
+                        <TextView
+                            android:id="@+id/q_s8q8"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q8"
+                            android:layout_alignBottom="@id/qtxt_s8q8"
+                            android:text="@string/Q_s8q8" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q8"
@@ -575,9 +860,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q8a1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q8a1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q8a1"
+                            android:text="@string/s8q8a1" />
+
+                        <TextView
+                            android:id="@+id/q_s8q8a1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q8a1"
+                            android:layout_alignBottom="@id/qtxt_s8q8a1"
+                            android:text="@string/Q_s8q8a1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q8a1"
@@ -611,9 +915,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q9" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q9"
+                            android:text="@string/s8q9" />
+
+                        <TextView
+                            android:id="@+id/q_s8q9"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q9"
+                            android:layout_alignBottom="@id/qtxt_s8q9"
+                            android:text="@string/Q_s8q9" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q9"
@@ -648,9 +971,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s8q9a1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s8q9a1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s8q9a1"
+                            android:text="@string/s8q9a1" />
+
+                        <TextView
+                            android:id="@+id/q_s8q9a1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s8q9a1"
+                            android:layout_alignBottom="@id/qtxt_s8q9a1"
+                            android:text="@string/Q_s8q9a1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s8q9a1"
