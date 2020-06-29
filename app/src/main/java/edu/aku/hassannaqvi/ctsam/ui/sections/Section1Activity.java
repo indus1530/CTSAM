@@ -107,6 +107,8 @@ public class Section1Activity extends AppCompatActivity {
                 : bi.fus1q7g.isChecked() ? "96"
                 : "-1");
 
+        json.put("fus1q7gx", bi.fus1q7gx.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q7gx.getText().toString());
+
         json.put("fus1q8", bi.fus1q8.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q8.getText().toString());
         json.put("fus1q9", bi.fus1q9.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q9.getText().toString());
         json.put("fus1q10", bi.fus1q10.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q10.getText().toString());

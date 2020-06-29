@@ -62,8 +62,7 @@ public class Section7Activity extends AppCompatActivity {
                 : bi.fus7q401b.isChecked() ? "2"
                 : "-1");
 
-
-        MainApp.fc.setsA(String.valueOf(json));
+        MainApp.fc.setsG(String.valueOf(json));
     }
 
 
@@ -86,7 +85,7 @@ public class Section7Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SB, MainApp.fc.getsB());
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SG, MainApp.fc.getsG());
         if (updcount > 0) {
             return true;
         } else {

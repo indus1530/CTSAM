@@ -42,21 +42,22 @@ public class Section6Activity extends AppCompatActivity {
                 : bi.fus6q1f.isChecked() ? "6"
                 : "-1");
 
-        json.put("fus6q2", bi.fus6q2a.isChecked() ? ""
-                : bi.fus6q2b.isChecked() ? ""
-                : bi.fus6q2c.isChecked() ? ""
-                : bi.fus6q2d.isChecked() ? ""
-                : bi.fus6q2e.isChecked() ? ""
+        json.put("fus6q2", bi.fus6q2a.isChecked() ? "1"
+                : bi.fus6q2b.isChecked() ? "2"
+                : bi.fus6q2c.isChecked() ? "3"
+                : bi.fus6q2d.isChecked() ? "4"
+                : bi.fus6q2e.isChecked() ? "5"
                 : "-1");
 
-        json.put("fus6q2ax", bi.fus6q2ax.getText().toString());
-        json.put("fus6q2bx", bi.fus6q2bx.getText().toString());
-        json.put("fus6q2cx", bi.fus6q2cx.getText().toString());
-        json.put("fus6q2dx", bi.fus6q2dx.getText().toString());
-        json.put("fus6q2ex", bi.fus6q2ex.getText().toString());
-        json.put("fus6q3", bi.fus6q3.getText().toString());
+        json.put("fus6q2ax", bi.fus6q2ax.getText().toString().trim().isEmpty() ? "-1" : bi.fus6q2ax.getText().toString());
+        json.put("fus6q2bx", bi.fus6q2bx.getText().toString().trim().isEmpty() ? "-1" : bi.fus6q2bx.getText().toString());
+        json.put("fus6q2cx", bi.fus6q2cx.getText().toString().trim().isEmpty() ? "-1" : bi.fus6q2cx.getText().toString());
+        json.put("fus6q2dx", bi.fus6q2dx.getText().toString().trim().isEmpty() ? "-1" : bi.fus6q2dx.getText().toString());
+        json.put("fus6q2ex", bi.fus6q2ex.getText().toString().trim().isEmpty() ? "-1" : bi.fus6q2ex.getText().toString());
 
-        MainApp.fc.setsA(String.valueOf(json));
+        json.put("fus6q3", bi.fus6q3.getText().toString().trim().isEmpty() ? "-1" : bi.fus6q3.getText().toString());
+
+        MainApp.fc.setsF(String.valueOf(json));
     }
 
 
@@ -79,7 +80,7 @@ public class Section6Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SB, MainApp.fc.getsB());
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SF, MainApp.fc.getsF());
         if (updcount > 0) {
             return true;
         } else {

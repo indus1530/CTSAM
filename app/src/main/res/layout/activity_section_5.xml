@@ -48,18 +48,17 @@
                             style="@style/radiobutton"
                             android:text="@string/fus5q1c" />
 
-                        <RadioButton
-                            android:id="@+id/fus5q1d"
-                            style="@style/radiobutton"
+                        <TextView
+                            style="@style/i_textview"
                             android:text="@string/fus5q1d" />
 
                         <EditText
-                            android:id="@+id/fus5q1dx"
+                            android:id="@+id/fus5q1x"
                             style="@style/EditTextAlpha"
                             android:hint="@string/fus5q1d"
                             android:tag="fus5q1d"
-                            android:text='@{fus5q1d.checked? fus5q1dx.getText().toString() : ""}'
-                            android:visibility='@{fus5q1d.checked? View.VISIBLE : View.GONE}' />
+                            android:text='@{fus5q1b.checked? fus5q1x.getText().toString() : fus5q1c.checked ? fus5q1x.getText().toString() : ""}'
+                            android:visibility='@{fus5q1b.checked ? View.VISIBLE : fus5q1c.checked ? View.VISIBLE : View.GONE}' />
 
                     </RadioGroup>
 

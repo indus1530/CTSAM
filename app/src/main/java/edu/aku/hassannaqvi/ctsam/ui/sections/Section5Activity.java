@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,6 +42,62 @@ public class Section5Activity extends AppCompatActivity {
             }
         }));
 
+
+        bi.fus5q1.setOnCheckedChangeListener((group, checkedId) -> {
+
+            if (checkedId == bi.fus5q1b.getId() || checkedId == bi.fus5q1c.getId()) {
+
+                Clear.clearAllFields(bi.fldGrpCVfus5q2);
+                Clear.clearAllFields(bi.fldGrpCVfus5q3);
+                Clear.clearAllFields(bi.fldGrpCVfus5q4);
+                Clear.clearAllFields(bi.fldGrpCVfus5q5);
+                Clear.clearAllFields(bi.fldGrpCVfus5q6);
+                Clear.clearAllFields(bi.fldGrpCVfus5q7);
+                Clear.clearAllFields(bi.fldGrpCVfus5q8);
+                Clear.clearAllFields(bi.fldGrpCVfus5q9);
+                Clear.clearAllFields(bi.fldGrpCVfus5q10);
+                bi.fldGrpCVfus5q2.setVisibility(View.GONE);
+                bi.fldGrpCVfus5q3.setVisibility(View.GONE);
+                bi.fldGrpCVfus5q4.setVisibility(View.GONE);
+                bi.fldGrpCVfus5q5.setVisibility(View.GONE);
+                bi.fldGrpCVfus5q6.setVisibility(View.GONE);
+                bi.fldGrpCVfus5q7.setVisibility(View.GONE);
+                bi.fldGrpCVfus5q8.setVisibility(View.GONE);
+                bi.fldGrpCVfus5q9.setVisibility(View.GONE);
+                bi.fldGrpCVfus5q10.setVisibility(View.GONE);
+
+            } else {
+
+                bi.fldGrpCVfus5q2.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus5q3.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus5q4.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus5q5.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus5q6.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus5q7.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus5q8.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus5q9.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus5q10.setVisibility(View.VISIBLE);
+            }
+        });
+
+
+        bi.fus5q6.setOnCheckedChangeListener((group, checkedId) -> {
+
+            if (checkedId == bi.fus5q6b.getId()) {
+
+                Clear.clearAllFields(bi.fldGrpCVfus5q7);
+                Clear.clearAllFields(bi.fldGrpCVfus5q8);
+                bi.fldGrpCVfus5q7.setVisibility(View.GONE);
+                bi.fldGrpCVfus5q8.setVisibility(View.GONE);
+
+            } else {
+
+                bi.fldGrpCVfus5q7.setVisibility(View.VISIBLE);
+                bi.fldGrpCVfus5q8.setVisibility(View.VISIBLE);
+            }
+
+        });
+
     }
 
     private void SaveDraft() throws JSONException {
@@ -50,17 +107,16 @@ public class Section5Activity extends AppCompatActivity {
         json.put("fus5q1", bi.fus5q1a.isChecked() ? "1"
                 : bi.fus5q1b.isChecked() ? "2"
                 : bi.fus5q1c.isChecked() ? "3"
-                : bi.fus5q1d.isChecked() ? "4"
                 : "-1");
 
-        json.put("fus5q1dx", bi.fus5q1dx.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q1dx.getText().toString());
+        json.put("fus5q1x", bi.fus5q1x.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q1x.getText().toString());
 
-        json.put("fus5q2", bi.fus5q2a.isChecked() ? ""
-                : bi.fus5q2b.isChecked() ? ""
-                : bi.fus5q2c.isChecked() ? ""
-                : bi.fus5q2d.isChecked() ? ""
-                : bi.fus5q2e.isChecked() ? ""
-                : bi.fus5q2f.isChecked() ? ""
+        json.put("fus5q2", bi.fus5q2a.isChecked() ? "1"
+                : bi.fus5q2b.isChecked() ? "2"
+                : bi.fus5q2c.isChecked() ? "3"
+                : bi.fus5q2d.isChecked() ? "4"
+                : bi.fus5q2e.isChecked() ? "5"
+                : bi.fus5q2f.isChecked() ? "6"
                 : bi.fus5q2g.isChecked() ? "96"
                 : "-1");
 
@@ -123,7 +179,7 @@ public class Section5Activity extends AppCompatActivity {
 
         json.put("fus5q10ex", bi.fus5q10ex.getText().toString().trim().isEmpty() ? "-1" : bi.fus5q10ex.getText().toString());
 
-        MainApp.fc.setsA(String.valueOf(json));
+        MainApp.fc.setsE(String.valueOf(json));
     }
 
     public void BtnContinue() {
@@ -135,7 +191,7 @@ public class Section5Activity extends AppCompatActivity {
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, bi.fus5q1b.isChecked() || bi.fus5q1c.isChecked() ? Section7Activity.class : Section6Activity.class));
+                startActivity(new Intent(this, Section6Activity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -145,7 +201,7 @@ public class Section5Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SB, MainApp.fc.getsB());
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SE, MainApp.fc.getsE());
         if (updcount > 0) {
             return true;
         } else {

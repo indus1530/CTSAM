@@ -26,9 +26,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fumeas01" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fumeas01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fumeas01"
+                            android:text="@string/fumeas01" />
+
+                        <TextView
+                            android:id="@+id/q_fumeas01"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fumeas01"
+                            android:layout_alignBottom="@id/qtxt_fumeas01"
+                            android:text="@string/Q_fumeas01" />
+
+                    </RelativeLayout>
 
                     <EditText
                         android:id="@+id/fumeas01"
@@ -46,12 +65,28 @@
 
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/fus2q1m1hei" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fumeas02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fumeas02"
+                            android:text="@string/fumeas02" />
+
+                        <TextView
+                            android:id="@+id/q_fumeas02"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fumeas02"
+                            android:layout_alignBottom="@id/qtxt_fumeas02"
+                            android:text="@string/Q_fumeas02" />
+
+                    </RelativeLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus2q1m1hei"
@@ -59,7 +94,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/fus2q1m1hei"
-                        app:mask="##"
+                        app:mask="###"
                         app:maxValue="110"
                         app:minValue="50"
                         app:type="range" />
