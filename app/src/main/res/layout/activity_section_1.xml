@@ -136,9 +136,9 @@
 
                 <LinearLayout style="@style/hlinearlayout">
 
-
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -157,6 +157,7 @@
                             android:layout_alignTop="@id/qtxt_fus1q3"
                             android:layout_alignBottom="@id/qtxt_fus1q3"
                             android:text="@string/Q_fus1q3" />
+
                     </RelativeLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -164,11 +165,11 @@
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/fus1q3"
-                        app:mask="#####"
-                        app:maxValue="59999"
-                        app:minValue="10001"
-                        app:type="range" />
+                        android:hint="@string/num"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
 
                 </LinearLayout>
 
@@ -181,9 +182,9 @@
 
                 <LinearLayout style="@style/hlinearlayout">
 
-
                     <RelativeLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -202,6 +203,7 @@
                             android:layout_alignTop="@id/qtxt_fus1q4"
                             android:layout_alignBottom="@id/qtxt_fus1q4"
                             android:text="@string/Q_fus1q4" />
+
                     </RelativeLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
@@ -209,11 +211,11 @@
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/fus1q4"
-                        app:mask="##"
+                        android:hint="@string/num"
+                        android:maxLength="2"
                         app:maxValue="10"
                         app:minValue="1"
-                        app:type="range" />
+                        app:type="range"/>
 
                 </LinearLayout>
 
@@ -226,22 +228,45 @@
 
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
+                    <RelativeLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/fus1q5" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
 
+                        <TextView
+                            android:id="@+id/qtxt_fus1q5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus1q5"
+                            android:text="@string/fus1q5" />
 
-                    <EditText
+                        <TextView
+                            android:id="@+id/q_fus1q5"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus1q5"
+                            android:layout_alignBottom="@id/qtxt_fus1q5"
+                            android:text="@string/Q_fus1q5" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus1q5"
-                        style="@style/EditTextAlpha"
+                        style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/fus1q5" />
+                        android:hint="@string/name"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
 
                 </LinearLayout>
+
+
+
 
             </androidx.cardview.widget.CardView>
 
@@ -252,25 +277,46 @@
 
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
+                    <RelativeLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/fus1q6" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus1q6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus1q6"
+                            android:text="@string/fus1q6" />
+
+                        <TextView
+                            android:id="@+id/q_fus1q6"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus1q6"
+                            android:layout_alignBottom="@id/qtxt_fus1q6"
+                            android:text="@string/Q_fus1q6" />
+
+                    </RelativeLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus1q6"
                         style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/fus1q6"
-                        app:mask="##"
-                        app:maxValue="10"
-                        app:minValue="1"
-                        app:type="range" />
+                        android:hint="@string/name"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
 
                 </LinearLayout>
+
+
+
+
 
             </androidx.cardview.widget.CardView>
 
@@ -281,9 +327,29 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/fus1q7" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus1q7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus1q7"
+                            android:text="@string/fus1q7" />
+
+                        <TextView
+                            android:id="@+id/q_fus1q7"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus1q7"
+                            android:layout_alignBottom="@id/qtxt_fus1q7"
+                            android:text="@string/Q_fus1q7" />
+
+                    </RelativeLayout>
+
 
                     <RadioGroup
                         android:id="@+id/fus1q7"
@@ -335,14 +401,32 @@
                 android:id="@+id/fldGrpCVfus1q8"
                 style="@style/cardView">
 
+
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
+                    <RelativeLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/fus1q8" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus1q8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus1q8"
+                            android:text="@string/fus1q8" />
+
+                        <TextView
+                            android:id="@+id/q_fus1q8"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus1q8"
+                            android:layout_alignBottom="@id/qtxt_fus1q8"
+                            android:text="@string/Q_fus1q8" />
+
+                    </RelativeLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus1q8"
@@ -350,10 +434,10 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/fus1q8"
-                        app:mask="##"
-                        app:maxValue="0"
+                        android:maxLength="2"
+                        app:maxValue="99"
                         app:minValue="0"
-                        app:type="range" />
+                        app:type="range"/>
 
                 </LinearLayout>
 
@@ -366,21 +450,45 @@
 
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
+                    <RelativeLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/fus1q9" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
 
-                    <EditText
+                        <TextView
+                            android:id="@+id/qtxt_fus1q9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus1q9"
+                            android:text="@string/fus1q9" />
+
+                        <TextView
+                            android:id="@+id/q_fus1q9"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus1q9"
+                            android:layout_alignBottom="@id/qtxt_fus1q9"
+                            android:text="@string/Q_fus1q9" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus1q9"
-                        style="@style/EditTextAlpha"
+                        style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/fus1q9" />
+                        android:hint="@string/name"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
 
                 </LinearLayout>
+
+
+
 
             </androidx.cardview.widget.CardView>
 
@@ -389,23 +497,48 @@
                 android:id="@+id/fldGrpCVfus1q10"
                 style="@style/cardView">
 
+
+
+
                 <LinearLayout style="@style/hlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
+                    <RelativeLayout
                         android:layout_width="0dp"
-                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="@string/fus1q10" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
 
-                    <EditText
+                        <TextView
+                            android:id="@+id/qtxt_fus1q10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus1q10"
+                            android:text="@string/fus1q10" />
+
+                        <TextView
+                            android:id="@+id/q_fus1q10"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus1q10"
+                            android:layout_alignBottom="@id/qtxt_fus1q10"
+                            android:text="@string/Q_fus1q10" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus1q10"
-                        style="@style/EditTextAlpha"
+                        style="@style/EditTextNum"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:hint="@string/fus1q10" />
+                        android:hint="@string/name"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
 
                 </LinearLayout>
+
 
             </androidx.cardview.widget.CardView>
 
