@@ -2322,19 +2322,19 @@
     <string name="s4q1c"> سائو </string>
     <string name="s4q1d"> ناسي </string>
 
-    <string name="s4q2"> S4Q2: ٻار جو شناخت نمبر </string>
+    <string name="s4q2"> ٻار جو شناخت نمبر </string>
 
-    <string name="s4q3"> S4Q3: ٻار جو نالو </string>
+    <string name="s4q3"> ٻار جو نالو </string>
 
-    <string name="s4q4"> S4Q4: ٻار جي پيءُ جو نالو </string>
+    <string name="s4q4"> ٻار جي پيءُ جو نالو </string>
 
-    <string name="s4q5"> S4Q5: ٻار جي ماءُ جو نالو </string>
+    <string name="s4q5"> ٻار جي ماءُ جو نالو </string>
 
-    <string name="s4q6"> S4Q6: ٻار جي جنس </string>
+    <string name="s4q6"> ٻار جي جنس </string>
     <string name="s4q6a"> مرد </string>
     <string name="s4q6b"> عورت </string>
 
-    <string name="s4q7"> S4Q7: ٻار جي ڄمڻ جي تاريخ يا داخلا وقت عمر </string>
+    <string name="s4q7">  ٻار جي ڄمڻ جي تاريخ يا داخلا وقت عمر </string>
     <string name="s4q7a"> ٻار جي ڄمڻ جي تاريخ </string>
     <string name="s4q7b"> داخلا وقت عمر </string>
 
@@ -2342,17 +2342,17 @@
     <string name="s4q7days"> عمر ڏينهن ۾ </string>
     <string name="s4q7mon"> عمر مهينا ۾ </string>
 
-    <string name="s4q8"> S4Q8: ڇا ٻار پورن مهينن ۾ ڄائو هو ؟ </string>
+    <string name="s4q8"> ڇا ٻار پورن مهينن ۾ ڄائو هو ؟ </string>
     <string name="s4q8a"> ها </string>
     <string name="s4q8b"> نه </string>
 
-    <string name="s4q9"> S4Q9: پيدائش وقت جينياتي عمر هفتا ۾ </string>
+    <string name="s4q9"> پيدائش وقت جينياتي عمر هفتا ۾ </string>
 
-    <string name="s4q10"> S4Q10: ڇا ٻار جو ڄمڻ وقت وزن ڪيو ويو ؟ </string>
+    <string name="s4q10"> ڇا ٻار جو ڄمڻ وقت وزن ڪيو ويو ؟ </string>
     <string name="s410q410a"> ها </string>
     <string name="s410q410b"> نه </string>
 
-    <string name="s4q11"> S4Q11: ٻار جو ڪيترو وزن ٿيو هو ؟ </string>
+    <string name="s4q11"> ٻار جو ڪيترو وزن ٿيو هو ؟ </string>
 
     <string name="s4subtitle"> ٻار جي جسماني ماپ </string>
 
