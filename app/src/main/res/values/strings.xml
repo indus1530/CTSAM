@@ -2220,28 +2220,28 @@
     <string name="muac1"> MUAC-01 </string>
     <string name="muac2"> MUAC-02 </string>
 
-    <string name="s2q1"> S2Q1: کاٻي ٻانهن جي گولائي جي ماپ 11.5 سينٽي ميٽر کان گهٽ </string>
+    <string name="s2q1">  کاٻي ٻانهن جي گولائي جي ماپ 11.5 سينٽي ميٽر کان گهٽ </string>
     <string name="s2q1a"> ها </string>
     <string name="s2q1b"> نه </string>
 
-    <string name="s2q2"> S2Q2: پيرن تي سوڄ </string>
+    <string name="s2q2"> پيرن تي سوڄ </string>
     <string name="s2q2_instruction">  پيرن تي سوڄ جي وضاحت:\n - ڪو نه آهي\n - هلڪو، ٻنهي پيرن تي ۽ کڙين تي,\n  - وچولو، ٻنهي پيرن، ڄگھن ۽ ٻانهن تي\n  - شديد سوڄ پيرن ،ڄگھن، ٻانهن، هٿن ۽ منهن تي </string>
     <string name="s2q2a"> ڪو نه آهي </string>
     <string name="s2q2b">  پيرن تي سوڄ + </string>
     <string name="s2q2c">   پيرن تي سوڄ ++ </string>
     <string name="s2q2d">  پيرن تي سوڄ +++ </string>
 
-    <string name="s2q3"> S2Q3: بک جو هجڻ RUTF / RUSF لاءِ ؟ </string>
+    <string name="s2q3">  بک جو هجڻ RUTF / RUSF لاءِ ؟ </string>
     <string name="s2q3a"> ها </string>
     <string name="s2q3b"> نه </string>
 
-    <string name="s2q4"> S2Q4: جيڪڏهن ها ته ڪهڙي درجي جي آهي </string>
+    <string name="s2q4">  جيڪڏهن ها ته ڪهڙي درجي جي آهي </string>
     <string name="s2q4_instruction"> گھٽ ۾ گھٽ RUTF / RUSF 75% واپرائجي </string>
     <string name="s2q4a"> سٺو ( ٻار RUTF / RUSF شوق سان کاڌو )   </string>
     <string name="s2q4b"> خراب ( ٻار بار بار چوڻ کان پوءِ RUTF / RUSF کاڌو ) </string>
     <string name="s2q4c"> انڪار ڪيو ( ٻار بار بار چوڻ کان پوءِ به RUTF / RUSF نه کاڌو ) </string>
 
-    <string name="s2q5_subtitle"> S2Q5: طبي پيچدگين جو موجود هجڻ </string>
+    <string name="s2q5_subtitle"> طبي پيچدگين جو موجود هجڻ </string>
     <string name="s2q501"> RUTF / RUSF جي لاءِ بک جو نه لڳڻ </string>
     <string name="s2q501a"> ها </string>
     <string name="s2q501b"> نه </string>
@@ -2274,19 +2274,19 @@
     <string name="s2q508a"> ها </string>
     <string name="s2q508b"> نه </string>
 
-    <string name="s2q6"> S2Q6: ڇا ٻار ڪنهن ٻئي تحقيقي ٽرائل يا اضافي خوراڪ واري پروگرام ۾ شامل آهي ؟ </string>
+    <string name="s2q6"> ڇا ٻار ڪنهن ٻئي تحقيقي ٽرائل يا اضافي خوراڪ واري پروگرام ۾ شامل آهي ؟ </string>
     <string name="s2q6a"> ها </string>
     <string name="s2q6b"> نه </string>
 
-    <string name="s2q7"> S2Q7: ڇا ٻار جي واڌ ويجھ سستي سان ٿي رهي آهي ؟ </string>
+    <string name="s2q7"> ڇا ٻار جي واڌ ويجھ سستي سان ٿي رهي آهي ؟ </string>
     <string name="s2q7a"> ها </string>
     <string name="s2q7b"> نه </string>
 
-    <string name="s2q8"> S2Q8:  (شامل نه ڪريو TB يا HIV) آهي cerebral palsy ڇا ٻار کي ڪا پراڻي دماغي بيماري جيئن ته </string>
+    <string name="s2q8"> (شامل نه ڪريو TB يا HIV) آهي cerebral palsy ڇا ٻار کي ڪا پراڻي دماغي بيماري جيئن ته </string>
     <string name="s2q8a"> ها </string>
     <string name="s2q8b"> نه </string>
 
-    <string name="s2q9"> S2Q9: ڇا ٻار کي کير يا Peanut مان الرجي ٿي هئي ؟ کاڌي ۾ شامل شين  </string>
+    <string name="s2q9">  ڇا ٻار کي کير يا Peanut مان الرجي ٿي هئي ؟ کاڌي ۾ شامل شين  </string>
     <string name="s2q9a"> ها </string>
     <string name="s2q9b"> نه </string>
     <string name="s2q29_instruction"> -	ٻار کي تحقيق ۾ شامل ڪيو ويندو جيڪڏهن سوال نمبر 2.1 ۾ 2.3 ها آهي ۽ سوال 2.4 جو جواب 1 (سٺو) جيڪڏهن سوال نمبر 2.8 ،2.7 ،2.6 ،2.5 ۽ 2.9 ۾ نه آهي</string>
