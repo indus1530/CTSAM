@@ -285,7 +285,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
             <!-- s2q4  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs2q4"
@@ -346,7 +345,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!-- s2q501  Radio   -->
             <androidx.cardview.widget.CardView
@@ -409,7 +407,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
             <!-- s2q502  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs2q502"
@@ -463,7 +460,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!-- s2q503  Radio   -->
             <androidx.cardview.widget.CardView
@@ -519,7 +515,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
             <!-- s2q504  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs2q504"
@@ -573,7 +568,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!-- s2q505  Radio   -->
             <androidx.cardview.widget.CardView
@@ -629,7 +623,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
             <!-- s2q506  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs2q506"
@@ -683,7 +676,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!-- s2q507  Radio   -->
             <androidx.cardview.widget.CardView
@@ -739,7 +731,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
             <!-- s2q508  Radio   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs2q508"
@@ -793,7 +784,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!-- s2q6  Radio   -->
             <androidx.cardview.widget.CardView
@@ -1016,18 +1006,27 @@
                 android:id="@+id/fldGrpCVs2q29_instruction"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textviewhint"
-                        android:text="@string/s2q29_instruction" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
 
-                    <TextView
-                        style="@style/i_textviewhint"
-                        android:text="@string/s2q29_instruction2" />
+                        <TextView
+                            android:id="@+id/qtxt_s2q29_instruction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/qtxt_s2q29_instruction"
+                            android:text="@string/s2q29_instruction" />
+
+                        <TextView
+                            android:id="@+id/qtxt_s2q29_instruction2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/qtxt_s2q29_instruction2"
+                            android:text="@string/s2q29_instruction2" />
+                    </RelativeLayout>
 
                 </LinearLayout>
 
