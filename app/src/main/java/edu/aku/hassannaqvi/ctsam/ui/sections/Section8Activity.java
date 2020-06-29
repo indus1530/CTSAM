@@ -64,8 +64,8 @@ public class Section8Activity extends AppCompatActivity {
         if (formValidation()) {
             try {
                 SaveDraft();
-            } catch (Exception e) {
-                throw new RuntimeException(e.getMessage());
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
             if (UpdateDB()) {
                 finish();
