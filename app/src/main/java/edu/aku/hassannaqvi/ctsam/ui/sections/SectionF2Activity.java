@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
@@ -12,14 +16,12 @@ import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionF2Binding;
+import edu.aku.hassannaqvi.ctsam.utils.JSONUtils;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionF2Activity extends AppCompatActivity {
@@ -124,7 +126,7 @@ public class SectionF2Activity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SF2, MainApp.fc.getsF2());
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SF, MainApp.fc.getsF());
         if (updcount > 0) {
             return true;
         } else {
@@ -266,7 +268,12 @@ public class SectionF2Activity extends AppCompatActivity {
         json.put("s6q20fx", bi.s6q20f.getText().toString().trim().isEmpty() ? "-1" : bi.s6q20f.getText().toString());
         json.put("s6q20gx", bi.s6q20g.getText().toString().trim().isEmpty() ? "-1" : bi.s6q20g.getText().toString());
 
-        MainApp.fc.setsF2(String.valueOf(json));
+        try {
+            JSONObject json_merge = JSONUtils.mergeJSONObjects(new JSONObject(MainApp.fc.getsF()), json);
+            MainApp.fc.setsF(String.valueOf(json_merge));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
 
