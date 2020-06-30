@@ -261,10 +261,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/name"
-                        android:maxLength="2"
-                        app:maxValue="99"
-                        app:minValue="0"
-                        app:type="range"/>
+                        />
 
                 </LinearLayout>
 
@@ -310,10 +307,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/name"
-                        android:maxLength="2"
-                        app:maxValue="99"
-                        app:minValue="0"
-                        app:type="range"/>
+                       />
 
                 </LinearLayout>
 
@@ -491,10 +485,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/name"
-                        android:maxLength="2"
-                        app:maxValue="99"
-                        app:minValue="0"
-                        app:type="range"/>
+                        />
 
                 </LinearLayout>
 
@@ -543,10 +534,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:hint="@string/name"
-                        android:maxLength="2"
-                        app:maxValue="99"
-                        app:minValue="0"
-                        app:type="range"/>
+                        />
 
                 </LinearLayout>
 
