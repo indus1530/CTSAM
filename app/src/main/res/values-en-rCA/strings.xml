@@ -2655,7 +2655,7 @@
     <string name="s6q19b"> No</string>
 
     <string name="s6q20"> S6Q20: If yes, how many livestock, animals or poultry does your household own ? </string>
-    <string name="s6q20_info"> S6Q20: Ask for each listed animal, one by one and insert  00 if none</string>
+    <string name="s6q20_info"> Ask for each listed animal, one by one and insert  00 if none</string>
     <string name="s6q20a"> Cows, bulls </string>
     <string name="s6q20b"> Horses/Donkeys/Mules  </string>
     <string name="s6q20c"> Goats</string>
@@ -2679,7 +2679,8 @@
     <string name="s7q204"> Ash/mud/sand  </string>
     <string name="s7q205"> None</string>
 
-    <string name="s7q3"> S7Q3: In what situations do you wash your hands with soap?  This is an open-ended question. Do not read the answer choices.  After the respondent stops listing times, ask “Are there any other situations where you wash your hands with soap?” Keep asking this question until the respondent thinks there are no other times. </string>
+    <string name="s7q3"> S7Q3: In what situations do you wash your hands with soap? </string>
+    <string name="s7q3_info"> This is an open-ended question. Do not read the answer choices.  After the respondent stops listing times, ask “Are there any other situations where you wash your hands with soap?” Keep asking this question until the respondent thinks there are no other times. </string>
     <string name="s7q301"> Before preparing food</string>
     <string name="s7q302"> Before cooking food</string>
     <string name="s7q303"> Before eating</string>
