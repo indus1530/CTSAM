@@ -96,12 +96,11 @@
                 android:id="@+id/fldGrpCVs4q2"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:background="@drawable/bottom">
 
                         <TextView
@@ -119,13 +118,12 @@
                             android:layout_alignTop="@id/qtxt_s4q2"
                             android:layout_alignBottom="@id/qtxt_s4q2"
                             android:text="@string/Q_s4q2" />
+
                     </RelativeLayout>
 
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s4q2"
                         style="@style/EditTextNum"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:hint="###"
                         android:maxLength="3"
                         app:mask="###"
@@ -144,12 +142,11 @@
                 android:id="@+id/fldGrpCVs4q3"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:background="@drawable/bottom">
 
                         <TextView
@@ -167,13 +164,12 @@
                             android:layout_alignTop="@id/qtxt_s4q3"
                             android:layout_alignBottom="@id/qtxt_s4q3"
                             android:text="@string/Q_s4q3" />
+
                     </RelativeLayout>
 
                     <EditText
                         android:id="@+id/s4q3"
                         style="@style/EditTextAlpha"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:hint="@string/c_name"
                         android:maxLength="15" />
 
@@ -187,12 +183,11 @@
                 android:id="@+id/fldGrpCVs4q4"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:background="@drawable/bottom">
 
                         <TextView
@@ -215,8 +210,6 @@
                     <EditText
                         android:id="@+id/s4q4"
                         style="@style/EditTextAlpha"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:hint="@string/f_name"
                         android:maxLength="15" />
 
@@ -230,12 +223,11 @@
                 android:id="@+id/fldGrpCVs4q5"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:background="@drawable/bottom">
 
                         <TextView
@@ -258,8 +250,6 @@
                     <EditText
                         android:id="@+id/s4q5"
                         style="@style/EditTextAlpha"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:hint="@string/m_name"
                         android:maxLength="15" />
 
@@ -273,12 +263,11 @@
                 android:id="@+id/fldGrpCVs4q6"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:background="@drawable/bottom">
 
                         <TextView
@@ -296,24 +285,23 @@
                             android:layout_alignTop="@id/qtxt_s4q6"
                             android:layout_alignBottom="@id/qtxt_s4q6"
                             android:text="@string/Q_s4q6" />
+
                     </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s4q6"
-                        style="@style/hradiogroup"
-                        android:layout_width="0dp"
-                        android:layout_weight="1">
+                        style="@style/hradiogroup">
 
                         <RadioButton
                             android:id="@+id/s4q6a"
-                            style="@style/radiobutton"
+                            android:layout_height="wrap_content"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:text="@string/s4q6a" />
 
                         <RadioButton
                             android:id="@+id/s4q6b"
-                            style="@style/radiobutton"
+                            android:layout_height="wrap_content"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:text="@string/s4q6b" />
@@ -386,7 +374,7 @@
                 style="@style/cardView"
                 android:visibility='@{s4q7a.checked ? View.VISIBLE : View.GONE}'>
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -414,8 +402,6 @@
                     <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                         android:id="@+id/s4q7dob"
                         style="@style/EditTextNum"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:hint="DD/MM/YYYY"
                         android:text='@{s4q7a.checked ? s4q7dob.getText().toString() : "" }'
                         app:maxDate="CR_DATE" />
@@ -427,8 +413,7 @@
 
             <LinearLayout
                 android:id="@+id/s4q7bcv"
-                style="@style/hlinearlayout"
-                android:layout_height="wrap_content"
+                style="@style/vlinearlayout"
                 android:visibility='@{s4q7b.checked ? View.VISIBLE : View.GONE}'>
 
                 <!-- s4q7days  Input   -->
@@ -436,7 +421,7 @@
                     android:id="@+id/fldGrpCVs4q7days"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/hlinearlayout">
+                    <LinearLayout style="@style/vlinearlayout">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -481,7 +466,7 @@
                     android:id="@+id/fldGrpCVs4q7mon"
                     style="@style/cardView">
 
-                    <LinearLayout style="@style/hlinearlayout">
+                    <LinearLayout style="@style/vlinearlayout">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -509,7 +494,6 @@
                         <com.edittextpicker.aliazaz.EditTextPicker
                             android:id="@+id/s4q7mon"
                             style="@style/EditTextNum"
-                            android:gravity="center"
                             android:hint="##"
                             android:maxLength="2"
                             android:text='@{s4q7b.checked ? s4q7mon.getText().toString() : "" }'
@@ -763,10 +747,7 @@
                 android:id="@+id/fldGrpCVuser01"
                 style="@style/cardView">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <LinearLayout style="@style/hlinearlayout">
 
                     <RelativeLayout
                         android:layout_width="0dp"
@@ -879,8 +860,6 @@
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/s4q14m1hei"
                         style="@style/EditTextNum"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:gravity="center"
                         android:hint="###.#"
                         android:textDirection="ltr"

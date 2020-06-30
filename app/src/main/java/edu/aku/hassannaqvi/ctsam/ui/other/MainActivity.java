@@ -53,7 +53,8 @@ import edu.aku.hassannaqvi.ctsam.ui.sections.SectionBActivity;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionCActivity;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionDActivity;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionEActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionFActivity;
+import edu.aku.hassannaqvi.ctsam.ui.sections.SectionF1Activity;
+import edu.aku.hassannaqvi.ctsam.ui.sections.SectionF2Activity;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionGActivity;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionHActivity;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionIActivity;
@@ -186,8 +187,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.formE:
                 oF = new Intent(this, SectionEActivity.class);
                 break;
-            case R.id.formF:
-                oF = new Intent(this, SectionFActivity.class);
+            case R.id.formF1:
+                oF = new Intent(this, SectionF1Activity.class);
+                break;
+            case R.id.formF2:
+                oF = new Intent(this, SectionF2Activity.class);
                 break;
             case R.id.formG:
                 oF = new Intent(this, SectionGActivity.class);
