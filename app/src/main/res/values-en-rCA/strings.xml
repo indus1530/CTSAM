@@ -2654,7 +2654,8 @@
     <string name="s6q19a"> Yes</string>
     <string name="s6q19b"> No</string>
 
-    <string name="s6q20"> S6Q20: If yes, how many livestock, animals or poultry does your household own ?   Ask for each listed animal, one by one and insert  00 if none</string>
+    <string name="s6q20"> S6Q20: If yes, how many livestock, animals or poultry does your household own ? </string>
+    <string name="s6q20_info"> S6Q20: Ask for each listed animal, one by one and insert  00 if none</string>
     <string name="s6q20a"> Cows, bulls </string>
     <string name="s6q20b"> Horses/Donkeys/Mules  </string>
     <string name="s6q20c"> Goats</string>
