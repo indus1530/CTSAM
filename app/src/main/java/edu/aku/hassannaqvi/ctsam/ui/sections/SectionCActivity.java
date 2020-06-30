@@ -163,9 +163,12 @@ public class SectionCActivity extends AppCompatActivity {
 
 
     public void BtnEnd() {
-        if (formValidation()) {
-            Util.contextEndActivity(this);
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
+        Util.contextEndActivity(this);
     }
 
     @Override
