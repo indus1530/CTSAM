@@ -2954,7 +2954,8 @@
     <string name="fus4q101">MUAC &lt;11.5 cm</string>
     <string name="fus4q102">MUAC ≥11.5 cm  </string>
     <string name="fus4q103">MUAC ≥12.5 cm</string>
-    <string name="fus4q2">پيرن تي سوڄ  ،  پيرن تي سوڄ جي وضاحت  ، ڪو نه آهي ،  هلڪو، ٻنهي پيرن تي ۽ کڙين تي ، وچولو، ٻنهي پيرن، ڄگھن ۽ ٻانهن تي ،  شديد سوڄ پيرن ،ڄگھن، ٻانهن، هٿن ۽ منهن تي</string>
+    <string name="fus4q2">پيرن تي سوڄ  ،  </string>
+    <string name="fus4q2_info"> پيرن تي سوڄ جي وضاحت  ، ڪو نه آهي ،  هلڪو، ٻنهي پيرن تي ۽ کڙين تي ، وچولو، ٻنهي پيرن، ڄگھن ۽ ٻانهن تي ،  شديد سوڄ پيرن ،ڄگھن، ٻانهن، هٿن ۽ منهن تي</string>
     <string name="fus4q2a">پيرن تي سوڄ </string>
     <string name="fus4q2b">پيرن تي سوڄ </string>
     <string name="fus4q2c">پيرن تي سوڄ</string>

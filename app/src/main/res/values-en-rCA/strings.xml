@@ -2957,7 +2957,8 @@
     <string name="fus4q101">MUAC &lt;11.5 cm</string>
     <string name="fus4q102">MUAC ≥11.5 cm  </string>
     <string name="fus4q103">MUAC ≥12.5 cm</string>
-    <string name="fus4q2">Bilateral pitting oedema?  Note: Grades of Oedema-Definition Absent   Grade + Mild: Both feet/ankles   Grade++Moderate: Both feet, plus lower legs, hands or lower arms   Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face</string>
+    <string name="fus4q2">Bilateral pitting oedema?  </string>
+    <string name="fus4q2_info">Note: Grades of Oedema-Definition Absent   Grade + Mild: Both feet/ankles   Grade++Moderate: Both feet, plus lower legs, hands or lower arms   Grade+++Severe: Generalized oedema including both feet, legs, hands, arms and face</string>
     <string name="fus4q2a">Bilateral pitting oedema +  </string>
     <string name="fus4q2b">Bilateral pitting oedema  ++ </string>
     <string name="fus4q2c">Bilateral pitting oedema  +++</string>
