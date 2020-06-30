@@ -90,7 +90,11 @@
             android:label="@string/sece"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.sections.SectionFActivity"
+            android:name=".ui.sections.SectionF1Activity"
+            android:label="@string/secf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sections.SectionF2Activity"
             android:label="@string/secf"
             android:screenOrientation="portrait" />
         <activity
