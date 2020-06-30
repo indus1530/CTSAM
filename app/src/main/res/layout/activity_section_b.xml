@@ -138,8 +138,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q1"
-                        style="@style/radiogroup"
-                        android:orientation="horizontal">
+                        style="@style/hradiogroup">
 
                         <RadioButton
                             android:id="@+id/s2q1a"
@@ -251,7 +250,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q3"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -377,7 +376,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q501"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -431,7 +430,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q502"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -485,7 +484,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q503"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -539,7 +538,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q504"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -593,7 +592,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q505"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -647,7 +646,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q506"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -701,7 +700,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q507"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -755,7 +754,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q508"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -809,7 +808,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q6"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -863,7 +862,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q7"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -917,7 +916,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q8"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton
@@ -971,7 +970,7 @@
 
                     <RadioGroup
                         android:id="@+id/s2q9"
-                        style="@style/radiogroup"
+                        style="@style/hradiogroup"
                         android:orientation="horizontal">
 
                         <RadioButton

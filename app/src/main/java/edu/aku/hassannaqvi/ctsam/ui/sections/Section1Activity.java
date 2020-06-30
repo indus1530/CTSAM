@@ -1,6 +1,7 @@
 package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -13,7 +14,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
+import java.util.Random;
 
 import edu.aku.hassannaqvi.ctsam.CONSTANTS;
 import edu.aku.hassannaqvi.ctsam.R;
@@ -36,6 +40,41 @@ public class Section1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_1);
         bi.setCallback(this);
+
+        List<Integer> givenList = Arrays.asList(1, 2, 3, 4);
+        Random rand = new Random();
+        int randomElement = givenList.get(rand.nextInt(givenList.size()));
+
+        switch (randomElement) {
+            case 1:
+                bi.fus1q1a.setChecked(true);
+                bi.fus1q1a.setBackgroundColor(Color.parseColor("#FFD6D6"));
+                bi.fus1q1b.setEnabled(false);
+                bi.fus1q1c.setEnabled(false);
+                bi.fus1q1d.setEnabled(false);
+                break;
+            case 2:
+                bi.fus1q1b.setChecked(true);
+                bi.fus1q1b.setBackgroundColor(Color.parseColor("#D6D6FF"));
+                bi.fus1q1a.setEnabled(false);
+                bi.fus1q1c.setEnabled(false);
+                bi.fus1q1d.setEnabled(false);
+                break;
+            case 3:
+                bi.fus1q1c.setChecked(true);
+                bi.fus1q1c.setBackgroundColor(Color.parseColor("#D6FFD6"));
+                bi.fus1q1a.setEnabled(false);
+                bi.fus1q1b.setEnabled(false);
+                bi.fus1q1d.setEnabled(false);
+                break;
+            case 4:
+                bi.fus1q1d.setChecked(true);
+                bi.fus1q1d.setBackgroundColor(Color.parseColor("#FFDBAC"));
+                bi.fus1q1a.setEnabled(false);
+                bi.fus1q1b.setEnabled(false);
+                bi.fus1q1c.setEnabled(false);
+                break;
+        }
     }
 
     public void BtnContinue() {
@@ -122,8 +161,12 @@ public class Section1Activity extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-        if (formValidation()) {
-            Util.contextEndActivity(this);
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
+        Util.contextEndActivity(this);
     }
+
 }
