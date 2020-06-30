@@ -420,7 +420,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(FormsTable.COLUMN_SD, fc.getsD());
         values.put(FormsTable.COLUMN_SE, fc.getsE());
         values.put(FormsTable.COLUMN_SF, fc.getsF());
-        values.put(FormsTable.COLUMN_SF2, fc.getsF2());
         values.put(FormsTable.COLUMN_SG, fc.getsG());
         values.put(FormsTable.COLUMN_SH, fc.getsH());
         values.put(FormsTable.COLUMN_SI, fc.getsI());
@@ -606,7 +605,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 FormsTable.COLUMN_SD,
                 FormsTable.COLUMN_SE,
                 FormsTable.COLUMN_SF,
-                FormsTable.COLUMN_SF2,
                 FormsTable.COLUMN_SG,
                 FormsTable.COLUMN_SH,
                 FormsTable.COLUMN_SI,

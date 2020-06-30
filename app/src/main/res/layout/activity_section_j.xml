@@ -140,7 +140,7 @@
                 android:id="@+id/fldGrpCVs10q2"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -168,8 +168,6 @@
                     <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                         android:id="@+id/s10q2"
                         style="@style/EditTextNum"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:hint="@string/s10q2"
                         app:maxDate="CR_DATE" />
 

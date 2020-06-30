@@ -39,7 +39,6 @@ public class FormsContract {
     private String sD = "";
     private String sE = "";
     private String sF = "";
-    private String sF2 = "";
     private String sG = "";
     private String sH = "";
     private String sI = "";
@@ -104,7 +103,6 @@ public class FormsContract {
         this.sD = jsonObject.getString(FormsTable.COLUMN_SD);
         this.sE = jsonObject.getString(FormsTable.COLUMN_SE);
         this.sF = jsonObject.getString(FormsTable.COLUMN_SF);
-        this.sF2 = jsonObject.getString(FormsTable.COLUMN_SF2);
         this.sG = jsonObject.getString(FormsTable.COLUMN_SG);
         this.sH = jsonObject.getString(FormsTable.COLUMN_SH);
         this.sI = jsonObject.getString(FormsTable.COLUMN_SI);
@@ -139,7 +137,6 @@ public class FormsContract {
         this.sD = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SD));
         this.sE = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SE));
         this.sF = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SF));
-        this.sF2 = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SF2));
         this.sG = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SG));
         this.sH = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SH));
         this.sI = cursor.getString(cursor.getColumnIndex(FormsTable.COLUMN_SI));
@@ -187,10 +184,6 @@ public class FormsContract {
 
         if (!this.sF.equals("")) {
             json.put(FormsTable.COLUMN_SF, new JSONObject(this.sF));
-        }
-
-        if (!this.sF2.equals("")) {
-            json.put(FormsTable.COLUMN_SF2, new JSONObject(this.sF2));
         }
 
         if (!this.sG.equals("")) {
@@ -272,14 +265,6 @@ public class FormsContract {
 
     public void setsF(String sF) {
         this.sF = sF;
-    }
-
-    public String getsF2() {
-        return sF2;
-    }
-
-    public void setsF2(String sF2) {
-        this.sF2 = sF2;
     }
 
     public String getsG() {
@@ -499,7 +484,6 @@ public class FormsContract {
         String COLUMN_SD = "sD";
         String COLUMN_SE = "sE";
         String COLUMN_SF = "sF";
-        String COLUMN_SF2 = "sF2";
         String COLUMN_SG = "sG";
         String COLUMN_SH = "sH";
         String COLUMN_SI = "sI";
