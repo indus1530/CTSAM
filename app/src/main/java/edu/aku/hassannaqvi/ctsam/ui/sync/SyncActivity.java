@@ -32,8 +32,6 @@ import edu.aku.hassannaqvi.ctsam.CONSTANTS;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.adapter.SyncListAdapter;
 import edu.aku.hassannaqvi.ctsam.adapter.UploadListAdapter;
-import edu.aku.hassannaqvi.ctsam.contracts.ChildContract;
-import edu.aku.hassannaqvi.ctsam.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
@@ -155,37 +153,6 @@ public class SyncActivity extends AppCompatActivity implements SyncDevice.SyncDe
                     MainApp._HOST_URL + MainApp._SERVER_URL,
                     FormsContract.FormsTable.TABLE_NAME,
                     db.getUnsyncedForms(), 0, uploadListAdapter, uploadlist
-            ).execute();
-
-
-            if (uploadlistActivityCreated) {
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
-            }
-            new SyncAllData(
-                    this,
-                    "Child",
-                    "updateSyncedChildForms",
-                    ChildContract.class,
-                    MainApp._HOST_URL + MainApp._SERVER_URL,
-                    ChildContract.SingleChild.TABLE_NAME,
-                    db.getUnsyncedChildForms(), 1, uploadListAdapter, uploadlist
-            ).execute();
-
-            if (uploadlistActivityCreated) {
-                uploadmodel = new SyncModel();
-                uploadmodel.setstatusID(0);
-                uploadlist.add(uploadmodel);
-            }
-            new SyncAllData(
-                    this,
-                    "Family Members",
-                    "updateSyncedFamilyMemForms",
-                    FamilyMembersContract.class,
-                    MainApp._HOST_URL + MainApp._SERVER_URL,
-                    FamilyMembersContract.SingleMember.TABLE_NAME,
-                    db.getAllFamilyMembersForms(), 6, uploadListAdapter, uploadlist
             ).execute();
 
             bi.noDataItem.setVisibility(View.GONE);

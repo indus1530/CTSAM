@@ -6,9 +6,9 @@
         <shape android:shape="rectangle">
             <stroke
                 android:width="2dp"
-                android:color="@color/greenInfo" />
+                android:color="@color/colorPrimaryAlpha" />
             <corners android:radius="30dp" />
-            <solid android:color="@color/white" />
+            <solid android:color="@color/colorAccent" />
         </shape>
     </item>
 </layer-list>

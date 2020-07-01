@@ -27,9 +27,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s7q1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s7q1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s7q1"
+                            android:text="@string/s7q1" />
+
+                        <TextView
+                            android:id="@+id/q_s7q1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s7q1"
+                            android:layout_alignBottom="@id/qtxt_s7q1"
+                            android:text="@string/Q_s7q1" />
+
+                    </RelativeLayout>
 
                     <RadioGroup
                         android:id="@+id/s7q1"
@@ -65,9 +84,28 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s7q2" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s7q2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s7q2"
+                            android:text="@string/s7q2" />
+
+                        <TextView
+                            android:id="@+id/q_s7q2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s7q2"
+                            android:layout_alignBottom="@id/qtxt_s7q2"
+                            android:text="@string/Q_s7q2" />
+
+                    </RelativeLayout>
 
                     <LinearLayout
                         android:id="@+id/s7q2check"
@@ -114,9 +152,31 @@
 
                 <LinearLayout style="@style/vlinearlayout">
 
-                    <TextView
-                        style="@style/i_textview"
-                        android:text="@string/s7q3" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s7q3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s7q3"
+                            android:text="@string/s7q3" />
+
+                        <TextView
+                            android:id="@+id/q_s7q3"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s7q3"
+                            android:layout_alignBottom="@id/qtxt_s7q3"
+                            android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                            android:drawablePadding="16dp"
+                            android:onClick="showTooltip"
+                            android:text="@string/Q_s7q3" />
+
+                    </RelativeLayout>
 
                     <LinearLayout
                         android:id="@+id/s7q3check"

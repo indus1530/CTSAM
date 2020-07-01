@@ -12,15 +12,11 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionIBinding;
-import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionIActivity extends AppCompatActivity {
@@ -41,12 +37,12 @@ public class SectionIActivity extends AppCompatActivity {
         if (formValidation()) {
             try {
                 SaveDraft();
-            } catch (Exception e) {
-                throw new RuntimeException(e.getMessage());
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
+                startActivity(new Intent(this, SectionJActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -57,11 +53,8 @@ public class SectionIActivity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        long updcount = db.addForm(MainApp.fc);
-        MainApp.fc.set_ID(String.valueOf(updcount));
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SI, MainApp.fc.getsI());
         if (updcount > 0) {
-            MainApp.fc.set_UID(MainApp.fc.getDeviceID() + MainApp.fc.get_ID());
-            db.updatesFormColumn(FormsContract.FormsTable.COLUMN_UID, MainApp.fc.get_UID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
@@ -71,17 +64,6 @@ public class SectionIActivity extends AppCompatActivity {
 
 
     private void SaveDraft() throws JSONException {
-
-        MainApp.fc = new FormsContract();
-        MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
-        MainApp.fc.setUser(MainApp.userName);
-        MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
-        MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
-        MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
-        //MainApp.fc.setClusterCode(bi.a101.getText().toString());
-        //MainApp.fc.setHhno(bi.a112.getText().toString());
-        // MainApp.fc.setLuid(bl.getLUID());
-        MainApp.setGPS(this); // Set GPS
 
         JSONObject json = new JSONObject();
 
@@ -100,8 +82,9 @@ public class SectionIActivity extends AppCompatActivity {
                                                                                                         bi.s9q112.isChecked() ? "12" :
                                                                                                                 bi.s9q113.isChecked() ? "13" :
                                                                                                                         bi.s9q196.isChecked() ? "96" :
-                                                                                                                                "0");
-        json.put("s9q196x", bi.s9q196x.getText().toString());
+                                                                                                                                "-1");
+
+        json.put("s9q196x", bi.s9q196x.getText().toString().trim().isEmpty() ? "-1" : bi.s9q196x.getText().toString());
 
         json.put("s9q2",
                 bi.s9q201.isChecked() ? "1" :
@@ -118,8 +101,10 @@ public class SectionIActivity extends AppCompatActivity {
                                                                                                         bi.s9q212.isChecked() ? "12" :
                                                                                                                 bi.s9q213.isChecked() ? "13" :
                                                                                                                         bi.s9q296.isChecked() ? "96" :
-                                                                                                                                "0");
-        json.put("s9q296x", bi.s9q296x.getText().toString());
+                                                                                                                                "-1");
+
+        json.put("s9q296x", bi.s9q296x.getText().toString().trim().isEmpty() ? "-1" : bi.s9q296x.getText().toString());
+
         json.put("s9q3",
                 bi.s9q301.isChecked() ? "1" :
                         bi.s9q302.isChecked() ? "2" :
@@ -135,25 +120,31 @@ public class SectionIActivity extends AppCompatActivity {
                                                                                                         bi.s9q312.isChecked() ? "12" :
                                                                                                                 bi.s9q313.isChecked() ? "13" :
                                                                                                                         bi.s9q396.isChecked() ? "96" :
-                                                                                                                                "0");
-        json.put("s9q396x", bi.s9q396x.getText().toString());
+                                                                                                                                "-1");
 
-        MainApp.fc.setsA3(String.valueOf(json));
+        json.put("s9q396x", bi.s9q396x.getText().toString().trim().isEmpty() ? "-1" : bi.s9q396x.getText().toString());
 
-
+        MainApp.fc.setsI(String.valueOf(json));
     }
 
 
     private boolean formValidation() {
+
         return Validator.emptyCheckingContainer(this, bi.fldGrpSectionI);
     }
 
 
     public void BtnEnd() {
-        if (formValidation()) {
-            Util.contextEndActivity(this);
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
+        Util.contextEndActivity(this);
     }
 
-
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(getApplicationContext(), "You Can't go back", Toast.LENGTH_LONG).show();
+    }
 }

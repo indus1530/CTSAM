@@ -20,5 +20,7 @@ class CONSTANTS {
         const val VISION = 3
         const val DENTAL = 4
 
+        const val CHILDRECRUITMENT = "child_recruitment"
+        const val CHILDFOLLOWUP = "child_follow_up"
     }
 }

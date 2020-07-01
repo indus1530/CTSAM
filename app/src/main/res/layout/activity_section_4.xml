@@ -1,0 +1,1225 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.ctsam.ui.sections.Section4Activity" />
+    </data>
+
+    <ScrollView
+        style="@style/i_scrollview"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl">
+
+        <LinearLayout
+            android:id="@+id/fldGrpSection4"
+            style="@style/vlinearlayout">
+
+            <!-- fus4title  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4title"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/sub"
+                        android:text="@string/fus4title" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q1a  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q1a"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/hlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q1a"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q1a"
+                            android:text="@string/fus4q1a" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q1a"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q1a"
+                            android:layout_alignBottom="@id/qtxt_fus4q1a"
+                            android:text="@string/Q_fus4q1a" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus4q1a"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/fus4q1a"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q1b  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q1b"
+                style="@style/cardView">
+                <LinearLayout style="@style/hlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q1b"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q1b"
+                            android:text="@string/fus4q1b" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q1b"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q1b"
+                            android:layout_alignBottom="@id/qtxt_fus4q1b"
+                            android:text="@string/Q_fus4q1b" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus4q1b"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/fus4q1b"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q1  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q1"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q1"
+                            android:text="@string/fus4q1" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q1"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q1"
+                            android:layout_alignBottom="@id/qtxt_fus4q1"
+                            android:text="@string/Q_fus4q1" />
+
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/fus4q1"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/fus4q101"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q101" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q102"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q102" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q103"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q103" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q2  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q2"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q2"
+                            android:text="@string/fus4q2" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q2"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q2"
+                            android:layout_alignBottom="@id/qtxt_fus4q2"
+                            android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                            android:drawablePadding="16dp"
+                            android:onClick="showTooltip"
+                            android:text="@string/Q_fus4q2" />
+
+                    </RelativeLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/fus4q2"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/fus4q2a"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q2a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q2b"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q2b" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q2c"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q2c" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q2d"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q2d" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q3  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q3"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q3"
+                            android:text="@string/fus4q3" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q3"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q3"
+                            android:layout_alignBottom="@id/qtxt_fus4q3"
+                            android:text="@string/Q_fus4q3" />
+
+                    </RelativeLayout>
+                    
+
+                    <RadioGroup
+                        android:id="@+id/fus4q3"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fus4q3a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q3a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q3b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q3b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q4  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q4"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q4"
+                            android:text="@string/fus4q4" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q4"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q4"
+                            android:layout_alignBottom="@id/qtxt_fus4q4"
+                            android:text="@string/Q_fus4q4" />
+
+                    </RelativeLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/fus4q4"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/fus4q4a"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q4a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q4b"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q4b" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q4c"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q4c" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q5  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q5"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/sub"
+                        android:text="@string/fus4q5" />
+
+
+
+
+
+
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q5a" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/fus4q5a"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:hint="@string/fus4q5a"
+                            app:mask="##"
+                            app:maxValue="36.0"
+                            app:minValue="33.0"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <TextView
+                            style="@style/i_textview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q5b" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/fus4q5b"
+                            style="@style/EditTextNum"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:hint="@string/fus4q5b"
+                            app:mask="##"
+                            app:maxValue="130"
+                            app:minValue="30"
+                            app:type="range" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q6  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q6"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q6"
+                            android:text="@string/fus4q6" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q6"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q6"
+                            android:layout_alignBottom="@id/qtxt_fus4q6"
+                            android:text="@string/Q_fus4q6" />
+
+                    </RelativeLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/fus4q6"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fus4q6a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q6a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q6b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q6b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q7  Title   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q7"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <TextView
+                        style="@style/sub"
+                        android:text="@string/fus4q7" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q701  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q701"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q701"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q701"
+                            android:text="@string/fus4q701" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q701"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q701"
+                            android:layout_alignBottom="@id/qtxt_fus4q701"
+                            android:text="@string/Q_fus4q701" />
+
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/fus4q701"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fus4q701a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q701a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q701b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q701b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q702  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q702"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q702"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q702"
+                            android:text="@string/fus4q702" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q702"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q702"
+                            android:layout_alignBottom="@id/qtxt_fus4q702"
+                            android:text="@string/Q_fus4q702" />
+
+                    </RelativeLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/fus4q702"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fus4q702a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q702a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q702b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q702b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q703  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q703"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q703"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q703"
+                            android:text="@string/fus4q703" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q703"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q703"
+                            android:layout_alignBottom="@id/qtxt_fus4q703"
+                            android:text="@string/Q_fus4q703" />
+
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/fus4q703"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fus4q703a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q703a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q703b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q703b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q704  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q704"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q704"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q704"
+                            android:text="@string/fus4q704" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q704"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q704"
+                            android:layout_alignBottom="@id/qtxt_fus4q704"
+                            android:text="@string/Q_fus4q704" />
+
+                    </RelativeLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/fus4q704"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fus4q704a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q704a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q704b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q704b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q705  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q705"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q705"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q705"
+                            android:text="@string/fus4q705" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q705"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q705"
+                            android:layout_alignBottom="@id/qtxt_fus4q705"
+                            android:text="@string/Q_fus4q705" />
+
+                    </RelativeLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/fus4q705"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fus4q705a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q705a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q705b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q705b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q706  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q706"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q706"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q706"
+                            android:text="@string/fus4q706" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q706"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q706"
+                            android:layout_alignBottom="@id/qtxt_fus4q706"
+                            android:text="@string/Q_fus4q706" />
+
+                    </RelativeLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/fus4q706"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fus4q706a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q706a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q706b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q706b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q707  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q707"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q707"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q707"
+                            android:text="@string/fus4q707" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q707"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q707"
+                            android:layout_alignBottom="@id/qtxt_fus4q707"
+                            android:text="@string/Q_fus4q707" />
+
+                    </RelativeLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/fus4q707"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fus4q707a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q707a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q707b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q707b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q708  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q708"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q708"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q708"
+                            android:text="@string/fus4q708" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q708"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q708"
+                            android:layout_alignBottom="@id/qtxt_fus4q708"
+                            android:text="@string/Q_fus4q708" />
+
+                    </RelativeLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/fus4q708"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fus4q708a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q708a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q708b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q708b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q709  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q709"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q709"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q709"
+                            android:text="@string/fus4q709" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q709"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q709"
+                            android:layout_alignBottom="@id/qtxt_fus4q709"
+                            android:text="@string/Q_fus4q709" />
+
+                    </RelativeLayout>
+
+
+                    <RadioGroup
+                        android:id="@+id/fus4q709"
+                        style="@style/radiogroup"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fus4q709a"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q709a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q709b"
+                            style="@style/radiobutton"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fus4q709b" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q8  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q8"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q8"
+                            android:text="@string/fus4q8" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q8"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q8"
+                            android:layout_alignBottom="@id/qtxt_fus4q8"
+                            android:text="@string/Q_fus4q8" />
+
+                    </RelativeLayout>
+                    <RadioGroup
+                        android:id="@+id/fus4q8"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/fus4q8a"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q8a" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q8b"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q8b" />
+
+                        <RadioButton
+                            android:id="@+id/fus4q8c"
+                            style="@style/radiobutton"
+                            android:text="@string/fus4q8c" />
+
+                        <EditText
+                            android:id="@+id/fus4q8cx"
+                            style="@style/EditTextAlpha"
+                            android:hint="@string/fus4q8c"
+                            android:tag="fus4q8c"
+                            android:text='@{fus4q8c.checked? fus4q8cx.getText().toString() : ""}'
+                            android:visibility='@{fus4q8c.checked? View.VISIBLE : View.GONE}' />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q9  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q9"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/hlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q9"
+                            android:text="@string/fus4q9" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q9"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q9"
+                            android:layout_alignBottom="@id/qtxt_fus4q9"
+                            android:text="@string/Q_fus4q9" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus4q9"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/fus4q9"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q10  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q10"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/hlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q10"
+                            android:text="@string/fus4q10" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q10"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q10"
+                            android:layout_alignBottom="@id/qtxt_fus4q10"
+                            android:text="@string/Q_fus4q10" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus4q10"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/num"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus4q11  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus4q11"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/hlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus4q11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus4q11"
+                            android:text="@string/fus4q11" />
+
+                        <TextView
+                            android:id="@+id/q_fus4q11"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus4q11"
+                            android:layout_alignBottom="@id/qtxt_fus4q11"
+                            android:text="@string/Q_fus4q11" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus4q11"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/num"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout style="@style/hlinearlayout">
+
+                <Button
+                    android:id="@+id/btn_End"
+                    style="@style/buttonEnd"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    style="@style/buttonNext"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save" />
+                <!--'onClick' for btn_End will NOT change and always call 'endInterview'-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

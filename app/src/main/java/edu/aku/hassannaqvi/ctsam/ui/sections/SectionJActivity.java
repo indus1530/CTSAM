@@ -13,9 +13,7 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -91,8 +89,8 @@ public class SectionJActivity extends AppCompatActivity {
         if (formValidation()) {
             try {
                 SaveDraft();
-            } catch (Exception e) {
-                throw new RuntimeException(e.getMessage());
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
             if (UpdateDB()) {
                 finish();
@@ -107,11 +105,8 @@ public class SectionJActivity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        long updcount = db.addForm(MainApp.fc);
-        MainApp.fc.set_ID(String.valueOf(updcount));
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SJ, MainApp.fc.getsJ());
         if (updcount > 0) {
-            MainApp.fc.set_UID(MainApp.fc.getDeviceID() + MainApp.fc.get_ID());
-            db.updatesFormColumn(FormsContract.FormsTable.COLUMN_UID, MainApp.fc.get_UID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
@@ -122,35 +117,21 @@ public class SectionJActivity extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
-        MainApp.fc = new FormsContract();
-        MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
-        MainApp.fc.setUser(MainApp.userName);
-        MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
-        MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
-        MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
-        //MainApp.fc.setClusterCode(bi.a101.getText().toString());
-        //MainApp.fc.setHhno(bi.a112.getText().toString());
-        // MainApp.fc.setLuid(bl.getLUID());
-        MainApp.setGPS(this); // Set GPS
-
         JSONObject json = new JSONObject();
 
         json.put("s10q1", bi.s10q1a.isChecked() ? "1"
                 : bi.s10q1b.isChecked() ? "2"
                 : bi.s10q1c.isChecked() ? "3"
                 : bi.s10q1d.isChecked() ? "4"
-                : "0");
+                : "-1");
 
-        json.put("s10q1ax", bi.s10q1ax.getText().toString());
-        json.put("s10q1bx", bi.s10q1bx.getText().toString());
-        json.put("s10q1cx", bi.s10q1cx.getText().toString());
-        json.put("s10q1dx", bi.s10q1dx.getText().toString());
+        json.put("s10q1ax", bi.s10q1ax.getText().toString().trim().isEmpty() ? "-1" : bi.s10q1ax.getText().toString());
+        json.put("s10q1bx", bi.s10q1bx.getText().toString().trim().isEmpty() ? "-1" : bi.s10q1bx.getText().toString());
+        json.put("s10q1cx", bi.s10q1cx.getText().toString().trim().isEmpty() ? "-1" : bi.s10q1cx.getText().toString());
+        json.put("s10q1dx", bi.s10q1dx.getText().toString().trim().isEmpty() ? "-1" : bi.s10q1dx.getText().toString());
+        json.put("s10q2", bi.s10q2.getText().toString().trim().isEmpty() ? "-1" : bi.s10q2.getText().toString());
 
-        json.put("s10q2", bi.s10q2.getText().toString());
-
-        MainApp.fc.setsA3(String.valueOf(json));
-
-
+        MainApp.fc.setsJ(String.valueOf(json));
     }
 
 
@@ -161,10 +142,16 @@ public class SectionJActivity extends AppCompatActivity {
 
 
     public void BtnEnd() {
-        if (formValidation()) {
-            Util.contextEndActivity(this);
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
+        Util.contextEndActivity(this);
     }
 
-
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(getApplicationContext(), "You Can't go back", Toast.LENGTH_LONG).show();
+    }
 }

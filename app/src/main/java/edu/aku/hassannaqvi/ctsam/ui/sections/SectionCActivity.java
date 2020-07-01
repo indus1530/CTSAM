@@ -15,20 +15,17 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionCBinding;
-import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionCActivity extends AppCompatActivity {
 
     ActivitySectionCBinding bi;
+    String hf_code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,12 +66,6 @@ public class SectionCActivity extends AppCompatActivity {
                         return;
                     }
 
-                    //bi.s3qa.setText(null);
-                    //bi.s3qb.setText(null);
-                    //bi.s3qc.setText(null);
-                    //bi.s3qd.setText(null);
-                    //bi.s3qe.setText(null);
-
                     int a3, b3, c3, d3, e3, total;
                     a3 = Integer.parseInt(bi.s3qa.getText().toString().trim());
                     b3 = Integer.parseInt(bi.s3qb.getText().toString().trim());
@@ -111,12 +102,12 @@ public class SectionCActivity extends AppCompatActivity {
         if (formValidation()) {
             try {
                 SaveDraft();
-            } catch (Exception e) {
-                throw new RuntimeException(e.getMessage());
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", true));
+                startActivity(new Intent(this, SectionDActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -127,11 +118,8 @@ public class SectionCActivity extends AppCompatActivity {
     private boolean UpdateDB() {
 
         DatabaseHelper db = MainApp.appInfo.getDbHelper();
-        long updcount = db.addForm(MainApp.fc);
-        MainApp.fc.set_ID(String.valueOf(updcount));
+        int updcount = db.updatesFormColumn(FormsContract.FormsTable.COLUMN_SC, MainApp.fc.getsC());
         if (updcount > 0) {
-            MainApp.fc.set_UID(MainApp.fc.getDeviceID() + MainApp.fc.get_ID());
-            db.updatesFormColumn(FormsContract.FormsTable.COLUMN_UID, MainApp.fc.get_UID());
             return true;
         } else {
             Toast.makeText(this, "Updating Database... ERROR!", Toast.LENGTH_SHORT).show();
@@ -142,30 +130,21 @@ public class SectionCActivity extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
-        MainApp.fc = new FormsContract();
-        MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
-        MainApp.fc.setUser(MainApp.userName);
-        MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
-        MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
-        MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
-        MainApp.setGPS(this); // Set GPS
-
         JSONObject json = new JSONObject();
 
-        json.put("s3qa", bi.s3qa.getText().toString());
-        json.put("s3qb", bi.s3qb.getText().toString());
-        json.put("s3qc", bi.s3qc.getText().toString());
-        json.put("s3qd", bi.s3qd.getText().toString());
-        json.put("s3qe", bi.s3qe.getText().toString());
-        json.put("s3qf", bi.s3qf.getText().toString());
+        json.put("s3qa", bi.s3qa.getText().toString().trim().isEmpty() ? "-1" : bi.s3qa.getText().toString());
+        json.put("s3qb", bi.s3qb.getText().toString().trim().isEmpty() ? "-1" : bi.s3qb.getText().toString());
+        json.put("s3qc", bi.s3qc.getText().toString().trim().isEmpty() ? "-1" : bi.s3qc.getText().toString());
+        json.put("s3qd", bi.s3qd.getText().toString().trim().isEmpty() ? "-1" : bi.s3qd.getText().toString());
+        json.put("s3qe", bi.s3qe.getText().toString().trim().isEmpty() ? "-1" : bi.s3qe.getText().toString());
+        json.put("s3qf", bi.s3qf.getText().toString().trim().isEmpty() ? "-1" : bi.s3qf.getText().toString());
 
-        MainApp.fc.setsA3(String.valueOf(json));
-
+        MainApp.fc.setsC(String.valueOf(json));
     }
 
     private boolean formValidation() {
 
-        if (!Validator.emptyCheckingContainer(this, bi.GrpName)) {
+        if (!Validator.emptyCheckingContainer(this, bi.fldGrpSectionC)) {
             return false;
         }
 
@@ -184,10 +163,16 @@ public class SectionCActivity extends AppCompatActivity {
 
 
     public void BtnEnd() {
-        if (formValidation()) {
-            Util.contextEndActivity(this);
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
+        Util.contextEndActivity(this);
     }
 
-
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(getApplicationContext(), "You Can't go back", Toast.LENGTH_LONG).show();
+    }
 }

@@ -29,6 +29,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -37,8 +40,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.AreasContract;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
@@ -47,16 +48,8 @@ import edu.aku.hassannaqvi.ctsam.core.AndroidDatabaseManager;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivityMainBinding;
+import edu.aku.hassannaqvi.ctsam.ui.sections.Section1Activity;
 import edu.aku.hassannaqvi.ctsam.ui.sections.SectionAActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionBActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionCActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionDActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionEActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionFActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionGActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionHActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionIActivity;
-import edu.aku.hassannaqvi.ctsam.ui.sections.SectionJActivity;
 import edu.aku.hassannaqvi.ctsam.ui.sync.SyncActivity;
 import edu.aku.hassannaqvi.ctsam.utils.CreateTable;
 
@@ -174,31 +167,7 @@ public class MainActivity extends AppCompatActivity {
                 oF = new Intent(this, SectionAActivity.class);
                 break;
             case R.id.formB:
-                oF = new Intent(this, SectionBActivity.class);
-                break;
-            case R.id.formC:
-                oF = new Intent(this, SectionCActivity.class);
-                break;
-            case R.id.formD:
-                oF = new Intent(this, SectionDActivity.class);
-                break;
-            case R.id.formE:
-                oF = new Intent(this, SectionEActivity.class);
-                break;
-            case R.id.formF:
-                oF = new Intent(this, SectionFActivity.class);
-                break;
-            case R.id.formG:
-                oF = new Intent(this, SectionGActivity.class);
-                break;
-            case R.id.formH:
-                oF = new Intent(this, SectionHActivity.class);
-                break;
-            case R.id.formI:
-                oF = new Intent(this, SectionIActivity.class);
-                break;
-            case R.id.formJ:
-                oF = new Intent(this, SectionJActivity.class);
+                oF = new Intent(this, Section1Activity.class);
                 break;
         }
         startActivity(oF);

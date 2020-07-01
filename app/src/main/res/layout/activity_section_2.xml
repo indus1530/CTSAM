@@ -1,0 +1,425 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="edu.aku.hassannaqvi.ctsam.ui.sections.Section2Activity" />
+    </data>
+
+    <ScrollView
+        style="@style/i_scrollview"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl">
+
+        <LinearLayout
+            android:id="@+id/fldGrpSection2"
+            style="@style/vlinearlayout">
+
+            <!-- fumeas01  Input   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfumeas01"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fumeas01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fumeas01"
+                            android:text="@string/fumeas01" />
+
+                        <TextView
+                            android:id="@+id/q_fumeas01"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fumeas01"
+                            android:layout_alignBottom="@id/qtxt_fumeas01"
+                            android:text="@string/Q_fumeas01" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fumeas01"
+                        style="@style/EditTextNum"
+                        android:hint="@string/name"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+                
+                
+                
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus2q1m1hei  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus2q1m1hei"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/hlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus2q1m1hei"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus2q1m1hei"
+                            android:text="@string/fus2q1m1hei" />
+
+                        <TextView
+                            android:id="@+id/q_fus2q1m1hei"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus2q1m1hei"
+                            android:layout_alignBottom="@id/qtxt_fus2q1m1hei"
+                            android:text="@string/Q_fus2q1m1hei" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus2q1m1hei"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/fus2q1m1hei"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus2q2m1wei  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus2q2m1wei"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/hlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus2q2m1wei"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus2q2m1wei"
+                            android:text="@string/fus2q2m1wei" />
+
+                        <TextView
+                            android:id="@+id/q_fus2q2m1wei"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus2q2m1wei"
+                            android:layout_alignBottom="@id/qtxt_fus2q2m1wei"
+                            android:text="@string/Q_fus2q2m1wei" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus2q2m1wei"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/fus2q2m1wei"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus2q3m1mua  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus2q3m1mua"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus2q3m1mua"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus2q3m1mua"
+                            android:text="@string/fus2q3m1mua" />
+
+                        <TextView
+                            android:id="@+id/q_fus2q3m1mua"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus2q3m1mua"
+                            android:layout_alignBottom="@id/qtxt_fus2q3m1mua"
+                            android:text="@string/Q_fus2q3m1mua" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus2q3m1mua"
+                        style="@style/EditTextNum"
+                        android:hint="@string/fus2q3m1mua"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fumeas02  Input   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfumeas02"
+                style="@style/cardView">
+
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fumeas02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fumeas02"
+                            android:text="@string/fumeas02" />
+
+                        <TextView
+                            android:id="@+id/q_fumeas02"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fumeas02"
+                            android:layout_alignBottom="@id/qtxt_fumeas02"
+                            android:text="@string/Q_fumeas02" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fumeas02"
+                        style="@style/EditTextNum"
+                        android:hint="@string/fumeas02"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus2q1m2hei  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus2q1m2hei"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/hlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus2q1m2hei"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus2q1m2hei"
+                            android:text="@string/fus2q1m2hei" />
+
+                        <TextView
+                            android:id="@+id/q_fus2q1m2hei"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus2q1m2hei"
+                            android:layout_alignBottom="@id/qtxt_fus2q1m2hei"
+                            android:text="@string/Q_fus2q1m2hei" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus2q1m2hei"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/fus2q1m2hei"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus2q2m2wei  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus2q2m2wei"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/hlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus2q2m2wei"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus2q2m2wei"
+                            android:text="@string/fus2q2m2wei" />
+
+                        <TextView
+                            android:id="@+id/q_fus2q2m2wei"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus2q2m2wei"
+                            android:layout_alignBottom="@id/qtxt_fus2q2m2wei"
+                            android:text="@string/Q_fus2q2m2wei" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus2q2m2wei"
+                        style="@style/EditTextNum"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="@string/fus2q2m2wei"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- fus2q3m2mua  Input-Numeric   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus2q3m2mua"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus2q3m2mua"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus2q3m2mua"
+                            android:text="@string/fus2q3m2mua" />
+
+                        <TextView
+                            android:id="@+id/q_fus2q3m2mua"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus2q3m2mua"
+                            android:layout_alignBottom="@id/qtxt_fus2q3m2mua"
+                            android:text="@string/Q_fus2q3m2mua" />
+
+                    </RelativeLayout>
+
+                    <com.edittextpicker.aliazaz.EditTextPicker
+                        android:id="@+id/fus2q3m2mua"
+                        style="@style/EditTextNum"
+                        android:hint="@string/fus2q3m2mua"
+                        android:maxLength="2"
+                        app:maxValue="99"
+                        app:minValue="0"
+                        app:type="range"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout style="@style/hlinearlayout">
+
+                <Button
+                    android:id="@+id/btn_End"
+                    style="@style/buttonEnd"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    style="@style/buttonNext"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Save" />
+                <!--'onClick' for btn_End will NOT change and always call 'endInterview'-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

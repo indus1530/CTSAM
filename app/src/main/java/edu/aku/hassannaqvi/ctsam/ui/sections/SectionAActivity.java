@@ -2,6 +2,7 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,12 +17,15 @@ import com.validatorcrawler.aliazaz.Validator;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
+import edu.aku.hassannaqvi.ctsam.CONSTANTS;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.contracts.HealthFacilitiesContract;
@@ -30,7 +34,6 @@ import edu.aku.hassannaqvi.ctsam.contracts.VillagesContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionABinding;
-import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.Util;
 
 public class SectionAActivity extends AppCompatActivity {
@@ -62,7 +65,6 @@ public class SectionAActivity extends AppCompatActivity {
                 bi.fldGrpCVs1q8r.setVisibility(View.GONE);
             }
         });*/
-
     }
 
 
@@ -70,13 +72,12 @@ public class SectionAActivity extends AppCompatActivity {
         if (formValidation()) {
             try {
                 SaveDraft();
-            } catch (Exception e) {
-                throw new RuntimeException(e.getMessage());
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
-
             if (UpdateDB()) {
                 finish();
-                startActivity(new Intent(this, EndingActivity.class).putExtra("complete", false));
+                startActivity(new Intent(this, SectionBActivity.class));
             } else {
                 Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
             }
@@ -104,52 +105,50 @@ public class SectionAActivity extends AppCompatActivity {
 
         MainApp.fc = new FormsContract();
         MainApp.fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+        MainApp.fc.setFormType(CONSTANTS.CHILDRECRUITMENT);
         MainApp.fc.setUser(MainApp.userName);
+        MainApp.fc.setUser2(MainApp.userName2);
         MainApp.fc.setDeviceID(MainApp.appInfo.getDeviceID());
         MainApp.fc.setDevicetagID(MainApp.appInfo.getTagName());
         MainApp.fc.setAppversion(MainApp.appInfo.getAppVersion());
-        //MainApp.fc.setClusterCode(bi.a101.getText().toString());
-        //MainApp.fc.setHhno(bi.a112.getText().toString());
-        // MainApp.fc.setLuid(bl.getLUID());
         MainApp.setGPS(this); // Set GPS
+
+        NumberFormat f = new DecimalFormat("00");
+        String hf_name = bi.s1q1.getSelectedItem().toString();
+        long hf_code = getHfCode(hf_name);
+        MainApp.fc.setHfCode(f.format(hf_code));
 
         JSONObject json = new JSONObject();
 
-        json.put("s1q1", bi.s1q1.getChildCount() == 0 ? "0" : bi.s1q1.getSelectedItem().toString());
+        json.put("s1q1", bi.s1q1.getChildCount() == 0 ? "-1" : bi.s1q1.getSelectedItem().toString());
 
-        json.put("s1q2", bi.s1q2.getChildCount() == 0 ? "0" : bi.s1q2.getSelectedItem().toString());
+        json.put("s1q2", bi.s1q2.getChildCount() == 0 ? "-1" : bi.s1q2.getSelectedItem().toString());
 
-        json.put("s1q3", bi.s1q3.getChildCount() == 0 ? "0" : bi.s1q3.getSelectedItem().toString());
+        json.put("s1q3", bi.s1q3.getChildCount() == 0 ? "-1" : bi.s1q3.getSelectedItem().toString());
 
-        json.put("s1q4", bi.s1q4.getText().toString());
+        json.put("s1q4", bi.s1q4.getText().toString().trim().isEmpty() ? "-1" : bi.s1q4.getText().toString());
 
-        /*json.put("s1q5", bi.s1q5.getText().toString());
+        json.put("s1q8", bi.s1q8a.isChecked() ? "1" : bi.s1q8b.isChecked() ? "2" : "-1");
 
-        json.put("s1q6", bi.s1q6.getText().toString());
+        json.put("s1q8r", bi.s1q8r.getText().toString().trim().isEmpty() ? "-1" : bi.s1q8r.getText().toString());
 
-        json.put("s1q7", bi.s1q7.getText().toString());*/
-
-        json.put("s1q8", bi.s1q8a.isChecked() ? "1"
-                : bi.s1q8b.isChecked() ? "2"
-                : "0");
-
-        json.put("s1q8r", bi.s1q8r.getText().toString());
-
-        MainApp.fc.setsInfo(String.valueOf(json));
-
-
+        MainApp.fc.setsA(String.valueOf(json));
     }
 
 
     private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.GrpName);
+
+        return Validator.emptyCheckingContainer(this, bi.fldGrpSectionA);
     }
 
 
     public void BtnEnd() {
-        if (formValidation()) {
-            Util.contextEndActivity(this);
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
+        Util.contextEndActivity(this);
     }
 
     public void populateSpinner(final Context context) {
@@ -231,5 +230,14 @@ public class SectionAActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+
+    long getHfCode(String hf_name) {
+
+        DatabaseHelper db = new DatabaseHelper(this);
+        Cursor res = db.getHfCode("healthFacilities", hf_name);
+        res.moveToFirst();
+        return Long.parseLong(res.getString(res.getColumnIndex(HealthFacilitiesContract.SingleHealthFacilities.COLUMN_FACILITY_CODE)));
     }
 }
