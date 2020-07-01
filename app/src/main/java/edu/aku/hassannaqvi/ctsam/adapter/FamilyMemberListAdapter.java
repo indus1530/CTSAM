@@ -15,7 +15,7 @@ import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FamilyMembersContract;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ItemMemListBinding;
-import edu.aku.hassannaqvi.ctsam.utils.Util;
+import edu.aku.hassannaqvi.ctsam.utils.UtilKt;
 import edu.aku.hassannaqvi.ctsam.viewmodel.MainVModel;
 
 public class FamilyMemberListAdapter extends RecyclerView.Adapter<FamilyMemberListAdapter.ViewHolder> {
@@ -53,7 +53,7 @@ public class FamilyMemberListAdapter extends RecyclerView.Adapter<FamilyMemberLi
         holder.bi.dob.setText(new StringBuilder().append("Age:").append(Integer.valueOf(age) < 0 ? "-" : age).append(" Year(s)"));
 //        holder.bi.dob.setText("Age: " + (Integer.valueOf(age) < 0 ? "-" : age) + " Year(s)");
         holder.bi.index.setText(String.format("%02d", Integer.valueOf(mList.get(i).getSerialno())));
-        holder.bi.genderImage.setImageResource(Util.getMemberIcon(Integer.valueOf(mList.get(i).getGender()), mList.get(i).getAge()));
+        holder.bi.genderImage.setImageResource(UtilKt.getMemberIcon(Integer.valueOf(mList.get(i).getGender()), mList.get(i).getAge()));
         holder.bi.motherName.setText(mList.get(i).getMother_name());
         holder.bi.parentLayout.setOnClickListener(v -> {
             itemClicked.onItemClick(mList.get(i), i);

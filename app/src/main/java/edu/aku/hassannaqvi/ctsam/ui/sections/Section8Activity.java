@@ -18,7 +18,7 @@ import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySection8Binding;
 import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
-import edu.aku.hassannaqvi.ctsam.utils.Util;
+import edu.aku.hassannaqvi.ctsam.utils.UtilKt;
 
 public class Section8Activity extends AppCompatActivity {
 
@@ -99,7 +99,7 @@ public class Section8Activity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        Util.contextEndActivity(this);
+        UtilKt.contextEndActivity(this);
     }
 
     @Override

@@ -20,7 +20,7 @@ import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionCBinding;
-import edu.aku.hassannaqvi.ctsam.utils.Util;
+import edu.aku.hassannaqvi.ctsam.utils.UtilKt;
 
 public class SectionCActivity extends AppCompatActivity {
 
@@ -168,7 +168,7 @@ public class SectionCActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        Util.contextEndActivity(this);
+        UtilKt.contextEndActivity(this);
     }
 
     @Override

@@ -21,7 +21,7 @@ import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionBBinding;
-import edu.aku.hassannaqvi.ctsam.utils.Util;
+import edu.aku.hassannaqvi.ctsam.utils.UtilKt;
 import edu.aku.hassannaqvi.ctsam.validator.ValidatorClass;
 
 public class SectionBActivity extends AppCompatActivity {
@@ -194,12 +194,7 @@ public class SectionBActivity extends AppCompatActivity {
 
 
     public void BtnEnd() {
-        try {
-            SaveDraft();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        Util.contextEndActivity(this);
+        UtilKt.openEndActivity(this);
     }
 
     @Override

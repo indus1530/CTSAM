@@ -25,9 +25,11 @@ import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySection1Binding;
-import edu.aku.hassannaqvi.ctsam.utils.Util;
+import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
+import edu.aku.hassannaqvi.ctsam.utils.EndSectionActivity;
+import edu.aku.hassannaqvi.ctsam.utils.UtilKt;
 
-public class Section1Activity extends AppCompatActivity {
+public class Section1Activity extends AppCompatActivity implements EndSectionActivity {
 
     ActivitySection1Binding bi;
 
@@ -156,17 +158,25 @@ public class Section1Activity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-
         return Validator.emptyCheckingContainer(this, bi.fldGrpSection1);
     }
 
     public void BtnEnd() {
+        UtilKt.contextEndActivity(this);
+    }
+
+    @Override
+    public void endSecActivity(boolean flag) {
         try {
             SaveDraft();
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        Util.contextEndActivity(this);
+        if (UpdateDB()) {
+            finish();
+            startActivity(new Intent(this, EndingActivity.class).putExtra("complete", flag));
+        } else {
+            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+        }
     }
-
 }

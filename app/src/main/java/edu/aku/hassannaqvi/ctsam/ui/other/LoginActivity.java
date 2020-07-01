@@ -67,7 +67,7 @@ import edu.aku.hassannaqvi.ctsam.core.AppInfo;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.ui.sync.SyncActivity;
-import edu.aku.hassannaqvi.ctsam.utils.Util;
+import edu.aku.hassannaqvi.ctsam.utils.UtilKt;
 
 import static edu.aku.hassannaqvi.ctsam.utils.Constants.DUMMY_CREDENTIALS;
 import static edu.aku.hassannaqvi.ctsam.utils.Constants.MINIMUM_DISTANCE_CHANGE_FOR_UPDATES;
@@ -174,8 +174,8 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
     }
 
     private boolean checkAndRequestPermissions() {
-        if (!Util.getPermissionsList(this).isEmpty()) {
-            ActivityCompat.requestPermissions(this, Util.getPermissionsList(this).toArray(new String[Util.getPermissionsList(this).size()]),
+        if (!UtilKt.getPermissionsList(this).isEmpty()) {
+            ActivityCompat.requestPermissions(this, UtilKt.getPermissionsList(this).toArray(new String[UtilKt.getPermissionsList(this).size()]),
                     MY_PERMISSIONS_REQUEST_READ_CONTACTS);
             return false;
         }

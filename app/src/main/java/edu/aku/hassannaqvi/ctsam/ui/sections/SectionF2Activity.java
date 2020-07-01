@@ -22,7 +22,7 @@ import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionF2Binding;
 import edu.aku.hassannaqvi.ctsam.utils.JSONUtils;
-import edu.aku.hassannaqvi.ctsam.utils.Util;
+import edu.aku.hassannaqvi.ctsam.utils.UtilKt;
 
 public class SectionF2Activity extends AppCompatActivity {
 
@@ -310,7 +310,7 @@ public class SectionF2Activity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        Util.contextEndActivity(this);
+        UtilKt.contextEndActivity(this);
     }
 
     @Override

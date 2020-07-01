@@ -34,9 +34,11 @@ import edu.aku.hassannaqvi.ctsam.contracts.VillagesContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
 import edu.aku.hassannaqvi.ctsam.core.MainApp;
 import edu.aku.hassannaqvi.ctsam.databinding.ActivitySectionABinding;
-import edu.aku.hassannaqvi.ctsam.utils.Util;
+import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
+import edu.aku.hassannaqvi.ctsam.utils.EndSectionActivity;
+import edu.aku.hassannaqvi.ctsam.utils.UtilKt;
 
-public class SectionAActivity extends AppCompatActivity {
+public class SectionAActivity extends AppCompatActivity implements EndSectionActivity {
 
     private static final String TAG = "";
     public static FormsContract fc;
@@ -137,18 +139,13 @@ public class SectionAActivity extends AppCompatActivity {
 
 
     private boolean formValidation() {
-
         return Validator.emptyCheckingContainer(this, bi.fldGrpSectionA);
     }
 
 
     public void BtnEnd() {
-        try {
-            SaveDraft();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        Util.contextEndActivity(this);
+        if (!formValidation()) return;
+        UtilKt.contextEndActivity(this);
     }
 
     public void populateSpinner(final Context context) {
@@ -239,5 +236,20 @@ public class SectionAActivity extends AppCompatActivity {
         Cursor res = db.getHfCode("healthFacilities", hf_name);
         res.moveToFirst();
         return Long.parseLong(res.getString(res.getColumnIndex(HealthFacilitiesContract.SingleHealthFacilities.COLUMN_FACILITY_CODE)));
+    }
+
+    @Override
+    public void endSecActivity(boolean flag) {
+        try {
+            SaveDraft();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        if (UpdateDB()) {
+            finish();
+            startActivity(new Intent(this, EndingActivity.class).putExtra("complete", flag));
+        } else {
+            Toast.makeText(this, "Failed to Update Database!", Toast.LENGTH_SHORT).show();
+        }
     }
 }
