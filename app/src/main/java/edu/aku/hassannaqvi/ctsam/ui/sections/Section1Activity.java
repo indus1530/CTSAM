@@ -3,6 +3,9 @@ package edu.aku.hassannaqvi.ctsam.ui.sections;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import com.validatorcrawler.aliazaz.Validator;
@@ -11,6 +14,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -27,6 +31,8 @@ import edu.aku.hassannaqvi.ctsam.databinding.ActivitySection1Binding;
 import edu.aku.hassannaqvi.ctsam.ui.other.EndingActivity;
 import edu.aku.hassannaqvi.ctsam.utils.EndSectionActivity;
 import edu.aku.hassannaqvi.ctsam.utils.UtilKt;
+
+import static edu.aku.hassannaqvi.ctsam.core.MainApp.users;
 
 public class Section1Activity extends AppCompatActivity implements EndSectionActivity {
 
@@ -79,6 +85,28 @@ public class Section1Activity extends AppCompatActivity implements EndSectionAct
                 bi.fus1q1c.setEnabled(false);
                 break;
         }
+
+        bi.fus1q9.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 0) {
+                    bi.fus1q10.setEnabled(false);
+                    bi.fus1q10.setSelection(0);
+                    return;
+                }
+                bi.fus1q10.setEnabled(true);
+                List<String> user2 = new ArrayList<>();
+                for (String item : users) {
+                    if (!item.equals(bi.fus1q9.getSelectedItem().toString())) user2.add(item);
+                }
+                bi.fus1q10.setAdapter(new ArrayAdapter<>(Section1Activity.this, android.R.layout.simple_spinner_dropdown_item, user2));
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
     public void BtnContinue() {
@@ -153,8 +181,8 @@ public class Section1Activity extends AppCompatActivity implements EndSectionAct
         json.put("fus1q7gx", bi.fus1q7gx.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q7gx.getText().toString());
 
         json.put("fus1q8", bi.fus1q8.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q8.getText().toString());
-        json.put("fus1q9", bi.fus1q9.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q9.getText().toString());
-        json.put("fus1q10", bi.fus1q10.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q10.getText().toString());
+        //json.put("fus1q9", bi.fus1q9.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q9.getText().toString());
+        //json.put("fus1q10", bi.fus1q10.getText().toString().trim().isEmpty() ? "-1" : bi.fus1q10.getText().toString());
 
         MainApp.fc.setsA(String.valueOf(json));
     }
