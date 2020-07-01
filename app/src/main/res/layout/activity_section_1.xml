@@ -416,11 +416,10 @@
                 style="@style/cardView">
 
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -457,11 +456,10 @@
                 android:id="@+id/fldGrpCVfus1q9"
                 style="@style/cardView">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -486,31 +484,23 @@
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus1q9"
                         style="@style/EditTextAlpha"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:hint="@string/name"
-                        />
+                        android:maxLength="20" />
 
                 </LinearLayout>
 
-
-
-
             </androidx.cardview.widget.CardView>
+
 
             <!-- fus1q10  Input   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVfus1q10"
                 style="@style/cardView">
 
-
-
-
-                <LinearLayout style="@style/hlinearlayout">
+                <LinearLayout style="@style/vlinearlayout">
 
                     <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bottom">
 
@@ -535,15 +525,14 @@
                     <com.edittextpicker.aliazaz.EditTextPicker
                         android:id="@+id/fus1q10"
                         style="@style/EditTextAlpha"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:hint="@string/name"
-                        />
+                        android:maxLength="20" />
 
                 </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
+
 
             <LinearLayout style="@style/hlinearlayout">
 
