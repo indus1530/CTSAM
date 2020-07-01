@@ -8,6 +8,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -20,8 +23,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.CONSTANTS;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
@@ -84,8 +85,10 @@ public class Section1Activity extends AppCompatActivity implements EndSectionAct
                 bi.fus1q1b.setEnabled(false);
                 bi.fus1q1c.setEnabled(false);
                 break;
+
         }
 
+        bi.fus1q9.setAdapter(new ArrayAdapter<>(Section1Activity.this, android.R.layout.simple_spinner_dropdown_item, users));
         bi.fus1q9.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -95,11 +98,11 @@ public class Section1Activity extends AppCompatActivity implements EndSectionAct
                     return;
                 }
                 bi.fus1q10.setEnabled(true);
-                List<String> user2 = new ArrayList<>();
+                List<String> fus1q10 = new ArrayList<>();
                 for (String item : users) {
-                    if (!item.equals(bi.fus1q9.getSelectedItem().toString())) user2.add(item);
+                    if (!item.equals(bi.fus1q9.getSelectedItem().toString())) fus1q10.add(item);
                 }
-                bi.fus1q10.setAdapter(new ArrayAdapter<>(Section1Activity.this, android.R.layout.simple_spinner_dropdown_item, user2));
+                bi.fus1q10.setAdapter(new ArrayAdapter<>(Section1Activity.this, android.R.layout.simple_spinner_dropdown_item, fus1q10));
             }
 
             @Override

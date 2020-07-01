@@ -452,10 +452,9 @@
             </androidx.cardview.widget.CardView>
 
             <!-- fus1q9  Input   -->
-            <androidx.cardview.widget.CardView
+            <!--<androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVfus1q9"
                 style="@style/cardView">
-
                 <LinearLayout style="@style/vlinearlayout">
 
                     <RelativeLayout
@@ -488,12 +487,48 @@
                         android:maxLength="20" />
 
                 </LinearLayout>
+            </androidx.cardview.widget.CardView>-->
+            <!-- user1  Spinner   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q9"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus1q9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus1q9"
+                            android:text="@string/fus1q9" />
+
+                        <TextView
+                            android:id="@+id/q_fus1q9"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus1q9"
+                            android:layout_alignBottom="@id/qtxt_fus1q9"
+                            android:text="@string/Q_fus1q9" />
+
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/fus1q9"
+                        style="@style/spinner"
+                        android:layout_margin="10dp" />
+
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
-
             <!-- fus1q10  Input   -->
-            <androidx.cardview.widget.CardView
+            <!--<androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVfus1q10"
                 style="@style/cardView">
 
@@ -529,10 +564,45 @@
                         android:maxLength="20" />
 
                 </LinearLayout>
+            </androidx.cardview.widget.CardView>-->
+            <!-- user2  Spinner   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVfus1q10"
+                style="@style/cardView">
 
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_fus1q10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_fus1q10"
+                            android:text="@string/fus1q10" />
+
+                        <TextView
+                            android:id="@+id/q_fus1q10"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_fus1q10"
+                            android:layout_alignBottom="@id/qtxt_fus1q10"
+                            android:text="@string/Q_fus1q10" />
+
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/fus1q10"
+                        style="@style/spinner"
+                        android:layout_margin="10dp" />
+
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <LinearLayout style="@style/hlinearlayout">
 
