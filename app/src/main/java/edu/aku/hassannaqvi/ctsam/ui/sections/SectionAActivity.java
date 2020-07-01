@@ -9,9 +9,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -25,6 +22,8 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.CONSTANTS;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
@@ -71,7 +70,7 @@ public class SectionAActivity extends AppCompatActivity implements EndSectionAct
 
 
     public void BtnContinue() {
-        if (formValidation()) {
+        if (formValidation(true)) {
             try {
                 SaveDraft();
             } catch (JSONException e) {
@@ -138,13 +137,13 @@ public class SectionAActivity extends AppCompatActivity implements EndSectionAct
     }
 
 
-    private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.fldGrpSectionA);
+    private boolean formValidation(boolean flag) {
+        return Validator.emptyCheckingContainer(this, flag ? bi.fldGrpSectionA : bi.fldGrpSectionA01);
     }
 
 
     public void BtnEnd() {
-        if (!formValidation()) return;
+        if (!formValidation(false)) return;
         UtilKt.contextEndActivity(this);
     }
 

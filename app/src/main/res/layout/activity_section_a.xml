@@ -20,128 +20,137 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- s1q2  Spinner   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs1q2"
-                style="@style/cardView">
+            <LinearLayout
+                android:id="@+id/fldGrpSectionA01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <LinearLayout style="@style/hlinearlayout">
+                <!-- s1q2  Spinner   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVs1q2"
+                    style="@style/cardView">
 
-                    <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/bottom">
 
-                        <TextView
-                            android:id="@+id/qtxt_s1q2"
-                            android:layout_width="match_parent"
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_s1q2"
-                            android:text="@string/s1q2" />
+                            android:layout_weight="1"
+                            android:background="@drawable/bottom">
 
-                        <TextView
-                            android:id="@+id/q_s1q2"
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
+                            <TextView
+                                android:id="@+id/qtxt_s1q2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_s1q2"
+                                android:text="@string/s1q2" />
+
+                            <TextView
+                                android:id="@+id/q_s1q2"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_s1q2"
+                                android:layout_alignBottom="@id/qtxt_s1q2"
+                                android:text="@string/Q_s1q2" />
+                        </RelativeLayout>
+
+                        <Spinner
+                            android:id="@+id/s1q2"
+                            style="@style/spinner"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:hint="@string/s1q2" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- s1q1  Spinner   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVs1q1"
+                    style="@style/cardView">
+
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_alignTop="@id/qtxt_s1q2"
-                            android:layout_alignBottom="@id/qtxt_s1q2"
-                            android:text="@string/Q_s1q2" />
-                    </RelativeLayout>
+                            android:layout_weight="1"
+                            android:background="@drawable/bottom">
 
-                    <Spinner
-                        android:id="@+id/s1q2"
-                        style="@style/spinner"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:hint="@string/s1q2" />
+                            <TextView
+                                android:id="@+id/qtxt_s1q1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_s1q1"
+                                android:text="@string/s1q1" />
 
-                </LinearLayout>
+                            <TextView
+                                android:id="@+id/q_s1q1"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_s1q1"
+                                android:layout_alignBottom="@id/qtxt_s1q1"
+                                android:text="@string/Q_s1q1" />
+                        </RelativeLayout>
 
-            </androidx.cardview.widget.CardView>
+                        <Spinner
+                            android:id="@+id/s1q1"
+                            style="@style/spinner"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:hint="@string/name" />
 
-            <!-- s1q1  Spinner   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs1q1"
-                style="@style/cardView">
+                    </LinearLayout>
 
-                <LinearLayout style="@style/hlinearlayout">
+                </androidx.cardview.widget.CardView>
 
-                    <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/bottom">
+                <!-- s1q3  Spinner   -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fldGrpCVs1q3"
+                    style="@style/cardView">
 
-                        <TextView
-                            android:id="@+id/qtxt_s1q1"
-                            android:layout_width="match_parent"
+                    <LinearLayout style="@style/hlinearlayout">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_s1q1"
-                            android:text="@string/s1q1" />
+                            android:layout_weight="1"
+                            android:background="@drawable/bottom">
 
-                        <TextView
-                            android:id="@+id/q_s1q1"
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignTop="@id/qtxt_s1q1"
-                            android:layout_alignBottom="@id/qtxt_s1q1"
-                            android:text="@string/Q_s1q1" />
-                    </RelativeLayout>
+                            <TextView
+                                android:id="@+id/qtxt_s1q3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/q_s1q3"
+                                android:text="@string/s1q3" />
 
-                    <Spinner
-                        android:id="@+id/s1q1"
-                        style="@style/spinner"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:hint="@string/name" />
+                            <TextView
+                                android:id="@+id/q_s1q3"
+                                style="@style/quesNum"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@id/qtxt_s1q3"
+                                android:layout_alignBottom="@id/qtxt_s1q3"
+                                android:text="@string/Q_s1q3" />
+                        </RelativeLayout>
 
-                </LinearLayout>
+                        <Spinner
+                            android:id="@+id/s1q3"
+                            style="@style/spinner"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:hint="@string/name" />
 
-            </androidx.cardview.widget.CardView>
+                    </LinearLayout>
 
-            <!-- s1q3  Spinner   -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fldGrpCVs1q3"
-                style="@style/cardView">
+                </androidx.cardview.widget.CardView>
 
-                <LinearLayout style="@style/hlinearlayout">
-
-                    <RelativeLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/bottom">
-
-                        <TextView
-                            android:id="@+id/qtxt_s1q3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_toEndOf="@id/q_s1q3"
-                            android:text="@string/s1q3" />
-
-                        <TextView
-                            android:id="@+id/q_s1q3"
-                            style="@style/quesNum"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignTop="@id/qtxt_s1q3"
-                            android:layout_alignBottom="@id/qtxt_s1q3"
-                            android:text="@string/Q_s1q3" />
-                    </RelativeLayout>
-
-                    <Spinner
-                        android:id="@+id/s1q3"
-                        style="@style/spinner"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:hint="@string/name" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
             <!-- s1q4  Input   -->
             <androidx.cardview.widget.CardView
