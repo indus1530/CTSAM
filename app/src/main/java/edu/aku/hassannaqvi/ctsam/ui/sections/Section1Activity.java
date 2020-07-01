@@ -43,6 +43,9 @@ public class Section1Activity extends AppCompatActivity implements EndSectionAct
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section_1);
         bi.setCallback(this);
 
+        //bi.fus1q8.setMinDate(DateUtils.getDaysBack("dd/MM/yyyy", 7));
+        //bi.fus1q8.setMaxDate(DateUtils.getDaysBack("dd/MM/yyyy", 14));
+
         List<Integer> givenList = Arrays.asList(1, 2, 3, 4);
         Random rand = new Random();
         int randomElement = givenList.get(rand.nextInt(givenList.size()));
