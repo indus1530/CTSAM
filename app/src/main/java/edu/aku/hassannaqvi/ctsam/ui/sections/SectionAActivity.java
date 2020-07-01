@@ -41,9 +41,9 @@ public class SectionAActivity extends AppCompatActivity implements EndSectionAct
 
     private static final String TAG = "";
     public static FormsContract fc;
-    ActivitySectionABinding bi;
     public List<String> talukaName, ucName, villageName, usersName, teamLeadName, healthFacilityCode;
     public List<String> talukaCode, ucCode, villageCode, usersCode, teamLeadCode, healthFacilityName;
+    ActivitySectionABinding bi;
     private DatabaseHelper db;
 
     @Override
@@ -138,13 +138,14 @@ public class SectionAActivity extends AppCompatActivity implements EndSectionAct
 
 
     private boolean formValidation(boolean flag) {
-        return Validator.emptyCheckingContainer(this, flag ? bi.fldGrpSectionA : bi.fldGrpSectionA01);
+        if (flag) return Validator.emptyCheckingContainer(this, bi.fldGrpSectionA);
+        else return Validator.emptyCheckingContainer(this, bi.fldGrpSectionA01);
     }
 
 
     public void BtnEnd() {
         if (!formValidation(false)) return;
-        UtilKt.contextEndActivity(this);
+        UtilKt.contextEndActivity(this, false);
     }
 
     public void populateSpinner(final Context context) {

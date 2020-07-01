@@ -160,12 +160,13 @@ public class Section1Activity extends AppCompatActivity implements EndSectionAct
     }
 
     private boolean formValidation(boolean flag) {
-        return Validator.emptyCheckingContainer(this, flag ? bi.fldGrpSection1 : bi.fldGrpSection101);
+        if (flag) return Validator.emptyCheckingContainer(this, bi.fldGrpSection1);
+        else return Validator.emptyCheckingContainer(this, bi.fldGrpSection101);
     }
 
     public void BtnEnd() {
         if (!formValidation(false)) return;
-        UtilKt.contextEndActivity(this);
+        UtilKt.contextEndActivity(this, false);
     }
 
     @Override
