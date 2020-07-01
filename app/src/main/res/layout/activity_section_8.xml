@@ -253,7 +253,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/q_fus8q301"
-                            android:text="@string/fus8q2" />
+                            android:text="@string/fus8q301" />
 
                         <TextView
                             android:id="@+id/q_fus8q301"
@@ -262,7 +262,7 @@
                             android:layout_height="wrap_content"
                             android:layout_alignTop="@id/qtxt_fus8q301"
                             android:layout_alignBottom="@id/qtxt_fus8q301"
-                            android:text="@string/Q_fus8q2" />
+                            android:text="@string/Q_fus8q301" />
 
                     </RelativeLayout>
 

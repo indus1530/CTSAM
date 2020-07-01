@@ -19,7 +19,7 @@
             style="@style/vlinearlayout">
 
             <TextView
-                style="@style/textView3Head"
+                style="@style/sub"
                 android:text="@string/s9q9" />
 
             <!--&lt;!&ndash; s9q9  Title   &ndash;&gt;
