@@ -5,9 +5,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -19,6 +16,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.CONSTANTS;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
@@ -83,7 +82,7 @@ public class Section1Activity extends AppCompatActivity implements EndSectionAct
     }
 
     public void BtnContinue() {
-        if (formValidation()) {
+        if (formValidation(true)) {
             try {
                 SaveDraft();
             } catch (JSONException e) {
@@ -160,8 +159,8 @@ public class Section1Activity extends AppCompatActivity implements EndSectionAct
         MainApp.fc.setsA(String.valueOf(json));
     }
 
-    private boolean formValidation() {
-        return Validator.emptyCheckingContainer(this, bi.fldGrpSection1);
+    private boolean formValidation(boolean flag) {
+        return Validator.emptyCheckingContainer(this, flag ? bi.fldGrpSection1 : bi.fldGrpSection101);
     }
 
     public void BtnEnd() {
