@@ -433,16 +433,11 @@
 
                     </RelativeLayout>
 
-                    <com.edittextpicker.aliazaz.EditTextPicker
+                    <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
                         android:id="@+id/fus1q8"
                         style="@style/EditTextNum"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:hint="@string/fus1q8"
-                        android:maxLength="2"
-                        app:maxValue="99"
-                        app:minValue="0"
-                        app:type="range"/>
+                        app:maxDate="CR_DATE" />
 
                 </LinearLayout>
 
