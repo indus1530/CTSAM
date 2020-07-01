@@ -164,6 +164,7 @@ public class Section1Activity extends AppCompatActivity implements EndSectionAct
     }
 
     public void BtnEnd() {
+        if (!formValidation(false)) return;
         UtilKt.contextEndActivity(this);
     }
 
