@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
@@ -12,9 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
 import edu.aku.hassannaqvi.ctsam.core.DatabaseHelper;
@@ -49,8 +50,23 @@ public class SectionF2Activity extends AppCompatActivity {
 
         }));
 
+
+        bi.s6q18.setOnCheckedChangeListener(((radioGroup, i) -> {
+
+            if (i == bi.s6q18a.getId()) {
+                Clear.clearAllFields(bi.s6q18bx);
+            } else if (i == bi.s6q18b.getId()) {
+                Clear.clearAllFields(bi.s6q18ax);
+            } else {
+                Clear.clearAllFields(bi.s6q18ax);
+                Clear.clearAllFields(bi.s6q18bx);
+            }
+
+        }));
+
+
         //////////// Checkbox
-        bi.s6q1898.setOnClickListener(new View.OnClickListener() {
+        /*bi.s6q1898.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -64,7 +80,9 @@ public class SectionF2Activity extends AppCompatActivity {
                     bi.s6q18bx.setVisibility(View.VISIBLE);
                 }
             }
-        });
+        });*/
+
+
 
 
         bi.s6q19.setOnCheckedChangeListener(((radioGroup, i) -> {
@@ -248,7 +266,10 @@ public class SectionF2Activity extends AppCompatActivity {
                 bi.s6q17b.isChecked() ? "2" :
                         "-1");
 
-        json.put("s6q1898", bi.s6q1898.isChecked() ? "1" : "-1");
+        json.put("s6q18", bi.s6q18a.isChecked() ? "1" :
+                bi.s6q18b.isChecked() ? "2" :
+                        bi.s6q1899.isChecked() ? "99" :
+                                "-1");
 
         json.put("s6q18ax", bi.s6q18ax.getText().toString().trim().isEmpty() ? "-1" : bi.s6q18ax.getText().toString());
 
@@ -282,12 +303,26 @@ public class SectionF2Activity extends AppCompatActivity {
             return false;
         }
 
-        if (bi.fldGrpCVs6q18.getVisibility() == View.VISIBLE
+        /*if (bi.fldGrpCVs6q18.getVisibility() == View.VISIBLE
                 && !bi.s6q1898.isChecked()
                 && Integer.parseInt(bi.s6q18ax.getText().toString()) == 0
                 && Integer.parseInt(bi.s6q18bx.getText().toString()) == 0) {
 
             Toast.makeText(this, "S6Q18: At least one value must be greater than zero", Toast.LENGTH_LONG).show();
+            return false;
+        }*/
+
+
+        if ((bi.s6q18a.isChecked() && bi.s6q18ax.getText().toString().isEmpty()) || (bi.s6q18b.isChecked() && bi.s6q18bx.getText().toString().isEmpty())) {
+
+            if (bi.s6q18a.isChecked() && bi.s6q18ax.getText().toString().isEmpty()) {
+                bi.s6q18ax.setError("Enter value for Acre");
+                bi.s6q18ax.setEnabled(true);
+            } else if (bi.s6q18b.isChecked() && bi.s6q18bx.getText().toString().isEmpty()) {
+                bi.s6q18bx.setError("Enter value for Canal");
+                bi.s6q18bx.setEnabled(true);
+            }
+
             return false;
         }
 

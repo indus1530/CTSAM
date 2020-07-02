@@ -373,7 +373,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
             <!-- s6q15  Input-Numeric   -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs6q15"
@@ -429,7 +428,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
             <!-- s6q16  Title   -->
             <androidx.cardview.widget.CardView
@@ -932,7 +930,7 @@
 
 
             <!-- s6q18  Radio   -->
-            <androidx.cardview.widget.CardView
+            <!--<androidx.cardview.widget.CardView
                 android:id="@+id/fldGrpCVs6q18"
                 style="@style/cardView">
 
@@ -985,6 +983,84 @@
                         app:maxValue="7"
                         app:minValue="0"
                         app:type="range" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>-->
+
+
+            <!-- s6q18  Radio   -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fldGrpCVs6q18"
+                style="@style/cardView">
+
+                <LinearLayout style="@style/vlinearlayout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom">
+
+                        <TextView
+                            android:id="@+id/qtxt_s6q18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/q_s6q18"
+                            android:text="@string/s6q18" />
+
+                        <TextView
+                            android:id="@+id/q_s6q18"
+                            style="@style/quesNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/qtxt_s6q18"
+                            android:layout_alignBottom="@id/qtxt_s6q18"
+                            android:text="@string/Q_s6q18" />
+
+                    </RelativeLayout>
+
+                    <RadioGroup
+                        android:id="@+id/s6q18"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/s6q18a"
+                            style="@style/radiobutton"
+                            android:text="@string/s6q18a" />
+
+                        <RadioButton
+                            android:id="@+id/s6q18b"
+                            style="@style/radiobutton"
+                            android:text="@string/s6q18b" />
+
+                        <RadioButton
+                            android:id="@+id/s6q1899"
+                            style="@style/radiobutton"
+                            android:text="@string/s6q1899" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/s6q18ax"
+                            style="@style/EditTextNum"
+                            android:hint="@string/s6q18a"
+                            android:maxLength="3"
+                            android:text='@{s6q18a.checked? s6q18ax.getText().toString() : ""}'
+                            android:visibility='@{s6q18a.checked? View.VISIBLE : View.GONE}'
+                            app:maxValue="500"
+                            app:minValue="0"
+                            app:type="range" />
+
+                        <com.edittextpicker.aliazaz.EditTextPicker
+                            android:id="@+id/s6q18bx"
+                            style="@style/EditTextNum"
+                            android:hint="@string/s6q18b"
+                            android:maxLength="1"
+                            android:text='@{s6q18b.checked? s6q18bx.getText().toString() : ""}'
+                            android:visibility='@{s6q18b.checked? View.VISIBLE : View.GONE}'
+                            app:maxValue="7"
+                            app:minValue="0"
+                            app:type="range" />
+
+                    </RadioGroup>
 
                 </LinearLayout>
 
