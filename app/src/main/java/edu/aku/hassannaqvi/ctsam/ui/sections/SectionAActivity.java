@@ -9,6 +9,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
+import com.validatorcrawler.aliazaz.Clear;
 import com.validatorcrawler.aliazaz.Validator;
 
 import org.json.JSONException;
@@ -22,8 +26,6 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 import edu.aku.hassannaqvi.ctsam.CONSTANTS;
 import edu.aku.hassannaqvi.ctsam.R;
 import edu.aku.hassannaqvi.ctsam.contracts.FormsContract;
@@ -58,14 +60,15 @@ public class SectionAActivity extends AppCompatActivity implements EndSectionAct
     private void setupSkips() {
         db = new DatabaseHelper(this);
         populateSpinner(this);
-        /*bi.s1q8.setOnCheckedChangeListener((group, checkedId) -> {
+
+        bi.s1q8.setOnCheckedChangeListener((group, checkedId) -> {
             if (checkedId == bi.s1q8b.getId()) {
                 bi.fldGrpCVs1q8r.setVisibility(View.VISIBLE);
             } else {
                 Clear.clearAllFields(bi.fldGrpCVs1q8r);
                 bi.fldGrpCVs1q8r.setVisibility(View.GONE);
             }
-        });*/
+        });
     }
 
 
